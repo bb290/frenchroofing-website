@@ -50,24 +50,22 @@ export default function ServiceAreasPage() {
             about our services in your area.
           </p>
           <div className="flex flex-wrap justify-center gap-3 max-w-3xl mx-auto">
-            {SERVICE_AREAS.full.map((city) => {
-              const priorityArea = SERVICE_AREAS.priority.find(
-                (a) => a.name === city
-              );
-              return priorityArea ? (
+            {SERVICE_AREAS.all.map((area) => {
+              const isPriority = SERVICE_AREAS.priority.includes(area.slug);
+              return isPriority ? (
                 <Link
-                  key={city}
-                  href={`/service-areas/${priorityArea.slug}`}
+                  key={area.slug}
+                  href={`/service-areas/${area.slug}`}
                   className="rounded-full bg-[#092e5e] px-5 py-2 text-sm font-medium text-white hover:bg-[#d85024] transition-colors"
                 >
-                  {city}, OR
+                  {area.name}, {area.state}
                 </Link>
               ) : (
                 <span
-                  key={city}
+                  key={area.slug}
                   className="rounded-full bg-white border border-gray-200 px-5 py-2 text-sm font-medium text-[#3e3d3b]"
                 >
-                  {city}, OR
+                  {area.name}, {area.state}
                 </span>
               );
             })}

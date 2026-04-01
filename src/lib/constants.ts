@@ -35,16 +35,26 @@ export const SERVICES = [
 ] as const;
 
 export const SERVICE_AREAS = {
-  priority: [
+  priority: ["damascus-or", "clackamas-or", "happy-valley-or"] as string[],
+  all: [
     { name: "Damascus", slug: "damascus-or", state: "OR" },
-    { name: "Clackamas", slug: "clackamas-or", state: "OR" },
+    { name: "Gresham", slug: "gresham-or", state: "OR" },
     { name: "Happy Valley", slug: "happy-valley-or", state: "OR" },
-  ],
-  full: [
-    "Damascus", "Gresham", "Happy Valley", "Clackamas", "Oregon City",
-    "Milwaukie", "Lake Oswego", "Tualatin", "West Linn", "Sandy",
-    "Estacada", "Boring", "Troutdale", "Fairview", "Wood Village",
-    "Gladstone", "Johnson City", "Canby",
+    { name: "Clackamas", slug: "clackamas-or", state: "OR" },
+    { name: "Oregon City", slug: "oregon-city-or", state: "OR" },
+    { name: "Milwaukie", slug: "milwaukie-or", state: "OR" },
+    { name: "Lake Oswego", slug: "lake-oswego-or", state: "OR" },
+    { name: "Tualatin", slug: "tualatin-or", state: "OR" },
+    { name: "West Linn", slug: "west-linn-or", state: "OR" },
+    { name: "Sandy", slug: "sandy-or", state: "OR" },
+    { name: "Estacada", slug: "estacada-or", state: "OR" },
+    { name: "Boring", slug: "boring-or", state: "OR" },
+    { name: "Troutdale", slug: "troutdale-or", state: "OR" },
+    { name: "Fairview", slug: "fairview-or", state: "OR" },
+    { name: "Wood Village", slug: "wood-village-or", state: "OR" },
+    { name: "Gladstone", slug: "gladstone-or", state: "OR" },
+    { name: "Johnson City", slug: "johnson-city-or", state: "OR" },
+    { name: "Canby", slug: "canby-or", state: "OR" },
   ],
 } as const;
 

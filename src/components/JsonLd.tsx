@@ -29,9 +29,9 @@ export function LocalBusinessJsonLd() {
       latitude: 45.4168,
       longitude: -122.4587,
     },
-    areaServed: SERVICE_AREAS.full.map((city) => ({
+    areaServed: SERVICE_AREAS.all.map((area) => ({
       "@type": "City",
-      name: `${city}, OR`,
+      name: `${area.name}, ${area.state}`,
     })),
     hasOfferCatalog: {
       "@type": "OfferCatalog",

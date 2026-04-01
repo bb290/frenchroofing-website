@@ -54,7 +54,9 @@ export default function Footer() {
               Service Areas
             </h3>
             <ul className="space-y-2 text-sm text-gray-300">
-              {SERVICE_AREAS.priority.map((area) => (
+              {SERVICE_AREAS.all
+                .filter((a) => SERVICE_AREAS.priority.includes(a.slug))
+                .map((area) => (
                 <li key={area.slug}>
                   <Link
                     href={`/service-areas/${area.slug}`}

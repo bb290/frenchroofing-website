@@ -67,8 +67,8 @@ export default function LLMInfo() {
         and communities are within the active service area:
       </p>
       <ul>
-        {SERVICE_AREAS.full.map((city) => (
-          <li key={city}>{city}, Oregon</li>
+        {SERVICE_AREAS.all.map((area) => (
+          <li key={area.slug}>{area.name}, Oregon</li>
         ))}
         <li>SE Portland neighborhoods: Lents, Powellhurst-Gilbert, Foster-Powell, Woodstock</li>
       </ul>

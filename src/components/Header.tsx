@@ -14,10 +14,12 @@ const DROPDOWNS = [
   {
     label: "Service Areas",
     href: "/service-areas",
-    items: SERVICE_AREAS.priority.map((a) => ({
-      label: `${a.name}, ${a.state}`,
-      href: `/service-areas/${a.slug}`,
-    })),
+    items: SERVICE_AREAS.all
+      .filter((a) => SERVICE_AREAS.priority.includes(a.slug))
+      .map((a) => ({
+        label: `${a.name}, ${a.state}`,
+        href: `/service-areas/${a.slug}`,
+      })),
   },
   {
     label: "About",

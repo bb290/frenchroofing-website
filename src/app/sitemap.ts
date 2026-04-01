@@ -24,11 +24,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  const areaPages: MetadataRoute.Sitemap = SERVICE_AREAS.priority.map((a) => ({
+  const areaPages: MetadataRoute.Sitemap = SERVICE_AREAS.all.map((a) => ({
     url: `${base}/service-areas/${a.slug}`,
     lastModified: now,
     changeFrequency: "monthly" as const,
-    priority: 0.8,
+    priority: SERVICE_AREAS.priority.includes(a.slug) ? 0.9 : 0.7,
   }));
 
   return [...staticPages, ...servicePages, ...areaPages];
