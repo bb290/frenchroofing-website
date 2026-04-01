@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
-import { COMPANY, SERVICES } from "@/lib/constants";
+import ContactForm from "@/components/ContactForm";
+import { COMPANY } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Contact Us | ${COMPANY.name}`,
@@ -40,117 +41,7 @@ export default function ContactPage() {
             <h2 className="text-2xl font-bold text-[#092e5e] mb-6">
               Send Us a Message
             </h2>
-            <form action="/api/contact" method="POST" className="space-y-5">
-              <div>
-                <label
-                  htmlFor="name"
-                  className="block text-sm font-medium text-[#3e3d3b] mb-1"
-                >
-                  Full Name *
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  required
-                  className="w-full rounded-lg border border-gray-300 px-4 py-3 text-[#3e3d3b] focus:border-[#d85024] focus:ring-2 focus:ring-[#d85024]/20 outline-none transition-colors"
-                  placeholder="Your name"
-                />
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium text-[#3e3d3b] mb-1"
-                  >
-                    Email *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    className="w-full rounded-lg border border-gray-300 px-4 py-3 text-[#3e3d3b] focus:border-[#d85024] focus:ring-2 focus:ring-[#d85024]/20 outline-none transition-colors"
-                    placeholder="you@example.com"
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="phone"
-                    className="block text-sm font-medium text-[#3e3d3b] mb-1"
-                  >
-                    Phone
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    className="w-full rounded-lg border border-gray-300 px-4 py-3 text-[#3e3d3b] focus:border-[#d85024] focus:ring-2 focus:ring-[#d85024]/20 outline-none transition-colors"
-                    placeholder="(555) 123-4567"
-                  />
-                </div>
-              </div>
-              <div>
-                <label
-                  htmlFor="address"
-                  className="block text-sm font-medium text-[#3e3d3b] mb-1"
-                >
-                  Property Address
-                </label>
-                <input
-                  type="text"
-                  id="address"
-                  name="address"
-                  className="w-full rounded-lg border border-gray-300 px-4 py-3 text-[#3e3d3b] focus:border-[#d85024] focus:ring-2 focus:ring-[#d85024]/20 outline-none transition-colors"
-                  placeholder="123 Main St, Damascus, OR"
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="service"
-                  className="block text-sm font-medium text-[#3e3d3b] mb-1"
-                >
-                  Service Needed
-                </label>
-                <select
-                  id="service"
-                  name="service"
-                  className="w-full rounded-lg border border-gray-300 px-4 py-3 text-[#3e3d3b] focus:border-[#d85024] focus:ring-2 focus:ring-[#d85024]/20 outline-none transition-colors bg-white"
-                >
-                  <option value="">Select a service...</option>
-                  {SERVICES.map((s) => (
-                    <option key={s.slug} value={s.slug}>
-                      {s.name}
-                    </option>
-                  ))}
-                  <option value="other">Other / Not Sure</option>
-                </select>
-              </div>
-              <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium text-[#3e3d3b] mb-1"
-                >
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={4}
-                  className="w-full rounded-lg border border-gray-300 px-4 py-3 text-[#3e3d3b] focus:border-[#d85024] focus:ring-2 focus:ring-[#d85024]/20 outline-none transition-colors resize-y"
-                  placeholder="Tell us about your project or question..."
-                />
-              </div>
-              <button
-                type="submit"
-                className="w-full rounded-lg bg-[#d85024] px-8 py-4 text-lg font-semibold text-white hover:bg-[#c04520] transition-colors"
-              >
-                Send Message
-              </button>
-              <p className="text-xs text-gray-500 text-center">
-                We typically respond within 1 business day.
-              </p>
-            </form>
+            <ContactForm />
           </div>
 
           {/* ── Info Panel ── */}
