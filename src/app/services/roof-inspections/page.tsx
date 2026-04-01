@@ -6,9 +6,9 @@ import FAQSection from "@/components/FAQSection";
 import { COMPANY } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Roof Inspections in Damascus, OR | ${COMPANY.name}`,
+  title: `Roof Inspections | Greater Portland Metro | ${COMPANY.name}`,
   description:
-    "Honest, thorough roof inspections in Damascus, OR. Get a clear picture of your roof's condition — whether you're buying a home, filing a claim, or just want to know where things stand. Licensed (CCB #203933), CertainTeed Certified.",
+    "Honest, thorough roof inspections in the greater Portland metro area. Get a clear picture of your roof's condition — whether you're buying a home, filing a claim, or just want to know where things stand. Licensed (CCB #203933), CertainTeed Certified.",
 };
 
 const steps = [
@@ -36,7 +36,7 @@ const steps = [
 
 const faqs = [
   {
-    question: "How much does a roof inspection cost in Damascus, OR?",
+    question: "How much does a roof inspection cost in the Portland metro area?",
     answer:
       "Our standard roof inspections are competitively priced, and we offer FREE roof assessments for homeowners considering repair or replacement work. Contact us for current pricing — it's one of the best investments you can make in your home.",
   },
@@ -53,7 +53,7 @@ const faqs = [
   {
     question: "Can you do a roof inspection for a home I'm buying?",
     answer:
-      "Absolutely. Pre-purchase roof inspections are one of our most common requests in the Clackamas and Happy Valley area. We give you an honest assessment of the roof's condition and remaining life so you can negotiate with confidence.",
+      "Absolutely. Pre-purchase roof inspections are one of our most common requests across Clackamas County and the Portland metro. We give you an honest assessment of the roof's condition and remaining life so you can negotiate with confidence.",
   },
   {
     question: "Will you find problems even if there's no visible leak?",
@@ -90,7 +90,7 @@ export default function RoofInspectionsPage() {
               Roof Inspections
             </p>
             <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-6">
-              Roof Inspections in Damascus, OR
+              Roof Inspections — Portland Metro
             </h1>
             <p className="text-lg text-gray-300 max-w-xl">
               Not sure what shape your roof is in? We&apos;ll tell you — honestly.
@@ -127,7 +127,7 @@ export default function RoofInspectionsPage() {
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
               A quick inspection now can save you thousands later. Here are the
-              most common reasons homeowners in Damascus and Clackamas County
+              most common reasons homeowners across the Portland metro
               call us.
             </p>
           </div>
@@ -147,7 +147,7 @@ export default function RoofInspectionsPage() {
               },
               {
                 title: "Selling Your Home",
-                desc: "A clean inspection report builds buyer confidence and can speed up your sale in the Happy Valley and Damascus market.",
+                desc: "A clean inspection report builds buyer confidence and can speed up your sale in the Portland metro market.",
               },
             ].map((item, i) => (
               <div
@@ -201,7 +201,7 @@ export default function RoofInspectionsPage() {
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
             <Image
               src="/images/team-plywood-install.webp"
-              alt="French Roofing crew examining roof decking during an inspection in Damascus, OR"
+              alt="French Roofing crew examining roof decking during a roof inspection in the Portland metro area"
               fill
               className="object-cover"
             />
@@ -223,7 +223,7 @@ export default function RoofInspectionsPage() {
                 "Photo-documented reports — see exactly what we see",
                 "Honest recommendations — we won't create problems to sell you a fix",
                 "Licensed, insured & bonded (CCB #203933)",
-                "10+ years experience in Damascus, Happy Valley, and surrounding areas",
+                "Serving 18+ communities across the Portland metro since 2014",
                 "Free assessments available for homeowners considering repair or replacement",
               ].map((item, i) => (
                 <li key={i} className="flex gap-3">

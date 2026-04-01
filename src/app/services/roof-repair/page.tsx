@@ -6,9 +6,9 @@ import FAQSection from "@/components/FAQSection";
 import { COMPANY } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Roof Repair in Damascus, OR | ${COMPANY.name}`,
+  title: `Roof Repair | Greater Portland Metro | ${COMPANY.name}`,
   description:
-    "Fast, reliable roof repair in Damascus, OR. Fix leaks, storm damage, cracked flashing, and missing shingles before they become bigger problems. Licensed (CCB #203933), CertainTeed Certified. Financing available.",
+    "Fast, reliable roof repair in the greater Portland metro area. Fix leaks, storm damage, cracked flashing, and missing shingles before they become bigger problems. Licensed (CCB #203933), CertainTeed Certified. Financing available.",
 };
 
 const steps = [
@@ -41,14 +41,14 @@ const faqs = [
       "If your roof is under 15 years old with isolated damage — a few missing shingles, a small leak, cracked flashing — repair is usually the smart move. If it's 20+ years old with widespread issues, a replacement is often more cost-effective. We'll give you an honest recommendation during your free assessment.",
   },
   {
-    question: "How quickly can you fix a roof leak in Damascus, OR?",
+    question: "How quickly can you fix a roof leak in the Portland metro area?",
     answer:
       "For active leaks and emergency situations, we prioritize getting to you as fast as possible — often within a day or two. For non-emergency repairs, we typically schedule within the week. Oregon weather can be unpredictable, so if your roof is leaking, don't wait to call.",
   },
   {
     question: "Do you repair storm damage and work with insurance?",
     answer:
-      "Yes. We handle storm damage repairs regularly for homeowners in Damascus, Happy Valley, and Clackamas. We document the damage thoroughly with photos, which helps if you need to file an insurance claim. We're happy to work with your adjuster.",
+      "Yes. We handle storm damage repairs regularly for homeowners across Clackamas County and the Portland metro. We document the damage thoroughly with photos, which helps if you need to file an insurance claim. We're happy to work with your adjuster.",
   },
   {
     question: "How much does a roof repair cost?",
@@ -90,7 +90,7 @@ export default function RoofRepairPage() {
               Roof Repair
             </p>
             <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-6">
-              Roof Repair in Damascus, OR
+              Roof Repair — Portland Metro
             </h1>
             <p className="text-lg text-gray-300 max-w-xl">
               Leaks, storm damage, missing shingles, cracked flashing — small
@@ -130,7 +130,7 @@ export default function RoofRepairPage() {
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
               Oregon weather does a number on roofs. Here are the most common
-              issues we see in Damascus, Clackamas, and Happy Valley.
+              issues we see across the Portland metro.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -193,7 +193,7 @@ export default function RoofRepairPage() {
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
             <Image
               src="/images/cracked-flashing.webp"
-              alt="Close-up of roof flashing being repaired by French Roofing in Damascus, OR"
+              alt="Close-up of roof flashing being repaired by French Roofing in the Portland metro area"
               fill
               className="object-cover"
             />
@@ -213,7 +213,7 @@ export default function RoofRepairPage() {
                 "Honest diagnosis — we won't upsell you on a replacement if a repair will do",
                 "Licensed, insured & bonded (CCB #203933)",
                 "CertainTeed Certified — quality materials and proper technique",
-                "10+ years fixing roofs in Damascus, Clackamas, and Happy Valley",
+                "Serving 18+ communities across the Portland metro since 2014",
                 "Financing through Enhancify for larger repair projects",
                 "Clean, documented work — photos before, during, and after",
               ].map((item, i) => (
