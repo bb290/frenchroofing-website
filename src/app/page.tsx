@@ -158,53 +158,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── About / Brand Story teaser ── */}
-      <section className="py-20 px-4 bg-gray-50">
-        <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="relative aspect-square rounded-2xl overflow-hidden max-w-md mx-auto lg:mx-0">
-            <Image
-              src="/images/sean-first-job.webp"
-              alt="Sean French on his first roofing job — founder of French Roofing LLC"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div>
-            <p className="text-sm font-semibold text-[#d85024] uppercase tracking-wider mb-2">
-              Our Story
-            </p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#092e5e] mb-6">
-              Built on a Ladder, a Toolbelt, and a Dream
-            </h2>
-            <p className="text-gray-600 mb-4">
-              Sean French grew up on roofs. He started as a subcontractor at
-              sixteen, learning the trade the way most real craftspeople do — by
-              showing up early, listening more than talking, and doing the
-              unglamorous work with pride.
-            </p>
-            <p className="text-gray-600 mb-4">
-              In 2014, he started French Roofing on a simple idea:{" "}
-              <strong className="text-[#092e5e]">
-                Do the work like you&apos;re doing it for your own family.
-              </strong>
-            </p>
-            <blockquote className="border-l-4 border-[#ffbd59] pl-4 italic text-gray-500 my-6">
-              &ldquo;Every customer&apos;s roof should be built the same way
-              you&apos;d build it for your own grandma.&rdquo;
-              <span className="block not-italic text-sm mt-1 text-[#092e5e] font-medium">
-                — Sean French, Founder
-              </span>
-            </blockquote>
-            <Link
-              href="/about"
-              className="inline-flex items-center text-[#d85024] font-semibold hover:underline"
-            >
-              Read our full story &rarr;
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* ── Before / After ── */}
       <section className="py-20 px-4 bg-white">
         <div className="mx-auto max-w-7xl">
@@ -358,6 +311,53 @@ export default function Home() {
 
       {/* ── FAQ (AEO optimized) ── */}
       <FAQSection faqs={homeFAQs} />
+
+      {/* ── About / Brand Story teaser ── */}
+      <section className="py-20 px-4 bg-white">
+        <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="relative aspect-square rounded-2xl overflow-hidden max-w-md mx-auto lg:mx-0">
+            <Image
+              src="/images/sean-first-job.webp"
+              alt="Sean French on his first roofing job — founder of French Roofing LLC"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div>
+            <p className="text-sm font-semibold text-[#d85024] uppercase tracking-wider mb-2">
+              Our Story
+            </p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#092e5e] mb-6">
+              Built on a Ladder, a Toolbelt, and a Dream
+            </h2>
+            <p className="text-gray-600 mb-4">
+              Sean French grew up on roofs. He started as a subcontractor at
+              sixteen, learning the trade the way most real craftspeople do — by
+              showing up early, listening more than talking, and doing the
+              unglamorous work with pride.
+            </p>
+            <p className="text-gray-600 mb-4">
+              In 2014, he started French Roofing on a simple idea:{" "}
+              <strong className="text-[#092e5e]">
+                Do the work like you&apos;re doing it for your own grandma.
+              </strong>
+            </p>
+            <blockquote className="border-l-4 border-[#ffbd59] pl-4 italic text-gray-500 my-6">
+              &ldquo;Every customer&apos;s roof should be built the same way
+              you&apos;d build it for your own grandma.&rdquo;
+              <span className="block not-italic text-sm mt-1 text-[#092e5e] font-medium">
+                — Sean French, Founder
+              </span>
+            </blockquote>
+            <Link
+              href="/about"
+              className="inline-flex items-center text-[#d85024] font-semibold hover:underline"
+            >
+              Read our full story &rarr;
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* ── CTA ── */}
       <CTABanner />
