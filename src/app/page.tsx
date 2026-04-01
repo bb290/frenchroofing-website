@@ -122,13 +122,13 @@ export default function Home() {
       </section>
 
       {/* ── Services ── */}
-      <section className="py-20 px-4 relative overflow-hidden" style={{ background: "radial-gradient(ellipse at 20% 50%, #ffbd59 0%, transparent 50%), radial-gradient(ellipse at 80% 20%, #d85024 0%, transparent 40%), radial-gradient(ellipse at 50% 80%, #092e5e 0%, transparent 50%), radial-gradient(ellipse at 90% 90%, #ffbd59 0%, transparent 40%), radial-gradient(ellipse at 10% 10%, #d85024 0%, transparent 35%), #092e5e" }}>
+      <section className="py-20 px-4 relative overflow-hidden" style={{ background: "radial-gradient(ellipse at 20% 50%, #ffbd59 0%, transparent 50%), radial-gradient(ellipse at 80% 20%, #d85024 0%, transparent 40%), radial-gradient(ellipse at 50% 80%, #ffffff 0%, transparent 50%), radial-gradient(ellipse at 90% 90%, #ffbd59 0%, transparent 40%), radial-gradient(ellipse at 10% 10%, #d85024 0%, transparent 35%), #ffffff" }}>
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-14">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white">
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#092e5e]">
               Our Roofing Services
             </h2>
-            <p className="mt-4 text-lg text-white/80 max-w-2xl mx-auto">
+            <p className="mt-4 text-lg text-[#3e3d3b] max-w-2xl mx-auto">
               From full replacements to routine maintenance, we handle every
               roofing need with quality materials and honest communication.
             </p>
