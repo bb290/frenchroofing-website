@@ -52,21 +52,18 @@ export default function ServiceAreasPage() {
           <div className="flex flex-wrap justify-center gap-3 max-w-3xl mx-auto">
             {SERVICE_AREAS.all.map((area) => {
               const isPriority = SERVICE_AREAS.priority.includes(area.slug);
-              return isPriority ? (
+              return (
                 <Link
                   key={area.slug}
                   href={`/service-areas/${area.slug}`}
-                  className="rounded-full bg-[#092e5e] px-5 py-2 text-sm font-medium text-white hover:bg-[#d85024] transition-colors"
+                  className={`rounded-full px-5 py-2 text-sm font-medium transition-colors ${
+                    isPriority
+                      ? "bg-[#092e5e] text-white hover:bg-[#d85024]"
+                      : "bg-white border border-gray-200 text-[#3e3d3b] hover:border-[#d85024] hover:text-[#d85024]"
+                  }`}
                 >
                   {area.name}, {area.state}
                 </Link>
-              ) : (
-                <span
-                  key={area.slug}
-                  className="rounded-full bg-white border border-gray-200 px-5 py-2 text-sm font-medium text-[#3e3d3b]"
-                >
-                  {area.name}, {area.state}
-                </span>
               );
             })}
           </div>
