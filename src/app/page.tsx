@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import CTABanner from "@/components/CTABanner";
 import FAQSection from "@/components/FAQSection";
+import RoofEstimator from "@/components/RoofEstimator";
 import { COMPANY, SERVICES, SERVICE_AREAS } from "@/lib/constants";
 
 const homeFAQs = [
@@ -247,6 +248,22 @@ export default function Home() {
               View more projects &rarr;
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* ── Instant Estimate ── */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="mx-auto max-w-7xl">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#092e5e]">
+              Get a Ballpark Price in 60 Seconds
+            </h2>
+            <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+              Compare materials, see the trade-offs, and understand what a new
+              roof might cost — no contact info required.
+            </p>
+          </div>
+          <RoofEstimator compact />
         </div>
       </section>
 

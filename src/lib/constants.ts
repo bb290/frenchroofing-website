@@ -50,10 +50,10 @@ export const SERVICE_AREAS = {
 
 export const NAV_LINKS = [
   { label: "Services", href: "/services" },
+  { label: "Instant Estimate", href: "/estimate" },
   { label: "Service Areas", href: "/service-areas" },
   { label: "About", href: "/about" },
   { label: "Gallery", href: "/gallery" },
   { label: "Financing", href: "/financing" },
-  { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
 ] as const;
