@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
 import FAQSection from "@/components/FAQSection";
@@ -153,12 +152,14 @@ export default function FinancingPage() {
             ))}
           </div>
           <div className="text-center mt-14">
-            <Link
-              href="/contact"
+            <a
+              href={COMPANY.bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-lg bg-[#d85024] px-8 py-4 text-lg font-semibold text-white hover:bg-[#c04520] transition-colors"
             >
               Get Your Free Estimate First
-            </Link>
+            </a>
             <p className="mt-3 text-sm text-gray-500">
               No commitment required — see what your roof needs before exploring
               financing.

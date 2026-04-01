@@ -68,12 +68,14 @@ export default function Home() {
               Certified, and financing available.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
-              <Link
-                href="/contact"
+              <a
+                href={COMPANY.bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-lg bg-[#d85024] px-8 py-4 text-lg font-semibold text-white hover:bg-[#c04520] transition-colors"
               >
                 Schedule FREE Assessment
-              </Link>
+              </a>
               <a
                 href={COMPANY.phoneTel}
                 className="inline-flex items-center justify-center rounded-lg border-2 border-white/30 px-8 py-4 text-lg font-semibold text-white hover:bg-white/10 transition-colors"

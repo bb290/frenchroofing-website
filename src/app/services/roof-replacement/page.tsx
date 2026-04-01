@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
 import FAQSection from "@/components/FAQSection";
@@ -105,12 +104,14 @@ export default function RoofReplacementPage() {
               a crew that treats your home like family.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
-              <Link
-                href="/contact"
+              <a
+                href={COMPANY.bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-lg bg-[#d85024] px-8 py-4 text-lg font-semibold text-white hover:bg-[#c04520] transition-colors"
               >
                 Get a Free Estimate
-              </Link>
+              </a>
               <a
                 href={COMPANY.phoneTel}
                 className="inline-flex items-center justify-center rounded-lg border-2 border-white/30 px-8 py-4 text-lg font-semibold text-white hover:bg-white/10 transition-colors"

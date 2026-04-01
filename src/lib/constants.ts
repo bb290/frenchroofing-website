@@ -17,6 +17,7 @@ export const COMPANY = {
   founder: "Sean French",
   certifications: ["CertainTeed Certified"],
   financing: "Enhancify",
+  bookingUrl: "https://book.housecallpro.com/book/French-Roofing-LLC/3d9f863949114c699be738573cf0ef24?v2=true",
   social: {
     facebook: "https://www.facebook.com/FrenchRoofingLLC",
     instagram: "https://www.instagram.com/frenchroofing/",

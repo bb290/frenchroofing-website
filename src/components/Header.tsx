@@ -5,6 +5,8 @@ import Image from "next/image";
 import { useState } from "react";
 import { COMPANY, NAV_LINKS } from "@/lib/constants";
 
+const BOOKING = COMPANY.bookingUrl;
+
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -45,12 +47,14 @@ export default function Header() {
             >
               {COMPANY.phone}
             </a>
-            <Link
-              href="/contact"
+            <a
+              href={BOOKING}
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-lg bg-[#d85024] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#c04520] transition-colors"
             >
               Free Roof Assessment
-            </Link>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -92,13 +96,15 @@ export default function Header() {
               >
                 {COMPANY.phone}
               </a>
-              <Link
-                href="/contact"
+              <a
+                href={BOOKING}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block text-center rounded-lg bg-[#d85024] px-5 py-3 text-base font-semibold text-white"
                 onClick={() => setMobileOpen(false)}
               >
                 Free Roof Assessment
-              </Link>
+              </a>
             </div>
           </div>
         </div>

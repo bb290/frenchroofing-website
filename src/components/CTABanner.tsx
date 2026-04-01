@@ -32,12 +32,14 @@ export default function CTABanner({
           {description}
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Link
-            href="/contact"
+          <a
+            href={COMPANY.bookingUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-lg bg-[#d85024] px-8 py-4 text-lg font-semibold text-white hover:bg-[#c04520] transition-colors"
           >
             Schedule Now
-          </Link>
+          </a>
           <a
             href={COMPANY.phoneTel}
             className={`text-lg font-semibold ${
