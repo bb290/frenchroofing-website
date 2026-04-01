@@ -31,5 +31,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: SERVICE_AREAS.priority.includes(a.slug) ? 0.9 : 0.7,
   }));
 
-  return [...staticPages, ...servicePages, ...areaPages];
+  const serviceCityPages: MetadataRoute.Sitemap = SERVICES.flatMap((s) =>
+    SERVICE_AREAS.all.map((a) => ({
+      url: `${base}/services/${s.slug}/${a.slug}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: SERVICE_AREAS.priority.includes(a.slug) ? 0.8 : 0.6,
+    }))
+  );
+
+  return [...staticPages, ...servicePages, ...areaPages, ...serviceCityPages];
 }

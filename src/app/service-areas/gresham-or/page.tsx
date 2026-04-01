@@ -120,7 +120,7 @@ export default function GreshamPage() {
             {SERVICES.map((service) => (
               <Link
                 key={service.slug}
-                href={`/services/${service.slug}`}
+                href={`/services/${service.slug}/gresham-or`}
                 className="group rounded-xl border border-gray-200 bg-white p-6 hover:border-[#d85024] hover:shadow-lg transition-all"
               >
                 <h3 className="text-lg font-semibold text-[#092e5e] group-hover:text-[#d85024] transition-colors">
