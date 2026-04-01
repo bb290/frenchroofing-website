@@ -40,7 +40,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-100">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-28 sm:h-36 items-center justify-between">
+        <div className="flex h-16 sm:h-20 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
             <Image
@@ -48,7 +48,7 @@ export default function Header() {
               alt="French Roofing LLC"
               width={320}
               height={107}
-              className="h-24 sm:h-[134px] w-auto"
+              className="h-12 sm:h-[67px] w-auto"
               priority
             />
           </Link>
