@@ -57,7 +57,7 @@ export default function Header() {
               <div key={menu.label} className="relative group">
                 <Link
                   href={menu.href}
-                  className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-[#d85024] transition-colors inline-flex items-center gap-1"
+                  className="px-4 py-2 text-xl font-medium text-gray-700 hover:text-[#d85024] transition-colors inline-flex items-center gap-1"
                 >
                   {menu.label}
                   <svg
@@ -100,7 +100,7 @@ export default function Header() {
           <div className="hidden lg:flex items-center">
             <Link
               href="/estimate"
-              className="rounded-lg bg-[#d85024] px-6 py-2.5 text-sm font-semibold text-white hover:bg-[#c04520] transition-colors"
+              className="rounded-lg bg-[#d85024] px-7 py-3 text-xl font-semibold text-white hover:bg-[#c04520] transition-colors"
             >
               Instant Estimate
             </Link>
