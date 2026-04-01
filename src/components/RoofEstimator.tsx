@@ -70,26 +70,65 @@ const COMPLEXITY = [
   },
 ] as const;
 
+const ADDONS = [
+  {
+    id: "ridge-vents",
+    name: "Ridge Vent Upgrade",
+    description: "Replace standard box vents with a continuous ridge vent system for better attic airflow.",
+    flatPrice: 1200,
+    pros: ["Even airflow across entire roof", "Invisible from the ground — cleaner look", "Reduces moisture & heat buildup in attic", "Extends shingle lifespan"],
+    cons: ["Higher upfront cost vs box vents", "Requires proper soffit intake to work effectively"],
+    recommended: true,
+    tag: "Recommended",
+  },
+  {
+    id: "gutters",
+    name: "New Gutters & Downspouts",
+    description: "Complete gutter system install — seamless aluminum, sized for Oregon rain. We coordinate this through our trusted subcontractor so you don't have to.",
+    flatPrice: 2500,
+    pros: ["One project, one point of contact", "Properly sized for PNW rainfall", "Seamless aluminum — no leaky seams", "Protects foundation, siding & landscaping"],
+    cons: ["Adds to total project cost", "Scheduling depends on subcontractor availability"],
+    recommended: false,
+    tag: "Bundled Service",
+  },
+] as const;
+
 const BASE_PRICE_PER_SQUARE = 500;
 
-type Step = "size" | "material" | "complexity" | "result";
+type Step = "size" | "material" | "complexity" | "addons" | "result";
+const ALL_STEPS: Step[] = ["size", "material", "complexity", "addons", "result"];
+const STEP_LABELS = ["Size", "Material", "Complexity", "Add-Ons", "Estimate"];
 
 export default function RoofEstimator({ compact = false }: { compact?: boolean }) {
   const [step, setStep] = useState<Step>("size");
   const [sizeId, setSizeId] = useState<string | null>(null);
   const [materialId, setMaterialId] = useState<string | null>(null);
   const [complexityId, setComplexityId] = useState<string | null>(null);
+  const [selectedAddons, setSelectedAddons] = useState<Set<string>>(new Set());
 
   const selectedSize = ROOF_SIZES.find((s) => s.id === sizeId);
   const selectedMaterial = MATERIALS.find((m) => m.id === materialId);
   const selectedComplexity = COMPLEXITY.find((c) => c.id === complexityId);
 
+  function toggleAddon(id: string) {
+    setSelectedAddons((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) {
+        next.delete(id);
+      } else {
+        next.add(id);
+      }
+      return next;
+    });
+  }
+
   function getEstimate() {
     if (!selectedSize || !selectedMaterial || !selectedComplexity) return null;
     const base = selectedSize.squares * BASE_PRICE_PER_SQUARE * selectedMaterial.multiplier * selectedComplexity.multiplier;
-    const low = Math.round(base * 0.85 / 100) * 100;
-    const high = Math.round(base * 1.15 / 100) * 100;
-    return { low, high };
+    const addonsTotal = ADDONS.filter((a) => selectedAddons.has(a.id)).reduce((sum, a) => sum + a.flatPrice, 0);
+    const low = Math.round((base * 0.85 + addonsTotal) / 100) * 100;
+    const high = Math.round((base * 1.15 + addonsTotal) / 100) * 100;
+    return { low, high, addonsTotal };
   }
 
   function reset() {
@@ -97,6 +136,7 @@ export default function RoofEstimator({ compact = false }: { compact?: boolean }
     setSizeId(null);
     setMaterialId(null);
     setComplexityId(null);
+    setSelectedAddons(new Set());
   }
 
   const estimate = getEstimate();
@@ -116,16 +156,15 @@ export default function RoofEstimator({ compact = false }: { compact?: boolean }
 
         {/* Progress bar */}
         <div className="flex border-b border-gray-100">
-          {(["size", "material", "complexity", "result"] as Step[]).map((s, i) => {
-            const stepLabels = ["Size", "Material", "Complexity", "Estimate"];
-            const stepIndex = ["size", "material", "complexity", "result"].indexOf(step);
+          {ALL_STEPS.map((s, i) => {
+            const stepIndex = ALL_STEPS.indexOf(step);
             const isActive = i <= stepIndex;
             return (
               <div key={s} className={`flex-1 py-2 text-center text-xs font-medium ${isActive ? "bg-[#ffbd59]/20 text-[#092e5e]" : "text-gray-400"}`}>
                 <span className={`inline-flex items-center justify-center h-5 w-5 rounded-full text-[10px] font-bold mr-1 ${isActive ? "bg-[#d85024] text-white" : "bg-gray-200 text-gray-500"}`}>
                   {i + 1}
                 </span>
-                <span className="hidden sm:inline">{stepLabels[i]}</span>
+                <span className="hidden sm:inline">{STEP_LABELS[i]}</span>
               </div>
             );
           })}
@@ -263,7 +302,7 @@ export default function RoofEstimator({ compact = false }: { compact?: boolean }
                     type="button"
                     onClick={() => {
                       setComplexityId(c.id);
-                      setStep("result");
+                      setStep("addons");
                     }}
                     className={`w-full rounded-xl border-2 p-5 text-left transition-all hover:border-[#d85024] hover:shadow-md ${
                       complexityId === c.id ? "border-[#d85024] bg-[#d85024]/5" : "border-gray-200"
@@ -288,7 +327,116 @@ export default function RoofEstimator({ compact = false }: { compact?: boolean }
             </div>
           )}
 
-          {/* ── Step 4: Result ── */}
+          {/* ── Step 4: Add-Ons ── */}
+          {step === "addons" && (
+            <div>
+              <h4 className="text-lg font-semibold text-[#092e5e] mb-2">
+                Want to add anything to your project?
+              </h4>
+              <p className="text-sm text-gray-500 mb-6">
+                These are popular upgrades our customers bundle with their roof replacement. Select any that interest you — or skip ahead.
+              </p>
+              <div className="space-y-4">
+                {ADDONS.map((addon) => {
+                  const isSelected = selectedAddons.has(addon.id);
+                  return (
+                    <button
+                      key={addon.id}
+                      type="button"
+                      onClick={() => toggleAddon(addon.id)}
+                      className={`w-full rounded-xl border-2 p-5 text-left transition-all hover:shadow-md ${
+                        isSelected
+                          ? "border-[#d85024] bg-[#d85024]/5"
+                          : "border-gray-200 hover:border-[#d85024]"
+                      }`}
+                    >
+                      <div className="flex items-start justify-between gap-4">
+                        <div className="flex-1">
+                          <div className="flex items-center gap-2">
+                            <div
+                              className={`h-5 w-5 rounded flex-shrink-0 flex items-center justify-center border-2 transition-colors ${
+                                isSelected
+                                  ? "bg-[#d85024] border-[#d85024]"
+                                  : "border-gray-300"
+                              }`}
+                            >
+                              {isSelected && (
+                                <svg className="h-3 w-3 text-white" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor">
+                                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                </svg>
+                              )}
+                            </div>
+                            <span className="text-base font-semibold text-[#092e5e]">
+                              {addon.name}
+                            </span>
+                          </div>
+                          <p className="text-sm text-gray-600 mt-2 ml-7">
+                            {addon.description}
+                          </p>
+                        </div>
+                        <div className="flex-shrink-0 text-right">
+                          <span className="block text-base font-bold text-[#092e5e]">
+                            +${addon.flatPrice.toLocaleString()}
+                          </span>
+                          <span className={`inline-block mt-1 rounded-full px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider ${
+                            addon.recommended
+                              ? "bg-[#ffbd59]/20 text-[#d85024]"
+                              : "bg-[#092e5e]/5 text-[#092e5e]"
+                          }`}>
+                            {addon.tag}
+                          </span>
+                        </div>
+                      </div>
+                      <div className="mt-3 ml-7 grid grid-cols-2 gap-3">
+                        <div>
+                          <span className="text-[10px] font-semibold uppercase tracking-wider text-green-700">Pros</span>
+                          <ul className="mt-1 space-y-0.5">
+                            {addon.pros.map((pro) => (
+                              <li key={pro} className="flex items-start gap-1.5 text-xs text-gray-600">
+                                <svg className="h-3 w-3 mt-0.5 flex-shrink-0 text-green-500" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+                                {pro}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                        <div>
+                          <span className="text-[10px] font-semibold uppercase tracking-wider text-red-700">Cons</span>
+                          <ul className="mt-1 space-y-0.5">
+                            {addon.cons.map((con) => (
+                              <li key={con} className="flex items-start gap-1.5 text-xs text-gray-600">
+                                <svg className="h-3 w-3 mt-0.5 flex-shrink-0 text-red-400" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+                                {con}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+              <div className="mt-6 flex items-center justify-between">
+                <button
+                  type="button"
+                  onClick={() => setStep("complexity")}
+                  className="text-sm text-gray-500 hover:text-[#d85024]"
+                >
+                  &larr; Back
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setStep("result")}
+                  className="rounded-lg bg-[#d85024] px-6 py-2.5 text-sm font-semibold text-white hover:bg-[#c04520] transition-colors"
+                >
+                  {selectedAddons.size > 0
+                    ? `See Estimate with ${selectedAddons.size} Add-On${selectedAddons.size > 1 ? "s" : ""}`
+                    : "Skip — See Estimate"}
+                </button>
+              </div>
+            </div>
+          )}
+
+          {/* ── Step 5: Result ── */}
           {step === "result" && estimate && selectedMaterial && selectedSize && selectedComplexity && (
             <div className="text-center">
               <div className="inline-flex items-center rounded-full bg-green-50 px-4 py-1.5 text-sm font-medium text-green-700 mb-4">
@@ -334,6 +482,19 @@ export default function RoofEstimator({ compact = false }: { compact?: boolean }
                     </span>
                   </div>
                 </div>
+                {selectedAddons.size > 0 && (
+                  <div className="mt-4 pt-3 border-t border-gray-200">
+                    <span className="block text-xs text-gray-500 mb-1">Add-Ons</span>
+                    <div className="space-y-1">
+                      {ADDONS.filter((a) => selectedAddons.has(a.id)).map((a) => (
+                        <div key={a.id} className="flex items-center justify-between text-sm">
+                          <span className="font-medium text-[#3e3d3b]">{a.name}</span>
+                          <span className="text-xs text-gray-500">+${a.flatPrice.toLocaleString()}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
 
               <div className="rounded-xl bg-[#ffbd59]/10 border border-[#ffbd59]/30 p-4 text-sm text-[#3e3d3b] mb-6">
