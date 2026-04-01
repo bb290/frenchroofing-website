@@ -56,9 +56,9 @@ const faqs = [
       "We primarily install CertainTeed shingles — we're a CertainTeed Certified contractor, which means our installations meet the highest manufacturer standards. We also work with other premium brands based on your needs and budget.",
   },
   {
-    question: "Do you handle permits and inspections?",
+    question: "Does a roof replacement require a permit in Oregon?",
     answer:
-      "Yes. We pull all required permits for Clackamas County and schedule inspections as part of every replacement project. It's all included — you don't have to worry about the paperwork.",
+      "Roofing does not require permits in Oregon. That means less paperwork and no delays — we can get your project started and completed faster. We still follow all manufacturer specs and industry best practices on every install.",
   },
   {
     question: "Does French Roofing offer a warranty on roof replacements?",
