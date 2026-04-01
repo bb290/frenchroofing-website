@@ -13,6 +13,21 @@
 # testing
 /coverage
 
+# raw image/video assets (too large for git — kept local only)
+/assets/images/
+/assets/*.pdf
+*.HEIC
+*.MOV
+*.mov
+*.mp4
+*.JPEG
+*.jpeg
+*.JPG
+*.jpg
+*.png
+!public/**
+!assets/logo.png
+
 # next.js
 /.next/
 /out/
