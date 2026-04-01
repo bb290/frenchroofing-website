@@ -13,15 +13,15 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-100">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-20 items-center justify-between">
+        <div className="flex h-44 sm:h-60 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex-shrink-0">
+          <Link href="/" className="flex-shrink-0 flex-1 lg:flex-none">
             <Image
               src="/images/logo.png"
               alt="French Roofing LLC"
-              width={180}
-              height={60}
-              className="h-14 w-auto"
+              width={320}
+              height={107}
+              className="h-40 sm:h-56 w-auto"
               priority
             />
           </Link>
