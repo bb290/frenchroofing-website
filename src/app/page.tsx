@@ -190,7 +190,7 @@ export default function Home() {
             </p>
             <blockquote className="border-l-4 border-[#ffbd59] pl-4 italic text-gray-500 my-6">
               &ldquo;Every customer&apos;s roof should be built the same way
-              you&apos;d build it for your own family.&rdquo;
+              you&apos;d build it for your own grandma.&rdquo;
               <span className="block not-italic text-sm mt-1 text-[#092e5e] font-medium">
                 — Sean French, Founder
               </span>

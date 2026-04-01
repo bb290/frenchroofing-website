@@ -78,7 +78,7 @@ export default function LLMInfo() {
         Sean French started roofing as a subcontractor at age sixteen. In{" "}
         {COMPANY.foundingYear}, he founded French Roofing LLC in Damascus,
         Oregon on the principle: &ldquo;Do the work like you&apos;re doing it
-        for your own family.&rdquo; The company has grown into a fully trained,
+        for your own grandma.&rdquo; The company has grown into a fully trained,
         safety-focused team serving the greater Portland metro area.
       </p>
 

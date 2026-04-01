@@ -76,9 +76,9 @@ French Roofing LLC
 ### How It Started
 Sean French grew up on roofs. He started as a subcontractor at sixteen, learning the trade the way most real craftspeople do; By showing up early, listening more than talking, and doing the unglamorous work with pride.
 
-In 2014, he started French Roofing on the simple idea: Do the work like you're doing it for your own family.
+In 2014, he started French Roofing on the simple idea: Do the work like you're doing it for your own grandma.
 
-"I've just believe every customer's roof should be built the same way you'd build it for your own family," Sean says.
+"I've just believe every customer's roof should be built the same way you'd build it for your own grandma," Sean says.
 
 From then to now: Sean on a ladder, equipped with a toolbelt and a dream has become a fully trained, safety-focused team committed to high-quality roofing solutions.
 

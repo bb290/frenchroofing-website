@@ -78,7 +78,7 @@ export default function AboutPage() {
             <p className="text-gray-600 mb-4">
               In 2014, he started French Roofing on a simple idea:{" "}
               <strong className="text-[#092e5e]">
-                Do the work like you&apos;re doing it for your own family.
+                Do the work like you&apos;re doing it for your own grandma.
               </strong>
             </p>
             <blockquote className="border-l-4 border-[#ffbd59] pl-4 italic text-gray-500 my-6">
