@@ -43,10 +43,10 @@ const MATERIALS = [
 ] as const;
 
 const ROOF_SIZES = [
-  { id: "small", label: "Small", range: "Under 1,500 sq ft", squares: 15 },
-  { id: "medium", label: "Medium", range: "1,500 – 2,500 sq ft", squares: 25 },
-  { id: "large", label: "Large", range: "2,500 – 3,500 sq ft", squares: 35 },
-  { id: "xl", label: "Extra Large", range: "3,500+ sq ft", squares: 45 },
+  { id: "small", label: "Small Roof", range: "10 – 15 squares", squares: 12, hint: "Typical for smaller ranch homes, cottages, or detached garages" },
+  { id: "medium", label: "Medium Roof", range: "15 – 25 squares", squares: 20, hint: "Most common — average single-story or smaller two-story homes" },
+  { id: "large", label: "Large Roof", range: "25 – 35 squares", squares: 30, hint: "Larger single-story, split-level, or mid-size two-story homes" },
+  { id: "xl", label: "Extra Large Roof", range: "35+ squares", squares: 40, hint: "Large two-story homes, complex rooflines, or multi-section roofs" },
 ] as const;
 
 const COMPLEXITY = [
@@ -175,12 +175,15 @@ export default function RoofEstimator({ compact = false }: { compact?: boolean }
           {step === "size" && (
             <div>
               <h4 className="text-lg font-semibold text-[#092e5e] mb-2">
-                How big is your home?
+                How big is your roof?
               </h4>
-              <p className="text-sm text-gray-500 mb-6">
-                Pick the closest match — don&apos;t worry about being exact, that&apos;s what the full assessment is for.
+              <p className="text-sm text-gray-500 mb-2">
+                Roofs are measured in <strong>squares</strong> (1 square = 10&apos; x 10&apos; = 100 sq ft). Pick the closest match — don&apos;t worry about being exact, that&apos;s what the full assessment is for.
               </p>
-              <div className="grid grid-cols-2 gap-3">
+              <p className="text-xs text-gray-400 mb-6">
+                Not sure how many squares your roof is? Most homes fall in the 15–25 range. We&apos;ll measure it precisely during your free assessment.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {ROOF_SIZES.map((size) => (
                   <button
                     key={size.id}
@@ -196,8 +199,11 @@ export default function RoofEstimator({ compact = false }: { compact?: boolean }
                     <span className="block text-base font-semibold text-[#092e5e]">
                       {size.label}
                     </span>
-                    <span className="block text-xs text-gray-500 mt-1">
+                    <span className="block text-sm font-medium text-[#d85024] mt-0.5">
                       {size.range}
+                    </span>
+                    <span className="block text-xs text-gray-500 mt-1">
+                      {size.hint}
                     </span>
                   </button>
                 ))}
@@ -458,7 +464,7 @@ export default function RoofEstimator({ compact = false }: { compact?: boolean }
                 </h5>
                 <div className="grid grid-cols-3 gap-4 text-sm">
                   <div>
-                    <span className="block text-xs text-gray-500">Home Size</span>
+                    <span className="block text-xs text-gray-500">Roof Size</span>
                     <span className="font-medium text-[#3e3d3b]">
                       {selectedSize.label}
                     </span>
