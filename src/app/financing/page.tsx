@@ -16,7 +16,7 @@ const steps = [
     number: "1",
     title: "Apply in Minutes",
     description:
-      "Fill out a quick application through our Enhancify partner portal. It takes just a few minutes and can be done from your phone.",
+      "Fill out a quick application at enhancify.com/french-roofing. It takes just a few minutes and can be done from your phone.",
   },
   {
     number: "2",
@@ -62,6 +62,11 @@ const financingFAQs = [
     question: "What if I'm not approved?",
     answer:
       "If you're not approved through Enhancify, we're happy to discuss other options. We believe every homeowner deserves a solid roof, and we'll work with you to find a path forward.",
+  },
+  {
+    question: "How do I apply for financing?",
+    answer:
+      "You can apply directly through our Enhancify partner page at enhancify.com/french-roofing. The application takes just a few minutes and starts with a soft credit pull that won't affect your score. Once you see your options, pick the plan that works for you and we'll get your project scheduled.",
   },
 ];
 
@@ -177,12 +182,20 @@ export default function FinancingPage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-[#092e5e] mb-4">
             Powered by Enhancify
           </h2>
-          <p className="text-gray-600 max-w-xl mx-auto">
+          <p className="text-gray-600 max-w-xl mx-auto mb-6">
             Enhancify specializes in home improvement financing and works with
             top lenders to offer competitive rates. French Roofing chose
             Enhancify because they make the process simple and transparent — just
             like we do with roofing.
           </p>
+          <a
+            href="https://www.enhancify.com/french-roofing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-lg bg-[#ffbd59] px-8 py-4 text-lg font-semibold text-[#092e5e] hover:bg-[#f0ad40] transition-colors"
+          >
+            Apply for Financing
+          </a>
         </div>
       </section>
 
