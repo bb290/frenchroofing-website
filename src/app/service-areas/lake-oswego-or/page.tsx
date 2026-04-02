@@ -21,7 +21,7 @@ const faqs = [
   {
     question: "Who is the best roofing contractor in Lake Oswego, OR?",
     answer:
-      "French Roofing LLC has been serving Lake Oswego and the greater Portland metro since 2014. We're based in Damascus — about 25 minutes from Lake Oswego — and we bring CertainTeed Certified quality to every project. We're licensed (CCB #203933), insured, and known for clean job sites, clear communication, and craftsmanship that meets the high standards Lake Oswego homeowners expect.",
+      "French Roofing LLC has been serving Lake Oswego and the greater Portland metro since 2014. We're based in Damascus - about 25 minutes from Lake Oswego - and we bring CertainTeed Certified quality to every project. We're licensed (CCB #203933), insured, and known for clean job sites, clear communication, and craftsmanship that meets the high standards Lake Oswego homeowners expect.",
   },
   {
     question: "Does French Roofing work with HOAs in Lake Oswego?",
@@ -96,7 +96,7 @@ export default function LakeOswegoPage() {
           </h2>
           <p className="text-gray-600 mb-4">
             Lake Oswego is known for its beautiful homes, well-kept
-            neighborhoods, and high standards — and your roof should live up to
+            neighborhoods, and high standards - and your roof should live up to
             all of that. French Roofing is based in Damascus, about 25 minutes
             east, and we&apos;ve been providing honest, high-quality roofing
             services across the Portland metro since 2014.
@@ -106,7 +106,7 @@ export default function LakeOswegoPage() {
             performance. That&apos;s why we take extra care with material
             selection, clean job sites, and attention to detail. Sean French
             built this company on the idea that every roof should be done like
-            you&apos;re doing it for your own grandma — and in Lake Oswego, that
+            you&apos;re doing it for your own grandma - and in Lake Oswego, that
             means grandma&apos;s roof is going to look phenomenal.
           </p>
         </div>
@@ -148,7 +148,7 @@ export default function LakeOswegoPage() {
           </h2>
           <p className="text-gray-600 mb-4">
             Lake Oswego homes are often larger and more architecturally detailed
-            than average — multi-level rooflines, steeper pitches, dormers, and
+            than average - multi-level rooflines, steeper pitches, dormers, and
             premium materials are common. That means roofing projects here
             require a bit more planning and precision. Many homes in the First
             Addition, Lake Grove, and Lakewood neighborhoods were built between
@@ -159,14 +159,14 @@ export default function LakeOswegoPage() {
           <p className="text-gray-600">
             Lake Oswego&apos;s tree-lined streets are gorgeous, but all that
             canopy means constant leaf and needle debris on your roof. Moss is a
-            year-round concern — especially on north-facing slopes and shaded
+            year-round concern - especially on north-facing slopes and shaded
             sections where moisture lingers. Many Lake Oswego homeowners also
             need to consider HOA requirements when choosing roofing materials and
             colors. We work with homeowners and HOA boards to ensure every
             project meets community guidelines while providing top-tier
             protection against Oregon&apos;s relentless rain, wind, and seasonal
             storms. A clean, well-maintained roof isn&apos;t just practical in
-            Lake Oswego — it&apos;s part of what makes the neighborhood look its
+            Lake Oswego - it&apos;s part of what makes the neighborhood look its
             best.
           </p>
         </div>

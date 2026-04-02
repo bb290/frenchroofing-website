@@ -18,11 +18,11 @@ const projects = [
       "Full tear-off and replacement on a home with years of patching and tarp repairs. New architectural shingles, clean flashing, and proper ventilation.",
     before: {
       src: "/images/cora-st-before.webp",
-      alt: "Worn roof with patched areas and blue tarp on Cora St, Damascus OR — before French Roofing replacement",
+      alt: "Worn roof with patched areas and blue tarp on Cora St, Damascus OR - before French Roofing replacement",
     },
     after: {
       src: "/images/cora-st-after.webp",
-      alt: "Brand new shingle roof with clean flashing and vents on Cora St, Damascus OR — after French Roofing replacement",
+      alt: "Brand new shingle roof with clean flashing and vents on Cora St, Damascus OR - after French Roofing replacement",
     },
   },
   {
@@ -31,11 +31,11 @@ const projects = [
       "Aging three-tab shingles swapped for durable architectural shingles. New ridge cap, clean valleys, and a roof built to handle Oregon weather.",
     before: {
       src: "/images/house-before.webp",
-      alt: "Aging residential roof with worn shingles — before French Roofing replacement",
+      alt: "Aging residential roof with worn shingles - before French Roofing replacement",
     },
     after: {
       src: "/images/house-after.webp",
-      alt: "Freshly installed residential roof with new architectural shingles — after French Roofing replacement",
+      alt: "Freshly installed residential roof with new architectural shingles - after French Roofing replacement",
     },
   },
 ];
@@ -44,7 +44,7 @@ const actionShots = [
   {
     src: "/images/workers-tearoff.webp",
     alt: "French Roofing crew performing tear-off on a residential roof",
-    caption: "Tear-off in progress — clean and safe",
+    caption: "Tear-off in progress - clean and safe",
   },
   {
     src: "/images/install-shingles.webp",
@@ -59,7 +59,7 @@ const actionShots = [
   {
     src: "/images/worker-ridge.webp",
     alt: "French Roofing worker installing ridge cap on a finished roof",
-    caption: "Ridge cap — the finishing touch",
+    caption: "Ridge cap - the finishing touch",
   },
 ];
 

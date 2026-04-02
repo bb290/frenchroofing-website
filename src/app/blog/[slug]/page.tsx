@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${title} | ${COMPANY.name} Blog`,
-    description: `Read about ${title.toLowerCase()} from French Roofing LLC — your trusted roofing experts in Damascus, OR.`,
+    description: `Read about ${title.toLowerCase()} from French Roofing LLC - your trusted roofing experts in Damascus, OR.`,
     alternates: { canonical: `${COMPANY.url}/blog/${slug}` },
   };
 }
@@ -73,7 +73,7 @@ export default async function BlogPostPage({ params }: Props) {
       {/* ── CTA ── */}
       <CTABanner
         headline="Got a Roofing Question?"
-        description="Skip the Google rabbit hole — just ask us directly. We're happy to help."
+        description="Skip the Google rabbit hole - just ask us directly. We're happy to help."
       />
     </>
   );

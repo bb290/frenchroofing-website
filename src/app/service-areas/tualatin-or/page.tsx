@@ -21,17 +21,17 @@ const faqs = [
   {
     question: "Who is the best roofing contractor in Tualatin, OR?",
     answer:
-      "French Roofing LLC has been serving the greater Portland metro — including Tualatin — since 2014. We're based in Damascus, about 30 minutes east, and we bring the same quality, honesty, and care to every Tualatin job. We're licensed (CCB #203933), insured, and CertainTeed Certified.",
+      "French Roofing LLC has been serving the greater Portland metro - including Tualatin - since 2014. We're based in Damascus, about 30 minutes east, and we bring the same quality, honesty, and care to every Tualatin job. We're licensed (CCB #203933), insured, and CertainTeed Certified.",
   },
   {
     question: "Are 1990s and 2000s roofs in Tualatin due for replacement?",
     answer:
-      "Many of them are getting close. Standard architectural shingles installed in the 1990s have a 25- to 30-year lifespan, which means homes built during Tualatin's big growth period are entering the replacement window now. If your roof is 20+ years old, a free inspection from French Roofing can tell you exactly where things stand — and whether you have a few more years or need to plan now.",
+      "Many of them are getting close. Standard architectural shingles installed in the 1990s have a 25- to 30-year lifespan, which means homes built during Tualatin's big growth period are entering the replacement window now. If your roof is 20+ years old, a free inspection from French Roofing can tell you exactly where things stand - and whether you have a few more years or need to plan now.",
   },
   {
     question: "Does French Roofing offer free roof inspections in Tualatin?",
     answer:
-      "Yes! We offer free roof assessments for Tualatin homeowners. We'll inspect your roof top to bottom, give you an honest evaluation, and let you know your options. No pressure, no gimmicks — just straight talk about what your roof needs.",
+      "Yes! We offer free roof assessments for Tualatin homeowners. We'll inspect your roof top to bottom, give you an honest evaluation, and let you know your options. No pressure, no gimmicks - just straight talk about what your roof needs.",
   },
   {
     question: "How does Tualatin's flat terrain affect roofing?",
@@ -94,7 +94,7 @@ export default function TualatinPage() {
             Keeping Tualatin Families Covered
           </h2>
           <p className="text-gray-600 mb-4">
-            Tualatin is one of those communities that just feels like home —
+            Tualatin is one of those communities that just feels like home -
             family-friendly neighborhoods, good schools, and neighbors who
             actually wave at each other. French Roofing is based in Damascus,
             about 30 minutes east on a good traffic day, and we&apos;ve been
@@ -154,14 +154,14 @@ export default function TualatinPage() {
             period. If your Tualatin home was built during that era and still has
             its original roof, it&apos;s worth getting a professional
             inspection. You might have several good years left, or you might be
-            closer to replacement than you think — either way, it&apos;s better
+            closer to replacement than you think - either way, it&apos;s better
             to know now.
           </p>
           <p className="text-gray-600">
             Tualatin&apos;s relatively flat terrain and proximity to the
             Tualatin River create conditions that keep roofs damp longer than
             you&apos;d expect. Oregon&apos;s famous drizzle doesn&apos;t always
-            come as dramatic storms — it&apos;s the months of slow, steady
+            come as dramatic storms - it&apos;s the months of slow, steady
             moisture that really wear on roofing materials. Moss tends to creep
             in on shaded sections, and even homes with good sun exposure deal
             with algae streaking over time. The good news is that Tualatin&apos;s

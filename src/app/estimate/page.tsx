@@ -6,14 +6,14 @@ import CTABanner from "@/components/CTABanner";
 export const metadata: Metadata = {
   title: "Instant Roof Estimate | Free Online Calculator",
   description:
-    "Get a ballpark roof replacement cost in 60 seconds. Compare materials, see pros and cons, and understand pricing — no contact info required. French Roofing LLC, Damascus, OR.",
+    "Get a ballpark roof replacement cost in 60 seconds. Compare materials, see pros and cons, and understand pricing - no contact info required. French Roofing LLC, Damascus, OR.",
 };
 
 const estimateFAQs = [
   {
     question: "How accurate is the online roof estimate?",
     answer:
-      "Our online estimator gives you a ballpark range based on home size, material choice, and roof complexity. Actual pricing depends on tear-off layers, decking condition, flashing, vents, and other on-site factors. Think of it as a starting point — your free in-person assessment will give you an exact number.",
+      "Our online estimator gives you a ballpark range based on home size, material choice, and roof complexity. Actual pricing depends on tear-off layers, decking condition, flashing, vents, and other on-site factors. Think of it as a starting point - your free in-person assessment will give you an exact number.",
   },
   {
     question: "Why does roofing material matter for price?",
@@ -54,7 +54,7 @@ export default function EstimatePage() {
           </h1>
           <p className="mt-4 text-lg text-gray-300 max-w-xl mx-auto">
             Compare materials, understand the trade-offs, and see a ballpark
-            price — no contact info required, no strings attached.
+            price - no contact info required, no strings attached.
           </p>
         </div>
       </section>
@@ -87,7 +87,7 @@ export default function EstimatePage() {
 
       <CTABanner
         headline="Want an Exact Number?"
-        description="Our free on-site assessment covers everything the calculator can't — decking, flashing, vents, tear-off layers, and more. No obligation."
+        description="Our free on-site assessment covers everything the calculator can't - decking, flashing, vents, tear-off layers, and more. No obligation."
         dark
       />
     </>

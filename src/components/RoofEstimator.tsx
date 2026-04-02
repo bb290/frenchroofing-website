@@ -10,7 +10,7 @@ const MATERIALS = [
     multiplier: 1.0,
     warranty: "Lifetime limited",
     pros: ["Most popular choice", "Dimensional architectural look", "Strong wind resistance (up to 130 mph)", "Wide color selection", "StreakFighter algae resistance"],
-    cons: ["Standard tier — fewer premium features"],
+    cons: ["Standard tier - fewer premium features"],
     description: "Our most-installed shingle. Great balance of durability, curb appeal, and value. Built for Oregon's rain and wind.",
     tag: "Good",
   },
@@ -19,7 +19,7 @@ const MATERIALS = [
     name: "CertainTeed Landmark Pro",
     multiplier: 1.2,
     warranty: "Lifetime limited + extended",
-    pros: ["Thicker, more dimensional profile", "Max Def colors — richer look", "Enhanced wind warranty (up to 130 mph)", "Longer-lasting than standard Landmark", "StreakFighter algae resistance"],
+    pros: ["Thicker, more dimensional profile", "Max Def colors - richer look", "Enhanced wind warranty (up to 130 mph)", "Longer-lasting than standard Landmark", "StreakFighter algae resistance"],
     cons: ["Moderate price increase over Landmark"],
     description: "Everything Landmark offers, plus a thicker profile and richer color depth. The sweet spot for homeowners who want a step up.",
     tag: "Better",
@@ -30,7 +30,7 @@ const MATERIALS = [
     multiplier: 1.5,
     warranty: "Lifetime limited + premium",
     pros: ["Luxury wood-shake look without the maintenance", "Maximum curb appeal", "Best CertainTeed warranty tier", "Superior impact resistance (Class 4)", "Heavyweight construction"],
-    cons: ["Highest upfront cost", "Heavier — ideal for sturdy structures"],
+    cons: ["Highest upfront cost", "Heavier - ideal for sturdy structures"],
     description: "The top of the line. Looks like natural wood shake but lasts decades longer. For homeowners who want the absolute best on their roof.",
     tag: "Best",
   },
@@ -38,7 +38,7 @@ const MATERIALS = [
 
 const ROOF_SIZES = [
   { id: "small", label: "Small Roof", range: "10 – 15 squares", squares: 12, hint: "Typical for smaller ranch homes, cottages, or detached garages" },
-  { id: "medium", label: "Medium Roof", range: "15 – 25 squares", squares: 20, hint: "Most common — average single-story or smaller two-story homes" },
+  { id: "medium", label: "Medium Roof", range: "15 – 25 squares", squares: 20, hint: "Most common - average single-story or smaller two-story homes" },
   { id: "large", label: "Large Roof", range: "25 – 35 squares", squares: 30, hint: "Larger single-story, split-level, or mid-size two-story homes" },
   { id: "xl", label: "Extra Large Roof", range: "35+ squares", squares: 40, hint: "Large two-story homes, complex rooflines, or multi-section roofs" },
 ] as const;
@@ -70,7 +70,7 @@ const ADDONS = [
     name: "Ridge Vent Upgrade",
     description: "Replace standard box vents with a continuous ridge vent system for better attic airflow.",
     flatPrice: 1200,
-    pros: ["Even airflow across entire roof", "Invisible from the ground — cleaner look", "Reduces moisture & heat buildup in attic", "Extends shingle lifespan"],
+    pros: ["Even airflow across entire roof", "Invisible from the ground - cleaner look", "Reduces moisture & heat buildup in attic", "Extends shingle lifespan"],
     cons: ["Higher upfront cost vs box vents", "Requires proper soffit intake to work effectively"],
     recommended: true,
     tag: "Recommended",
@@ -78,9 +78,9 @@ const ADDONS = [
   {
     id: "gutters",
     name: "New Gutters & Downspouts",
-    description: "Complete gutter system install — seamless aluminum, sized for Oregon rain. We coordinate this through our trusted subcontractor so you don't have to.",
+    description: "Complete gutter system install - seamless aluminum, sized for Oregon rain. We coordinate this through our trusted subcontractor so you don't have to.",
     flatPrice: 2500,
-    pros: ["One project, one point of contact", "Properly sized for PNW rainfall", "Seamless aluminum — no leaky seams", "Protects foundation, siding & landscaping"],
+    pros: ["One project, one point of contact", "Properly sized for PNW rainfall", "Seamless aluminum - no leaky seams", "Protects foundation, siding & landscaping"],
     cons: ["Adds to total project cost", "Scheduling depends on subcontractor availability"],
     recommended: false,
     tag: "Bundled Service",
@@ -144,7 +144,7 @@ export default function RoofEstimator({ compact = false }: { compact?: boolean }
             Instant Roof Estimate
           </h3>
           <p className="text-sm text-gray-300 mt-1">
-            Get a ballpark price in 60 seconds — no contact info required
+            Get a ballpark price in 60 seconds - no contact info required
           </p>
         </div>
 
@@ -172,7 +172,7 @@ export default function RoofEstimator({ compact = false }: { compact?: boolean }
                 How big is your roof?
               </h4>
               <p className="text-sm text-gray-500 mb-2">
-                Roofs are measured in <strong>squares</strong> (1 square = 10&apos; x 10&apos; = 100 sq ft). Pick the closest match — don&apos;t worry about being exact, that&apos;s what the full assessment is for.
+                Roofs are measured in <strong>squares</strong> (1 square = 10&apos; x 10&apos; = 100 sq ft). Pick the closest match - don&apos;t worry about being exact, that&apos;s what the full assessment is for.
               </p>
               <p className="text-xs text-gray-400 mb-6">
                 Not sure how many squares your roof is? Most homes fall in the 15–25 range. We&apos;ll measure it precisely during your free assessment.
@@ -334,7 +334,7 @@ export default function RoofEstimator({ compact = false }: { compact?: boolean }
                 Want to add anything to your project?
               </h4>
               <p className="text-sm text-gray-500 mb-6">
-                These are popular upgrades our customers bundle with their roof replacement. Select any that interest you — or skip ahead.
+                These are popular upgrades our customers bundle with their roof replacement. Select any that interest you - or skip ahead.
               </p>
               <div className="space-y-4">
                 {ADDONS.map((addon) => {
@@ -430,7 +430,7 @@ export default function RoofEstimator({ compact = false }: { compact?: boolean }
                 >
                   {selectedAddons.size > 0
                     ? `See Estimate with ${selectedAddons.size} Add-On${selectedAddons.size > 1 ? "s" : ""}`
-                    : "Skip — See Estimate"}
+                    : "Skip - See Estimate"}
                 </button>
               </div>
             </div>
@@ -501,7 +501,7 @@ export default function RoofEstimator({ compact = false }: { compact?: boolean }
                 <strong className="text-[#092e5e]">This is a ballpark estimate.</strong>{" "}
                 Your actual price depends on tear-off layers, decking condition,
                 flashing, vents, and other factors we can only assess on-site.
-                The good news? Our assessment is completely free — no obligation,
+                The good news? Our assessment is completely free - no obligation,
                 no pressure.
               </div>
 

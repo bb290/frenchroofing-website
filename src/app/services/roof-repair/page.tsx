@@ -15,7 +15,7 @@ const steps = [
   {
     title: "Inspection & Diagnosis",
     description:
-      "We climb up, take photos, and figure out exactly what's going on. No guesswork — we show you what we find and explain your options in plain English.",
+      "We climb up, take photos, and figure out exactly what's going on. No guesswork - we show you what we find and explain your options in plain English.",
   },
   {
     title: "Honest Recommendation",
@@ -25,7 +25,7 @@ const steps = [
   {
     title: "Targeted Repair",
     description:
-      "Our crew addresses the specific issue — whether it's replacing damaged shingles, sealing cracked flashing, fixing a leak, or repairing storm damage. We use quality materials that match your existing roof.",
+      "Our crew addresses the specific issue - whether it's replacing damaged shingles, sealing cracked flashing, fixing a leak, or repairing storm damage. We use quality materials that match your existing roof.",
   },
   {
     title: "Quality Check & Cleanup",
@@ -38,12 +38,12 @@ const faqs = [
   {
     question: "How do I know if my roof needs repair or full replacement?",
     answer:
-      "If your roof is under 15 years old with isolated damage — a few missing shingles, a small leak, cracked flashing — repair is usually the smart move. If it's 20+ years old with widespread issues, a replacement is often more cost-effective. We'll give you an honest recommendation during your free assessment.",
+      "If your roof is under 15 years old with isolated damage - a few missing shingles, a small leak, cracked flashing - repair is usually the smart move. If it's 20+ years old with widespread issues, a replacement is often more cost-effective. We'll give you an honest recommendation during your free assessment.",
   },
   {
     question: "How quickly can you fix a roof leak in the Portland metro area?",
     answer:
-      "For active leaks and emergency situations, we prioritize getting to you as fast as possible — often within a day or two. For non-emergency repairs, we typically schedule within the week. Oregon weather can be unpredictable, so if your roof is leaking, don't wait — book online and we'll get to you fast.",
+      "For active leaks and emergency situations, we prioritize getting to you as fast as possible - often within a day or two. For non-emergency repairs, we typically schedule within the week. Oregon weather can be unpredictable, so if your roof is leaking, don't wait - book online and we'll get to you fast.",
   },
   {
     question: "Do you repair storm damage and work with insurance?",
@@ -53,7 +53,7 @@ const faqs = [
   {
     question: "How much does a roof repair cost?",
     answer:
-      "Roof repairs can range from a few hundred dollars for minor fixes to several thousand for more extensive damage. It depends on the type and scope of the issue. We provide a clear, written estimate before any work begins — and financing through Enhancify is available for larger repairs.",
+      "Roof repairs can range from a few hundred dollars for minor fixes to several thousand for more extensive damage. It depends on the type and scope of the issue. We provide a clear, written estimate before any work begins - and financing through Enhancify is available for larger repairs.",
   },
   {
     question: "Is it worth repairing an old roof?",
@@ -90,10 +90,10 @@ export default function RoofRepairPage() {
               Roof Repair
             </p>
             <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-6">
-              Roof Repair — Portland Metro
+              Roof Repair - Portland Metro
             </h1>
             <p className="text-lg text-gray-300 max-w-xl">
-              Leaks, storm damage, missing shingles, cracked flashing — small
+              Leaks, storm damage, missing shingles, cracked flashing - small
               problems turn into big ones fast in Oregon&apos;s climate. We get
               it fixed right so you can stop worrying about what&apos;s
               happening overhead.
@@ -130,7 +130,7 @@ export default function RoofRepairPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { title: "Leak Repair", desc: "Tracking down and sealing leaks before they cause interior damage, mold, or rot." },
-              { title: "Storm Damage", desc: "Wind-lifted shingles, fallen branches, hail damage — we handle it all and help with insurance documentation." },
+              { title: "Storm Damage", desc: "Wind-lifted shingles, fallen branches, hail damage - we handle it all and help with insurance documentation." },
               { title: "Cracked or Missing Flashing", desc: "Flashing around chimneys, vents, and valleys is a common failure point. We replace it with quality materials." },
               { title: "Missing or Damaged Shingles", desc: "Whether it's a handful or a larger section, we match and replace shingles to restore protection." },
               { title: "Gutter & Edge Repair", desc: "Damaged drip edge, sagging gutters, and fascia issues that let water get where it shouldn't." },
@@ -199,17 +199,17 @@ export default function RoofRepairPage() {
             <p className="text-gray-600 mb-6">
               A lot of contractors will patch a problem just to collect a check.
               That&apos;s not how we operate. We diagnose the real issue, fix it
-              properly, and tell you the truth about what your roof needs — even
+              properly, and tell you the truth about what your roof needs - even
               if the answer is &quot;you&apos;re fine for now.&quot;
             </p>
             <ul className="space-y-4">
               {[
-                "Honest diagnosis — we won't upsell you on a replacement if a repair will do",
+                "Honest diagnosis - we won't upsell you on a replacement if a repair will do",
                 "Licensed, insured & bonded (CCB #203933)",
-                "CertainTeed Certified — quality materials and proper technique",
+                "CertainTeed Certified - quality materials and proper technique",
                 "Serving 18+ communities across the Portland metro since 2014",
                 "Financing through Enhancify for larger repair projects",
-                "Clean, documented work — photos before, during, and after",
+                "Clean, documented work - photos before, during, and after",
               ].map((item, i) => (
                 <li key={i} className="flex gap-3">
                   <svg

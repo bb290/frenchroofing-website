@@ -16,12 +16,12 @@ const faqs = [
   {
     question: "How much does roof replacement cost in Boring, OR?",
     answer:
-      "Roof replacement costs in Boring typically range from $8,000 to $25,000+ depending on roof size, pitch, materials, and complexity. Many Boring properties have larger rooflines due to bigger lots and farm-style homes, which can affect the total. French Roofing provides free, no-obligation assessments so you get an accurate estimate — not a ballpark guess. We also offer financing through Enhancify with 0% interest options.",
+      "Roof replacement costs in Boring typically range from $8,000 to $25,000+ depending on roof size, pitch, materials, and complexity. Many Boring properties have larger rooflines due to bigger lots and farm-style homes, which can affect the total. French Roofing provides free, no-obligation assessments so you get an accurate estimate - not a ballpark guess. We also offer financing through Enhancify with 0% interest options.",
   },
   {
     question: "Who is the best roofing contractor in Boring, OR?",
     answer:
-      "French Roofing LLC serves Boring from our home base in Damascus, OR — practically right next door, about 10 minutes away. We've been in business since 2014, we're licensed (CCB #203933), insured, and CertainTeed Certified. Boring is one of our closest service areas, and many of our crew members drive through here every day.",
+      "French Roofing LLC serves Boring from our home base in Damascus, OR - practically right next door, about 10 minutes away. We've been in business since 2014, we're licensed (CCB #203933), insured, and CertainTeed Certified. Boring is one of our closest service areas, and many of our crew members drive through here every day.",
   },
   {
     question: "How long does a roof replacement take in Boring?",
@@ -31,7 +31,7 @@ const faqs = [
   {
     question: "Does French Roofing offer free roof inspections in Boring?",
     answer:
-      "Yes! We offer free roof assessments for Boring homeowners. Our team will inspect your roof, give you an honest evaluation, and recommend the best course of action — whether that's a repair, maintenance, or a full replacement. No pressure, no gimmicks.",
+      "Yes! We offer free roof assessments for Boring homeowners. Our team will inspect your roof, give you an honest evaluation, and recommend the best course of action - whether that's a repair, maintenance, or a full replacement. No pressure, no gimmicks.",
   },
   {
     question: "Can French Roofing work on farm buildings and large properties in Boring?",
@@ -63,7 +63,7 @@ export default function BoringPage() {
           </h1>
           <p className="mt-6 text-lg text-gray-300 max-w-2xl mx-auto">
             The name might be Boring, but our roofing work is anything but.
-            French Roofing serves Boring from right next door in Damascus — just
+            French Roofing serves Boring from right next door in Damascus - just
             about 10 minutes away. Quality craftsmanship for your home, shop, or
             property.
           </p>
@@ -95,7 +95,7 @@ export default function BoringPage() {
             Your Next-Door Roofers
           </h2>
           <p className="text-gray-600 mb-4">
-            Boring and Damascus are practically neighbors — our office on SE Van
+            Boring and Damascus are practically neighbors - our office on SE Van
             Zyl Dr is only about 10 minutes from the heart of Boring. French
             Roofing LLC was founded in 2014 by Sean French, and this stretch of
             unincorporated Clackamas County is our home turf. We know the roads,
@@ -104,7 +104,7 @@ export default function BoringPage() {
           <p className="text-gray-600">
             Whether you&apos;ve got a three-bedroom ranch or a property with a
             house, shop, and barn that all need attention, we treat every project
-            the same — with honest communication, quality materials, and
+            the same - with honest communication, quality materials, and
             workmanship we stand behind. Boring homeowners deserve a roofing
             contractor who shows up when they say they will, and that&apos;s us.
           </p>
@@ -149,8 +149,8 @@ export default function BoringPage() {
             Boring has a rural, spread-out feel with larger lots, mature trees,
             and a good mix of farm properties and residential homes. That means
             more roof surface area exposed to Oregon&apos;s rain, wind, and
-            debris. Properties with multiple structures — houses, detached
-            garages, shops, barns — often need a roofing partner who can handle
+            debris. Properties with multiple structures - houses, detached
+            garages, shops, barns - often need a roofing partner who can handle
             the whole picture, not just one building at a time.
           </p>
           <p className="text-gray-600">
@@ -160,7 +160,7 @@ export default function BoringPage() {
             builds that just need regular maintenance to stay in top condition.
             Either way, French Roofing gives you a straight answer about what
             your roof actually needs. We don&apos;t upsell, we don&apos;t cut
-            corners, and we always clean up after ourselves — even on the big
+            corners, and we always clean up after ourselves - even on the big
             rural properties where it would be easy to leave a mess.
           </p>
         </div>

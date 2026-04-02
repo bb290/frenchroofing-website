@@ -21,7 +21,7 @@ const faqs = [
   {
     question: "Who is the best roofing contractor in Gladstone, OR?",
     answer:
-      "French Roofing LLC proudly serves Gladstone from our home base in Damascus — just about 15 minutes away. We've been taking care of roofs in the area since 2014. We're licensed (CCB #203933), insured, and CertainTeed Certified, and we specialize in the kind of honest, quality work Gladstone homeowners deserve.",
+      "French Roofing LLC proudly serves Gladstone from our home base in Damascus - just about 15 minutes away. We've been taking care of roofs in the area since 2014. We're licensed (CCB #203933), insured, and CertainTeed Certified, and we specialize in the kind of honest, quality work Gladstone homeowners deserve.",
   },
   {
     question: "Does French Roofing work on older homes in Gladstone?",
@@ -31,12 +31,12 @@ const faqs = [
   {
     question: "Does French Roofing offer free roof inspections in Gladstone?",
     answer:
-      "Yes! We provide free roof assessments for Gladstone homeowners. We'll climb up, take a thorough look, and give you a straight answer about what your roof needs — no sugarcoating, no unnecessary upsells. Just honest advice from a local team.",
+      "Yes! We provide free roof assessments for Gladstone homeowners. We'll climb up, take a thorough look, and give you a straight answer about what your roof needs - no sugarcoating, no unnecessary upsells. Just honest advice from a local team.",
   },
   {
     question: "What types of roofs does French Roofing install in Gladstone, OR?",
     answer:
-      "We install a variety of roofing materials that work great in the Pacific Northwest, including architectural asphalt shingles and composite roofing. As a CertainTeed Certified contractor, we use premium materials backed by strong manufacturer warranties — a smart upgrade for Gladstone's older homes.",
+      "We install a variety of roofing materials that work great in the Pacific Northwest, including architectural asphalt shingles and composite roofing. As a CertainTeed Certified contractor, we use premium materials backed by strong manufacturer warranties - a smart upgrade for Gladstone's older homes.",
   },
 ];
 
@@ -64,7 +64,7 @@ export default function GladstonePage() {
           <p className="mt-6 text-lg text-gray-300 max-w-2xl mx-auto">
             French Roofing serves Gladstone homeowners with reliable roof
             replacement, repair, cleaning, and inspection services. Quality
-            roofing for an established community — from your neighbors in
+            roofing for an established community - from your neighbors in
             Damascus.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -95,7 +95,7 @@ export default function GladstonePage() {
             Trusted Roofing for Gladstone&apos;s Established Neighborhoods
           </h2>
           <p className="text-gray-600 mb-4">
-            Gladstone has that classic, settled-in neighborhood feel — tree-lined
+            Gladstone has that classic, settled-in neighborhood feel - tree-lined
             streets, well-kept yards, and homes with real character. French
             Roofing LLC is based just about 15 minutes away in Damascus, and
             we&apos;ve been serving Gladstone and the surrounding Clackamas
@@ -105,7 +105,7 @@ export default function GladstonePage() {
           <p className="text-gray-600">
             When you hire French Roofing, you&apos;re getting a family-owned
             crew that takes pride in the details. We&apos;re not a big box
-            operation — we&apos;re the folks who answer the phone, show up when
+            operation - we&apos;re the folks who answer the phone, show up when
             we say we will, and leave your property cleaner than we found it.
           </p>
         </div>
@@ -150,14 +150,14 @@ export default function GladstonePage() {
             1970s, which means many roofs in the area have seen multiple
             replacement cycles. The good news is that these homes were built
             solid. The challenge? Older roof structures sometimes reveal
-            surprises during tear-off — things like outdated flashing, worn
+            surprises during tear-off - things like outdated flashing, worn
             decking, or ventilation that doesn&apos;t meet modern standards. At
             French Roofing, we handle all of that without cutting corners.
           </p>
           <p className="text-gray-600">
             Gladstone sits right between Milwaukie and Oregon City, nestled
             along the Clackamas River. That means plenty of mature trees, shade,
-            and moisture — the perfect cocktail for moss and algae growth on your
+            and moisture - the perfect cocktail for moss and algae growth on your
             shingles. Regular roof cleaning and maintenance is one of the best
             investments a Gladstone homeowner can make. And when it&apos;s time
             for a full replacement, we&apos;ll make sure your new roof is built

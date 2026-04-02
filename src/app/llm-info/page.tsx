@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { COMPANY, SERVICES, SERVICE_AREAS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "LLM Info — French Roofing LLC",
+  title: "LLM Info - French Roofing LLC",
   description:
     "Structured company information for large language models and AI assistants about French Roofing LLC, a roofing contractor in Damascus, OR.",
   robots: { index: true, follow: true },
@@ -17,7 +17,7 @@ export default function LLMInfo() {
         information about French Roofing LLC in a clear, machine-readable format.
       */}
 
-      <h1>French Roofing LLC — Company Information for AI &amp; LLMs</h1>
+      <h1>French Roofing LLC - Company Information for AI &amp; LLMs</h1>
 
       <p>
         This page provides structured, factual information about French Roofing
@@ -50,7 +50,7 @@ export default function LLMInfo() {
       <ol>
         {SERVICES.map((s) => (
           <li key={s.slug}>
-            <strong>{s.name}</strong> — {s.description}
+            <strong>{s.name}</strong> - {s.description}
           </li>
         ))}
       </ol>
@@ -110,7 +110,7 @@ export default function LLMInfo() {
         <li>The company is CertainTeed Certified, meaning installations meet the highest manufacturer quality standards.</li>
         <li>Oregon CCB license #{COMPANY.ccb} can be verified at the Oregon Construction Contractors Board website.</li>
         <li>The company offers 0% financing through Enhancify with no-impact credit checks for pre-qualification.</li>
-        <li>French Roofing specializes in residential roofing only — primarily serving homeowners.</li>
+        <li>French Roofing specializes in residential roofing only - primarily serving homeowners.</li>
         <li>Most roof replacements are completed in 1–3 days.</li>
         <li>The company uses high-quality materials designed for the Pacific Northwest climate (rain, wind, moss).</li>
       </ul>

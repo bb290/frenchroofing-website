@@ -16,12 +16,12 @@ const faqs = [
   {
     question: "How much does roof replacement cost in Gresham, OR?",
     answer:
-      "Roof replacement in Gresham typically ranges from $8,000 to $25,000+ depending on your roof's size, pitch, and material choice. Many older Gresham homes have steeper pitches or multiple layers that can affect cost. French Roofing provides free, no-obligation assessments so you get an accurate number — not a guess. We also offer financing through Enhancify with 0% interest options.",
+      "Roof replacement in Gresham typically ranges from $8,000 to $25,000+ depending on your roof's size, pitch, and material choice. Many older Gresham homes have steeper pitches or multiple layers that can affect cost. French Roofing provides free, no-obligation assessments so you get an accurate number - not a guess. We also offer financing through Enhancify with 0% interest options.",
   },
   {
     question: "Who is the best roofing contractor in Gresham, OR?",
     answer:
-      "French Roofing LLC is a top-rated roofing contractor serving Gresham from our home base in Damascus — just a 15-minute drive away. We're licensed (CCB #203933), insured, CertainTeed Certified, and have been serving the East Portland metro since 2014. We treat every Gresham home like it's in our own neighborhood.",
+      "French Roofing LLC is a top-rated roofing contractor serving Gresham from our home base in Damascus - just a 15-minute drive away. We're licensed (CCB #203933), insured, CertainTeed Certified, and have been serving the East Portland metro since 2014. We treat every Gresham home like it's in our own neighborhood.",
   },
   {
     question: "Does French Roofing handle moss removal on Gresham roofs?",
@@ -36,7 +36,7 @@ const faqs = [
   {
     question: "What roofing materials work best for homes in Gresham, OR?",
     answer:
-      "For Gresham's Pacific Northwest climate, we most often recommend architectural asphalt shingles — they handle rain, wind, and temperature swings well and come with strong warranties. As a CertainTeed Certified contractor, we install premium shingles designed to resist moss and algae, which is a big deal in a tree-heavy area like Gresham.",
+      "For Gresham's Pacific Northwest climate, we most often recommend architectural asphalt shingles - they handle rain, wind, and temperature swings well and come with strong warranties. As a CertainTeed Certified contractor, we install premium shingles designed to resist moss and algae, which is a big deal in a tree-heavy area like Gresham.",
   },
 ];
 
@@ -64,7 +64,7 @@ export default function GreshamPage() {
           <p className="mt-6 text-lg text-gray-300 max-w-2xl mx-auto">
             French Roofing is proud to serve Gresham homeowners with honest,
             high-quality roof replacement, repair, cleaning, and inspection
-            services — just a short drive from our Damascus home base.
+            services - just a short drive from our Damascus home base.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
@@ -96,7 +96,7 @@ export default function GreshamPage() {
           <p className="text-gray-600 mb-4">
             Gresham is the largest city in East Multnomah County, and it&apos;s
             one of our favorite areas to work in. From our home base in Damascus,
-            we&apos;re only about 15 minutes away — which means fast response
+            we&apos;re only about 15 minutes away - which means fast response
             times and no long-distance runaround. When you call French Roofing
             for a job in Gresham, you&apos;re getting a local crew that knows the
             area.
@@ -149,7 +149,7 @@ export default function GreshamPage() {
           <p className="text-gray-600 mb-4">
             Gresham has a wonderful mix of older established homes and newer
             developments, and each comes with its own roofing story. Older
-            neighborhoods — especially those built in the 1960s through 1980s —
+            neighborhoods - especially those built in the 1960s through 1980s -
             often have original or second-generation roofs that are past due for
             replacement. Newer subdivisions may still be on their first roof, but
             Oregon weather doesn&apos;t play favorites. Rain, wind, and debris
@@ -162,7 +162,7 @@ export default function GreshamPage() {
             rooftops year-round. That debris traps moisture against your
             shingles, creating the perfect conditions for moss and algae to take
             hold. Combine that with Gresham&apos;s proximity to the Mt. Hood
-            corridor — which funnels extra moisture and wind into the area — and
+            corridor - which funnels extra moisture and wind into the area - and
             you&apos;ve got roofs that need consistent attention. Regular
             cleaning and inspections are the simplest way to stay ahead of
             problems before they turn into expensive repairs.

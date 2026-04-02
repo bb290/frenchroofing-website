@@ -16,12 +16,12 @@ const faqs = [
   {
     question: "How much does roof replacement cost in Oregon City, OR?",
     answer:
-      "Roof replacement in Oregon City generally ranges from $8,000 to $28,000+ depending on roof size, pitch, accessibility, and materials. Many older homes in Oregon City — especially those in the bluff area — have steeper roofs and unique architectural details that can affect pricing. French Roofing provides free assessments so you get a real number, not a guess. Financing is available through Enhancify with 0% interest options.",
+      "Roof replacement in Oregon City generally ranges from $8,000 to $28,000+ depending on roof size, pitch, accessibility, and materials. Many older homes in Oregon City - especially those in the bluff area - have steeper roofs and unique architectural details that can affect pricing. French Roofing provides free assessments so you get a real number, not a guess. Financing is available through Enhancify with 0% interest options.",
   },
   {
     question: "Who is the best roofing contractor in Oregon City, OR?",
     answer:
-      "French Roofing LLC has been serving Oregon City homeowners from our Damascus home base since 2014 — we're about 20 minutes away. We're licensed (CCB #203933), insured, and CertainTeed Certified. We specialize in the kind of older, character-rich homes that make Oregon City special, and we treat every project with care and honest communication.",
+      "French Roofing LLC has been serving Oregon City homeowners from our Damascus home base since 2014 - we're about 20 minutes away. We're licensed (CCB #203933), insured, and CertainTeed Certified. We specialize in the kind of older, character-rich homes that make Oregon City special, and we treat every project with care and honest communication.",
   },
   {
     question: "Can French Roofing work on historic homes in Oregon City?",
@@ -31,7 +31,7 @@ const faqs = [
   {
     question: "Does French Roofing offer free roof inspections in Oregon City?",
     answer:
-      "Absolutely. We offer free roof assessments for Oregon City homeowners. Given the age of many homes in the area, regular inspections are especially important. We'll inspect your roof, give you an honest evaluation, and recommend the right path forward — no pressure, no upselling.",
+      "Absolutely. We offer free roof assessments for Oregon City homeowners. Given the age of many homes in the area, regular inspections are especially important. We'll inspect your roof, give you an honest evaluation, and recommend the right path forward - no pressure, no upselling.",
   },
   {
     question: "How does Oregon City's terrain affect roofing work?",
@@ -63,7 +63,7 @@ export default function OregonCityPage() {
           </h1>
           <p className="mt-6 text-lg text-gray-300 max-w-2xl mx-auto">
             French Roofing brings honest, high-quality roofing services to
-            Oregon City — from the historic bluff to the newer neighborhoods
+            Oregon City - from the historic bluff to the newer neighborhoods
             south of town. Roof replacement, repair, cleaning, and inspections
             done right.
           </p>
@@ -95,7 +95,7 @@ export default function OregonCityPage() {
             End of the Trail, Start of a Great Roof
           </h2>
           <p className="text-gray-600 mb-4">
-            Oregon City holds a special place in Oregon history — it&apos;s
+            Oregon City holds a special place in Oregon history - it&apos;s
             literally where the Oregon Trail ended. And while we can&apos;t fix
             your covered wagon, we can definitely fix your roof. French Roofing
             is based in Damascus, about 20 minutes east, which means we&apos;re

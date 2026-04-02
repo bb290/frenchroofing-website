@@ -174,7 +174,7 @@ export default function Home() {
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
                 <Image
                   src="/images/cora-st-before.webp"
-                  alt="Worn roof with patched areas and blue tarp on Cora St, Damascus OR — before French Roofing replacement"
+                  alt="Worn roof with patched areas and blue tarp on Cora St, Damascus OR - before French Roofing replacement"
                   fill
                   className="object-cover"
                 />
@@ -185,7 +185,7 @@ export default function Home() {
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
                 <Image
                   src="/images/cora-st-after.webp"
-                  alt="Brand new shingle roof with clean flashing and vents on Cora St, Damascus OR — after French Roofing replacement"
+                  alt="Brand new shingle roof with clean flashing and vents on Cora St, Damascus OR - after French Roofing replacement"
                   fill
                   className="object-cover"
                 />
@@ -213,7 +213,7 @@ export default function Home() {
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
               Compare materials, see the trade-offs, and understand what a new
-              roof might cost — no contact info required.
+              roof might cost - no contact info required.
             </p>
           </div>
           <RoofEstimator compact />
@@ -227,7 +227,7 @@ export default function Home() {
             Proudly Serving the Greater Portland Metro
           </h2>
           <p className="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
-            Based in Damascus, OR — we serve homeowners within a 20-mile radius.
+            Based in Damascus, OR - we serve homeowners within a 20-mile radius.
           </p>
           <div className="flex flex-wrap justify-center gap-3 max-w-3xl mx-auto">
             {SERVICE_AREAS.all.map((area) => (
@@ -306,7 +306,7 @@ export default function Home() {
           <div className="relative aspect-square rounded-2xl overflow-hidden max-w-md mx-auto lg:mx-0">
             <Image
               src="/images/sean-first-job.webp"
-              alt="Sean French on his first roofing job — founder of French Roofing LLC"
+              alt="Sean French on his first roofing job - founder of French Roofing LLC"
               fill
               className="object-cover"
             />
@@ -320,7 +320,7 @@ export default function Home() {
             </h2>
             <p className="text-gray-600 mb-4">
               Sean French grew up on roofs. He started as a subcontractor at
-              sixteen, learning the trade the way most real craftspeople do — by
+              sixteen, learning the trade the way most real craftspeople do - by
               showing up early, listening more than talking, and doing the
               unglamorous work with pride.
             </p>
@@ -334,7 +334,7 @@ export default function Home() {
               &ldquo;Every customer&apos;s roof should be built the same way
               you&apos;d build it for your own grandma.&rdquo;
               <span className="block not-italic text-sm mt-1 text-[#092e5e] font-medium">
-                — Sean French, Founder
+                - Sean French, Founder
               </span>
             </blockquote>
             <Link

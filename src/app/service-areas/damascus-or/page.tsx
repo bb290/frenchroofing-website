@@ -16,7 +16,7 @@ const faqs = [
   {
     question: "How much does roof replacement cost in Damascus, OR?",
     answer:
-      "Roof replacement costs in Damascus typically range from $8,000 to $25,000+ depending on roof size, pitch, materials, and complexity. French Roofing provides free, no-obligation assessments so you get an accurate estimate — not a ballpark guess. We also offer financing through Enhancify with 0% interest options.",
+      "Roof replacement costs in Damascus typically range from $8,000 to $25,000+ depending on roof size, pitch, materials, and complexity. French Roofing provides free, no-obligation assessments so you get an accurate estimate - not a ballpark guess. We also offer financing through Enhancify with 0% interest options.",
   },
   {
     question: "What roofing company serves Damascus, OR?",
@@ -26,12 +26,12 @@ const faqs = [
   {
     question: "How long does a roof replacement take in Damascus?",
     answer:
-      "Most residential roof replacements in Damascus are completed in 1 to 3 days, depending on the size and complexity of your roof. Weather can sometimes shift the timeline — Oregon being Oregon — but we keep you updated every step of the way.",
+      "Most residential roof replacements in Damascus are completed in 1 to 3 days, depending on the size and complexity of your roof. Weather can sometimes shift the timeline - Oregon being Oregon - but we keep you updated every step of the way.",
   },
   {
     question: "Does French Roofing offer free roof inspections in Damascus?",
     answer:
-      "Yes! We offer free roof assessments for Damascus homeowners. Our team will inspect your roof, give you an honest evaluation, and recommend the best course of action — whether that's a repair, maintenance, or a full replacement. No pressure, no gimmicks.",
+      "Yes! We offer free roof assessments for Damascus homeowners. Our team will inspect your roof, give you an honest evaluation, and recommend the best course of action - whether that's a repair, maintenance, or a full replacement. No pressure, no gimmicks.",
   },
   {
     question: "What types of roofs does French Roofing install in Damascus, OR?",
@@ -94,7 +94,7 @@ export default function DamascusPage() {
             Your Neighbors on the Roof
           </h2>
           <p className="text-gray-600 mb-4">
-            Damascus isn&apos;t just where we work — it&apos;s where we live.
+            Damascus isn&apos;t just where we work - it&apos;s where we live.
             French Roofing LLC was founded here in 2014 by Sean French, and our
             office is still right on SE Van Zyl Dr. When you hire us for a roof
             repair or a full roof replacement in Damascus, you&apos;re hiring the
@@ -148,7 +148,7 @@ export default function DamascusPage() {
             Damascus sits right at the edge of the Cascade foothills, which means
             we get a little more rain, a little more wind, and a lot more moss
             than neighborhoods closer to downtown Portland. Homes here often
-            feature architectural asphalt shingles and composite roofing — both
+            feature architectural asphalt shingles and composite roofing - both
             solid choices for the Pacific Northwest, but both need regular
             attention to stay in top shape.
           </p>
@@ -158,7 +158,7 @@ export default function DamascusPage() {
             gutters and trap moisture against your shingles. And when those big
             wind storms roll through in fall and winter, even small vulnerabilities
             can turn into costly leaks. That&apos;s why we always recommend
-            regular roof inspections — catching a problem early in Damascus is a
+            regular roof inspections - catching a problem early in Damascus is a
             lot cheaper than catching it after it rains through your ceiling.
           </p>
         </div>

@@ -111,7 +111,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-white/10 text-center text-xs text-gray-400">
-          <p>&copy; {new Date().getFullYear()} {COMPANY.name}. All rights reserved. Licensed &amp; Bonded — CCB #{COMPANY.ccb}</p>
+          <p>&copy; {new Date().getFullYear()} {COMPANY.name}. All rights reserved. Licensed &amp; Bonded - CCB #{COMPANY.ccb}</p>
           <p className="mt-1">{COMPANY.tagline}</p>
           <div className="mt-3 flex items-center justify-center gap-4">
             <Link href="/llm-info" className="hover:text-white transition-colors">

@@ -8,7 +8,7 @@ import { COMPANY, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Roofing Contractor in Canby, OR | ${COMPANY.name}`,
   description:
-    "French Roofing LLC provides professional roofing services in Canby, OR — roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, serving from Damascus. Book online today.",
+    "French Roofing LLC provides professional roofing services in Canby, OR - roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, serving from Damascus. Book online today.",
   alternates: { canonical: `${COMPANY.url}/service-areas/canby-or` },
 };
 
@@ -21,17 +21,17 @@ const faqs = [
   {
     question: "Who is the best roofing contractor in Canby, OR?",
     answer:
-      "French Roofing LLC serves Canby from our home base in Damascus — about 20 miles and a 30-minute drive. We've been in business since 2014, we're licensed (CCB #203933), insured, and CertainTeed Certified. Canby is at the edge of our service area, but we give every Canby job the same quality and attention as a job down the street.",
+      "French Roofing LLC serves Canby from our home base in Damascus - about 20 miles and a 30-minute drive. We've been in business since 2014, we're licensed (CCB #203933), insured, and CertainTeed Certified. Canby is at the edge of our service area, but we give every Canby job the same quality and attention as a job down the street.",
   },
   {
     question: "Does French Roofing travel to Canby for roofing jobs?",
     answer:
-      "Yes! Canby is at the edge of our 20-mile service radius from Damascus, and we're happy to serve the community. The drive is about 30 minutes, and we regularly work in Canby and the surrounding area. No extra travel charges — just the same honest pricing we offer everywhere.",
+      "Yes! Canby is at the edge of our 20-mile service radius from Damascus, and we're happy to serve the community. The drive is about 30 minutes, and we regularly work in Canby and the surrounding area. No extra travel charges - just the same honest pricing we offer everywhere.",
   },
   {
     question: "Does French Roofing offer free roof inspections in Canby?",
     answer:
-      "Absolutely. We offer free roof assessments for Canby homeowners. Our team will inspect your roof, give you a straightforward evaluation, and lay out your options — repair, maintenance, or replacement. No sales pressure, just honest advice from a local team.",
+      "Absolutely. We offer free roof assessments for Canby homeowners. Our team will inspect your roof, give you a straightforward evaluation, and lay out your options - repair, maintenance, or replacement. No sales pressure, just honest advice from a local team.",
   },
   {
     question: "What roofing materials work best for Canby, OR homes?",
@@ -63,7 +63,7 @@ export default function CanbyPage() {
           </h1>
           <p className="mt-6 text-lg text-gray-300 max-w-2xl mx-auto">
             French Roofing brings quality roof replacement, repair, cleaning,
-            and inspection services to Canby — because great roofing
+            and inspection services to Canby - because great roofing
             shouldn&apos;t stop at the city limits. Your Damascus-based roofer,
             about 30 minutes away.
           </p>
@@ -95,15 +95,15 @@ export default function CanbyPage() {
             Quality Roofing, Worth the Drive
           </h2>
           <p className="text-gray-600 mb-4">
-            Canby sits at the edge of our service area — about 20 miles and a
-            30-minute drive from our Damascus home base — but that doesn&apos;t
+            Canby sits at the edge of our service area - about 20 miles and a
+            30-minute drive from our Damascus home base - but that doesn&apos;t
             mean we cut any corners getting there. French Roofing LLC has been
             serving the greater Clackamas County area since 2014, and Canby
             homeowners get the same quality craftsmanship, honest communication,
             and fair pricing as our neighbors right down the street.
           </p>
           <p className="text-gray-600">
-            Canby is a community that&apos;s growing — more and more families
+            Canby is a community that&apos;s growing - more and more families
             are putting down roots here, drawn by the small-town feel and room
             to breathe. Whether you&apos;re in one of the newer developments on
             the outskirts or an established home closer to downtown, we&apos;re
@@ -152,7 +152,7 @@ export default function CanbyPage() {
             landscape is pretty diverse. You&apos;ve got newer subdivisions with
             relatively fresh roofs on the outskirts, and older homes closer to
             the center of town that have been standing for decades. Both need
-            attention — newer roofs for maintenance and warranty compliance,
+            attention - newer roofs for maintenance and warranty compliance,
             older roofs for potential replacement before small problems become
             expensive ones.
           </p>
@@ -161,8 +161,8 @@ export default function CanbyPage() {
             neighborhoods tucked under Portland&apos;s tree canopy, but
             they&apos;re still hit with the same heavy Oregon rains and
             occasional windstorms. That combination of UV and moisture can age
-            shingles faster than you might expect. A regular roof inspection —
-            even just once a year — can catch issues early and save you
+            shingles faster than you might expect. A regular roof inspection -
+            even just once a year - can catch issues early and save you
             thousands down the road. And when it is time for a replacement,
             French Roofing brings the same quality materials and workmanship to
             Canby that we&apos;re known for across Clackamas County.

@@ -30,12 +30,12 @@ const steps = [
   {
     title: "Gutter Cleanout",
     description:
-      "While we're up there, we make sure your gutters and downspouts are clear and flowing properly. It's all connected — a clean roof with clogged gutters still causes problems.",
+      "While we're up there, we make sure your gutters and downspouts are clear and flowing properly. It's all connected - a clean roof with clogged gutters still causes problems.",
   },
   {
     title: "Maintenance Report",
     description:
-      "You get a summary of what we did, what we found, and any recommendations for future care. No surprise bills — just honest info to help you plan ahead.",
+      "You get a summary of what we did, what we found, and any recommendations for future care. No surprise bills - just honest info to help you plan ahead.",
   },
 ];
 
@@ -43,7 +43,7 @@ const faqs = [
   {
     question: "How often should I have my roof cleaned in Oregon?",
     answer:
-      "In the greater Portland area, we recommend a roof cleaning at least once a year — ideally in late spring or early fall. If your home is surrounded by trees or sits on the north side of a hill, twice a year is even better. Moss and debris build up fast in our climate.",
+      "In the greater Portland area, we recommend a roof cleaning at least once a year - ideally in late spring or early fall. If your home is surrounded by trees or sits on the north side of a hill, twice a year is even better. Moss and debris build up fast in our climate.",
   },
   {
     question: "Does moss actually damage my roof?",
@@ -58,7 +58,7 @@ const faqs = [
   {
     question: "Will pressure washing damage my shingles?",
     answer:
-      "It can — that's why we don't use high-pressure washing on asphalt shingles. We use low-pressure methods and treatments that are effective on moss and algae without stripping granules or voiding your warranty.",
+      "It can - that's why we don't use high-pressure washing on asphalt shingles. We use low-pressure methods and treatments that are effective on moss and algae without stripping granules or voiding your warranty.",
   },
   {
     question: "How much does roof cleaning cost?",
@@ -98,10 +98,10 @@ export default function RoofCleaningPage() {
               Roof Cleaning &amp; Maintenance
             </p>
             <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-6">
-              Roof Cleaning — Portland Metro
+              Roof Cleaning - Portland Metro
             </h1>
             <p className="text-lg text-gray-300 max-w-xl">
-              Moss, algae, and debris don&apos;t just look bad — they shorten
+              Moss, algae, and debris don&apos;t just look bad - they shorten
               your roof&apos;s life. A little maintenance goes a long way in
               Oregon&apos;s wet climate. We keep your roof clean, clear, and
               lasting longer.
@@ -130,7 +130,7 @@ export default function RoofCleaningPage() {
             },
             {
               title: "Prevent Costly Repairs",
-              desc: "Catching small issues during routine maintenance — a cracked vent boot, a lifted shingle — saves you from expensive repairs down the road.",
+              desc: "Catching small issues during routine maintenance - a cracked vent boot, a lifted shingle - saves you from expensive repairs down the road.",
             },
             {
               title: "Protect Your Home's Value",
@@ -204,16 +204,16 @@ export default function RoofCleaningPage() {
               Why Choose French Roofing for Maintenance
             </h2>
             <p className="text-gray-600 mb-6">
-              Anyone can blow leaves off a roof. We go further — because
+              Anyone can blow leaves off a roof. We go further - because
               we&apos;re roofers first. When we clean your roof, we&apos;re also
               looking at its health. That means you get maintenance and a
               mini-inspection in one visit.
             </p>
             <ul className="space-y-4">
               {[
-                "Trained roofing crew — not a general handyman with a leaf blower",
+                "Trained roofing crew - not a general handyman with a leaf blower",
                 "Low-pressure cleaning methods that protect your shingles",
-                "We spot problems early — saving you from expensive surprises",
+                "We spot problems early - saving you from expensive surprises",
                 "Licensed, insured & bonded (CCB #203933)",
                 "One-time or recurring service options",
                 "Serving 18+ communities across the Portland metro since 2014",
@@ -258,7 +258,7 @@ export default function RoofCleaningPage() {
             Want to Stay Ahead of It? Join Our Maintenance Program.
           </h2>
           <p className="text-gray-600 mb-6 max-w-xl mx-auto">
-            2 visits per year — debris removal, gutter clearing, moss prevention
+            2 visits per year - debris removal, gutter clearing, moss prevention
             treatment, and a full inspection every time. Three tiers starting at
             $1,200/year.
           </p>

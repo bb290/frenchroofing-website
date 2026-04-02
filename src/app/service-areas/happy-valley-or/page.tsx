@@ -8,7 +8,7 @@ import { COMPANY, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Roofing Contractor in Happy Valley, OR | ${COMPANY.name}`,
   description:
-    "Need a roofing contractor in Happy Valley, OR? French Roofing LLC provides roof replacement, repair, cleaning, and inspections. Based in nearby Damascus — your local, CertainTeed Certified roofing team. Book online today.",
+    "Need a roofing contractor in Happy Valley, OR? French Roofing LLC provides roof replacement, repair, cleaning, and inspections. Based in nearby Damascus - your local, CertainTeed Certified roofing team. Book online today.",
   alternates: { canonical: `${COMPANY.url}/service-areas/happy-valley-or` },
 };
 
@@ -21,12 +21,12 @@ const faqs = [
   {
     question: "What roofing company serves Happy Valley, OR?",
     answer:
-      "French Roofing LLC is based in Damascus, OR — right next to Happy Valley. We've been serving Happy Valley homeowners since 2014 with roof replacement, repair, cleaning, and inspection services. We're licensed (CCB #203933), insured, and CertainTeed Certified.",
+      "French Roofing LLC is based in Damascus, OR - right next to Happy Valley. We've been serving Happy Valley homeowners since 2014 with roof replacement, repair, cleaning, and inspection services. We're licensed (CCB #203933), insured, and CertainTeed Certified.",
   },
   {
     question: "How often should I have my roof inspected in Happy Valley?",
     answer:
-      "We recommend a professional roof inspection at least once a year, ideally in late spring after winter storms have passed. Happy Valley gets plenty of rain and wind, so catching small issues early — like cracked flashing or moss buildup — saves you from expensive surprises down the line.",
+      "We recommend a professional roof inspection at least once a year, ideally in late spring after winter storms have passed. Happy Valley gets plenty of rain and wind, so catching small issues early - like cracked flashing or moss buildup - saves you from expensive surprises down the line.",
   },
   {
     question: "Does French Roofing offer roof cleaning in Happy Valley?",
@@ -36,7 +36,7 @@ const faqs = [
   {
     question: "Can French Roofing help with insurance claims in Happy Valley?",
     answer:
-      "We sure can. If your Happy Valley home has storm damage, we'll do a thorough inspection, document everything with photos, and provide the detailed information your insurance company needs. We've helped plenty of homeowners navigate the claims process — we'll walk you through it step by step.",
+      "We sure can. If your Happy Valley home has storm damage, we'll do a thorough inspection, document everything with photos, and provide the detailed information your insurance company needs. We've helped plenty of homeowners navigate the claims process - we'll walk you through it step by step.",
   },
 ];
 
@@ -67,7 +67,7 @@ export default function HappyValleyPage() {
           <p className="mt-6 text-lg text-gray-300 max-w-2xl mx-auto">
             French Roofing serves Happy Valley homeowners with reliable roof
             replacement, repair, cleaning, and inspections. We&apos;re based in
-            Damascus — literally right next door — so we know this area inside
+            Damascus - literally right next door - so we know this area inside
             and out.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -151,7 +151,7 @@ export default function HappyValleyPage() {
           </h2>
           <p className="text-gray-600 mb-4">
             Happy Valley&apos;s rolling hills and tree-lined streets are
-            beautiful — but they also create some unique challenges for roofs.
+            beautiful - but they also create some unique challenges for roofs.
             Overhanging trees drop needles, leaves, and branches that accumulate
             in valleys and gutters, trapping moisture against your shingles. Add
             in Oregon&apos;s 40+ inches of annual rainfall, and you&apos;ve got
@@ -160,7 +160,7 @@ export default function HappyValleyPage() {
           </p>
           <p className="text-gray-600">
             Many Happy Valley homes are relatively newer construction with
-            architectural asphalt shingles — a great choice for the area, but one
+            architectural asphalt shingles - a great choice for the area, but one
             that still requires attention. Wind storms can lift shingle edges,
             and heavy rain finds every weak spot in aging flashing. Regular roof
             maintenance and timely repairs keep small issues from becoming big

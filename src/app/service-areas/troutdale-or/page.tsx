@@ -16,22 +16,22 @@ const faqs = [
   {
     question: "How much does roof replacement cost in Troutdale, OR?",
     answer:
-      "Roof replacement costs in Troutdale typically range from $8,000 to $25,000+ depending on roof size, pitch, materials, and complexity. Wind exposure from the Gorge can factor into material choices and installation methods. French Roofing provides free, no-obligation assessments so you get an accurate estimate — not a ballpark guess. We also offer financing through Enhancify with 0% interest options.",
+      "Roof replacement costs in Troutdale typically range from $8,000 to $25,000+ depending on roof size, pitch, materials, and complexity. Wind exposure from the Gorge can factor into material choices and installation methods. French Roofing provides free, no-obligation assessments so you get an accurate estimate - not a ballpark guess. We also offer financing through Enhancify with 0% interest options.",
   },
   {
     question: "Who is the best roofing contractor in Troutdale, OR?",
     answer:
-      "French Roofing LLC serves Troutdale from our home base in Damascus, OR — about 20 minutes south. We've been in business since 2014, we're licensed (CCB #203933), insured, and CertainTeed Certified. We understand the unique wind and weather conditions that Troutdale roofs face at the mouth of the Gorge.",
+      "French Roofing LLC serves Troutdale from our home base in Damascus, OR - about 20 minutes south. We've been in business since 2014, we're licensed (CCB #203933), insured, and CertainTeed Certified. We understand the unique wind and weather conditions that Troutdale roofs face at the mouth of the Gorge.",
   },
   {
     question: "How does Gorge wind affect roofs in Troutdale?",
     answer:
-      "Troutdale sits right at the western entrance to the Columbia River Gorge, which funnels strong east winds through the area — especially in fall and winter. These sustained winds can lift shingle edges, loosen flashing, and drive rain sideways under roofing materials. We use high-wind-rated shingles and proper installation techniques to help Troutdale roofs stand up to Gorge conditions.",
+      "Troutdale sits right at the western entrance to the Columbia River Gorge, which funnels strong east winds through the area - especially in fall and winter. These sustained winds can lift shingle edges, loosen flashing, and drive rain sideways under roofing materials. We use high-wind-rated shingles and proper installation techniques to help Troutdale roofs stand up to Gorge conditions.",
   },
   {
     question: "Does French Roofing offer free roof inspections in Troutdale?",
     answer:
-      "Yes! We offer free roof assessments for Troutdale homeowners. Our team will inspect your roof, give you an honest evaluation, and recommend the best course of action — whether that's a repair, maintenance, or a full replacement. No pressure, no gimmicks.",
+      "Yes! We offer free roof assessments for Troutdale homeowners. Our team will inspect your roof, give you an honest evaluation, and recommend the best course of action - whether that's a repair, maintenance, or a full replacement. No pressure, no gimmicks.",
   },
   {
     question: "How quickly can French Roofing respond to wind damage in Troutdale?",
@@ -62,7 +62,7 @@ export default function TroutdalePage() {
             <span className="text-[#ffbd59]">Troutdale, OR</span>
           </h1>
           <p className="mt-6 text-lg text-gray-300 max-w-2xl mx-auto">
-            French Roofing serves Troutdale from our Damascus home base — about
+            French Roofing serves Troutdale from our Damascus home base - about
             20 minutes south. We build roofs that stand up to Gorge winds with
             the honest, quality service your home deserves.
           </p>
@@ -94,7 +94,7 @@ export default function TroutdalePage() {
             Gorge-Ready Roofing From Your Neighbors in Damascus
           </h2>
           <p className="text-gray-600 mb-4">
-            Troutdale is the gateway to the Columbia River Gorge — and that
+            Troutdale is the gateway to the Columbia River Gorge - and that
             means your roof faces conditions most Portland-area homes
             don&apos;t. French Roofing LLC has been serving Troutdale and East
             County since 2014, and we know firsthand what Gorge winds do to
@@ -105,7 +105,7 @@ export default function TroutdalePage() {
           <p className="text-gray-600">
             Sean French started this company on a simple principle: do the work
             like you&apos;re doing it for your own grandma. That means honest
-            assessments, quality materials, and craftsmanship that holds up —
+            assessments, quality materials, and craftsmanship that holds up -
             even when those east winds come howling through the Gorge.
           </p>
         </div>
@@ -157,8 +157,8 @@ export default function TroutdalePage() {
           <p className="text-gray-600">
             Beyond the wind, Troutdale gets the same Pacific Northwest rain that
             promotes moss and algae growth across the region. The mix of
-            residential styles — from mid-century ranch homes near downtown to
-            newer developments along the Sandy River — means there&apos;s no
+            residential styles - from mid-century ranch homes near downtown to
+            newer developments along the Sandy River - means there&apos;s no
             one-size-fits-all approach. French Roofing tailors our
             recommendations to your specific home, exposure, and budget. We use
             high-wind-rated materials where they matter most and back everything

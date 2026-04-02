@@ -88,7 +88,7 @@ export default function FinancingPage() {
           </h1>
           <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
             We&apos;ve partnered with Enhancify so you can get the roof you need
-            now and pay over time — with plans that actually make sense.
+            now and pay over time - with plans that actually make sense.
           </p>
         </div>
       </section>
@@ -166,7 +166,7 @@ export default function FinancingPage() {
               Get Your Free Estimate First
             </a>
             <p className="mt-3 text-sm text-gray-500">
-              No commitment required — see what your roof needs before exploring
+              No commitment required - see what your roof needs before exploring
               financing.
             </p>
           </div>
@@ -185,7 +185,7 @@ export default function FinancingPage() {
           <p className="text-gray-600 max-w-xl mx-auto mb-6">
             Enhancify specializes in home improvement financing and works with
             top lenders to offer competitive rates. French Roofing chose
-            Enhancify because they make the process simple and transparent — just
+            Enhancify because they make the process simple and transparent - just
             like we do with roofing.
           </p>
           <a

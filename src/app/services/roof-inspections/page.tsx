@@ -8,14 +8,14 @@ import { COMPANY } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Free Roof Inspections | Greater Portland Metro | ${COMPANY.name}`,
   description:
-    "Free, honest, thorough roof inspections in the greater Portland metro area. Get a clear picture of your roof's condition — whether you're buying a home, filing a claim, or just want to know where things stand. Licensed (CCB #203933), CertainTeed Certified.",
+    "Free, honest, thorough roof inspections in the greater Portland metro area. Get a clear picture of your roof's condition - whether you're buying a home, filing a claim, or just want to know where things stand. Licensed (CCB #203933), CertainTeed Certified.",
 };
 
 const steps = [
   {
     title: "Schedule Your Inspection",
     description:
-      "Book online and we'll find a time that works for you — inspections typically take about an hour depending on the size of your roof.",
+      "Book online and we'll find a time that works for you - inspections typically take about an hour depending on the size of your roof.",
   },
   {
     title: "Exterior Roof Inspection",
@@ -30,7 +30,7 @@ const steps = [
   {
     title: "Detailed Report & Recommendations",
     description:
-      "You get a clear, photo-documented report of our findings — what's in good shape, what needs attention now, and what to keep an eye on. No jargon, no scare tactics, just the facts.",
+      "You get a clear, photo-documented report of our findings - what's in good shape, what needs attention now, and what to keep an eye on. No jargon, no scare tactics, just the facts.",
   },
 ];
 
@@ -38,7 +38,7 @@ const faqs = [
   {
     question: "How much does a roof inspection cost in the Portland metro area?",
     answer:
-      "Our roof inspections are always free — no strings attached. We believe every homeowner deserves to know the condition of their roof without worrying about a bill. Book online and we'll get you on the schedule.",
+      "Our roof inspections are always free - no strings attached. We believe every homeowner deserves to know the condition of their roof without worrying about a bill. Book online and we'll get you on the schedule.",
   },
   {
     question: "When should I get a roof inspection?",
@@ -48,7 +48,7 @@ const faqs = [
   {
     question: "What do you look for during a roof inspection?",
     answer:
-      "We check the full system — shingles, flashing, vents, ridge caps, valleys, gutters, drip edge, and the attic space. We look for wear, damage, moss growth, moisture intrusion, ventilation issues, and anything that could become a problem. Everything is documented with photos.",
+      "We check the full system - shingles, flashing, vents, ridge caps, valleys, gutters, drip edge, and the attic space. We look for wear, damage, moss growth, moisture intrusion, ventilation issues, and anything that could become a problem. Everything is documented with photos.",
   },
   {
     question: "Can you do a roof inspection for a home I'm buying?",
@@ -58,7 +58,7 @@ const faqs = [
   {
     question: "Will you find problems even if there's no visible leak?",
     answer:
-      "Yes — that's the whole point. Many roof issues are invisible from the ground. Cracked flashing, lifted shingles, clogged valleys, and attic moisture don't always cause an obvious leak right away, but they will eventually. An inspection catches these early.",
+      "Yes - that's the whole point. Many roof issues are invisible from the ground. Cracked flashing, lifted shingles, clogged valleys, and attic moisture don't always cause an obvious leak right away, but they will eventually. An inspection catches these early.",
   },
 ];
 
@@ -90,10 +90,10 @@ export default function RoofInspectionsPage() {
               Always Free
             </p>
             <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-6">
-              Free Roof Inspections — Portland Metro
+              Free Roof Inspections - Portland Metro
             </h1>
             <p className="text-lg text-gray-300 max-w-xl">
-              Not sure what shape your roof is in? We&apos;ll tell you — honestly
+              Not sure what shape your roof is in? We&apos;ll tell you - honestly
               and for free. Whether you&apos;re buying a home, dealing with storm
               damage, or just want peace of mind, our inspections give you the
               full picture with no pressure attached.
@@ -137,7 +137,7 @@ export default function RoofInspectionsPage() {
               },
               {
                 title: "Aging Roof",
-                desc: "If your roof is 10-15+ years old, an inspection helps you plan ahead — repair now or budget for replacement down the road.",
+                desc: "If your roof is 10-15+ years old, an inspection helps you plan ahead - repair now or budget for replacement down the road.",
               },
               {
                 title: "Selling Your Home",
@@ -207,15 +207,15 @@ export default function RoofInspectionsPage() {
             <p className="text-gray-600 mb-6">
               Some inspectors just glance at your roof and hand you a generic
               report. We actually get up there, document what we find, and
-              explain it to you like a neighbor — because that&apos;s what we
+              explain it to you like a neighbor - because that&apos;s what we
               are. We&apos;ve been inspecting roofs across Clackamas County
               since 2014.
             </p>
             <ul className="space-y-4">
               {[
-                "CertainTeed Certified — we know what a properly installed roof looks like",
-                "Photo-documented reports — see exactly what we see",
-                "Honest recommendations — we won't create problems to sell you a fix",
+                "CertainTeed Certified - we know what a properly installed roof looks like",
+                "Photo-documented reports - see exactly what we see",
+                "Honest recommendations - we won't create problems to sell you a fix",
                 "Licensed, insured & bonded (CCB #203933)",
                 "Serving 18+ communities across the Portland metro since 2014",
                 "Free assessments available for homeowners considering repair or replacement",
@@ -251,7 +251,7 @@ export default function RoofInspectionsPage() {
       {/* ── CTA ── */}
       <CTABanner
         headline="Book Your Free Roof Inspection"
-        description="Always free, always honest. We'll give you the full picture so you can make the right call — no pressure, no obligation."
+        description="Always free, always honest. We'll give you the full picture so you can make the right call - no pressure, no obligation."
       />
     </>
   );

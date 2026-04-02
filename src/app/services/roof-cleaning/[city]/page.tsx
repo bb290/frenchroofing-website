@@ -47,12 +47,12 @@ const steps = [
   {
     title: "Gutter Cleanout",
     description:
-      "While we're up there, we make sure your gutters and downspouts are clear and flowing properly. It's all connected — a clean roof with clogged gutters still causes problems.",
+      "While we're up there, we make sure your gutters and downspouts are clear and flowing properly. It's all connected - a clean roof with clogged gutters still causes problems.",
   },
   {
     title: "Maintenance Report",
     description:
-      "You get a summary of what we did, what we found, and any recommendations for future care. No surprise bills — just honest info to help you plan ahead.",
+      "You get a summary of what we did, what we found, and any recommendations for future care. No surprise bills - just honest info to help you plan ahead.",
   },
 ];
 
@@ -60,11 +60,11 @@ function getRoofCleaningFaqs(cityName: string) {
   return [
     {
       question: `How much does roof cleaning cost in ${cityName}, OR?`,
-      answer: `Roof cleaning in ${cityName} typically runs between $300 and $800 depending on roof size, pitch, and the amount of buildup. We provide a clear quote before we start — no surprises. For homes that need both cleaning and minor repairs, we can bundle the work and save you a trip.`,
+      answer: `Roof cleaning in ${cityName} typically runs between $300 and $800 depending on roof size, pitch, and the amount of buildup. We provide a clear quote before we start - no surprises. For homes that need both cleaning and minor repairs, we can bundle the work and save you a trip.`,
     },
     {
       question: `How often should I clean my roof in ${cityName}?`,
-      answer: `In ${cityName}, we recommend a roof cleaning at least once a year — ideally in late spring or early fall. If your home is surrounded by trees or sits on the north side of a hill, twice a year is even better. Moss and debris build up fast in Oregon's wet climate, and staying ahead of it saves you money in the long run.`,
+      answer: `In ${cityName}, we recommend a roof cleaning at least once a year - ideally in late spring or early fall. If your home is surrounded by trees or sits on the north side of a hill, twice a year is even better. Moss and debris build up fast in Oregon's wet climate, and staying ahead of it saves you money in the long run.`,
     },
     {
       question: `Does moss damage roofs in ${cityName}, Oregon?`,
@@ -76,7 +76,7 @@ function getRoofCleaningFaqs(cityName: string) {
     },
     {
       question: `Can roof cleaning extend my roof's lifespan in ${cityName}?`,
-      answer: `Absolutely. Regular cleaning removes the moisture-trapping moss and debris that cause premature aging. A clean, well-maintained roof in ${cityName} can last years longer than a neglected one. Think of it like changing the oil in your car — a little maintenance goes a long way. We're CertainTeed Certified (CCB #${COMPANY.ccb}) and know exactly what your roof needs.`,
+      answer: `Absolutely. Regular cleaning removes the moisture-trapping moss and debris that cause premature aging. A clean, well-maintained roof in ${cityName} can last years longer than a neglected one. Think of it like changing the oil in your car - a little maintenance goes a long way. We're CertainTeed Certified (CCB #${COMPANY.ccb}) and know exactly what your roof needs.`,
     },
   ];
 }
@@ -129,7 +129,7 @@ export default async function RoofCleaningCityPage({
               Roof Cleaning in {area.name}, OR
             </h1>
             <p className="text-lg text-gray-300 max-w-xl">
-              Moss, algae, and debris don&apos;t just look bad — they shorten
+              Moss, algae, and debris don&apos;t just look bad - they shorten
               your roof&apos;s life. For {area.name} homeowners, a little
               maintenance goes a long way in Oregon&apos;s wet climate. We keep
               your roof clean, clear, and lasting longer.
@@ -158,7 +158,7 @@ export default async function RoofCleaningCityPage({
             },
             {
               title: "Prevent Costly Repairs",
-              desc: "Catching small issues during routine maintenance — a cracked vent boot, a lifted shingle — saves you from expensive repairs down the road.",
+              desc: "Catching small issues during routine maintenance - a cracked vent boot, a lifted shingle - saves you from expensive repairs down the road.",
             },
             {
               title: "Protect Your Home's Value",
@@ -229,16 +229,16 @@ export default async function RoofCleaningCityPage({
               Why {area.name} Homeowners Choose French Roofing for Maintenance
             </h2>
             <p className="text-gray-600 mb-6">
-              Anyone can blow leaves off a roof. We go further — because
+              Anyone can blow leaves off a roof. We go further - because
               we&apos;re roofers first. When we clean your roof, we&apos;re also
               looking at its health. That means you get maintenance and a
               mini-inspection in one visit.
             </p>
             <ul className="space-y-4">
               {[
-                "Trained roofing crew — not a general handyman with a leaf blower",
+                "Trained roofing crew - not a general handyman with a leaf blower",
                 "Low-pressure cleaning methods that protect your shingles",
-                "We spot problems early — saving you from expensive surprises",
+                "We spot problems early - saving you from expensive surprises",
                 `Licensed, insured & bonded (CCB #${COMPANY.ccb})`,
                 "One-time or recurring service options",
                 `Serving ${area.name} and the surrounding area from our home base in Damascus`,
@@ -283,7 +283,7 @@ export default async function RoofCleaningCityPage({
             Want to Stay Ahead of It? Join Our Maintenance Program.
           </h2>
           <p className="text-gray-600 mb-6 max-w-xl mx-auto">
-            2 visits per year — debris removal, gutter clearing, moss prevention
+            2 visits per year - debris removal, gutter clearing, moss prevention
             treatment, and a full inspection every time. Three tiers starting at
             $1,200/year.
           </p>

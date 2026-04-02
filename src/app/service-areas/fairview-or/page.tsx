@@ -21,7 +21,7 @@ const faqs = [
   {
     question: "Who is the best roofing contractor in Fairview, OR?",
     answer:
-      "French Roofing LLC is a trusted roofing contractor serving Fairview, OR from our home base in Damascus — just about 20 minutes away. We've been serving the East County community since 2014, and we're licensed (CCB #203933), insured, and CertainTeed Certified.",
+      "French Roofing LLC is a trusted roofing contractor serving Fairview, OR from our home base in Damascus - just about 20 minutes away. We've been serving the East County community since 2014, and we're licensed (CCB #203933), insured, and CertainTeed Certified.",
   },
   {
     question: "How long does a roof replacement take in Fairview?",
@@ -31,12 +31,12 @@ const faqs = [
   {
     question: "Does French Roofing offer free roof inspections in Fairview?",
     answer:
-      "Absolutely! We offer free roof assessments for Fairview homeowners. Our team will inspect your roof, give you an honest evaluation, and recommend the best course of action — whether that's a repair, some maintenance, or a full replacement. No pressure, no gimmicks.",
+      "Absolutely! We offer free roof assessments for Fairview homeowners. Our team will inspect your roof, give you an honest evaluation, and recommend the best course of action - whether that's a repair, some maintenance, or a full replacement. No pressure, no gimmicks.",
   },
   {
     question: "What roofing materials work best for homes in Fairview, OR?",
     answer:
-      "Fairview's newer developments often feature architectural asphalt shingles and composite roofing — both excellent choices for the Pacific Northwest climate. As a CertainTeed Certified contractor, we use premium materials backed by strong manufacturer warranties that stand up to Oregon's rain and wind.",
+      "Fairview's newer developments often feature architectural asphalt shingles and composite roofing - both excellent choices for the Pacific Northwest climate. As a CertainTeed Certified contractor, we use premium materials backed by strong manufacturer warranties that stand up to Oregon's rain and wind.",
   },
 ];
 
@@ -64,7 +64,7 @@ export default function FairviewPage() {
           <p className="mt-6 text-lg text-gray-300 max-w-2xl mx-auto">
             French Roofing is proud to serve Fairview homeowners with honest,
             high-quality roof replacement, repair, cleaning, and inspection
-            services — just a quick drive from our Damascus home base.
+            services - just a quick drive from our Damascus home base.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
@@ -95,7 +95,7 @@ export default function FairviewPage() {
           </h2>
           <p className="text-gray-600 mb-4">
             Fairview is one of those small East County communities where folks
-            still wave at each other from the driveway — and that&apos;s our kind
+            still wave at each other from the driveway - and that&apos;s our kind
             of neighborhood. French Roofing LLC is based in Damascus, just about
             20 minutes south down the road, and we&apos;ve been taking care of
             roofs in the Fairview area since 2014.
@@ -104,7 +104,7 @@ export default function FairviewPage() {
             Whether you&apos;re in one of Fairview&apos;s newer developments or
             an established home near I-84, we bring the same local knowledge and
             quality craftsmanship to every job. When you reach out, you get a
-            real person who knows the area — not a call center three states away.
+            real person who knows the area - not a call center three states away.
           </p>
         </div>
       </section>
@@ -147,7 +147,7 @@ export default function FairviewPage() {
             Fairview has seen a nice mix of newer developments and affordable
             housing pop up over the past couple decades, which means a lot of
             roofs in the area are still relatively young. That&apos;s great
-            news — but it doesn&apos;t mean they&apos;re maintenance-free.
+            news - but it doesn&apos;t mean they&apos;re maintenance-free.
             Oregon&apos;s relentless rain, moss growth, and the occasional
             windstorm off the Gorge can take a toll on even newer roofing
             systems. Regular inspections and timely repairs go a long way toward
@@ -159,7 +159,7 @@ export default function FairviewPage() {
             storms. Loose shingles, lifted flashing, and clogged gutters are
             common issues we see when we roll into town. The good news? A quick
             call to French Roofing and we can usually get out to you within a day
-            or two — no long waits, no runaround.
+            or two - no long waits, no runaround.
           </p>
         </div>
       </section>

@@ -15,7 +15,7 @@ const steps = [
   {
     title: "Free Roof Assessment",
     description:
-      "We start with a thorough inspection of your existing roof. We document everything with photos, walk you through our findings, and give you an honest recommendation — no pressure, no upsell.",
+      "We start with a thorough inspection of your existing roof. We document everything with photos, walk you through our findings, and give you an honest recommendation - no pressure, no upsell.",
   },
   {
     title: "Detailed Estimate & Material Selection",
@@ -25,12 +25,12 @@ const steps = [
   {
     title: "Tear-Off & Deck Inspection",
     description:
-      "Our crew strips the old roof down to the deck and inspects the plywood for any rot or damage. If we find anything, you hear about it right away with options — no surprises on the invoice.",
+      "Our crew strips the old roof down to the deck and inspects the plywood for any rot or damage. If we find anything, you hear about it right away with options - no surprises on the invoice.",
   },
   {
     title: "Installation to Manufacturer Specs",
     description:
-      "As a CertainTeed Certified contractor, we follow manufacturer specifications to the letter. That means proper underlayment, flashing, ventilation, and shingle installation — the details that make a roof last.",
+      "As a CertainTeed Certified contractor, we follow manufacturer specifications to the letter. That means proper underlayment, flashing, ventilation, and shingle installation - the details that make a roof last.",
   },
   {
     title: "Final Walkthrough & Cleanup",
@@ -43,7 +43,7 @@ const faqs = [
   {
     question: "How much does a roof replacement cost in the Portland metro area?",
     answer:
-      "Most residential roof replacements in Clackamas County and the Portland metro range from $8,000 to $25,000+, depending on roof size, pitch, material choice, and complexity. We provide free, detailed estimates so you know exactly what to expect — and we offer 0% financing through Enhancify to make it manageable.",
+      "Most residential roof replacements in Clackamas County and the Portland metro range from $8,000 to $25,000+, depending on roof size, pitch, material choice, and complexity. We provide free, detailed estimates so you know exactly what to expect - and we offer 0% financing through Enhancify to make it manageable.",
   },
   {
     question: "How long does a full roof replacement take?",
@@ -53,12 +53,12 @@ const faqs = [
   {
     question: "What roofing materials do you use?",
     answer:
-      "We primarily install CertainTeed shingles — we're a CertainTeed Certified contractor, which means our installations meet the highest manufacturer standards. We also work with other premium brands based on your needs and budget.",
+      "We primarily install CertainTeed shingles - we're a CertainTeed Certified contractor, which means our installations meet the highest manufacturer standards. We also work with other premium brands based on your needs and budget.",
   },
   {
     question: "Does a roof replacement require a permit in Oregon?",
     answer:
-      "Roofing does not require permits in Oregon. That means less paperwork and no delays — we can get your project started and completed faster. We still follow all manufacturer specs and industry best practices on every install.",
+      "Roofing does not require permits in Oregon. That means less paperwork and no delays - we can get your project started and completed faster. We still follow all manufacturer specs and industry best practices on every install.",
   },
   {
     question: "Does French Roofing offer a warranty on roof replacements?",
@@ -95,7 +95,7 @@ export default function RoofReplacementPage() {
               Full Roof Replacement
             </p>
             <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-6">
-              Roof Replacement — Portland Metro
+              Roof Replacement - Portland Metro
             </h1>
             <p className="text-lg text-gray-300 max-w-xl">
               When repairs won&apos;t cut it anymore, our team delivers a full
@@ -167,11 +167,11 @@ export default function RoofReplacementPage() {
             </p>
             <ul className="space-y-4">
               {[
-                "CertainTeed Certified — installations that meet the highest manufacturer standards",
-                "Licensed, insured & bonded (CCB #203933) — fully compliant in Oregon",
-                "Family-owned and operated — we're accountable because our name is on the truck",
-                "0% financing through Enhancify — multiple plans to fit your budget",
-                "Clean job sites and a final magnet sweep — your yard looks better when we leave",
+                "CertainTeed Certified - installations that meet the highest manufacturer standards",
+                "Licensed, insured & bonded (CCB #203933) - fully compliant in Oregon",
+                "Family-owned and operated - we're accountable because our name is on the truck",
+                "0% financing through Enhancify - multiple plans to fit your budget",
+                "Clean job sites and a final magnet sweep - your yard looks better when we leave",
                 "Serving 18+ communities across the Portland metro since 2014",
               ].map((item, i) => (
                 <li key={i} className="flex gap-3">

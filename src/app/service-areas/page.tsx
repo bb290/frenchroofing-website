@@ -6,7 +6,7 @@ import { COMPANY, SERVICE_AREAS } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Service Areas | ${COMPANY.name}`,
-  description: `${COMPANY.name} serves homeowners within a 20-mile radius of Damascus, OR — including Happy Valley, Clackamas, Gresham, Oregon City, and more. Roof replacement, repair, cleaning & inspections from your local roofing contractor.`,
+  description: `${COMPANY.name} serves homeowners within a 20-mile radius of Damascus, OR - including Happy Valley, Clackamas, Gresham, Oregon City, and more. Roof replacement, repair, cleaning & inspections from your local roofing contractor.`,
   alternates: { canonical: `${COMPANY.url}/service-areas` },
 };
 
@@ -33,7 +33,7 @@ export default function ServiceAreasPage() {
             French Roofing is based in Damascus, OR and proudly serves homeowners
             within a 20-mile radius. Whether you need a full roof replacement, a
             quick repair, or just an honest inspection, we treat every home like
-            family — no matter which neighborhood you call home.
+            family - no matter which neighborhood you call home.
           </p>
         </div>
       </section>
@@ -77,14 +77,14 @@ export default function ServiceAreasPage() {
             Oregon weather doesn&apos;t pull punches. Between heavy rain, moss
             growth, wind storms, and the occasional ice event, your roof takes a
             beating year-round. That&apos;s why it matters to work with a roofing
-            company that actually lives here — one that understands the climate,
+            company that actually lives here - one that understands the climate,
             knows the local building codes, and can be at your door quickly when
             something goes wrong.
           </p>
           <p className="text-gray-600">
             French Roofing has been headquartered in Damascus since 2014. We
             know these neighborhoods because we live in them. When you reach
-            out, you&apos;re not contacting a national chain — you&apos;re
+            out, you&apos;re not contacting a national chain - you&apos;re
             working with your neighbors. Licensed (CCB #{COMPANY.ccb}), insured, CertainTeed
             Certified, and always happy to give you an honest answer.
           </p>

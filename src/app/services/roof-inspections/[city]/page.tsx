@@ -21,7 +21,7 @@ export async function generateMetadata({
 
   return {
     title: `Roof Inspections in ${area.name}, OR | ${COMPANY.name}`,
-    description: `Honest, thorough roof inspections in ${area.name}, OR. Get a clear picture of your roof's condition — whether you're buying a home, filing a claim, or planning ahead. Licensed (CCB #${COMPANY.ccb}), CertainTeed Certified. Schedule your inspection today.`,
+    description: `Honest, thorough roof inspections in ${area.name}, OR. Get a clear picture of your roof's condition - whether you're buying a home, filing a claim, or planning ahead. Licensed (CCB #${COMPANY.ccb}), CertainTeed Certified. Schedule your inspection today.`,
     alternates: {
       canonical: `${COMPANY.url}/services/roof-inspections/${area.slug}`,
     },
@@ -32,7 +32,7 @@ const steps = [
   {
     title: "Schedule Your Inspection",
     description:
-      "Book online and we'll find a time that works for you — inspections typically take about an hour depending on the size of your roof.",
+      "Book online and we'll find a time that works for you - inspections typically take about an hour depending on the size of your roof.",
   },
   {
     title: "Exterior Roof Inspection",
@@ -47,7 +47,7 @@ const steps = [
   {
     title: "Detailed Report & Recommendations",
     description:
-      "You get a clear, photo-documented report of our findings — what's in good shape, what needs attention now, and what to keep an eye on. No jargon, no scare tactics, just the facts.",
+      "You get a clear, photo-documented report of our findings - what's in good shape, what needs attention now, and what to keep an eye on. No jargon, no scare tactics, just the facts.",
   },
 ];
 
@@ -55,7 +55,7 @@ function getRoofInspectionFaqs(cityName: string) {
   return [
     {
       question: `How much does a roof inspection cost in ${cityName}, OR?`,
-      answer: `Our roof inspections in ${cityName} are always free — no strings attached. We believe every homeowner deserves to know the condition of their roof. Book online and we'll get you on the schedule. We're just a short drive from ${cityName}, based right here in Damascus.`,
+      answer: `Our roof inspections in ${cityName} are always free - no strings attached. We believe every homeowner deserves to know the condition of their roof. Book online and we'll get you on the schedule. We're just a short drive from ${cityName}, based right here in Damascus.`,
     },
     {
       question: `When should I get a roof inspection in ${cityName}?`,
@@ -63,15 +63,15 @@ function getRoofInspectionFaqs(cityName: string) {
     },
     {
       question: `Does French Roofing offer free roof inspections in ${cityName}?`,
-      answer: `Yes — all of our roof inspections in ${cityName} are completely free. Whether it's a pre-purchase inspection, annual checkup, or you just want to know where things stand, there's no charge. You get an honest, thorough evaluation with no pressure to buy anything. Book online and we'll take care of the rest.`,
+      answer: `Yes - all of our roof inspections in ${cityName} are completely free. Whether it's a pre-purchase inspection, annual checkup, or you just want to know where things stand, there's no charge. You get an honest, thorough evaluation with no pressure to buy anything. Book online and we'll take care of the rest.`,
     },
     {
       question: `What does a roof inspection include in ${cityName}, OR?`,
-      answer: `We check the full system — shingles, flashing, vents, ridge caps, valleys, gutters, drip edge, and the attic space when accessible. We look for wear, damage, moss growth, moisture intrusion, ventilation issues, and anything that could become a problem. Everything is documented with photos and you get a clear report. As a CertainTeed Certified contractor (CCB #${COMPANY.ccb}), we know exactly what a properly installed roof looks like.`,
+      answer: `We check the full system - shingles, flashing, vents, ridge caps, valleys, gutters, drip edge, and the attic space when accessible. We look for wear, damage, moss growth, moisture intrusion, ventilation issues, and anything that could become a problem. Everything is documented with photos and you get a clear report. As a CertainTeed Certified contractor (CCB #${COMPANY.ccb}), we know exactly what a properly installed roof looks like.`,
     },
     {
       question: `Should I get a roof inspection before buying a home in ${cityName}?`,
-      answer: `Absolutely — it's one of the smartest things you can do. Pre-purchase roof inspections are one of our most common requests in the ${cityName} area. We give you an honest assessment of the roof's condition and remaining life so you can negotiate with confidence. A roof replacement can cost $8,000 to $25,000+, so knowing what you're getting into matters.`,
+      answer: `Absolutely - it's one of the smartest things you can do. Pre-purchase roof inspections are one of our most common requests in the ${cityName} area. We give you an honest assessment of the roof's condition and remaining life so you can negotiate with confidence. A roof replacement can cost $8,000 to $25,000+, so knowing what you're getting into matters.`,
     },
   ];
 }
@@ -121,7 +121,7 @@ export default async function RoofInspectionsCityPage({
               Roof Inspections in {area.name}, OR
             </h1>
             <p className="text-lg text-gray-300 max-w-xl">
-              Not sure what shape your roof is in? We&apos;ll tell you —
+              Not sure what shape your roof is in? We&apos;ll tell you -
               honestly. Whether you&apos;re buying a home in {area.name}, dealing
               with storm damage, or just want peace of mind, our inspections give
               you the full picture with no pressure attached.
@@ -164,7 +164,7 @@ export default async function RoofInspectionsCityPage({
               },
               {
                 title: "Aging Roof",
-                desc: "If your roof is 10-15+ years old, an inspection helps you plan ahead — repair now or budget for replacement down the road.",
+                desc: "If your roof is 10-15+ years old, an inspection helps you plan ahead - repair now or budget for replacement down the road.",
               },
               {
                 title: "Selling Your Home",
@@ -231,14 +231,14 @@ export default async function RoofInspectionsCityPage({
             <p className="text-gray-600 mb-6">
               Some inspectors just glance at your roof and hand you a generic
               report. We actually get up there, document what we find, and
-              explain it to you like a neighbor — because that&apos;s what we
+              explain it to you like a neighbor - because that&apos;s what we
               are. We&apos;ve been inspecting roofs across the area since 2014.
             </p>
             <ul className="space-y-4">
               {[
-                "CertainTeed Certified — we know what a properly installed roof looks like",
-                "Photo-documented reports — see exactly what we see",
-                "Honest recommendations — we won't create problems to sell you a fix",
+                "CertainTeed Certified - we know what a properly installed roof looks like",
+                "Photo-documented reports - see exactly what we see",
+                "Honest recommendations - we won't create problems to sell you a fix",
                 `Licensed, insured & bonded (CCB #${COMPANY.ccb})`,
                 `Serving ${area.name} and the surrounding area from our home base in Damascus`,
                 "Free assessments available for homeowners considering repair or replacement",

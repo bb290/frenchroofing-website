@@ -191,7 +191,7 @@ export default function Privacy() {
             </li>
             <li>
               <strong>Financing partner:</strong> Enhancify, only when you
-              choose to apply for financing — subject to their own privacy
+              choose to apply for financing - subject to their own privacy
               policy
             </li>
             <li>

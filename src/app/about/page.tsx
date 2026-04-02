@@ -8,7 +8,7 @@ import { COMPANY } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "About French Roofing | Our Story",
   description:
-    "French Roofing LLC was founded in 2014 by Sean French in Damascus, OR. Learn about our values — Integrity, Workmanship, and Community — and why local homeowners trust our family-owned, CertainTeed Certified roofing team.",
+    "French Roofing LLC was founded in 2014 by Sean French in Damascus, OR. Learn about our values - Integrity, Workmanship, and Community - and why local homeowners trust our family-owned, CertainTeed Certified roofing team.",
 };
 
 export default function AboutPage() {
@@ -44,7 +44,7 @@ export default function AboutPage() {
               <span className="text-[#ffbd59]">Dream</span>
             </h1>
             <p className="mt-6 text-lg text-gray-300 max-w-xl">
-              The story behind French Roofing — and why we treat every
+              The story behind French Roofing - and why we treat every
               customer&apos;s home like our own.
             </p>
           </div>
@@ -57,7 +57,7 @@ export default function AboutPage() {
           <div className="relative aspect-square rounded-2xl overflow-hidden max-w-md mx-auto lg:mx-0">
             <Image
               src="/images/sean-first-job.webp"
-              alt="Sean French on his first roofing job — founder of French Roofing LLC"
+              alt="Sean French on his first roofing job - founder of French Roofing LLC"
               fill
               className="object-cover"
             />
@@ -71,7 +71,7 @@ export default function AboutPage() {
             </h2>
             <p className="text-gray-600 mb-4">
               Sean French grew up on roofs. He started as a subcontractor at
-              sixteen, learning the trade the way most real craftspeople do — by
+              sixteen, learning the trade the way most real craftspeople do - by
               showing up early, listening more than talking, and doing the
               unglamorous work with pride.
             </p>
@@ -86,7 +86,7 @@ export default function AboutPage() {
               be built the same way you&apos;d build it for your own
               family.&rdquo;
               <span className="block not-italic text-sm mt-1 text-[#092e5e] font-medium">
-                — Sean French, Founder
+                - Sean French, Founder
               </span>
             </blockquote>
             <p className="text-gray-600">
@@ -207,7 +207,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ── Team Photo — Bowling ── */}
+      {/* ── Team Photo - Bowling ── */}
       <section className="py-20 px-4 bg-white">
         <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
@@ -215,7 +215,7 @@ export default function AboutPage() {
               A Local Team Focused on Homeowners
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#092e5e] mb-6">
-              More Than a Crew — A Team
+              More Than a Crew - A Team
             </h2>
             <p className="text-gray-600 mb-4">
               French Roofing has grown steadily in Clackamas and the surrounding
@@ -238,7 +238,7 @@ export default function AboutPage() {
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
                 src="/images/team-bowling.webp"
-                alt="French Roofing team bowling together — company culture and community"
+                alt="French Roofing team bowling together - company culture and community"
                 fill
                 className="object-cover"
               />
@@ -331,7 +331,7 @@ export default function AboutPage() {
                     Licensed, Insured &amp; Bonded
                   </h3>
                   <p className="text-sm text-gray-600">
-                    Oregon CCB #{COMPANY.ccb} — fully compliant and
+                    Oregon CCB #{COMPANY.ccb} - fully compliant and
                     accountable. We carry the coverage homeowners deserve.
                   </p>
                 </div>

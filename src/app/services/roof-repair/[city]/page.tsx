@@ -32,7 +32,7 @@ const steps = [
   {
     title: "Inspection & Diagnosis",
     description:
-      "We climb up, take photos, and figure out exactly what's going on. No guesswork — we show you what we find and explain your options in plain English.",
+      "We climb up, take photos, and figure out exactly what's going on. No guesswork - we show you what we find and explain your options in plain English.",
   },
   {
     title: "Honest Recommendation",
@@ -42,7 +42,7 @@ const steps = [
   {
     title: "Targeted Repair",
     description:
-      "Our crew addresses the specific issue — whether it's replacing damaged shingles, sealing cracked flashing, fixing a leak, or repairing storm damage. We use quality materials that match your existing roof.",
+      "Our crew addresses the specific issue - whether it's replacing damaged shingles, sealing cracked flashing, fixing a leak, or repairing storm damage. We use quality materials that match your existing roof.",
   },
   {
     title: "Quality Check & Cleanup",
@@ -55,11 +55,11 @@ function getRoofRepairFaqs(cityName: string) {
   return [
     {
       question: `How much does roof repair cost in ${cityName}, OR?`,
-      answer: `Roof repairs in ${cityName} can range from a few hundred dollars for minor fixes to several thousand for more extensive damage. It depends on the type and scope of the issue. We provide a clear, written estimate before any work begins — no surprises. Financing through Enhancify is available for larger repairs too.`,
+      answer: `Roof repairs in ${cityName} can range from a few hundred dollars for minor fixes to several thousand for more extensive damage. It depends on the type and scope of the issue. We provide a clear, written estimate before any work begins - no surprises. Financing through Enhancify is available for larger repairs too.`,
     },
     {
       question: `When should I repair vs replace my roof in ${cityName}?`,
-      answer: `If your roof is under 15 years old with isolated damage — a few missing shingles, a small leak, cracked flashing — repair is usually the smart move. If it's 20+ years old with widespread issues, a replacement is often more cost-effective long-term. We'll give you an honest recommendation during your free assessment. No pressure either way.`,
+      answer: `If your roof is under 15 years old with isolated damage - a few missing shingles, a small leak, cracked flashing - repair is usually the smart move. If it's 20+ years old with widespread issues, a replacement is often more cost-effective long-term. We'll give you an honest recommendation during your free assessment. No pressure either way.`,
     },
     {
       question: `Does French Roofing handle storm damage repair in ${cityName}?`,
@@ -67,11 +67,11 @@ function getRoofRepairFaqs(cityName: string) {
     },
     {
       question: `How quickly can French Roofing respond to roof leaks in ${cityName}?`,
-      answer: `For active leaks and emergency situations in ${cityName}, we prioritize getting to you as fast as possible — often within a day or two. For non-emergency repairs, we typically schedule within the week. Oregon weather can be unpredictable, so if your roof is leaking, don't wait — book online and we'll get to you fast. We're just a short drive from ${cityName}.`,
+      answer: `For active leaks and emergency situations in ${cityName}, we prioritize getting to you as fast as possible - often within a day or two. For non-emergency repairs, we typically schedule within the week. Oregon weather can be unpredictable, so if your roof is leaking, don't wait - book online and we'll get to you fast. We're just a short drive from ${cityName}.`,
     },
     {
       question: `Is French Roofing licensed for roof repair in ${cityName}, OR?`,
-      answer: `Yes — French Roofing is fully licensed, insured, and bonded in Oregon (CCB #${COMPANY.ccb}). We're also CertainTeed Certified, which means quality materials and proper technique on every job. We've been serving ${cityName} and the surrounding communities from our home base in Damascus since 2014.`,
+      answer: `Yes - French Roofing is fully licensed, insured, and bonded in Oregon (CCB #${COMPANY.ccb}). We're also CertainTeed Certified, which means quality materials and proper technique on every job. We've been serving ${cityName} and the surrounding communities from our home base in Damascus since 2014.`,
     },
   ];
 }
@@ -121,7 +121,7 @@ export default async function RoofRepairCityPage({
               Roof Repair in {area.name}, OR
             </h1>
             <p className="text-lg text-gray-300 max-w-xl">
-              Leaks, storm damage, missing shingles, cracked flashing — small
+              Leaks, storm damage, missing shingles, cracked flashing - small
               problems turn into big ones fast in Oregon&apos;s climate. {area.name}{" "}
               homeowners count on us to get it fixed right so you can stop
               worrying about what&apos;s happening overhead.
@@ -163,7 +163,7 @@ export default async function RoofRepairCityPage({
               },
               {
                 title: "Storm Damage",
-                desc: "Wind-lifted shingles, fallen branches, hail damage — we handle it all and help with insurance documentation.",
+                desc: "Wind-lifted shingles, fallen branches, hail damage - we handle it all and help with insurance documentation.",
               },
               {
                 title: "Cracked or Missing Flashing",
@@ -242,17 +242,17 @@ export default async function RoofRepairCityPage({
             <p className="text-gray-600 mb-6">
               A lot of contractors will patch a problem just to collect a check.
               That&apos;s not how we operate. We diagnose the real issue, fix it
-              properly, and tell you the truth about what your roof needs — even
+              properly, and tell you the truth about what your roof needs - even
               if the answer is &quot;you&apos;re fine for now.&quot;
             </p>
             <ul className="space-y-4">
               {[
-                "Honest diagnosis — we won't upsell you on a replacement if a repair will do",
+                "Honest diagnosis - we won't upsell you on a replacement if a repair will do",
                 `Licensed, insured & bonded (CCB #${COMPANY.ccb})`,
-                "CertainTeed Certified — quality materials and proper technique",
+                "CertainTeed Certified - quality materials and proper technique",
                 `Serving ${area.name} and the surrounding area from Damascus since 2014`,
                 "Financing through Enhancify for larger repair projects",
-                "Clean, documented work — photos before, during, and after",
+                "Clean, documented work - photos before, during, and after",
               ].map((item, i) => (
                 <li key={i} className="flex gap-3">
                   <svg

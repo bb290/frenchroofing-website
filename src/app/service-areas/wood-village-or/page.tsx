@@ -8,7 +8,7 @@ import { COMPANY, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Roofing Contractor in Wood Village, OR | ${COMPANY.name}`,
   description:
-    "French Roofing LLC provides expert roofing services in Wood Village, OR — roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, serving from nearby Damascus. Book online today.",
+    "French Roofing LLC provides expert roofing services in Wood Village, OR - roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, serving from nearby Damascus. Book online today.",
   alternates: { canonical: `${COMPANY.url}/service-areas/wood-village-or` },
 };
 
@@ -16,22 +16,22 @@ const faqs = [
   {
     question: "How much does roof replacement cost in Wood Village, OR?",
     answer:
-      "Roof replacement costs in Wood Village typically range from $8,000 to $25,000+ depending on roof size, pitch, materials, and complexity. Wood Village has a lot of newer construction, which can keep costs on the lower end. French Roofing provides free assessments so you get an accurate number — not a guess. Financing is available through Enhancify with 0% interest options.",
+      "Roof replacement costs in Wood Village typically range from $8,000 to $25,000+ depending on roof size, pitch, materials, and complexity. Wood Village has a lot of newer construction, which can keep costs on the lower end. French Roofing provides free assessments so you get an accurate number - not a guess. Financing is available through Enhancify with 0% interest options.",
   },
   {
     question: "Who is the best roofing contractor in Wood Village, OR?",
     answer:
-      "French Roofing LLC is a trusted local roofing contractor serving Wood Village from our Damascus home base — roughly 20 minutes away. We've been in business since 2014, and we're licensed (CCB #203933), insured, and CertainTeed Certified. We treat every Wood Village home like it's our own.",
+      "French Roofing LLC is a trusted local roofing contractor serving Wood Village from our Damascus home base - roughly 20 minutes away. We've been in business since 2014, and we're licensed (CCB #203933), insured, and CertainTeed Certified. We treat every Wood Village home like it's our own.",
   },
   {
     question: "How long does a roof replacement take in Wood Village?",
     answer:
-      "Most residential roof replacements in Wood Village wrap up in 1 to 3 days, depending on size and complexity. Weather can sometimes push things a day — this is Oregon, after all — but we keep you updated throughout the process.",
+      "Most residential roof replacements in Wood Village wrap up in 1 to 3 days, depending on size and complexity. Weather can sometimes push things a day - this is Oregon, after all - but we keep you updated throughout the process.",
   },
   {
     question: "Does French Roofing offer free roof inspections in Wood Village?",
     answer:
-      "You bet! We offer free roof assessments for Wood Village homeowners. We'll take a thorough look at your roof, give you an honest evaluation, and walk you through your options — whether it's a small repair or a full replacement. Zero pressure.",
+      "You bet! We offer free roof assessments for Wood Village homeowners. We'll take a thorough look at your roof, give you an honest evaluation, and walk you through your options - whether it's a small repair or a full replacement. Zero pressure.",
   },
   {
     question: "What roofing services does French Roofing provide in Wood Village?",
@@ -63,7 +63,7 @@ export default function WoodVillagePage() {
           </h1>
           <p className="mt-6 text-lg text-gray-300 max-w-2xl mx-auto">
             French Roofing brings honest, quality roofing services to Wood
-            Village — from roof replacements and repairs to cleaning and
+            Village - from roof replacements and repairs to cleaning and
             inspections. Your local roofer, just down the road in Damascus.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -96,8 +96,8 @@ export default function WoodVillagePage() {
           <p className="text-gray-600 mb-4">
             Wood Village may be one of the smallest cities in East County, but
             that doesn&apos;t mean your roof deserves anything less than the
-            best. French Roofing LLC is headquartered in Damascus — about a
-            20-minute drive — and we&apos;ve been serving the greater East
+            best. French Roofing LLC is headquartered in Damascus - about a
+            20-minute drive - and we&apos;ve been serving the greater East
             County area since 2014. We know these neighborhoods, and we treat
             every home like it belongs to family.
           </p>
@@ -105,7 +105,7 @@ export default function WoodVillagePage() {
             From the compact residential streets near the outlet mall to the
             newer homes on the outskirts, Wood Village roofs face the same
             Pacific Northwest weather as the rest of us. When you need a roofer
-            who actually shows up, answers the phone, and does the job right —
+            who actually shows up, answers the phone, and does the job right -
             that&apos;s us.
           </p>
         </div>
@@ -148,7 +148,7 @@ export default function WoodVillagePage() {
           <p className="text-gray-600 mb-4">
             Wood Village is a tight-knit community tucked between Gresham and
             Troutdale, and a lot of the housing stock here is relatively newer
-            construction. That&apos;s a good thing when it comes to roofing —
+            construction. That&apos;s a good thing when it comes to roofing -
             but even newer roofs need attention in the Pacific Northwest. Moss,
             algae, and debris buildup can start causing problems within just a
             few years if left unchecked, especially under all those trees.
@@ -159,7 +159,7 @@ export default function WoodVillagePage() {
             checks, and the occasional inspection go a long way toward avoiding
             surprise repairs. And if your roof has taken a hit from one of those
             East County windstorms, French Roofing can get out to assess the
-            damage quickly — we&apos;re close by and we don&apos;t believe in
+            damage quickly - we&apos;re close by and we don&apos;t believe in
             making folks wait around when their roof is on the line.
           </p>
         </div>

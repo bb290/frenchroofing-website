@@ -16,27 +16,27 @@ const faqs = [
   {
     question: "How much does roof replacement cost in Estacada, OR?",
     answer:
-      "Roof replacement costs in Estacada typically range from $8,000 to $24,000+ depending on roof size, pitch, materials, and complexity. Many Estacada homes are older with simpler rooflines, which can help keep costs manageable. French Roofing provides free, no-obligation assessments so you get an accurate estimate — not a ballpark guess. We also offer financing through Enhancify with 0% interest options.",
+      "Roof replacement costs in Estacada typically range from $8,000 to $24,000+ depending on roof size, pitch, materials, and complexity. Many Estacada homes are older with simpler rooflines, which can help keep costs manageable. French Roofing provides free, no-obligation assessments so you get an accurate estimate - not a ballpark guess. We also offer financing through Enhancify with 0% interest options.",
   },
   {
     question: "Who is the best roofing contractor in Estacada, OR?",
     answer:
-      "French Roofing LLC serves Estacada from our home base in Damascus, OR — about 20 minutes up the road on Highway 224. We've been in business since 2014, we're licensed (CCB #203933), insured, and CertainTeed Certified. We're close by and we know the conditions that Estacada roofs deal with.",
+      "French Roofing LLC serves Estacada from our home base in Damascus, OR - about 20 minutes up the road on Highway 224. We've been in business since 2014, we're licensed (CCB #203933), insured, and CertainTeed Certified. We're close by and we know the conditions that Estacada roofs deal with.",
   },
   {
     question: "Why do Estacada roofs get so much moss?",
     answer:
-      "Estacada is surrounded by forest, gets heavy rainfall, and stays damp for long stretches of the year — that's a perfect recipe for moss and algae growth. Moss holds moisture against your shingles and can work its way under them over time, causing real damage. Regular roof cleaning and maintenance keeps it under control and extends the life of your roof significantly.",
+      "Estacada is surrounded by forest, gets heavy rainfall, and stays damp for long stretches of the year - that's a perfect recipe for moss and algae growth. Moss holds moisture against your shingles and can work its way under them over time, causing real damage. Regular roof cleaning and maintenance keeps it under control and extends the life of your roof significantly.",
   },
   {
     question: "Does French Roofing offer free roof inspections in Estacada?",
     answer:
-      "Yes! We offer free roof assessments for Estacada homeowners. Our team will inspect your roof, give you an honest evaluation, and recommend the best course of action — whether that's a repair, maintenance, or a full replacement. No pressure, no gimmicks.",
+      "Yes! We offer free roof assessments for Estacada homeowners. Our team will inspect your roof, give you an honest evaluation, and recommend the best course of action - whether that's a repair, maintenance, or a full replacement. No pressure, no gimmicks.",
   },
   {
     question: "How often should I have my roof inspected in Estacada?",
     answer:
-      "Given Estacada's heavy rain, dense tree cover, and moss-friendly climate, we recommend a professional roof inspection at least once a year — ideally in late spring after winter storms have passed. Catching small issues early, like cracked flashing or moss buildup, prevents expensive problems down the road. We offer free assessments, so there's no reason to put it off.",
+      "Given Estacada's heavy rain, dense tree cover, and moss-friendly climate, we recommend a professional roof inspection at least once a year - ideally in late spring after winter storms have passed. Catching small issues early, like cracked flashing or moss buildup, prevents expensive problems down the road. We offer free assessments, so there's no reason to put it off.",
   },
 ];
 
@@ -63,7 +63,7 @@ export default function EstacadaPage() {
           </h1>
           <p className="mt-6 text-lg text-gray-300 max-w-2xl mx-auto">
             French Roofing is proud to serve Estacada from our Damascus home
-            base — just about 20 minutes up the road. Honest roofing services
+            base - just about 20 minutes up the road. Honest roofing services
             for a tight-knit community that deserves the best.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -95,14 +95,14 @@ export default function EstacadaPage() {
           </h2>
           <p className="text-gray-600 mb-4">
             Estacada is the kind of community where people look out for each
-            other — and that&apos;s exactly how French Roofing operates. Founded
+            other - and that&apos;s exactly how French Roofing operates. Founded
             in 2014 by Sean French, we&apos;re headquartered in Damascus, just a
             quick 20-minute drive from Estacada on Highway 224. We&apos;ve been
             taking care of roofs in this area for years and understand what the
             local climate demands.
           </p>
           <p className="text-gray-600">
-            When you hire French Roofing, you&apos;re getting a neighbor — not a
+            When you hire French Roofing, you&apos;re getting a neighbor - not a
             faceless corporation. We show up on time, communicate honestly, and
             leave your property cleaner than we found it. That&apos;s the
             standard for every job, whether it&apos;s a quick repair or a
@@ -151,7 +151,7 @@ export default function EstacadaPage() {
             area. All that moisture and tree cover mean moss and algae growth is
             practically a guarantee if your roof isn&apos;t maintained. We see
             plenty of Estacada roofs with thick moss buildup that&apos;s been
-            quietly causing damage for years — lifting shingles, trapping water,
+            quietly causing damage for years - lifting shingles, trapping water,
             and shortening the life of the roof.
           </p>
           <p className="text-gray-600">
@@ -161,7 +161,7 @@ export default function EstacadaPage() {
             climate far better than what was available 25 or 30 years ago.
             French Roofing will give you an honest assessment of where your roof
             stands and help you make the smartest decision for your home and
-            budget — including financing options through Enhancify if you need
+            budget - including financing options through Enhancify if you need
             them.
           </p>
         </div>

@@ -8,7 +8,7 @@ import { COMPANY, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Roofing Contractor in Clackamas, OR | ${COMPANY.name}`,
   description:
-    "Looking for a reliable roofing contractor in Clackamas, OR? French Roofing LLC offers roof replacement, repair, cleaning, and inspections. Based in nearby Damascus — just minutes away. Book online today.",
+    "Looking for a reliable roofing contractor in Clackamas, OR? French Roofing LLC offers roof replacement, repair, cleaning, and inspections. Based in nearby Damascus - just minutes away. Book online today.",
   alternates: { canonical: `${COMPANY.url}/service-areas/clackamas-or` },
 };
 
@@ -16,12 +16,12 @@ const faqs = [
   {
     question: "How much does roof replacement cost in Clackamas, OR?",
     answer:
-      "Roof replacement in Clackamas typically costs between $8,000 and $25,000+ depending on your roof's size, pitch, and material choice. French Roofing offers free assessments so you get a real number — not a rough guess. We also have financing through Enhancify with 0% interest options to make it easier on your budget.",
+      "Roof replacement in Clackamas typically costs between $8,000 and $25,000+ depending on your roof's size, pitch, and material choice. French Roofing offers free assessments so you get a real number - not a rough guess. We also have financing through Enhancify with 0% interest options to make it easier on your budget.",
   },
   {
     question: "What roofing company serves Clackamas, OR?",
     answer:
-      "French Roofing LLC is based in Damascus, OR — just minutes from Clackamas. We've been serving Clackamas homeowners since 2014 with professional roof replacement, repair, cleaning, and inspection services. Licensed (CCB #203933), insured, and CertainTeed Certified.",
+      "French Roofing LLC is based in Damascus, OR - just minutes from Clackamas. We've been serving Clackamas homeowners since 2014 with professional roof replacement, repair, cleaning, and inspection services. Licensed (CCB #203933), insured, and CertainTeed Certified.",
   },
   {
     question: "How do I know if my roof in Clackamas needs to be replaced?",
@@ -31,7 +31,7 @@ const faqs = [
   {
     question: "Does French Roofing handle storm damage repairs in Clackamas?",
     answer:
-      "Absolutely. Wind, rain, and falling debris can do real damage to Clackamas roofs — especially during fall and winter storms. We respond quickly to storm damage calls, document everything for insurance purposes, and get your roof secured as fast as possible.",
+      "Absolutely. Wind, rain, and falling debris can do real damage to Clackamas roofs - especially during fall and winter storms. We respond quickly to storm damage calls, document everything for insurance purposes, and get your roof secured as fast as possible.",
   },
   {
     question: "Is French Roofing licensed to work in Clackamas, OR?",
@@ -64,7 +64,7 @@ export default function ClackamasPage() {
           <p className="mt-6 text-lg text-gray-300 max-w-2xl mx-auto">
             French Roofing proudly serves Clackamas with dependable roof
             replacement, repair, cleaning, and inspection services. We&apos;re
-            based in Damascus — right next door — so getting to your home is
+            based in Damascus - right next door - so getting to your home is
             never a problem.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -95,7 +95,7 @@ export default function ClackamasPage() {
             Clackamas Roofing Done Right
           </h2>
           <p className="text-gray-600 mb-4">
-            Clackamas is one of our closest service areas — we&apos;re based in
+            Clackamas is one of our closest service areas - we&apos;re based in
             Damascus, just a short drive away. That means when you call French
             Roofing for a roof repair in Clackamas, we can be there quickly and
             get to work without delay. We&apos;ve been taking care of roofs in
@@ -106,7 +106,7 @@ export default function ClackamasPage() {
             Whether you live near Clackamas Town Center or out toward the quieter
             residential streets, our team delivers the same quality workmanship
             and straight-up honest communication on every job. No surprises, no
-            runaround — just a solid roof over your head.
+            runaround - just a solid roof over your head.
           </p>
         </div>
       </section>
@@ -147,7 +147,7 @@ export default function ClackamasPage() {
           </h2>
           <p className="text-gray-600 mb-4">
             Clackamas homes face the same Pacific Northwest weather challenges as
-            the rest of the Portland metro — heavy rain from fall through spring,
+            the rest of the Portland metro - heavy rain from fall through spring,
             occasional ice, and enough moisture to keep moss happy year-round.
             Many homes in the area were built in the 1980s through 2000s, which
             means a lot of roofs are approaching or past their expected lifespan.

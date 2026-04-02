@@ -16,12 +16,12 @@ const faqs = [
   {
     question: "How much does roof replacement cost in Milwaukie, OR?",
     answer:
-      "Roof replacement in Milwaukie typically ranges from $8,000 to $25,000+ depending on roof size, pitch, layers, and materials. Many Milwaukie homes are mid-century builds with moderate pitches that keep costs reasonable. French Roofing offers free assessments so you know exactly what you're looking at — no surprises. Financing is available through Enhancify with 0% interest options.",
+      "Roof replacement in Milwaukie typically ranges from $8,000 to $25,000+ depending on roof size, pitch, layers, and materials. Many Milwaukie homes are mid-century builds with moderate pitches that keep costs reasonable. French Roofing offers free assessments so you know exactly what you're looking at - no surprises. Financing is available through Enhancify with 0% interest options.",
   },
   {
     question: "Who is the best roofing contractor in Milwaukie, OR?",
     answer:
-      "French Roofing LLC has been serving Milwaukie and the surrounding Clackamas County area since 2014. We're based in Damascus — about 20 minutes from most Milwaukie neighborhoods. Licensed (CCB #203933), insured, and CertainTeed Certified, we bring the same quality and care to Milwaukie that we bring to our own neighborhood.",
+      "French Roofing LLC has been serving Milwaukie and the surrounding Clackamas County area since 2014. We're based in Damascus - about 20 minutes from most Milwaukie neighborhoods. Licensed (CCB #203933), insured, and CertainTeed Certified, we bring the same quality and care to Milwaukie that we bring to our own neighborhood.",
   },
   {
     question: "Is river proximity a concern for Milwaukie roofs?",
@@ -31,12 +31,12 @@ const faqs = [
   {
     question: "Does French Roofing offer free roof inspections in Milwaukie?",
     answer:
-      "Yes! We provide free roof assessments for Milwaukie homeowners. Many homes in Milwaukie were built in the 1950s through 1970s and may be on aging roofs that could use a professional look. We'll give you an honest evaluation and straightforward recommendations — no pressure, no sales pitch.",
+      "Yes! We provide free roof assessments for Milwaukie homeowners. Many homes in Milwaukie were built in the 1950s through 1970s and may be on aging roofs that could use a professional look. We'll give you an honest evaluation and straightforward recommendations - no pressure, no sales pitch.",
   },
   {
     question: "How long does a roof replacement take in Milwaukie?",
     answer:
-      "Most Milwaukie roof replacements are completed in 1 to 3 days. Mid-century ranch-style homes — which are common in the area — tend to be straightforward projects. Weather can shift the timeline (this is Oregon, after all), but we keep you in the loop every step of the way.",
+      "Most Milwaukie roof replacements are completed in 1 to 3 days. Mid-century ranch-style homes - which are common in the area - tend to be straightforward projects. Weather can shift the timeline (this is Oregon, after all), but we keep you in the loop every step of the way.",
   },
 ];
 
@@ -64,7 +64,7 @@ export default function MilwaukiePage() {
           <p className="mt-6 text-lg text-gray-300 max-w-2xl mx-auto">
             French Roofing serves Milwaukie homeowners with dependable roof
             replacement, repair, cleaning, and inspections. Local crew, honest
-            communication, quality materials — just 20 minutes from our Damascus
+            communication, quality materials - just 20 minutes from our Damascus
             home base.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -95,7 +95,7 @@ export default function MilwaukiePage() {
             Good Roofs for a Great Little City
           </h2>
           <p className="text-gray-600 mb-4">
-            Milwaukie has that perfect inner-suburb feel — close enough to
+            Milwaukie has that perfect inner-suburb feel - close enough to
             Portland to enjoy everything the city offers, but with its own
             character and community. French Roofing is based in Damascus, about
             20 minutes east, and we&apos;ve been serving Milwaukie homeowners
@@ -149,7 +149,7 @@ export default function MilwaukiePage() {
           </h2>
           <p className="text-gray-600 mb-4">
             Milwaukie&apos;s housing stock tells a story. A lot of homes here
-            were built during the post-war boom of the 1940s through 1960s —
+            were built during the post-war boom of the 1940s through 1960s -
             solid mid-century construction with low-to-moderate roof pitches and
             composition shingles. Many of those original roofs have been replaced
             once or twice already, and if yours is pushing 20 to 25 years, it
@@ -165,7 +165,7 @@ export default function MilwaukiePage() {
             streets, and you&apos;ve got leaves, needles, and branches
             constantly settling onto rooftops. That organic debris holds moisture
             against your shingles and speeds up wear. A regular cleaning
-            schedule — even once a year — can make a real difference in how long
+            schedule - even once a year - can make a real difference in how long
             your roof lasts and how good it looks while it&apos;s doing its job.
           </p>
         </div>

@@ -18,7 +18,7 @@ const discounts = [
     who: "Active Military & Veterans",
     tagline: "You protected us. Now we protect your home.",
     description:
-      "To every service member and veteran who stood on the line so the rest of us could sleep under a safe roof — thank you. This one's for you.",
+      "To every service member and veteran who stood on the line so the rest of us could sleep under a safe roof - thank you. This one's for you.",
     eligible: [
       "Active duty military (all branches)",
       "Military reserves & National Guard",
@@ -48,7 +48,7 @@ const discounts = [
     who: "Nurses & Teachers",
     tagline: "You build our community. We shield your home.",
     description:
-      "Nurses keep us healthy. Teachers shape our kids. These are the people who hold communities together — and we think they deserve a little something back.",
+      "Nurses keep us healthy. Teachers shape our kids. These are the people who hold communities together - and we think they deserve a little something back.",
     eligible: [
       "Registered nurses (RN) & licensed practical nurses (LPN)",
       "Nurse practitioners & physician assistants",
@@ -192,8 +192,8 @@ export default function DiscountsPage() {
                 Send Proof of Service
               </h3>
               <p className="text-sm text-gray-600">
-                Just send us any proof of service — a photo of your badge, a pay
-                stub, a school ID, whatever&apos;s easy. That&apos;s it — no hoops, no fine print.
+                Just send us any proof of service - a photo of your badge, a pay
+                stub, a school ID, whatever&apos;s easy. That&apos;s it - no hoops, no fine print.
               </p>
             </div>
           </div>
@@ -224,7 +224,7 @@ export default function DiscountsPage() {
                 community discounts.
               </li>
               <li>
-                &bull; Discount amount discussed during your free assessment —
+                &bull; Discount amount discussed during your free assessment -
                 we keep it straightforward.
               </li>
             </ul>
@@ -235,7 +235,7 @@ export default function DiscountsPage() {
       {/* ── CTA ── */}
       <CTABanner
         headline="Ready to Save on Your New Roof?"
-        description="Schedule your free assessment and mention your community discount. No pressure, no gimmicks — just honest roofing from your neighbors."
+        description="Schedule your free assessment and mention your community discount. No pressure, no gimmicks - just honest roofing from your neighbors."
         dark
       />
     </>

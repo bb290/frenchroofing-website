@@ -16,22 +16,22 @@ const faqs = [
   {
     question: "How much does roof replacement cost in Sandy, OR?",
     answer:
-      "Roof replacement costs in Sandy typically range from $8,000 to $25,000+ depending on roof size, pitch, materials, and complexity. Heavy snow loads and mountain weather exposure can also factor into material choices and pricing. French Roofing provides free, no-obligation assessments so you get an accurate estimate — not a ballpark guess. We also offer financing through Enhancify with 0% interest options.",
+      "Roof replacement costs in Sandy typically range from $8,000 to $25,000+ depending on roof size, pitch, materials, and complexity. Heavy snow loads and mountain weather exposure can also factor into material choices and pricing. French Roofing provides free, no-obligation assessments so you get an accurate estimate - not a ballpark guess. We also offer financing through Enhancify with 0% interest options.",
   },
   {
     question: "Who is the best roofing contractor in Sandy, OR?",
     answer:
-      "French Roofing LLC serves Sandy from our home base in Damascus, OR — just about 25 minutes down the road on Highway 26. We've been in business since 2014, we're licensed (CCB #203933), insured, and CertainTeed Certified. We know mountain weather and build roofs that hold up to it.",
+      "French Roofing LLC serves Sandy from our home base in Damascus, OR - just about 25 minutes down the road on Highway 26. We've been in business since 2014, we're licensed (CCB #203933), insured, and CertainTeed Certified. We know mountain weather and build roofs that hold up to it.",
   },
   {
     question: "Can my roof handle Sandy's heavy snow and wind?",
     answer:
-      "Sandy sits at the gateway to Mt. Hood, so roofs here deal with heavier snow loads, ice, and stronger winds than most of the Portland metro. We recommend materials and installation techniques designed for these conditions — proper underlayment, ice and water shield in vulnerable areas, and architectural shingles rated for high wind. We'll assess your specific situation and make sure your roof is ready for whatever the mountain sends your way.",
+      "Sandy sits at the gateway to Mt. Hood, so roofs here deal with heavier snow loads, ice, and stronger winds than most of the Portland metro. We recommend materials and installation techniques designed for these conditions - proper underlayment, ice and water shield in vulnerable areas, and architectural shingles rated for high wind. We'll assess your specific situation and make sure your roof is ready for whatever the mountain sends your way.",
   },
   {
     question: "Does French Roofing offer free roof inspections in Sandy?",
     answer:
-      "Yes! We offer free roof assessments for Sandy homeowners. Our team will inspect your roof, give you an honest evaluation, and recommend the best course of action — whether that's a repair, maintenance, or a full replacement. No pressure, no gimmicks.",
+      "Yes! We offer free roof assessments for Sandy homeowners. Our team will inspect your roof, give you an honest evaluation, and recommend the best course of action - whether that's a repair, maintenance, or a full replacement. No pressure, no gimmicks.",
   },
   {
     question: "How quickly can French Roofing respond to storm damage in Sandy?",
@@ -62,7 +62,7 @@ export default function SandyPage() {
             <span className="text-[#ffbd59]">Sandy, OR</span>
           </h1>
           <p className="mt-6 text-lg text-gray-300 max-w-2xl mx-auto">
-            French Roofing serves Sandy homeowners from our Damascus home base —
+            French Roofing serves Sandy homeowners from our Damascus home base -
             about 25 minutes down Highway 26. We build roofs tough enough for
             mountain weather with the honest, neighborly service you deserve.
           </p>
@@ -98,7 +98,7 @@ export default function SandyPage() {
             work a little harder than most. French Roofing LLC has been serving
             Sandy and the surrounding foothills since 2014, and we understand
             what mountain-adjacent weather does to a roof. Heavy snow, ice dams,
-            wind-driven rain — we&apos;ve seen it all and know how to build
+            wind-driven rain - we&apos;ve seen it all and know how to build
             against it.
           </p>
           <p className="text-gray-600">
@@ -157,7 +157,7 @@ export default function SandyPage() {
             surrounded by tall conifers that shed needles, branches, and sap
             year-round. That debris holds moisture against your roof and
             accelerates wear. We always recommend regular inspections and
-            cleanings for Sandy homes — staying ahead of problems here saves you
+            cleanings for Sandy homes - staying ahead of problems here saves you
             real money when the next big storm rolls in off the mountain.
           </p>
         </div>

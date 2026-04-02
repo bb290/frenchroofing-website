@@ -77,7 +77,7 @@ export default function MaterialsPage() {
       <section className="bg-[#092e5e] py-16 px-4">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="text-4xl sm:text-5xl font-bold text-white">
-            Built with the Best &mdash;{" "}
+            Built with the Best -{" "}
             <span className="text-[#ffbd59]">CertainTeed Roofing Systems</span>
           </h1>
           <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
@@ -104,7 +104,7 @@ export default function MaterialsPage() {
           <p className="text-gray-600 leading-relaxed">
             We&apos;re not just buying shingles off a shelf. As a CertainTeed
             Certified contractor, we&apos;ve invested in training and met their
-            quality standards &mdash; which means better installations and
+            quality standards - which means better installations and
             better warranty coverage for you.
           </p>
         </div>
@@ -114,7 +114,7 @@ export default function MaterialsPage() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="mx-auto max-w-4xl">
           <h2 className="text-3xl font-bold text-[#092e5e] mb-6 text-center">
-            It&apos;s Not Just Shingles &mdash; It&apos;s a System
+            It&apos;s Not Just Shingles - It&apos;s a System
           </h2>
           <p className="text-gray-600 leading-relaxed text-center max-w-3xl mx-auto mb-12">
             A lot of people think a roof is just shingles, but the truth is your
@@ -250,7 +250,7 @@ export default function MaterialsPage() {
             For homeowners, this translates to one major benefit: enhanced
             warranty options. When a certified contractor installs your roof, you
             may qualify for longer coverage periods and warranties that include
-            labor for material defects &mdash; something standard manufacturer
+            labor for material defects - something standard manufacturer
             warranties typically don&apos;t cover. It&apos;s our way of making
             sure you get the most protection possible.
           </p>

@@ -81,7 +81,7 @@ export default function WarrantiesPage() {
       <section className="bg-[#092e5e] py-16 px-4">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="text-4xl sm:text-5xl font-bold text-white">
-            Your Roof, Protected &mdash;{" "}
+            Your Roof, Protected -{" "}
             <span className="text-[#ffbd59]">Warranty Details</span>
           </h1>
           <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
@@ -137,7 +137,7 @@ export default function WarrantiesPage() {
                 <strong className="text-[#092e5e]">CertainTeed Certified</strong>,
                 your installation may qualify for{" "}
                 <strong className="text-[#092e5e]">enhanced manufacturer warranties</strong>{" "}
-                &mdash; longer coverage periods and protection that can include
+                - longer coverage periods and protection that can include
                 labor costs for material defects. This is a real, tangible
                 benefit of hiring a certified contractor.
               </p>
@@ -168,7 +168,7 @@ export default function WarrantiesPage() {
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
                 This is our promise that the work was done right. The
-                workmanship warranty covers installation errors &mdash; if
+                workmanship warranty covers installation errors - if
                 something goes wrong because of how the roof was installed, we
                 come back and fix it at no cost to you.
               </p>
@@ -188,7 +188,7 @@ export default function WarrantiesPage() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="mx-auto max-w-4xl">
           <h2 className="text-3xl font-bold text-[#092e5e] mb-4 text-center">
-            What&apos;s Covered &mdash; and What&apos;s Not
+            What&apos;s Covered - and What&apos;s Not
           </h2>
           <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
             We believe in being upfront. Here&apos;s an honest look at what

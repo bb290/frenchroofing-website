@@ -7,7 +7,7 @@ import { COMPANY } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Recurring Roof Maintenance Program | ${COMPANY.name}`,
   description:
-    "French Roofing's recurring maintenance program keeps your roof clean, clear, and lasting longer. 2 visits per year — debris removal, gutter clearing, moss prevention, and inspection. Serving the Portland metro.",
+    "French Roofing's recurring maintenance program keeps your roof clean, clear, and lasting longer. 2 visits per year - debris removal, gutter clearing, moss prevention, and inspection. Serving the Portland metro.",
   alternates: { canonical: `${COMPANY.url}/services/maintenance` },
 };
 
@@ -25,7 +25,7 @@ const scopeItems = [
   {
     title: "Moss & Mold Prevention Treatment",
     description:
-      "We apply a preventative treatment to stop regrowth before it starts. This is Oregon — if you're not staying ahead of moss, it's already winning.",
+      "We apply a preventative treatment to stop regrowth before it starts. This is Oregon - if you're not staying ahead of moss, it's already winning.",
   },
   {
     title: "Final Cleanup",
@@ -35,7 +35,7 @@ const scopeItems = [
   {
     title: "Roof & Gutter Inspection",
     description:
-      "Every visit includes a visual inspection to catch developing issues early — cracked flashing, lifted shingles, worn seals — before they turn into expensive problems.",
+      "Every visit includes a visual inspection to catch developing issues early - cracked flashing, lifted shingles, worn seals - before they turn into expensive problems.",
   },
 ];
 
@@ -75,7 +75,7 @@ const faqs = [
   {
     question: "How often do you come out for the maintenance program?",
     answer:
-      "Twice a year. We time visits around the seasons that matter most in Oregon — typically once in spring (after the wet season) and once in fall (before it starts again). This keeps your roof in top shape year-round.",
+      "Twice a year. We time visits around the seasons that matter most in Oregon - typically once in spring (after the wet season) and once in fall (before it starts again). This keeps your roof in top shape year-round.",
   },
   {
     question: "How do I know which package is right for my home?",
@@ -85,22 +85,22 @@ const faqs = [
   {
     question: "Can I do a one-time cleaning instead of the annual program?",
     answer:
-      "Absolutely. We offer one-time roof cleaning and maintenance too. But the annual program saves you money per visit and keeps your roof on a consistent schedule — which is how you get the longest life out of your shingles.",
+      "Absolutely. We offer one-time roof cleaning and maintenance too. But the annual program saves you money per visit and keeps your roof on a consistent schedule - which is how you get the longest life out of your shingles.",
   },
   {
     question: "Does regular maintenance really extend my roof's life?",
     answer:
-      "Yes — significantly. Moss, debris buildup, and clogged gutters are the top causes of premature roof failure in Oregon. Staying ahead of them with regular maintenance can add years to your roof's lifespan and help you avoid costly repairs down the road.",
+      "Yes - significantly. Moss, debris buildup, and clogged gutters are the top causes of premature roof failure in Oregon. Staying ahead of them with regular maintenance can add years to your roof's lifespan and help you avoid costly repairs down the road.",
   },
   {
     question: "Is the maintenance program paid monthly or annually?",
     answer:
-      "Annual pricing is paid once per year and includes both visits. This gives you the best per-visit rate. We keep it simple — no contracts with hidden fees, no surprise charges.",
+      "Annual pricing is paid once per year and includes both visits. This gives you the best per-visit rate. We keep it simple - no contracts with hidden fees, no surprise charges.",
   },
   {
     question: "What if you find a problem during the inspection?",
     answer:
-      "We'll let you know right away with photos and an honest recommendation. If it's something small, we may be able to address it on the spot. If it needs more attention, we'll give you a clear estimate — no pressure, no upsell. That's the whole point of catching things early.",
+      "We'll let you know right away with photos and an honest recommendation. If it's something small, we may be able to address it on the spot. If it needs more attention, we'll give you a clear estimate - no pressure, no upsell. That's the whole point of catching things early.",
   },
 ];
 
@@ -127,7 +127,7 @@ export default function MaintenancePage() {
           </h1>
           <p className="mt-6 text-lg text-gray-300 max-w-2xl mx-auto">
             Your roof is your home&apos;s biggest shield from the elements. A
-            well-kept roof doesn&apos;t just look better — it lasts
+            well-kept roof doesn&apos;t just look better - it lasts
             significantly longer. Our recurring program keeps you ahead of moss,
             debris, and the small problems that turn into big ones.
           </p>
@@ -193,7 +193,7 @@ export default function MaintenancePage() {
         <div className="mx-auto max-w-4xl">
           <div className="text-center mb-14">
             <h2 className="text-3xl sm:text-4xl font-bold text-[#092e5e]">
-              What&apos;s Included — Every Visit
+              What&apos;s Included - Every Visit
             </h2>
             <p className="mt-4 text-lg text-gray-600">
               2 visits per year, each covering the full scope below.

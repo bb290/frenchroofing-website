@@ -32,7 +32,7 @@ const steps = [
   {
     title: "Free Roof Assessment",
     description:
-      "We start with a thorough inspection of your existing roof. We document everything with photos, walk you through our findings, and give you an honest recommendation — no pressure, no upsell.",
+      "We start with a thorough inspection of your existing roof. We document everything with photos, walk you through our findings, and give you an honest recommendation - no pressure, no upsell.",
   },
   {
     title: "Detailed Estimate & Material Selection",
@@ -42,12 +42,12 @@ const steps = [
   {
     title: "Tear-Off & Deck Inspection",
     description:
-      "Our crew strips the old roof down to the deck and inspects the plywood for any rot or damage. If we find anything, you hear about it right away with options — no surprises on the invoice.",
+      "Our crew strips the old roof down to the deck and inspects the plywood for any rot or damage. If we find anything, you hear about it right away with options - no surprises on the invoice.",
   },
   {
     title: "Installation to Manufacturer Specs",
     description:
-      "As a CertainTeed Certified contractor, we follow manufacturer specifications to the letter. That means proper underlayment, flashing, ventilation, and shingle installation — the details that make a roof last.",
+      "As a CertainTeed Certified contractor, we follow manufacturer specifications to the letter. That means proper underlayment, flashing, ventilation, and shingle installation - the details that make a roof last.",
   },
   {
     title: "Final Walkthrough & Cleanup",
@@ -60,7 +60,7 @@ function getRoofReplacementFaqs(cityName: string) {
   return [
     {
       question: `How much does roof replacement cost in ${cityName}, OR?`,
-      answer: `Most residential roof replacements in ${cityName} and the surrounding area range from $8,000 to $25,000+, depending on roof size, pitch, material choice, and complexity. We provide free, detailed estimates so you know exactly what to expect — and we offer 0% financing through Enhancify to make it manageable. Book a free assessment and we'll come take a look.`,
+      answer: `Most residential roof replacements in ${cityName} and the surrounding area range from $8,000 to $25,000+, depending on roof size, pitch, material choice, and complexity. We provide free, detailed estimates so you know exactly what to expect - and we offer 0% financing through Enhancify to make it manageable. Book a free assessment and we'll come take a look.`,
     },
     {
       question: `How long does a roof replacement take in ${cityName}?`,
@@ -68,7 +68,7 @@ function getRoofReplacementFaqs(cityName: string) {
     },
     {
       question: `What roofing materials are best for homes in ${cityName}, OR?`,
-      answer: `For ${cityName} homes, we primarily recommend CertainTeed architectural shingles — they're built to handle Oregon's rain, wind, and moss. As a CertainTeed Certified contractor (CCB #${COMPANY.ccb}), our installations meet the highest manufacturer standards. We also work with other premium brands depending on your needs and budget.`,
+      answer: `For ${cityName} homes, we primarily recommend CertainTeed architectural shingles - they're built to handle Oregon's rain, wind, and moss. As a CertainTeed Certified contractor (CCB #${COMPANY.ccb}), our installations meet the highest manufacturer standards. We also work with other premium brands depending on your needs and budget.`,
     },
     {
       question: `Does French Roofing offer financing for ${cityName} homeowners?`,
@@ -76,7 +76,7 @@ function getRoofReplacementFaqs(cityName: string) {
     },
     {
       question: `Is French Roofing licensed to work in ${cityName}, OR?`,
-      answer: `Yes — French Roofing is fully licensed, insured, and bonded in the state of Oregon (CCB #${COMPANY.ccb}). We're also CertainTeed Certified. We've been serving ${cityName} and the surrounding communities from our home base in Damascus since 2014. Your roof is in good hands.`,
+      answer: `Yes - French Roofing is fully licensed, insured, and bonded in the state of Oregon (CCB #${COMPANY.ccb}). We're also CertainTeed Certified. We've been serving ${cityName} and the surrounding communities from our home base in Damascus since 2014. Your roof is in good hands.`,
     },
   ];
 }
@@ -196,11 +196,11 @@ export default async function RoofReplacementCityPage({
             </p>
             <ul className="space-y-4">
               {[
-                "CertainTeed Certified — installations that meet the highest manufacturer standards",
-                `Licensed, insured & bonded (CCB #${COMPANY.ccb}) — fully compliant in Oregon`,
-                "Family-owned and operated — we're accountable because our name is on the truck",
-                "0% financing through Enhancify — multiple plans to fit your budget",
-                "Clean job sites and a final magnet sweep — your yard looks better when we leave",
+                "CertainTeed Certified - installations that meet the highest manufacturer standards",
+                `Licensed, insured & bonded (CCB #${COMPANY.ccb}) - fully compliant in Oregon`,
+                "Family-owned and operated - we're accountable because our name is on the truck",
+                "0% financing through Enhancify - multiple plans to fit your budget",
+                "Clean job sites and a final magnet sweep - your yard looks better when we leave",
                 `Serving ${area.name} and the surrounding area from our home base in Damascus since 2014`,
               ].map((item, i) => (
                 <li key={i} className="flex gap-3">

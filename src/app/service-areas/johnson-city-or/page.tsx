@@ -21,22 +21,22 @@ const faqs = [
   {
     question: "Who is the best roofing contractor serving Johnson City, OR?",
     answer:
-      "French Roofing LLC is a trusted roofing contractor serving Johnson City from our home base in Damascus — just about 10 minutes away along I-205. We've been taking care of local roofs since 2014, and we're licensed (CCB #203933), insured, and CertainTeed Certified.",
+      "French Roofing LLC is a trusted roofing contractor serving Johnson City from our home base in Damascus - just about 10 minutes away along I-205. We've been taking care of local roofs since 2014, and we're licensed (CCB #203933), insured, and CertainTeed Certified.",
   },
   {
     question: "How quickly can French Roofing get to Johnson City?",
     answer:
-      "Johnson City is one of the closest communities to our Damascus headquarters — just a short hop down I-205. We can typically schedule a free assessment within a few days and often get there even sooner. For urgent situations like storm damage, we do our best to get out to you right away.",
+      "Johnson City is one of the closest communities to our Damascus headquarters - just a short hop down I-205. We can typically schedule a free assessment within a few days and often get there even sooner. For urgent situations like storm damage, we do our best to get out to you right away.",
   },
   {
     question: "Does French Roofing offer free roof inspections in Johnson City?",
     answer:
-      "Yes! We offer free roof assessments for Johnson City homeowners. We'll give your roof a thorough look and tell you exactly what we find — no fluff, no pressure. Just an honest evaluation and clear options from a local team that cares.",
+      "Yes! We offer free roof assessments for Johnson City homeowners. We'll give your roof a thorough look and tell you exactly what we find - no fluff, no pressure. Just an honest evaluation and clear options from a local team that cares.",
   },
   {
     question: "Can French Roofing handle older roofs in Johnson City?",
     answer:
-      "Absolutely. Johnson City has mostly older homes, and we're well experienced with the kinds of roofing challenges that come with them — from aging decking to outdated ventilation. Whether you need a repair to buy some time or a full replacement to start fresh, we've got you covered.",
+      "Absolutely. Johnson City has mostly older homes, and we're well experienced with the kinds of roofing challenges that come with them - from aging decking to outdated ventilation. Whether you need a repair to buy some time or a full replacement to start fresh, we've got you covered.",
   },
 ];
 
@@ -67,7 +67,7 @@ export default function JohnsonCityPage() {
           <p className="mt-6 text-lg text-gray-300 max-w-2xl mx-auto">
             French Roofing proudly serves Johnson City with dependable roof
             replacement, repair, cleaning, and inspections. Big quality roofing
-            for a small community — from your close neighbors in Damascus.
+            for a small community - from your close neighbors in Damascus.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
@@ -99,7 +99,7 @@ export default function JohnsonCityPage() {
           <p className="text-gray-600 mb-4">
             Johnson City is one of the tiniest cities in Oregon, but every home
             still needs a solid roof overhead. French Roofing LLC is based in
-            Damascus — practically next door, just about 10 minutes down I-205.
+            Damascus - practically next door, just about 10 minutes down I-205.
             We&apos;ve been serving this corner of Clackamas County since 2014,
             and we&apos;re proud to be the local roofing crew Johnson City
             homeowners can count on.
@@ -107,7 +107,7 @@ export default function JohnsonCityPage() {
           <p className="text-gray-600">
             Small community or not, you deserve a roofing contractor who shows
             up on time, communicates honestly, and does the job right the first
-            time. That&apos;s the French Roofing way — no shortcuts, no
+            time. That&apos;s the French Roofing way - no shortcuts, no
             surprises, just quality work from a family-owned team.
           </p>
         </div>
@@ -154,7 +154,7 @@ export default function JohnsonCityPage() {
             storm. If your roof is original or hasn&apos;t been replaced in 20+
             years, it&apos;s probably time for a professional inspection at the
             very least. We see a lot of aging shingles, worn flashing, and moss
-            buildup on Johnson City roofs — all things we can take care of.
+            buildup on Johnson City roofs - all things we can take care of.
           </p>
           <p className="text-gray-600">
             Because Johnson City is so close to our Damascus headquarters,

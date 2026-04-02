@@ -16,12 +16,12 @@ const faqs = [
   {
     question: "How much does roof replacement cost in West Linn, OR?",
     answer:
-      "Roof replacement costs in West Linn typically range from $9,000 to $28,000+ depending on roof size, pitch, materials, and the complexity of your roofline. Many West Linn homes sit on hillsides or have steeper pitches, which can affect pricing. French Roofing provides free, no-obligation assessments so you get an accurate estimate — not a ballpark guess. We also offer financing through Enhancify with 0% interest options.",
+      "Roof replacement costs in West Linn typically range from $9,000 to $28,000+ depending on roof size, pitch, materials, and the complexity of your roofline. Many West Linn homes sit on hillsides or have steeper pitches, which can affect pricing. French Roofing provides free, no-obligation assessments so you get an accurate estimate - not a ballpark guess. We also offer financing through Enhancify with 0% interest options.",
   },
   {
     question: "Who is the best roofing contractor in West Linn, OR?",
     answer:
-      "French Roofing LLC is a trusted roofing contractor serving West Linn from our home base in Damascus, OR — just about 20 minutes away. We've been serving the area since 2014, we're licensed (CCB #203933), insured, and CertainTeed Certified. Our reputation is built on honest communication, quality workmanship, and treating every home like it belongs to family.",
+      "French Roofing LLC is a trusted roofing contractor serving West Linn from our home base in Damascus, OR - just about 20 minutes away. We've been serving the area since 2014, we're licensed (CCB #203933), insured, and CertainTeed Certified. Our reputation is built on honest communication, quality workmanship, and treating every home like it belongs to family.",
   },
   {
     question: "How long does a roof replacement take in West Linn?",
@@ -31,7 +31,7 @@ const faqs = [
   {
     question: "Does French Roofing offer free roof inspections in West Linn?",
     answer:
-      "Yes! We offer free roof assessments for West Linn homeowners. Our team will inspect your roof, give you an honest evaluation, and recommend the best course of action — whether that's a repair, maintenance, or a full replacement. No pressure, no gimmicks.",
+      "Yes! We offer free roof assessments for West Linn homeowners. Our team will inspect your roof, give you an honest evaluation, and recommend the best course of action - whether that's a repair, maintenance, or a full replacement. No pressure, no gimmicks.",
   },
   {
     question: "What roofing materials work best for West Linn homes?",
@@ -63,7 +63,7 @@ export default function WestLinnPage() {
           </h1>
           <p className="mt-6 text-lg text-gray-300 max-w-2xl mx-auto">
             French Roofing brings honest, high-quality roofing services to West
-            Linn from our home base in Damascus — just a short drive down the
+            Linn from our home base in Damascus - just a short drive down the
             road. Roof replacement, repair, cleaning, and inspections done right.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -101,7 +101,7 @@ export default function WestLinnPage() {
             neighbors back home.
           </p>
           <p className="text-gray-600">
-            We know that West Linn homeowners take pride in their properties —
+            We know that West Linn homeowners take pride in their properties -
             and we take pride in protecting them. Whether you&apos;re in one of
             the established neighborhoods near the Willamette River or a newer
             development up in the hills, we&apos;ve got you covered.
@@ -145,7 +145,7 @@ export default function WestLinnPage() {
           </h2>
           <p className="text-gray-600 mb-4">
             West Linn&apos;s hilly terrain and mature tree canopy make it one of
-            the most picturesque communities in the Portland metro — but those
+            the most picturesque communities in the Portland metro - but those
             same features create real challenges for your roof. Steep slopes mean
             water runs fast and heavy during Oregon&apos;s rainy season, and all
             those beautiful old-growth trees drop leaves, needles, and branches
@@ -154,7 +154,7 @@ export default function WestLinnPage() {
           </p>
           <p className="text-gray-600">
             Many West Linn homes are in established neighborhoods with roofs that
-            are 20 or 30 years old — right at the point where a replacement
+            are 20 or 30 years old - right at the point where a replacement
             makes more sense than patching things together. Newer developments in
             the area tend to have steeper, more complex rooflines that need
             experienced hands. Either way, French Roofing has the know-how to
