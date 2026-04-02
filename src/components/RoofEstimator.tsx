@@ -515,15 +515,33 @@ export default function RoofEstimator({ compact = false }: { compact?: boolean }
                 with a 60-month plan. No-impact credit check to pre-qualify.
               </div>
 
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a
-                  href={COMPANY.bookingUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center rounded-lg bg-[#d85024] px-8 py-4 text-lg font-semibold text-white hover:bg-[#c04520] transition-colors"
-                >
-                  Book Your FREE Assessment
-                </a>
+              {/* What Next */}
+              <div className="rounded-xl bg-gray-50 p-6 text-left">
+                <h5 className="text-lg font-bold text-[#092e5e] text-center mb-5">
+                  What Next?
+                </h5>
+                <div className="flex flex-col gap-3">
+                  <a
+                    href={COMPANY.bookingUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center rounded-lg bg-[#d85024] px-6 py-4 text-base font-semibold text-white hover:bg-[#c04520] transition-colors"
+                  >
+                    Schedule Free Assessment
+                  </a>
+                  <a
+                    href="/financing"
+                    className="flex items-center justify-center rounded-lg border-2 border-[#092e5e] px-6 py-4 text-base font-semibold text-[#092e5e] hover:bg-[#092e5e] hover:text-white transition-colors"
+                  >
+                    Learn More About Financing
+                  </a>
+                  <a
+                    href="/essentials"
+                    className="flex items-center justify-center rounded-lg border-2 border-[#ffbd59] px-6 py-4 text-base font-semibold text-[#092e5e] hover:bg-[#ffbd59] transition-colors"
+                  >
+                    Learn More About French Roofing
+                  </a>
+                </div>
               </div>
 
               <button
