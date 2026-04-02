@@ -265,7 +265,9 @@ export default function EssentialsPage() {
               All 10 Questions — In Depth
             </h2>
             <p className="mt-2 text-gray-600">
-              Sean breaks down every question and what the right answers sound like (19 min).
+              If you made it this far without reading and just scrolled straight
+              to the video — no judgment. Sean breaks down all 10 questions so
+              you can listen while you pretend to work (19 min).
             </p>
           </div>
           <div className="aspect-video rounded-xl overflow-hidden">
