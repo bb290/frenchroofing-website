@@ -55,7 +55,7 @@ function getRoofInspectionFaqs(cityName: string) {
   return [
     {
       question: `How much does a roof inspection cost in ${cityName}, OR?`,
-      answer: `Our standard roof inspections in ${cityName} are competitively priced, and we offer FREE roof assessments for homeowners considering repair or replacement work. Contact us for current pricing — it's one of the best investments you can make in your home. We're just a short drive from ${cityName}, based right here in Damascus.`,
+      answer: `Our roof inspections in ${cityName} are always free — no strings attached. We believe every homeowner deserves to know the condition of their roof. Book online and we'll get you on the schedule. We're just a short drive from ${cityName}, based right here in Damascus.`,
     },
     {
       question: `When should I get a roof inspection in ${cityName}?`,
@@ -63,7 +63,7 @@ function getRoofInspectionFaqs(cityName: string) {
     },
     {
       question: `Does French Roofing offer free roof inspections in ${cityName}?`,
-      answer: `We offer FREE roof assessments for ${cityName} homeowners who are considering repair or replacement work. For standalone inspections — like pre-purchase or annual checkups — we charge a fair, competitive rate. Either way, you get an honest, thorough evaluation with no pressure to buy anything. Book online or contact us and we'll figure out the best option for you.`,
+      answer: `Yes — all of our roof inspections in ${cityName} are completely free. Whether it's a pre-purchase inspection, annual checkup, or you just want to know where things stand, there's no charge. You get an honest, thorough evaluation with no pressure to buy anything. Book online and we'll take care of the rest.`,
     },
     {
       question: `What does a roof inspection include in ${cityName}, OR?`,

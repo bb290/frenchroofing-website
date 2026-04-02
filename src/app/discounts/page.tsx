@@ -189,11 +189,11 @@ export default function DiscountsPage() {
                 3
               </div>
               <h3 className="font-semibold text-[#092e5e] mb-1">
-                Show Valid ID
+                Send Proof of Service
               </h3>
               <p className="text-sm text-gray-600">
-                Just bring a valid ID or proof of service. That&apos;s it — no
-                hoops, no fine print.
+                Just send us any proof of service — a photo of your badge, a pay
+                stub, a school ID, whatever&apos;s easy. That&apos;s it — no hoops, no fine print.
               </p>
             </div>
           </div>
@@ -216,8 +216,8 @@ export default function DiscountsPage() {
                 &bull; Cannot be combined with other offers or promotions.
               </li>
               <li>
-                &bull; Valid ID or proof of service/employment required at time
-                of estimate.
+                &bull; Proof of service or employment required (badge, pay stub,
+                school ID, etc.).
               </li>
               <li>
                 &bull; Financing through Enhancify can be used alongside

@@ -31,7 +31,7 @@ export const SERVICES = [
   { name: "Roof Replacement", slug: "roof-replacement", description: "Full tear-off and replacement with premium materials" },
   { name: "Roof Repair", slug: "roof-repair", description: "Fix leaks, storm damage, and wear before it spreads" },
   { name: "Roof Cleaning & Maintenance", slug: "roof-cleaning", description: "Keep your roof clean, clear, and lasting longer" },
-  { name: "Roof Inspections", slug: "roof-inspections", description: "Honest assessment of your roof's condition" },
+  { name: "Roof Inspections", slug: "roof-inspections", description: "Always free — honest assessment of your roof's condition" },
 ] as const;
 
 export const SERVICE_AREAS = {

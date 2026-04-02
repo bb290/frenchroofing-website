@@ -6,9 +6,9 @@ import FAQSection from "@/components/FAQSection";
 import { COMPANY } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Roof Inspections | Greater Portland Metro | ${COMPANY.name}`,
+  title: `Free Roof Inspections | Greater Portland Metro | ${COMPANY.name}`,
   description:
-    "Honest, thorough roof inspections in the greater Portland metro area. Get a clear picture of your roof's condition — whether you're buying a home, filing a claim, or just want to know where things stand. Licensed (CCB #203933), CertainTeed Certified.",
+    "Free, honest, thorough roof inspections in the greater Portland metro area. Get a clear picture of your roof's condition — whether you're buying a home, filing a claim, or just want to know where things stand. Licensed (CCB #203933), CertainTeed Certified.",
 };
 
 const steps = [
@@ -38,7 +38,7 @@ const faqs = [
   {
     question: "How much does a roof inspection cost in the Portland metro area?",
     answer:
-      "Our standard roof inspections are competitively priced, and we offer FREE roof assessments for homeowners considering repair or replacement work. Contact us for current pricing — it's one of the best investments you can make in your home.",
+      "Our roof inspections are always free — no strings attached. We believe every homeowner deserves to know the condition of their roof without worrying about a bill. Book online and we'll get you on the schedule.",
   },
   {
     question: "When should I get a roof inspection?",
@@ -87,16 +87,16 @@ export default function RoofInspectionsPage() {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
           <div className="max-w-2xl">
             <p className="text-[#ffbd59] font-semibold text-sm uppercase tracking-wider mb-3">
-              Roof Inspections
+              Always Free
             </p>
             <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-6">
-              Roof Inspections — Portland Metro
+              Free Roof Inspections — Portland Metro
             </h1>
             <p className="text-lg text-gray-300 max-w-xl">
-              Not sure what shape your roof is in? We&apos;ll tell you — honestly.
-              Whether you&apos;re buying a home, dealing with storm damage, or
-              just want peace of mind, our inspections give you the full picture
-              with no pressure attached.
+              Not sure what shape your roof is in? We&apos;ll tell you — honestly
+              and for free. Whether you&apos;re buying a home, dealing with storm
+              damage, or just want peace of mind, our inspections give you the
+              full picture with no pressure attached.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <a
@@ -250,8 +250,8 @@ export default function RoofInspectionsPage() {
 
       {/* ── CTA ── */}
       <CTABanner
-        headline="Know Where Your Roof Stands"
-        description="Schedule an honest, no-pressure roof inspection. We'll give you the full picture so you can make the right call."
+        headline="Book Your Free Roof Inspection"
+        description="Always free, always honest. We'll give you the full picture so you can make the right call — no pressure, no obligation."
       />
     </>
   );
