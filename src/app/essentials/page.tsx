@@ -266,8 +266,11 @@ export default function EssentialsPage() {
             </h2>
             <p className="mt-2 text-gray-600">
               If you made it this far without reading and just scrolled straight
-              to the video — no judgment. Sean breaks down all 10 questions so
-              you can listen while you pretend to work (19 min).
+              to the video — no judgment. This AI-generated podcast covers all
+              10 questions in a conversational format that&apos;s easy to absorb.
+              Fair warning: the hosts aren&apos;t real, but the roofing advice
+              definitely is. Throw it on while you&apos;re driving, doing
+              dishes, or pretending to work (19 min).
             </p>
           </div>
           <div className="aspect-video rounded-xl overflow-hidden">
