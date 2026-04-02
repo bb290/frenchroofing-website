@@ -7,7 +7,7 @@ import { COMPANY } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `10 Essential Questions to Ask Your Roofing Contractor | ${COMPANY.name}`,
   description:
-    "Know exactly what to ask before hiring a roofer. These 10 questions help you spot red flags, verify credentials, and hire with confidence. From French Roofing LLC in Damascus, OR.",
+    "Know exactly what to ask before hiring a roofer. Sean French walks you through the 10 questions that separate the pros from the pretenders. Watch the videos or read the guide.",
   alternates: { canonical: `${COMPANY.url}/essentials` },
 };
 
@@ -16,84 +16,92 @@ const questions = [
     number: 1,
     question: "Are you licensed and insured?",
     answer:
-      "In Oregon, every roofing contractor is required to hold an active license with the Construction Contractors Board (CCB). This isn\u2019t just a formality \u2014 it means the contractor has met bonding, insurance, and education requirements set by the state. You can verify any contractor\u2019s license at the CCB website (oregon.gov/ccb). If someone can\u2019t give you a CCB number on the spot, that\u2019s a major red flag. For reference, French Roofing\u2019s CCB number is #203933 \u2014 feel free to look us up.",
+      "This is the first thing you should ask — no exceptions. A valid license means the contractor has met the requirements set by the state and is authorized to perform roofing work in your area. Insurance protects you from liability if something goes wrong during the project. In Oregon, you can verify any contractor's license at the Construction Contractors Board (CCB) website. If someone can't give you a CCB number on the spot, that's a major red flag. French Roofing's CCB number is #203933 — look us up anytime.",
   },
   {
     number: 2,
-    question: "How long have you been in business?",
+    question: "Do you have experience with this type of roofing project?",
     answer:
-      "Experience matters, especially in the Pacific Northwest. Oregon throws everything at a roof \u2014 heavy rain, wind, moss, freeze-thaw cycles \u2014 and a contractor who\u2019s been through it all knows what works and what doesn\u2019t. Ask how long they\u2019ve been operating under their current business name, not just how long the owner has been in the trade. French Roofing has been serving the Portland metro area since 2014, and our founder Sean French started roofing at sixteen.",
+      "Not all roofing contractors specialize in the same types of projects. Whether you need a roof repair or a full roof replacement, it's important to choose a contractor with experience relevant to your specific needs. Ask about their experience with similar projects and request references or examples of past work. French Roofing has been handling everything from small repairs to full tear-offs across the Portland metro since 2014.",
   },
   {
     number: 3,
-    question: "Are you manufacturer certified?",
+    question: "What materials will you use, and why?",
     answer:
-      "Manufacturer certifications aren\u2019t just marketing badges. When a contractor is certified by a shingle manufacturer like CertainTeed, it means they\u2019ve completed specialized training on that product line and met quality standards. More importantly for you, certification can unlock enhanced warranty coverage that uncertified contractors simply can\u2019t offer. French Roofing is CertainTeed Certified, which means our installations may qualify for longer, more comprehensive warranties.",
+      "The quality of roofing materials can significantly impact how long your roof lasts and how well it holds up. Ask the contractor what materials they plan to use and why they recommend those specific products. A good contractor should be able to explain the benefits and help you make an informed decision based on your budget. French Roofing is CertainTeed Certified — we use their roofing system because it's proven in the Pacific Northwest and comes with strong warranty coverage.",
   },
   {
     number: 4,
-    question: "Can I see proof of insurance?",
+    question: "What is the project timeline, and how will you communicate updates?",
     answer:
-      "A good contractor should carry both general liability insurance and workers\u2019 compensation coverage, and they should be happy to show you proof. General liability protects your property if something goes wrong during the job. Workers\u2019 comp protects you from being liable if a crew member gets injured on your property. If a contractor doesn\u2019t have workers\u2019 comp and someone gets hurt on your roof, you could be on the hook. Don\u2019t just take their word for it \u2014 ask for a certificate of insurance.",
+      "Understanding the timeline is essential for planning. Ask about expected start and completion dates, as well as anything that could cause delays. Just as important: how will they keep you in the loop? Phone? Text? Email? You shouldn't have to chase your contractor for updates. At French Roofing, we're upfront about timelines and proactive with communication — especially when Oregon weather has other plans.",
   },
   {
     number: 5,
-    question: "Do you offer a workmanship warranty?",
+    question: "What warranties or guarantees do you offer?",
     answer:
-      "Most people know their shingles come with a manufacturer warranty, but that only covers defective materials. What about the installation itself? A workmanship warranty covers labor and installation errors \u2014 the things the roofer controls. A contractor who stands behind their work with a written workmanship warranty is telling you they\u2019re confident in their crew. At French Roofing, every job comes with a standard workmanship warranty because we believe if we installed it, we should stand behind it.",
+      "A reputable contractor should stand behind their work with warranties — both for materials and for labor. The manufacturer warranty covers defective materials, but the workmanship warranty covers installation errors. That's the one the roofer controls. Ask for written documentation outlining exactly what's covered and for how long. Be cautious of contractors who are vague about warranty terms. Because French Roofing is CertainTeed Certified, our installations may qualify for enhanced manufacturer warranty coverage on top of our standard workmanship warranty.",
   },
   {
     number: 6,
-    question: "Will you provide a written estimate?",
+    question: "Do you have any certifications or accreditations?",
     answer:
-      "If a contractor gives you a number over the phone or a vague verbal quote, that\u2019s a red flag. A written estimate should include the scope of work, materials to be used, project timeline, payment terms, and total cost. It protects both you and the contractor by making sure everyone\u2019s on the same page. Be wary of estimates that seem unusually low \u2014 they often leave out details that show up later as surprise charges. A detailed, transparent estimate is the foundation of a trustworthy working relationship.",
+      "Certifications from industry organizations and manufacturers demonstrate a commitment to professionalism and quality. Ask if the contractor holds any certifications or memberships in roofing associations. Certifications from manufacturers like CertainTeed indicate specialized training in installing specific roofing products — which directly affects the quality of your install and the warranty coverage you receive.",
   },
   {
     number: 7,
-    question: "How do you handle unexpected damage?",
+    question: "How will you protect my property during the project?",
     answer:
-      "Here\u2019s the reality: sometimes when we pull off old shingles, we find rotted decking, damaged flashing, or other issues that weren\u2019t visible during the initial assessment. A good contractor will explain upfront how they handle these situations. You want to hear something like: \u201CWe\u2019ll stop, document it, call you with photos, explain the options, and get your approval before proceeding.\u201D The key is communication. No one likes surprises on a roofing bill, and a trustworthy contractor makes sure you\u2019re informed every step of the way.",
+      "Roofing projects can get messy — debris, nails, old shingles everywhere. Ask the contractor how they plan to protect your landscaping, siding, windows, and other areas of your property. Will they use tarps or plywood to safeguard your yard? Will they do a thorough cleanup and magnet sweep afterward? At French Roofing, every job ends with a site that's cleaner than when we showed up.",
   },
   {
     number: 8,
-    question: "Do you use subcontractors or your own crew?",
+    question: "Who will be supervising the project, and how can I reach them?",
     answer:
-      "This matters more than most people realize. When a company uses their own crew, they have direct control over training, quality standards, and accountability. When they sub out the work, there\u2019s an extra layer between you and the people on your roof. That doesn\u2019t mean subcontractors are always bad, but you should know who\u2019s actually doing the work. Ask whether the crew has been trained on the specific materials being used and whether the contractor will have a supervisor on-site.",
+      "You should know exactly who's overseeing the work on your roof and who to contact if you have questions. Ask who the primary point of contact will be and how to reach them. Having a designated supervisor ensures clear communication and accountability throughout the project — not a game of phone tag with a random office number.",
   },
   {
     number: 9,
-    question: "What happens if there\u2019s a problem after the job?",
+    question: "Can you provide references or customer reviews?",
     answer:
-      "The real test of a roofing company isn\u2019t the install day \u2014 it\u2019s what happens six months later if you notice something off. Ask how their warranty process works. Is there a phone number you can call? How quickly do they respond? Will they send someone out to inspect? A contractor who\u2019s vague about post-job support probably won\u2019t be easy to reach when you need them. French Roofing\u2019s approach is simple: reach out, we come look, and if it\u2019s on us, we fix it.",
+      "References and reviews give you real insight into a contractor's reputation and the quality of their work. Ask for references from past customers and actually contact them. Check Google reviews, Facebook, and the BBB. A contractor who's confident in their work will be happy to share their track record. French Roofing's reviews speak for themselves — check us out on Google.",
   },
   {
     number: 10,
-    question: "Do you offer financing?",
+    question: "What is your payment schedule, and do you require a deposit?",
     answer:
-      "A new roof is a significant investment, and timing doesn\u2019t always line up with your savings plan. A contractor who offers financing options shows they understand real-life budgets. It also means you don\u2019t have to delay critical repairs or settle for a cheaper solution that won\u2019t last. French Roofing partners with Enhancify to offer flexible financing, including 0% interest options for qualified homeowners. That way you can get the roof you need now and pay over time.",
+      "Understanding payment terms upfront avoids misunderstandings later. Ask about the payment schedule and whether a deposit is required before work begins. Be cautious of contractors who demand a large upfront payment or request cash-only transactions — that's a red flag. A fair, transparent payment structure is a sign of a professional operation.",
   },
 ];
+
+const bonusTip = {
+  question: "Will you provide a detailed written estimate?",
+  answer:
+    "It almost goes without saying, but just to be sure — always get a detailed written estimate before agreeing to any work. It should include a breakdown of costs for labor, materials, any additional fees, and standard terms for the project. Review it carefully, and don't hesitate to ask for clarification on anything you don't understand. A detailed, transparent estimate is the foundation of a trustworthy working relationship.",
+};
 
 const essentialsFAQs = [
   {
     question: "Why should I ask these questions before hiring a roofer?",
     answer:
-      "Roofing is one of the biggest investments you\u2019ll make in your home, and not all contractors operate at the same standard. Asking the right questions upfront helps you avoid unlicensed operators, hidden costs, and poor workmanship. It only takes a few minutes and can save you thousands of dollars and a lot of headaches.",
+      "Roofing is one of the biggest investments you'll make in your home, and not all contractors operate at the same standard. Asking the right questions upfront helps you avoid unlicensed operators, hidden costs, and poor workmanship. It only takes a few minutes and can save you thousands of dollars and a lot of headaches.",
   },
   {
-    question: "How do I verify a contractor\u2019s license in Oregon?",
+    question: "How do I verify a contractor's license in Oregon?",
     answer:
-      "Visit the Oregon Construction Contractors Board (CCB) website at oregon.gov/ccb and search by business name or CCB number. You\u2019ll see their license status, bond information, insurance status, and any complaints filed against them. It\u2019s free and takes about two minutes.",
+      "Visit the Oregon Construction Contractors Board (CCB) website at oregon.gov/ccb and search by business name or CCB number. You'll see their license status, bond information, insurance status, and any complaints filed against them. It's free and takes about two minutes.",
   },
   {
-    question: "What\u2019s the difference between a manufacturer warranty and a workmanship warranty?",
+    question:
+      "What's the difference between a manufacturer warranty and a workmanship warranty?",
     answer:
-      "A manufacturer warranty covers defects in the roofing materials themselves \u2014 for example, shingles that fail prematurely due to a manufacturing issue. A workmanship warranty covers the installation \u2014 if the contractor made an error that causes a leak or other problem, they\u2019ll come back and fix it at no cost to you. You want both.",
+      "A manufacturer warranty covers defects in the roofing materials themselves — for example, shingles that fail prematurely due to a manufacturing issue. A workmanship warranty covers the installation — if the contractor made an error that causes a leak or other problem, they'll come back and fix it at no cost to you. You want both.",
   },
   {
-    question: "How many estimates should I get before choosing a roofing contractor?",
+    question:
+      "How many estimates should I get before choosing a roofing contractor?",
     answer:
-      "Getting two to three written estimates is a good practice. It helps you compare scope, materials, and pricing. But don\u2019t just go with the cheapest number \u2014 compare what\u2019s included, what warranties are offered, and whether the contractor is licensed and certified. The lowest bid often leaves out important details.",
+      "Getting two to three written estimates is a good practice. It helps you compare scope, materials, and pricing. But don't just go with the cheapest number — compare what's included, what warranties are offered, and whether the contractor is licensed and certified. The lowest bid often leaves out important details.",
   },
 ];
 
@@ -112,24 +120,88 @@ export default function EssentialsPage() {
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="text-4xl sm:text-5xl font-bold text-white">
             10 Essential Questions{" "}
-            <span className="text-[#ffbd59]">to Ask Every Roofing Contractor</span>
+            <span className="text-[#ffbd59]">
+              to Ask Every Roofing Contractor
+            </span>
           </h1>
           <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
-            Hiring a roofer is a big decision. These are the questions that
-            separate the pros from the pretenders &mdash; and the answers you
-            should expect from anyone earning your trust.
+            Sean French walks you through the questions that separate the pros
+            from the pretenders — and the answers you should expect from anyone
+            earning your trust.
           </p>
         </div>
       </section>
 
+      {/* ── Video Section ── */}
+      <section className="py-16 px-4 bg-white">
+        <div className="mx-auto max-w-5xl">
+          <div className="text-center mb-10">
+            <p className="text-sm font-semibold text-[#d85024] uppercase tracking-wider mb-2">
+              Watch Sean Explain
+            </p>
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#092e5e]">
+              Hear It Straight from the Roofer
+            </h2>
+          </div>
+
+          {/* Podcast — full version */}
+          <div className="mb-10">
+            <div className="aspect-video rounded-xl overflow-hidden">
+              <iframe
+                src="https://www.youtube.com/embed/rOXXRPQUJog"
+                title="10 Essential Questions to Ask Your Roofing Contractor — Full Podcast"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              />
+            </div>
+            <p className="text-center text-sm text-gray-500 mt-3">
+              Full podcast — all 10 questions explained in depth (19 min)
+            </p>
+          </div>
+
+          {/* Short videos */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <div className="aspect-video rounded-xl overflow-hidden">
+                <iframe
+                  src="https://www.youtube.com/embed/xHCrXWKo6M4"
+                  title="5 Essential Questions to Ask Your Roofing Contractor"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              </div>
+              <p className="text-center text-sm text-gray-500 mt-3">
+                Questions 1–5 — quick version (2 min)
+              </p>
+            </div>
+            <div>
+              <div className="aspect-video rounded-xl overflow-hidden">
+                <iframe
+                  src="https://www.youtube.com/embed/5ooKdYTpBSM"
+                  title="5 MORE Questions to Ask Your Roofing Contractor"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              </div>
+              <p className="text-center text-sm text-gray-500 mt-3">
+                Questions 6–10 — quick version (2 min)
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── Intro ── */}
-      <section className="py-12 px-4 bg-white">
+      <section className="py-12 px-4 bg-gray-50">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-gray-600 text-lg leading-relaxed">
-            We put this guide together because we believe informed homeowners
-            make better decisions. Whether you hire French Roofing or someone
-            else, these questions will help you hire with confidence and avoid
-            common pitfalls.
+            Choosing the right roofing contractor is crucial for the success of
+            your project. We put this guide together because we believe informed
+            homeowners make better decisions. Whether you hire French Roofing or
+            someone else, these questions will help you hire with confidence.
           </p>
         </div>
       </section>
@@ -155,6 +227,23 @@ export default function EssentialsPage() {
               </div>
             </div>
           ))}
+
+          {/* Bonus tip */}
+          <div className="bg-[#ffbd59]/10 border-2 border-[#ffbd59]/30 rounded-xl p-6 sm:p-8">
+            <div className="flex items-start gap-5">
+              <div className="flex-shrink-0 h-12 w-12 rounded-full bg-[#ffbd59] text-[#092e5e] flex items-center justify-center text-lg font-bold">
+                +
+              </div>
+              <div>
+                <h2 className="text-xl sm:text-2xl font-bold text-[#092e5e] mb-1">
+                  Bonus: &ldquo;{bonusTip.question}&rdquo;
+                </h2>
+                <p className="text-gray-600 leading-relaxed">
+                  {bonusTip.answer}
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -167,8 +256,9 @@ export default function EssentialsPage() {
           <p className="text-gray-600 leading-relaxed mb-6">
             In fact, they&apos;ll welcome them. A contractor who gets
             uncomfortable when you ask about licensing, insurance, or warranties
-            is telling you something. The ones who answer openly and honestly are
-            the ones worth hiring.
+            is telling you something. Clear communication and transparency are
+            key to a successful roofing experience — the ones who answer openly
+            are the ones worth hiring.
           </p>
           <a
             href={COMPANY.bookingUrl}
@@ -182,12 +272,15 @@ export default function EssentialsPage() {
       </section>
 
       {/* ── FAQ ── */}
-      <FAQSection title="Common Questions About Hiring a Roofer" faqs={essentialsFAQs} />
+      <FAQSection
+        title="Common Questions About Hiring a Roofer"
+        faqs={essentialsFAQs}
+      />
 
       {/* ── CTA ── */}
       <CTABanner
         headline="Ready to Talk to a Contractor Who Welcomes Your Questions?"
-        description="Schedule a free roof assessment with French Roofing. We\u2019ll answer every question on this list \u2014 and any others you\u2019ve got."
+        description="Schedule a free roof assessment with French Roofing. We'll answer every question on this list — and any others you've got."
       />
     </>
   );
