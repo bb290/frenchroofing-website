@@ -77,12 +77,12 @@ export default function Home() {
               >
                 Schedule FREE Assessment
               </a>
-              <a
-                href={COMPANY.phoneTel}
+              <Link
+                href="/estimate"
                 className="inline-flex items-center justify-center rounded-lg border-2 border-white/30 px-8 py-4 text-lg font-semibold text-white hover:bg-white/10 transition-colors"
               >
-                Call {COMPANY.phone}
-              </a>
+                Instant Estimate
+              </Link>
             </div>
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-gray-400">
               <span>CCB #{COMPANY.ccb}</span>
