@@ -42,7 +42,7 @@ export async function POST(req: NextRequest) {
   } catch (error) {
     console.error("Contact form error:", error);
     return NextResponse.json(
-      { error: "Failed to send message. Please call us directly." },
+      { error: "Failed to send message. Please try again or reach out through our contact page." },
       { status: 500 }
     );
   }

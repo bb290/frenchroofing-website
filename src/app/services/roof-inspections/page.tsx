@@ -15,7 +15,7 @@ const steps = [
   {
     title: "Schedule Your Inspection",
     description:
-      "Give us a call or book online. We'll find a time that works for you — inspections typically take about an hour depending on the size of your roof.",
+      "Book online and we'll find a time that works for you — inspections typically take about an hour depending on the size of your roof.",
   },
   {
     title: "Exterior Roof Inspection",
@@ -107,12 +107,6 @@ export default function RoofInspectionsPage() {
               >
                 Schedule an Inspection
               </a>
-              <a
-                href={COMPANY.phoneTel}
-                className="inline-flex items-center justify-center rounded-lg border-2 border-white/30 px-8 py-4 text-lg font-semibold text-white hover:bg-white/10 transition-colors"
-              >
-                Call {COMPANY.phone}
-              </a>
             </div>
           </div>
         </div>
@@ -128,7 +122,7 @@ export default function RoofInspectionsPage() {
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
               A quick inspection now can save you thousands later. Here are the
               most common reasons homeowners across the Portland metro
-              call us.
+              reach out.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

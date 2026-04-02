@@ -43,7 +43,7 @@ const faqs = [
   {
     question: "How quickly can you fix a roof leak in the Portland metro area?",
     answer:
-      "For active leaks and emergency situations, we prioritize getting to you as fast as possible — often within a day or two. For non-emergency repairs, we typically schedule within the week. Oregon weather can be unpredictable, so if your roof is leaking, don't wait to call.",
+      "For active leaks and emergency situations, we prioritize getting to you as fast as possible — often within a day or two. For non-emergency repairs, we typically schedule within the week. Oregon weather can be unpredictable, so if your roof is leaking, don't wait — book online and we'll get to you fast.",
   },
   {
     question: "Do you repair storm damage and work with insurance?",
@@ -106,12 +106,6 @@ export default function RoofRepairPage() {
                 className="inline-flex items-center justify-center rounded-lg bg-[#d85024] px-8 py-4 text-lg font-semibold text-white hover:bg-[#c04520] transition-colors"
               >
                 Schedule a Repair
-              </a>
-              <a
-                href={COMPANY.phoneTel}
-                className="inline-flex items-center justify-center rounded-lg border-2 border-white/30 px-8 py-4 text-lg font-semibold text-white hover:bg-white/10 transition-colors"
-              >
-                Call {COMPANY.phone}
               </a>
             </div>
             <p className="mt-4 text-sm text-gray-400">

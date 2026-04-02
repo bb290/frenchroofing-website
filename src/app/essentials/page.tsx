@@ -64,7 +64,7 @@ const questions = [
     number: 9,
     question: "What happens if there\u2019s a problem after the job?",
     answer:
-      "The real test of a roofing company isn\u2019t the install day \u2014 it\u2019s what happens six months later if you notice something off. Ask how their warranty process works. Is there a phone number you can call? How quickly do they respond? Will they send someone out to inspect? A contractor who\u2019s vague about post-job support probably won\u2019t be easy to reach when you need them. French Roofing\u2019s approach is simple: call us, we come look, and if it\u2019s on us, we fix it.",
+      "The real test of a roofing company isn\u2019t the install day \u2014 it\u2019s what happens six months later if you notice something off. Ask how their warranty process works. Is there a phone number you can call? How quickly do they respond? Will they send someone out to inspect? A contractor who\u2019s vague about post-job support probably won\u2019t be easy to reach when you need them. French Roofing\u2019s approach is simple: reach out, we come look, and if it\u2019s on us, we fix it.",
   },
   {
     number: 10,

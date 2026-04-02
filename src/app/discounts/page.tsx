@@ -6,7 +6,7 @@ import { COMPANY } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Community Discounts | ${COMPANY.name}`,
   description:
-    "French Roofing LLC offers special roofing discounts for active military, veterans, first responders, nurses, and teachers. Serving Damascus, OR and the Portland metro. Call 971-376-8722.",
+    "French Roofing LLC offers special roofing discounts for active military, veterans, first responders, nurses, and teachers. Serving Damascus, OR and the Portland metro. Book online today.",
   alternates: { canonical: `${COMPANY.url}/discounts` },
 };
 
@@ -147,12 +147,6 @@ export default function DiscountsPage() {
                   >
                     Claim Your Discount
                   </a>
-                  <a
-                    href={COMPANY.phoneTel}
-                    className="inline-flex items-center justify-center rounded-lg border border-gray-300 px-6 py-3 text-sm font-semibold text-[#092e5e] hover:border-[#d85024] hover:text-[#d85024] transition-colors"
-                  >
-                    Call {COMPANY.phone}
-                  </a>
                 </div>
               </div>
             </div>
@@ -175,7 +169,7 @@ export default function DiscountsPage() {
                 Schedule Your Assessment
               </h3>
               <p className="text-sm text-gray-600">
-                Book your free roof assessment online or give us a call.
+                Book your free roof assessment online.
               </p>
             </div>
             <div className="p-6">

@@ -38,7 +38,7 @@ export default function ContactForm() {
         setStatus("error");
       }
     } catch {
-      setErrorMsg("Network error. Please call us directly at 971-376-8722.");
+      setErrorMsg("Network error. Please try again or reach out through our contact page.");
       setStatus("error");
     }
   }
@@ -53,8 +53,8 @@ export default function ContactForm() {
         </div>
         <h3 className="text-xl font-bold text-[#092e5e] mb-2">Message Sent!</h3>
         <p className="text-gray-600">
-          We typically respond within 1 business day. If it&apos;s urgent, give
-          us a call at 971-376-8722.
+          We typically respond within 1 business day. If it&apos;s urgent,
+          reach out through our contact form.
         </p>
         <button
           type="button"

@@ -524,12 +524,6 @@ export default function RoofEstimator({ compact = false }: { compact?: boolean }
                 >
                   Book Your FREE Assessment
                 </a>
-                <a
-                  href={COMPANY.phoneTel}
-                  className="text-lg font-semibold text-[#092e5e]"
-                >
-                  Or call {COMPANY.phone}
-                </a>
               </div>
 
               <button

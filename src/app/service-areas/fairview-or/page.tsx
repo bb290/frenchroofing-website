@@ -8,7 +8,7 @@ import { COMPANY, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Roofing Contractor in Fairview, OR | ${COMPANY.name}`,
   description:
-    "French Roofing LLC serves Fairview, OR with expert roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, just a short drive from our Damascus home base. Call 971-376-8722.",
+    "French Roofing LLC serves Fairview, OR with expert roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, just a short drive from our Damascus home base. Book online today.",
   alternates: { canonical: `${COMPANY.url}/service-areas/fairview-or` },
 };
 
@@ -76,10 +76,12 @@ export default function FairviewPage() {
               Schedule FREE Assessment
             </a>
             <a
-              href={COMPANY.phoneTel}
+              href={COMPANY.bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-lg border-2 border-white/30 px-8 py-4 text-lg font-semibold text-white hover:bg-white/10 transition-colors"
             >
-              Call {COMPANY.phone}
+              Book Online
             </a>
           </div>
         </div>
@@ -101,7 +103,7 @@ export default function FairviewPage() {
           <p className="text-gray-600">
             Whether you&apos;re in one of Fairview&apos;s newer developments or
             an established home near I-84, we bring the same local knowledge and
-            quality craftsmanship to every job. When you call us, you get a
+            quality craftsmanship to every job. When you reach out, you get a
             real person who knows the area — not a call center three states away.
           </p>
         </div>

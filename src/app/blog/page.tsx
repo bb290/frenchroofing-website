@@ -62,7 +62,7 @@ export default function BlogPage() {
           </p>
           <p className="text-gray-500 mb-10">
             In the meantime, if you have a roofing question, don&apos;t be a
-            stranger — give us a call or drop us a message.
+            stranger — drop us a message.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
@@ -71,12 +71,6 @@ export default function BlogPage() {
             >
               Ask Us Anything
             </Link>
-            <a
-              href={COMPANY.phoneTel}
-              className="text-lg font-semibold text-[#092e5e] hover:text-[#d85024] transition-colors"
-            >
-              Or call {COMPANY.phone}
-            </a>
           </div>
         </div>
       </section>

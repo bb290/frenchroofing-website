@@ -112,12 +112,6 @@ export default function RoofReplacementPage() {
               >
                 Get a Free Estimate
               </a>
-              <a
-                href={COMPANY.phoneTel}
-                className="inline-flex items-center justify-center rounded-lg border-2 border-white/30 px-8 py-4 text-lg font-semibold text-white hover:bg-white/10 transition-colors"
-              >
-                Call {COMPANY.phone}
-              </a>
             </div>
             <p className="mt-4 text-sm text-gray-400">
               0% financing available through Enhancify
@@ -135,7 +129,7 @@ export default function RoofReplacementPage() {
             </h2>
             <p className="mt-4 text-lg text-gray-600">
               No mysteries, no runaround. Here&apos;s exactly what happens from
-              first call to final walkthrough.
+              first contact to final walkthrough.
             </p>
           </div>
           <div className="space-y-8">

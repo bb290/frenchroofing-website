@@ -8,7 +8,7 @@ import { COMPANY, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Roofing Contractor in Boring, OR | ${COMPANY.name}`,
   description:
-    "French Roofing LLC serves Boring, OR with expert roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, and just 10 minutes from our Damascus home base. Call 971-376-8722.",
+    "French Roofing LLC serves Boring, OR with expert roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, and just 10 minutes from our Damascus home base. Book online today.",
   alternates: { canonical: `${COMPANY.url}/service-areas/boring-or` },
 };
 
@@ -36,7 +36,7 @@ const faqs = [
   {
     question: "Can French Roofing work on farm buildings and large properties in Boring?",
     answer:
-      "Absolutely. Boring has a great mix of residential homes, hobby farms, and larger rural properties. We handle roofing for standard homes as well as shops, barns, and outbuildings. If it's got a roof and it needs work, we've got you covered. Just give us a call and we'll come take a look.",
+      "Absolutely. Boring has a great mix of residential homes, hobby farms, and larger rural properties. We handle roofing for standard homes as well as shops, barns, and outbuildings. If it's got a roof and it needs work, we've got you covered. Just book online and we'll come take a look.",
   },
 ];
 
@@ -77,10 +77,12 @@ export default function BoringPage() {
               Schedule FREE Assessment
             </a>
             <a
-              href={COMPANY.phoneTel}
+              href={COMPANY.bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-lg border-2 border-white/30 px-8 py-4 text-lg font-semibold text-white hover:bg-white/10 transition-colors"
             >
-              Call {COMPANY.phone}
+              Book Online
             </a>
           </div>
         </div>

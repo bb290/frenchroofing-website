@@ -72,7 +72,7 @@ function getRoofCleaningFaqs(cityName: string) {
     },
     {
       question: `Does French Roofing offer recurring roof maintenance in ${cityName}?`,
-      answer: `We do! We offer both one-time cleanings and recurring maintenance schedules for homeowners in ${cityName}. A lot of our customers set up annual or semi-annual visits so they never have to think about it. It's the easiest way to keep your roof in great shape. Just give us a call and we'll set it up.`,
+      answer: `We do! We offer both one-time cleanings and recurring maintenance schedules for homeowners in ${cityName}. A lot of our customers set up annual or semi-annual visits so they never have to think about it. It's the easiest way to keep your roof in great shape. Just book online and we'll set it up.`,
     },
     {
       question: `Can roof cleaning extend my roof's lifespan in ${cityName}?`,
@@ -142,12 +142,6 @@ export default async function RoofCleaningCityPage({
                 className="inline-flex items-center justify-center rounded-lg bg-[#d85024] px-8 py-4 text-lg font-semibold text-white hover:bg-[#c04520] transition-colors"
               >
                 Schedule a Cleaning
-              </a>
-              <a
-                href={COMPANY.phoneTel}
-                className="inline-flex items-center justify-center rounded-lg border-2 border-white/30 px-8 py-4 text-lg font-semibold text-white hover:bg-white/10 transition-colors"
-              >
-                Call {COMPANY.phone}
               </a>
             </div>
           </div>

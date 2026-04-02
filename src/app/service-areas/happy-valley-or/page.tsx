@@ -8,7 +8,7 @@ import { COMPANY, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Roofing Contractor in Happy Valley, OR | ${COMPANY.name}`,
   description:
-    "Need a roofing contractor in Happy Valley, OR? French Roofing LLC provides roof replacement, repair, cleaning, and inspections. Based in nearby Damascus — your local, CertainTeed Certified roofing team. Call 971-376-8722.",
+    "Need a roofing contractor in Happy Valley, OR? French Roofing LLC provides roof replacement, repair, cleaning, and inspections. Based in nearby Damascus — your local, CertainTeed Certified roofing team. Book online today.",
   alternates: { canonical: `${COMPANY.url}/service-areas/happy-valley-or` },
 };
 
@@ -80,10 +80,12 @@ export default function HappyValleyPage() {
               Schedule FREE Assessment
             </a>
             <a
-              href={COMPANY.phoneTel}
+              href={COMPANY.bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-lg border-2 border-white/30 px-8 py-4 text-lg font-semibold text-white hover:bg-white/10 transition-colors"
             >
-              Call {COMPANY.phone}
+              Book Online
             </a>
           </div>
         </div>

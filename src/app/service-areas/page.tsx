@@ -83,9 +83,9 @@ export default function ServiceAreasPage() {
           </p>
           <p className="text-gray-600">
             French Roofing has been headquartered in Damascus since 2014. We
-            know these neighborhoods because we live in them. When you call us,
-            you&apos;re not calling a national chain — you&apos;re calling your
-            neighbors. Licensed (CCB #{COMPANY.ccb}), insured, CertainTeed
+            know these neighborhoods because we live in them. When you reach
+            out, you&apos;re not contacting a national chain — you&apos;re
+            working with your neighbors. Licensed (CCB #{COMPANY.ccb}), insured, CertainTeed
             Certified, and always happy to give you an honest answer.
           </p>
         </div>

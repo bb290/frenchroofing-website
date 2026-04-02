@@ -8,7 +8,7 @@ import { COMPANY, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Roofing Contractor in Johnson City, OR | ${COMPANY.name}`,
   description:
-    "French Roofing LLC serves Johnson City, OR with professional roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, based nearby in Damascus. Call 971-376-8722.",
+    "French Roofing LLC serves Johnson City, OR with professional roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, based nearby in Damascus. Book online today.",
   alternates: { canonical: `${COMPANY.url}/service-areas/johnson-city-or` },
 };
 
@@ -79,10 +79,12 @@ export default function JohnsonCityPage() {
               Schedule FREE Assessment
             </a>
             <a
-              href={COMPANY.phoneTel}
+              href={COMPANY.bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-lg border-2 border-white/30 px-8 py-4 text-lg font-semibold text-white hover:bg-white/10 transition-colors"
             >
-              Call {COMPANY.phone}
+              Book Online
             </a>
           </div>
         </div>

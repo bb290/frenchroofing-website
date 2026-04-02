@@ -8,7 +8,7 @@ import { COMPANY, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Roofing Contractor in Damascus, OR | ${COMPANY.name}`,
   description:
-    "French Roofing LLC is a trusted roofing contractor in Damascus, OR offering roof replacement, roof repair, cleaning, and inspections. Family-owned, CertainTeed Certified, and financing available. Call 971-376-8722.",
+    "French Roofing LLC is a trusted roofing contractor in Damascus, OR offering roof replacement, roof repair, cleaning, and inspections. Family-owned, CertainTeed Certified, and financing available. Book online today.",
   alternates: { canonical: `${COMPANY.url}/service-areas/damascus-or` },
 };
 
@@ -76,10 +76,12 @@ export default function DamascusPage() {
               Schedule FREE Assessment
             </a>
             <a
-              href={COMPANY.phoneTel}
+              href={COMPANY.bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-lg border-2 border-white/30 px-8 py-4 text-lg font-semibold text-white hover:bg-white/10 transition-colors"
             >
-              Call {COMPANY.phone}
+              Book Online
             </a>
           </div>
         </div>

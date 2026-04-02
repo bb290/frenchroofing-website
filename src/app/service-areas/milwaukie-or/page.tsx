@@ -8,7 +8,7 @@ import { COMPANY, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Roofing Contractor in Milwaukie, OR | ${COMPANY.name}`,
   description:
-    "French Roofing LLC serves Milwaukie, OR with roof replacement, repair, cleaning, and inspections. CertainTeed Certified, family-owned, about 20 minutes from our Damascus home base. Call 971-376-8722.",
+    "French Roofing LLC serves Milwaukie, OR with roof replacement, repair, cleaning, and inspections. CertainTeed Certified, family-owned, about 20 minutes from our Damascus home base. Book online today.",
   alternates: { canonical: `${COMPANY.url}/service-areas/milwaukie-or` },
 };
 
@@ -77,10 +77,12 @@ export default function MilwaukiePage() {
               Schedule FREE Assessment
             </a>
             <a
-              href={COMPANY.phoneTel}
+              href={COMPANY.bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-lg border-2 border-white/30 px-8 py-4 text-lg font-semibold text-white hover:bg-white/10 transition-colors"
             >
-              Call {COMPANY.phone}
+              Book Online
             </a>
           </div>
         </div>
@@ -97,8 +99,8 @@ export default function MilwaukiePage() {
             Portland to enjoy everything the city offers, but with its own
             character and community. French Roofing is based in Damascus, about
             20 minutes east, and we&apos;ve been serving Milwaukie homeowners
-            since 2014. When you call us, you&apos;re getting a local team that
-            actually picks up the phone.
+            since 2014. When you reach out, you&apos;re getting a local team that
+            actually responds.
           </p>
           <p className="text-gray-600">
             Whether you&apos;re in a charming mid-century ranch near downtown, a

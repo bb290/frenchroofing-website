@@ -8,7 +8,7 @@ import { COMPANY, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Roofing Contractor in West Linn, OR | ${COMPANY.name}`,
   description:
-    "French Roofing LLC provides expert roof replacement, repair, cleaning, and inspections in West Linn, OR. Family-owned, CertainTeed Certified, and just a 20-minute drive from our Damascus home base. Call 971-376-8722.",
+    "French Roofing LLC provides expert roof replacement, repair, cleaning, and inspections in West Linn, OR. Family-owned, CertainTeed Certified, and just a 20-minute drive from our Damascus home base. Book online today.",
   alternates: { canonical: `${COMPANY.url}/service-areas/west-linn-or` },
 };
 
@@ -76,10 +76,12 @@ export default function WestLinnPage() {
               Schedule FREE Assessment
             </a>
             <a
-              href={COMPANY.phoneTel}
+              href={COMPANY.bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-lg border-2 border-white/30 px-8 py-4 text-lg font-semibold text-white hover:bg-white/10 transition-colors"
             >
-              Call {COMPANY.phone}
+              Book Online
             </a>
           </div>
         </div>

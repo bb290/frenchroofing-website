@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { COMPANY } from "@/lib/constants";
 
 export default function CTABanner({
@@ -39,14 +38,6 @@ export default function CTABanner({
             className="rounded-lg bg-[#d85024] px-8 py-4 text-lg font-semibold text-white hover:bg-[#c04520] transition-colors"
           >
             Schedule Now
-          </a>
-          <a
-            href={COMPANY.phoneTel}
-            className={`text-lg font-semibold ${
-              dark ? "text-[#ffbd59]" : "text-[#092e5e]"
-            }`}
-          >
-            Or call {COMPANY.phone}
           </a>
         </div>
       </div>

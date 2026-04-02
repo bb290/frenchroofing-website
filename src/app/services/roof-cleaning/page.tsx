@@ -115,12 +115,6 @@ export default function RoofCleaningPage() {
               >
                 Schedule a Cleaning
               </a>
-              <a
-                href={COMPANY.phoneTel}
-                className="inline-flex items-center justify-center rounded-lg border-2 border-white/30 px-8 py-4 text-lg font-semibold text-white hover:bg-white/10 transition-colors"
-              >
-                Call {COMPANY.phone}
-              </a>
             </div>
           </div>
         </div>

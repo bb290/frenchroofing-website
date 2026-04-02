@@ -8,7 +8,7 @@ import { COMPANY, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Roofing Contractor in Wood Village, OR | ${COMPANY.name}`,
   description:
-    "French Roofing LLC provides expert roofing services in Wood Village, OR — roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, serving from nearby Damascus. Call 971-376-8722.",
+    "French Roofing LLC provides expert roofing services in Wood Village, OR — roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, serving from nearby Damascus. Book online today.",
   alternates: { canonical: `${COMPANY.url}/service-areas/wood-village-or` },
 };
 
@@ -76,10 +76,12 @@ export default function WoodVillagePage() {
               Schedule FREE Assessment
             </a>
             <a
-              href={COMPANY.phoneTel}
+              href={COMPANY.bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-lg border-2 border-white/30 px-8 py-4 text-lg font-semibold text-white hover:bg-white/10 transition-colors"
             >
-              Call {COMPANY.phone}
+              Book Online
             </a>
           </div>
         </div>

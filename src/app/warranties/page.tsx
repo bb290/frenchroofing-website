@@ -53,7 +53,7 @@ const warrantyFAQs = [
   {
     question: "Will my warranty be voided if I don\u2019t maintain my roof?",
     answer:
-      "Both manufacturer and workmanship warranties typically require that you maintain your roof in reasonable condition. That means keeping gutters clean, addressing moss, and not making unauthorized modifications. Normal wear and tear won\u2019t void your warranty, but neglect can. When in doubt, give us a call and we\u2019ll help you understand what\u2019s needed.",
+      "Both manufacturer and workmanship warranties typically require that you maintain your roof in reasonable condition. That means keeping gutters clean, addressing moss, and not making unauthorized modifications. Normal wear and tear won\u2019t void your warranty, but neglect can. When in doubt, reach out and we\u2019ll help you understand what\u2019s needed.",
   },
   {
     question: "Does my warranty transfer if I sell my home?",
@@ -63,7 +63,7 @@ const warrantyFAQs = [
   {
     question: "What should I do if I notice a problem with my roof?",
     answer:
-      "Call us at 971-376-8722. Don\u2019t wait, don\u2019t try to fix it yourself, and don\u2019t hire someone else to patch it (that can actually void your warranty). We\u2019ll send someone out to inspect, determine whether it\u2019s a warranty issue, and take care of it from there.",
+      "Contact us through our website. Don\u2019t wait, don\u2019t try to fix it yourself, and don\u2019t hire someone else to patch it (that can actually void your warranty). We\u2019ll send someone out to inspect, determine whether it\u2019s a warranty issue, and take care of it from there.",
   },
 ];
 
@@ -302,8 +302,8 @@ export default function WarrantiesPage() {
             {[
               {
                 number: "1",
-                title: "Give Us a Call",
-                description: `Call us at ${COMPANY.phone} and let us know what you\u2019re seeing. A photo helps if you have one, but it\u2019s not required. We\u2019ll ask a few questions to understand the situation.`,
+                title: "Contact Us",
+                description: `Reach out through our website and let us know what you\u2019re seeing. A photo helps if you have one, but it\u2019s not required. We\u2019ll ask a few questions to understand the situation.`,
               },
               {
                 number: "2",
@@ -368,7 +368,7 @@ export default function WarrantiesPage() {
       {/* ── CTA ── */}
       <CTABanner
         headline="Questions About Your Warranty?"
-        description="Give us a call or schedule a free assessment. We\u2019re happy to walk you through your coverage and answer any questions."
+        description="Schedule a free assessment. We\u2019re happy to walk you through your coverage and answer any questions."
       />
     </>
   );

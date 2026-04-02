@@ -32,7 +32,7 @@ const steps = [
   {
     title: "Schedule Your Inspection",
     description:
-      "Give us a call or book online. We'll find a time that works for you — inspections typically take about an hour depending on the size of your roof.",
+      "Book online and we'll find a time that works for you — inspections typically take about an hour depending on the size of your roof.",
   },
   {
     title: "Exterior Roof Inspection",
@@ -63,7 +63,7 @@ function getRoofInspectionFaqs(cityName: string) {
     },
     {
       question: `Does French Roofing offer free roof inspections in ${cityName}?`,
-      answer: `We offer FREE roof assessments for ${cityName} homeowners who are considering repair or replacement work. For standalone inspections — like pre-purchase or annual checkups — we charge a fair, competitive rate. Either way, you get an honest, thorough evaluation with no pressure to buy anything. Give us a call and we'll figure out the best option for you.`,
+      answer: `We offer FREE roof assessments for ${cityName} homeowners who are considering repair or replacement work. For standalone inspections — like pre-purchase or annual checkups — we charge a fair, competitive rate. Either way, you get an honest, thorough evaluation with no pressure to buy anything. Book online or contact us and we'll figure out the best option for you.`,
     },
     {
       question: `What does a roof inspection include in ${cityName}, OR?`,
@@ -135,12 +135,6 @@ export default async function RoofInspectionsCityPage({
               >
                 Schedule an Inspection
               </a>
-              <a
-                href={COMPANY.phoneTel}
-                className="inline-flex items-center justify-center rounded-lg border-2 border-white/30 px-8 py-4 text-lg font-semibold text-white hover:bg-white/10 transition-colors"
-              >
-                Call {COMPANY.phone}
-              </a>
             </div>
           </div>
         </div>
@@ -155,7 +149,7 @@ export default async function RoofInspectionsCityPage({
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
               A quick inspection now can save you thousands later. Here are the
-              most common reasons {area.name} homeowners call us.
+              most common reasons {area.name} homeowners reach out.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
