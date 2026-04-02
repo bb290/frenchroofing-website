@@ -7,12 +7,12 @@ import { COMPANY, SERVICES, SERVICE_AREAS } from "@/lib/constants";
 
 const DROPDOWNS = [
   {
-    label: "Services",
+    label: "What We Do",
     href: "/services",
     items: SERVICES.map((s) => ({ label: s.name, href: `/services/${s.slug}` })),
   },
   {
-    label: "Service Areas",
+    label: "Where We Work",
     href: "/service-areas",
     items: SERVICE_AREAS.all
       .filter((a) => SERVICE_AREAS.priority.includes(a.slug))
@@ -22,7 +22,16 @@ const DROPDOWNS = [
       })),
   },
   {
-    label: "About",
+    label: "Need to Know",
+    href: "/essentials",
+    items: [
+      { label: "10 Essential Questions", href: "/essentials" },
+      { label: "Roofing Materials", href: "/materials" },
+      { label: "Warranty Details", href: "/warranties" },
+    ],
+  },
+  {
+    label: "Nice to Know",
     href: "/about",
     items: [
       { label: "Our Story", href: "/about" },
@@ -84,7 +93,7 @@ export default function Header() {
                         {item.label}
                       </Link>
                     ))}
-                    {menu.label !== "About" && (
+                    {(menu.label === "What We Do" || menu.label === "Where We Work") && (
                       <Link
                         href={menu.href}
                         className="block px-4 py-2.5 text-sm font-medium text-[#d85024] border-t border-gray-100 mt-1 pt-2.5"
@@ -164,7 +173,7 @@ export default function Header() {
                         {item.label}
                       </Link>
                     ))}
-                    {menu.label !== "About" && (
+                    {(menu.label === "What We Do" || menu.label === "Where We Work") && (
                       <Link
                         href={menu.href}
                         className="block px-3 py-2 text-sm font-medium text-[#d85024]"
