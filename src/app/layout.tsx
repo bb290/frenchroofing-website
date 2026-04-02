@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Lexend } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -7,8 +7,8 @@ import { LocalBusinessJsonLd } from "@/components/JsonLd";
 import ReviewsWidget from "@/components/ReviewsWidget";
 import { COMPANY } from "@/lib/constants";
 
-const lexend = Lexend({
-  variable: "--font-lexend",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
   display: "swap",
 });
@@ -54,8 +54,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${lexend.variable} h-full`}>
-      <body className="min-h-full flex flex-col font-[var(--font-lexend)]">
+    <html lang="en" className={`${inter.variable} h-full`}>
+      <body className="min-h-full flex flex-col font-[var(--font-inter)]">
         <LocalBusinessJsonLd />
         <Header />
         <main className="flex-1">{children}</main>
