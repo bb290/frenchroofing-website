@@ -28,6 +28,7 @@ const DROPDOWNS = [
       { label: "10 Essential Questions", href: "/essentials" },
       { label: "Roofing Materials", href: "/materials" },
       { label: "Warranty Details", href: "/warranties" },
+      { label: "Financing", href: "/financing" },
     ],
   },
   {
@@ -36,7 +37,6 @@ const DROPDOWNS = [
     items: [
       { label: "Our Story", href: "/about" },
       { label: "Gallery", href: "/gallery" },
-      { label: "Financing", href: "/financing" },
       { label: "Contact", href: "/contact" },
     ],
   },
@@ -107,11 +107,19 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* CTA */}
-          <div className="hidden lg:flex items-center">
+          {/* CTAs */}
+          <div className="hidden lg:flex items-center gap-3">
+            <a
+              href={COMPANY.bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-lg border-2 border-[#092e5e] px-5 py-2.5 text-sm font-semibold text-[#092e5e] hover:bg-[#092e5e] hover:text-white transition-colors"
+            >
+              Free Assessment
+            </a>
             <Link
               href="/estimate"
-              className="rounded-lg bg-[#d85024] px-7 py-3 text-xl font-semibold text-white hover:bg-[#c04520] transition-colors"
+              className="rounded-lg bg-[#d85024] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#c04520] transition-colors"
             >
               Instant Estimate
             </Link>
@@ -186,7 +194,16 @@ export default function Header() {
                 )}
               </div>
             ))}
-            <div className="pt-4 border-t border-gray-100">
+            <div className="pt-4 border-t border-gray-100 space-y-3">
+              <a
+                href={COMPANY.bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-center rounded-lg border-2 border-[#092e5e] px-5 py-3 text-base font-semibold text-[#092e5e]"
+                onClick={() => setMobileOpen(false)}
+              >
+                Free Assessment
+              </a>
               <Link
                 href="/estimate"
                 className="block text-center rounded-lg bg-[#d85024] px-5 py-3 text-base font-semibold text-white"

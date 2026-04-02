@@ -5,40 +5,34 @@ import { COMPANY } from "@/lib/constants";
 
 const MATERIALS = [
   {
-    id: "3tab",
-    name: "3-Tab Shingles",
-    multiplier: 0.7,
-    warranty: "20–25 years",
-    pros: ["Most affordable option", "Clean, uniform look", "Easy to repair"],
-    cons: ["Shorter lifespan", "Less wind resistance", "Fewer style options"],
-    description: "A solid budget-friendly choice for homeowners who want reliable protection without the premium price tag.",
-  },
-  {
-    id: "architectural",
-    name: "Architectural Shingles",
+    id: "landmark",
+    name: "CertainTeed Landmark",
     multiplier: 1.0,
-    warranty: "30–50 years",
-    pros: ["Most popular choice", "Dimensional look adds curb appeal", "Strong wind resistance (up to 130 mph)", "Wide color selection"],
-    cons: ["Mid-range cost", "Heavier than 3-tab"],
-    description: "The go-to for most homeowners. Great balance of durability, looks, and value. This is what we install most often.",
+    warranty: "Lifetime limited",
+    pros: ["Most popular choice", "Dimensional architectural look", "Strong wind resistance (up to 130 mph)", "Wide color selection", "StreakFighter algae resistance"],
+    cons: ["Standard tier — fewer premium features"],
+    description: "Our most-installed shingle. Great balance of durability, curb appeal, and value. Built for Oregon's rain and wind.",
+    tag: "Good",
   },
   {
-    id: "premium",
-    name: "Premium Designer Shingles",
-    multiplier: 1.3,
-    warranty: "50+ years / Lifetime",
-    pros: ["Mimics slate or cedar shake", "Maximum curb appeal", "Best manufacturer warranties", "Excellent wind & impact resistance"],
-    cons: ["Higher upfront cost", "Heavier — may need structural check"],
-    description: "For homeowners who want the best of the best. Stunning looks with top-tier protection and warranty coverage.",
+    id: "landmark-pro",
+    name: "CertainTeed Landmark Pro",
+    multiplier: 1.2,
+    warranty: "Lifetime limited + extended",
+    pros: ["Thicker, more dimensional profile", "Max Def colors — richer look", "Enhanced wind warranty (up to 130 mph)", "Longer-lasting than standard Landmark", "StreakFighter algae resistance"],
+    cons: ["Moderate price increase over Landmark"],
+    description: "Everything Landmark offers, plus a thicker profile and richer color depth. The sweet spot for homeowners who want a step up.",
+    tag: "Better",
   },
   {
-    id: "metal",
-    name: "Standing Seam Metal",
-    multiplier: 1.6,
-    warranty: "40–70 years",
-    pros: ["Longest lifespan", "Energy efficient (reflects heat)", "Fire & wind resistant", "Low maintenance", "Great for Oregon rain"],
-    cons: ["Highest upfront cost", "Can be louder in heavy rain", "Fewer local installers"],
-    description: "The long game. Higher upfront investment, but metal roofs can last a lifetime with almost zero maintenance.",
+    id: "presidential",
+    name: "CertainTeed Presidential",
+    multiplier: 1.5,
+    warranty: "Lifetime limited + premium",
+    pros: ["Luxury wood-shake look without the maintenance", "Maximum curb appeal", "Best CertainTeed warranty tier", "Superior impact resistance (Class 4)", "Heavyweight construction"],
+    cons: ["Highest upfront cost", "Heavier — ideal for sturdy structures"],
+    description: "The top of the line. Looks like natural wood shake but lasts decades longer. For homeowners who want the absolute best on their roof.",
+    tag: "Best",
   },
 ] as const;
 
@@ -245,14 +239,14 @@ export default function RoofEstimator({ compact = false }: { compact?: boolean }
                           {mat.description}
                         </p>
                       </div>
-                      <span className="flex-shrink-0 rounded-full bg-[#092e5e]/5 px-3 py-1 text-xs font-medium text-[#092e5e]">
-                        {mat.multiplier === 1.0
-                          ? "Most Popular"
-                          : mat.multiplier < 1
-                          ? "Budget"
-                          : mat.multiplier >= 1.5
-                          ? "Premium"
-                          : "Upgrade"}
+                      <span className={`flex-shrink-0 rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wider ${
+                        mat.tag === "Good"
+                          ? "bg-[#092e5e]/10 text-[#092e5e]"
+                          : mat.tag === "Better"
+                          ? "bg-[#ffbd59]/20 text-[#d85024]"
+                          : "bg-[#d85024]/10 text-[#d85024]"
+                      }`}>
+                        {mat.tag}
                       </span>
                     </div>
                     <div className="mt-3 grid grid-cols-2 gap-3">
