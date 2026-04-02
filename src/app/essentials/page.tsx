@@ -144,23 +144,6 @@ export default function EssentialsPage() {
             </h2>
           </div>
 
-          {/* Podcast — full version */}
-          <div className="mb-10">
-            <div className="aspect-video rounded-xl overflow-hidden">
-              <iframe
-                src="https://www.youtube.com/embed/rOXXRPQUJog"
-                title="10 Essential Questions to Ask Your Roofing Contractor — Full Podcast"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="w-full h-full"
-              />
-            </div>
-            <p className="text-center text-sm text-gray-500 mt-3">
-              Full podcast — all 10 questions explained in depth (19 min)
-            </p>
-          </div>
-
-          {/* Short videos */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <div className="aspect-video rounded-xl overflow-hidden">
@@ -268,6 +251,32 @@ export default function EssentialsPage() {
           >
             Schedule a Free Roof Assessment
           </a>
+        </div>
+      </section>
+
+      {/* ── Full Podcast ── */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="mx-auto max-w-4xl">
+          <div className="text-center mb-8">
+            <p className="text-sm font-semibold text-[#d85024] uppercase tracking-wider mb-2">
+              Full Podcast
+            </p>
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#092e5e]">
+              All 10 Questions — In Depth
+            </h2>
+            <p className="mt-2 text-gray-600">
+              Sean breaks down every question and what the right answers sound like (19 min).
+            </p>
+          </div>
+          <div className="aspect-video rounded-xl overflow-hidden">
+            <iframe
+              src="https://www.youtube.com/embed/rOXXRPQUJog"
+              title="10 Essential Questions to Ask Your Roofing Contractor — Full Podcast"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            />
+          </div>
         </div>
       </section>
 
