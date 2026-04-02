@@ -248,6 +248,29 @@ export default function RoofCleaningPage() {
         </div>
       </section>
 
+      {/* ── Maintenance Program Callout ── */}
+      <section className="py-16 px-4 bg-[#ffbd59]/10 border-y border-[#ffbd59]/30">
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="text-sm font-semibold text-[#d85024] uppercase tracking-wider mb-2">
+            Recurring Program
+          </p>
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#092e5e] mb-4">
+            Want to Stay Ahead of It? Join Our Maintenance Program.
+          </h2>
+          <p className="text-gray-600 mb-6 max-w-xl mx-auto">
+            2 visits per year — debris removal, gutter clearing, moss prevention
+            treatment, and a full inspection every time. Three tiers starting at
+            $1,200/year.
+          </p>
+          <a
+            href="/services/maintenance"
+            className="inline-flex items-center justify-center rounded-lg bg-[#092e5e] px-8 py-4 text-lg font-semibold text-white hover:bg-[#d85024] transition-colors"
+          >
+            View Maintenance Program &rarr;
+          </a>
+        </div>
+      </section>
+
       {/* ── FAQ ── */}
       <FAQSection
         title="Roof Cleaning & Maintenance FAQs"

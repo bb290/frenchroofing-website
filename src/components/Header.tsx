@@ -9,7 +9,10 @@ const DROPDOWNS = [
   {
     label: "What We Do",
     href: "/services",
-    items: SERVICES.map((s) => ({ label: s.name, href: `/services/${s.slug}` })),
+    items: [
+      ...SERVICES.map((s) => ({ label: s.name, href: `/services/${s.slug}` })),
+      { label: "Maintenance Program", href: "/services/maintenance" },
+    ],
   },
   {
     label: "Where We Work",
