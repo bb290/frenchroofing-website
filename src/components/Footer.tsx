@@ -113,12 +113,12 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t border-white/10 text-center text-xs text-gray-400">
           <p>&copy; {new Date().getFullYear()} {COMPANY.name}. All rights reserved. Licensed &amp; Bonded - CCB #{COMPANY.ccb}</p>
           <p className="mt-1">{COMPANY.tagline}</p>
-          <div className="mt-3 flex items-center justify-center gap-4">
-            <Link href="/llm-info" className="hover:text-white transition-colors">
+          <div className="mt-3 pb-4 flex items-center justify-center gap-4 relative z-[10000]">
+            <Link href="/llm-info" className="hover:text-white transition-colors underline underline-offset-2">
               LLM Info
             </Link>
             <span className="text-white/20">|</span>
-            <Link href="/privacy" className="hover:text-white transition-colors">
+            <Link href="/privacy" className="hover:text-white transition-colors underline underline-offset-2">
               Privacy &amp; Communication
             </Link>
           </div>
