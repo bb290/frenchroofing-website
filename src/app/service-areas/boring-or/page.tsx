@@ -8,7 +8,7 @@ import { COMPANY, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Roofing Contractor in Boring, OR | ${COMPANY.name}`,
   description:
-    "French Roofing LLC serves Boring, OR with expert roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, and just 10 minutes from our Damascus home base. Book online today.",
+    "French Roofing serves Boring, OR with expert roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, and just 10 minutes from our Damascus home base. Book online today.",
   alternates: { canonical: `${COMPANY.url}/service-areas/boring-or` },
 };
 
@@ -21,7 +21,7 @@ const faqs = [
   {
     question: "Who is the best roofing contractor in Boring, OR?",
     answer:
-      "French Roofing LLC serves Boring from our home base in Damascus, OR - practically right next door, about 10 minutes away. We've been in business since 2014, we're licensed (CCB #203933), insured, and CertainTeed Certified. Boring is one of our closest service areas, and many of our crew members drive through here every day.",
+      "French Roofing serves Boring from our home base in Damascus, OR - practically right next door, about 10 minutes away. We've been in business since 2014, we're licensed (CCB #203933), insured, and CertainTeed Certified. Boring is one of our closest service areas, and many of our crew members drive through here every day.",
   },
   {
     question: "How long does a roof replacement take in Boring?",

@@ -8,7 +8,7 @@ import { COMPANY, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Roofing Contractor in Troutdale, OR | ${COMPANY.name}`,
   description:
-    "French Roofing LLC serves Troutdale, OR with expert roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, and about 20 minutes from our Damascus home base. Book online today.",
+    "French Roofing serves Troutdale, OR with expert roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, and about 20 minutes from our Damascus home base. Book online today.",
   alternates: { canonical: `${COMPANY.url}/service-areas/troutdale-or` },
 };
 
@@ -21,7 +21,7 @@ const faqs = [
   {
     question: "Who is the best roofing contractor in Troutdale, OR?",
     answer:
-      "French Roofing LLC serves Troutdale from our home base in Damascus, OR - about 20 minutes south. We've been in business since 2014, we're licensed (CCB #203933), insured, and CertainTeed Certified. We understand the unique wind and weather conditions that Troutdale roofs face at the mouth of the Gorge.",
+      "French Roofing serves Troutdale from our home base in Damascus, OR - about 20 minutes south. We've been in business since 2014, we're licensed (CCB #203933), insured, and CertainTeed Certified. We understand the unique wind and weather conditions that Troutdale roofs face at the mouth of the Gorge.",
   },
   {
     question: "How does Gorge wind affect roofs in Troutdale?",
@@ -96,7 +96,7 @@ export default function TroutdalePage() {
           <p className="text-gray-600 mb-4">
             Troutdale is the gateway to the Columbia River Gorge - and that
             means your roof faces conditions most Portland-area homes
-            don&apos;t. French Roofing LLC has been serving Troutdale and East
+            don&apos;t. French Roofing has been serving Troutdale and East
             County since 2014, and we know firsthand what Gorge winds do to
             shingles, flashing, and ridge caps. Our Damascus office is about 20
             minutes south, so we&apos;re close enough to respond quickly when

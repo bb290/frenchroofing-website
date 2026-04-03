@@ -8,7 +8,7 @@ import { COMPANY, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Roofing Contractor in Johnson City, OR | ${COMPANY.name}`,
   description:
-    "French Roofing LLC serves Johnson City, OR with professional roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, based nearby in Damascus. Book online today.",
+    "French Roofing serves Johnson City, OR with professional roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, based nearby in Damascus. Book online today.",
   alternates: { canonical: `${COMPANY.url}/service-areas/johnson-city-or` },
 };
 
@@ -21,7 +21,7 @@ const faqs = [
   {
     question: "Who is the best roofing contractor serving Johnson City, OR?",
     answer:
-      "French Roofing LLC is a trusted roofing contractor serving Johnson City from our home base in Damascus - just about 10 minutes away along I-205. We've been taking care of local roofs since 2014, and we're licensed (CCB #203933), insured, and CertainTeed Certified.",
+      "French Roofing is a trusted roofing contractor serving Johnson City from our home base in Damascus - just about 10 minutes away along I-205. We've been taking care of local roofs since 2014, and we're licensed (CCB #203933), insured, and CertainTeed Certified.",
   },
   {
     question: "How quickly can French Roofing get to Johnson City?",
@@ -98,7 +98,7 @@ export default function JohnsonCityPage() {
           </h2>
           <p className="text-gray-600 mb-4">
             Johnson City is one of the tiniest cities in Oregon, but every home
-            still needs a solid roof overhead. French Roofing LLC is based in
+            still needs a solid roof overhead. French Roofing is based in
             Damascus - practically next door, just about 10 minutes down I-205.
             We&apos;ve been serving this corner of Clackamas County since 2014,
             and we&apos;re proud to be the local roofing crew Johnson City

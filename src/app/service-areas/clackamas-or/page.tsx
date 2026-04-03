@@ -8,7 +8,7 @@ import { COMPANY, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Roofing Contractor in Clackamas, OR | ${COMPANY.name}`,
   description:
-    "Looking for a reliable roofing contractor in Clackamas, OR? French Roofing LLC offers roof replacement, repair, cleaning, and inspections. Based in nearby Damascus - just minutes away. Book online today.",
+    "Looking for a reliable roofing contractor in Clackamas, OR? French Roofing offers roof replacement, repair, cleaning, and inspections. Based in nearby Damascus - just minutes away. Book online today.",
   alternates: { canonical: `${COMPANY.url}/service-areas/clackamas-or` },
 };
 
@@ -21,7 +21,7 @@ const faqs = [
   {
     question: "What roofing company serves Clackamas, OR?",
     answer:
-      "French Roofing LLC is based in Damascus, OR - just minutes from Clackamas. We've been serving Clackamas homeowners since 2014 with professional roof replacement, repair, cleaning, and inspection services. Licensed (CCB #203933), insured, and CertainTeed Certified.",
+      "French Roofing is based in Damascus, OR - just minutes from Clackamas. We've been serving Clackamas homeowners since 2014 with professional roof replacement, repair, cleaning, and inspection services. Licensed (CCB #203933), insured, and CertainTeed Certified.",
   },
   {
     question: "How do I know if my roof in Clackamas needs to be replaced?",
@@ -36,7 +36,7 @@ const faqs = [
   {
     question: "Is French Roofing licensed to work in Clackamas, OR?",
     answer:
-      "Yes. French Roofing LLC is fully licensed (CCB #203933), insured, and bonded in the state of Oregon. We're also CertainTeed Certified, meaning our installations meet the highest manufacturer quality standards. Clackamas is one of our primary service areas.",
+      "Yes. French Roofing is fully licensed (CCB #203933), insured, and bonded in the state of Oregon. We're also CertainTeed Certified, meaning our installations meet the highest manufacturer quality standards. Clackamas is one of our primary service areas.",
   },
 ];
 

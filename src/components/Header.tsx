@@ -58,7 +58,7 @@ export default function Header() {
           <Link href="/" className="flex-shrink-0">
             <Image
               src="/images/logo.png"
-              alt="French Roofing LLC"
+              alt="French Roofing"
               width={320}
               height={107}
               className="h-12 sm:h-[67px] w-auto"

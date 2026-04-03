@@ -8,7 +8,7 @@ import { COMPANY, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Roofing Contractor in Lake Oswego, OR | ${COMPANY.name}`,
   description:
-    "French Roofing LLC serves Lake Oswego, OR with premium roof replacement, repair, cleaning, and inspections. CertainTeed Certified, family-owned, about 25 minutes from Damascus. Book online today.",
+    "French Roofing serves Lake Oswego, OR with premium roof replacement, repair, cleaning, and inspections. CertainTeed Certified, family-owned, about 25 minutes from Damascus. Book online today.",
   alternates: { canonical: `${COMPANY.url}/service-areas/lake-oswego-or` },
 };
 
@@ -21,7 +21,7 @@ const faqs = [
   {
     question: "Who is the best roofing contractor in Lake Oswego, OR?",
     answer:
-      "French Roofing LLC has been serving Lake Oswego and the greater Portland metro since 2014. We're based in Damascus - about 25 minutes from Lake Oswego - and we bring CertainTeed Certified quality to every project. We're licensed (CCB #203933), insured, and known for clean job sites, clear communication, and craftsmanship that meets the high standards Lake Oswego homeowners expect.",
+      "French Roofing has been serving Lake Oswego and the greater Portland metro since 2014. We're based in Damascus - about 25 minutes from Lake Oswego - and we bring CertainTeed Certified quality to every project. We're licensed (CCB #203933), insured, and known for clean job sites, clear communication, and craftsmanship that meets the high standards Lake Oswego homeowners expect.",
   },
   {
     question: "Does French Roofing work with HOAs in Lake Oswego?",

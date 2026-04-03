@@ -8,7 +8,7 @@ import { COMPANY, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Roofing Contractor in Fairview, OR | ${COMPANY.name}`,
   description:
-    "French Roofing LLC serves Fairview, OR with expert roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, just a short drive from our Damascus home base. Book online today.",
+    "French Roofing serves Fairview, OR with expert roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, just a short drive from our Damascus home base. Book online today.",
   alternates: { canonical: `${COMPANY.url}/service-areas/fairview-or` },
 };
 
@@ -21,7 +21,7 @@ const faqs = [
   {
     question: "Who is the best roofing contractor in Fairview, OR?",
     answer:
-      "French Roofing LLC is a trusted roofing contractor serving Fairview, OR from our home base in Damascus - just about 20 minutes away. We've been serving the East County community since 2014, and we're licensed (CCB #203933), insured, and CertainTeed Certified.",
+      "French Roofing is a trusted roofing contractor serving Fairview, OR from our home base in Damascus - just about 20 minutes away. We've been serving the East County community since 2014, and we're licensed (CCB #203933), insured, and CertainTeed Certified.",
   },
   {
     question: "How long does a roof replacement take in Fairview?",
@@ -96,7 +96,7 @@ export default function FairviewPage() {
           <p className="text-gray-600 mb-4">
             Fairview is one of those small East County communities where folks
             still wave at each other from the driveway - and that&apos;s our kind
-            of neighborhood. French Roofing LLC is based in Damascus, just about
+            of neighborhood. French Roofing is based in Damascus, just about
             20 minutes south down the road, and we&apos;ve been taking care of
             roofs in the Fairview area since 2014.
           </p>

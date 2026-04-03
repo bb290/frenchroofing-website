@@ -8,7 +8,7 @@ import { COMPANY, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Roofing Contractor in Sandy, OR | ${COMPANY.name}`,
   description:
-    "French Roofing LLC is a trusted roofing contractor serving Sandy, OR with roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, and about 25 minutes from our Damascus home base. Book online today.",
+    "French Roofing is a trusted roofing contractor serving Sandy, OR with roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, and about 25 minutes from our Damascus home base. Book online today.",
   alternates: { canonical: `${COMPANY.url}/service-areas/sandy-or` },
 };
 
@@ -21,7 +21,7 @@ const faqs = [
   {
     question: "Who is the best roofing contractor in Sandy, OR?",
     answer:
-      "French Roofing LLC serves Sandy from our home base in Damascus, OR - just about 25 minutes down the road on Highway 26. We've been in business since 2014, we're licensed (CCB #203933), insured, and CertainTeed Certified. We know mountain weather and build roofs that hold up to it.",
+      "French Roofing serves Sandy from our home base in Damascus, OR - just about 25 minutes down the road on Highway 26. We've been in business since 2014, we're licensed (CCB #203933), insured, and CertainTeed Certified. We know mountain weather and build roofs that hold up to it.",
   },
   {
     question: "Can my roof handle Sandy's heavy snow and wind?",
@@ -95,7 +95,7 @@ export default function SandyPage() {
           </h2>
           <p className="text-gray-600 mb-4">
             Sandy is the gateway to Mt. Hood, and that means your roof has to
-            work a little harder than most. French Roofing LLC has been serving
+            work a little harder than most. French Roofing has been serving
             Sandy and the surrounding foothills since 2014, and we understand
             what mountain-adjacent weather does to a roof. Heavy snow, ice dams,
             wind-driven rain - we&apos;ve seen it all and know how to build

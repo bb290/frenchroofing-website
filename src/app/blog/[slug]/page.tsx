@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${title} | ${COMPANY.name} Blog`,
-    description: `Read about ${title.toLowerCase()} from French Roofing LLC - your trusted roofing experts in Damascus, OR.`,
+    description: `Read about ${title.toLowerCase()} from French Roofing - your trusted roofing experts in Damascus, OR.`,
     alternates: { canonical: `${COMPANY.url}/blog/${slug}` },
   };
 }

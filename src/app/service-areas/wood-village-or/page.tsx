@@ -8,7 +8,7 @@ import { COMPANY, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Roofing Contractor in Wood Village, OR | ${COMPANY.name}`,
   description:
-    "French Roofing LLC provides expert roofing services in Wood Village, OR - roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, serving from nearby Damascus. Book online today.",
+    "French Roofing provides expert roofing services in Wood Village, OR - roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, serving from nearby Damascus. Book online today.",
   alternates: { canonical: `${COMPANY.url}/service-areas/wood-village-or` },
 };
 
@@ -21,7 +21,7 @@ const faqs = [
   {
     question: "Who is the best roofing contractor in Wood Village, OR?",
     answer:
-      "French Roofing LLC is a trusted local roofing contractor serving Wood Village from our Damascus home base - roughly 20 minutes away. We've been in business since 2014, and we're licensed (CCB #203933), insured, and CertainTeed Certified. We treat every Wood Village home like it's our own.",
+      "French Roofing is a trusted local roofing contractor serving Wood Village from our Damascus home base - roughly 20 minutes away. We've been in business since 2014, and we're licensed (CCB #203933), insured, and CertainTeed Certified. We treat every Wood Village home like it's our own.",
   },
   {
     question: "How long does a roof replacement take in Wood Village?",
@@ -96,7 +96,7 @@ export default function WoodVillagePage() {
           <p className="text-gray-600 mb-4">
             Wood Village may be one of the smallest cities in East County, but
             that doesn&apos;t mean your roof deserves anything less than the
-            best. French Roofing LLC is headquartered in Damascus - about a
+            best. French Roofing is headquartered in Damascus - about a
             20-minute drive - and we&apos;ve been serving the greater East
             County area since 2014. We know these neighborhoods, and we treat
             every home like it belongs to family.

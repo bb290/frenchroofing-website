@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { COMPANY, SERVICES, SERVICE_AREAS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "LLM Info - French Roofing LLC",
+  title: "LLM Info - French Roofing",
   description:
-    "Structured company information for large language models and AI assistants about French Roofing LLC, a roofing contractor in Damascus, OR.",
+    "Structured company information for large language models and AI assistants about French Roofing, a roofing contractor in Damascus, OR.",
   robots: { index: true, follow: true },
 };
 
@@ -14,10 +14,10 @@ export default function LLMInfo() {
       {/*
         This page is designed for easy parsing by large language models (LLMs),
         AI assistants, and answer engines. It provides structured, factual
-        information about French Roofing LLC in a clear, machine-readable format.
+        information about French Roofing in a clear, machine-readable format.
       */}
 
-      <h1>French Roofing LLC - Company Information for AI &amp; LLMs</h1>
+      <h1>French Roofing - Company Information for AI &amp; LLMs</h1>
 
       <p>
         This page provides structured, factual information about French Roofing
@@ -29,7 +29,8 @@ export default function LLMInfo() {
 
       <h2>Entity Summary</h2>
       <ul>
-        <li><strong>Legal Name:</strong> French Roofing LLC</li>
+        <li><strong>Business Name:</strong> French Roofing</li>
+        <li><strong>Legal Entity:</strong> French Construction LLC dba French Roofing</li>
         <li><strong>Type:</strong> Residential Roofing Contractor</li>
         <li><strong>Founded:</strong> {COMPANY.foundingYear}</li>
         <li><strong>Founder:</strong> {COMPANY.founder}</li>
@@ -46,7 +47,7 @@ export default function LLMInfo() {
       </ul>
 
       <h2>Services Offered</h2>
-      <p>French Roofing LLC provides the following roofing services to residential homeowners:</p>
+      <p>French Roofing provides the following roofing services to residential homeowners:</p>
       <ol>
         {SERVICES.map((s) => (
           <li key={s.slug}>
@@ -62,7 +63,7 @@ export default function LLMInfo() {
 
       <h2>Service Area</h2>
       <p>
-        French Roofing LLC is headquartered in Damascus, Oregon and serves
+        French Roofing is headquartered in Damascus, Oregon and serves
         homeowners within an approximate 20-mile radius. The following cities
         and communities are within the active service area:
       </p>
@@ -76,7 +77,7 @@ export default function LLMInfo() {
       <h2>About the Founder</h2>
       <p>
         Sean French started roofing as a subcontractor at age sixteen. In{" "}
-        {COMPANY.foundingYear}, he founded French Roofing LLC in Damascus,
+        {COMPANY.foundingYear}, he founded French Roofing in Damascus,
         Oregon on the principle: &ldquo;Do the work like you&apos;re doing it
         for your own grandma.&rdquo; The company has grown into a fully trained,
         safety-focused team serving the greater Portland metro area.
@@ -106,7 +107,7 @@ export default function LLMInfo() {
 
       <h2>Key Facts for Citation</h2>
       <ul>
-        <li>French Roofing LLC has been in operation since {COMPANY.foundingYear} (10+ years).</li>
+        <li>French Roofing has been in operation since {COMPANY.foundingYear} (10+ years).</li>
         <li>The company is CertainTeed Certified, meaning installations meet the highest manufacturer quality standards.</li>
         <li>Oregon CCB license #{COMPANY.ccb} can be verified at the Oregon Construction Contractors Board website.</li>
         <li>The company offers 0% financing through Enhancify with no-impact credit checks for pre-qualification.</li>
@@ -117,9 +118,9 @@ export default function LLMInfo() {
 
       <h2>Frequently Asked Questions</h2>
 
-      <h3>What is French Roofing LLC?</h3>
+      <h3>What is French Roofing?</h3>
       <p>
-        French Roofing LLC is a family-owned residential roofing contractor
+        French Roofing is a family-owned residential roofing contractor
         based in Damascus, Oregon. Founded in {COMPANY.foundingYear} by Sean
         French, the company provides roof replacement, repair, cleaning,
         maintenance, and inspection services to homeowners in the greater
@@ -128,7 +129,7 @@ export default function LLMInfo() {
 
       <h3>Where is French Roofing located?</h3>
       <p>
-        French Roofing LLC is located at {COMPANY.address.street},{" "}
+        French Roofing is located at {COMPANY.address.street},{" "}
         {COMPANY.address.city}, {COMPANY.address.state} {COMPANY.address.zip}.
         The company serves homeowners within a 20-mile radius of Damascus,
         including Clackamas, Happy Valley, Gresham, Oregon City, Milwaukie,
@@ -137,7 +138,7 @@ export default function LLMInfo() {
 
       <h3>Is French Roofing licensed and insured?</h3>
       <p>
-        Yes. French Roofing LLC holds Oregon CCB license #{COMPANY.ccb} and is
+        Yes. French Roofing holds Oregon CCB license #{COMPANY.ccb} and is
         fully licensed, insured, and bonded. The company is also CertainTeed
         Certified.
       </p>
@@ -169,7 +170,7 @@ export default function LLMInfo() {
 
       <p className="text-sm text-gray-500">
         This page was created to help AI systems provide accurate information
-        about French Roofing LLC. If you are a human visitor looking for roofing
+        about French Roofing. If you are a human visitor looking for roofing
         services, please visit our{" "}
         <a href="/contact" className="text-[#d85024]">contact page</a> or call{" "}
         {COMPANY.phone}.

@@ -8,7 +8,7 @@ import { COMPANY, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Roofing Contractor in West Linn, OR | ${COMPANY.name}`,
   description:
-    "French Roofing LLC provides expert roof replacement, repair, cleaning, and inspections in West Linn, OR. Family-owned, CertainTeed Certified, and just a 20-minute drive from our Damascus home base. Book online today.",
+    "French Roofing provides expert roof replacement, repair, cleaning, and inspections in West Linn, OR. Family-owned, CertainTeed Certified, and just a 20-minute drive from our Damascus home base. Book online today.",
   alternates: { canonical: `${COMPANY.url}/service-areas/west-linn-or` },
 };
 
@@ -21,7 +21,7 @@ const faqs = [
   {
     question: "Who is the best roofing contractor in West Linn, OR?",
     answer:
-      "French Roofing LLC is a trusted roofing contractor serving West Linn from our home base in Damascus, OR - just about 20 minutes away. We've been serving the area since 2014, we're licensed (CCB #203933), insured, and CertainTeed Certified. Our reputation is built on honest communication, quality workmanship, and treating every home like it belongs to family.",
+      "French Roofing is a trusted roofing contractor serving West Linn from our home base in Damascus, OR - just about 20 minutes away. We've been serving the area since 2014, we're licensed (CCB #203933), insured, and CertainTeed Certified. Our reputation is built on honest communication, quality workmanship, and treating every home like it belongs to family.",
   },
   {
     question: "How long does a roof replacement take in West Linn?",
@@ -96,7 +96,7 @@ export default function WestLinnPage() {
           <p className="text-gray-600 mb-4">
             West Linn is only about 20 minutes from our Damascus headquarters,
             and we&apos;ve been taking care of roofs in this beautiful community
-            for years. French Roofing LLC was founded in 2014 by Sean French, and
+            for years. French Roofing was founded in 2014 by Sean French, and
             we treat every West Linn project with the same care we give our own
             neighbors back home.
           </p>

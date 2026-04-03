@@ -7,7 +7,7 @@ import { COMPANY } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Roofing Blog | ${COMPANY.name}`,
   description:
-    "Educational roofing content for homeowners in Damascus, Clackamas, and Happy Valley. Tips, guides, and insights from French Roofing LLC.",
+    "Educational roofing content for homeowners in Damascus, Clackamas, and Happy Valley. Tips, guides, and insights from French Roofing.",
   alternates: { canonical: `${COMPANY.url}/blog` },
 };
 

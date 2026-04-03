@@ -8,7 +8,7 @@ import { COMPANY } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "About French Roofing | Our Story",
   description:
-    "French Roofing LLC was founded in 2014 by Sean French in Damascus, OR. Learn about our values - Integrity, Workmanship, and Community - and why local homeowners trust our family-owned, CertainTeed Certified roofing team.",
+    "French Roofing was founded in 2014 by Sean French in Damascus, OR. Learn about our values - Integrity, Workmanship, and Community - and why local homeowners trust our family-owned, CertainTeed Certified roofing team.",
 };
 
 export default function AboutPage() {
@@ -57,7 +57,7 @@ export default function AboutPage() {
           <div className="relative aspect-square rounded-2xl overflow-hidden max-w-md mx-auto lg:mx-0">
             <Image
               src="/images/sean-first-job.webp"
-              alt="Sean French on his first roofing job - founder of French Roofing LLC"
+              alt="Sean French on his first roofing job - founder of French Roofing"
               fill
               className="object-cover"
             />

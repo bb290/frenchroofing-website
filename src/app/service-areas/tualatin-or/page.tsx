@@ -8,7 +8,7 @@ import { COMPANY, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Roofing Contractor in Tualatin, OR | ${COMPANY.name}`,
   description:
-    "French Roofing LLC serves Tualatin, OR with reliable roof replacement, repair, cleaning, and inspections. CertainTeed Certified, family-owned, about 30 minutes from our Damascus home base. Book online today.",
+    "French Roofing serves Tualatin, OR with reliable roof replacement, repair, cleaning, and inspections. CertainTeed Certified, family-owned, about 30 minutes from our Damascus home base. Book online today.",
   alternates: { canonical: `${COMPANY.url}/service-areas/tualatin-or` },
 };
 
@@ -21,7 +21,7 @@ const faqs = [
   {
     question: "Who is the best roofing contractor in Tualatin, OR?",
     answer:
-      "French Roofing LLC has been serving the greater Portland metro - including Tualatin - since 2014. We're based in Damascus, about 30 minutes east, and we bring the same quality, honesty, and care to every Tualatin job. We're licensed (CCB #203933), insured, and CertainTeed Certified.",
+      "French Roofing has been serving the greater Portland metro - including Tualatin - since 2014. We're based in Damascus, about 30 minutes east, and we bring the same quality, honesty, and care to every Tualatin job. We're licensed (CCB #203933), insured, and CertainTeed Certified.",
   },
   {
     question: "Are 1990s and 2000s roofs in Tualatin due for replacement?",

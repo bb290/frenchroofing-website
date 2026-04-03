@@ -6,7 +6,7 @@ import { COMPANY } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Community Discounts | ${COMPANY.name}`,
   description:
-    "French Roofing LLC offers special roofing discounts for active military, veterans, first responders, nurses, and teachers. Serving Damascus, OR and the Portland metro. Book online today.",
+    "French Roofing offers special roofing discounts for active military, veterans, first responders, nurses, and teachers. Serving Damascus, OR and the Portland metro. Book online today.",
   alternates: { canonical: `${COMPANY.url}/discounts` },
 };
 

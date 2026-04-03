@@ -5,7 +5,7 @@ import { COMPANY } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Privacy & Communication Policy",
   description:
-    "Privacy policy, communication preferences, and SMS/texting compliance for French Roofing LLC in Damascus, OR.",
+    "Privacy policy, communication preferences, and SMS/texting compliance for French Roofing in Damascus, OR.",
 };
 
 export default function Privacy() {
@@ -28,7 +28,7 @@ export default function Privacy() {
 
         {/* ── Intro ── */}
         <p className="text-gray-600 mb-8">
-          French Roofing LLC (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or
+          French Roofing (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or
           &ldquo;our&rdquo;) is committed to protecting your privacy and
           communicating with you in a respectful, transparent way. This policy
           explains how we collect, use, and protect your personal information,
@@ -87,7 +87,7 @@ export default function Privacy() {
             Phone Communication Policy
           </h2>
           <p className="text-gray-600 mb-3">
-            When you provide your phone number to French Roofing LLC, we may use
+            When you provide your phone number to French Roofing, we may use
             it to:
           </p>
           <ul className="list-disc pl-6 text-gray-600 space-y-2">
@@ -115,7 +115,7 @@ export default function Privacy() {
             </h3>
             <p className="text-gray-600 text-sm">
               By providing your mobile phone number and requesting service from
-              French Roofing LLC, you consent to receive text messages related to
+              French Roofing, you consent to receive text messages related to
               your roofing project. This may include appointment confirmations,
               scheduling updates, project status notifications, and follow-up
               messages. You may also opt in to receive text messages through our
@@ -148,7 +148,7 @@ export default function Privacy() {
               at {COMPANY.phone} or email {COMPANY.email} to request removal
               from text communications. After opting out, you will receive one
               final confirmation message. Opting out of texts does not affect
-              your ability to receive services from French Roofing LLC.
+              your ability to receive services from French Roofing.
             </p>
           </div>
 
@@ -168,7 +168,7 @@ export default function Privacy() {
             </h3>
             <p className="text-gray-600 text-sm">
               Message and data rates may apply depending on your mobile carrier
-              and plan. French Roofing LLC is not responsible for any charges
+              and plan. French Roofing is not responsible for any charges
               from your carrier related to receiving text messages. We are not
               liable for delayed or undelivered messages due to carrier issues.
             </p>

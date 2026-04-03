@@ -8,7 +8,7 @@ import { COMPANY, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Roofing Contractor in Gresham, OR | ${COMPANY.name}`,
   description:
-    "French Roofing LLC serves Gresham, OR with expert roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, just 15 minutes from our Damascus home base. Book online today.",
+    "French Roofing serves Gresham, OR with expert roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, just 15 minutes from our Damascus home base. Book online today.",
   alternates: { canonical: `${COMPANY.url}/service-areas/gresham-or` },
 };
 
@@ -21,7 +21,7 @@ const faqs = [
   {
     question: "Who is the best roofing contractor in Gresham, OR?",
     answer:
-      "French Roofing LLC is a top-rated roofing contractor serving Gresham from our home base in Damascus - just a 15-minute drive away. We're licensed (CCB #203933), insured, CertainTeed Certified, and have been serving the East Portland metro since 2014. We treat every Gresham home like it's in our own neighborhood.",
+      "French Roofing is a top-rated roofing contractor serving Gresham from our home base in Damascus - just a 15-minute drive away. We're licensed (CCB #203933), insured, CertainTeed Certified, and have been serving the East Portland metro since 2014. We treat every Gresham home like it's in our own neighborhood.",
   },
   {
     question: "Does French Roofing handle moss removal on Gresham roofs?",

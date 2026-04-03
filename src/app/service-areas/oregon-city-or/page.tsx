@@ -8,7 +8,7 @@ import { COMPANY, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Roofing Contractor in Oregon City, OR | ${COMPANY.name}`,
   description:
-    "French Roofing LLC is a trusted roofing contractor serving Oregon City, OR. Roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, about 20 minutes from Damascus. Book online today.",
+    "French Roofing is a trusted roofing contractor serving Oregon City, OR. Roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, about 20 minutes from Damascus. Book online today.",
   alternates: { canonical: `${COMPANY.url}/service-areas/oregon-city-or` },
 };
 
@@ -21,7 +21,7 @@ const faqs = [
   {
     question: "Who is the best roofing contractor in Oregon City, OR?",
     answer:
-      "French Roofing LLC has been serving Oregon City homeowners from our Damascus home base since 2014 - we're about 20 minutes away. We're licensed (CCB #203933), insured, and CertainTeed Certified. We specialize in the kind of older, character-rich homes that make Oregon City special, and we treat every project with care and honest communication.",
+      "French Roofing has been serving Oregon City homeowners from our Damascus home base since 2014 - we're about 20 minutes away. We're licensed (CCB #203933), insured, and CertainTeed Certified. We specialize in the kind of older, character-rich homes that make Oregon City special, and we treat every project with care and honest communication.",
   },
   {
     question: "Can French Roofing work on historic homes in Oregon City?",

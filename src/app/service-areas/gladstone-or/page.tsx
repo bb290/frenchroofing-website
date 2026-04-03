@@ -8,7 +8,7 @@ import { COMPANY, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Roofing Contractor in Gladstone, OR | ${COMPANY.name}`,
   description:
-    "French Roofing LLC is a trusted roofing contractor serving Gladstone, OR. Roof replacement, repair, cleaning, and inspections for older and established homes. CertainTeed Certified. Book online today.",
+    "French Roofing is a trusted roofing contractor serving Gladstone, OR. Roof replacement, repair, cleaning, and inspections for older and established homes. CertainTeed Certified. Book online today.",
   alternates: { canonical: `${COMPANY.url}/service-areas/gladstone-or` },
 };
 
@@ -21,7 +21,7 @@ const faqs = [
   {
     question: "Who is the best roofing contractor in Gladstone, OR?",
     answer:
-      "French Roofing LLC proudly serves Gladstone from our home base in Damascus - just about 15 minutes away. We've been taking care of roofs in the area since 2014. We're licensed (CCB #203933), insured, and CertainTeed Certified, and we specialize in the kind of honest, quality work Gladstone homeowners deserve.",
+      "French Roofing proudly serves Gladstone from our home base in Damascus - just about 15 minutes away. We've been taking care of roofs in the area since 2014. We're licensed (CCB #203933), insured, and CertainTeed Certified, and we specialize in the kind of honest, quality work Gladstone homeowners deserve.",
   },
   {
     question: "Does French Roofing work on older homes in Gladstone?",

@@ -8,7 +8,7 @@ import { COMPANY, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Roofing Contractor in Estacada, OR | ${COMPANY.name}`,
   description:
-    "French Roofing LLC serves Estacada, OR with expert roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, and about 20 minutes from our Damascus home base. Book online today.",
+    "French Roofing serves Estacada, OR with expert roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, and about 20 minutes from our Damascus home base. Book online today.",
   alternates: { canonical: `${COMPANY.url}/service-areas/estacada-or` },
 };
 
@@ -21,7 +21,7 @@ const faqs = [
   {
     question: "Who is the best roofing contractor in Estacada, OR?",
     answer:
-      "French Roofing LLC serves Estacada from our home base in Damascus, OR - about 20 minutes up the road on Highway 224. We've been in business since 2014, we're licensed (CCB #203933), insured, and CertainTeed Certified. We're close by and we know the conditions that Estacada roofs deal with.",
+      "French Roofing serves Estacada from our home base in Damascus, OR - about 20 minutes up the road on Highway 224. We've been in business since 2014, we're licensed (CCB #203933), insured, and CertainTeed Certified. We're close by and we know the conditions that Estacada roofs deal with.",
   },
   {
     question: "Why do Estacada roofs get so much moss?",

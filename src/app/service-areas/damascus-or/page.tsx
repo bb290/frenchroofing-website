@@ -8,7 +8,7 @@ import { COMPANY, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Roofing Contractor in Damascus, OR | ${COMPANY.name}`,
   description:
-    "French Roofing LLC is a trusted roofing contractor in Damascus, OR offering roof replacement, roof repair, cleaning, and inspections. Family-owned, CertainTeed Certified, and financing available. Book online today.",
+    "French Roofing is a trusted roofing contractor in Damascus, OR offering roof replacement, roof repair, cleaning, and inspections. Family-owned, CertainTeed Certified, and financing available. Book online today.",
   alternates: { canonical: `${COMPANY.url}/service-areas/damascus-or` },
 };
 
@@ -21,7 +21,7 @@ const faqs = [
   {
     question: "What roofing company serves Damascus, OR?",
     answer:
-      "French Roofing LLC is headquartered right here in Damascus, OR at 16235 SE Van Zyl Dr. We've been serving Damascus homeowners since 2014 with roof replacement, repair, cleaning, and inspection services. We're licensed (CCB #203933), insured, and CertainTeed Certified.",
+      "French Roofing is headquartered right here in Damascus, OR at 16235 SE Van Zyl Dr. We've been serving Damascus homeowners since 2014 with roof replacement, repair, cleaning, and inspection services. We're licensed (CCB #203933), insured, and CertainTeed Certified.",
   },
   {
     question: "How long does a roof replacement take in Damascus?",
@@ -95,7 +95,7 @@ export default function DamascusPage() {
           </h2>
           <p className="text-gray-600 mb-4">
             Damascus isn&apos;t just where we work - it&apos;s where we live.
-            French Roofing LLC was founded here in 2014 by Sean French, and our
+            French Roofing was founded here in 2014 by Sean French, and our
             office is still right on SE Van Zyl Dr. When you hire us for a roof
             repair or a full roof replacement in Damascus, you&apos;re hiring the
             folks down the road who genuinely care about keeping this community

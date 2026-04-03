@@ -6,7 +6,7 @@ import CTABanner from "@/components/CTABanner";
 export const metadata: Metadata = {
   title: "Instant Roof Estimate | Free Online Calculator",
   description:
-    "Get a ballpark roof replacement cost in 60 seconds. Compare materials, see pros and cons, and understand pricing - no contact info required. French Roofing LLC, Damascus, OR.",
+    "Get a ballpark roof replacement cost in 60 seconds. Compare materials, see pros and cons, and understand pricing - no contact info required. French Roofing, Damascus, OR.",
 };
 
 const estimateFAQs = [

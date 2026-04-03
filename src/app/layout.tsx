@@ -16,11 +16,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(COMPANY.url),
   title: {
-    default: "French Roofing LLC | Roofing Contractor in Damascus, OR",
-    template: "%s | French Roofing LLC",
+    default: "French Roofing | Roofing Contractor in Damascus, OR",
+    template: "%s | French Roofing",
   },
   description:
-    "French Roofing LLC provides expert roof replacement, repair, cleaning, and inspection services in Damascus, OR and the greater Portland metro area. Family-owned, licensed (CCB #203933), and CertainTeed Certified. Schedule a FREE roof assessment today.",
+    "French Roofing provides expert roof replacement, repair, cleaning, and inspection services in Damascus, OR and the greater Portland metro area. Family-owned, licensed (CCB #203933), and CertainTeed Certified. Schedule a FREE roof assessment today.",
   keywords: [
     "roofing contractor Damascus OR",
     "roof replacement Damascus Oregon",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: COMPANY.url,
     siteName: COMPANY.name,
-    title: "French Roofing LLC | Roofing Contractor in Damascus, OR",
+    title: "French Roofing | Roofing Contractor in Damascus, OR",
     description:
       "Expert roof replacement, repair, cleaning & inspections. Family-owned, CertainTeed Certified. Serving Damascus, Clackamas, Happy Valley & the Portland metro.",
     images: [{ url: "/images/team-plywood-install.webp", width: 1600, height: 1067 }],

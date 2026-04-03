@@ -8,7 +8,7 @@ import { COMPANY, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Roofing Contractor in Happy Valley, OR | ${COMPANY.name}`,
   description:
-    "Need a roofing contractor in Happy Valley, OR? French Roofing LLC provides roof replacement, repair, cleaning, and inspections. Based in nearby Damascus - your local, CertainTeed Certified roofing team. Book online today.",
+    "Need a roofing contractor in Happy Valley, OR? French Roofing provides roof replacement, repair, cleaning, and inspections. Based in nearby Damascus - your local, CertainTeed Certified roofing team. Book online today.",
   alternates: { canonical: `${COMPANY.url}/service-areas/happy-valley-or` },
 };
 
@@ -21,7 +21,7 @@ const faqs = [
   {
     question: "What roofing company serves Happy Valley, OR?",
     answer:
-      "French Roofing LLC is based in Damascus, OR - right next to Happy Valley. We've been serving Happy Valley homeowners since 2014 with roof replacement, repair, cleaning, and inspection services. We're licensed (CCB #203933), insured, and CertainTeed Certified.",
+      "French Roofing is based in Damascus, OR - right next to Happy Valley. We've been serving Happy Valley homeowners since 2014 with roof replacement, repair, cleaning, and inspection services. We're licensed (CCB #203933), insured, and CertainTeed Certified.",
   },
   {
     question: "How often should I have my roof inspected in Happy Valley?",

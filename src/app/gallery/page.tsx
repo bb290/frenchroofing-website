@@ -7,7 +7,7 @@ import { COMPANY } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Project Gallery | ${COMPANY.name}`,
   description:
-    "See before and after photos of roof replacements, repairs, and installations by French Roofing LLC in Damascus, OR and surrounding areas.",
+    "See before and after photos of roof replacements, repairs, and installations by French Roofing in Damascus, OR and surrounding areas.",
   alternates: { canonical: `${COMPANY.url}/gallery` },
 };
 

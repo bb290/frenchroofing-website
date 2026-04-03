@@ -8,7 +8,7 @@ import { COMPANY, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Roofing Contractor in Milwaukie, OR | ${COMPANY.name}`,
   description:
-    "French Roofing LLC serves Milwaukie, OR with roof replacement, repair, cleaning, and inspections. CertainTeed Certified, family-owned, about 20 minutes from our Damascus home base. Book online today.",
+    "French Roofing serves Milwaukie, OR with roof replacement, repair, cleaning, and inspections. CertainTeed Certified, family-owned, about 20 minutes from our Damascus home base. Book online today.",
   alternates: { canonical: `${COMPANY.url}/service-areas/milwaukie-or` },
 };
 
@@ -21,7 +21,7 @@ const faqs = [
   {
     question: "Who is the best roofing contractor in Milwaukie, OR?",
     answer:
-      "French Roofing LLC has been serving Milwaukie and the surrounding Clackamas County area since 2014. We're based in Damascus - about 20 minutes from most Milwaukie neighborhoods. Licensed (CCB #203933), insured, and CertainTeed Certified, we bring the same quality and care to Milwaukie that we bring to our own neighborhood.",
+      "French Roofing has been serving Milwaukie and the surrounding Clackamas County area since 2014. We're based in Damascus - about 20 minutes from most Milwaukie neighborhoods. Licensed (CCB #203933), insured, and CertainTeed Certified, we bring the same quality and care to Milwaukie that we bring to our own neighborhood.",
   },
   {
     question: "Is river proximity a concern for Milwaukie roofs?",

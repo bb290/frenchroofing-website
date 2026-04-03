@@ -6,7 +6,7 @@ import { COMPANY } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Contact Us | ${COMPANY.name}`,
   description:
-    "Contact French Roofing LLC in Damascus, OR. Text, email, or book online. Licensed (CCB #203933), insured, and ready to help.",
+    "Contact French Roofing in Damascus, OR. Text, email, or book online. Licensed (CCB #203933), insured, and ready to help.",
   alternates: { canonical: `${COMPANY.url}/contact` },
 };
 

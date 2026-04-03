@@ -1,5 +1,6 @@
 export const COMPANY = {
-  name: "French Roofing LLC",
+  name: "French Roofing",
+  legalName: "French Construction LLC dba French Roofing",
   phone: "971-376-8722",
   phoneTel: "tel:+19713768722",
   email: "hello@frenchroofing.com",

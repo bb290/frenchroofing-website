@@ -8,7 +8,7 @@ import { COMPANY, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Roofing Contractor in Canby, OR | ${COMPANY.name}`,
   description:
-    "French Roofing LLC provides professional roofing services in Canby, OR - roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, serving from Damascus. Book online today.",
+    "French Roofing provides professional roofing services in Canby, OR - roof replacement, repair, cleaning, and inspections. Family-owned, CertainTeed Certified, serving from Damascus. Book online today.",
   alternates: { canonical: `${COMPANY.url}/service-areas/canby-or` },
 };
 
@@ -21,7 +21,7 @@ const faqs = [
   {
     question: "Who is the best roofing contractor in Canby, OR?",
     answer:
-      "French Roofing LLC serves Canby from our home base in Damascus - about 20 miles and a 30-minute drive. We've been in business since 2014, we're licensed (CCB #203933), insured, and CertainTeed Certified. Canby is at the edge of our service area, but we give every Canby job the same quality and attention as a job down the street.",
+      "French Roofing serves Canby from our home base in Damascus - about 20 miles and a 30-minute drive. We've been in business since 2014, we're licensed (CCB #203933), insured, and CertainTeed Certified. Canby is at the edge of our service area, but we give every Canby job the same quality and attention as a job down the street.",
   },
   {
     question: "Does French Roofing travel to Canby for roofing jobs?",
@@ -97,7 +97,7 @@ export default function CanbyPage() {
           <p className="text-gray-600 mb-4">
             Canby sits at the edge of our service area - about 20 miles and a
             30-minute drive from our Damascus home base - but that doesn&apos;t
-            mean we cut any corners getting there. French Roofing LLC has been
+            mean we cut any corners getting there. French Roofing has been
             serving the greater Clackamas County area since 2014, and Canby
             homeowners get the same quality craftsmanship, honest communication,
             and fair pricing as our neighbors right down the street.
