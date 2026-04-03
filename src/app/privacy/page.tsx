@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Privacy & Communication Policy",
   description:
     "Privacy policy, communication preferences, and SMS/texting compliance for French Roofing in Damascus, OR.",
+  alternates: { canonical: `${COMPANY.url}/privacy` },
 };
 
 export default function Privacy() {

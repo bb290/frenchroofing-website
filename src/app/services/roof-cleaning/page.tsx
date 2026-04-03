@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: `Roof Cleaning & Maintenance | Greater Portland Metro | ${COMPANY.name}`,
   description:
     "Professional roof cleaning and maintenance in the greater Portland metro area. Remove moss, algae, and debris to extend your roof's life. One-time or recurring service. Licensed (CCB #203933). Serving Clackamas County and beyond.",
+  alternates: { canonical: `${COMPANY.url}/services/roof-cleaning` },
 };
 
 const steps = [

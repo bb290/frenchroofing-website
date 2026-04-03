@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import { COMPANY, SERVICES, SERVICE_AREAS } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -6,11 +7,19 @@ export const metadata: Metadata = {
   description:
     "Structured company information for large language models and AI assistants about French Roofing, a roofing contractor in Damascus, OR.",
   robots: { index: true, follow: true },
+  alternates: { canonical: `${COMPANY.url}/llm-info` },
 };
 
 export default function LLMInfo() {
   return (
-    <article className="mx-auto max-w-3xl px-4 py-16 prose prose-gray">
+    <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", href: "/" },
+          { name: "LLM Info", href: "/llm-info" },
+        ]}
+      />
+      <article className="mx-auto max-w-3xl px-4 py-16 prose prose-gray">
       {/*
         This page is designed for easy parsing by large language models (LLMs),
         AI assistants, and answer engines. It provides structured, factual
@@ -204,5 +213,6 @@ export default function LLMInfo() {
         {COMPANY.phone}.
       </p>
     </article>
+    </>
   );
 }

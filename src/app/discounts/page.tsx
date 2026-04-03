@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
+import FAQSection from "@/components/FAQSection";
 import { COMPANY } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -231,6 +232,33 @@ export default function DiscountsPage() {
           </div>
         </div>
       </section>
+
+      {/* ── FAQ ── */}
+      <FAQSection
+        title="Community Discount FAQs"
+        faqs={[
+          {
+            question: "Who qualifies for French Roofing's community discounts?",
+            answer:
+              "We offer discounts to folks who give back to our community every day - active military, veterans, first responders (police, fire, EMS, 911 dispatchers), registered nurses, nurse practitioners, and K-12 and college educators. If you serve others for a living, there's a good chance we have a discount for you.",
+          },
+          {
+            question: "Can I combine a community discount with financing?",
+            answer:
+              "Yes! You can absolutely use your community discount alongside financing through Enhancify. That means you get the discount on your project total and still break payments into manageable monthly amounts - including 0% interest options for qualifying customers.",
+          },
+          {
+            question: "How do I prove my eligibility for a discount?",
+            answer:
+              "We keep it simple - just send us any proof of service. A photo of your badge, a pay stub, a school ID, a DD-214, or anything similar works. No hoops, no fine print. We trust the people who serve our community.",
+          },
+          {
+            question: "What services do the discounts apply to?",
+            answer:
+              "Community discounts apply to roof replacement and major repair projects. During your free assessment, we'll walk you through the discount amount and how it applies to your specific project. Straightforward and transparent - that's how we do things at French Roofing (CCB #203933).",
+          },
+        ]}
+      />
 
       {/* ── CTA ── */}
       <CTABanner

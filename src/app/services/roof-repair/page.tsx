@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: `Roof Repair | Greater Portland Metro | ${COMPANY.name}`,
   description:
     "Fast, reliable roof repair in the greater Portland metro area. Fix leaks, storm damage, cracked flashing, and missing shingles before they become bigger problems. Licensed (CCB #203933), CertainTeed Certified. Financing available.",
+  alternates: { canonical: `${COMPANY.url}/services/roof-repair` },
 };
 
 const steps = [

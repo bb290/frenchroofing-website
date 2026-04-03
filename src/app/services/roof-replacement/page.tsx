@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: `Roof Replacement | Greater Portland Metro | ${COMPANY.name}`,
   description:
     "Full roof replacement by a CertainTeed Certified team across Clackamas County and the Portland metro. Premium materials, honest pricing, and 0% financing through Enhancify. CCB #203933.",
+  alternates: { canonical: `${COMPANY.url}/services/roof-replacement` },
 };
 
 const steps = [

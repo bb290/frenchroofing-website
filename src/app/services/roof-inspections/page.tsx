@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: `Free Roof Inspections | Greater Portland Metro | ${COMPANY.name}`,
   description:
     "Free, honest, thorough roof inspections in the greater Portland metro area. Get a clear picture of your roof's condition - whether you're buying a home, filing a claim, or just want to know where things stand. Licensed (CCB #203933), CertainTeed Certified.",
+  alternates: { canonical: `${COMPANY.url}/services/roof-inspections` },
 };
 
 const steps = [

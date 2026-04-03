@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import { BreadcrumbJsonLd, FAQJsonLd } from "@/components/JsonLd";
 import RoofEstimator from "@/components/RoofEstimator";
 import CTABanner from "@/components/CTABanner";
+import { COMPANY } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Instant Roof Estimate | Free Online Calculator",
   description:
     "Get a ballpark roof replacement cost in 60 seconds. Compare materials, see pros and cons, and understand pricing - no contact info required. French Roofing, Damascus, OR.",
+  alternates: { canonical: `${COMPANY.url}/estimate` },
 };
 
 const estimateFAQs = [

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
+import FAQSection from "@/components/FAQSection";
 import { COMPANY } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -164,6 +165,28 @@ export default function GalleryPage() {
           </div>
         </div>
       </section>
+
+      {/* ── FAQ ── */}
+      <FAQSection
+        title="Project Gallery FAQs"
+        faqs={[
+          {
+            question: "Can I see examples of French Roofing's work?",
+            answer:
+              "You sure can - you're looking at them! This gallery shows real before-and-after photos from roofing projects right here in Damascus and the surrounding communities. We're proud of the work our crew does, and we think the results speak for themselves. We update this page as we complete new projects.",
+          },
+          {
+            question: "Does French Roofing take before and after photos?",
+            answer:
+              "Yes - we document every project with photos before, during, and after the work. It keeps us accountable, helps you see exactly what was done, and comes in handy if you ever need records for insurance or resale. Transparency is a big deal to us.",
+          },
+          {
+            question: "What types of roofing projects does French Roofing handle?",
+            answer:
+              "We handle full roof replacements, repairs, cleaning, maintenance, and free inspections for homeowners across the Portland metro area. Whether it's a complete tear-off with new CertainTeed shingles or a targeted repair on storm damage, our CertainTeed Certified team (CCB #203933) has been doing this since 2014 out of Damascus, OR.",
+          },
+        ]}
+      />
 
       {/* ── CTA ── */}
       <CTABanner

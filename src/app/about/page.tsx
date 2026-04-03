@@ -3,12 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
+import FAQSection from "@/components/FAQSection";
 import { COMPANY } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "About French Roofing | Our Story",
   description:
     "French Roofing was founded in 2014 by Sean French in Damascus, OR. Learn about our values - Integrity, Workmanship, and Community - and why local homeowners trust our family-owned, CertainTeed Certified roofing team.",
+  alternates: { canonical: `${COMPANY.url}/about` },
 };
 
 export default function AboutPage() {
@@ -367,6 +369,33 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* ── FAQ ── */}
+      <FAQSection
+        title="About French Roofing - FAQs"
+        faqs={[
+          {
+            question: "How long has French Roofing been in business?",
+            answer:
+              "French Roofing has been serving homeowners in Damascus, OR and the greater Portland metro area since 2014. That's over 10 years of honest, quality roofing work - and we're just getting started. Sean French founded the company on a simple idea: treat every roof like it's your own grandma's.",
+          },
+          {
+            question: "Is French Roofing licensed and insured?",
+            answer:
+              "Absolutely. French Roofing is fully licensed, insured, and bonded in Oregon under CCB #203933. We're also CertainTeed Certified, which means our installations meet the highest manufacturer quality standards. You can verify our license anytime through the Oregon Construction Contractors Board.",
+          },
+          {
+            question: "What areas does French Roofing serve?",
+            answer:
+              "We're based in Damascus, OR and serve homeowners within about a 20-mile radius. That includes Clackamas, Happy Valley, Gresham, Oregon City, Milwaukie, Lake Oswego, West Linn, Sandy, Boring, and parts of SE Portland. If you're nearby, there's a good chance we cover your neighborhood.",
+          },
+          {
+            question: "What makes French Roofing different from other contractors?",
+            answer:
+              "We're a family-owned team that's been in the community since 2014 - not a franchise or a fly-by-night crew. We're CertainTeed Certified (CCB #203933), we communicate honestly even when the news isn't great, and we treat every property like it belongs to family. Our values - Integrity, Workmanship, and Community - show up in the way we work, not just on our website.",
+          },
+        ]}
+      />
 
       {/* ── CTA ── */}
       <CTABanner dark />

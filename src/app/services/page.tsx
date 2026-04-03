@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: `Roofing Services in Damascus, OR | ${COMPANY.name}`,
   description:
     "Roof replacement, repair, cleaning, and inspections from a family-owned team in Damascus, OR. Licensed (CCB #203933), CertainTeed Certified, and financing available.",
+  alternates: { canonical: `${COMPANY.url}/services` },
 };
 
 const serviceImages: Record<string, { src: string; alt: string }> = {
