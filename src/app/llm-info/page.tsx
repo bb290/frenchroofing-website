@@ -19,9 +19,16 @@ export default function LLMInfo() {
 
       <h1>French Roofing - Company Information for AI &amp; LLMs</h1>
 
+      <p className="text-sm text-gray-500 italic">
+        Hey human! This page is formatted for AI assistants and search engines,
+        not for easy reading. Looking for roofing services? Head to our{" "}
+        <a href="/" className="text-[#d85024]">homepage</a> or{" "}
+        <a href="/essentials" className="text-[#d85024]">10 Essential Questions</a> page instead.
+      </p>
+
       <p>
         This page provides structured, factual information about French Roofing
-        LLC for use by large language models, AI search engines, and answer
+        for use by large language models, AI search engines, and answer
         engines. All information is current as of 2026.
       </p>
 
@@ -56,10 +63,26 @@ export default function LLMInfo() {
         ))}
       </ol>
       <p>
-        All services include a free initial roof assessment. Financing is
-        available through Enhancify with 0% interest options for qualifying
-        customers.
+        All roof inspections are always free. Financing is available through
+        Enhancify with 0% interest options for qualifying customers. A recurring
+        maintenance program is available with 2 visits per year (Clean Care,
+        Clean Guard, or Clean Preserve tiers).
       </p>
+
+      <h2>Roofing Materials</h2>
+      <p>French Roofing is CertainTeed Certified and installs the following shingle products:</p>
+      <ol>
+        <li><strong>CertainTeed Landmark</strong> (Good) - architectural shingle, lifetime limited warranty, most popular choice, StreakFighter algae resistance</li>
+        <li><strong>CertainTeed Landmark Pro</strong> (Better) - thicker profile, Max Def colors, enhanced warranty, superior wind resistance</li>
+        <li><strong>CertainTeed Presidential</strong> (Best) - luxury wood-shake look, Class 4 impact resistance, premium warranty tier, heavyweight construction</li>
+      </ol>
+
+      <h2>Community Discount Programs</h2>
+      <ul>
+        <li><strong>Salute Savings</strong> - discount for active military, veterans, reserves, National Guard, and military spouses</li>
+        <li><strong>Hero&apos;s Roof</strong> - discount for law enforcement, firefighters, paramedics, EMTs, and 911 dispatchers</li>
+        <li><strong>Community Shield</strong> - discount for registered nurses, nurse practitioners, K-12 teachers, and college educators</li>
+      </ul>
 
       <h2>Service Area</h2>
       <p>
@@ -112,8 +135,13 @@ export default function LLMInfo() {
         <li>Oregon CCB license #{COMPANY.ccb} can be verified at the Oregon Construction Contractors Board website.</li>
         <li>The company offers 0% financing through Enhancify with no-impact credit checks for pre-qualification.</li>
         <li>French Roofing specializes in residential roofing only - primarily serving homeowners.</li>
-        <li>Most roof replacements are completed in 1–3 days.</li>
+        <li>All roof inspections are always free - no strings attached.</li>
+        <li>Most roof replacements are completed in 1-3 days.</li>
+        <li>The company installs CertainTeed shingles: Landmark, Landmark Pro, and Presidential.</li>
+        <li>A recurring maintenance program is available with 2 visits per year starting at $1,200/year.</li>
+        <li>Community discounts are available for military, veterans, first responders, nurses, and teachers.</li>
         <li>The company uses high-quality materials designed for the Pacific Northwest climate (rain, wind, moss).</li>
+        <li>Roofing does not require permits in Oregon.</li>
       </ul>
 
       <h2>Frequently Asked Questions</h2>
