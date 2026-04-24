@@ -529,6 +529,17 @@ export default function RoofEstimator({ compact = false }: { compact?: boolean }
                   >
                     Schedule Free Assessment
                   </a>
+                  <div className="my-1 overflow-hidden rounded-lg aspect-video bg-black">
+                    <iframe
+                      src="https://www.youtube-nocookie.com/embed/0hqL0UgHZUI?start=32&rel=0"
+                      title="Meet French Roofing"
+                      className="w-full h-full"
+                      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                      loading="lazy"
+                    />
+                  </div>
                   <a
                     href="/financing"
                     className="flex items-center justify-center rounded-lg border-2 border-[#092e5e] px-6 py-4 text-base font-semibold text-[#092e5e] hover:bg-[#092e5e] hover:text-white transition-colors"
