@@ -27,6 +27,10 @@
 *.png
 !public/**
 !assets/logo.png
+!src/app/icon.png
+!src/app/apple-icon.png
+!src/app/opengraph-image.png
+!src/app/twitter-image.png
 
 # next.js
 /.next/
