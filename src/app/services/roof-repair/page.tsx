@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { BreadcrumbJsonLd } from "@/components/JsonLd";
+import { BreadcrumbJsonLd, HowToJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
 import FAQSection from "@/components/FAQSection";
 import { COMPANY } from "@/lib/constants";
@@ -72,6 +72,11 @@ export default function RoofRepairPage() {
           { name: "Services", href: "/services" },
           { name: "Roof Repair", href: "/services/roof-repair" },
         ]}
+      />
+      <HowToJsonLd
+        name="How French Roofing Handles Roof Repairs"
+        description="Our 4-step roof repair process from inspection to quality check. Serving Damascus, OR and the Portland metro area."
+        steps={steps}
       />
 
       {/* ── Hero ── */}

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { BreadcrumbJsonLd } from "@/components/JsonLd";
+import { BreadcrumbJsonLd, HowToJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
 import FAQSection from "@/components/FAQSection";
 import { COMPANY } from "@/lib/constants";
@@ -77,6 +77,11 @@ export default function RoofReplacementPage() {
           { name: "Services", href: "/services" },
           { name: "Roof Replacement", href: "/services/roof-replacement" },
         ]}
+      />
+      <HowToJsonLd
+        name="How French Roofing Replaces a Roof"
+        description="Our 5-step roof replacement process from free assessment to final walkthrough. Serving Damascus, OR and the Portland metro area."
+        steps={steps}
       />
 
       {/* ── Hero ── */}

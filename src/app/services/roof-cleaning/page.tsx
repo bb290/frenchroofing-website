@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { BreadcrumbJsonLd } from "@/components/JsonLd";
+import { BreadcrumbJsonLd, HowToJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
 import FAQSection from "@/components/FAQSection";
 import { COMPANY } from "@/lib/constants";
@@ -80,6 +80,11 @@ export default function RoofCleaningPage() {
             href: "/services/roof-cleaning",
           },
         ]}
+      />
+      <HowToJsonLd
+        name="How French Roofing Cleans and Maintains Roofs"
+        description="Our 5-step roof cleaning and maintenance process from assessment to maintenance report. Serving Damascus, OR and the Portland metro area."
+        steps={steps}
       />
 
       {/* ── Hero ── */}

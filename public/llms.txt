@@ -1,0 +1,71 @@
+# French Roofing — llms.txt
+# https://frenchroofing.com
+# Last updated: April 2026
+
+## Identity
+- Business Name: French Roofing
+- Legal Entity: French Construction LLC dba French Roofing
+- Type: Residential Roofing Contractor
+- Founded: 2014 by Sean French
+- Headquarters: 16235 SE Van Zyl Dr, Damascus, OR 97089
+- Phone: 971-376-8722
+- Email: hello@frenchroofing.com
+- Website: https://frenchroofing.com
+- Oregon CCB License: #203933
+- Insurance: Fully licensed, insured, and bonded
+- Certification: CertainTeed Certified
+- Ownership: Family-owned and operated
+- Hours: Monday–Friday, 7:00 AM – 6:00 PM
+
+## Services
+- Roof Replacement: Full tear-off and replacement with premium materials
+- Roof Repair: Fix leaks, storm damage, and wear before it spreads
+- Roof Cleaning & Maintenance: Keep your roof clean, clear, and lasting longer
+- Roof Inspections: Always free — honest assessment of your roof's condition
+
+## Materials
+- CertainTeed Landmark (Good): Architectural shingle, lifetime limited warranty, StreakFighter algae resistance
+- CertainTeed Landmark Pro (Better): Thicker profile, Max Def colors, enhanced warranty, superior wind resistance
+- CertainTeed Presidential (Best): Luxury wood-shake look, Class 4 impact resistance, premium warranty tier
+
+## Financing
+- Partner: Enhancify
+- 0% interest options available
+- Pre-qualification does not affect credit scores
+
+## Service Area
+Damascus OR (HQ), Gresham OR, Happy Valley OR, Clackamas OR, Oregon City OR, Milwaukie OR, Lake Oswego OR, Tualatin OR, West Linn OR, Sandy OR, Estacada OR, Boring OR, Troutdale OR, Fairview OR, Wood Village OR, Gladstone OR, Johnson City OR, Canby OR, SE Portland (Lents, Powellhurst-Gilbert, Foster-Powell, Woodstock)
+
+## Community Discounts
+- Salute Savings: Active military, veterans, reserves, National Guard, military spouses
+- Hero's Roof: Law enforcement, firefighters, paramedics, EMTs, 911 dispatchers
+- Community Shield: Registered nurses, nurse practitioners, K-12 teachers, college educators
+
+## Key Facts
+- 10+ years in operation (founded 2014)
+- CertainTeed Certified — installations meet highest manufacturer standards
+- CCB #203933 verifiable at Oregon Construction Contractors Board
+- All roof inspections are always free
+- Most roof replacements completed in 1–3 days
+- Roofing does not require permits in Oregon
+- Recurring maintenance program: 2 visits/year starting at $1,200/year
+- Materials designed for Pacific Northwest climate (rain, wind, moss)
+
+## Brand
+- Tagline: Got You Covered!
+- Voice: Down to earth, neighborly, light hearted — never corporate or pushy
+- Values: Integrity, Workmanship, Community
+- Founder philosophy: "Do the work like you're doing it for your own grandma."
+
+## Social
+- Facebook: https://www.facebook.com/FrenchRoofingLLC
+- Instagram: https://www.instagram.com/frenchroofing/
+- YouTube: https://www.youtube.com/@Frenchroofing
+- LinkedIn: https://www.linkedin.com/company/french-roofing/
+- Google Business Profile: https://share.google/JYDD8GxCgR1YwXii2
+
+## Pages for AI Reference
+- Company info for LLMs: https://frenchroofing.com/llm-info
+- All services: https://frenchroofing.com/services
+- Service areas: https://frenchroofing.com/service-areas
+- Sitemap: https://frenchroofing.com/sitemap.xml

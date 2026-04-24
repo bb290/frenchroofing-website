@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { LocalBusinessJsonLd } from "@/components/JsonLd";
+import { LocalBusinessJsonLd, AggregateRatingJsonLd } from "@/components/JsonLd";
 import ReviewsWidget from "@/components/ReviewsWidget";
 import { COMPANY } from "@/lib/constants";
 
@@ -57,6 +57,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} h-full`}>
       <body className="min-h-full flex flex-col font-[var(--font-inter)]">
         <LocalBusinessJsonLd />
+        <AggregateRatingJsonLd />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
