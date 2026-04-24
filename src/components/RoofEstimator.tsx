@@ -531,10 +531,10 @@ export default function RoofEstimator({ compact = false }: { compact?: boolean }
                   </a>
                   <div className="my-1 overflow-hidden rounded-lg aspect-video bg-black">
                     <iframe
-                      src="https://www.youtube-nocookie.com/embed/0hqL0UgHZUI?start=32&rel=0"
+                      src="https://www.youtube-nocookie.com/embed/0hqL0UgHZUI?start=32&rel=0&autoplay=1&mute=1&playsinline=1"
                       title="Meet French Roofing"
                       className="w-full h-full"
-                      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       referrerPolicy="strict-origin-when-cross-origin"
                       allowFullScreen
                       loading="lazy"
