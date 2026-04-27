@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { LocalBusinessJsonLd, AggregateRatingJsonLd } from "@/components/JsonLd";
 import ReviewsWidget from "@/components/ReviewsWidget";
 import { COMPANY } from "@/lib/constants";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -62,6 +63,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <ReviewsWidget />
+        <Analytics />
       </body>
     </html>
   );
