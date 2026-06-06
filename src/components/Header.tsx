@@ -16,12 +16,12 @@ const DROPDOWNS = [
   },
   {
     label: "Where We Work",
-    href: "/service-areas",
+    href: "/#service-areas",
     items: SERVICE_AREAS.all
       .filter((a) => SERVICE_AREAS.priority.includes(a.slug))
       .map((a) => ({
         label: `${a.name}, ${a.state}`,
-        href: `/service-areas/${a.slug}`,
+        href: `/services/roof-replacement/${a.slug}`,
       })),
   },
   {
@@ -41,7 +41,7 @@ const DROPDOWNS = [
       { label: "Our Story", href: "/about" },
       { label: "Gallery", href: "/gallery" },
       { label: "Community Discounts", href: "/discounts" },
-      { label: "Contact", href: "/contact" },
+      { label: "Contact", href: "/estimate" },
     ],
   },
 ] as const;

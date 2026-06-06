@@ -221,7 +221,7 @@ export default function Home() {
       </section>
 
       {/* ── Service Areas ── */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section id="service-areas" className="py-20 px-4 bg-gray-50">
         <div className="mx-auto max-w-7xl text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-[#092e5e] mb-4">
             Proudly Serving the Greater Portland Metro
@@ -233,7 +233,7 @@ export default function Home() {
             {SERVICE_AREAS.all.map((area) => (
               <Link
                 key={area.slug}
-                href={`/service-areas/${area.slug}`}
+                href={`/services/roof-replacement/${area.slug}`}
                 className="rounded-full bg-[#092e5e] px-5 py-2 text-sm font-medium text-white hover:bg-[#d85024] transition-colors"
               >
                 {area.name}, {area.state}

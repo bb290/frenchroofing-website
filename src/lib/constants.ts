@@ -58,13 +58,3 @@ export const SERVICE_AREAS = {
     { name: "Canby", slug: "canby-or", state: "OR" },
   ],
 } as const;
-
-export const NAV_LINKS = [
-  { label: "Services", href: "/services" },
-  { label: "Instant Estimate", href: "/estimate" },
-  { label: "Service Areas", href: "/service-areas" },
-  { label: "About", href: "/about" },
-  { label: "Gallery", href: "/gallery" },
-  { label: "Financing", href: "/financing" },
-  { label: "Contact", href: "/contact" },
-] as const;

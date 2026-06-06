@@ -65,7 +65,8 @@ Damascus OR (HQ), Gresham OR, Happy Valley OR, Clackamas OR, Oregon City OR, Mil
 - Google Business Profile: https://share.google/JYDD8GxCgR1YwXii2
 
 ## Pages for AI Reference
-- Company info for LLMs: https://frenchroofing.com/llm-info
 - All services: https://frenchroofing.com/services
-- Service areas: https://frenchroofing.com/service-areas
+- Blog: https://blog.frenchroofing.com
+- Questions to ask a roofing contractor: https://frenchroofing.com/essentials
+- Instant roof estimate: https://frenchroofing.com/estimate
 - Sitemap: https://frenchroofing.com/sitemap.xml
