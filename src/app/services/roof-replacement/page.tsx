@@ -1,15 +1,23 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { BreadcrumbJsonLd, HowToJsonLd } from "@/components/JsonLd";
+import { BreadcrumbJsonLd, HowToJsonLd, ServiceJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
 import FAQSection from "@/components/FAQSection";
 import { COMPANY } from "@/lib/constants";
+import { OG_SERVICE_PHOTOS, ogImage } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: `Roof Replacement | Greater Portland Metro | ${COMPANY.name}`,
   description:
     "Full roof replacement by a CertainTeed Certified team across Clackamas County and the Portland metro. Premium materials, honest pricing, and 0% financing through Enhancify. CCB #203933.",
   alternates: { canonical: `${COMPANY.url}/services/roof-replacement` },
+  openGraph: {
+    title: "Roof Replacement in the Portland Metro",
+    images: ogImage(
+      "Roof Replacement in the Portland Metro",
+      OG_SERVICE_PHOTOS["roof-replacement"],
+    ),
+  },
 };
 
 const steps = [
@@ -82,6 +90,11 @@ export default function RoofReplacementPage() {
         name="How French Roofing Replaces a Roof"
         description="Our 5-step roof replacement process from free assessment to final walkthrough. Serving Damascus, OR and the Portland metro area."
         steps={steps}
+      />
+      <ServiceJsonLd
+        serviceName="Roof Replacement"
+        description="Full tear-off and roof replacement by a CertainTeed Certified, licensed and bonded team serving Damascus, OR and the greater Portland metro area."
+        href="/services/roof-replacement"
       />
 
       {/* ── Hero ── */}

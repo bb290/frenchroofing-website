@@ -1,15 +1,23 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { BreadcrumbJsonLd, HowToJsonLd } from "@/components/JsonLd";
+import { BreadcrumbJsonLd, HowToJsonLd, ServiceJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
 import FAQSection from "@/components/FAQSection";
 import { COMPANY } from "@/lib/constants";
+import { OG_SERVICE_PHOTOS, ogImage } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: `Roof Cleaning & Maintenance | Greater Portland Metro | ${COMPANY.name}`,
   description:
     "Professional roof cleaning and maintenance in the greater Portland metro area. Remove moss, algae, and debris to extend your roof's life. One-time or recurring service. Licensed (CCB #203933). Serving Clackamas County and beyond.",
   alternates: { canonical: `${COMPANY.url}/services/roof-cleaning` },
+  openGraph: {
+    title: "Roof Cleaning & Maintenance in the Portland Metro",
+    images: ogImage(
+      "Roof Cleaning in the Portland Metro",
+      OG_SERVICE_PHOTOS["roof-cleaning"],
+    ),
+  },
 };
 
 const steps = [
@@ -85,6 +93,11 @@ export default function RoofCleaningPage() {
         name="How French Roofing Cleans and Maintains Roofs"
         description="Our 5-step roof cleaning and maintenance process from assessment to maintenance report. Serving Damascus, OR and the Portland metro area."
         steps={steps}
+      />
+      <ServiceJsonLd
+        serviceName="Roof Cleaning & Maintenance"
+        description="Moss removal, debris cleanout, and recurring roof maintenance by a licensed and bonded team serving Damascus, OR and the greater Portland metro area."
+        href="/services/roof-cleaning"
       />
 
       {/* ── Hero ── */}

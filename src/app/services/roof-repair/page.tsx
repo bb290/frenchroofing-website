@@ -1,15 +1,23 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { BreadcrumbJsonLd, HowToJsonLd } from "@/components/JsonLd";
+import { BreadcrumbJsonLd, HowToJsonLd, ServiceJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
 import FAQSection from "@/components/FAQSection";
 import { COMPANY } from "@/lib/constants";
+import { OG_SERVICE_PHOTOS, ogImage } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: `Roof Repair | Greater Portland Metro | ${COMPANY.name}`,
   description:
     "Fast, reliable roof repair in the greater Portland metro area. Fix leaks, storm damage, cracked flashing, and missing shingles before they become bigger problems. Licensed (CCB #203933), CertainTeed Certified. Financing available.",
   alternates: { canonical: `${COMPANY.url}/services/roof-repair` },
+  openGraph: {
+    title: "Roof Repair in the Portland Metro",
+    images: ogImage(
+      "Roof Repair in the Portland Metro",
+      OG_SERVICE_PHOTOS["roof-repair"],
+    ),
+  },
 };
 
 const steps = [
@@ -77,6 +85,11 @@ export default function RoofRepairPage() {
         name="How French Roofing Handles Roof Repairs"
         description="Our 4-step roof repair process from inspection to quality check. Serving Damascus, OR and the Portland metro area."
         steps={steps}
+      />
+      <ServiceJsonLd
+        serviceName="Roof Repair"
+        description="Leak, storm damage, flashing, and shingle repairs by a licensed and bonded team serving Damascus, OR and the greater Portland metro area."
+        href="/services/roof-repair"
       />
 
       {/* ── Hero ── */}

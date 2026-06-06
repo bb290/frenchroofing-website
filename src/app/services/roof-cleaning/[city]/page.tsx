@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { BreadcrumbJsonLd } from "@/components/JsonLd";
+import { BreadcrumbJsonLd, ServiceJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
+import CityServiceLinks from "@/components/CityServiceLinks";
 import FAQSection from "@/components/FAQSection";
 import { COMPANY, SERVICE_AREAS } from "@/lib/constants";
+import { OG_SERVICE_PHOTOS, ogImage } from "@/lib/og";
 
 export function generateStaticParams() {
   return SERVICE_AREAS.all.map((area) => ({ city: area.slug }));
@@ -24,6 +26,13 @@ export async function generateMetadata({
     description: `Professional roof cleaning and maintenance in ${area.name}, OR. Remove moss, algae, and debris to extend your roof's life. One-time or recurring service. Licensed (CCB #${COMPANY.ccb}). Schedule your cleaning today.`,
     alternates: {
       canonical: `${COMPANY.url}/services/roof-cleaning/${area.slug}`,
+    },
+    openGraph: {
+      title: `Roof Cleaning in ${area.name}, OR`,
+      images: ogImage(
+        `Roof Cleaning in ${area.name}, OR`,
+        OG_SERVICE_PHOTOS["roof-cleaning"],
+      ),
     },
   };
 }
@@ -107,6 +116,12 @@ export default async function RoofCleaningCityPage({
             href: `/services/roof-cleaning/${area.slug}`,
           },
         ]}
+      />
+      <ServiceJsonLd
+        serviceName="Roof Cleaning & Maintenance"
+        description={`Moss removal, debris cleanout, and recurring roof maintenance for homeowners in ${area.name}, OR by a licensed and bonded team (CCB #${COMPANY.ccb}).`}
+        href={`/services/roof-cleaning/${area.slug}`}
+        cityName={area.name}
       />
 
       {/* ── Hero ── */}
@@ -300,6 +315,13 @@ export default async function RoofCleaningCityPage({
       <FAQSection
         title={`Roof Cleaning in ${area.name} FAQs`}
         faqs={faqs}
+      />
+
+      {/* ── More services in this city ── */}
+      <CityServiceLinks
+        cityName={area.name}
+        citySlug={area.slug}
+        currentServiceSlug="roof-cleaning"
       />
 
       {/* ── CTA ── */}

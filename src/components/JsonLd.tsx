@@ -95,6 +95,43 @@ export function BreadcrumbJsonLd({
   );
 }
 
+export function ServiceJsonLd({
+  serviceName,
+  description,
+  href,
+  cityName,
+}: {
+  serviceName: string;
+  description: string;
+  href: string;
+  cityName?: string;
+}) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType: serviceName,
+    name: cityName ? `${serviceName} in ${cityName}, OR` : serviceName,
+    description,
+    url: `${COMPANY.url}${href}`,
+    provider: {
+      "@id": `${COMPANY.url}/#organization`,
+    },
+    areaServed: cityName
+      ? { "@type": "City", name: `${cityName}, OR` }
+      : SERVICE_AREAS.all.map((area) => ({
+          "@type": "City",
+          name: `${area.name}, ${area.state}`,
+        })),
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
 export function AggregateRatingJsonLd() {
   const schema = {
     "@context": "https://schema.org",

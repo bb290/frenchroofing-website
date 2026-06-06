@@ -1,15 +1,23 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { BreadcrumbJsonLd, HowToJsonLd } from "@/components/JsonLd";
+import { BreadcrumbJsonLd, HowToJsonLd, ServiceJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
 import FAQSection from "@/components/FAQSection";
 import { COMPANY } from "@/lib/constants";
+import { OG_SERVICE_PHOTOS, ogImage } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: `Free Roof Inspections | Greater Portland Metro | ${COMPANY.name}`,
   description:
     "Free, honest, thorough roof inspections in the greater Portland metro area. Get a clear picture of your roof's condition - whether you're buying a home, filing a claim, or just want to know where things stand. Licensed (CCB #203933), CertainTeed Certified.",
   alternates: { canonical: `${COMPANY.url}/services/roof-inspections` },
+  openGraph: {
+    title: "Free Roof Inspections in the Portland Metro",
+    images: ogImage(
+      "Free Roof Inspections in the Portland Metro",
+      OG_SERVICE_PHOTOS["roof-inspections"],
+    ),
+  },
 };
 
 const steps = [
@@ -77,6 +85,11 @@ export default function RoofInspectionsPage() {
         name="How French Roofing Inspects Your Roof"
         description="Our 4-step free roof inspection process from scheduling to detailed report. Serving Damascus, OR and the Portland metro area."
         steps={steps}
+      />
+      <ServiceJsonLd
+        serviceName="Roof Inspections"
+        description="Free, photo-documented roof inspections by a CertainTeed Certified, licensed and bonded team serving Damascus, OR and the greater Portland metro area."
+        href="/services/roof-inspections"
       />
 
       {/* ── Hero ── */}

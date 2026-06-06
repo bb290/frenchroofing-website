@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { BreadcrumbJsonLd } from "@/components/JsonLd";
+import { BreadcrumbJsonLd, ServiceJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
+import CityServiceLinks from "@/components/CityServiceLinks";
 import FAQSection from "@/components/FAQSection";
 import { COMPANY, SERVICE_AREAS } from "@/lib/constants";
+import { OG_SERVICE_PHOTOS, ogImage } from "@/lib/og";
 
 export function generateStaticParams() {
   return SERVICE_AREAS.all.map((area) => ({ city: area.slug }));
@@ -24,6 +26,13 @@ export async function generateMetadata({
     description: `Honest, thorough roof inspections in ${area.name}, OR. Get a clear picture of your roof's condition - whether you're buying a home, filing a claim, or planning ahead. Licensed (CCB #${COMPANY.ccb}), CertainTeed Certified. Schedule your inspection today.`,
     alternates: {
       canonical: `${COMPANY.url}/services/roof-inspections/${area.slug}`,
+    },
+    openGraph: {
+      title: `Roof Inspections in ${area.name}, OR`,
+      images: ogImage(
+        `Free Roof Inspections in ${area.name}, OR`,
+        OG_SERVICE_PHOTOS["roof-inspections"],
+      ),
     },
   };
 }
@@ -99,6 +108,12 @@ export default async function RoofInspectionsCityPage({
             href: `/services/roof-inspections/${area.slug}`,
           },
         ]}
+      />
+      <ServiceJsonLd
+        serviceName="Roof Inspections"
+        description={`Free, photo-documented roof inspections for homeowners in ${area.name}, OR by a CertainTeed Certified, licensed and bonded team (CCB #${COMPANY.ccb}).`}
+        href={`/services/roof-inspections/${area.slug}`}
+        cityName={area.name}
       />
 
       {/* ── Hero ── */}
@@ -269,6 +284,13 @@ export default async function RoofInspectionsCityPage({
       <FAQSection
         title={`Roof Inspection in ${area.name} FAQs`}
         faqs={faqs}
+      />
+
+      {/* ── More services in this city ── */}
+      <CityServiceLinks
+        cityName={area.name}
+        citySlug={area.slug}
+        currentServiceSlug="roof-inspections"
       />
 
       {/* ── CTA ── */}

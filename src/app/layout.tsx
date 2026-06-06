@@ -39,6 +39,9 @@ export const metadata: Metadata = {
       "Expert roof replacement, repair, cleaning & inspections. Family-owned, CertainTeed Certified. Serving Damascus, Clackamas, Happy Valley & the Portland metro.",
     images: [{ url: "/images/team-plywood-install.webp", width: 1600, height: 1067 }],
   },
+  twitter: {
+    card: "summary_large_image",
+  },
   alternates: {
     canonical: COMPANY.url,
   },
