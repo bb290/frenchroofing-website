@@ -1,0 +1,96 @@
+/* ============================================================
+   French Roofing — Design Tokens
+   Drop into your global stylesheet or :root
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* --- Brand Colors --- */
+  --color-primary: #ffbd59;          /* Yellow — primary CTAs, highlights */
+  --color-secondary: #d85024;        /* Orange — secondary CTAs, hover, emphasis */
+  --color-tertiary: #092e5e;         /* Blue — headings, deep sections */
+  --color-neutral: #3e3d3b;          /* Grey — body text */
+
+  /* --- Surfaces --- */
+  --color-bg: #fdfcfa;               /* Warm off-white page background */
+  --color-surface: #f5f1ea;          /* Cream cards / raised sections */
+  --color-surface-alt: #ffffff;      /* Pure white for inputs and contrast */
+
+  /* --- Text --- */
+  --color-text-primary: #3e3d3b;
+  --color-text-secondary: #6b6a67;
+  --color-text-muted: #9a9895;
+  --color-text-inverse: #fdfcfa;
+
+  /* --- Borders --- */
+  --color-border: #e5e0d6;
+  --color-border-strong: #c9c2b3;
+
+  /* --- Status --- */
+  --color-success: #4a7c4e;
+  --color-warning: #d85024;
+  --color-error: #b8341c;
+
+  /* --- Typography --- */
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --font-size-display: 3.5rem;       /* 56px */
+  --font-size-h1: 2.5rem;             /* 40px */
+  --font-size-h2: 2rem;               /* 32px */
+  --font-size-h3: 1.5rem;             /* 24px */
+  --font-size-h4: 1.25rem;            /* 20px */
+  --font-size-body: 1.0625rem;        /* 17px */
+  --font-size-small: 0.9375rem;       /* 15px */
+  --font-size-caption: 0.8125rem;     /* 13px */
+
+  --line-height-tight: 1.05;
+  --line-height-snug: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.6;
+
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-snug: -0.01em;
+  --letter-spacing-wide: 0.05em;
+
+  /* --- Spacing (4px base) --- */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+  --space-24: 6rem;     /* 96px */
+  --space-32: 8rem;     /* 128px */
+
+  /* --- Border Radius --- */
+  --radius-sm: 4px;     /* images, small elements */
+  --radius-md: 8px;     /* buttons, inputs */
+  --radius-lg: 12px;    /* cards */
+  --radius-pill: 999px; /* badges only */
+
+  /* --- Shadows (used sparingly) --- */
+  --shadow-sm: 0 1px 2px rgba(9, 46, 94, 0.04);
+  --shadow-md: 0 4px 12px rgba(9, 46, 94, 0.06);
+  --shadow-lg: 0 12px 32px rgba(9, 46, 94, 0.08);
+
+  /* --- Layout --- */
+  --container-max: 1200px;
+  --section-padding-y: var(--space-24);
+}
+
+/* Base styles */
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg);
+}
