@@ -53,9 +53,11 @@ Every web property and outbound piece must use this NAP exactly:
 
 ```
 French Roofing
-16235 SE Van Zyl Dr, Damascus, OR 97089
+Damascus, OR 97089
 971-376-8722
 ```
+
+> **Privacy rule (operator decision, 2026-06):** the street address is Sean's home and is never published on any web property, schema markup, directory, or outbound material. Public NAP is city/state/zip only. GBP runs in service-area mode (address hidden).
 
 ### Primary CTA
 

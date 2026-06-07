@@ -11,7 +11,7 @@ This file governs all AI-assisted work for French Roofing. It defines brand stan
 - **Brand / DBA:** French Roofing
 - **Legal Entity:** French Construction LLC dba French Roofing
 - **Founded:** 2014 by Sean French
-- **Address:** 16235 SE Van Zyl Dr, Damascus, OR 97089
+- **Address (public):** Damascus, OR 97089 (street address never published; operator privacy decision, 2026-06)
 - **Phone:** 971-376-8722
 - **Email:** hello@frenchroofing.com
 - **CCB Number:** 203933
@@ -37,7 +37,7 @@ French Roofing, located in Damascus, OR, is your top choice for expert roofing s
 ### NAP (must be identical across all web properties)
 ```
 French Roofing
-16235 SE Van Zyl Dr, Damascus, OR 97089
+Damascus, OR 97089
 971-376-8722
 ```
 
@@ -257,7 +257,7 @@ Today, French Roofing is known for roofs that hold up, jobs that stay on schedul
 4. **SEO city focus starts with Damascus, Clackamas, Happy Valley** — expand only when directed.
 5. **All SOPs must preserve original operational logic** — do not paraphrase, simplify, or editorialize SOP content.
 6. **Housecall Pro is the system of record** for jobs, customers, and estimates — all workflow logic should assume it as the operational hub.
-7. **NAP consistency is mandatory** — French Roofing / 16235 SE Van Zyl Dr, Damascus, OR 97089 / 971-376-8722 must be identical across all web properties.
+7. **NAP consistency is mandatory** — French Roofing / Damascus, OR 97089 / 971-376-8722 must be identical across all web properties. The street address is never published anywhere (operator privacy decision, 2026-06).
 8. **Primary CTA is always:** "Schedule a FREE Roof Assessment with French Roofing."
 9. **Brand voice is non-negotiable:** down to earth, neighborly, light hearted. Never corporate, never pushy.
 

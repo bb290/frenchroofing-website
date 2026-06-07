@@ -54,7 +54,7 @@ Twenty miles around Damascus, Oregon. Local content references only cities in th
 
 ```
 French Roofing
-16235 SE Van Zyl Dr, Damascus, OR 97089
+Damascus, OR 97089 (street address withheld from all public materials; operator privacy decision, 2026-06)
 971-376-8722
 ```
 

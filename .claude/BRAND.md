@@ -23,7 +23,7 @@ spec-version: 2.1
 - **Brand / DBA:** French Roofing
 - **Legal entity:** French Construction LLC dba French Roofing
 - **Founded:** 2014 by Sean French
-- **Address:** 16235 SE Van Zyl Dr, Damascus, OR 97089
+- **Address (public):** Damascus, OR 97089 (street address never published; operator privacy decision, 2026-06)
 - **Phone:** 971-376-8722
 - **Email:** hello@frenchroofing.com
 - **CCB Number:** 203933
@@ -206,9 +206,11 @@ Use the social CTA verbatim on Instagram. Two short lines. Points the reader at 
 
 ```
 French Roofing
-16235 SE Van Zyl Dr, Damascus, OR 97089
+Damascus, OR 97089
 971-376-8722
 ```
+
+> **Privacy rule (operator decision, 2026-06):** the street address is Sean's home and is never published on any web property, schema markup, directory, or outbound material. Public NAP is city/state/zip only. GBP runs in service-area mode (address hidden).
 
 ## 13. Social
 

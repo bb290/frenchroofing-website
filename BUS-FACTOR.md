@@ -22,7 +22,7 @@ spec-version: 2.1
 
 - **Client:** French Roofing
 - **Legal entity (client side):** French Construction LLC dba French Roofing
-- **Operating address:** 16235 SE Van Zyl Dr, Damascus, OR 97089
+- **Operating address (INTERNAL ONLY, never publish):** 16235 SE Van Zyl Dr, Damascus, OR 97089 - this is Sean's home; public materials use "Damascus, OR 97089" only
 - **Phone:** 971-376-8722
 - **Email:** hello@frenchroofing.com
 - **CCB Number:** 203933
