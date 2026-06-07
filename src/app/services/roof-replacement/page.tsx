@@ -7,14 +7,14 @@ import { COMPANY } from "@/lib/constants";
 import { OG_SERVICE_PHOTOS, ogImage } from "@/lib/og";
 
 export const metadata: Metadata = {
-  title: `Roof Replacement | Greater Portland Metro | ${COMPANY.name}`,
+  title: `Roof Replacement | Damascus, Clackamas & Happy Valley | ${COMPANY.name}`,
   description:
-    "Full roof replacement by a CertainTeed Certified team across Clackamas County and the Portland metro. Premium materials, honest pricing, and 0% financing through Enhancify. CCB #203933.",
+    "Full roof replacement by a CertainTeed Certified team across Damascus, Clackamas, Happy Valley, and the surrounding area. Premium materials, honest pricing, and 0% financing through Enhancify. CCB #203933.",
   alternates: { canonical: `${COMPANY.url}/services/roof-replacement` },
   openGraph: {
-    title: "Roof Replacement in the Portland Metro",
+    title: "Roof Replacement in Damascus, Clackamas & Happy Valley",
     images: ogImage(
-      "Roof Replacement in the Portland Metro",
+      "Roof Replacement in Damascus, Clackamas & Happy Valley",
       OG_SERVICE_PHOTOS["roof-replacement"],
     ),
   },
@@ -50,9 +50,9 @@ const steps = [
 
 const faqs = [
   {
-    question: "How much does a roof replacement cost in the Portland metro area?",
+    question: "How much does a roof replacement cost in Damascus, Clackamas, or Happy Valley?",
     answer:
-      "Most residential roof replacements in Clackamas County and the Portland metro range from $8,000 to $25,000+, depending on roof size, pitch, material choice, and complexity. We provide free, detailed estimates so you know exactly what to expect - and we offer 0% financing through Enhancify to make it manageable.",
+      "Most residential roof replacements in our area range from $8,000 to $25,000+, depending on roof size, pitch, material choice, and complexity. We provide free, detailed estimates so you know exactly what to expect - and we offer 0% financing through Enhancify to make it manageable.",
   },
   {
     question: "How long does a full roof replacement take?",
@@ -88,12 +88,12 @@ export default function RoofReplacementPage() {
       />
       <HowToJsonLd
         name="How French Roofing Replaces a Roof"
-        description="Our 5-step roof replacement process from free assessment to final walkthrough. Serving Damascus, OR and the Portland metro area."
+        description="Our 5-step roof replacement process from free assessment to final walkthrough. Serving Damascus, Clackamas, Happy Valley, and the surrounding area."
         steps={steps}
       />
       <ServiceJsonLd
         serviceName="Roof Replacement"
-        description="Full tear-off and roof replacement by a CertainTeed Certified, licensed and bonded team serving Damascus, OR and the greater Portland metro area."
+        description="Full tear-off and roof replacement by a CertainTeed Certified, licensed and bonded team serving Damascus, Clackamas, Happy Valley, and the surrounding area."
         href="/services/roof-replacement"
       />
 
@@ -102,7 +102,7 @@ export default function RoofReplacementPage() {
         <div className="absolute inset-0">
           <Image
             src="/images/install-shingles.webp"
-            alt="French Roofing crew installing new shingles during a full roof replacement in the Portland metro area"
+            alt="French Roofing crew installing new shingles during a full roof replacement near Damascus, OR"
             fill
             className="object-cover opacity-25"
             priority
@@ -114,7 +114,7 @@ export default function RoofReplacementPage() {
               Full Roof Replacement
             </p>
             <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-6">
-              Roof Replacement - Portland Metro
+              Roof Replacement in Damascus, Clackamas & Happy Valley
             </h1>
             <p className="text-lg text-gray-300 max-w-xl">
               When repairs won&apos;t cut it anymore, our team delivers a full
@@ -191,7 +191,7 @@ export default function RoofReplacementPage() {
                 "Family-owned and operated - we're accountable because our name is on the truck",
                 "0% financing through Enhancify - multiple plans to fit your budget",
                 "Clean job sites and a final magnet sweep - your yard looks better when we leave",
-                "Serving 18+ communities across the Portland metro since 2014",
+                "Serving Damascus, Clackamas, Happy Valley, and 15+ nearby communities since 2014",
               ].map((item, i) => (
                 <li key={i} className="flex gap-3">
                   <svg
@@ -215,7 +215,7 @@ export default function RoofReplacementPage() {
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
             <Image
               src="/images/install-shingles.webp"
-              alt="Close-up of new shingles being installed by French Roofing in the Portland metro area"
+              alt="Close-up of new shingles being installed by French Roofing near Damascus, OR"
               fill
               className="object-cover"
             />

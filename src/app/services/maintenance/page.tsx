@@ -8,7 +8,7 @@ import { OG_SERVICE_PHOTOS, ogImage } from "@/lib/og";
 export const metadata: Metadata = {
   title: `Recurring Roof Maintenance Program | ${COMPANY.name}`,
   description:
-    "French Roofing's recurring maintenance program keeps your roof clean, clear, and lasting longer. 2 visits per year - debris removal, gutter clearing, moss prevention, and inspection. Serving the Portland metro.",
+    "French Roofing's recurring maintenance program keeps your roof clean, clear, and lasting longer. 2 visits per year - debris removal, gutter clearing, moss prevention, and inspection. Serving Damascus, Clackamas, and Happy Valley.",
   alternates: { canonical: `${COMPANY.url}/services/maintenance` },
   openGraph: {
     title: "Recurring Roof Maintenance Program",
@@ -124,7 +124,7 @@ export default function MaintenancePage() {
       />
       <ServiceJsonLd
         serviceName="Recurring Roof Maintenance Program"
-        description="Twice-yearly roof maintenance visits - debris removal, gutter clearing, moss prevention, and inspection - serving Damascus, OR and the greater Portland metro area."
+        description="Twice-yearly roof maintenance visits - debris removal, gutter clearing, moss prevention, and inspection - serving Damascus, Clackamas, Happy Valley, and the surrounding area."
         href="/services/maintenance"
       />
 

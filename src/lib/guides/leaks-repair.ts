@@ -96,7 +96,7 @@ export const leaksRepairGuides: Guide[] = [
       {
         heading: "What do leak repairs cost?",
         paragraphs: [
-          "Roof repairs around the Portland metro range from a few hundred dollars for minor fixes (a pipe boot, a small flashing repair, a few shingles) to several thousand for bigger jobs involving decking or large areas. The honest answer for your roof requires eyes on it, which is why our assessments are free.",
+          "Roof repairs in our area range from a few hundred dollars for minor fixes (a pipe boot, a small flashing repair, a few shingles) to several thousand for bigger jobs involving decking or large areas. The honest answer for your roof requires eyes on it, which is why our assessments are free.",
           "We put together [a full breakdown of repair costs](/guides/what-roof-repairs-cost), including what makes the number go up and down, so you can walk into any contractor conversation knowing the landscape.",
         ],
       },
@@ -104,7 +104,7 @@ export const leaksRepairGuides: Guide[] = [
         heading: "After the fix: keeping leaks from coming back",
         paragraphs: [
           "Almost every leak we repair had a warning sign somebody could have caught a season earlier: a cracked boot, a lifted shingle, a mossy valley. Twice-a-year eyes on your roof is the cheapest leak insurance there is. That's what our [maintenance program](/services/maintenance) does, and every visit includes an inspection.",
-          "Prefer the one-off version? A [free roof assessment](/services/roof-inspections) anytime, no strings. We'd rather catch your next leak while it's still a $300 fix.",
+          "Prefer the one-off version? A [free roof assessment](/services/roof-inspections) anytime, no strings. We'd rather catch your next leak while it's still a small fix.",
         ],
       },
     ],
@@ -213,7 +213,7 @@ export const leaksRepairGuides: Guide[] = [
     clusterId: "leaks-repair",
     title: "Why Is My Roof Leaking? The 8 Usual Suspects",
     description:
-      "Roof leaks almost always come from the same short list of places. The 8 most common causes we find on Portland-area roofs, and how to spot each one.",
+      "Roof leaks almost always come from the same short list of places. The 8 most common causes we find on roofs around Damascus, Clackamas, and Happy Valley, and how to spot each one.",
     shortTitle: "The 8 usual leak suspects",
     intro: [
       "After enough years chasing leaks, you learn they're not creative. Water gets into Oregon roofs through the same short list of openings, over and over. Here are the eight we find most, roughly in order of how often we find them.",
@@ -315,7 +315,7 @@ export const leaksRepairGuides: Guide[] = [
       },
       {
         heading: "How flashing fails",
-        paragraphs: ["The failure modes we see most on Portland-area roofs:"],
+        paragraphs: ["The failure modes we see most on roofs around Damascus, Clackamas, and Happy Valley:"],
         bullets: [
           "Cracking: sealant and older mastic-style flashing dry out and split, exactly like the photo above.",
           "Rust and corrosion: decades of Oregon moisture eventually win against bare steel.",
@@ -634,12 +634,12 @@ export const leaksRepairGuides: Guide[] = [
   {
     slug: "what-roof-repairs-cost",
     clusterId: "leaks-repair",
-    title: "What Roof Repairs Cost in the Portland Metro (Honest Ranges)",
+    title: "What Roof Repairs Cost in Damascus, Clackamas & Happy Valley",
     description:
       "Roof repairs run from a few hundred dollars to several thousand. What moves the number, what should be included, and how to read a repair estimate.",
     shortTitle: "What repairs cost",
     intro: [
-      "Roof repairs in the Portland metro run from a few hundred dollars for small, simple fixes to several thousand when decking or large areas are involved. Anyone quoting your roof a price without seeing it is guessing; what we can do honestly is show you what moves the number, so estimates make sense when you get them.",
+      "Roof repairs in Damascus, Clackamas, and Happy Valley run from a few hundred dollars for small, simple fixes to several thousand when decking or large areas are involved. Anyone quoting your roof a price without seeing it is guessing; what we can do honestly is show you what moves the number, so estimates make sense when you get them.",
     ],
     sections: [
       {

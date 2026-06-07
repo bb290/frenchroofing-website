@@ -11,7 +11,7 @@ export function LocalBusinessJsonLd() {
     telephone: COMPANY.phone,
     email: COMPANY.email,
     description:
-      "French Roofing provides expert roof replacement, repair, cleaning, and inspection services in Damascus, OR and the greater Portland metro area. Family-owned, licensed, and CertainTeed Certified.",
+      "French Roofing provides expert roof replacement, repair, cleaning, and inspection services in Damascus, Clackamas, Happy Valley, and the surrounding area. Family-owned, licensed, and CertainTeed Certified.",
     foundingDate: `${COMPANY.foundingYear}`,
     founder: {
       "@type": "Person",

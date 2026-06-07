@@ -69,7 +69,7 @@ function getRoofCleaningFaqs(cityName: string) {
   return [
     {
       question: `How much does roof cleaning cost in ${cityName}, OR?`,
-      answer: `Roof cleaning in ${cityName} typically runs between $300 and $800 depending on roof size, pitch, and the amount of buildup. We provide a clear quote before we start - no surprises. For homes that need both cleaning and minor repairs, we can bundle the work and save you a trip.`,
+      answer: `It ranges based on how long it's been since the last cleaning, how many trees surround your ${cityName} home, and the size and complexity of your roof. We provide a clear quote before we start - no surprises. For homes that need both cleaning and minor repairs, we can bundle the work and save you a trip.`,
     },
     {
       question: `How often should I clean my roof in ${cityName}?`,

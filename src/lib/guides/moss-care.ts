@@ -30,7 +30,7 @@ export const mossCareGuides: Guide[] = [
       "Why Oregon roofs grow moss like nowhere else, what it actually does to your shingles, and how to deal with it the right way. From a Damascus crew that scrapes it off roofs every week.",
     shortTitle: "The Moss Handbook",
     intro: [
-      "If you own a home anywhere in the Portland metro, you don't need us to tell you that moss loves it here. The same weather that keeps everything green for nine months of the year treats your roof like a garden bed.",
+      "If you own a home anywhere around Damascus, Clackamas, or Happy Valley, you don't need us to tell you that moss loves it here. The same weather that keeps everything green for nine months of the year treats your roof like a garden bed.",
       "We're French Roofing, a family roofing company based in Damascus, and we've been scraping, treating, and preventing moss on Oregon roofs since 2014. This guide is everything we know about it. What moss actually does to shingles, what removal methods are safe (and which ones we'd never use on our own homes), what prevention actually works, and when it's time to call in a crew.",
       "Grab a coffee. By the end of this you'll know more about roof moss than most contractors.",
     ],
@@ -79,9 +79,9 @@ export const mossCareGuides: Guide[] = [
         ],
       },
       {
-        heading: "What does roof cleaning cost in the Portland area?",
+        heading: "What does roof cleaning cost around Damascus, Clackamas, and Happy Valley?",
         paragraphs: [
-          "Roof cleaning around the Portland metro typically runs between $300 and $800, depending on roof size, pitch, and how much growth we're dealing with. A one-story ranch with light moss is the low end. A steep two-story under heavy tree cover that hasn't been touched in five years is the high end.",
+          "It ranges, and the range comes from three things: how long it's been since the last cleaning, how many trees surround the home, and the size and complexity of the roof. A one-story ranch with light moss and a clear yard is the easy end. A steep two-story under heavy tree cover that hasn't been touched in five years is the other end.",
           "We quote before we start, in writing, so there are no surprises. And if we spot anything up there that needs attention (cracked flashing, a worn pipe boot, standing water in a valley), you'll hear about it with photos and honest options, not a scare story.",
         ],
         image: {
@@ -210,10 +210,10 @@ export const mossCareGuides: Guide[] = [
     clusterId: "moss-care",
     title: "How Often Should You Clean Your Roof in Oregon?",
     description:
-      "For most Portland-area homes, once a year. Under heavy tree cover, twice. Here's how to figure out the right cleaning schedule for your roof, from a Damascus roofing crew.",
+      "For most homes around Damascus, Clackamas, and Happy Valley, once a year. Under heavy tree cover, twice. Here's how to figure out the right cleaning schedule for your roof, from a Damascus roofing crew.",
     shortTitle: "How often to clean an Oregon roof",
     intro: [
-      "For most homes in the Portland metro, a roof cleaning once a year is the right rhythm. If your home sits under heavy tree cover or on a shaded lot, twice a year is better. And if your roof is sunny, exposed, and steep, you might stretch to every other year.",
+      "For most homes in Damascus, Clackamas, and Happy Valley, a roof cleaning once a year is the right rhythm. If your home sits under heavy tree cover or on a shaded lot, twice a year is better. And if your roof is sunny, exposed, and steep, you might stretch to every other year.",
       "That's the short version. Here's how to figure out where your roof actually lands.",
     ],
     sections: [
@@ -227,7 +227,7 @@ export const mossCareGuides: Guide[] = [
       {
         heading: "The once-a-year baseline",
         paragraphs: [
-          "An annual cleaning, ideally in late spring or early fall, handles the average Portland-area home: clear the debris, clean the gutters, treat for moss before it establishes. Late spring cleanings remove what winter left behind. Early fall cleanings get the roof ready before the rains set in.",
+          "An annual cleaning, ideally in late spring or early fall, handles the average home around here: clear the debris, clean the gutters, treat for moss before it establishes. Late spring cleanings remove what winter left behind. Early fall cleanings get the roof ready before the rains set in.",
           "Either timing works. The important part is the rhythm, not the month.",
         ],
       },
@@ -485,11 +485,11 @@ export const mossCareGuides: Guide[] = [
     clusterId: "moss-care",
     title: "The Oregon Roof Care Calendar: What to Do Each Season",
     description:
-      "A season-by-season maintenance rhythm for Portland-area roofs: what to check, what to clean, and when. Simple habits that add years to an Oregon roof.",
+      "A season-by-season maintenance rhythm for roofs in Damascus, Clackamas, and Happy Valley: what to check, what to clean, and when. Simple habits that add years to an Oregon roof.",
     shortTitle: "The roof care calendar",
     intro: [
       "Oregon roofs live on a schedule whether we like it or not: eight wet months, a glorious dry stretch, and trees that never stop dropping things. The good news is that roof care here is mostly about rhythm, not heroics. A few well-timed habits each season beat any amount of catch-up work.",
-      "Here's the calendar we'd hand any homeowner in the Portland metro.",
+      "Here's the calendar we'd hand any homeowner in Damascus, Clackamas, or Happy Valley.",
     ],
     sections: [
       {
@@ -602,7 +602,7 @@ export const mossCareGuides: Guide[] = [
       {
         heading: "How often do Oregon gutters need cleaning?",
         paragraphs: [
-          "Twice a year for most Portland-area homes: once after the fall drop, once in spring. Homes under heavy tree cover may need a mid-winter check too, because one atmospheric river through a Doug fir can refill a gutter in a weekend.",
+          "Twice a year for most homes in our area: once after the fall drop, once in spring. Homes under heavy tree cover may need a mid-winter check too, because one atmospheric river through a Doug fir can refill a gutter in a weekend.",
           "Gutter clearing is built into every one of our roof cleanings and both visits of our [maintenance program](/services/maintenance), because cleaning a roof and leaving the gutters full is half a job.",
         ],
       },
@@ -655,7 +655,7 @@ export const mossCareGuides: Guide[] = [
       {
         heading: "What you get either way",
         paragraphs: [
-          "First, the overlap. Whether it's a one-time visit or a plan visit, a proper cleaning includes debris removal from the roof and valleys, gutter and downspout clearing, moss treatment, and eyes on your roof from people who know what trouble looks like. One-time cleanings around here typically run $300 to $800 depending on size, pitch, and buildup.",
+          "First, the overlap. Whether it's a one-time visit or a plan visit, a proper cleaning includes debris removal from the roof and valleys, gutter and downspout clearing, moss treatment, and eyes on your roof from people who know what trouble looks like. What a one-time cleaning costs ranges with how long it's been since the last one, how many trees surround the home, and the size and complexity of the roof.",
           "The difference isn't the work. It's the timing, the consistency, and the price per visit.",
         ],
       },

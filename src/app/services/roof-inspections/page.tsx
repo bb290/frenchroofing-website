@@ -7,14 +7,14 @@ import { COMPANY } from "@/lib/constants";
 import { OG_SERVICE_PHOTOS, ogImage } from "@/lib/og";
 
 export const metadata: Metadata = {
-  title: `Free Roof Inspections | Greater Portland Metro | ${COMPANY.name}`,
+  title: `Free Roof Inspections | Damascus, Clackamas & Happy Valley | ${COMPANY.name}`,
   description:
-    "Free, honest, thorough roof inspections in the greater Portland metro area. Get a clear picture of your roof's condition - whether you're buying a home, filing a claim, or just want to know where things stand. Licensed (CCB #203933), CertainTeed Certified.",
+    "Free, honest, thorough roof inspections in Damascus, Clackamas, Happy Valley, and the surrounding area. Get a clear picture of your roof's condition - whether you're buying a home, filing a claim, or just want to know where things stand. Licensed (CCB #203933), CertainTeed Certified.",
   alternates: { canonical: `${COMPANY.url}/services/roof-inspections` },
   openGraph: {
-    title: "Free Roof Inspections in the Portland Metro",
+    title: "Free Roof Inspections in Damascus, Clackamas & Happy Valley",
     images: ogImage(
-      "Free Roof Inspections in the Portland Metro",
+      "Free Roof Inspections in Damascus, Clackamas & Happy Valley",
       OG_SERVICE_PHOTOS["roof-inspections"],
     ),
   },
@@ -45,7 +45,7 @@ const steps = [
 
 const faqs = [
   {
-    question: "How much does a roof inspection cost in the Portland metro area?",
+    question: "How much does a roof inspection cost in Damascus, Clackamas, or Happy Valley?",
     answer:
       "Our roof inspections are always free - no strings attached. We believe every homeowner deserves to know the condition of their roof without worrying about a bill. Book online and we'll get you on the schedule.",
   },
@@ -62,7 +62,7 @@ const faqs = [
   {
     question: "Can you do a roof inspection for a home I'm buying?",
     answer:
-      "Absolutely. Pre-purchase roof inspections are one of our most common requests across Clackamas County and the Portland metro. We give you an honest assessment of the roof's condition and remaining life so you can negotiate with confidence.",
+      "Absolutely. Pre-purchase roof inspections are one of our most common requests across Clackamas County. We give you an honest assessment of the roof's condition and remaining life so you can negotiate with confidence.",
   },
   {
     question: "Will you find problems even if there's no visible leak?",
@@ -83,12 +83,12 @@ export default function RoofInspectionsPage() {
       />
       <HowToJsonLd
         name="How French Roofing Inspects Your Roof"
-        description="Our 4-step free roof inspection process from scheduling to detailed report. Serving Damascus, OR and the Portland metro area."
+        description="Our 4-step free roof inspection process from scheduling to detailed report. Serving Damascus, Clackamas, Happy Valley, and the surrounding area."
         steps={steps}
       />
       <ServiceJsonLd
         serviceName="Roof Inspections"
-        description="Free, photo-documented roof inspections by a CertainTeed Certified, licensed and bonded team serving Damascus, OR and the greater Portland metro area."
+        description="Free, photo-documented roof inspections by a CertainTeed Certified, licensed and bonded team serving Damascus, Clackamas, Happy Valley, and the surrounding area."
         href="/services/roof-inspections"
       />
 
@@ -109,7 +109,7 @@ export default function RoofInspectionsPage() {
               Always Free
             </p>
             <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-6">
-              Free Roof Inspections - Portland Metro
+              Free Roof Inspections in Damascus, Clackamas & Happy Valley
             </h1>
             <p className="text-lg text-gray-300 max-w-xl">
               Not sure what shape your roof is in? We&apos;ll tell you - honestly
@@ -140,8 +140,8 @@ export default function RoofInspectionsPage() {
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
               A quick inspection now can save you thousands later. Here are the
-              most common reasons homeowners across the Portland metro
-              reach out.
+              most common reasons homeowners around Damascus, Clackamas, and
+              Happy Valley reach out.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -160,7 +160,7 @@ export default function RoofInspectionsPage() {
               },
               {
                 title: "Selling Your Home",
-                desc: "A clean inspection report builds buyer confidence and can speed up your sale in the Portland metro market.",
+                desc: "A clean inspection report builds buyer confidence and can speed up your sale in the local market.",
               },
             ].map((item, i) => (
               <div
@@ -214,7 +214,7 @@ export default function RoofInspectionsPage() {
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
             <Image
               src="/images/team-plywood-install.webp"
-              alt="French Roofing crew examining roof decking during a roof inspection in the Portland metro area"
+              alt="French Roofing crew examining roof decking during a roof inspection near Damascus, OR"
               fill
               className="object-cover"
             />
@@ -236,7 +236,7 @@ export default function RoofInspectionsPage() {
                 "Photo-documented reports - see exactly what we see",
                 "Honest recommendations - we won't create problems to sell you a fix",
                 "Licensed, insured & bonded (CCB #203933)",
-                "Serving 18+ communities across the Portland metro since 2014",
+                "Serving Damascus, Clackamas, Happy Valley, and 15+ nearby communities since 2014",
                 "Free assessments available for homeowners considering repair or replacement",
               ].map((item, i) => (
                 <li key={i} className="flex gap-3">

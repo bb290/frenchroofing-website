@@ -224,7 +224,7 @@ export default function Home() {
       <section id="service-areas" className="py-20 px-4 bg-gray-50">
         <div className="mx-auto max-w-7xl text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-[#092e5e] mb-4">
-            Proudly Serving the Greater Portland Metro
+            Proudly Serving Damascus, Clackamas & Happy Valley
           </h2>
           <p className="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
             Based in Damascus, OR - we serve homeowners within a 20-mile radius.

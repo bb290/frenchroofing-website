@@ -7,14 +7,14 @@ import { COMPANY } from "@/lib/constants";
 import { OG_SERVICE_PHOTOS, ogImage } from "@/lib/og";
 
 export const metadata: Metadata = {
-  title: `Roof Repair | Greater Portland Metro | ${COMPANY.name}`,
+  title: `Roof Repair | Damascus, Clackamas & Happy Valley | ${COMPANY.name}`,
   description:
-    "Fast, reliable roof repair in the greater Portland metro area. Fix leaks, storm damage, cracked flashing, and missing shingles before they become bigger problems. Licensed (CCB #203933), CertainTeed Certified. Financing available.",
+    "Fast, reliable roof repair in Damascus, Clackamas, Happy Valley, and the surrounding area. Fix leaks, storm damage, cracked flashing, and missing shingles before they become bigger problems. Licensed (CCB #203933), CertainTeed Certified. Financing available.",
   alternates: { canonical: `${COMPANY.url}/services/roof-repair` },
   openGraph: {
-    title: "Roof Repair in the Portland Metro",
+    title: "Roof Repair in Damascus, Clackamas & Happy Valley",
     images: ogImage(
-      "Roof Repair in the Portland Metro",
+      "Roof Repair in Damascus, Clackamas & Happy Valley",
       OG_SERVICE_PHOTOS["roof-repair"],
     ),
   },
@@ -50,14 +50,14 @@ const faqs = [
       "If your roof is under 15 years old with isolated damage - a few missing shingles, a small leak, cracked flashing - repair is usually the smart move. If it's 20+ years old with widespread issues, a replacement is often more cost-effective. We'll give you an honest recommendation during your free assessment.",
   },
   {
-    question: "How quickly can you fix a roof leak in the Portland metro area?",
+    question: "How quickly can you fix a roof leak in Damascus, Clackamas, or Happy Valley?",
     answer:
       "For active leaks and emergency situations, we prioritize getting to you as fast as possible - often within a day or two. For non-emergency repairs, we typically schedule within the week. Oregon weather can be unpredictable, so if your roof is leaking, don't wait - book online and we'll get to you fast.",
   },
   {
     question: "Do you repair storm damage and work with insurance?",
     answer:
-      "Yes. We handle storm damage repairs regularly for homeowners across Clackamas County and the Portland metro. We document the damage thoroughly with photos, which helps if you need to file an insurance claim. We're happy to work with your adjuster.",
+      "Yes. We handle storm damage repairs regularly for homeowners across Clackamas County. We document the damage thoroughly with photos, which helps if you need to file an insurance claim. We're happy to work with your adjuster.",
   },
   {
     question: "How much does a roof repair cost?",
@@ -83,12 +83,12 @@ export default function RoofRepairPage() {
       />
       <HowToJsonLd
         name="How French Roofing Handles Roof Repairs"
-        description="Our 4-step roof repair process from inspection to quality check. Serving Damascus, OR and the Portland metro area."
+        description="Our 4-step roof repair process from inspection to quality check. Serving Damascus, Clackamas, Happy Valley, and the surrounding area."
         steps={steps}
       />
       <ServiceJsonLd
         serviceName="Roof Repair"
-        description="Leak, storm damage, flashing, and shingle repairs by a licensed and bonded team serving Damascus, OR and the greater Portland metro area."
+        description="Leak, storm damage, flashing, and shingle repairs by a licensed and bonded team serving Damascus, Clackamas, Happy Valley, and the surrounding area."
         href="/services/roof-repair"
       />
 
@@ -109,7 +109,7 @@ export default function RoofRepairPage() {
               Roof Repair
             </p>
             <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-6">
-              Roof Repair - Portland Metro
+              Roof Repair in Damascus, Clackamas & Happy Valley
             </h1>
             <p className="text-lg text-gray-300 max-w-xl">
               Leaks, storm damage, missing shingles, cracked flashing - small
@@ -143,7 +143,7 @@ export default function RoofRepairPage() {
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
               Oregon weather does a number on roofs. Here are the most common
-              issues we see across the Portland metro.
+              issues we see across Damascus, Clackamas, and Happy Valley.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -206,7 +206,7 @@ export default function RoofRepairPage() {
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
             <Image
               src="/images/cracked-flashing.webp"
-              alt="Close-up of roof flashing being repaired by French Roofing in the Portland metro area"
+              alt="Close-up of roof flashing being repaired by French Roofing near Damascus, OR"
               fill
               className="object-cover"
             />
@@ -226,7 +226,7 @@ export default function RoofRepairPage() {
                 "Honest diagnosis - we won't upsell you on a replacement if a repair will do",
                 "Licensed, insured & bonded (CCB #203933)",
                 "CertainTeed Certified - quality materials and proper technique",
-                "Serving 18+ communities across the Portland metro since 2014",
+                "Serving Damascus, Clackamas, Happy Valley, and 15+ nearby communities since 2014",
                 "Financing through Enhancify for larger repair projects",
                 "Clean, documented work - photos before, during, and after",
               ].map((item, i) => (

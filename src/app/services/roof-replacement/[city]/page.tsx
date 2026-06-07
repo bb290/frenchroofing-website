@@ -81,7 +81,7 @@ function getRoofReplacementFaqs(cityName: string) {
     },
     {
       question: `Does French Roofing offer financing for ${cityName} homeowners?`,
-      answer: `Absolutely. We partner with Enhancify to offer flexible financing options, including 0% interest plans. A new roof is a big investment, and we want to make it accessible for homeowners in ${cityName} and throughout the Portland metro area. We'll walk you through your options during your free estimate.`,
+      answer: `Absolutely. We partner with Enhancify to offer flexible financing options, including 0% interest plans. A new roof is a big investment, and we want to make it accessible for homeowners in ${cityName} and the surrounding area. We'll walk you through your options during your free estimate.`,
     },
     {
       question: `Is French Roofing licensed to work in ${cityName}, OR?`,

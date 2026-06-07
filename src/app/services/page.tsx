@@ -53,7 +53,7 @@ export default function ServicesPage() {
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             From a full tear-off to a quick repair, we handle every roofing need
             with quality materials and honest communication. Based in Damascus, OR
-            and serving the greater Portland metro area.
+            and serving Damascus, Clackamas, Happy Valley, and the surrounding area.
           </p>
         </div>
       </section>

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s | French Roofing",
   },
   description:
-    "French Roofing provides expert roof replacement, repair, cleaning, and inspection services in Damascus, OR and the greater Portland metro area. Family-owned, licensed (CCB #203933), and CertainTeed Certified. Schedule a FREE roof assessment today.",
+    "French Roofing provides expert roof replacement, repair, cleaning, and inspection services in Damascus, Clackamas, Happy Valley, and the surrounding area. Family-owned, licensed (CCB #203933), and CertainTeed Certified. Schedule a FREE roof assessment today.",
   keywords: [
     "roofing contractor Damascus OR",
     "roof replacement Damascus Oregon",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     siteName: COMPANY.name,
     title: "French Roofing | Roofing Contractor in Damascus, OR",
     description:
-      "Expert roof replacement, repair, cleaning & inspections. Family-owned, CertainTeed Certified. Serving Damascus, Clackamas, Happy Valley & the Portland metro.",
+      "Expert roof replacement, repair, cleaning & inspections. Family-owned, CertainTeed Certified. Serving Damascus, Clackamas, Happy Valley & nearby communities.",
     images: [{ url: "/images/team-plywood-install.webp", width: 1600, height: 1067 }],
   },
   twitter: {

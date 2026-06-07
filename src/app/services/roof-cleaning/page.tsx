@@ -7,14 +7,14 @@ import { COMPANY } from "@/lib/constants";
 import { OG_SERVICE_PHOTOS, ogImage } from "@/lib/og";
 
 export const metadata: Metadata = {
-  title: `Roof Cleaning & Maintenance | Greater Portland Metro | ${COMPANY.name}`,
+  title: `Roof Cleaning & Maintenance | Damascus, Clackamas & Happy Valley | ${COMPANY.name}`,
   description:
-    "Professional roof cleaning and maintenance in the greater Portland metro area. Remove moss, algae, and debris to extend your roof's life. One-time or recurring service. Licensed (CCB #203933). Serving Clackamas County and beyond.",
+    "Professional roof cleaning and maintenance in Damascus, Clackamas, Happy Valley, and the surrounding area. Remove moss, algae, and debris to extend your roof's life. One-time or recurring service. Licensed (CCB #203933). Serving Clackamas County and beyond.",
   alternates: { canonical: `${COMPANY.url}/services/roof-cleaning` },
   openGraph: {
-    title: "Roof Cleaning & Maintenance in the Portland Metro",
+    title: "Roof Cleaning in Damascus, Clackamas & Happy Valley",
     images: ogImage(
-      "Roof Cleaning in the Portland Metro",
+      "Roof Cleaning in Damascus, Clackamas & Happy Valley",
       OG_SERVICE_PHOTOS["roof-cleaning"],
     ),
   },
@@ -52,7 +52,7 @@ const faqs = [
   {
     question: "How often should I have my roof cleaned in Oregon?",
     answer:
-      "In the greater Portland area, we recommend a roof cleaning at least once a year - ideally in late spring or early fall. If your home is surrounded by trees or sits on the north side of a hill, twice a year is even better. Moss and debris build up fast in our climate.",
+      "Around Damascus, Clackamas, and Happy Valley, we recommend a roof cleaning at least once a year - ideally in late spring or early fall. If your home is surrounded by trees or sits on the north side of a hill, twice a year is even better. Moss and debris build up fast in our climate.",
   },
   {
     question: "Does moss actually damage my roof?",
@@ -62,7 +62,7 @@ const faqs = [
   {
     question: "Do you offer recurring roof maintenance plans?",
     answer:
-      "We do. We offer both one-time cleanings and recurring maintenance schedules. A lot of our homeowners across the Portland metro set up annual or semi-annual visits so they never have to think about it.",
+      "We do. We offer both one-time cleanings and recurring maintenance schedules. A lot of our homeowners set up annual or semi-annual visits so they never have to think about it.",
   },
   {
     question: "Will pressure washing damage my shingles?",
@@ -72,7 +72,7 @@ const faqs = [
   {
     question: "How much does roof cleaning cost?",
     answer:
-      "Roof cleaning typically runs between $300 and $800 depending on roof size, pitch, and the amount of buildup. We provide a clear quote before we start. For homes that need both cleaning and minor repairs, we can bundle the work and save you a trip.",
+      "It ranges based on how long it's been since the last cleaning, how many trees surround your home, and the size and complexity of your roof. We provide a clear quote before we start. For homes that need both cleaning and minor repairs, we can bundle the work and save you a trip.",
   },
 ];
 
@@ -91,12 +91,12 @@ export default function RoofCleaningPage() {
       />
       <HowToJsonLd
         name="How French Roofing Cleans and Maintains Roofs"
-        description="Our 5-step roof cleaning and maintenance process from assessment to maintenance report. Serving Damascus, OR and the Portland metro area."
+        description="Our 5-step roof cleaning and maintenance process from assessment to maintenance report. Serving Damascus, Clackamas, Happy Valley, and the surrounding area."
         steps={steps}
       />
       <ServiceJsonLd
         serviceName="Roof Cleaning & Maintenance"
-        description="Moss removal, debris cleanout, and recurring roof maintenance by a licensed and bonded team serving Damascus, OR and the greater Portland metro area."
+        description="Moss removal, debris cleanout, and recurring roof maintenance by a licensed and bonded team serving Damascus, Clackamas, Happy Valley, and the surrounding area."
         href="/services/roof-cleaning"
       />
 
@@ -117,7 +117,7 @@ export default function RoofCleaningPage() {
               Roof Cleaning &amp; Maintenance
             </p>
             <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-6">
-              Roof Cleaning - Portland Metro
+              Roof Cleaning in Damascus, Clackamas & Happy Valley
             </h1>
             <p className="text-lg text-gray-300 max-w-xl">
               Moss, algae, and debris don&apos;t just look bad - they shorten
@@ -153,7 +153,7 @@ export default function RoofCleaningPage() {
             },
             {
               title: "Protect Your Home's Value",
-              desc: "Curb appeal matters, especially in neighborhoods across the Portland metro. A clean roof signals a well-maintained home.",
+              desc: "Curb appeal matters, especially in neighborhoods from Damascus to Happy Valley. A clean roof signals a well-maintained home.",
             },
           ].map((item, i) => (
             <div
@@ -235,7 +235,7 @@ export default function RoofCleaningPage() {
                 "We spot problems early - saving you from expensive surprises",
                 "Licensed, insured & bonded (CCB #203933)",
                 "One-time or recurring service options",
-                "Serving 18+ communities across the Portland metro since 2014",
+                "Serving Damascus, Clackamas, Happy Valley, and 15+ nearby communities since 2014",
               ].map((item, i) => (
                 <li key={i} className="flex gap-3">
                   <svg

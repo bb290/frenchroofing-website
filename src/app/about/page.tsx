@@ -361,7 +361,7 @@ export default function AboutPage() {
                   </h3>
                   <p className="text-sm text-gray-600">
                     Over 10 years serving Damascus, Clackamas, Happy Valley, and
-                    the greater Portland metro area.
+                    the surrounding communities.
                   </p>
                 </div>
               </div>
@@ -377,7 +377,7 @@ export default function AboutPage() {
           {
             question: "How long has French Roofing been in business?",
             answer:
-              "French Roofing has been serving homeowners in Damascus, OR and the greater Portland metro area since 2014. That's over 10 years of honest, quality roofing work - and we're just getting started. Sean French founded the company on a simple idea: treat every roof like it's your own grandma's.",
+              "French Roofing has been serving homeowners in Damascus, Clackamas, Happy Valley, and the surrounding area since 2014. That's over 10 years of honest, quality roofing work - and we're just getting started. Sean French founded the company on a simple idea: treat every roof like it's your own grandma's.",
           },
           {
             question: "Is French Roofing licensed and insured?",

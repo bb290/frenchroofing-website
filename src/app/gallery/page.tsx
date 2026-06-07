@@ -183,7 +183,7 @@ export default function GalleryPage() {
           {
             question: "What types of roofing projects does French Roofing handle?",
             answer:
-              "We handle full roof replacements, repairs, cleaning, maintenance, and free inspections for homeowners across the Portland metro area. Whether it's a complete tear-off with new CertainTeed shingles or a targeted repair on storm damage, our CertainTeed Certified team (CCB #203933) has been doing this since 2014 out of Damascus, OR.",
+              "We handle full roof replacements, repairs, cleaning, maintenance, and free inspections for homeowners across Damascus, Clackamas, Happy Valley, and the surrounding area. Whether it's a complete tear-off with new CertainTeed shingles or a targeted repair on storm damage, our CertainTeed Certified team (CCB #203933) has been doing this since 2014 out of Damascus, OR.",
           },
         ]}
       />

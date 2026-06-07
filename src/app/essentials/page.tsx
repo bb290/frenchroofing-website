@@ -22,7 +22,7 @@ const questions = [
     number: 2,
     question: "Do you have experience with this type of roofing project?",
     answer:
-      "Not all roofing contractors specialize in the same types of projects. Whether you need a roof repair or a full roof replacement, it's important to choose a contractor with experience relevant to your specific needs. Ask about their experience with similar projects and request references or examples of past work. French Roofing has been handling everything from small repairs to full tear-offs across the Portland metro since 2014.",
+      "Not all roofing contractors specialize in the same types of projects. Whether you need a roof repair or a full roof replacement, it's important to choose a contractor with experience relevant to your specific needs. Ask about their experience with similar projects and request references or examples of past work. French Roofing has been handling everything from small repairs to full tear-offs across Damascus, Clackamas, Happy Valley, and the surrounding area since 2014.",
   },
   {
     number: 3,
