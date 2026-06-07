@@ -27,7 +27,7 @@ export const replacementGuides: Guide[] = [
     slug: "roof-replacement-guide",
     clusterId: "replacement-decision",
     isPillar: true,
-    title: "The Complete Guide to Roof Replacement in Damascus, Clackamas & Happy Valley",
+    title: "The Complete Guide to Roof Replacement for Oregon Homeowners",
     description:
       "Everything that goes into a roof replacement decision: when it's time, what it costs, which materials make sense for Oregon, how the work unfolds, and how to pay for it. From a Damascus crew that does this every week.",
     shortTitle: "The Replacement Guide",
