@@ -1,11 +1,12 @@
 import type { Cluster, Guide } from "./types";
+import { leaksRepairCluster, leaksRepairGuides } from "./leaks-repair";
 import { mossCareCluster, mossCareGuides } from "./moss-care";
 
 // Add new clusters here as they're written.
 // Strategy + build order: operations/seo/topic-cluster-map.md
-export const CLUSTERS: Cluster[] = [mossCareCluster];
+export const CLUSTERS: Cluster[] = [leaksRepairCluster, mossCareCluster];
 
-export const GUIDES: Guide[] = [...mossCareGuides];
+export const GUIDES: Guide[] = [...leaksRepairGuides, ...mossCareGuides];
 
 export function getGuide(slug: string): Guide | undefined {
   return GUIDES.find((g) => g.slug === slug);
