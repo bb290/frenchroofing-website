@@ -189,12 +189,12 @@ export function HowToJsonLd({
 export function ArticleJsonLd({
   title,
   description,
-  slug,
+  href,
   datePublished,
 }: {
   title: string;
   description: string;
-  slug: string;
+  href: string;
   datePublished: string;
 }) {
   const schema = {
@@ -202,7 +202,7 @@ export function ArticleJsonLd({
     "@type": "Article",
     headline: title,
     description,
-    url: `${COMPANY.url}/blog/${slug}`,
+    url: `${COMPANY.url}${href}`,
     datePublished,
     dateModified: datePublished,
     author: {
@@ -220,7 +220,7 @@ export function ArticleJsonLd({
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `${COMPANY.url}/blog/${slug}`,
+      "@id": `${COMPANY.url}${href}`,
     },
   };
 
