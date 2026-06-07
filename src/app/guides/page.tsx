@@ -3,6 +3,7 @@ import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
 import { COMPANY } from "@/lib/constants";
+import { getEbook } from "@/lib/ebooks";
 import { CLUSTERS, getClusterGuides, getPillar } from "@/lib/guides";
 
 export const metadata: Metadata = {
@@ -47,12 +48,24 @@ export default function GuidesIndexPage() {
             const supporting = getClusterGuides(cluster.id).filter(
               (g) => !g.isPillar,
             );
+            const ebook = getEbook(cluster.id);
             return (
               <div key={cluster.id}>
                 <h2 className="text-3xl font-semibold text-[#092e5e] mb-3">
                   {cluster.name}
                 </h2>
-                <p className="text-[#6b6a67] mb-8">{cluster.description}</p>
+                <p className="text-[#6b6a67] mb-4">{cluster.description}</p>
+                {ebook && (
+                  <p className="mb-8">
+                    <a
+                      href={`/downloads/${ebook.file}`}
+                      download
+                      className="inline-flex items-center gap-2 text-sm font-semibold text-[#d85024] hover:underline"
+                    >
+                      Download the whole series as a free PDF &darr;
+                    </a>
+                  </p>
+                )}
 
                 {pillar && (
                   <Link

@@ -6,6 +6,7 @@ import { ArticleJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
 import FAQSection from "@/components/FAQSection";
 import { COMPANY } from "@/lib/constants";
+import { getEbook } from "@/lib/ebooks";
 import { GUIDES, getCluster, getClusterGuides, getGuide, getPillar } from "@/lib/guides";
 import { ogImage } from "@/lib/og";
 
@@ -63,6 +64,7 @@ export default async function GuidePage({
 
   const cluster = getCluster(guide.clusterId);
   const pillar = getPillar(guide.clusterId);
+  const ebook = getEbook(guide.clusterId);
   const siblings = getClusterGuides(guide.clusterId).filter(
     (g) => g.slug !== guide.slug,
   );
@@ -170,6 +172,32 @@ export default async function GuidePage({
           ))}
         </div>
       </article>
+
+      {/* ── Ebook download ── */}
+      {ebook && (
+        <section className="px-4 pb-4 bg-[#fdfcfa]">
+          <div className="mx-auto max-w-3xl">
+            <div className="rounded-xl border-2 border-[#ffbd59] bg-[#f5f1ea] p-6 flex flex-col sm:flex-row sm:items-center gap-4">
+              <div className="flex-1">
+                <p className="font-semibold text-[#092e5e] mb-1">
+                  Take this whole series with you
+                </p>
+                <p className="text-sm text-[#6b6a67]">
+                  {ebook.title} is available as a free PDF: every article in
+                  this series in one tidy, printable handbook.
+                </p>
+              </div>
+              <a
+                href={`/downloads/${ebook.file}`}
+                download
+                className="inline-flex items-center justify-center rounded-lg bg-[#ffbd59] px-6 py-3 text-sm font-semibold text-[#092e5e] hover:bg-[#f0ad40] transition-colors flex-shrink-0"
+              >
+                Download the PDF
+              </a>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ── FAQ ── */}
       <FAQSection title="Quick Answers" faqs={guide.faqs} />
