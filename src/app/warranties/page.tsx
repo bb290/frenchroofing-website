@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
+import RelatedGuides from "@/components/RelatedGuides";
 import FAQSection from "@/components/FAQSection";
 import { COMPANY } from "@/lib/constants";
 
@@ -364,6 +365,9 @@ export default function WarrantiesPage() {
 
       {/* ── FAQ ── */}
       <FAQSection title="Warranty FAQs" faqs={warrantyFAQs} />
+
+      {/* ── Related guides ── */}
+      <RelatedGuides slugs={["roofing-warranties-explained", "shingle-product-lines", "roofing-101"]} />
 
       {/* ── CTA ── */}
       <CTABanner

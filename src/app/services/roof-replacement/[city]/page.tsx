@@ -3,6 +3,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { BreadcrumbJsonLd, ServiceJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
+import RelatedGuides from "@/components/RelatedGuides";
 import CityServiceLinks from "@/components/CityServiceLinks";
 import FAQSection from "@/components/FAQSection";
 import { COMPANY, SERVICE_AREAS } from "@/lib/constants";
@@ -257,6 +258,9 @@ export default async function RoofReplacementCityPage({
         citySlug={area.slug}
         currentServiceSlug="roof-replacement"
       />
+
+      {/* ── Related guides ── */}
+      <RelatedGuides slugs={["roof-replacement-guide", "roof-replacement-cost-factors", "best-time-replace-roof-oregon"]} />
 
       {/* ── CTA ── */}
       <CTABanner

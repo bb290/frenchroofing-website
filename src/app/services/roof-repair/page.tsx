@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { BreadcrumbJsonLd, HowToJsonLd, ServiceJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
+import RelatedGuides from "@/components/RelatedGuides";
 import FAQSection from "@/components/FAQSection";
 import { COMPANY } from "@/lib/constants";
 import { OG_SERVICE_PHOTOS, ogImage } from "@/lib/og";
@@ -257,6 +258,9 @@ export default function RoofRepairPage() {
         title="Roof Repair FAQs"
         faqs={faqs}
       />
+
+      {/* ── Related guides ── */}
+      <RelatedGuides slugs={["roof-leak-guide", "emergency-roof-triage", "what-roof-repairs-cost", "roof-patch-vs-repair"]} />
 
       {/* ── CTA ── */}
       <CTABanner

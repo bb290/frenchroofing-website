@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
+import RelatedGuides from "@/components/RelatedGuides";
 import FAQSection from "@/components/FAQSection";
 import { COMPANY } from "@/lib/constants";
 
@@ -290,6 +291,9 @@ export default function EssentialsPage() {
         title="Common Questions About Hiring a Roofer"
         faqs={essentialsFAQs}
       />
+
+      {/* ── Related guides ── */}
+      <RelatedGuides slugs={["roof-replacement-guide", "roofing-101", "roof-systems-roundup"]} />
 
       {/* ── CTA ── */}
       <CTABanner

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { BreadcrumbJsonLd, ServiceJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
+import RelatedGuides from "@/components/RelatedGuides";
 import FAQSection from "@/components/FAQSection";
 import { COMPANY } from "@/lib/constants";
 import { OG_SERVICE_PHOTOS, ogImage } from "@/lib/og";
@@ -300,6 +301,9 @@ export default function MaintenancePage() {
 
       {/* ── FAQ ── */}
       <FAQSection title="Maintenance Program FAQs" faqs={faqs} />
+
+      {/* ── Related guides ── */}
+      <RelatedGuides slugs={["oregon-roof-care-calendar", "roof-cleaning-vs-maintenance-plan", "clogged-gutters-roof-damage"]} />
 
       {/* ── CTA ── */}
       <CTABanner

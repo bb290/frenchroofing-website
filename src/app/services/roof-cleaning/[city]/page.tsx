@@ -3,6 +3,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { BreadcrumbJsonLd, ServiceJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
+import RelatedGuides from "@/components/RelatedGuides";
 import CityServiceLinks from "@/components/CityServiceLinks";
 import FAQSection from "@/components/FAQSection";
 import { COMPANY, SERVICE_AREAS } from "@/lib/constants";
@@ -323,6 +324,9 @@ export default async function RoofCleaningCityPage({
         citySlug={area.slug}
         currentServiceSlug="roof-cleaning"
       />
+
+      {/* ── Related guides ── */}
+      <RelatedGuides slugs={["moss-on-roof-oregon", "how-often-clean-roof-oregon", "oregon-roof-care-calendar"]} />
 
       {/* ── CTA ── */}
       <CTABanner

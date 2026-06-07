@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
+import RelatedGuides from "@/components/RelatedGuides";
 import { COMPANY, SERVICES } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -113,6 +114,9 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+
+      {/* ── Related guides ── */}
+      <RelatedGuides slugs={["roof-replacement-guide", "roof-leak-guide", "moss-on-roof-oregon", "roofing-101"]} />
 
       {/* ── CTA ── */}
       <CTABanner />

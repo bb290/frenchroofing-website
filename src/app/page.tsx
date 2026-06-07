@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import CTABanner from "@/components/CTABanner";
+import RelatedGuides from "@/components/RelatedGuides";
 import FAQSection from "@/components/FAQSection";
 import RoofEstimator from "@/components/RoofEstimator";
 import { COMPANY, SERVICES, SERVICE_AREAS } from "@/lib/constants";
@@ -346,6 +347,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ── Related guides ── */}
+      <RelatedGuides slugs={["roofing-101", "roof-replacement-guide", "roof-leak-guide", "moss-on-roof-oregon"]} />
 
       {/* ── CTA ── */}
       <CTABanner />

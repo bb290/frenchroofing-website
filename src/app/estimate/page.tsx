@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { BreadcrumbJsonLd, FAQJsonLd } from "@/components/JsonLd";
 import RoofEstimator from "@/components/RoofEstimator";
 import CTABanner from "@/components/CTABanner";
+import RelatedGuides from "@/components/RelatedGuides";
 import { COMPANY } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -86,6 +87,9 @@ export default function EstimatePage() {
           </div>
         </div>
       </section>
+
+      {/* ── Related guides ── */}
+      <RelatedGuides slugs={["roof-replacement-cost-factors", "roof-replacement-guide", "roof-financing-explained"]} />
 
       <CTABanner
         headline="Want an Exact Number?"

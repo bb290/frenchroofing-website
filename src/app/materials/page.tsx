@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
+import RelatedGuides from "@/components/RelatedGuides";
 import FAQSection from "@/components/FAQSection";
 import { COMPANY } from "@/lib/constants";
 
@@ -120,7 +122,12 @@ export default function MaterialsPage() {
             A lot of people think a roof is just shingles, but the truth is your
             roof is a system of components that need to work together. CertainTeed
             designs each layer to complement the others, which is why we install
-            the full system rather than mixing and matching brands.
+            the full system rather than mixing and matching brands. Curious how
+            all the pieces fit? Our{" "}
+            <Link href="/guides/roofing-101" className="font-medium text-[#d85024] hover:underline">
+              Roofing 101 guide
+            </Link>{" "}
+            walks through the whole system in plain English.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
@@ -259,6 +266,9 @@ export default function MaterialsPage() {
 
       {/* ── FAQ ── */}
       <FAQSection title="Roofing Materials FAQs" faqs={materialsFAQs} />
+
+      {/* ── Related guides ── */}
+      <RelatedGuides slugs={["shingle-product-lines", "architectural-vs-3-tab-shingles", "roof-underlayment-explained", "roof-systems-roundup"]} />
 
       {/* ── CTA ── */}
       <CTABanner

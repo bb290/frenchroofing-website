@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
+import RelatedGuides from "@/components/RelatedGuides";
 import FAQSection from "@/components/FAQSection";
 import { COMPANY } from "@/lib/constants";
 
@@ -187,6 +188,9 @@ export default function GalleryPage() {
           },
         ]}
       />
+
+      {/* ── Related guides ── */}
+      <RelatedGuides slugs={["roof-replacement-day-by-day", "roof-replacement-guide"]} />
 
       {/* ── CTA ── */}
       <CTABanner

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
+import RelatedGuides from "@/components/RelatedGuides";
 import FAQSection from "@/components/FAQSection";
 import { COMPANY } from "@/lib/constants";
 
@@ -186,7 +188,12 @@ export default function FinancingPage() {
             Enhancify specializes in home improvement financing and works with
             top lenders to offer competitive rates. French Roofing chose
             Enhancify because they make the process simple and transparent - just
-            like we do with roofing.
+            like we do with roofing. Want the deeper dive before applying? We
+            wrote up{" "}
+            <Link href="/guides/roof-financing-explained" className="font-medium text-[#d85024] hover:underline">
+              how 0% offers actually work
+            </Link>
+            , fine print included.
           </p>
           <a
             href="https://www.enhancify.com/french-roofing"
@@ -201,6 +208,9 @@ export default function FinancingPage() {
 
       {/* ── FAQ ── */}
       <FAQSection title="Financing FAQs" faqs={financingFAQs} />
+
+      {/* ── Related guides ── */}
+      <RelatedGuides slugs={["roof-financing-explained", "roof-replacement-cost-factors", "what-roof-repairs-cost"]} />
 
       {/* ── CTA ── */}
       <CTABanner

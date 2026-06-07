@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
+import RelatedGuides from "@/components/RelatedGuides";
 import FAQSection from "@/components/FAQSection";
 import { COMPANY } from "@/lib/constants";
 
@@ -396,6 +397,9 @@ export default function AboutPage() {
           },
         ]}
       />
+
+      {/* ── Related guides ── */}
+      <RelatedGuides slugs={["roofing-101", "moss-on-roof-oregon"]} />
 
       {/* ── CTA ── */}
       <CTABanner dark />
