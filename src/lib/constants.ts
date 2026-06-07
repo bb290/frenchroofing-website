@@ -5,6 +5,8 @@ export const COMPANY = {
   phoneTel: "tel:+19713768722",
   email: "hello@frenchroofing.com",
   address: {
+    // Not published anywhere customer-facing (operator privacy decision,
+    // 2026-06). Kept for contracts/internal use only.
     street: "16235 SE Van Zyl Dr",
     city: "Damascus",
     state: "OR",

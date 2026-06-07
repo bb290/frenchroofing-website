@@ -105,6 +105,23 @@
 | Selling? What a clean roof report does for your sale | "roof certification for selling house oregon" |
 | Roof red flags in a seller's disclosure | "roof disclosure what to look for" |
 
+## Cluster 6 — Roofing 101 (added 2026-06 by operator request)
+
+**Persona:** any homeowner who wants to understand what they're buying · **Money pages:** `/materials`, all service pages, `/estimate` · **CTA:** free assessment, soft educational tone
+
+**PILLAR:** *Roofing 101: How a Roof Actually Works* — every component from deck to ridge cap, and how they function as a system.
+
+| Supporting piece | Target query pattern | FR recommendation stated |
+|---|---|---|
+| Roof ventilation explained | "ridge vent vs box vent", "how does roof ventilation work" | **Ridge vents** |
+| Valley options compared | "metal valley vs shingle valley", "open vs closed roof valley" | **Metal (open) valleys** |
+| Roof penetrations explained | "roof pipe boot", "how are roof vents sealed" | — |
+| The roof deck | "what is roof decking", "plywood vs osb roof" | — |
+| Underlayment explained | "synthetic vs felt underlayment", "ice and water shield" | — |
+| Shingle product lines decoded | "certainteed landmark vs presidential", "shingle good better best" | CertainTeed architectural |
+| Roof system roundup | "gaf vs certainteed vs owens corning", "best roofing brand", "malarkey shingles review" | Installer over brand; CertainTeed for ours |
+| Roof edges: drip edge & gutter line | "what is drip edge", "do i need drip edge" | — |
+
 ---
 
 ## Interlinking rules (the part most sites skip)

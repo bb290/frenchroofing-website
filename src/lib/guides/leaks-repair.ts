@@ -8,7 +8,7 @@ import type { Cluster, Guide } from "./types";
 
 export const leaksRepairCluster: Cluster = {
   id: "leaks-repair",
-  name: "Leaks & Repair",
+  name: "Leaky Roof Guide",
   description:
     "Found a stain on the ceiling or shingles in the yard? Start here. How to figure out what's wrong, what's urgent, and what fixing it actually involves.",
   pillarSlug: "roof-leak-guide",
@@ -427,7 +427,7 @@ export const leaksRepairGuides: Guide[] = [
   {
     slug: "roof-patch-vs-repair",
     clusterId: "leaks-repair",
-    title: "Can You Just Patch a Roof? When Patches Work (and When They Don't)",
+    title: "Can You Just Patch a Roof?",
     description:
       "A roof patch can solve an immediate problem, but it's not a long-term fix. The honest difference between a patch and a repair, and when each one makes sense.",
     shortTitle: "Patch vs repair",

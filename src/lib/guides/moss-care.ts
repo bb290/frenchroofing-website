@@ -6,7 +6,7 @@ import type { Cluster, Guide } from "./types";
 
 export const mossCareCluster: Cluster = {
   id: "moss-care",
-  name: "Moss & Oregon Roof Care",
+  name: "Roof Maintenance Guide",
   description:
     "Living under Doug firs in the wettest corner of the country? This series covers moss, debris, gutters, and the maintenance habits that keep an Oregon roof going strong.",
   pillarSlug: "moss-on-roof-oregon",
@@ -144,7 +144,7 @@ export const mossCareGuides: Guide[] = [
   {
     slug: "does-moss-damage-roof-shingles",
     clusterId: "moss-care",
-    title: "Does Moss Actually Damage Roof Shingles? (Yes. Here's How.)",
+    title: "Does Moss Actually Damage Roof Shingles?",
     description:
       "Moss isn't just a cosmetic problem on an Oregon roof. Here's exactly how it shortens shingle life, how fast it happens, and what to do about it.",
     shortTitle: "Does moss damage shingles?",
@@ -344,7 +344,7 @@ export const mossCareGuides: Guide[] = [
   {
     slug: "zinc-strips-moss-prevention",
     clusterId: "moss-care",
-    title: "Zinc Strips for Roof Moss: What They Actually Do (and Don't)",
+    title: "Zinc Strips for Roof Moss: What They Actually Do",
     description:
       "Zinc strips help slow moss growth near the ridge, but they're not the force field the packaging suggests. An honest look at what works for moss prevention on Oregon roofs.",
     shortTitle: "Do zinc strips work?",

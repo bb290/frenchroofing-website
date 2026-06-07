@@ -17,9 +17,11 @@ export function LocalBusinessJsonLd() {
       "@type": "Person",
       name: COMPANY.founder,
     },
+    // Street address intentionally omitted (operator privacy decision,
+    // 2026-06). City/state/zip + areaServed is the service-area-business
+    // pattern; do not re-add streetAddress.
     address: {
       "@type": "PostalAddress",
-      streetAddress: COMPANY.address.street,
       addressLocality: COMPANY.address.city,
       addressRegion: COMPANY.address.state,
       postalCode: COMPANY.address.zip,
