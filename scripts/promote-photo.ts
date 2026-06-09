@@ -375,7 +375,12 @@ Hard rules from BRAND.md (apply to every platform, non-negotiable):
 
 Per-platform rules: see platforms.md (provided below). The Instagram caption is the canonical source. The other three variants are re-cast for their surface, not re-invented. Same hook, same story, same specifics. Different length, register, and CTA.`;
 
-  const userPrompt = `## Brand bible
+  // Prompt-cached prefix: constant across every photo (rules + brand + platforms + crew bios).
+  // cache_read tokens don't count toward Sonnet's ITPM rate limit, so this is mostly free on
+  // repeat calls within the 5-minute cache window.
+  const constantSystem = `${systemPrompt}
+
+## Brand bible
 
 ${brand}
 
@@ -383,19 +388,21 @@ ${brand}
 
 ${platforms}
 
-## Pillar (${pillarSlug})
+## Crew bios reference
+
+${crewBios}`;
+
+  // Cached within a pillar's batch: the pillar brief + exemplar.
+  const pillarSystem = `## Pillar (${pillarSlug})
 
 ${pillarMd}
 
 ## Pillar canonical example
 
-${exemplar || "_no exemplar locked yet for this pillar; use pillar.md hook patterns and BRAND.md voice as reference._"}
+${exemplar || "_no exemplar locked yet for this pillar; use pillar.md hook patterns and BRAND.md voice as reference._"}`;
 
-## Crew bios reference
-
-${crewBios}
-
-## This post
+  // Per-photo (uncached): the only part that varies between requests.
+  const userContent = `## This post
 
 Photo file: ${photo}
 ${contextNote ? `Context from the person who sorted this photo:\n${contextNote}` : "No context note was provided. Infer the subject from the filename."}
@@ -405,10 +412,13 @@ Submit all four platform variants via the publish_post tool. Do not return prose
   const requestBody = JSON.stringify({
     model,
     max_tokens: 4000,
-    system: systemPrompt,
+    system: [
+      { type: "text", text: constantSystem, cache_control: { type: "ephemeral" } },
+      { type: "text", text: pillarSystem, cache_control: { type: "ephemeral" } },
+    ],
     tools: [PUBLISH_POST_TOOL],
     tool_choice: { type: "tool", name: "publish_post" },
-    messages: [{ role: "user", content: userPrompt }],
+    messages: [{ role: "user", content: userContent }],
   });
 
   // Retry on 429 (rate limit) / 529 (overloaded), honoring retry-after, so batch
@@ -416,6 +426,11 @@ Submit all four platform variants via the publish_post tool. Do not return prose
   const MAX_RETRIES = 15;
   type AnthropicResponse = {
     content: Array<{ type: string; name?: string; input?: PerPlatformCaptions }>;
+    usage?: {
+      input_tokens?: number;
+      cache_creation_input_tokens?: number;
+      cache_read_input_tokens?: number;
+    };
   };
   let data: AnthropicResponse | null = null;
   for (let attempt = 0; ; attempt++) {
@@ -446,6 +461,13 @@ Submit all four platform variants via the publish_post tool. Do not return prose
     throw new Error(`Anthropic API ${response.status}: ${await response.text()}`);
   }
   if (!data) throw new Error("no response from Anthropic after retries");
+
+  if (data.usage) {
+    const u = data.usage;
+    console.error(
+      `  tokens: billed_in=${u.input_tokens ?? 0} cache_write=${u.cache_creation_input_tokens ?? 0} cache_read=${u.cache_read_input_tokens ?? 0} [${photo}]`,
+    );
+  }
   const toolUse = data.content.find((b) => b.type === "tool_use" && b.name === "publish_post");
   if (!toolUse?.input) {
     throw new Error(`No publish_post tool_use in API response: ${JSON.stringify(data)}`);
