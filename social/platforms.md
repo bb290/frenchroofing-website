@@ -1,6 +1,6 @@
 ---
 client: french-roofing
-last-updated: 2026-05-07
+last-updated: 2026-06-09
 spec-version: 2.1
 ---
 
@@ -22,6 +22,7 @@ spec-version: 2.1
 - The Instagram caption is the **canonical source**. Other platform variants are re-cast for that platform's audience and surface, not re-invented.
 - Each platform's CTA matches the surface rule from `BRAND.md` §10.
 - Tagline `Got You Covered!` is rationed brand-wide to max 1 in 6 posts (counted across the post folder, not per platform).
+- Geography: name the priority cities (Damascus, Clackamas, Happy Valley), a specific covered city from `BRAND.md` §9, or "the Damascus area." Never use broad-region phrasing like "Portland metro" or "greater Portland" (see `BRAND.md` §9).
 
 ---
 

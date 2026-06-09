@@ -34,7 +34,7 @@ spec-version: 2.1
 
 ## 1. One-liner
 
-A residential and commercial roofing company in Damascus, Oregon, family-owned since 2014, serving the greater Portland metro area with the kind of work you'd put on your grandma's house.
+A residential and commercial roofing company in Damascus, Oregon, family-owned since 2014, serving Damascus, Clackamas, Happy Valley, and the surrounding communities within about 20 miles, with the kind of work you'd put on your grandma's house.
 
 ## 2. Mission and promise
 
@@ -171,7 +171,7 @@ The themes every piece of French Roofing content should ladder back to.
 - **Priority cities (SEO/content focus):** Damascus, Clackamas, Happy Valley
 - **Full coverage:** Gresham, Oregon City, Milwaukie, Lake Oswego, Tualatin, West Linn, Sandy, Estacada, Boring, Troutdale, Fairview, Wood Village, Gladstone, Johnson City, Canby (edge), SE Portland neighborhoods (Lents, Powellhurst-Gilbert, Foster-Powell, Woodstock).
 
-Local content references only cities in this list unless explicitly expanded.
+Local content references only cities in this list unless explicitly expanded. In customer-facing copy, name the priority cities (Damascus, Clackamas, Happy Valley) or a specific covered city, or say "the Damascus area." Do **not** use broad-region phrasing like "Portland metro," "greater Portland," or "Portland metro area" in posts or page copy. It dilutes the local-SEO focus and was deliberately retired.
 
 ## 10. Services and CTAs
 

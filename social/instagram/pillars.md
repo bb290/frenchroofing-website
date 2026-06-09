@@ -1,7 +1,7 @@
 ---
 client: french-roofing
 platform: instagram
-last-updated: 2026-05-07
+last-updated: 2026-06-09
 spec-version: 2.1
 ---
 
@@ -11,7 +11,7 @@ spec-version: 2.1
 >
 > **Brand source of truth:** `clients/French_Roofing/.claude/BRAND.md`. All voice, CTA, NAP, hashtags, and colors come from there. Pillars only define their own scope, photos, and rules.
 >
-> **Triage owner:** Brittany. All photos land in pillar `photos/` folders via JobNimbus exports, Sean emails, or quarterly video extracts.
+> **Intake and sort:** photos and videos are dropped into `assets/images/1.intake`, then a weekly human-run Claude Cowork session routes each into `assets/images/2.sorted/<pillar>` with a context note (see `KEWL.md`). `scripts/promote-photo.ts` then turns a sorted photo into a finished post folder under this pillar's `posts/` and archives the original to `assets/images/3.moved-to-social/`.
 
 ## Cadence
 
@@ -24,7 +24,7 @@ spec-version: 2.1
 
 | Pillar | Slug | Mix | Status | Last run | Posts shipped |
 |---|---|---|---|---|---|
-| Educational | `educational` | 30% | `setup` | _never_ | 0 |
+| Educational | `educational` | 30% | `active` | 2026-05-14 | 0 |
 | Before / After | `before-after` | 30% | `deferred-to-v2` | _never_ | 0 |
 | Crew & Community | `crew-community` | 20% | `active` | 2026-05-06 | 1 |
 | Personal Brand (Sean) | `personal-brand` | 20% | `active` | _never_ | 0 |
@@ -62,14 +62,18 @@ When a campaign runs, the folder shape is `social/instagram/campaigns/<campaign-
 ```
 social/instagram/evergreen/<pillar-slug>/
 ├── pillar.md                 ← this pillar's brief + frontmatter status
-├── photos/                   ← input library (Brittany triages here)
-└── posts/                    ← generated posts land here
-    └── <YYYY-MM-DD-slug>/
-        ├── caption.md
+├── POST-EXEMPLAR.md          ← canonical post structure for the pillar
+├── photos/                   ← legacy input library for the older evergreen-generate path
+└── posts/                    ← finished posts land here
+    └── <YYYY-MM-DD-stem>/
+        ├── og.png            ← baked image (photo + grey gradient + logo)
+        ├── caption-instagram.md   ← + caption-facebook / -linkedin / -gmb
+        ├── caption.md        ← mirrors Instagram (backwards-compat)
         ├── overlay.txt
-        ├── schedule.json
-        └── <photo file or symlink>
+        └── schedule.json
 ```
+
+`promote` takes its input from the queue at `assets/images/2.sorted/<pillar-slug>/`, not this pillar's `photos/` folder. The `photos/` folder remains only for the older pool-based `evergreen-generate.ts` path.
 
 ### Before/After variant
 
@@ -86,7 +90,7 @@ Each `<job-slug>` is one publishable pair. Posts still land under `before-after/
 
 ### Photo reuse rule
 
-A photo cannot be reused within 90 days of last publish. `/evergreen-generate` tracks this against each pillar's `posts/` history.
+In the `promote` path there is no reuse: each photo is promoted once, then its original is moved out of the queue to `assets/images/3.moved-to-social/`. The 90-day reuse rule still applies to the older `evergreen-generate.ts` pool path, which picks from each pillar's `photos/` folder and tracks reuse against `posts/` history.
 
 ### Dry pillar fallback
 
