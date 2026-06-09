@@ -340,6 +340,10 @@ const PUBLISH_POST_TOOL = {
   },
 } as const;
 
+function sleep(ms: number): Promise<void> {
+  return new Promise((r) => setTimeout(r, ms));
+}
+
 async function generateCaptions(
   pillarSlug: string,
   photo: string,
@@ -398,30 +402,50 @@ ${contextNote ? `Context from the person who sorted this photo:\n${contextNote}`
 
 Submit all four platform variants via the publish_post tool. Do not return prose. The Instagram caption follows the pillar's word-count target. The other three follow platforms.md.`;
 
-  const response = await fetch("https://api.anthropic.com/v1/messages", {
-    method: "POST",
-    headers: {
-      "x-api-key": apiKey,
-      "anthropic-version": "2023-06-01",
-      "content-type": "application/json",
-    },
-    body: JSON.stringify({
-      model,
-      max_tokens: 4000,
-      system: systemPrompt,
-      tools: [PUBLISH_POST_TOOL],
-      tool_choice: { type: "tool", name: "publish_post" },
-      messages: [{ role: "user", content: userPrompt }],
-    }),
+  const requestBody = JSON.stringify({
+    model,
+    max_tokens: 4000,
+    system: systemPrompt,
+    tools: [PUBLISH_POST_TOOL],
+    tool_choice: { type: "tool", name: "publish_post" },
+    messages: [{ role: "user", content: userPrompt }],
   });
 
-  if (!response.ok) {
-    throw new Error(`Anthropic API ${response.status}: ${await response.text()}`);
-  }
-
-  const data = (await response.json()) as {
+  // Retry on 429 (rate limit) / 529 (overloaded), honoring retry-after, so batch
+  // runs ride a low org rate limit instead of failing.
+  const MAX_RETRIES = 15;
+  type AnthropicResponse = {
     content: Array<{ type: string; name?: string; input?: PerPlatformCaptions }>;
   };
+  let data: AnthropicResponse | null = null;
+  for (let attempt = 0; ; attempt++) {
+    const response = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: {
+        "x-api-key": apiKey,
+        "anthropic-version": "2023-06-01",
+        "content-type": "application/json",
+      },
+      body: requestBody,
+    });
+    if (response.ok) {
+      data = (await response.json()) as AnthropicResponse;
+      break;
+    }
+    if ((response.status === 429 || response.status === 529) && attempt < MAX_RETRIES) {
+      const retryAfter = parseInt(response.headers.get("retry-after") ?? "", 10);
+      const waitMs = Number.isFinite(retryAfter)
+        ? retryAfter * 1000 + 500
+        : Math.min(60000, 2000 * 2 ** attempt);
+      console.warn(
+        `  rate limited (HTTP ${response.status}); waiting ${Math.round(waitMs / 1000)}s, retry ${attempt + 1}/${MAX_RETRIES} [${photo}]`,
+      );
+      await sleep(waitMs);
+      continue;
+    }
+    throw new Error(`Anthropic API ${response.status}: ${await response.text()}`);
+  }
+  if (!data) throw new Error("no response from Anthropic after retries");
   const toolUse = data.content.find((b) => b.type === "tool_use" && b.name === "publish_post");
   if (!toolUse?.input) {
     throw new Error(`No publish_post tool_use in API response: ${JSON.stringify(data)}`);
