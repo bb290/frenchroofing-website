@@ -106,7 +106,7 @@ export default function WarrantiesPage() {
                 Workmanship Warranty
               </p>
               <p className="mt-1 text-sm text-gray-600">
-                Standard on every roof.
+                Minimum standard on every roof.
               </p>
             </div>
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-8 text-center">
