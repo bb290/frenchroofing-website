@@ -59,7 +59,7 @@ const warrantyFAQs = [
   {
     question: "Does my warranty transfer if I sell my home?",
     answer:
-      "Yes - let us know if there is a change of ownership, and we\u2019ll update both the workmanship and manufacturer warranty on your behalf.",
+      "Yes - let us know if there is a change of ownership, and we\u2019ll update both the workmanship and manufacturer warranty on your behalf. And be sure to transfer your maintenance records to the new owner!",
   },
   {
     question: "What should I do if I notice a problem with my roof?",
