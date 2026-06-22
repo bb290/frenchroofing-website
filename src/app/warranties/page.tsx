@@ -97,7 +97,10 @@ export default function WarrantiesPage() {
       <section className="bg-white py-12 px-4 border-b border-gray-100">
         <div className="mx-auto max-w-4xl">
           <p className="text-center text-sm font-semibold uppercase tracking-wide text-[#d85024]">
-            Your Standard Coverage
+            Standard Coverage
+          </p>
+          <p className="mt-2 text-center text-gray-600">
+            Included on every French Roofing roof replacement installation.
           </p>
           <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-8 text-center">
