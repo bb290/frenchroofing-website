@@ -218,8 +218,7 @@ export default function WarrantiesPage() {
                 </p>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                This is our promise that the work was done right. The
-                workmanship warranty covers installation errors - if something
+                This is our promise that the work was done right. If something
                 goes wrong because of how the roof was installed, we come back
                 and fix it at no cost to you.
               </p>
