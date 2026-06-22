@@ -44,12 +44,12 @@ const warrantyFAQs = [
   {
     question: "How long is French Roofing\u2019s workmanship warranty?",
     answer:
-      "Every French Roofing installation comes with a standard workmanship warranty. The specific duration is outlined in your project contract. This covers any installation-related issues \u2014 if we made an error, we come back and fix it at no cost to you.",
+      "Every French Roofing installation comes with a workmanship warranty at no extra cost: 5 years on our 30-year shingle systems and 10 years on our 50-year shingle systems. It covers any installation-related issue \u2014 if we made an error, we come back and fix it at no cost to you. Your exact term is written into your project contract.",
   },
   {
     question: "What does the CertainTeed manufacturer warranty cover?",
     answer:
-      "CertainTeed\u2019s manufacturer warranty covers defects in the roofing materials themselves. Because French Roofing is CertainTeed Certified, your installation may qualify for enhanced coverage that\u2019s longer and more comprehensive than the standard manufacturer warranty, potentially including labor costs for material defects.",
+      "CertainTeed\u2019s manufacturer warranty covers defects in the roofing materials themselves. Most of our roofs use CertainTeed Landmark shingles, which carry a 30-year manufacturer warranty against material defects; 50-year shingle systems run longer. Because French Roofing is CertainTeed Certified, you can also register for extended CertainTeed coverage that lengthens the term and can include labor costs for material defects.",
   },
   {
     question: "Will my warranty be voided if I don\u2019t maintain my roof?",
@@ -128,19 +128,31 @@ export default function WarrantiesPage() {
               <p className="text-sm font-medium text-[#d85024] mb-3">
                 From CertainTeed
               </p>
+              <div className="mb-4 rounded-lg bg-[#ffbd59]/15 px-4 py-3">
+                <p className="text-3xl font-bold text-[#092e5e] leading-none">
+                  30 years
+                </p>
+                <p className="text-sm text-gray-600 mt-1">
+                  Standard manufacturer warranty on CertainTeed Landmark
+                  shingles, the shingle we install on most homes.
+                </p>
+              </div>
               <p className="text-gray-600 leading-relaxed mb-4">
                 This warranty covers defects in the roofing materials
                 themselves. If a shingle fails prematurely because of a
-                manufacturing issue, CertainTeed stands behind it.
+                manufacturing defect, CertainTeed stands behind it. Most of our
+                roofs are built with CertainTeed Landmark shingles, which carry
+                a 30-year manufacturer warranty. Step up to a 50-year shingle
+                system and the manufacturer coverage runs longer.
               </p>
               <p className="text-gray-600 leading-relaxed">
                 Because French Roofing is{" "}
                 <strong className="text-[#092e5e]">CertainTeed Certified</strong>,
-                your installation may qualify for{" "}
-                <strong className="text-[#092e5e]">enhanced manufacturer warranties</strong>{" "}
-                - longer coverage periods and protection that can include
-                labor costs for material defects. This is a real, tangible
-                benefit of hiring a certified contractor.
+                you can also register for{" "}
+                <strong className="text-[#092e5e]">extended CertainTeed coverage</strong>{" "}
+                that lengthens the term and can add labor for material defects.
+                Want the exact term for your shingle? We&apos;ll spell it out on
+                your estimate.
               </p>
             </div>
 
@@ -167,18 +179,26 @@ export default function WarrantiesPage() {
               <p className="text-sm font-medium text-[#d85024] mb-3">
                 From French Roofing
               </p>
+              <div className="mb-4 rounded-lg bg-[#ffbd59]/15 px-4 py-3">
+                <p className="text-3xl font-bold text-[#092e5e] leading-none">
+                  5&ndash;10 years
+                </p>
+                <p className="text-sm text-gray-600 mt-1">
+                  Included on every roof at no extra cost: 5 years on 30-year
+                  shingle systems, 10 years on 50-year shingle systems.
+                </p>
+              </div>
               <p className="text-gray-600 leading-relaxed mb-4">
                 This is our promise that the work was done right. The
-                workmanship warranty covers installation errors - if
-                something goes wrong because of how the roof was installed, we
-                come back and fix it at no cost to you.
+                workmanship warranty covers installation errors - if something
+                goes wrong because of how the roof was installed, we come back
+                and fix it at no cost to you.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Every French Roofing job includes a standard workmanship
-                warranty. We stand behind our crew&apos;s work because we train
+                It comes standard on every French Roofing job, with nothing to
+                add on. We stand behind our crew&apos;s work because we train
                 them, we supervise them, and we hold ourselves to a high
-                standard. Specific warranty terms are detailed in your project
-                contract.
+                standard. Your exact term is written into your project contract.
               </p>
             </div>
           </div>
