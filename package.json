@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "ebooks": "node scripts/generate-ebooks.mjs",
-    "promote": "npx tsx scripts/promote-photo.ts"
+    "promote": "npx tsx scripts/promote-photo.ts",
+    "deploy": "bash scripts/deploy.sh"
   },
   "dependencies": {
     "@vercel/blob": "^2.4.0",

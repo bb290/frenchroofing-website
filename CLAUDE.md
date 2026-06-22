@@ -7,6 +7,23 @@ This file governs all AI-assisted work for French Roofing. It defines brand stan
 
 ---
 
+## Deploying (how site edits go live)
+
+The live site (frenchroofing.com) is hosted on Vercel and deploys from the `main` branch of `bb290/frenchroofing-website`. **Edits do not appear on the live site until they are committed and pushed to `main`.** Saving a file locally, or committing without pushing, changes nothing that visitors see.
+
+To ship a change:
+
+```
+npm run deploy                 # commits pending changes + pushes, triggers build
+npm run deploy "commit message"  # same, with your own commit message
+```
+
+This pushes `main` to GitHub, which auto-triggers a Vercel production build. The site updates ~20-30s later. Watch the build with `npx vercel ls`.
+
+If you ever make an edit and don't see it on the live site, the cause is almost always that it was never pushed. Check with `git status` and `git log origin/main..main` (unpushed commits), then run `npm run deploy`.
+
+---
+
 ## Company Overview
 - **Brand / DBA:** French Roofing
 - **Legal Entity:** French Construction LLC dba French Roofing
