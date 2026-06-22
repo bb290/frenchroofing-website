@@ -323,52 +323,6 @@ export default function WarrantiesPage() {
         </div>
       </section>
 
-      {/* ── How to File a Claim ── */}
-      <section className="py-16 px-4 bg-white">
-        <div className="mx-auto max-w-4xl">
-          <h2 className="text-3xl font-bold text-[#092e5e] mb-4 text-center">
-            How to File a Warranty Claim
-          </h2>
-          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
-            If something doesn&apos;t look right, don&apos;t stress. Here&apos;s
-            how the process works.
-          </p>
-          <div className="space-y-8">
-            {[
-              {
-                number: "1",
-                title: "Contact Us",
-                description: `Reach out through our website and let us know what you\u2019re seeing. A photo helps if you have one, but it\u2019s not required. We\u2019ll ask a few questions to understand the situation.`,
-              },
-              {
-                number: "2",
-                title: "We Inspect",
-                description:
-                  "We\u2019ll schedule a time to come out and look at your roof. Our team will assess the issue, take photos, and determine whether it falls under your manufacturer warranty, workmanship warranty, or something else entirely.",
-              },
-              {
-                number: "3",
-                title: "We Fix It",
-                description:
-                  "If it\u2019s a warranty issue, we take care of it. No runaround, no finger-pointing. If it turns out to be something outside warranty coverage (like storm damage), we\u2019ll explain your options honestly and help you figure out the best next step.",
-              },
-            ].map((step) => (
-              <div key={step.number} className="flex gap-6 items-start">
-                <div className="flex-shrink-0 h-12 w-12 rounded-full bg-[#d85024] text-white flex items-center justify-center text-xl font-bold">
-                  {step.number}
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-[#092e5e] mb-1">
-                    {step.title}
-                  </h3>
-                  <p className="text-gray-600">{step.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ── Maintenance Tips ── */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="mx-auto max-w-4xl">
@@ -428,6 +382,52 @@ export default function WarrantiesPage() {
 
       {/* ── Related guides ── */}
       <RelatedGuides slugs={["roofing-warranties-explained", "shingle-product-lines", "roofing-101"]} />
+
+      {/* ── How to File a Claim ── */}
+      <section className="py-16 px-4 bg-white">
+        <div className="mx-auto max-w-4xl">
+          <h2 className="text-3xl font-bold text-[#092e5e] mb-4 text-center">
+            How to File a Warranty Claim
+          </h2>
+          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+            If something doesn&apos;t look right, don&apos;t stress. Here&apos;s
+            how the process works.
+          </p>
+          <div className="space-y-8">
+            {[
+              {
+                number: "1",
+                title: "Contact Us",
+                description: `Reach out through our website and let us know what you\u2019re seeing. A photo helps if you have one, but it\u2019s not required. We\u2019ll ask a few questions to understand the situation.`,
+              },
+              {
+                number: "2",
+                title: "We Inspect",
+                description:
+                  "We\u2019ll schedule a time to come out and look at your roof. Our team will assess the issue, take photos, and determine whether it falls under your manufacturer warranty, workmanship warranty, or something else entirely.",
+              },
+              {
+                number: "3",
+                title: "We Fix It",
+                description:
+                  "If it\u2019s a warranty issue, we take care of it. No runaround, no finger-pointing. If it turns out to be something outside warranty coverage (like storm damage), we\u2019ll explain your options honestly and help you figure out the best next step.",
+              },
+            ].map((step) => (
+              <div key={step.number} className="flex gap-6 items-start">
+                <div className="flex-shrink-0 h-12 w-12 rounded-full bg-[#d85024] text-white flex items-center justify-center text-xl font-bold">
+                  {step.number}
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-[#092e5e] mb-1">
+                    {step.title}
+                  </h3>
+                  <p className="text-gray-600">{step.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* ── CTA ── */}
       <CTABanner
