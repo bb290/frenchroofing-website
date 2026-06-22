@@ -237,11 +237,10 @@ export default function WarrantiesPage() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="mx-auto max-w-4xl">
           <h2 className="text-3xl font-bold text-[#092e5e] mb-4 text-center">
-            What&apos;s Covered - and What&apos;s Not
+            What&apos;s Covered
           </h2>
           <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
-            We believe in being upfront. Here&apos;s an honest look at what
-            falls under warranty coverage and what doesn&apos;t.
+            The Fine Print.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Covered */}
