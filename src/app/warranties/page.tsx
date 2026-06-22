@@ -82,7 +82,6 @@ export default function WarrantiesPage() {
       <section className="bg-[#092e5e] py-16 px-4">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="text-4xl sm:text-5xl font-bold text-white">
-            Your Roof, Protected -{" "}
             <span className="text-[#ffbd59]">Warranty Details</span>
           </h1>
           <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
