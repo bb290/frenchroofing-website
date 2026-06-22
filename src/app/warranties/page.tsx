@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description:
       "5-year minimum workmanship warranty plus a 30-year CertainTeed manufacturer warranty on every roof we install. Here's exactly what's covered.",
     url: `${COMPANY.url}/warranties`,
-    images: ogImage("French Roofing Warranty", "/images/sean-peace-sign-near-hole-in-roof.jpg"),
+    images: ogImage("French Roofing Warranty", "/images/brian-tear-off-thumbs-up.jpg"),
   },
 };
 
