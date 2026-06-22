@@ -59,7 +59,7 @@ const warrantyFAQs = [
   {
     question: "Does my warranty transfer if I sell my home?",
     answer:
-      "CertainTeed manufacturer warranties are generally transferable to a new homeowner, though coverage may be adjusted. Our workmanship warranty terms regarding transfer are outlined in your contract. If you\u2019re buying or selling a home with a French Roofing roof, contact us and we\u2019ll help sort out the details.",
+      "Yes - let us know if there is a change of ownership, and we\u2019ll update both the workmanship and manufacturer warranty on your behalf.",
   },
   {
     question: "What should I do if I notice a problem with my roof?",
