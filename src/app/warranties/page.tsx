@@ -86,7 +86,7 @@ export default function WarrantiesPage() {
             <span className="text-[#ffbd59]">Warranty Details</span>
           </h1>
           <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
-            Here&apos;s how we&apos;ve got you covered.
+            Here&apos;s how we got you covered.
           </p>
         </div>
       </section>
