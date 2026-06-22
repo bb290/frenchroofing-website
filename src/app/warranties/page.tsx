@@ -125,14 +125,9 @@ export default function WarrantiesPage() {
       {/* ── Two Types of Warranty ── */}
       <section className="py-16 px-4 bg-white">
         <div className="mx-auto max-w-4xl">
-          <h2 className="text-3xl font-bold text-[#092e5e] mb-4 text-center">
-            Two Types of Warranty, Two Layers of Protection
+          <h2 className="text-3xl font-bold text-[#092e5e] mb-12 text-center">
+            2 Layers of Protection
           </h2>
-          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
-            When French Roofing installs your roof, you&apos;re covered by two
-            separate warranties. Here&apos;s what each one does and why both
-            matter.
-          </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Manufacturer Warranty */}
             <div className="bg-gray-50 rounded-xl border border-gray-200 p-6 sm:p-8">
