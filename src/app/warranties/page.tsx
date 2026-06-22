@@ -220,12 +220,6 @@ export default function WarrantiesPage() {
                 goes wrong because of how the roof was installed, we come back
                 and fix it at no cost to you.
               </p>
-              <p className="text-gray-600 leading-relaxed">
-                It comes standard on every French Roofing job, with nothing to
-                add on. We stand behind our crew&apos;s work because we train
-                them, we supervise them, and we hold ourselves to a high
-                standard. Your exact term is written into your project contract.
-              </p>
             </div>
           </div>
         </div>
