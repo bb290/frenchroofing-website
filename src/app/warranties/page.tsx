@@ -54,7 +54,7 @@ const warrantyFAQs = [
   {
     question: "Will my warranty be voided if I don\u2019t maintain my roof?",
     answer:
-      "Both manufacturer and workmanship warranties typically require that you maintain your roof in reasonable condition. That means keeping gutters clean, addressing moss, and not making unauthorized modifications. Normal wear and tear won\u2019t void your warranty, but neglect can. When in doubt, reach out and we\u2019ll help you understand what\u2019s needed.",
+      "Yes. Both manufacturer and workmanship warranties require that you maintain your roof in reasonable condition. That means keeping gutters clean, addressing moss, and not making unauthorized modifications. Check out the French Roofing Maintenance Program to ensure peace of mind.",
   },
   {
     question: "Does my warranty transfer if I sell my home?",
