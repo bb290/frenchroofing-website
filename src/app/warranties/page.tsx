@@ -64,7 +64,7 @@ const warrantyFAQs = [
   {
     question: "What should I do if I notice a problem with my roof?",
     answer:
-      "Contact us through our website. Don\u2019t wait, don\u2019t try to fix it yourself, and don\u2019t hire someone else to patch it (that can actually void your warranty). We\u2019ll send someone out to inspect, determine whether it\u2019s a warranty issue, and take care of it from there.",
+      "Schedule a roof assessment ASAP via our website. Don\u2019t wait, don\u2019t try to fix it yourself, and don\u2019t hire someone else to patch it (that can actually void your warranty). We\u2019ll send someone out to inspect, determine whether it\u2019s a warranty issue, and make a recommendation from there.",
   },
 ];
 
