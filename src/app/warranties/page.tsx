@@ -380,6 +380,32 @@ export default function WarrantiesPage() {
               </div>
             ))}
           </div>
+
+          {/* Maintenance program CTA */}
+          <div className="mt-12 rounded-2xl bg-[#092e5e] px-6 py-10 sm:px-10 text-center">
+            <p className="text-sm font-semibold uppercase tracking-wide text-[#ffbd59]">
+              Recurring Maintenance Program
+            </p>
+            <h3 className="mt-2 text-2xl sm:text-3xl font-bold text-white">
+              Rather Not Climb Up There Yourself?
+            </h3>
+            <p className="mx-auto mt-3 max-w-2xl text-gray-300 leading-relaxed">
+              Let us handle the upkeep that keeps your warranty intact. Our
+              recurring maintenance program has you covered twice a year -
+              debris and gutter clearing, moss prevention, and a full
+              inspection - so the small stuff gets caught before it ever turns
+              into a claim. One simple annual price, no contracts with hidden
+              fees.
+            </p>
+            <div className="mt-7 flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a
+                href="/services/maintenance"
+                className="rounded-lg bg-[#d85024] px-8 py-4 text-lg font-semibold text-white hover:bg-[#c04520] transition-colors"
+              >
+                See the Maintenance Program
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
