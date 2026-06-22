@@ -93,6 +93,35 @@ export default function WarrantiesPage() {
         </div>
       </section>
 
+      {/* ── Standard Coverage at a Glance ── */}
+      <section className="bg-white py-12 px-4 border-b border-gray-100">
+        <div className="mx-auto max-w-4xl">
+          <p className="text-center text-sm font-semibold uppercase tracking-wide text-[#d85024]">
+            Your Standard Coverage
+          </p>
+          <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="rounded-xl border border-gray-200 bg-gray-50 p-8 text-center">
+              <p className="text-5xl font-bold text-[#092e5e]">5 Years</p>
+              <p className="mt-2 text-lg font-semibold text-[#3e3d3b]">
+                Workmanship Warranty
+              </p>
+              <p className="mt-1 text-sm text-gray-600">
+                Standard on every roof, included at no extra cost.
+              </p>
+            </div>
+            <div className="rounded-xl border border-gray-200 bg-gray-50 p-8 text-center">
+              <p className="text-5xl font-bold text-[#092e5e]">30 Years</p>
+              <p className="mt-2 text-lg font-semibold text-[#3e3d3b]">
+                Manufacturer Warranty
+              </p>
+              <p className="mt-1 text-sm text-gray-600">
+                On CertainTeed Landmark shingles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── Two Types of Warranty ── */}
       <section className="py-16 px-4 bg-white">
         <div className="mx-auto max-w-4xl">
