@@ -86,9 +86,7 @@ export default function WarrantiesPage() {
             <span className="text-[#ffbd59]">Warranty Details</span>
           </h1>
           <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
-            A new roof is a big investment, and you deserve to know exactly
-            what&apos;s covered. Here&apos;s a straightforward look at the
-            warranties that come with every French Roofing installation.
+            Here&apos;s how we&apos;ve got you covered.
           </p>
         </div>
       </section>
