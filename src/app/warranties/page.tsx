@@ -4,12 +4,20 @@ import CTABanner from "@/components/CTABanner";
 import RelatedGuides from "@/components/RelatedGuides";
 import FAQSection from "@/components/FAQSection";
 import { COMPANY } from "@/lib/constants";
+import { ogImage } from "@/lib/og";
 
 export const metadata: Metadata = {
-  title: `Roofing Warranty Details | ${COMPANY.name}`,
+  title: `Roofing Warranty | ${COMPANY.name}`,
   description:
-    "Understand what your roof warranty covers and what it doesn\u2019t. French Roofing offers both manufacturer and workmanship warranties on every job. Damascus, OR.",
+    "Every French Roofing roof comes covered: a 5-year minimum workmanship warranty plus a 30-year CertainTeed manufacturer warranty on Landmark shingles. Here's exactly what's covered. Damascus, OR.",
   alternates: { canonical: `${COMPANY.url}/warranties` },
+  openGraph: {
+    title: "French Roofing Warranty - Got You Covered",
+    description:
+      "5-year minimum workmanship warranty plus a 30-year CertainTeed manufacturer warranty on every roof we install. Here's exactly what's covered.",
+    url: `${COMPANY.url}/warranties`,
+    images: ogImage("French Roofing Warranty", "/images/sean-peace-sign-near-hole-in-roof.jpg"),
+  },
 };
 
 const maintenanceTips = [
