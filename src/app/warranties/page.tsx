@@ -180,8 +180,6 @@ export default function WarrantiesPage() {
                 you can also register for{" "}
                 <strong className="text-[#092e5e]">extended CertainTeed coverage</strong>{" "}
                 that lengthens the term and can add labor for material defects.
-                Want the exact term for your shingle? We&apos;ll spell it out on
-                your estimate.
               </p>
             </div>
 
