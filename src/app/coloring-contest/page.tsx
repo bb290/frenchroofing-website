@@ -158,6 +158,17 @@ export default function ColoringContestPage() {
             <p className="mt-4 text-sm text-gray-500">
               Black and white, prints on any home printer.
             </p>
+            <p className="mt-2 text-sm text-gray-500">
+              Want to spread the word?{" "}
+              <a
+                href="/coloring-contest-flyer.pdf"
+                download
+                className="font-semibold text-[#d85024] underline underline-offset-2"
+              >
+                Download the contest flyer
+              </a>{" "}
+              to print and share.
+            </p>
           </div>
         </div>
       </section>
