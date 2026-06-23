@@ -254,10 +254,10 @@ export default function ColoringContestPage() {
             Mark Your Calendar
           </p>
           <p className="mt-3 text-2xl sm:text-3xl font-bold text-[#092e5e]">
-            Entries due by midnight Monday, June 29
+            Entries due by midnight Monday, June 29, 2026
           </p>
           <p className="mt-2 text-gray-600">
-            Winners announced Tuesday, June 30 on our social pages.
+            Winners announced Tuesday, June 30, 2026 on our social pages.
           </p>
         </div>
       </section>
