@@ -7,7 +7,7 @@ import { COMPANY } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `2026 Coloring Contest | ${COMPANY.name}`,
   description:
-    "Download the free French Roofing coloring sheet, color it your way, and post it to win. Three grand prizes, plus every entry wins a prize. Enter from home or at our booth. Damascus, OR.",
+    "Download the free French Roofing coloring sheet, color it your way, and post it to win. Three grand prizes, plus every entry wins a prize. Find us at the 2026 Oak Grove Festival on Saturday, June 27, or enter from home. Damascus, OR.",
   alternates: { canonical: `${COMPANY.url}/coloring-contest` },
   openGraph: {
     title: "French Roofing 2026 Coloring Contest",
@@ -93,8 +93,8 @@ export default function ColoringContestPage() {
           </h1>
           <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
             Color, post, and win. Three grand prizes up for grabs, and every
-            single entry wins a prize. Enter from home or at our booth, no event
-            ticket needed.
+            single entry wins a prize. Come find our booth at the 2026 Oak Grove
+            Festival this Saturday, or enter right from home, no ticket needed.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
@@ -111,6 +111,24 @@ export default function ColoringContestPage() {
               How to Enter
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* ── Festival callout ── */}
+      <section className="bg-[#ffbd59] py-5 px-4">
+        <div className="mx-auto max-w-4xl flex flex-col sm:flex-row items-center justify-center gap-x-6 gap-y-2 text-center">
+          <p className="text-base sm:text-lg font-bold text-[#092e5e]">
+            🎪 Find our booth at the 2026 Oak Grove Festival &middot; Saturday,
+            June 27 &middot; 11am to 4pm
+          </p>
+          <a
+            href="https://www.facebook.com/share/1E4PCJHLeZ/?mibextid=wwXIfr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm font-semibold text-[#092e5e] underline underline-offset-2 whitespace-nowrap"
+          >
+            Festival details
+          </a>
         </div>
       </section>
 
