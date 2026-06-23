@@ -271,8 +271,9 @@ export default function ColoringContestPage() {
           <ul className="space-y-3 text-sm text-gray-600 leading-relaxed list-disc pl-5">
             <li>Open to all ages. One entry per person.</li>
             <li>
-              Entries accepted Saturday, June 27 through midnight Monday, June 29.
-              Winners announced Tuesday, June 30 on our social pages.
+              Entries accepted Saturday, June 27, 2026 through midnight Monday,
+              June 29, 2026. Winners announced Tuesday, June 30, 2026 on our
+              social pages.
             </li>
             <li>
               Entrants under 18 must have a parent or guardian post and enter on
