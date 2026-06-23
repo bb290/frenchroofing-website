@@ -5,21 +5,21 @@ import CTABanner from "@/components/CTABanner";
 import { COMPANY } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Kids Coloring Contest | ${COMPANY.name}`,
+  title: `2026 Coloring Contest | ${COMPANY.name}`,
   description:
     "Download the free French Roofing coloring sheet, color it your way, and post it to win. Three grand prizes, plus every entry wins a prize. Enter from home or at our booth. Damascus, OR.",
   alternates: { canonical: `${COMPANY.url}/coloring-contest` },
   openGraph: {
-    title: "French Roofing Kids Coloring Contest",
+    title: "French Roofing 2026 Coloring Contest",
     description:
       "Download the free coloring sheet, color it, and post it to win. Three grand prizes, plus every entry wins!",
     url: `${COMPANY.url}/coloring-contest`,
     images: [
       {
-        url: "/api/og?photo=%2Fimages%2Fcoloring-contest-art.png&headline=Kids%20Coloring%20Contest&gradient=light&gradientColor=blue&width=1200&height=630",
+        url: "/api/og?photo=%2Fimages%2Fcoloring-contest-art.png&headline=2026%20Coloring%20Contest&gradient=light&gradientColor=blue&width=1200&height=630",
         width: 1200,
         height: 630,
-        alt: "French Roofing Kids Coloring Contest",
+        alt: "French Roofing 2026 Coloring Contest",
       },
     ],
   },
@@ -89,7 +89,7 @@ export default function ColoringContestPage() {
             French Roofing
           </p>
           <h1 className="mt-3 text-4xl sm:text-5xl font-bold text-white">
-            Kids <span className="text-[#ffbd59]">Coloring Contest</span>
+            2026 <span className="text-[#ffbd59]">Coloring Contest</span>
           </h1>
           <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
             Color, post, and win. Three grand prizes up for grabs, and every
