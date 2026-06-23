@@ -41,11 +41,6 @@ const maintenanceTips = [
     description:
       "A professional roof inspection every few years catches small issues before they become expensive repairs. It also documents the condition of your roof, which is helpful if you ever need to file a warranty claim.",
   },
-  {
-    title: "Don\u2019t Walk on Your Roof",
-    description:
-      "It\u2019s tempting to climb up and check things out yourself, but walking on your roof can crack shingles and void your warranty. Leave inspections to the professionals \u2014 that\u2019s what we\u2019re here for.",
-  },
 ];
 
 const warrantyFAQs = [
