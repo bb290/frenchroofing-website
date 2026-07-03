@@ -146,3 +146,27 @@
 2. **Volume check before writing:** run the query patterns above through Semrush/GSC to sequence within clusters (don't let volume *pick* the topics — the journey already did).
 3. **Build order suggestion:** Cluster 3 (moss — strongest local edge, least national competition) → Cluster 2 (leaks — highest urgency intent) → Cluster 1 (replacement — highest ticket) → 5 → 4.
 4. **Cadence:** pillar first or supporting-first per cluster? Either works; pillar-first gives supporting pieces something to link to on day one.
+
+---
+
+## Backlog (added 2026-07-03 — the source for `fr-blog` weekly batches)
+
+Written guides live in `src/lib/guides/` (clusters 1, 2, 3, 6 complete: 36 guides). The `fr-blog` skill consumes this list top-down, honoring the same rules as the tables above. Status flips to `written <date>` as pieces ship.
+
+### Wave 1 — Cluster 4: Storm Damage & Insurance (pillar + 8, per the cluster table above) — all `backlog`
+### Wave 2 — Cluster 5: Buying or Selling a Home (pillar + 8, per the cluster table above) — all `backlog`
+
+### Wave 3 — City expansions (city focus order is LOCKED: Damascus → Clackamas → Happy Valley)
+
+Per city, the four highest-intent cluster angles localized (NOT thin copies; each grounded in that city's housing stock, tree cover, and weather exposure):
+
+| # | Slug pattern | Angle | Status |
+|---|---|---|---|
+| 1 | roof-replacement-<city> | replacement decision localized | backlog ×3 cities |
+| 2 | roof-leak-repair-<city> | leak triage localized | backlog ×3 cities |
+| 3 | moss-removal-<city> | moss/care localized (Doug fir density angle) | backlog ×3 cities |
+| 4 | roof-inspection-<city> | buying/selling + storm angle localized | backlog ×3 cities |
+
+### Replenishment rule
+
+When fewer than 12 backlog items remain, `fr-blog` appends a "Proposed additions" block here (topic, cluster/persona, query pattern, rationale) and flags it in the run report. Proposals are NOT written until the operator approves them into the backlog.

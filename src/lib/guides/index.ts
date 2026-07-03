@@ -3,6 +3,7 @@ import { leaksRepairCluster, leaksRepairGuides } from "./leaks-repair";
 import { mossCareCluster, mossCareGuides } from "./moss-care";
 import { replacementCluster, replacementGuides } from "./replacement-decision";
 import { roofing101Cluster, roofing101Guides } from "./roofing-101";
+import { stormInsuranceCluster, stormInsuranceGuides } from "./storm-insurance";
 
 // Add new clusters here as they're written.
 // Strategy + build order: operations/seo/topic-cluster-map.md
@@ -11,6 +12,7 @@ export const CLUSTERS: Cluster[] = [
   replacementCluster,
   leaksRepairCluster,
   mossCareCluster,
+  stormInsuranceCluster,
 ];
 
 export const GUIDES: Guide[] = [
@@ -18,6 +20,7 @@ export const GUIDES: Guide[] = [
   ...replacementGuides,
   ...leaksRepairGuides,
   ...mossCareGuides,
+  ...stormInsuranceGuides,
 ];
 
 export function getGuide(slug: string): Guide | undefined {

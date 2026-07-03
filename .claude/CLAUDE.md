@@ -68,6 +68,7 @@ Default CTA for outbound copy: **"Schedule a FREE Roof Assessment with French Ro
 While at `autonomy: tight`:
 - All social copy gates to a human review before posting.
 - All public-facing pages and city pages get reviewed before deploy.
+- **Exception (operator, 2026-07-03): `fr-blog` guide batches auto-deploy** when they pass `operations/seo/QUALITY-GATE.md` clean AND `npm run build` succeeds. Gate-FAIL or A5 doubt-flagged guides hold for review. This carve-out covers `/guides/*` content only; every other page type stays human-reviewed. `fr-carousel` output stays `ready-to-publish` until the Metricool publishing step (its own authorization) exists.
 - Any SOP edit preserves original operational logic, never paraphrase or summarize away SOP steps.
 
 ### Tooling
