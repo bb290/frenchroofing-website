@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { SERVICES, SERVICE_AREAS, COMPANY } from "@/lib/constants";
 import { GUIDES } from "@/lib/guides";
+import { POSTS } from "@/lib/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = COMPANY.url;
@@ -14,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/gallery`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/financing`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/guides`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
+    { url: `${base}/blog`, lastModified: now, changeFrequency: "daily", priority: 0.7 },
   ];
 
   const guidePages: MetadataRoute.Sitemap = GUIDES.map((g) => ({
@@ -21,6 +23,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(g.datePublished),
     changeFrequency: "monthly" as const,
     priority: g.isPillar ? 0.8 : 0.6,
+  }));
+
+  const blogPages: MetadataRoute.Sitemap = POSTS.map((p) => ({
+    url: `${base}/blog/${p.slug}`,
+    lastModified: new Date(p.datePublished),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
   }));
 
   const servicePages: MetadataRoute.Sitemap = SERVICES.map((s) => ({
@@ -39,5 +48,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
-  return [...staticPages, ...servicePages, ...serviceCityPages, ...guidePages];
+  return [...staticPages, ...servicePages, ...serviceCityPages, ...guidePages, ...blogPages];
 }

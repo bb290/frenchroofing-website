@@ -153,7 +153,10 @@
 
 Written guides live in `src/lib/guides/` (clusters 1, 2, 3, 6 complete: 36 guides). The `fr-blog` skill consumes this list top-down, honoring the same rules as the tables above. Status flips to `written <date>` as pieces ship.
 
-### Wave 1 — Cluster 4: Storm Damage & Insurance (pillar + 8, per the cluster table above) — all `backlog`
+### Wave 1 — Cluster 4: Storm Damage & Insurance (pillar + 6 supporting, per the cluster table above)
+
+- PILLAR `roof-storm-damage-insurance-oregon` — **written 2026-07-03 (fr-blog test run, gate PASS, deployed)**
+- 6 supporting pieces — `backlog` (each links up to the pillar; add "More on this" links down from the pillar as they ship)
 ### Wave 2 — Cluster 5: Buying or Selling a Home (pillar + 8, per the cluster table above) — all `backlog`
 
 ### Wave 3 — City expansions (city focus order is LOCKED: Damascus → Clackamas → Happy Valley)
@@ -170,3 +173,24 @@ Per city, the four highest-intent cluster angles localized (NOT thin copies; eac
 ### Replenishment rule
 
 When fewer than 12 backlog items remain, `fr-blog` appends a "Proposed additions" block here (topic, cluster/persona, query pattern, rationale) and flags it in the run report. Proposals are NOT written until the operator approves them into the backlog.
+
+### Blog article backlog (`type: article` — the recurring weekly stream at /blog, added 2026-07-03)
+
+Angles the evergreen guides deliberately don't cover: seasonal, timely, narrow long-tail. Each links up to its related guide.
+
+| # | Slug | Angle | Related guide | Status |
+|---|---|---|---|---|
+| 1 | atmospheric-river-roof-checklist | What Oregon's atmospheric river forecasts mean for your roof, this week | roof-storm-damage-insurance-oregon | backlog |
+| 2 | fall-gutter-prep-oregon | The October gutter routine that prevents January leaks | moss-on-roof-oregon | backlog |
+| 3 | roof-moss-in-summer-why-now | Why summer is the right time to deal with moss (counterintuitive) | moss-on-roof-oregon | backlog |
+| 4 | new-roof-first-year-checklist | You just got a new roof: the first-year owner's checklist | roof-replacement-guide | backlog |
+| 5 | roof-warranty-paperwork-what-to-keep | The warranty paperwork worth keeping (and where people lose it) | roof-replacement-guide | backlog |
+| 6 | hoa-roof-rules-portland-metro | Navigating HOA roof rules in the Portland metro | roofing-101 | backlog |
+| 7 | solar-panels-roof-age-question | Thinking about solar? Check your roof's age first | roof-replacement-guide | backlog |
+| 8 | skylight-leak-or-condensation | Skylight dripping: leak or condensation? How to tell | roof-leak-guide | backlog |
+| 9 | roof-ventilation-attic-heat | Why your upstairs is roasting: attic ventilation explained | roofing-101 | backlog |
+| 10 | christmas-lights-without-roof-damage | Hanging holiday lights without wrecking your shingles | moss-on-roof-oregon | backlog |
+| 11 | wind-storm-aftermath-quick-check | The 10-minute post-windstorm roof check from your driveway | roof-storm-damage-insurance-oregon | backlog |
+| 12 | roofing-scams-after-storms-oregon | Storm-chaser red flags we see after every Oregon wind event | roof-storm-damage-insurance-oregon | backlog |
+
+Replenishment: same rule as guides — under 12 total backlog items, propose additions for operator approval.

@@ -1,11 +1,16 @@
 ---
 name: fr-blog
-description: Generate a weekly batch of French Roofing guides (default 10) from the topic-cluster-map backlog, gate each against QUALITY-GATE.md, attach images, build-check, and auto-deploy to frenchroofing.com. Use on "/fr-blog", "generate the weekly guide batch", or the weekly cron run.
+description: Generate a weekly batch of French Roofing content (default 10) from the topic-cluster-map backlog - evergreen guides AND recurring blog articles - gate each against QUALITY-GATE.md, attach images, build-check, and auto-deploy to frenchroofing.com. Use on "/fr-blog", "generate the weekly batch", or the weekly cron run.
 ---
 
-# FR Blog — weekly guide batch for French Roofing
+# FR Blog — weekly content batch for French Roofing
 
-Writes net-new guides that extend the topic-cluster system. Guides are **TypeScript content modules**, not CMS entries: a new guide is code in `src/lib/guides/<cluster>.ts`, registered in `index.ts`, rendered by `/guides/[slug]` with AEO structure and FAQPage schema emitted automatically.
+Writes two content types, both in-repo (no CMS, no third-party blog service — the vendor blog at blog.frenchroofing.com was migrated in-house 2026-07 and the subdomain 301s here):
+
+1. **Guides** — the evergreen topic-cluster system: TypeScript modules in `src/lib/guides/<cluster>.ts`, registered in `index.ts`, rendered at `/guides/[slug]`. For cluster backlog items (pillars, supporting pieces, city expansions).
+2. **Blog articles** — the recurring weekly stream: JSON objects appended to `src/lib/blog/posts.json` (schema: `src/lib/blog/types.ts`), rendered at `/blog/[slug]`. Fresh, long-tail, seasonal topics in Sean's voice; each sets `relatedGuide` to its evergreen pillar where one exists. Never duplicate a guide's topic as an article; write the angle the guide doesn't cover and link up.
+
+The backlog in `operations/seo/topic-cluster-map.md` marks each item `type: guide` or `type: article`. Consume top-down regardless of type.
 
 **Publish policy (per operator, 2026-07-03): gate-PASS batches auto-deploy.** The gate is the reviewer. Held back only on: gate FAIL after 3 iterations, an A5 doubt-flag (insurance/legal/cost claim the writer could not verify), or a failed `npm run build`. Everything else commits and deploys; the run report lists it all.
 

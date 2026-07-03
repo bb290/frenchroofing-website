@@ -26,15 +26,20 @@ const nextConfig: NextConfig = {
         destination: "/estimate",
         permanent: true,
       },
-      // Blog lives on its own subdomain.
+      // Blog moved in-house 2026-07 (was a third-party service on the
+      // blog. subdomain). Once blog.frenchroofing.com is added as a domain
+      // on this Vercel project, these host-based rules 301 every old
+      // subdomain URL to the same path on www, preserving link equity.
       {
-        source: "/blog",
-        destination: "https://blog.frenchroofing.com",
+        source: "/",
+        has: [{ type: "host", value: "blog.frenchroofing.com" }],
+        destination: "https://www.frenchroofing.com/blog",
         permanent: true,
       },
       {
-        source: "/blog/:path*",
-        destination: "https://blog.frenchroofing.com",
+        source: "/:path*",
+        has: [{ type: "host", value: "blog.frenchroofing.com" }],
+        destination: "https://www.frenchroofing.com/:path*",
         permanent: true,
       },
       {
