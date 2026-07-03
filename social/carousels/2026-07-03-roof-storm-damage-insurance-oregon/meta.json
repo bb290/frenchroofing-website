@@ -3,7 +3,33 @@
   "sourceUrl": "https://www.frenchroofing.com/guides/roof-storm-damage-insurance-oregon",
   "created": "2026-07-03",
   "slides": 7,
-  "status": "ready-to-publish",
-  "platforms": ["instagram", "facebook", "linkedin", "gmb"],
-  "gate": "PASS: all claims from the source guide; no banned words; no pressure tactics; no street address; tagline not used; 21/21 slides rendered (3 sizes) + LinkedIn PDF"
+  "status": "scheduled",
+  "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin",
+    "gmb"
+  ],
+  "gate": "PASS: all claims from the source guide; no banned words; no pressure tactics; no street address; tagline not used; 21/21 slides rendered (3 sizes) + LinkedIn PDF",
+  "metricool": {
+    "brandId": 6211784,
+    "posts": {
+      "instagram": {
+        "id": 345314575,
+        "at": "2026-07-04T18:15 PT"
+      },
+      "facebook": {
+        "id": 345314744,
+        "at": "2026-07-04T10:24 PT"
+      },
+      "linkedin": {
+        "id": 345314946,
+        "at": "2026-07-04T08:12 PT (Sean personal, PDF doc post)"
+      },
+      "gmb": {
+        "id": 345315025,
+        "at": "2026-07-04T11:05 PT"
+      }
+    }
+  }
 }

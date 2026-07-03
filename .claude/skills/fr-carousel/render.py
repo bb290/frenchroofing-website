@@ -86,7 +86,9 @@ def slide_html(slide, idx, total, size):
     elif kind == "cta":
         foot_right_class, foot_right = "tag", "frenchroofing.com/estimate"
     else:
-        foot_right_class, foot_right = "tag", "Damascus, OR · 971-376-8722"
+        # No phone number on social creative (operator, 2026-07-03):
+        # we drive people to the website, not the phone.
+        foot_right_class, foot_right = "tag", "Damascus, OR · frenchroofing.com"
     body_html = f"<p>{body}</p>" if body else ""
     return PAGE.format(bg=bg, fg=fg, muted=muted, accent=accent, body_fg=body_fg,
                        hsize=hsize, counter=counter, header=header,

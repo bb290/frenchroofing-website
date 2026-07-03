@@ -4,4 +4,4 @@ One carousel per weekly fr-blog batch, prepared by the `fr-carousel` skill. Stat
 
 | Date | Source | Folder | Status |
 |---|---|---|---|
-| 2026-07-03 | guides/roof-storm-damage-insurance-oregon | carousels/2026-07-03-roof-storm-damage-insurance-oregon/ | ready-to-publish |
+| 2026-07-03 | guides/roof-storm-damage-insurance-oregon | carousels/2026-07-03-roof-storm-damage-insurance-oregon/ | scheduled 2026-07-04 via Metricool (IG 18:15, FB 10:24, LI 08:12, GBP 11:05 PT) |
