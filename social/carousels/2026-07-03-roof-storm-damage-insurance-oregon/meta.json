@@ -13,23 +13,12 @@
   "gate": "PASS: all claims from the source guide; no banned words; no pressure tactics; no street address; tagline not used; 21/21 slides rendered (3 sizes) + LinkedIn PDF",
   "metricool": {
     "brandId": 6211784,
+    "scheduledFor": "2027-01-05 (storm season; moved from 2026-07-04 per operator: no storms in July)",
     "posts": {
-      "instagram": {
-        "id": 345314575,
-        "at": "2026-07-04T18:15 PT"
-      },
-      "facebook": {
-        "id": 345314744,
-        "at": "2026-07-04T10:24 PT"
-      },
-      "linkedin": {
-        "id": 345314946,
-        "at": "2026-07-04T08:12 PT (Sean personal, PDF doc post)"
-      },
-      "gmb": {
-        "id": 345315025,
-        "at": "2026-07-04T11:05 PT"
-      }
+      "linkedin": "08:12 PT",
+      "facebook": "10:24 PT",
+      "gmb": "11:05 PT",
+      "instagram": "18:15 PT"
     }
   }
 }

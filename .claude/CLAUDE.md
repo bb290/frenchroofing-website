@@ -63,6 +63,8 @@ Damascus, OR 97089
 
 Default CTA for outbound copy: **"Schedule a FREE Roof Assessment with French Roofing."** Variants are fine; high-pressure / scarcity tactics are not.
 
+- **No phone number on social media creative or captions (operator, 2026-07-03).** Social drives people to the website (frenchroofing.com / /estimate), not to phone calls. The NAP phone stays on web properties, GBP, and directories where NAP consistency requires it; it just doesn't go on social posts.
+
 ### Approval gates
 
 While at `autonomy: tight`:
