@@ -1,0 +1,19 @@
+{
+  "source": "guides/moss-on-roof-oregon",
+  "sourceUrl": "https://www.frenchroofing.com/guides/moss-on-roof-oregon",
+  "created": "2026-07-03",
+  "slides": 7,
+  "status": "scheduled",
+  "platforms": ["instagram", "facebook", "linkedin", "gmb"],
+  "gate": "PASS: all claims from the source guide; no banned words; no phone number; no pressure tactics; seasonality fit (moss = summer); 21/21 slides rendered",
+  "metricool": {
+    "brandId": 6211784,
+    "scheduledFor": "2026-07-07 (Tuesday; skipped July 4th holiday per operator)",
+    "posts": {
+      "linkedin": {"id": 345320162, "at": "08:24 PT, PDF doc post 'The Oregon Roof Moss Handbook'"},
+      "facebook": {"id": 345320191, "at": "10:12 PT"},
+      "gmb": {"id": 345320231, "at": "11:35 PT"},
+      "instagram": {"id": 345320256, "at": "18:45 PT"}
+    }
+  }
+}
