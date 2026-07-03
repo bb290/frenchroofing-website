@@ -1,0 +1,9 @@
+{
+  "source": "guides/roof-storm-damage-insurance-oregon",
+  "sourceUrl": "https://www.frenchroofing.com/guides/roof-storm-damage-insurance-oregon",
+  "created": "2026-07-03",
+  "slides": 7,
+  "status": "ready-to-publish",
+  "platforms": ["instagram", "facebook", "linkedin", "gmb"],
+  "gate": "PASS: all claims from the source guide; no banned words; no pressure tactics; no street address; tagline not used; 21/21 slides rendered (3 sizes) + LinkedIn PDF"
+}
