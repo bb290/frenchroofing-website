@@ -142,8 +142,8 @@ Pull a name, a number, a place, or a moment. Eight words max.
 
 Photos arrive from three sources:
 
-1. **JobNimbus**, existing task captures before/after pairs (mostly relevant for Before/After pillar, but crew shots from job sites land here)
-2. **Sean directly**, emails or texts photos when he has them
+1. **Housecall Pro**, job captures with before/after pairs (mostly relevant for Before/After pillar, but crew shots from job sites land here; replaced JobNimbus 2026-07)
+2. **Sean directly**, emails photos to Brittany when he has them (email, not text)
 3. **Quarterly video shoots**, still extracts of crew, team moments
 
 Brittany triages all three sources into `clients/french-roofing/social/instagram/evergreen/crew-community/photos/`. No filename convention required, Claude reads photos with vision to understand content. Optional `notes.txt` if a specific person/job/moment has context worth preserving (customer name, crew member tenure, story behind the moment).

@@ -1,0 +1,36 @@
+{
+  "post_id": "2026-07-03-crew-community-2025-11-28-christmas-tree-farm-wagon-012",
+  "client": "french-roofing",
+  "pillar": "crew-community",
+  "image": "og.png",
+  "image_url": "https://hk8cia1t81ogthgb.public.blob.vercel-storage.com/social/crew-community/2026-07-03-crew-community-2025-11-28-christmas-tree-farm-wagon-012.png",
+  "source": "../../../../assets/images/3.moved-to-social/crew-community_2025-11-28_christmas-tree-farm-wagon_012.heic",
+  "rendered": true,
+  "notes": "Promoted by scripts/promote-photo.ts; scheduled in Metricool 2026-07-03 (autoPublish on, review in Metricool planner).",
+  "platforms": {
+    "instagram": {
+      "status": "scheduled",
+      "scheduled_for": "2026-11-27T18:24:00-08:00",
+      "timezone": "America/Los_Angeles",
+      "published_id": 345347005
+    },
+    "facebook": {
+      "status": "scheduled",
+      "scheduled_for": "2026-11-27T10:21:00-08:00",
+      "timezone": "America/Los_Angeles",
+      "published_id": 345346988
+    },
+    "linkedin": {
+      "status": "scheduled",
+      "scheduled_for": "2026-11-27T08:27:00-08:00",
+      "timezone": "America/Los_Angeles",
+      "published_id": 345346981
+    },
+    "gmb": {
+      "status": "scheduled",
+      "scheduled_for": "2026-11-27T11:49:00-08:00",
+      "timezone": "America/Los_Angeles",
+      "published_id": 345346996
+    }
+  }
+}

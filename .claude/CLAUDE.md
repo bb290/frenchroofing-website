@@ -16,7 +16,7 @@ Promote this client by editing the `Current:` line above. The `/client-work` sta
 
 ## Toolkit reference
 
-This client folder uses the agents, skills, slash commands, and templates from the unbound-toolkit plugin. `.claude/settings.json` points at it. Do not duplicate toolkit files into this folder, reference them.
+This client folder uses the agents, skills, slash commands, and templates from the unbound-toolkit plugin, enabled via the workspace-level `~/Unbound/.claude/settings.json` (this folder's `.claude/settings.json` is empty `{}`). Do not duplicate toolkit files into this folder, reference them.
 
 ## Client-specific rules
 
@@ -75,10 +75,10 @@ While at `autonomy: tight`:
 
 ### Tooling
 
-- **Housecall Pro** is the system of record for jobs, customers, and estimates. Workflow logic should assume it as the operational hub.
-- **JobNimbus** for job tracking + before/after photo capture.
+- **Housecall Pro** is the system of record for jobs, customers, estimates, and job photos. Workflow logic should assume it as the sole operational hub. (JobNimbus retired 2026-07; Housecall Pro absorbed job tracking and photo capture.)
 - **Enhancify** for customer financing.
 - **Canva** for social templates.
+- **Communication channel (operator, 2026-07-11):** Sean and staff reach Brittany by email, never text, at **brittany@frenchexteriors.com** (her address for French Roofing work). Any workflow, doc, or skill that hands something to Brittany (photos, questions, escalations) routes through email.
 - CMS / marketing CRM: TBD, flag in any work that depends on them.
 
 ## Brand bible
@@ -93,10 +93,10 @@ The original social-media-engine strategy said "social commands read CLAUDE.md, 
 
 ## Bus factor
 
-Handoff documentation lives at `BUS-FACTOR.md` (root of this folder). _Currently deferred, flag as critical Tier 1 gap until created._
+Handoff documentation lives at `BUS-FACTOR.md` (root of this folder). It exists as of 2026-07; keep it current when ownership or process changes.
 
 ## Source material
 
 Original brand docs, voice samples, recordings, and other reference material that informed the brand bible should live in `.claude/source-material/`. That folder is for context, not output.
 
-The legacy root `CLAUDE.md` (predates spec v2.1) holds the original brand-content. It is **superseded by `.claude/BRAND.md`** but still contains operational hard-rules and SEO/AEO/SOP workstream definitions not yet ported. Do not delete the root `CLAUDE.md` until that content is migrated.
+The legacy brand bible (predates spec v2.1) is archived at `.claude/source-material/CLAUDE-legacy-2026-04.md`. It is **superseded by `.claude/BRAND.md`** but still contains SEO/AEO/SOP workstream definitions and company-story content not yet ported. The root `CLAUDE.md` was rewritten 2026-07-06 as a slim entry point.

@@ -155,8 +155,8 @@ Pull the lesson down to a single line of 6–8 words. Educational posts benefit 
 
 Photos arrive from four sources:
 
-1. **Sean directly** — close-ups he texts/emails Brittany during jobs (the most fertile source for this pillar)
-2. **JobNimbus** — existing task captures occasionally surface educational close-ups alongside before/after pairs
+1. **Sean directly** — close-ups he emails Brittany during jobs (email, not text; the most fertile source for this pillar)
+2. **Housecall Pro** — job captures occasionally surface educational close-ups alongside before/after pairs (replaced JobNimbus 2026-07)
 3. **Quarterly video shoots** — explicit teaching moments where Sean explains something to camera. Brittany extracts stills + clips
 4. **Blog post repurposing** — when a French Roofing blog post is published, the photos and key teaching points get cross-published to Instagram from this pillar
 

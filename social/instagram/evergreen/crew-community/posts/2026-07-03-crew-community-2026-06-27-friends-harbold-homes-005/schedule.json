@@ -1,0 +1,36 @@
+{
+  "post_id": "2026-07-03-crew-community-2026-06-27-friends-harbold-homes-005",
+  "client": "french-roofing",
+  "pillar": "crew-community",
+  "image": "og.png",
+  "image_url": "https://hk8cia1t81ogthgb.public.blob.vercel-storage.com/social/crew-community/2026-07-03-crew-community-2026-06-27-friends-harbold-homes-005.png",
+  "source": "../../../../assets/images/3.moved-to-social/crew-community_2026-06-27_friends-harbold-homes_005.jpg",
+  "rendered": true,
+  "notes": "Promoted by scripts/promote-photo.ts; scheduled in Metricool 2026-07-03 (autoPublish on, review in Metricool planner).",
+  "platforms": {
+    "instagram": {
+      "status": "scheduled",
+      "scheduled_for": "2026-07-25T18:19:00-07:00",
+      "timezone": "America/Los_Angeles",
+      "published_id": 345346750
+    },
+    "facebook": {
+      "status": "scheduled",
+      "scheduled_for": "2026-07-25T10:19:00-07:00",
+      "timezone": "America/Los_Angeles",
+      "published_id": 345346735
+    },
+    "linkedin": {
+      "status": "scheduled",
+      "scheduled_for": "2026-07-25T08:37:00-07:00",
+      "timezone": "America/Los_Angeles",
+      "published_id": 345346732
+    },
+    "gmb": {
+      "status": "scheduled",
+      "scheduled_for": "2026-07-25T11:54:00-07:00",
+      "timezone": "America/Los_Angeles",
+      "published_id": 345346744
+    }
+  }
+}

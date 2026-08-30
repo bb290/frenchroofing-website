@@ -34,8 +34,7 @@ spec-version: 2.1
   - The GitHub repo `bb290/frenchroofing-website` (currently under bb290 personal — **TODO:** transfer to a French Roofing org or document client read access)
   - The Vercel project `french-roofing` (project ID `prj_8cTUqtF9obC8Ik108ukqivkN7p4y` on team `team_IgVTOqFzJ2EbAdVwfopLCYOB`)
   - All social accounts (Facebook, Instagram, LinkedIn, YouTube, Google My Business)
-  - Housecall Pro tenant (system of record for jobs/customers/estimates)
-  - JobNimbus tenant (job tracking, photo capture)
+  - Housecall Pro tenant (system of record for jobs/customers/estimates, job tracking, and photo capture; absorbed JobNimbus, retired 2026-07)
   - Enhancify financing partnership
 
 - **What Unbound manages on the client's behalf:**
@@ -76,7 +75,7 @@ spec-version: 2.1
 | Social accounts | Facebook (`/FrenchRoofingLLC` slug — preserved), Instagram (`@frenchroofing`), LinkedIn (`/company/french-roofing`), YouTube (`@Frenchroofing`), Google My Business (share.google/JYDD8GxCgR1YwXii2) | **TODO:** document who has admin/editor on each |
 | File storage | **TODO** — Google Drive / Dropbox / SharePoint? | **TODO** |
 | Password vault | **TODO** — confirm 1Password vault name (e.g. `French-Roofing-Production`) | **TODO** |
-| Operational tools | Housecall Pro (system of record), JobNimbus (jobs + photos), Enhancify (financing), Canva (social templates) | Each has its own login — document admins per tool |
+| Operational tools | Housecall Pro (system of record, jobs + photos), Enhancify (financing), Canva (social templates) | Each has its own login — document admins per tool. JobNimbus retired 2026-07 |
 
 ## 4. System architecture
 
@@ -98,8 +97,7 @@ Public website
         └─ (planned) Vercel OG endpoint for social media auto-render
 
 Operational stack (independent of the website)
-        ├─ Housecall Pro  ← system of record (jobs, customers, estimates, invoices)
-        ├─ JobNimbus      ← job tracking + before/after photo capture tasks
+        ├─ Housecall Pro  ← system of record (jobs, customers, estimates, invoices, job tracking, photos)
         ├─ Enhancify      ← customer financing
         └─ Canva          ← social media templates (not yet wired into automation)
 
@@ -138,7 +136,6 @@ _none — `PRIORITIES.md` and `content/CALENDAR.md` not yet created_
 | Domain `frenchroofing.com` | **TODO** registrar | **TODO** | **TODO** annual | — |
 | Vercel hosting | Vercel | Currently free tier (verify) | — | bb290 |
 | Housecall Pro | Housecall Pro | **TODO** | **TODO** | French Roofing |
-| JobNimbus | JobNimbus | **TODO** | **TODO** | French Roofing |
 | Enhancify | Enhancify | per-customer fees | — | French Roofing |
 | CertainTeed certification | CertainTeed | **TODO** | **TODO** | French Roofing |
 | Metricool Advanced (planned) | Metricool | $53/mo (Unbound, shared) | monthly | Unbound Consulting |
@@ -147,7 +144,7 @@ _none — `PRIORITIES.md` and `content/CALENDAR.md` not yet created_
 **Common-issue troubleshooting.**
 - *Site is down:* Check Vercel project status. Check DNS (`dig frenchroofing.com`). Check whether the latest commit on `main` built clean.
 - *Form submissions not arriving:* No form handler is wired up yet — **TODO** when contact form ships.
-- *Photo upload fails in Housecall Pro / JobNimbus:* Out of scope for the website — escalate to the tool's vendor.
+- *Photo upload fails in Housecall Pro:* Out of scope for the website — escalate to the tool's vendor.
 - *Squirrel in roof vent:* see `Squirrel Coming out of roof vent.mov` for documented precedent. Not actually a bus-factor issue.
 
 ## 7. Local development setup
@@ -199,7 +196,7 @@ Step-by-step "if Brittany is unreachable" guide.
 2. **Take inventory.** Walk this file top to bottom. Every TODO is a question to ask Sean or pull from his password vault.
 3. **Get into hosting.** Ask Sean for Vercel access or have him add a new admin to team `team_IgVTOqFzJ2EbAdVwfopLCYOB`. Repo at `https://github.com/bb290/frenchroofing-website` — request transfer or invite.
 4. **Get into domain + DNS.** Run `whois frenchroofing.com` to identify registrar; then ask Sean for credentials (in his vault, not this file).
-5. **Get into Housecall Pro and JobNimbus.** These hold the operational data — not Unbound's, but you'll need them to keep marketing aligned with what's happening on jobs.
+5. **Get into Housecall Pro.** It holds the operational data — not Unbound's, but you'll need them to keep marketing aligned with what's happening on jobs.
 6. **Sustain the website.** No code changes are required to keep `frenchroofing.com` up — Vercel keeps it live until billing or DNS lapses.
 7. **If the client wants to leave Unbound:**
    a. Transfer the GitHub repo (`bb290/frenchroofing-website` → French Roofing org).
