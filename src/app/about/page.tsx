@@ -371,6 +371,30 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* ── Recent work & community posts (Local Marketing Manager widgets) ── */}
+      <section className="py-20 px-4 bg-white">
+        <div className="mx-auto max-w-7xl">
+          <p className="text-sm font-semibold text-[#d85024] uppercase tracking-wider mb-2 text-center">
+            Out in the Field
+          </p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#092e5e] mb-10 text-center">
+            Recent Work and Updates
+          </h2>
+          <div className="space-y-12">
+            <iframe
+              src="https://www.localmarketingmanager.com/api/images/french-roofing-image-widget"
+              style={{ width: "100%", border: "none", minHeight: "480px" }}
+              title="Images Widget"
+            />
+            <iframe
+              src="https://www.localmarketingmanager.com/api/local-posts/french-roofing-local-posts-widget?objectFit=cover"
+              style={{ width: "100%", minHeight: "480px", border: "none" }}
+              title="Local Posts Widget"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* ── FAQ ── */}
       <FAQSection
         title="About French Roofing - FAQs"
