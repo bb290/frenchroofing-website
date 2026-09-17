@@ -64,6 +64,8 @@ Damascus, OR 97089
 Default CTA for outbound copy: **"Schedule a FREE Roof Assessment with French Roofing."** Variants are fine; high-pressure / scarcity tactics are not.
 
 - **No phone number on social media creative or captions (operator, 2026-07-03).** Social drives people to the website (frenchroofing.com / /estimate), not to phone calls. The NAP phone stays on web properties, GBP, and directories where NAP consistency requires it; it just doesn't go on social posts.
+- **That includes Google Business Profile POSTS (operator, 2026-09-17).** The GBP profile listing keeps the phone for NAP; GBP posts scheduled through Metricool do not carry it. CTA is the website (FREE roof assessment / Instant Roof Quote at frenchroofing.com).
+- **No "family-owned" line in social captions (operator, 2026-09-17).** Reads corny. BRAND.md still lists it as a proof point for other surfaces; on social, leave it out.
 
 ### Approval gates
 

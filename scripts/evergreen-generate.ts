@@ -141,7 +141,7 @@ const PUBLISH_POST_TOOL = {
       facebook: {
         type: "string",
         description:
-          "Facebook caption. Same hook and story as Instagram, slightly longer if natural. Direct URL CTA (frenchroofing.com or 971-376-8722). No dashes block. Hashtags optional, max 2-3.",
+          "Facebook caption. Same hook and story as Instagram, slightly longer if natural. Direct URL CTA (frenchroofing.com). Never include a phone number (no phone on social, operator rule 2026-07-03). No dashes block. Hashtags optional, max 2-3.",
       },
       linkedin: {
         type: "string",
@@ -151,7 +151,7 @@ const PUBLISH_POST_TOOL = {
       gmb: {
         type: "string",
         description:
-          "Google My Business post. 100-250 words, short. Front-load city + service for local search. Phone-forward CTA (Call 971-376-8722). No hashtags.",
+          "Google My Business post. 100-250 words, short. Front-load city + service for local search. Website CTA (Schedule a FREE roof assessment or get an Instant Roof Quote at frenchroofing.com). Never include a phone number and never call the company family-owned (operator rules 2026-09-17). No hashtags.",
       },
     },
     required: ["instagram", "facebook", "linkedin", "gmb"],
