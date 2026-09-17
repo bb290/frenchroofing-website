@@ -20,7 +20,9 @@ The bottleneck for any roofing company doing social media is photos and consiste
 ```
 [Anyone] → Drop photos / videos (.jpg, .heic, .mov) into assets/images/1.intake
 [Housecall Pro] → `npm run hcp:photos` pulls job + estimate photos into the same folder,
-                  each with a customer-free context note (<stem>.txt)
+                  pre-labeled <city>_<YYYY-MM-DD>_<context>_<job|est><number>-<seq>, each with a
+                  customer-free context note (<stem>.txt). UNKNOWN in a name = label it by hand;
+                  PAPERWORK- = a document, discard it
          ↓
 [Weekly Claude Cowork session]  (human judgment, not automated code)
   • View each file (convert .heic, pull frames from .mov to see content)

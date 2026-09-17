@@ -17,7 +17,7 @@ Marketing site + content factory for French Construction LLC dba French Roofing 
 - `npm run ebooks` — regenerate ebook PDFs
 - `npm run promote` — photo-to-post pipeline (`scripts/promote-photo.ts`)
 - `npm run hcp:check` — Housecall Pro API connection test (prints counts only, no customer data). Client: `scripts/lib/hcp.ts` (read-only by design)
-- `npm run hcp:photos -- [--since 90] [--dry-run] [--inspect]` — pull Housecall Pro job/estimate photos into `assets/images/1.intake` with a PII-free context note; feeds the normal Kewl sort, never sorts or publishes itself
+- `npm run hcp:photos -- [--since 90] [--dry-run] [--inspect]` — pull Housecall Pro job/estimate photos into `assets/images/1.intake`, named `<city>_<YYYY-MM-DD>_<context>_<job|est><number>-<seq>` with a PII-free context note. Context is a Claude vision label (`scripts/lib/label-photo.ts`, default claude-opus-5, about a cent a photo); `UNKNOWN` means label by hand, `PAPERWORK-` means discard. Feeds the normal Kewl sort, never sorts or publishes itself
 - Watch deploys: `npx vercel ls`. Unpushed commits: `git log origin/main..main`.
 
 ## Env vars (values in `.env.local`, no template yet)
