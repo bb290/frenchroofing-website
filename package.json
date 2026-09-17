@@ -11,6 +11,9 @@
     "promote": "npx tsx scripts/promote-photo.ts",
     "hcp:check": "npx tsx scripts/hcp-check.ts",
     "hcp:photos": "npx tsx scripts/hcp-photos.ts",
+    "kewl:sheets": "npx tsx scripts/kewl-sheets.ts",
+    "kewl:sort": "npx tsx scripts/kewl-sort.ts",
+    "kewl:lint": "npx tsx scripts/kewl-lint.ts",
     "deploy": "bash scripts/deploy.sh"
   },
   "dependencies": {

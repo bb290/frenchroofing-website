@@ -71,7 +71,17 @@ e.g. `crew-community_2026-06-09_team-tearoff-ranch-home_001.jpg`
 
 ### Human touchpoints
 
-Two, and only two:
+> **Changed 2026-09-17 (operator decision).** The whole sequence below now runs unattended every
+> Wednesday via the `fr-weekly-kewl` skill (`.claude/skills/fr-weekly-kewl/SKILL.md`, fired by
+> `scripts/weekly-kewl.sh` from a macOS LaunchAgent). Claude does the pull, the sort, the promote,
+> and a caption review, then loads the posts into Metricool **as drafts**. The one remaining human
+> touchpoint is touchpoint 2: Brittany reviews and approves in Metricool. The sort is still
+> judgment work; the judgment is now written down in the skill, and anything uncertain is held
+> with a question for Sean instead of guessed. Touchpoint 1 below describes the original manual
+> sort and still applies to anything dropped into `1.intake` by hand between runs (the Wednesday
+> run sorts whatever is there).
+
+Originally two, and only two:
 
 1. **Weekly intake-and-sort (Claude Cowork).** A human-run session reads everything in `1.intake`, looks at each file, decides the pillar, renames it, adds context, and moves it into `2.sorted/<pillar>`. This is judgment work; pillar routing depends on what is actually in the photo, so it is **not** automated and **not** a cron job.
 2. **Draft review (Metricool).** Check the generated captions + image, tweak, approve.
@@ -117,8 +127,8 @@ These files are iterated continuously. As the system runs and Brittany reviews d
 - GitHub Actions cron (`.github/workflows/evergreen-instagram.yml`) — weekly cron + manual dispatch, opens PR for review
 
 **Still to build for v1:**
-- Metricool API integration — drafts are still uploaded manually; this is the gating piece for "sort, then only look again in Metricool"
-- Metered-queue cadence — a cron that runs `promote` on a few queued photos per week (about 3) so the queue self-paces instead of running `promote` by hand
+- ~~Metricool API integration~~ — done 2026-09-17 via the Metricool MCP connector: the weekly run creates drafts directly (create + read only; it cannot edit or approve)
+- ~~Metered-queue cadence~~ — done 2026-09-17: the Wednesday run promotes at most 3 photos and fills the next open Tue/Thu/Sat slots; the rest stay queued
 - Workflow continuously developed and improved
 
 **Moved out of v1 (2026-05-07):**

@@ -64,3 +64,6 @@ next-env.d.ts
 
 # Housecall Pro API dumps (customer PII, never commit)
 /operations/hcp-data/
+
+# weekly Kewl run logs, contact sheets, sort decisions (can show customer homes)
+/operations/kewl-runs/

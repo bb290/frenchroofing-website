@@ -371,6 +371,8 @@ Hard rules from BRAND.md (apply to every platform, non-negotiable):
 - Banned words and phrases: premier, industry-leading, rockstar, synergy, amazing team, cutting-edge, world-class, best-in-class.
 - Voice: down to earth, neighborly, light hearted. Sean talking, a roofer in Birkenstocks who's been on roofs for twenty years. Never salesy, never corporate, never high-pressure.
 - Tagline "Got You Covered!" is rationed across the WHOLE POST (not per platform). If you use it once on Instagram, do not use it on Facebook, LinkedIn, or GMB. Count once. Default off unless the moment earns it.
+- Truthfulness (operator review 2026-09-17, non-negotiable). You cannot see the photo; the context note is the ONLY source of facts about it. Do not invent anything the note does not say: no anecdotes or customer stories ("the homeowner had no idea"), no timing ("this week", "last Tuesday", "this morning") unless the note gives it, no prices or dollar figures, no statistics or odds ("nine times out of ten"), no lifespans or year counts unless the note gives them, no claims about how French Roofing gets hired or who it subcontracts for. If the note says a photo is from an inspection or estimate, never say or imply French Roofing did the work. If the note says not to name a city, do not name it. General roofing knowledge is fine when it is standard and you would bet a roofer would agree with every word; when unsure, leave it out.
+- Never include a phone number on any platform. Never describe the company as family-owned.
 - Voice person depends on the photo subject. The pillar's pillar.md has the rule. Follow it exactly across all four platforms (the voice person doesn't change between platforms, only the register and CTA shape change).
 
 Per-platform rules: see platforms.md (provided below). The Instagram caption is the canonical source. The other three variants are re-cast for their surface, not re-invented. Same hook, same story, same specifics. Different length, register, and CTA.`;
@@ -687,12 +689,24 @@ async function promote(rawPath: string, dryRun: boolean): Promise<Outcome> {
     return { kind: "error", src: rel(src), reason: `writing post folder failed: ${msg(err)}` };
   }
 
+  // 4b. Keep the facts the captioner was given next to the captions, so a reviewer (and
+  // kewl-lint) can check the copy against them. Best-effort; never blocks the post.
+  if (contextNote.trim()) {
+    await writeFile(join(postDir, "context-note.txt"), contextNote, "utf-8").catch(() => {});
+  }
+
   // 5. Archive the original (LAST). Post is already complete; surface clashes for manual fixup.
   let archiveStatus: string;
   try {
     archiveStatus = await archiveOriginal(src, archiveTarget);
   } catch (err) {
     return { kind: "error", src: rel(src), reason: `post written, but archive step failed: ${msg(err)}` };
+  }
+
+  // The note follows its photo into the archive instead of being orphaned in the queue.
+  const noteSrc = join(parent, `${stem}.txt`);
+  if (existsSync(noteSrc)) {
+    await rename(noteSrc, join(dirname(archiveTarget), `${stem}.txt`)).catch(() => {});
   }
 
   return { kind: "promoted", src: `${rel(src)}  (${archiveStatus})`, postDir: rel(postDir), archive: rel(archiveTarget), imageUrl };

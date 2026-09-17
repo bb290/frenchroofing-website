@@ -18,6 +18,8 @@ Marketing site + content factory for French Construction LLC dba French Roofing 
 - `npm run promote` — photo-to-post pipeline (`scripts/promote-photo.ts`)
 - `npm run hcp:check` — Housecall Pro API connection test (prints counts only, no customer data). Client: `scripts/lib/hcp.ts` (read-only by design)
 - `npm run hcp:photos -- [--since 90] [--dry-run] [--inspect]` — pull Housecall Pro job/estimate photos into `assets/images/1.intake`, named `<city>_<YYYY-MM-DD>_<context>_<job|est><number>-<seq>` with a PII-free context note. Context is a Claude vision label (`scripts/lib/label-photo.ts`, default claude-opus-5, about a cent a photo); `UNKNOWN` means label by hand, `PAPERWORK-` means discard. Feeds the normal Kewl sort, never sorts or publishes itself
+- **Weekly Kewl run (Wednesdays 7:17am, unattended):** LaunchAgent `com.unbound.frenchroofing.weekly-kewl` → `scripts/weekly-kewl.sh` → skill `fr-weekly-kewl`. Pull → sort → promote (max 3) → caption review → Metricool **drafts**; Brittany approves in Metricool. Report + logs: `operations/kewl-runs/` (gitignored). On demand: `/fr-weekly-kewl`. Plumbing check: `scripts/weekly-kewl.sh --smoke`. Off: `launchctl bootout gui/$(id -u)/com.unbound.frenchroofing.weekly-kewl`.
+- `npm run kewl:sheets` / `kewl:sort -- <decisions.json>` / `kewl:lint -- <post dirs>` — the sort and review helpers the weekly run uses
 - Watch deploys: `npx vercel ls`. Unpushed commits: `git log origin/main..main`.
 
 ## Env vars (values in `.env.local`, no template yet)
@@ -42,6 +44,8 @@ Marketing site + content factory for French Construction LLC dba French Roofing 
 - Never mix French Roofing content with any other client.
 
 ## Lessons learned
+
+- 2026-09-17: The captioner never sees the photo; the sort note is its only source of facts. A wrong note (chimney apron labeled a "saddle") produced a confident, wrong post, and thin notes produced invented stories, prices, and stats. Open the full image before writing a note, describe only what is visible, and keep `context-note.txt` with the post so captions can be checked against it.
 
 - 2026-07-06: Replaced 301-line legacy root CLAUDE.md (archived to `.claude/source-material/CLAUDE-legacy-2026-04.md`); it listed the logo as `assets/logo.png` — actual path is `assets/logo/logo.png`.
 - 2026-07-06: `.claude/settings.json` here is empty `{}`; the unbound-toolkit plugin is enabled from the workspace-level `~/Unbound/.claude/settings.json`.

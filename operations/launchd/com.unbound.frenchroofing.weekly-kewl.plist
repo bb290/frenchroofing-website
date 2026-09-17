@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.unbound.frenchroofing.weekly-kewl</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/unbound24/Unbound/clients/French_Roofing/scripts/weekly-kewl.sh</string>
+  </array>
+  <!-- Wednesdays 7:17am local. If the Mac is asleep then, launchd runs it at the next wake. -->
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Weekday</key><integer>3</integer>
+    <key>Hour</key><integer>7</integer>
+    <key>Minute</key><integer>17</integer>
+  </dict>
+  <key>WorkingDirectory</key>
+  <string>/Users/unbound24/Unbound/clients/French_Roofing</string>
+  <key>StandardOutPath</key>
+  <string>/Users/unbound24/Unbound/clients/French_Roofing/operations/kewl-runs/launchd.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/unbound24/Unbound/clients/French_Roofing/operations/kewl-runs/launchd.err.log</string>
+  <key>ProcessType</key>
+  <string>Background</string>
+</dict>
+</plist>
