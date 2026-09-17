@@ -19,9 +19,13 @@ The bottleneck for any roofing company doing social media is photos and consiste
 
 ```
 [Anyone] → Drop photos / videos (.jpg, .heic, .mov) into assets/images/1.intake
+[Housecall Pro] → `npm run hcp:photos` pulls job + estimate photos into the same folder,
+                  each with a customer-free context note (<stem>.txt)
          ↓
 [Weekly Claude Cowork session]  (human judgment, not automated code)
   • View each file (convert .heic, pull frames from .mov to see content)
+  • Discard paperwork shots from Housecall Pro (delivery tickets, invoices, measurements).
+    Supplier tickets show the business street address, which is never published.
   • Decide which pillar the photo fits
   • Rename: [pillar]_[YYYY-MM-DD]_[short-description]_[seq].[ext]
   • Add a short context note (optional sidecar <stem>.txt)
@@ -70,7 +74,7 @@ Two, and only two:
 1. **Weekly intake-and-sort (Claude Cowork).** A human-run session reads everything in `1.intake`, looks at each file, decides the pillar, renames it, adds context, and moves it into `2.sorted/<pillar>`. This is judgment work; pillar routing depends on what is actually in the photo, so it is **not** automated and **not** a cron job.
 2. **Draft review (Metricool).** Check the generated captions + image, tweak, approve.
 
-Everything between the sort and the review is the `promote` step. **Code's role begins at `2.sorted`, never before it.**
+Everything between the sort and the review is the `promote` step. **Code's judgment begins at `2.sorted`, never before it.** The one piece of code upstream of the sort is `scripts/hcp-photos.ts`, which only delivers Housecall Pro photos into `1.intake`; it makes no pillar or keep/discard decisions.
 
 **Today vs the target.** The sort and the `promote` command both exist now: you run `promote` on the sorted photos and review the resulting drafts. Two pieces are still planned (see Versions): a metered-queue cron that runs `promote` on a cadence so you only feed the queue, and the Metricool API push so drafts land in Metricool automatically instead of by manual upload.
 
@@ -133,7 +137,7 @@ These files are iterated continuously. As the system runs and Brittany reviews d
 
 **Resolved (2026-06-09):**
 
-1. **Upload mechanism** → a single local drop folder, `assets/images/1.intake`. Anyone drops files there; no hosted form, no auth layer.
+1. **Upload mechanism** → a single local drop folder, `assets/images/1.intake`. Anyone drops files there; no hosted form, no auth layer. `npm run hcp:photos` feeds the same folder from Housecall Pro (added 2026-09-17).
 2. **Image labeling** → the pillar is the destination folder under `2.sorted/`; the rest of the label is the filename convention `[pillar]_[YYYY-MM-DD]_[short-description]_[seq].[ext]`, plus an optional context note (`<stem>.txt`) the captioner reads. No separate metadata store.
 3. **Per-platform caption variants** → genuinely different per platform, produced in one Claude call: Instagram (canonical), Facebook (URL CTA), LinkedIn (business register + proof points), GMB (city front-loaded, phone CTA). Rules live in `platforms.md`.
 5. **Queue storage** → the queue is just the `2.sorted/<pillar>` folders. `promote` consumes from there and moves the original to `3.moved-to-social/`. No database or manifest.

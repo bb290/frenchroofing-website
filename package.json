@@ -9,6 +9,8 @@
     "lint": "eslint",
     "ebooks": "node scripts/generate-ebooks.mjs",
     "promote": "npx tsx scripts/promote-photo.ts",
+    "hcp:check": "npx tsx scripts/hcp-check.ts",
+    "hcp:photos": "npx tsx scripts/hcp-photos.ts",
     "deploy": "bash scripts/deploy.sh"
   },
   "dependencies": {

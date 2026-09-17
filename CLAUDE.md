@@ -16,11 +16,14 @@ Marketing site + content factory for French Construction LLC dba French Roofing 
 - `npm run deploy "msg"` — commits ALL changes (`git add -A`) and pushes `main`; Vercel auto-builds (~20-30s). main branch only; script exits on other branches.
 - `npm run ebooks` — regenerate ebook PDFs
 - `npm run promote` — photo-to-post pipeline (`scripts/promote-photo.ts`)
+- `npm run hcp:check` — Housecall Pro API connection test (prints counts only, no customer data). Client: `scripts/lib/hcp.ts` (read-only by design)
+- `npm run hcp:photos -- [--since 90] [--dry-run] [--inspect]` — pull Housecall Pro job/estimate photos into `assets/images/1.intake` with a PII-free context note; feeds the normal Kewl sort, never sorts or publishes itself
 - Watch deploys: `npx vercel ls`. Unpushed commits: `git log origin/main..main`.
 
 ## Env vars (values in `.env.local`, no template yet)
 
 - `ANTHROPIC_API_KEY`, `ANTHROPIC_MODEL` (default claude-sonnet-4-6), `BLOB_READ_WRITE_TOKEN`
+- `HOUSECALL_PRO_API_KEY` (read-only key from HCP App Store → API Key Management; requires MAX plan), optional `HOUSECALL_PRO_AUTH`. API dumps go in `operations/hcp-data/` (gitignored, customer PII)
 - GitHub Action `evergreen-instagram.yml` needs repo secret `ANTHROPIC_API_KEY` (Sundays 14:00 UTC, opens a draft-post PR)
 
 ## Architecture
