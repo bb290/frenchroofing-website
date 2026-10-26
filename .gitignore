@@ -67,3 +67,7 @@ next-env.d.ts
 
 # weekly Kewl run logs, contact sheets, sort decisions (can show customer homes)
 /operations/kewl-runs/
+
+# reel projects (renders are large media) and raw voiceover takes
+/social/reels/
+/assets/audio/

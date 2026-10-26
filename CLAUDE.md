@@ -10,6 +10,26 @@ Marketing site + content factory for French Construction LLC dba French Roofing 
 - Session rules and approval gates: `.claude/CLAUDE.md` (autonomy: tight).
 - Legacy brand bible (company story, segments, keywords, social links, AI workstreams, open items) archived at `.claude/source-material/CLAUDE-legacy-2026-04.md` — reference only.
 
+## Notion hub
+
+The French Roofing Notion workspace is the shared client hub (built 2026-10-22 from the Unbound client hub template). Read **"CLAUDE.md: Read First"** under the Dashboard at session start (rules, Current state, newest session-log entries) and check Project Tasks for open Claudette rows. At session end, add a session-log entry at the TOP, rewrite Current state if it changed, keep Project Tasks true. Comments start "Update by Claude, per Brittany's request:".
+
+**Connect through Composio, French Roofing account only:** `composio proxy https://api.notion.com/v1/... -t notion --account notion_koala-benab` (no alias yet). Before any write, check `users/me` returns `workspace_name: "French Roofing"`. Set stdin to /dev/null when scripting.
+
+**Rules:** one Current Project at a time (now: **Customer FAQ v1**; up next: Housecall Pro SOPs v1, parked in the Idea Bank with its planned tasks); everything else in the Idea Bank. Owners: Sean, Brittany, Claudette. No CRM here: Housecall Pro holds customer details, and no customer names, phones, emails, or addresses go in Notion. No passwords or tokens. SOP edits keep Sean's steps exactly.
+
+| Notion object | id |
+|---|---|
+| Dashboard | `401a644c-bd9a-8187-b1a8-ce974701c229` |
+| Project Tasks db (Item, Order, Type, Owner: Sean/Brittany/Claudette, Status) | `401a644c-bd9a-81f6-9675-e3f7e9f3b07a` |
+| Idea Bank db (Idea, Status, Area, Suggested by, Why, Added) | `401a644c-bd9a-81fc-968d-e2af5f8be91f` |
+| CLAUDE.md: Read First | `401a644c-bd9a-81c4-912a-f67357c069f8` |
+| SOPs (Brand Guide, How We Work Together, SOP pages) | `401a644c-bd9a-8122-bb61-d56b221afacc` |
+| Customer FAQ db (Question, Status: Needs Sean/Approved/On website, Stage, Topic, Times asked, Email, Texts & calls, What we've told customers, Flag for Sean, Final answer (Sean)) | `401a644c-bd9a-8199-b57e-e03b6c47125f` |
+| Customer Communication Review (2026) page | `401a644c-bd9a-81ad-9c04-c63dab6d7369` |
+
+The Customer FAQ is the one place for final answers (seeded 2026-10-22 from the FAQ tab of Google Sheet `1YAFHIafaQ2tsLhfWYbY9eiAU1sQrR-XyT5BlFBDmZbg`, which keeps the review tabs). Questions only, never who asked.
+
 ## Commands
 
 - `npm run dev` / `build` / `lint`
@@ -31,7 +51,7 @@ Marketing site + content factory for French Construction LLC dba French Roofing 
 ## Architecture
 
 - `src/app` + `src/components`: the site. `operations/seo/`: QUALITY-GATE.md + topic-cluster-map.md drive `/guides` content.
-- `.claude/skills/`: fr-blog, fr-carousel, fr-social-publish. `skills/` (root, intentional — Sean-facing skills for his claude.ai): fr-close-out, fr-email-triage, fr-email-response. Claude.ai Team setup kit: `operations/claude-ai-setup/`.
+- `.claude/skills/`: fr-blog, fr-carousel, fr-social-publish, fr-reel (9:16 reels/Shorts from photos on disk + voiceover via HyperFrames → Metricool drafts for IG/FB Reels, LinkedIn, YouTube Short, GBP; projects in `social/reels/<slug>/`). `skills/` (root, intentional — Sean-facing skills for his claude.ai): fr-close-out, fr-email-triage, fr-email-response. Claude.ai Team setup kit: `operations/claude-ai-setup/`.
 - `roof-measure/`: separate planned SaaS product with its own CLAUDE.md — not part of the site.
 - `social/` and `assets/` are local media (gitignored); `public/` IS committed. Logo: `assets/logo/logo.png`.
 

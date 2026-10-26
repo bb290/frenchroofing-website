@@ -80,7 +80,7 @@ While at `autonomy: tight`:
 - **Housecall Pro** is the system of record for jobs, customers, estimates, and job photos. Workflow logic should assume it as the sole operational hub. (JobNimbus retired 2026-07; Housecall Pro absorbed job tracking and photo capture.)
 - **Enhancify** for customer financing.
 - **Canva** for social templates.
-- **Communication channel (operator, 2026-07-11):** Sean and staff reach Brittany by email, never text, at **brittany@frenchexteriors.com** (her address for French Roofing work). Any workflow, doc, or skill that hands something to Brittany (photos, questions, escalations) routes through email.
+- **Communication channel (operator, 2026-07-11):** Sean and staff reach Brittany by email, never text, at **brittany@unbound24.com**, the same address across all client work (operator, 2026-10-22). Her brittany@frenchexteriors.com login is admin access for working inside French Roofing's tools (the Composio Drive, Gmail, Docs, and Sheets connections), not a contact address. Any workflow, doc, or skill that hands something to Brittany (photos, questions, escalations) routes through email.
 - CMS / marketing CRM: TBD, flag in any work that depends on them.
 
 ## Brand bible
