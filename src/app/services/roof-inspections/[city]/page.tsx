@@ -77,11 +77,11 @@ function getRoofInspectionFaqs(cityName: string) {
     },
     {
       question: `What does a roof inspection include in ${cityName}, OR?`,
-      answer: `We check the full system - shingles, flashing, vents, ridge caps, valleys, gutters, drip edge, and the attic space when accessible. We look for wear, damage, moss growth, moisture intrusion, ventilation issues, and anything that could become a problem. Everything is documented with photos and you get a clear report. As a CertainTeed Certified contractor (CCB #${COMPANY.ccb}), we know exactly what a properly installed roof looks like.`,
+      answer: `We check the full system: shingles, flashing, vents, ridge caps, valleys, gutters, drip edge, and the attic space when accessible. We look for wear, damage, moss growth, moisture intrusion, ventilation issues, and anything that could become a problem. You don't need to be home. Everything is documented with photos, and you get a full report and estimate, usually within 24 hours (48 at most). As a CertainTeed Certified contractor (CCB #${COMPANY.ccb}), we know exactly what a properly installed roof looks like.`,
     },
     {
       question: `Should I get a roof inspection before buying a home in ${cityName}?`,
-      answer: `Absolutely - it's one of the smartest things you can do. Pre-purchase roof inspections are one of our most common requests in the ${cityName} area. We give you an honest assessment of the roof's condition and remaining life so you can negotiate with confidence. A roof replacement can cost $8,000 to $25,000+, so knowing what you're getting into matters.`,
+      answer: `Absolutely. It's one of the smartest things you can do. Pre-purchase roof inspections are one of our most common requests in the ${cityName} area. We give you an honest assessment of the roof's condition and remaining life so you can negotiate with confidence. Already have a home inspection report? Email it to team@frenchexteriors.com, and we'll review the roof items and let you know if we need to come out.`,
     },
   ];
 }

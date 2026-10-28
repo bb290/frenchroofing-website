@@ -58,12 +58,12 @@ const faqs = [
   {
     question: "What do you look for during a roof inspection?",
     answer:
-      "We check the full system - shingles, flashing, vents, ridge caps, valleys, gutters, drip edge, and the attic space. We look for wear, damage, moss growth, moisture intrusion, ventilation issues, and anything that could become a problem. Everything is documented with photos.",
+      "We check the full system: shingles, flashing, vents, ridge caps, valleys, gutters, drip edge, and the attic space when accessible. We look for wear, damage, moss growth, moisture intrusion, ventilation issues, and anything that could become a problem. You don't need to be home. Everything is documented with photos, and you get a full report and estimate, usually within 24 hours (48 at most).",
   },
   {
     question: "Can you do a roof inspection for a home I'm buying?",
     answer:
-      "Absolutely. Pre-purchase roof inspections are one of our most common requests across Clackamas County. We give you an honest assessment of the roof's condition and remaining life so you can negotiate with confidence.",
+      "Absolutely. Pre-purchase roof inspections are one of our most common requests across Clackamas County. We give you an honest assessment of the roof's condition and remaining life so you can negotiate with confidence. Already have a home inspection report? Email it to team@frenchexteriors.com, and we'll review the roof items and let you know if we need to come out.",
   },
   {
     question: "Will you find problems even if there's no visible leak?",

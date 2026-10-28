@@ -21,7 +21,7 @@ const estimateFAQs = [
   {
     question: "Why does roofing material matter for price?",
     answer:
-      "Different materials have very different costs, lifespans, and warranties. 3-tab shingles are the most affordable but last 20-25 years. Architectural shingles are the most popular, lasting 30-50 years with better wind resistance. Premium designer shingles and standing seam metal cost more upfront but can last 50-70+ years with minimal maintenance.",
+      "Different materials have very different costs, lifespans, and warranties. 3-tab shingles are the most affordable. Architectural shingles are the most popular (and our standard), and most new architectural roofs last 22 to 25 years, longer with regular maintenance. Premium shingles like CertainTeed Presidential use higher-quality materials and can last up to 50 years. Standing seam metal also costs more upfront and is built to last longer.",
   },
   {
     question: "What makes a roof 'complex' vs 'standard'?",

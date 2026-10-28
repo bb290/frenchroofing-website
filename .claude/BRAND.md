@@ -25,7 +25,7 @@ spec-version: 2.1
 - **Founded:** 2014 by Sean French
 - **Address (public):** Damascus, OR 97089 (street address never published; operator privacy decision, 2026-06)
 - **Phone:** 971-376-8722
-- **Email:** hello@frenchroofing.com
+- **Email:** team@frenchexteriors.com
 - **CCB Number:** 203933
 - **Manufacturer Certification:** CertainTeed Certified
 - **Financing:** Enhancify (0% offers available)

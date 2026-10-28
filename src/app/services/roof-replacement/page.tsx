@@ -58,7 +58,7 @@ const faqs = [
   {
     question: "How long does a full roof replacement take?",
     answer:
-      "Most homes take 1 to 3 days from tear-off to final cleanup, depending on the size and complexity of the roof. Oregon weather can occasionally cause short delays, but we communicate proactively so you always know the plan.",
+      "Most homes take 1 to 3 days from tear-off to final cleanup, depending on the size and complexity of the roof. We tear off and dry in section by section, so your home is never left open to the weather, and we roof right through Oregon winters.",
   },
   {
     question: "What roofing materials do you use?",
@@ -73,7 +73,7 @@ const faqs = [
   {
     question: "Does French Roofing offer a warranty on roof replacements?",
     answer:
-      "Absolutely. Every replacement comes with our standard workmanship warranty, plus the manufacturer's material warranty. Because we're CertainTeed Certified, your installation may qualify for enhanced warranty coverage. We'll explain your options during the estimate.",
+      "Absolutely. Every replacement comes with our workmanship warranty: 5 years on 30-year roofs and 10 years on 50-year roofs. You also get the manufacturer's shingle warranty, and a premium 50-year system extends that coverage. We'll walk you through your options during the estimate.",
   },
 ];
 

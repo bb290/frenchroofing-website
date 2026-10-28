@@ -74,7 +74,7 @@ function getRoofReplacementFaqs(cityName: string) {
     },
     {
       question: `How long does a roof replacement take in ${cityName}?`,
-      answer: `Most homes in ${cityName} take 1 to 3 days from tear-off to final cleanup, depending on the size and complexity of the roof. Oregon weather can occasionally cause short delays, but we communicate proactively so you always know the plan. We're based right here in Damascus, so we're never far away.`,
+      answer: `Most homes in ${cityName} take 1 to 3 days from tear-off to final cleanup, depending on the size and complexity of the roof. We tear off and dry in section by section, so your home is never left open to the weather, and we roof right through Oregon winters. We're based right here in Damascus, so we're never far away.`,
     },
     {
       question: `What roofing materials are best for homes in ${cityName}, OR?`,

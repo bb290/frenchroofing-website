@@ -41,7 +41,7 @@ const materialsFAQs = [
   {
     question: "Can I choose my shingle color?",
     answer:
-      "Absolutely. CertainTeed offers a wide range of colors across all their shingle lines. During your assessment, we can show you color samples and help you pick one that complements your home\u2019s siding, trim, and style. We\u2019ll also confirm availability for your chosen color and product.",
+      "Absolutely. Every color in the same shingle line is the same price. You can browse colors on CertainTeed's website (enter your zip code to see what's available locally), or Sean can bring a sample board out to you.",
   },
   {
     question: "What\u2019s the difference between 3-tab and architectural shingles?",
@@ -51,17 +51,17 @@ const materialsFAQs = [
   {
     question: "How long do CertainTeed shingles last in Oregon?",
     answer:
-      "CertainTeed Landmark shingles carry a limited lifetime warranty, and with proper installation and maintenance, they typically perform well for 25 to 30+ years in the Pacific Northwest. Oregon\u2019s climate is demanding \u2014 rain, moss, and temperature swings all play a role \u2014 but CertainTeed\u2019s algae-resistant technology and robust construction are designed for exactly these conditions.",
+      "Most new CertainTeed roofs last 22 to 25 years here, and regular maintenance extends that. Premium Presidential roofs use higher-quality materials and can last up to 50 years. Oregon's climate is demanding: rain, moss, and temperature swings all take a toll. CertainTeed's algae-resistant shingles are built for exactly these conditions.",
   },
   {
     question: "Why does French Roofing use CertainTeed instead of other brands?",
     answer:
-      "We chose CertainTeed because they offer a complete roofing system \u2014 not just shingles, but underlayment, starter strips, ridge caps, and ventilation all designed to work together. Their products perform exceptionally well in the Pacific Northwest, and their certification program lets us offer enhanced warranty coverage to our customers. We\u2019ve installed thousands of CertainTeed roofs and trust them completely.",
+      "Their shingles perform really well in the Pacific Northwest, and their certification program lets us offer enhanced warranty coverage to our customers. Our standard system is CertainTeed shingles over SafeGuard synthetic underlayment and ice and water shield.",
   },
   {
     question: "Do I have to use CertainTeed products?",
     answer:
-      "CertainTeed is our recommended and primary product line, and it\u2019s what allows us to offer the best warranty coverage. That said, if you have a specific need or preference, we\u2019re happy to discuss it during your assessment. Our goal is to give you the best roof for your home and budget.",
+      "No. CertainTeed is our standard and recommended product line, and it's what lets us offer the best warranty coverage. If you'd like a different type of shingle, you can choose that instead. We'll go over the options during your assessment.",
   },
 ];
 

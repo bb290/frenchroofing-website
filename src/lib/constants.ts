@@ -3,7 +3,7 @@ export const COMPANY = {
   legalName: "French Construction LLC dba French Roofing",
   phone: "971-376-8722",
   phoneTel: "tel:+19713768722",
-  email: "hello@frenchroofing.com",
+  email: "team@frenchexteriors.com",
   address: {
     // Not published anywhere customer-facing (operator privacy decision,
     // 2026-06). Kept for contracts/internal use only.

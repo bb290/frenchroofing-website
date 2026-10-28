@@ -42,7 +42,7 @@ const homeFAQs = [
   {
     question: "How long does a roof replacement take?",
     answer:
-      "Most residential roof replacements are completed in 1-3 days, depending on the size and complexity of the roof. We'll give you a clear timeline before we start, and we keep you updated if weather or unexpected issues affect the schedule.",
+      "Most residential roof replacements are completed in 1 to 3 days, depending on the size and complexity of the roof. We tear off and dry in section by section, so your home is never left open to the weather, even in winter. We'll give you a clear timeline before we start.",
   },
 ];
 

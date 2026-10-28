@@ -104,7 +104,7 @@ const faqs = [
   {
     question: "Is the maintenance program paid monthly or annually?",
     answer:
-      "Annual pricing is paid once per year and includes both visits. This gives you the best per-visit rate. We keep it simple - no contracts with hidden fees, no surprise charges.",
+      "Annual pricing is paid once per year and includes both visits. This gives you the best per-visit rate. It's a simple twice-a-year service agreement: no hidden fees, no surprise charges.",
   },
   {
     question: "What if you find a problem during the inspection?",
