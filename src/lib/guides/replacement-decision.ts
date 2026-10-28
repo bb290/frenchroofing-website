@@ -79,7 +79,7 @@ export const replacementGuides: Guide[] = [
         heading: "When should you schedule it?",
         paragraphs: [
           "Summer and early fall are the easiest windows in Oregon, but they're also everyone's first choice, so the calendar fills. The fuller answer, including why a dry-week winter replacement is a real option and when waiting actually costs money, is here: [the best time of year to replace a roof in Oregon](/guides/best-time-replace-roof-oregon).",
-          "One scheduling note worth knowing: roofing doesn't require permits in Oregon, which means no paperwork delays between your yes and our start date.",
+          "One scheduling note worth knowing: most re-roofs in Oregon don't require a permit, which means no paperwork delays between your yes and our start date.",
         ],
       },
       {
@@ -332,7 +332,7 @@ export const replacementGuides: Guide[] = [
       {
         heading: "What doesn't move the number (much)",
         paragraphs: [
-          "Shingle color. The season, mostly ([timing is about scheduling, not price](/guides/best-time-replace-roof-oregon)). Permits don't apply at all: roofing doesn't require them in Oregon. And despite the occasional sales theater, there's no legitimate 'sign tonight' discount; pricing that evaporates overnight was never real. ([How we feel about pressure tactics: we don't use them.](/essentials))",
+          "Shingle color. The season, mostly ([timing is about scheduling, not price](/guides/best-time-replace-roof-oregon)). Permits usually don't apply either: most re-roofs in Oregon don't require one. And despite the occasional sales theater, there's no legitimate 'sign tonight' discount; pricing that evaporates overnight was never real. ([How we feel about pressure tactics: we don't use them.](/essentials))",
           "When you're ready for a real number on your real roof, the [instant estimate](/estimate) takes thirty seconds, and a [free assessment](/services/roof-replacement) turns it into a written quote with photos. Financing can spread whatever the number turns out to be. ([Enhancify, explained.](/guides/roof-financing-explained))",
         ],
       },

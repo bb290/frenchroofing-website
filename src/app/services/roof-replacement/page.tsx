@@ -68,7 +68,7 @@ const faqs = [
   {
     question: "Does a roof replacement require a permit in Oregon?",
     answer:
-      "Roofing does not require permits in Oregon. That means less paperwork and no delays - we can get your project started and completed faster. We still follow all manufacturer specs and industry best practices on every install.",
+      "Most re-roofs in Oregon don't require a permit. That means less paperwork and no delays, so we can get your project started and completed faster. If your project does need one, we'll let you know. We still follow all manufacturer specs and industry best practices on every install.",
   },
   {
     question: "Does French Roofing offer a warranty on roof replacements?",
