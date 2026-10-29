@@ -52,6 +52,18 @@ const nextConfig: NextConfig = {
         destination: "/",
         permanent: true,
       },
+      // 2026 coloring contest ended; printed flyers and QR codes still
+      // point at the page and its PDFs.
+      {
+        source: "/coloring-contest",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/coloring-contest-:file.pdf",
+        destination: "/",
+        permanent: true,
+      },
     ];
   },
 };
