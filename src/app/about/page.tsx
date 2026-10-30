@@ -237,23 +237,13 @@ export default function AboutPage() {
               ends with a site that&apos;s cleaner than when we arrived.
             </p>
           </div>
-          <div className="order-1 lg:order-2 space-y-4 max-w-lg mx-auto lg:mx-0 lg:ml-auto">
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
-              <Image
-                src="/images/team-bowling.webp"
-                alt="French Roofing team bowling together - company culture and community"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
-              <Image
-                src="/images/workers-tearoff.webp"
-                alt="French Roofing crew working together on a roof tear-off"
-                fill
-                className="object-cover"
-              />
-            </div>
+          <div className="order-1 lg:order-2 relative aspect-[4/3] w-full max-w-lg mx-auto lg:mx-0 lg:ml-auto rounded-2xl overflow-hidden">
+            <Image
+              src="/images/team-bowling.webp"
+              alt="French Roofing team bowling together - company culture and community"
+              fill
+              className="object-cover"
+            />
           </div>
         </div>
       </section>
@@ -261,7 +251,7 @@ export default function AboutPage() {
       {/* ── Quiet Credibility + CertainTeed ── */}
       <section className="py-20 px-4 bg-gray-50">
         <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden max-w-lg mx-auto lg:mx-0">
+          <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden max-w-lg mx-auto lg:mx-0">
             <Image
               src="/images/team-plywood-install.webp"
               alt="French Roofing team installing plywood sheathing on a residential roof"
