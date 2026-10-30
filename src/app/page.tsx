@@ -344,7 +344,7 @@ export default function Home() {
       {/* ── About / Brand Story teaser ── */}
       <section className="py-20 px-4 bg-white">
         <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="relative aspect-square rounded-2xl overflow-hidden max-w-md mx-auto lg:mx-0">
+          <div className="relative aspect-square w-full rounded-2xl overflow-hidden max-w-md mx-auto lg:mx-0">
             <Image
               src="/images/sean-first-job.webp"
               alt="Sean French on his first roofing job - founder of French Roofing"
