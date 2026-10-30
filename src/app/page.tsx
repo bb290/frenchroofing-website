@@ -46,6 +46,39 @@ const homeFAQs = [
   },
 ];
 
+const outAndAbout = [
+  {
+    src: "/images/community-festival-booth.webp",
+    alt: "French Roofing team at their booth at the Oak Grove Community Festival, June 2026",
+    caption: "Our booth at the Oak Grove Community Festival",
+  },
+  {
+    src: "/images/community-festival-kids-crafts.webp",
+    alt: "Kids doing crafts at the French Roofing booth at a community festival",
+    caption: "The kids ran the show at the craft table",
+  },
+  {
+    src: "/images/community-festival-card.webp",
+    alt: "French Roofing peace, love, and roofs card held up at an outdoor festival",
+    caption: "Peace, love, and roofs",
+  },
+  {
+    src: "/images/community-festival-family.webp",
+    alt: "Sean French and family at the Oak Grove Community Festival",
+    caption: "Family day at the festival",
+  },
+  {
+    src: "/images/community-festival-rain.webp",
+    alt: "Sean French with his kids under a rain umbrella at a festival",
+    caption: "A little Oregon rain never stopped us",
+  },
+  {
+    src: "/images/community-tree-farm.webp",
+    alt: "French Roofing crew member and his daughter on a wagon at a Christmas tree farm",
+    caption: "Christmas tree farm with the family",
+  },
+];
+
 export default function Home() {
   return (
     <>
@@ -350,6 +383,51 @@ export default function Home() {
               className="inline-flex items-center text-[#d85024] font-semibold hover:underline"
             >
               Read our full story &rarr;
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Out & About (community photos) ── */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="mx-auto max-w-7xl">
+          <div className="text-center mb-12">
+            <p className="text-sm font-semibold text-[#d85024] uppercase tracking-wider mb-2">
+              Out &amp; About
+            </p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#092e5e]">
+              Neighbors First
+            </h2>
+            <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+              When we&apos;re not on a roof, you&apos;ll find the French Roofing
+              crew at festivals, tree farms, and community events around
+              Damascus, Clackamas, and Happy Valley.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+            {outAndAbout.map((photo) => (
+              <figure key={photo.src}>
+                <div className="relative aspect-[4/5] rounded-xl overflow-hidden">
+                  <Image
+                    src={photo.src}
+                    alt={photo.alt}
+                    fill
+                    sizes="(min-width: 1024px) 33vw, 50vw"
+                    className="object-cover"
+                  />
+                </div>
+                <figcaption className="mt-2 text-sm text-gray-600">
+                  {photo.caption}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <Link
+              href="/about"
+              className="inline-flex items-center text-[#d85024] font-semibold hover:underline"
+            >
+              Meet the team &rarr;
             </Link>
           </div>
         </div>
