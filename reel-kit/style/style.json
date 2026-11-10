@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "creator": {"name": "French Roofing", "handle": "@frenchroofing", "site": "frenchroofing.com"},
+  "fonts": {
+    "display": {"family": "Inter", "italic": false, "weight": 800},
+    "text": {"family": "Inter", "italic": false, "weight": 700},
+    "mono": {"family": "Inter", "italic": false, "weight": 600},
+    "caption": {"family": "Inter", "italic": false, "weight": 800}
+  },
+  "colors": {
+    "light": "#F5F1EA",
+    "dark": "#092E5E",
+    "ink": "#092E5E",
+    "muted_light": "#6B6A67",
+    "muted_dark": "rgba(245,241,234,.66)",
+    "hair_light": "#E5E0D6",
+    "hair_dark": "rgba(245,241,234,.22)",
+    "accent": "#FFBD59",
+    "accent_on_light": "#D85024",
+    "negative": "#F2708A", "negative_on_light": "#9E1B3A",
+    "positive": "#86B98A", "positive_on_light": "#4A7C4E",
+    "series": ["#FFBD59", "#86B98A", "#EF7A4C"],
+    "caption_box": "rgba(9,46,94,.88)", "caption_ink": "#FFFFFF", "caption_dim": "rgba(255,255,255,.5)",
+    "textbox_bg": "#FFFFFF", "textbox_ink": "#092E5E"
+  },
+  "grounds": {"grid": false, "radius": 8},
+  "captions": {
+    "hifi": {"box": true, "uppercase": false, "size": 56, "y": 1236},
+    "lofi": {"box": false, "size": 66, "y": 1318}
+  },
+  "modes": {
+    "hifi": {"hook": "two-line", "captions": "phrases", "emphasis": ["thesis", "big"],
+             "behind_head": "sometimes", "cards": "sometimes", "camera": "settle", "bw": false, "j_lead": 0.30},
+    "lofi": {"captions": "phrase", "max_words": 3, "max_chars": 22, "text_boxes": true,
+             "overlays": "often", "backdrops": "sometimes", "zooms": false, "bw": false, "j_lead": 0.30},
+    "showcase": {"emphasis_word": "scale", "transitions": ["push", "reveal", "drop"],
+                 "density": "medium", "motif": "job-site tape and yellow step chips", "j_lead": 0.30}
+  },
+  "grade": "none",
+  "motion": "calm",
+  "sound": {"sfx": "light", "music": "none"},
+  "end_card": false
+}

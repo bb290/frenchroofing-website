@@ -1,0 +1,24 @@
+/* Generated from style.json by pipeline/style.py. Edit style.json, not this file. */
+@font-face { font-family:'Inter'; src:url('fonts/Inter-normal-400.ttf') format('truetype'); font-style:normal; font-weight:400; font-display:block; }
+@font-face { font-family:'Inter'; src:url('fonts/Inter-normal-500.ttf') format('truetype'); font-style:normal; font-weight:500; font-display:block; }
+@font-face { font-family:'Inter'; src:url('fonts/Inter-normal-600.ttf') format('truetype'); font-style:normal; font-weight:600; font-display:block; }
+@font-face { font-family:'Inter'; src:url('fonts/Inter-normal-700.ttf') format('truetype'); font-style:normal; font-weight:700; font-display:block; }
+@font-face { font-family:'Inter'; src:url('fonts/Inter-normal-800.ttf') format('truetype'); font-style:normal; font-weight:800; font-display:block; }
+:root {
+  --font-display: 'Inter', serif; --display-style: normal; --display-weight: 800;
+  --font-text: 'Inter', sans-serif; --text-weight: 700;
+  --font-mono: 'Inter', monospace;
+  --font-caption: 'Inter', sans-serif; --caption-style: normal; --caption-weight: 800;
+  --c-light: #F5F1EA; --c-dark: #092E5E; --c-ink: #092E5E;
+  --c-muted-light: #6B6A67; --c-muted-dark: rgba(245,241,234,.66);
+  --c-hair-light: #E5E0D6; --c-hair-dark: rgba(245,241,234,.22);
+  --c-accent: #FFBD59; --c-accent-light: #D85024;
+  --c-neg: #F2708A; --c-neg-light: #9E1B3A;
+  --c-pos: #86B98A; --c-pos-light: #4A7C4E;
+  --c-s1: #FFBD59; --c-s2: #86B98A; --c-s3: #EF7A4C;
+  --c-box: rgba(9,46,94,.88); --c-box-ink: #FFFFFF; --c-box-dim: rgba(255,255,255,.5);
+  --c-tb-bg: #FFFFFF; --c-tb-ink: #092E5E;
+  --radius: 8px;
+}
+.ground-light { background-color: var(--c-light); color: var(--c-ink);  }
+.ground-dark { background-color: var(--c-dark); color: var(--c-light);  }

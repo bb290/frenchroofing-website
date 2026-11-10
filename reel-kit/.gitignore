@@ -1,0 +1,11 @@
+.venv
+vendor
+tools
+models
+.venv-mp
+browsers
+projects/*/work/
+projects/*/renders/
+*.mp4
+*.mov
+*.wav

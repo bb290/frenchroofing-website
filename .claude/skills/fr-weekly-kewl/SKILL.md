@@ -1,6 +1,6 @@
 ---
 name: fr-weekly-kewl
-description: The weekly French Roofing Kewl run. Pulls new job photos from Housecall Pro, sorts them, promotes up to 3 into finished posts, reviews every caption, and loads them into Metricool as DRAFTS for Brittany to approve. Runs unattended every Wednesday (launchd → scripts/weekly-kewl.sh) and on demand via "/fr-weekly-kewl", "run the weekly Kewl", or "do the Wednesday social run".
+description: The weekly French Roofing Kewl run. Pulls new job photos from Housecall Pro, sorts them, promotes up to 4 into finished posts, reviews every caption, and loads them into Metricool as DRAFTS for Brittany to approve. Runs unattended every Wednesday (launchd → scripts/weekly-kewl.sh) and on demand via "/fr-weekly-kewl", "run the weekly Kewl", or "do the Wednesday social run".
 ---
 
 # FR Weekly Kewl — Housecall Pro photos → Metricool drafts
@@ -59,8 +59,9 @@ the photo; the note is its only source of facts.
   "ASK SEAN what ..." in the reason.
 - One photo per job per topic. Put the rest in misc as duplicates.
 
-### 4. Promote (metered: at most 3 per run)
-Pick up to 3 from `assets/images/2.sorted/<publishable pillar>/`, newly sorted or already queued.
+### 4. Promote (metered: at most 4 per run)
+The Kewl standard is 3-4 photo posts a week (Brittany, 2026-11-10). Aim for 4; 3 is fine, and a
+thin week can be fewer: never promote a weak photo just to hit the number. Pick up to 4 from `assets/images/2.sorted/<publishable pillar>/`, newly sorted or already queued.
 Prefer: a mix of topics, French Roofing's own jobs over inspection photos, priority cities
 (Damascus, Clackamas, Happy Valley) when available, nothing that repeats a topic already in the
 next two weeks of the Metricool calendar. Leave the rest queued; the queue is the buffer for thin weeks.
@@ -92,8 +93,9 @@ npm run kewl:lint -- social/instagram/evergreen/<pillar>/posts/<new post dirs>
 Brand **French Roofing, blogId 6211784, timezone America/Los_Angeles**. Verify with
 `getBrandSettings`; if the timezone or channels differ, stop and report.
 
-Slots: Tuesday, Thursday, Saturday. Call `getScheduledPosts` for the next 8 weeks and give each new
-post the earliest open Tue/Thu/Sat that has no French Roofing post already on it (drafts count).
+Slots: Tuesday, Thursday, Saturday, Sunday (Sunday added 2026-11-10 for the 4th post; Monday and
+Wednesday are review-post days). Call `getScheduledPosts` for the next 8 weeks and give each new
+post the earliest open Tue/Thu/Sat/Sun that has no French Roofing post already on it (drafts count).
 Never stack two posts on one day. Times (Pacific):
 
 | Platform | Time |
@@ -101,7 +103,7 @@ Never stack two posts on one day. Times (Pacific):
 | gmb | 07:12 |
 | linkedin | 08:23 |
 | facebook | 09:37 |
-| instagram | Tue 19:07, Thu 14:09, Sat 13:07 |
+| instagram | Tue 19:07, Thu 14:09, Sat 13:07, Sun 13:07 |
 
 One `createScheduledPost` per platform per post, each with `"draft": true`, `"autoPublish": true`,
 `media: [image_url from schedule.json]`, the caption body (text after the `# Caption (...)` line),

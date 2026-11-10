@@ -88,7 +88,43 @@ Originally two, and only two:
 
 Everything between the sort and the review is the `promote` step. **Code's judgment begins at `2.sorted`, never before it.** The one piece of code upstream of the sort is `scripts/hcp-photos.ts`, which only delivers Housecall Pro photos into `1.intake`; it makes no pillar or keep/discard decisions.
 
-**Today vs the target.** The sort and the `promote` command both exist now: you run `promote` on the sorted photos and review the resulting drafts. Two pieces are still planned (see Versions): a metered-queue cron that runs `promote` on a cadence so you only feed the queue, and the Metricool API push so drafts land in Metricool automatically instead of by manual upload.
+**Today (2026-11-10).** The Wednesday run promotes up to 4 queued photos (Tue/Thu/Sat/Sun slots; raised from 3 on 2026-11-10 for the 3-4 posts a week standard in `unbound-toolkit/docs/kewl-methodology.md`), and drafts land in Metricool through the MCP connector. The weekly reel: a talking-head clip goes through the Reel Kit; with no clip, a B-roll reel through the toolkit skill `kewl-broll-reel`, both in French Roofing's Reel Kit style (`reel-kit/style/`), storyboard first, then Metricool drafts (`fr-reel`). First B-roll reel: "We protect your lawn", 2026-11-10. Still to do: pull Sean's Google Drive intake (Unbound24 - Kewl / French Roofing - Pic / Video Upload / 1. Intake) as part of the Wednesday run, and automatic review posts (waiting on the Google Business connection).
+
+## Review posts (added 2026-11-04, operator decisions)
+
+A post type built from a real customer review instead of a sorted photo. Not built yet: waiting on
+the Google Business Profile connection in Composio. Until then, reviews are pasted in by hand.
+
+- **Source:** Google Business Profile reviews. Housecall Pro's API has no reviews endpoint (checked
+  2026-11-04).
+- **Every review gets posted.** They are already public; none are skipped.
+- **Name and place:** first name + last initial (e.g. "Joseph H.", operator 2026-11-04), even when
+  Google shows the full name; a name Google already shortens stays as shown ("Tailor J"). Plus the
+  city only if the review gives one. Never a street address. Quotes stay word for word.
+- **Photo:** any job photo works; it doesn't have to be that customer's job. Same photo rules as the
+  rest of Kewl (no house numbers, plates, faces, or paperwork).
+- **No logo, no gradient, no "French Roofing" text on the graphic.** These posts have their own look.
+- **1 review = 4 posts, one per look, scheduled 3 months apart** (the first in the next open slot,
+  then about +3, +6 and +9 months, each on the nearest open Monday or Wednesday; review posts get
+  their own days, separate from the regular Tue/Thu/Sat photo posts) so the repeat isn't obvious
+  on the feed. Each of the 4 uses a different photo and, when the review is long enough, a different
+  whole-sentence excerpt. All 4 land in Metricool as drafts like every other Kewl post.
+- **Mix the order across reviews:** each new review starts one look later than the review before it
+  (review 1 starts on A, review 2 on B, review 3 on C, review 4 on D, then back to A), and goes
+  through the rest in order. Before scheduling, check the review posts just before and after each
+  slot in Metricool: two review posts in a row never share a look, and nearby posts don't reuse the
+  same photo.
+- **Log:** each review's posts, captions and Metricool draft IDs live in
+  `social/reviews/posts/<name-slug>/posts.json`. Reviews 1-16 (all 2026-11-04): Tailor J (A), Joseph H. (B), Dustin S. (C), Jimmy M. (D), Rose W. (A), Jessica G. (B), Boomer G. (C), Trevor T. (D), Paul T. (A), Jenni J. (B), Nathan P. (C), Zac B. (D), DJ W. (A), Devon D. (B), Beeman S. (C), Leslie G. (D). The next review starts on A; next open review slot is Wed Jan 6, 2027.
+- **The 4 looks, in rotation order:**
+  1. **A. Jobsite note:** lined paper taped over the photo, handwritten (Caveat), orange stars and tape.
+  2. **B. Review card:** white card that reads like a screenshot of the review: initial circle, name,
+     orange stars, "Google review, Mon YYYY", the full review in Inter.
+  3. **C. Surf poster:** deep blue with lighter-blue sun rays, a short line in Shrikhand (yellow),
+     photo in an orange-framed arch, orange bar with "<Name>, on Google".
+  4. **D. Torn kraft paper:** ripped brown paper over the photo, marker text (Permanent Marker).
+- **Design source:** `social/reviews/design/` (the four 1080×1350 `.dc.html` files approved
+  2026-11-04; not committed yet). Canvas: https://claude.ai/artifact/EP6nefQcEjDtyG4a1nJe1j
 
 ## How Kewl saves money
 
@@ -154,10 +190,10 @@ These files are iterated continuously. As the system runs and Brittany reviews d
 3. **Per-platform caption variants** → genuinely different per platform, produced in one Claude call: Instagram (canonical), Facebook (URL CTA), LinkedIn (business register + proof points), GMB (city front-loaded, phone CTA). Rules live in `platforms.md`.
 5. **Queue storage** → the queue is just the `2.sorted/<pillar>` folders. `promote` consumes from there and moves the original to `3.moved-to-social/`. No database or manifest.
 
-**Still open:**
+**Resolved 2026-09-17:**
 
-4. **Metricool API integration.** Auth method, draft scheduling format, error handling. Needs a small spike against the live API before committing to the integration shape. Until then, drafts are uploaded to Metricool manually.
-6. **Metered cadence.** Target: a cron that runs `promote` on a few queued photos per week (about 3) so the queue self-paces. Depends on (4) so drafts land in Metricool automatically.
+4. ~~**Metricool API integration.** Auth method, draft scheduling format, error handling. Needs a small spike against the live API before committing to the integration shape. Until then, drafts are uploaded to Metricool manually.~~ Done via the Metricool MCP connector (create + read only).
+6. ~~**Metered cadence.** Target: a cron that runs `promote` on a few queued photos per week (about 3) so the queue self-paces. Depends on (4) so drafts land in Metricool automatically.~~ Done: the Wednesday run promotes at most 3.
 
 ## Glossary
 

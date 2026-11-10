@@ -16,6 +16,14 @@ Autonomy is `tight`. Four human gates, in order. Stop at each one and wait:
 3. **Rendered video** approved.
 4. **Metricool drafts**: Brittany approves and publishes in Metricool. This skill never sets `draft: false`.
 
+**Two kinds of reel, one look (Brittany, 2026-11-10).** Both use French Roofing's Reel Kit style pack
+(`reel-kit/style/`, approved 2026-11-10):
+- **Talking head** (Sean or a crew member sent a clip): the Reel Kit (`/reel-kit:lofi` or `/reel-kit:hifi`), run with
+  `REEL_KIT_HOME=~/Unbound/clients/French_Roofing/reel-kit`. Then section 6 below for the drafts.
+- **B-roll** (no clip this week, or a voiceover piece): sections 1-2 below for topic and footage, then build with the
+  toolkit skill `kewl-broll-reel` (`reel.json` + `build_broll.py`; text on screen, no voiceover needed). With a
+  voiceover, keep the pilot's word-timed build (`build.py`) instead. Then section 6 below for the drafts.
+
 Pilot project to copy from: `social/reels/2026-10-26-whats-in-a-new-roof/` (build.py, STORYBOARD.md,
 boards/, post/, renders/). Load the `hyperframes` skill before building; it holds the render contract.
 
