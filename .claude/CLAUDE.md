@@ -36,6 +36,7 @@ Things that override or extend agency defaults for French Roofing.
 - Banned words/phrases (auto-flag in review): *premier, industry-leading, rockstar, synergy, amazing team, cutting-edge, world-class, best-in-class*.
 - Tagline `Got You Covered!` is rationed, max 1 in 6 social posts.
 - Full voice spec: `.claude/BRAND.md` §4.
+- **Sean in the photo = Sean speaking, first person (operator, 2026-11-11).** When Sean appears in a post's photo or video, every platform's caption is written as Sean: "me and my daughter", "I started French Roofing in 2014", never "That's Sean" or "the owner". Crew members in a photo stay third person ("one of our guys"), and never name a crew member or family member unless Brittany gives the name. If the note doesn't say who is in the photo, hold the post and ask; never guess "a crew member" (2026-11-11: Sean and his daughter were captioned as a crew member).
 
 ### Service area lock
 
