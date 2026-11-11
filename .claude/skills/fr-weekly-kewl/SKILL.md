@@ -97,6 +97,10 @@ npm run kewl:lint -- social/instagram/evergreen/<pillar>/posts/<new post dirs>
   chimney is not "two feet")? Does an inspection photo ever imply French Roofing did the work?
 - Keep edits minimal and in Sean's voice (`.claude/BRAND.md` sec.4). Edit the `caption-*.md`
   files; keep `caption.md` in step with Instagram.
+- **Who is in the photo?** If Sean is in it, every platform is Sean speaking in first person
+  ("me and my daughter", "I"), never "That's Sean" (Brittany, 2026-11-11). Crew stay third person
+  and unnamed. If the note doesn't say who a person is, or says "confirm who this is", hold the
+  post; never fill in "a crew member".
 - **Hold instead of fixing** when the premise of the post is unsupported (wrong identification,
   invented story the post depends on). Set every platform `status` to `held` in `schedule.json`,
   append `HELD <date>: <reason and what Sean needs to answer>` to its `notes`, and do not upload it.

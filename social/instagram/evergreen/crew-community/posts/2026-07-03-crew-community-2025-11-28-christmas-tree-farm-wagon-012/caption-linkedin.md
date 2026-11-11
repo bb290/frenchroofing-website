@@ -8,14 +8,14 @@ image: og.png
 slug: 2026-07-03-crew-community-2025-11-28-christmas-tree-farm-wagon-012
 created: 2026-07-03
 generated_by: scripts/promote-photo.ts
-revision: 2
+revision: 3
 ---
 
 # Caption (linkedin)
 
-This one's from last November. That's Sean, owner of French Roofing, out at a Christmas tree farm with his daughter on the wagon ride. Red holiday sweater and everything.
+This one's from last November: me and my daughter on the wagon ride at a Christmas tree farm. Red holiday sweater and everything.
 
-Sean started French Roofing in 2014, and the care he brings to a job site goes home with him at the end of the day. That's the kind of crew he's built.
+I started French Roofing in 2014, and the care I put into a job site comes home with me at the end of the day. That's the kind of crew I've built, too.
 
 When you hire French Roofing, these are the people on your roof. Licensed, insured, CCB #203933, CertainTeed Certified, and genuinely good humans.
 
