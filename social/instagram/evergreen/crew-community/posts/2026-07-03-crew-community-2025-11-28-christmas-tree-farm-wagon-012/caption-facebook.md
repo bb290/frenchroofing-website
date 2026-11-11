@@ -8,13 +8,13 @@ image: og.png
 slug: 2026-07-03-crew-community-2025-11-28-christmas-tree-farm-wagon-012
 created: 2026-07-03
 generated_by: scripts/promote-photo.ts
-revision: 1
+revision: 2
 ---
 
 # Caption (facebook)
 
-Out on the wagon at a Christmas tree farm last November. That's one of our crew members and his daughter, bundled up and doing the family thing right.
+Out on the wagon at a Christmas tree farm last November. That's Sean and his daughter, bundled up and doing the family thing right.
 
-We talk a lot about treating every roof like it belongs to someone's grandma. Turns out the crew actually lives that way, too. Same people who show up for your home are out here showing up for their families.
+We talk a lot about treating every roof like it belongs to someone's grandma. Turns out Sean actually lives that way, too. The same guy who shows up for your home is out here showing up for his family.
 
 Get an Instant Roof Quote at frenchroofing.com
