@@ -55,7 +55,13 @@ Pillar rules live in `social/instagram/pillars.md` and each `evergreen/<pillar>/
 
 - **educational**: one clear, teachable thing. Damage, a detail done right, a layer of the roof.
 - **crew-community**: people. Crew working (with fall protection visible if they are on a roof), trucks, community.
-- **personal-brand**: Sean alone as the subject.
+- **personal-brand**: Sean as the focal subject: on the job, off the clock, with his daughters
+  or family. **Only when a human labeled the photo as Sean** (a Drive file in the `1. Intake / Sean`
+  subfolder or with "sean" in its name, a hand drop whose note names him, or an earlier note
+  that says so). Never identify Sean, or any crew member, from his face: Sean and the crew look
+  alike in photos and this has been wrong before (2026-11-11: Sean and his daughter were sorted as
+  "a crew member"). An unlabeled photo of a person goes to crew-community with "WHO IS THIS? not
+  labeled" in the note and is never promoted until a human says who it is.
 - **before-after**: only a genuine pair of the same spot. Say in both notes that the pairing needs Sean's confirmation. (Pillar is parked for Kewl v2; never promote it.)
 - **misc** (not promotable), always with a reason: duplicates and near-duplicates of a better shot, dark or blurry, a customer's house front or anything that identifies the home, views into neighbors' yards, street scenes with readable plates or pedestrians, crew without visible fall protection or shirtless on a roof, anything you cannot identify.
 - **discard**: every `PAPERWORK-` file. Supplier tickets show the business street address (Sean's home), which is never published anywhere.
@@ -97,10 +103,13 @@ npm run kewl:lint -- social/instagram/evergreen/<pillar>/posts/<new post dirs>
   chimney is not "two feet")? Does an inspection photo ever imply French Roofing did the work?
 - Keep edits minimal and in Sean's voice (`.claude/BRAND.md` sec.4). Edit the `caption-*.md`
   files; keep `caption.md` in step with Instagram.
-- **Who is in the photo?** If Sean is in it, every platform is Sean speaking in first person
-  ("me and my daughter", "I"), never "That's Sean" (Brittany, 2026-11-11). Crew stay third person
-  and unnamed. If the note doesn't say who a person is, or says "confirm who this is", hold the
-  post; never fill in "a crew member".
+- **Who is in the photo?** Only the note says (a human label), never the face. If the note says
+  Sean, the post belongs in personal-brand and follows its voice: Sean talking as himself, "I",
+  jokes and real life, per `social/instagram/evergreen/personal-brand/pillar.md` and
+  `operations/briefings/sean-2026-05-06/personal-brand.md`. It does not have to tie back to French
+  Roofing (no credentials, no "the care I bring to your roof"); only the standard CTA block at the
+  end. Never "That's Sean" or "the owner" (Brittany, 2026-11-11). If the note doesn't say who a
+  person is, or says "confirm who this is", hold the post; never fill in "a crew member".
 - **Hold instead of fixing** when the premise of the post is unsupported (wrong identification,
   invented story the post depends on). Set every platform `status` to `held` in `schedule.json`,
   append `HELD <date>: <reason and what Sean needs to answer>` to its `notes`, and do not upload it.

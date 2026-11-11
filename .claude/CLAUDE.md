@@ -36,7 +36,8 @@ Things that override or extend agency defaults for French Roofing.
 - Banned words/phrases (auto-flag in review): *premier, industry-leading, rockstar, synergy, amazing team, cutting-edge, world-class, best-in-class*.
 - Tagline `Got You Covered!` is rationed, max 1 in 6 social posts.
 - Full voice spec: `.claude/BRAND.md` §4.
-- **Sean in the photo = Sean speaking, first person (operator, 2026-11-11).** When Sean appears in a post's photo or video, every platform's caption is written as Sean: "me and my daughter", "I started French Roofing in 2014", never "That's Sean" or "the owner". Crew members in a photo stay third person ("one of our guys"), and never name a crew member or family member unless Brittany gives the name. If the note doesn't say who is in the photo, hold the post and ask; never guess "a crew member" (2026-11-11: Sean and his daughter were captioned as a crew member).
+- **Sean in the photo = a Personal Brand post in Sean's own voice (operator, 2026-11-11).** Follow `social/instagram/evergreen/personal-brand/pillar.md` and Sean's brief (`operations/briefings/sean-2026-05-06/personal-brand.md`): "I", how Sean actually talks, jokes, girl-dad and real-life moments. It doesn't have to tie back to French Roofing; no credentials or sales lines, just the standard CTA block at the end. Never "That's Sean" or "the owner". Sean is fine with posts showing his daughters (don't name them).
+- **Who's in a photo comes from a human label, never the face.** Sean and the crew look alike in photos. Humans label Sean at intake (the Drive `1. Intake / Sean` subfolder, or "sean" in the file name); unlabeled people are never identified, and a post that depends on who someone is gets held (2026-11-11: Sean and his daughter were captioned as "a crew member").
 
 ### Service area lock
 

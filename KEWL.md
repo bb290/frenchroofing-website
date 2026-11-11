@@ -152,7 +152,7 @@ These files are iterated continuously. As the system runs and Brittany reviews d
 **Done so far:**
 - Brand bible (`.claude/BRAND.md`, approved)
 - Crew & Community pillar — active, exemplar locked, first post approved (Brian)
-- Personal Brand pillar — active, voice sample locked from Sean's "Circa 2014" draft
+- Personal Brand pillar — active (confirmed 2026-11-11), voice sample locked from Sean's "Circa 2014" draft; Sean photos come only from human labels at intake (Drive `1. Intake / Sean`)
 - Educational pillar — active, exemplar locked, posts shipped
 - OG image endpoint (`/api/og`) — photo + grey gradient + logo bottom-left, no text
 - Per-platform caption variants — Instagram / Facebook / LinkedIn / GMB, generated in one Claude call

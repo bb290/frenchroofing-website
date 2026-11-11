@@ -83,7 +83,7 @@ gradient=medium
 
 ### Posting policy
 
-First names of crew and customers appear in posts without separate sign-off (current brand policy, set 2026-05-06). Sean's family members (daughters, etc.) are an exception — those photos need Sean's explicit go-ahead since Sean is the only one who can speak for them.
+First names of crew and customers appear in posts without separate sign-off (current brand policy, set 2026-05-06). Sean's daughters can appear (Sean is fine with it, Brittany 2026-11-11); never name them.
 
 ## Canonical caption sample (the voice reference)
 

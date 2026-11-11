@@ -8,6 +8,9 @@
  *   - Photos and clips in 1. Intake (and any subfolder except "Talking head") land in
  *     assets/images/1.intake as drive_<YYYY-MM-DD>_UNKNOWN_<original name>, each with a <stem>.txt note.
  *     UNKNOWN = label it at the sort, like any hand drop. The weekly sort decides everything else.
+ *   - Anything in a "Sean" subfolder, or with "sean" in its file name, gets "LABELED: Sean is in this" in
+ *     its note. That human label is the only way the sort knows a person is Sean (he and the crew look
+ *     alike; never identify people from faces). Labeled photos go to the Personal Brand pillar.
  *   - Clips in the "Talking head" subfolder go to assets/video/talking-head/ instead: they are reel
  *     material (Reel Kit, fr-reel), not photo posts, and never go through the photo sort.
  *   - operations/hcp-data/drive-manifest.json (gitignored) remembers every Drive id already pulled, so
@@ -83,8 +86,9 @@ async function main() {
     const safe = f.name.replace(/[^\w.\-]+/g, "-");
     const dir = talking ? TALKING_DIR : INTAKE_DIR;
     const savedAs = talking ? `drive_${day}_${safe}` : `drive_${day}_UNKNOWN_${safe}`;
+    const sean = /(^|\/)sean(\/|$)/i.test(path) || /sean/i.test(f.name);
     const where = `Unbound24 - Kewl / French Roofing - Pic / Video Upload / 1. Intake${path ? " / " + path : ""}`;
-    console.log(`${dryRun ? "would pull" : "pulling"}  ${talking ? "[talking head] " : ""}${savedAs}`);
+    console.log(`${dryRun ? "would pull" : "pulling"}  ${talking ? "[talking head] " : ""}${sean ? "[Sean] " : ""}${savedAs}`);
     if (dryRun) { talking ? stats.talking++ : stats.intake++; continue; }
     try {
       mkdirSync(dir, { recursive: true });
@@ -95,7 +99,10 @@ async function main() {
         : `Source: Google Drive (${where}), uploaded ${day}, Drive id ${f.id}, original name ${f.name}.\n` +
           `Not from Housecall Pro: no job number, city or work type recorded. Do not name a city or state a cause; ` +
           `describe only what is visible. ASK SEAN for the job if a post depends on it.\n`;
-      writeFileSync(join(dir, `${parse(savedAs).name}.txt`), note);
+      const label = sean
+        ? `LABELED: Sean is in this (uploader's label: ${path ? "folder " + path : "file name"}). Personal Brand pillar, Sean's own voice.\n`
+        : "";
+      writeFileSync(join(dir, `${parse(savedAs).name}.txt`), note + label);
       manifest[f.id] = { name: f.name, savedAs: join(talking ? "assets/video/talking-head" : "assets/images/1.intake", savedAs), pulledAt: new Date().toISOString() };
       writeFileSync(MANIFEST, JSON.stringify(manifest, null, 2));
       talking ? stats.talking++ : stats.intake++;

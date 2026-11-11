@@ -6,13 +6,13 @@ pillar: personal-brand
 status: active
 mix-share: 0.20
 activated_at: 2026-05-06
-last-updated: 2026-05-06
+last-updated: 2026-11-11
 spec-version: 2.1
 ---
 
 # Pillar: Personal Brand (Sean)
 
-> **Status:** `setup`. Not active yet. When this pillar goes live, Sean-only photos (currently routed to `crew-community/`) migrate here.
+> **Status:** `active` (Brittany, 2026-11-11). Photos of Sean, labeled by a human at intake (Drive `1. Intake / Sean` subfolder or "sean" in the file name), sort here. Never identify Sean from his face; he and the crew look alike.
 >
 > Brand source of truth: `clients/French_Roofing/.claude/BRAND.md`. Voice in §4 with the new punctuation rules (no em dashes, no hashtags on IG, less formal).
 >
@@ -50,6 +50,7 @@ This pillar runs **alongside** the French Roofing brand pillars (Educational, Cr
 - Educational content (Educational pillar)
 - Before/After (Before/After pillar)
 - Anyone other than Sean as the focal subject
+- A sales pitch. Posts don't have to tie back to French Roofing: no credentials, no "same care on your roof". The standard CTA block at the end is enough (Brittany, 2026-11-11)
 
 ## Voice sample (from Brittany, 2026-05-06)
 
@@ -104,16 +105,16 @@ voice_person: 1st-singular-sean
 photo: <relative path>
 ```
 
-## TODO before activation
+## Activation (done 2026-11-11)
 
-- [ ] Decide mix share (e.g. 15% of evergreen volume; reduces other pillars proportionally)
-- [ ] Update `pillars.md` with the new mix when this goes active
-- [ ] Migrate Sean-only photos from `crew-community/photos/` to `personal-brand/photos/`
-- [ ] Migrate any Sean-only posts already drafted under `crew-community/posts/`
-- [ ] Confirm with Sean that this pillar's voice register is OK for him to put his name behind
-- [ ] Decide cadence (every Sunday? once a month?)
+- [x] Mix share: 20% long-term, 35% while Before/After is parked (`pillars.md`)
+- [x] `pillars.md` lists it active
+- [x] Routing: labeled Sean photos sort to `assets/images/2.sorted/personal-brand/` (fr-weekly-kewl)
+- [x] Sean posts drafted under crew-community move here when found (Nov 27 tree farm moved 2026-11-11)
+- [x] Sean's OK not needed (Brittany, 2026-11-11: he doesn't mind). Daughters can appear; don't name them
+- [x] Cadence: about two a month (Sean's brief), as labeled photos allow
 
 ## Related
 
 - `pillars.md`: index of all pillars
-- `crew-community/pillar.md`: where Sean-only posts currently route until this pillar activates
+- `crew-community/pillar.md`: sister pillar (crew, company voice)
