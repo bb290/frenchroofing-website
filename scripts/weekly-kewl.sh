@@ -1,7 +1,7 @@
 #!/bin/bash
 # weekly-kewl.sh
 #
-# Runs the fr-weekly-kewl skill unattended: Housecall Pro photos -> sort -> promote -> caption
+# Runs the fr-weekly-kewl skill unattended: Housecall Pro photos + Drive intake -> sort -> promote -> caption
 # review -> Metricool DRAFTS. Fired every Wednesday by the LaunchAgent in operations/launchd/.
 # Brittany reviews and approves the drafts in Metricool; nothing here can publish.
 #
@@ -41,7 +41,7 @@ fi
 trap 'rmdir "$LOCK" 2>/dev/null' EXIT
 
 if [ "$MODE" = "smoke" ]; then
-  PROMPT="Plumbing check only. Change nothing, create nothing in Metricool. Do exactly this and report each result on its own line: (1) run: npm run hcp:photos -- --dry-run --since 3  (2) call the Metricool getBrandSettings tool and state the French Roofing brand's timezone  (3) read .claude/skills/fr-weekly-kewl/SKILL.md and state its first heading  (4) run: git status --short  and state how many lines it printed. If any tool is denied, say which one."
+  PROMPT="Plumbing check only. Change nothing, create nothing in Metricool. Do exactly this and report each result on its own line: (1) run: npm run hcp:photos -- --dry-run --since 3  and  npm run drive:intake -- --dry-run  (2) call the Metricool getBrandSettings tool and state the French Roofing brand's timezone  (3) read .claude/skills/fr-weekly-kewl/SKILL.md and state its first heading  (4) run: git status --short  and state how many lines it printed. If any tool is denied, say which one."
 else
   PROMPT="Today is $TODAY. Run the weekly French Roofing Kewl sequence. Read .claude/skills/fr-weekly-kewl/SKILL.md and follow it exactly, start to finish, including the run report at operations/kewl-runs/$TODAY-report.md. This run is unattended: nobody can answer questions. When unsure, hold the item, record why in the report, and continue."
 fi
@@ -49,6 +49,7 @@ fi
 ALLOWED=(
   "Read" "Glob" "Grep" "Write" "Edit"
   "Bash(npm run hcp:photos:*)" "Bash(npm run -s hcp:photos:*)"
+  "Bash(npm run drive:intake:*)" "Bash(npm run -s drive:intake:*)"
   "Bash(npm run kewl:sheets:*)" "Bash(npm run -s kewl:sheets:*)"
   "Bash(npm run kewl:sort:*)" "Bash(npm run -s kewl:sort:*)"
   "Bash(npm run kewl:lint:*)" "Bash(npm run -s kewl:lint:*)"

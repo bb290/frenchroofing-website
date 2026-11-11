@@ -1,6 +1,6 @@
 ---
 name: fr-weekly-kewl
-description: The weekly French Roofing Kewl run. Pulls new job photos from Housecall Pro, sorts them, promotes up to 4 into finished posts, reviews every caption, and loads them into Metricool as DRAFTS for Brittany to approve. Runs unattended every Wednesday (launchd → scripts/weekly-kewl.sh) and on demand via "/fr-weekly-kewl", "run the weekly Kewl", or "do the Wednesday social run".
+description: The weekly French Roofing Kewl run. Pulls new job photos from Housecall Pro and Sean's Google Drive intake, sorts them, promotes up to 4 into finished posts, reviews every caption, and loads them into Metricool as DRAFTS for Brittany to approve. Runs unattended every Wednesday (launchd → scripts/weekly-kewl.sh) and on demand via "/fr-weekly-kewl", "run the weekly Kewl", or "do the Wednesday social run".
 ---
 
 # FR Weekly Kewl — Housecall Pro photos → Metricool drafts
@@ -22,6 +22,18 @@ npm run hcp:photos -- --since 10
 ```
 Ten days covers the week plus slack; the manifest prevents re-downloads. If the pull fails
 (key revoked, API down), stop and write the run report. Do not continue on stale intake.
+
+Then pull Sean's Google Drive uploads (added 2026-11-10):
+```
+npm run drive:intake
+```
+New files from the Drive folder `Unbound24 - Kewl / French Roofing - Pic / Video Upload / 1. Intake` land in
+`1.intake` as `drive_<date>_UNKNOWN_<name>`, each with a note saying there's no job, city or work type: sort them like
+any hand drop (describe only what's visible, name no city). Clips from its `Talking head` subfolder go to
+`assets/video/talking-head/` instead and never enter the sort: list each one in the report under **Needs
+Brittany** as "talking-head clip received, ready for this week's reel" (the reel is made with `fr-reel`, storyboard
+first, never in this unattended run). If the Drive pull fails, note it in the report and carry on with the Housecall
+Pro photos.
 
 ### 2. Look at every photo
 ```
