@@ -132,8 +132,13 @@ Re-read with `getScheduledPosts` first; if it differs from what this skill uploa
 Write `operations/kewl-runs/<date>-report.md`: photos pulled, sort counts, what was promoted and
 for which dates, every caption change and why, anything held and the exact question for Sean,
 WARNs you judged acceptable (so Brittany can disagree), queue depth remaining, and any error.
-Then commit the new post folders and any skill or script fixes (plain `git commit`, explicit
-paths). **Never push and never run `npm run deploy`**; pushing triggers a site deploy.
+Then commit the new post folders and any skill or script fixes, as two separate plain commands
+run from the repo root (the run already starts there): `git add <paths>`, then
+`git commit -m "<message>" -- <paths>`. Never `git -C`, never `cd ... &&`, never chain commands:
+the unattended run only allows commands that start with `git add` / `git commit`, so anything
+else is blocked (2026-11-11 run lost its commit that way). Other people's uncommitted work sits
+in this repo, so name every path; never `git add -A` or `git commit -a`.
+**Never push and never run `npm run deploy`**; pushing triggers a site deploy.
 
 ## Hard rules (all of these have bitten before)
 
