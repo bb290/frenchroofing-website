@@ -103,7 +103,14 @@ A residential and commercial roofing company in Damascus, Oregon, family-owned s
 | Warning | `#d85024` | Same as secondary |
 | Error | `#b8341c` | Form errors |
 
-**Typography, Inter (Google Fonts).** Weights: 400 body, 500 UI, 600 subheads, 700 headlines.
+**Typography, Figtree (website since 2026-11-15; Brittany approved a similar-looking change from Inter).** Weights: 400 body, 500 UI, 600 subheads, 700-800 headlines. Self-hosted in the site (`src/fonts/`, OFL license). Inter remains fine for social graphics until those templates are redone.
+
+**Website rules set in the 2026-11-15 readability pass (frenchroofing.com):**
+- Text sizes are one step above the old scale, for older readers: body 18px, small 16px, caption 14px, guide body 19px.
+- Primary buttons are yellow `#ffbd59` with navy `#092e5e` text. White text on orange `#d85024` fails contrast at normal sizes, so orange is for accents and fills.
+- Orange used as TEXT on light backgrounds is `#c04520` (5.1:1). `#d85024` stays for fills, icons, focus rings.
+- Text Muted `#9a9895` is not used for readable text on the site (2.6:1 on cream); use `#6b6a67` or darker.
+- No em dashes in site copy (house style).
 
 > **Exception, review posts only (operator, 2026-11-04):** the Kewl review graphics may use Caveat and Permanent Marker (handwritten notes) and Shrikhand (the surf-poster headline). Inter everywhere else. See `KEWL.md`, Review posts.
 

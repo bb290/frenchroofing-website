@@ -18,7 +18,7 @@ Pin this to a Notion doc, Slack canvas, or a wall. Glance at it during reviews.
 | Success | `#4a7c4e` | Confirmations |
 | Error | `#b8341c` | Form errors |
 
-## Typography — Inter (Google Fonts)
+## Typography — Figtree on the website (since 2026-11-15; Inter on older social templates)
 
 | Style | Size | Weight | Use |
 |---|---|---|---|
@@ -27,7 +27,7 @@ Pin this to a Notion doc, Slack canvas, or a wall. Glance at it during reviews.
 | H2 | 32px | 600 | Section headers |
 | H3 | 24px | 600 | Subsections |
 | H4 | 20px | 500 | Card titles |
-| Body | 17px | 400 | Default copy |
+| Body | 18px on the website (17px social) | 400 | Default copy |
 | Small | 15px | 400 | Captions, helper text |
 | Caption | 13px | 500 | Labels (UPPERCASE, +0.05em) |
 
@@ -55,7 +55,7 @@ Pin this to a Notion doc, Slack canvas, or a wall. Glance at it during reviews.
 
 | Component | Default |
 |---|---|
-| Primary button | `#ffbd59` fill · `#092e5e` text · 8px radius · no shadow |
+| Primary button | `#ffbd59` fill · `#092e5e` text · 8px radius · no shadow (orange text on light bg: `#c04520`) |
 | Secondary button | Outlined `#092e5e` · transparent fill · 8px radius |
 | Card | `#f5f1ea` on `#fdfcfa` · 12px radius · 1px `#e5e0d6` border · no shadow · 24–32px padding |
 | Input | White fill · 1px `#e5e0d6` border · 8px radius · `#d85024` focus border |
