@@ -7,7 +7,7 @@ import { getEbook } from "@/lib/ebooks";
 import { CLUSTERS, getClusterGuides, getPillar } from "@/lib/guides";
 
 export const metadata: Metadata = {
-  title: `Roof Care Guides for Oregon Homeowners | ${COMPANY.name}`,
+  title: `Roof Care Guides for Oregon Homeowners`,
   description:
     "Straight answers about moss, maintenance, repairs, and roof care in the Pacific Northwest. Written by the French Roofing crew in Damascus, OR. No jargon, no scare tactics.",
   alternates: { canonical: `${COMPANY.url}/guides` },

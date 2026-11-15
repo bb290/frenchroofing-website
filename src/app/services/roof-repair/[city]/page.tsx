@@ -25,7 +25,7 @@ export async function generateMetadata({
   if (!area) return {};
 
   return {
-    title: `Roof Repair in ${area.name}, OR | ${COMPANY.name}`,
+    title: `Roof Repair in ${area.name}, OR`,
     description: `Fast, reliable roof repair in ${area.name}, OR. Fix leaks, storm damage, cracked flashing, and missing shingles before they become bigger problems. Licensed (CCB #${COMPANY.ccb}), CertainTeed Certified. Schedule your repair today.`,
     alternates: {
       canonical: `${COMPANY.url}/services/roof-repair/${area.slug}`,

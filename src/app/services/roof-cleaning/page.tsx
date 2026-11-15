@@ -10,7 +10,7 @@ import { COMPANY } from "@/lib/constants";
 import { OG_SERVICE_PHOTOS, ogImage } from "@/lib/og";
 
 export const metadata: Metadata = {
-  title: `Roof Cleaning | Damascus, Clackamas & Happy Valley | ${COMPANY.name}`,
+  title: `Roof Cleaning | Damascus, Clackamas & Happy Valley`,
   description:
     "Professional roof cleaning in Damascus, Clackamas, Happy Valley, and the surrounding area. Remove moss, algae, and debris to extend your roof's life. One-time or recurring service. Licensed (CCB #203933). Serving Clackamas County and beyond.",
   alternates: { canonical: `${COMPANY.url}/services/roof-cleaning` },

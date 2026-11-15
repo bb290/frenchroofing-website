@@ -7,7 +7,7 @@ import { COMPANY } from "@/lib/constants";
 import { BONUS_TIP, ESSENTIAL_QUESTIONS } from "@/lib/essentials";
 
 export const metadata: Metadata = {
-  title: `10 Essential Questions to Ask Your Roofing Contractor | ${COMPANY.name}`,
+  title: `10 Essential Questions to Ask Your Roofing Contractor`,
   description:
     "Know exactly what to ask before hiring a roofer. Sean French walks you through the 10 questions that separate the pros from the pretenders. Watch the videos or read the guide.",
   alternates: { canonical: `${COMPANY.url}/essentials` },

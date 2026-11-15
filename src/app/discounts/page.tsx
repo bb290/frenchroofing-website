@@ -5,7 +5,7 @@ import FAQSection from "@/components/FAQSection";
 import { COMPANY } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Community Discounts | ${COMPANY.name}`,
+  title: `Community Discounts`,
   description:
     "French Roofing offers special roofing discounts for active military, veterans, first responders, nurses, and teachers. Serving Damascus, Clackamas, and Happy Valley. Book online today.",
   alternates: { canonical: `${COMPANY.url}/discounts` },

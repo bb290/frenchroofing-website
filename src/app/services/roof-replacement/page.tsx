@@ -10,7 +10,7 @@ import { COMPANY } from "@/lib/constants";
 import { OG_SERVICE_PHOTOS, ogImage } from "@/lib/og";
 
 export const metadata: Metadata = {
-  title: `Roof Replacement | Damascus, Clackamas & Happy Valley | ${COMPANY.name}`,
+  title: `Roof Replacement | Damascus, Clackamas & Happy Valley`,
   description:
     "Full roof replacement by a CertainTeed Certified team across Damascus, Clackamas, Happy Valley, and the surrounding area. Premium materials, honest pricing, and 0% financing through Enhancify. CCB #203933.",
   alternates: { canonical: `${COMPANY.url}/services/roof-replacement` },

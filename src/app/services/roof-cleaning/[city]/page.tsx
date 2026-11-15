@@ -25,7 +25,7 @@ export async function generateMetadata({
   if (!area) return {};
 
   return {
-    title: `Roof Cleaning in ${area.name}, OR | ${COMPANY.name}`,
+    title: `Roof Cleaning in ${area.name}, OR`,
     description: `Professional roof cleaning in ${area.name}, OR. Remove moss, algae, and debris to extend your roof's life. One-time or recurring service. Licensed (CCB #${COMPANY.ccb}). Schedule your cleaning today.`,
     alternates: {
       canonical: `${COMPANY.url}/services/roof-cleaning/${area.slug}`,

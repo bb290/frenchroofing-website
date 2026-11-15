@@ -6,7 +6,7 @@ import { COMPANY } from "@/lib/constants";
 import { POSTS } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: `Roofing Blog for Portland Metro Homeowners | ${COMPANY.name}`,
+  title: `Roofing Blog for Portland Metro Homeowners`,
   description:
     "Straight answers on roof repair, replacement, moss, storms, and hiring right, from a family roofing crew in Damascus, Oregon.",
   alternates: { canonical: `${COMPANY.url}/blog` },

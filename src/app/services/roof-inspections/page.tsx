@@ -10,7 +10,7 @@ import { COMPANY } from "@/lib/constants";
 import { OG_SERVICE_PHOTOS, ogImage } from "@/lib/og";
 
 export const metadata: Metadata = {
-  title: `Free Roof Inspections | Damascus, Clackamas & Happy Valley | ${COMPANY.name}`,
+  title: `Free Roof Inspections | Damascus, Clackamas & Happy Valley`,
   description:
     "Free, honest, thorough roof inspections in Damascus, Clackamas, Happy Valley, and the surrounding area. Get a clear picture of your roof's condition - whether you're buying a home, filing a claim, or just want to know where things stand. Licensed (CCB #203933), CertainTeed Certified.",
   alternates: { canonical: `${COMPANY.url}/services/roof-inspections` },

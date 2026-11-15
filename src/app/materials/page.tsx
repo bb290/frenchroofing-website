@@ -7,7 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { COMPANY } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `CertainTeed Roofing Materials & Options | ${COMPANY.name}`,
+  title: `CertainTeed Roofing Materials & Options`,
   description:
     "Learn about the CertainTeed roofing system French Roofing installs, from Landmark architectural shingles to premium designer options. Built to handle Oregon weather.",
   alternates: { canonical: `${COMPANY.url}/materials` },

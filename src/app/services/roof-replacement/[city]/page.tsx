@@ -25,7 +25,7 @@ export async function generateMetadata({
   if (!area) return {};
 
   return {
-    title: `Roof Replacement in ${area.name}, OR | ${COMPANY.name}`,
+    title: `Roof Replacement in ${area.name}, OR`,
     description: `Full roof replacement in ${area.name}, OR by a CertainTeed Certified team. Premium materials, honest pricing, and 0% financing through Enhancify. Licensed & bonded (CCB #${COMPANY.ccb}). Schedule your free estimate today.`,
     alternates: {
       canonical: `${COMPANY.url}/services/roof-replacement/${area.slug}`,

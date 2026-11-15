@@ -7,7 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { COMPANY } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Financing Options | ${COMPANY.name}`,
+  title: `Financing Options`,
   description:
     "French Roofing partners with Enhancify to offer flexible roof financing with 0% interest options, multiple plans, and no-impact credit checks. Damascus, OR.",
   alternates: { canonical: `${COMPANY.url}/financing` },

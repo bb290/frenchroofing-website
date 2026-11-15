@@ -3,7 +3,7 @@ import Link from "next/link";
 import { COMPANY, SERVICES } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Page Not Found | ${COMPANY.name}`,
+  title: `Page Not Found`,
 };
 
 export default function NotFound() {

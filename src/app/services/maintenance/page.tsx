@@ -7,7 +7,7 @@ import { COMPANY } from "@/lib/constants";
 import { OG_SERVICE_PHOTOS, ogImage } from "@/lib/og";
 
 export const metadata: Metadata = {
-  title: `Recurring Roof Maintenance Program | ${COMPANY.name}`,
+  title: `Recurring Roof Maintenance Program`,
   description:
     "French Roofing's recurring maintenance program keeps your roof clean, clear, and lasting longer. 2 visits per year - debris removal, gutter clearing, moss prevention, and inspection. Serving Damascus, Clackamas, and Happy Valley.",
   alternates: { canonical: `${COMPANY.url}/services/maintenance` },

@@ -9,7 +9,8 @@ import RecentWork from "@/components/RecentWork";
 import { COMPANY } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "About French Roofing | Our Story",
+  // absolute: the brand is already in this title, so skip the "| French Roofing" template
+  title: { absolute: "About French Roofing | Our Story" },
   description:
     "French Roofing was founded in 2014 by Sean French in Damascus, OR. Learn about our values - Integrity, Workmanship, and Community - and why local homeowners trust our family-owned, CertainTeed Certified roofing team.",
   alternates: { canonical: `${COMPANY.url}/about` },

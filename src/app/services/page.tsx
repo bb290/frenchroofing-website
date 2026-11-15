@@ -7,7 +7,7 @@ import RelatedGuides from "@/components/RelatedGuides";
 import { COMPANY, SERVICES } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Roofing Services in Damascus, OR | ${COMPANY.name}`,
+  title: `Roofing Services in Damascus, OR`,
   description:
     "Roof replacement, repair, cleaning, and inspections from a family-owned team in Damascus, OR. Licensed (CCB #203933), CertainTeed Certified, and financing available.",
   alternates: { canonical: `${COMPANY.url}/services` },

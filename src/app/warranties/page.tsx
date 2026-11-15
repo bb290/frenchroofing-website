@@ -7,7 +7,7 @@ import { COMPANY } from "@/lib/constants";
 import { ogImage } from "@/lib/og";
 
 export const metadata: Metadata = {
-  title: `Roofing Warranty | ${COMPANY.name}`,
+  title: `Roofing Warranty`,
   description:
     "Every French Roofing roof comes covered: a 5-year minimum workmanship warranty plus a 30-year CertainTeed manufacturer warranty on Landmark shingles. Here's exactly what's covered. Damascus, OR.",
   alternates: { canonical: `${COMPANY.url}/warranties` },

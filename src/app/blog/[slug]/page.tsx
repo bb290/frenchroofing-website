@@ -27,7 +27,8 @@ export async function generateMetadata({
   if (!post) return {};
 
   return {
-    title: `${post.metaTitle ?? post.title} | ${COMPANY.name}`,
+    // the layout template adds "| French Roofing"; strip it if a post's saved title already ends with it
+    title: (post.metaTitle ?? post.title).replace(/\s*\|\s*French Roofing\s*$/, ""),
     description: post.metaDescription,
     alternates: { canonical: `${COMPANY.url}/blog/${post.slug}` },
     openGraph: {
