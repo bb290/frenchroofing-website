@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Review post, jobsite note</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&amp;family=Inter:wght@500;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 1080px; height: 1350px; position: relative; overflow: hidden; background: #2b2a28; font-family: Inter, sans-serif">
+<img src="/_blob/1caaa91dc74aa8460fe777498f5f8bb1" alt="New gray shingle roof on a sunny day" style="position: absolute; top: 0; left: 0; width: 1080px; height: 1350px; object-fit: cover; object-position: center 30%; display: block">
+<div style="position: absolute; left: 110px; top: 470px; width: 860px; height: 760px; transform: rotate(-2.5deg); box-shadow: 0 30px 60px rgba(0,0,0,0.35), 0 6px 14px rgba(0,0,0,0.25)">
+<div style="width: 860px; height: 760px; box-sizing: border-box; padding: 92px 72px 56px; background: #fbf7ec; background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 67px, #d9e3ef 67px, #d9e3ef 69px); background-position: 0 40px; clip-path: polygon(0 0, 100% 0, 100% 96%, 96% 99%, 91% 96.5%, 85% 99.5%, 79% 97%, 72% 99%, 66% 96.5%, 59% 99.5%, 52% 97%, 45% 99.5%, 38% 96.8%, 31% 99.3%, 24% 97%, 17% 99.5%, 10% 96.8%, 4% 99.2%, 0 97%); display: flex; flex-direction: column; gap: 22px; color: #092e5e">
+<div style="display: flex; gap: 6px" aria-hidden="true">
+<sc-for list="{{stars}}" as="s" hint-placeholder-count="5">
+<svg width="54" height="54" viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.1l-5.7 3.2 1.2-6.4-4.7-4.4 6.4-.8z" fill="#d85024" stroke="#d85024" stroke-width="1.2" stroke-linejoin="round"></path></svg>
+</sc-for>
+</div>
+<p style="margin: 0; font-family: Caveat, cursive; font-weight: 700; font-size: 62px; line-height: 69px">I refer 100% of my clients, family and friends to French roofing. Reliable and affordable! Thank you guys for always getting the job done.</p>
+<p style="margin: 0; font-family: Caveat, cursive; font-weight: 600; font-size: 54px; line-height: 69px; color: #d85024; align-self: flex-end">Tailor J</p>
+</div>
+</div>
+<div style="position: absolute; left: 440px; top: 438px; width: 230px; height: 70px; background: rgba(216,80,36,0.88); transform: rotate(3deg); box-shadow: 0 2px 4px rgba(0,0,0,0.15)"></div></div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1080,"height":1350}}'>
+class Component extends DCLogic {
+renderVals() {
+return { stars: [1, 2, 3, 4, 5] };
+}
+}
+</script>
+</body>
+</html>

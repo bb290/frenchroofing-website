@@ -1,0 +1,38 @@
+{
+  "docId": "french-roofing~review-jenni-j-1",
+  "platforms": {
+    "facebook": {
+      "state": "scheduled",
+      "metricoolId": "425729536",
+      "uuid": "-8115105321101342103",
+      "at": "2026-12-14T09:37",
+      "edited": false,
+      "approvedAt": "2026-11-12T14:02:24.355Z"
+    },
+    "gmb": {
+      "state": "scheduled",
+      "metricoolId": "425729711",
+      "uuid": "-6655594737599887533",
+      "at": "2026-12-14T07:12",
+      "edited": false,
+      "approvedAt": "2026-11-12T14:02:30.910Z"
+    },
+    "instagram": {
+      "state": "scheduled",
+      "metricoolId": "425729409",
+      "uuid": "-7041053026618752437",
+      "at": "2026-12-14T18:07",
+      "edited": false,
+      "approvedAt": "2026-11-12T14:02:18.385Z"
+    },
+    "linkedin": {
+      "state": "scheduled",
+      "metricoolId": "425729629",
+      "uuid": "3682433506212857017",
+      "at": "2026-12-14T08:23",
+      "edited": false,
+      "approvedAt": "2026-11-12T14:02:27.576Z"
+    }
+  },
+  "held": null
+}

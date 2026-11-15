@@ -1,0 +1,38 @@
+{
+  "docId": "french-roofing~review-nathan-p-1",
+  "platforms": {
+    "facebook": {
+      "state": "scheduled",
+      "metricoolId": "425729983",
+      "uuid": "4225053352709734657",
+      "at": "2026-12-16T09:37",
+      "edited": false,
+      "approvedAt": "2026-11-12T14:02:43.990Z"
+    },
+    "gmb": {
+      "state": "scheduled",
+      "metricoolId": "425730082",
+      "uuid": "6686926371129872214",
+      "at": "2026-12-16T07:12",
+      "edited": false,
+      "approvedAt": "2026-11-12T14:02:49.225Z"
+    },
+    "instagram": {
+      "state": "scheduled",
+      "metricoolId": "425729933",
+      "uuid": "-6294565430632562314",
+      "at": "2026-12-16T12:17",
+      "edited": false,
+      "approvedAt": "2026-11-12T14:02:41.194Z"
+    },
+    "linkedin": {
+      "state": "scheduled",
+      "metricoolId": "425730034",
+      "uuid": "1584451041439338093",
+      "at": "2026-12-16T08:23",
+      "edited": false,
+      "approvedAt": "2026-11-12T14:02:46.625Z"
+    }
+  },
+  "held": null
+}

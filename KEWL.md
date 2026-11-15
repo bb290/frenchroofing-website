@@ -40,7 +40,7 @@ The bottleneck for any roofing company doing social media is photos and consiste
   • Assemble the finished post folder under social/.../<pillar>/posts/<slug>/
   • Move the original to assets/images/3.moved-to-social/   (last action)
          ↓
-[SMM] Review the draft posts in Metricool, tweak, approve
+[SMM] Review the posts in the Unbound Dashboard, tweak, approve (approving schedules them in Metricool)
          ↓
 Post lives in Metricool with date / time / platform set; auto-publishes when scheduled
 ```
@@ -74,8 +74,9 @@ e.g. `crew-community_2026-06-09_team-tearoff-ranch-home_001.jpg`
 > **Changed 2026-09-17 (operator decision).** The whole sequence below now runs unattended every
 > Wednesday via the `fr-weekly-kewl` skill (`.claude/skills/fr-weekly-kewl/SKILL.md`, fired by
 > `scripts/weekly-kewl.sh` from a macOS LaunchAgent). Claude does the pull, the sort, the promote,
-> and a caption review, then loads the posts into Metricool **as drafts**. The one remaining human
-> touchpoint is touchpoint 2: Brittany reviews and approves in Metricool. The sort is still
+> and a caption review, then marks the posts ready in the **Unbound Dashboard** (changed 2026-11-11;
+> before that they went into Metricool as drafts). The one remaining human touchpoint is touchpoint 2:
+> Brittany reviews and approves in the dashboard, and approving schedules the post in Metricool. The sort is still
 > judgment work; the judgment is now written down in the skill, and anything uncertain is held
 > with a question for Sean instead of guessed. Touchpoint 1 below describes the original manual
 > sort and still applies to anything dropped into `1.intake` by hand between runs (the Wednesday
@@ -84,11 +85,11 @@ e.g. `crew-community_2026-06-09_team-tearoff-ranch-home_001.jpg`
 Originally two, and only two:
 
 1. **Weekly intake-and-sort (Claude Cowork).** A human-run session reads everything in `1.intake`, looks at each file, decides the pillar, renames it, adds context, and moves it into `2.sorted/<pillar>`. This is judgment work; pillar routing depends on what is actually in the photo, so it is **not** automated and **not** a cron job.
-2. **Draft review (Metricool).** Check the generated captions + image, tweak, approve.
+2. **Post review (Unbound Dashboard since 2026-11-11; Metricool before).** Check the generated captions + image, tweak, approve.
 
 Everything between the sort and the review is the `promote` step. **Code's judgment begins at `2.sorted`, never before it.** The one piece of code upstream of the sort is `scripts/hcp-photos.ts`, which only delivers Housecall Pro photos into `1.intake`; it makes no pillar or keep/discard decisions.
 
-**Today (2026-11-10).** The Wednesday run promotes up to 4 queued photos (Tue/Thu/Sat/Sun slots; raised from 3 on 2026-11-10 for the 3-4 posts a week standard in `unbound-toolkit/docs/kewl-methodology.md`), and drafts land in Metricool through the MCP connector. The weekly reel: a talking-head clip goes through the Reel Kit; with no clip, a B-roll reel through the toolkit skill `kewl-broll-reel`, both in French Roofing's Reel Kit style (`reel-kit/style/`), storyboard first, then Metricool drafts (`fr-reel`). First B-roll reel: "We protect your lawn", 2026-11-10. Since 2026-11-10 the Wednesday run also pulls Sean's Google Drive uploads (`npm run drive:intake`: Unbound24 - Kewl / French Roofing - Pic / Video Upload / 1. Intake into `1.intake`; its Talking head subfolder into `assets/video/talking-head/` for the reel). Still to do: automatic review posts (waiting on the Google Business connection).
+**Today (2026-11-10).** The Wednesday run promotes up to 4 queued photos (Tue/Thu/Sat/Sun slots; raised from 3 on 2026-11-10 for the 3-4 posts a week standard in `unbound-toolkit/docs/kewl-methodology.md`), and the posts land in the Unbound Dashboard as ready (since 2026-11-11; Metricool drafts before). The weekly reel: a talking-head clip goes through the Reel Kit; with no clip, a B-roll reel through the toolkit skill `kewl-broll-reel`, both in French Roofing's Reel Kit style (`reel-kit/style/`), storyboard first, then Metricool drafts (`fr-reel`), which show up in the dashboard for approval. First B-roll reel: "We protect your lawn", 2026-11-10. Since 2026-11-10 the Wednesday run also pulls Sean's Google Drive uploads (`npm run drive:intake`: Unbound24 - Kewl / French Roofing - Pic / Video Upload / 1. Intake into `1.intake`; its Talking head subfolder into `assets/video/talking-head/` for the reel). Still to do: automatic review posts (waiting on the Google Business connection).
 
 ## Review posts (added 2026-11-04, operator decisions)
 
@@ -158,9 +159,9 @@ These files are iterated continuously. As the system runs and Brittany reviews d
 - Per-platform caption variants — Instagram / Facebook / LinkedIn / GMB, generated in one Claude call
 - Intake + sort workflow — single `assets/images/1.intake` drop, weekly Claude Cowork sort into `2.sorted/<pillar>` (manual, by design), `[pillar]_[date]_[desc]_[seq]` naming
 - Consolidated `promote` (`scripts/promote-photo.ts`) — per photo from the queue: make post-ready, bake logo + gradient, write the 4 captions, assemble the finished post folder, archive the original to `3.moved-to-social/`
-- Caption generator script (`scripts/evergreen-generate.ts`) — earlier pool-based auto-pick path; still present, used by the weekly cron
+- Caption generator script (`scripts/evergreen-generate.ts`) — earlier pool-based auto-pick path; still present, no longer scheduled (2026-11-13)
 - Photo normalization tool (`scripts/normalize-photos.sh`) — bakes EXIF rotation
-- GitHub Actions cron (`.github/workflows/evergreen-instagram.yml`) — weekly cron + manual dispatch, opens PR for review
+- GitHub Actions cron (`.github/workflows/evergreen-instagram.yml`) — retired 2026-11-13 (disabled). Evergreen educational posts now come from the Wednesday weekly Kewl run (at least 1 of the 3-4 posts)
 
 **Still to build for v1:**
 - ~~Metricool API integration~~ — done 2026-09-17 via the Metricool MCP connector: the weekly run creates drafts directly (create + read only; it cannot edit or approve)

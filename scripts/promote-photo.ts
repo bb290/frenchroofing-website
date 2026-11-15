@@ -228,6 +228,9 @@ async function makePostReadyTemp(src: string, ext: string): Promise<string> {
   const tmp = join(tmpdir(), `promote-src-${process.pid}-${Date.now()}-${basename(src, ext)}.jpg`);
   if (ext === ".heic") {
     await execFileAsync("sips", ["-s", "format", "jpeg", src, "--out", tmp]);
+    // sips keeps the HEIC's rotation as an EXIF flag instead of turning the pixels, and sharp ignores
+    // that flag, so portrait iPhone photos baked sideways (Dec 18 bowling post, 2026-11-12). Bake it in.
+    await normalizeOrientation(tmp);
   } else {
     const passthrough = join(
       tmpdir(),

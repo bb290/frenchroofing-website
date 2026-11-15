@@ -5,9 +5,13 @@
  * Housecall Pro is the system of record for jobs, customers, estimates, and job photos;
  * this is the one place scripts and workflows read that data from.
  *
- * Read-only on purpose: only GET is implemented. Writes (create job, update schedule, ...)
- * get added deliberately, per workflow, once there is a reviewed need. Pair this with a
- * read-only API key (HCP App Store → API Key Management → Generate → "Read-only").
+ * Read-only on purpose: reads only ever GET. Writes get added deliberately, per workflow, once
+ * there is a reviewed need, each as its own function below. Pair HOUSECALL_PRO_API_KEY with a read-only key (HCP App Store → API
+ * Key Management → Generate → "Read-only").
+ *
+ * Reviewed writes (each its own function below):
+ *   - setJobPipelineStatus: fr-close-out moves a closed-out job to the "Archived" pipeline
+ *     stage (operator request, 2026-10-21).
  *
  * Customer data is PII. Never commit API responses; write dumps under operations/hcp-data/
  * (gitignored) and keep customer names, addresses, and phones out of published content.
@@ -16,6 +20,9 @@
  *   HOUSECALL_PRO_API_KEY   (required)
  *   HOUSECALL_PRO_AUTH      (optional: "Token" | "Bearer"; default Token, which is what the
  *                            official docs specify for API keys. Bearer is for OAuth tokens.)
+ *   HOUSECALL_PRO_WRITE_KEY (optional: separate key with write permission for the reviewed
+ *                            writes below. If unset they use HOUSECALL_PRO_API_KEY, which then
+ *                            needs write permission; a read-only key gets a 401 and nothing changes.)
  */
 
 import { existsSync, readFileSync } from "node:fs";
@@ -36,7 +43,7 @@ export class HcpError extends Error {
     public path: string,
     public body: string,
   ) {
-    super(`Housecall Pro ${status} on GET ${path}: ${body.slice(0, 300)}`);
+    super(`Housecall Pro ${status} on ${path.startsWith("PUT ") ? path : `GET ${path}`}: ${body.slice(0, 300)}`);
   }
 }
 
@@ -126,6 +133,35 @@ export async function* hcpList<T = Record<string, unknown>>(
     yield* items;
     if (items.length === 0 || page >= (res.total_pages ?? page)) return;
   }
+}
+
+/** Pipeline stage ids for jobs (GET /pipeline/statuses?resource_type=job), looked up by name. */
+export async function jobPipelineStatusId(name: string): Promise<string> {
+  for await (const s of hcpList<{ id: string; name: string }>("/pipeline/statuses", "statuses", { resource_type: "job" })) {
+    if (s.name.trim().toLowerCase() === name.trim().toLowerCase()) return s.id;
+  }
+  throw new Error(`No job pipeline stage named "${name}" in Housecall Pro.`);
+}
+
+/**
+ * Reviewed write: move one job to a pipeline stage (PUT /pipeline/statuses). The only write
+ * in this client. Uses HOUSECALL_PRO_WRITE_KEY, else HOUSECALL_PRO_API_KEY.
+ */
+export async function setJobPipelineStatus(jobId: string, statusId: string): Promise<unknown> {
+  loadEnvLocal();
+  const key = process.env.HOUSECALL_PRO_WRITE_KEY || apiKey();
+  const path = "/pipeline/statuses";
+  const res = await fetch(new URL(path, BASE_URL), {
+    method: "PUT",
+    headers: { Authorization: `${defaultScheme()} ${key}`, Accept: "application/json", "Content-Type": "application/json" },
+    body: JSON.stringify({ resource_type: "job", resource_id: jobId, status_id: statusId }),
+  });
+  const text = await res.text();
+  if (res.status === 401 || res.status === 403) {
+    throw new Error("The Housecall Pro key doesn't have write permission, so the job was not archived. Archive it in Housecall Pro by hand, or put a full-access key in .env.local.");
+  }
+  if (!res.ok) throw new HcpError(res.status, `PUT ${path}`, text);
+  return text ? JSON.parse(text) : {};
 }
 
 export const hcp = {

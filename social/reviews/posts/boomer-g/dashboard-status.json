@@ -1,0 +1,38 @@
+{
+  "docId": "french-roofing~review-boomer-g-1",
+  "platforms": {
+    "facebook": {
+      "state": "scheduled",
+      "metricoolId": "425727358",
+      "uuid": "2371892883888423869",
+      "at": "2026-12-02T09:37",
+      "edited": false,
+      "approvedAt": "2026-11-12T14:01:01.370Z"
+    },
+    "gmb": {
+      "state": "scheduled",
+      "metricoolId": "425727466",
+      "uuid": "-7389597597549966132",
+      "at": "2026-12-02T07:12",
+      "edited": false,
+      "approvedAt": "2026-11-12T14:01:06.483Z"
+    },
+    "instagram": {
+      "state": "scheduled",
+      "metricoolId": "425727291",
+      "uuid": "2577435523763553378",
+      "at": "2026-12-02T12:17",
+      "edited": false,
+      "approvedAt": "2026-11-12T14:00:58.803Z"
+    },
+    "linkedin": {
+      "state": "scheduled",
+      "metricoolId": "425727417",
+      "uuid": "-8094681357863270413",
+      "at": "2026-12-02T08:23",
+      "edited": false,
+      "approvedAt": "2026-11-12T14:01:03.996Z"
+    }
+  },
+  "held": null
+}

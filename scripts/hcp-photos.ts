@@ -26,9 +26,10 @@
  * after the sort empties 1.intake. Delete an id from the manifest to re-pull it.
  *
  * Usage:
- *   npm run hcp:photos -- [--since 90] [--source jobs|estimates|all] [--dry-run] [--inspect] [--no-label]
+ *   npm run hcp:photos -- [--since 90] [--source jobs|estimates|all] [--job 223] [--dry-run] [--inspect] [--no-label]
  *
  *   --since N   look at records created in the last N days (default 90)
+ *   --job N     only HCP job #N, whatever its age (used by the fr-close-out skill)
  *   --dry-run   report what would download; write nothing
  *   --no-label  skip the vision labels (context = UNKNOWN); no Anthropic API use
  *   --inspect   print the SHAPE (keys + value types, no values) of the first record that has
@@ -89,7 +90,8 @@ function parseArgs(argv: string[]) {
   const source = value("--source") ?? "all";
   if (!Number.isFinite(since) || since <= 0) throw new Error("--since must be a positive number of days");
   if (!["jobs", "estimates", "all"].includes(source)) throw new Error("--source must be jobs, estimates, or all");
-  return { since, source, dryRun: flag("--dry-run"), inspect: flag("--inspect"), label: !flag("--no-label") };
+  const job = value("--job");
+  return { since, source: job ? "jobs" : source, job, dryRun: flag("--dry-run"), inspect: flag("--inspect"), label: !flag("--no-label") };
 }
 
 /** Attachments on the record itself, plus any nested under estimate options. */
@@ -174,6 +176,7 @@ async function main() {
   const manifest = await loadManifest();
   const stats = { records: 0, withPhotos: 0, downloaded: 0, alreadyHave: 0, skippedNonMedia: 0, failed: 0, unknown: 0, paperwork: 0 };
 
+  let jobFound = false;
   for (const source of sources) {
     const records = hcpList<Rec>(source.path, source.itemsKey, {
       expand: ["attachments"],
@@ -182,8 +185,14 @@ async function main() {
     });
 
     for await (const record of records) {
-      // Newest first, so the first record older than the window ends this source.
-      if (str(record.created_at) && str(record.created_at) < cutoff) break;
+      if (args.job) {
+        if (jobFound) break;
+        if (str(record.invoice_number) !== args.job) continue;
+        jobFound = true;
+      } else if (str(record.created_at) && str(record.created_at) < cutoff) {
+        // Newest first, so the first record older than the window ends this source.
+        break;
+      }
       stats.records++;
       const attachments = attachmentsOf(record);
       if (attachments.length === 0) continue;
@@ -248,7 +257,7 @@ async function main() {
 
   const verb = args.dryRun ? "would download" : "downloaded";
   console.log(
-    `\nLast ${args.since} days: ${stats.records} records, ${stats.withPhotos} with attachments. ` +
+    `\n${args.job ? `Job #${args.job}` : `Last ${args.since} days`}: ${stats.records} records, ${stats.withPhotos} with attachments. ` +
       `${stats.downloaded} ${verb}, ${stats.alreadyHave} already pulled, ` +
       `${stats.skippedNonMedia} non-media skipped, ${stats.failed} failed.`,
   );

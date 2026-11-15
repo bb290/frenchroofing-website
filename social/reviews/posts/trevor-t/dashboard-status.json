@@ -1,0 +1,38 @@
+{
+  "docId": "french-roofing~review-trevor-t-1",
+  "platforms": {
+    "facebook": {
+      "state": "scheduled",
+      "metricoolId": "425728067",
+      "uuid": "1345154167451373519",
+      "at": "2026-12-07T09:37",
+      "edited": false,
+      "approvedAt": "2026-11-12T14:01:29.717Z"
+    },
+    "gmb": {
+      "state": "scheduled",
+      "metricoolId": "425728257",
+      "uuid": "-7187276297563323276",
+      "at": "2026-12-07T07:12",
+      "edited": false,
+      "approvedAt": "2026-11-12T14:01:35.188Z"
+    },
+    "instagram": {
+      "state": "scheduled",
+      "metricoolId": "425727970",
+      "uuid": "-1365396289409825710",
+      "at": "2026-12-07T18:07",
+      "edited": false,
+      "approvedAt": "2026-11-12T14:01:26.975Z"
+    },
+    "linkedin": {
+      "state": "scheduled",
+      "metricoolId": "425728153",
+      "uuid": "-1449046447589866701",
+      "at": "2026-12-07T08:23",
+      "edited": false,
+      "approvedAt": "2026-11-12T14:01:32.322Z"
+    }
+  },
+  "held": null
+}

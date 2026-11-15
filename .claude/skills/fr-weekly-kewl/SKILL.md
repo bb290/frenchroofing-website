@@ -1,13 +1,14 @@
 ---
 name: fr-weekly-kewl
-description: The weekly French Roofing Kewl run. Pulls new job photos from Housecall Pro and Sean's Google Drive intake, sorts them, promotes up to 4 into finished posts, reviews every caption, and loads them into Metricool as DRAFTS for Brittany to approve. Runs unattended every Wednesday (launchd → scripts/weekly-kewl.sh) and on demand via "/fr-weekly-kewl", "run the weekly Kewl", or "do the Wednesday social run".
+description: The weekly French Roofing Kewl run. Pulls new job photos from Housecall Pro and Sean's Google Drive intake, sorts them, promotes up to 4 into finished posts, reviews every caption, and sends them to the Unbound Dashboard as ready for Brittany to approve (approving there schedules them in Metricool). Runs unattended every Wednesday (launchd → scripts/weekly-kewl.sh) and on demand via "/fr-weekly-kewl", "run the weekly Kewl", or "do the Wednesday social run".
 ---
 
-# FR Weekly Kewl — Housecall Pro photos → Metricool drafts
+# FR Weekly Kewl — Housecall Pro photos → posts ready in the Unbound Dashboard
 
-Standing operator authorization (Brittany, 2026-09-17): run this full sequence every Wednesday and
-load the results into Metricool **as drafts**. Brittany reviews and approves in Metricool. That
-review is the human gate. This skill never publishes, never approves, never sets `draft: false`.
+Standing operator authorization (Brittany, 2026-09-17; changed 2026-11-11): run this full sequence every
+Wednesday and leave the results **ready for review in the Unbound Dashboard**. Brittany approves there,
+and approving is what schedules the post in Metricool. That approval is the human gate. This skill never
+creates, schedules or approves a Metricool post (no `createScheduledPost`, no `updateScheduledPost`).
 
 The run may be unattended. When something is uncertain, the answer is never "guess and ship". It
 is "hold it, write down why, and move on". A week with one good post beats three shaky ones.
@@ -83,6 +84,12 @@ thin week can be fewer: never promote a weak photo just to hit the number. Pick 
 Prefer: a mix of topics, French Roofing's own jobs over inspection photos, priority cities
 (Damascus, Clackamas, Happy Valley) when available, nothing that repeats a topic already in the
 next two weeks of the Metricool calendar. Leave the rest queued; the queue is the buffer for thin weeks.
+
+**Evergreen educational in the mix (Brittany, 2026-11-13; replaces the Sunday "Evergreen Generate" GitHub
+Action, now disabled):** at least 1 of the week's posts comes from `2.sorted/educational/` (a timeless
+"what this is / why it matters" post), when that queue has a good photo. In a thin week, when there aren't
+enough strong new job photos to reach 3-4, fill the rest from `2.sorted/educational/` before going below 3.
+Educational posts count inside the 3-4; they never add a 5th. Same promote command, same dashboard approval.
 ```
 npm run promote -- <path> [<path> ...] --dry-run
 npm run promote -- <path> [<path> ...]
@@ -114,14 +121,15 @@ npm run kewl:lint -- social/instagram/evergreen/<pillar>/posts/<new post dirs>
   invented story the post depends on). Set every platform `status` to `held` in `schedule.json`,
   append `HELD <date>: <reason and what Sean needs to answer>` to its `notes`, and do not upload it.
 
-### 6. Load into Metricool as drafts
+### 6. Mark ready and send to the Unbound Dashboard
 Brand **French Roofing, blogId 6211784, timezone America/Los_Angeles**. Verify with
 `getBrandSettings`; if the timezone or channels differ, stop and report.
 
 Slots: Tuesday, Thursday, Saturday, Sunday (Sunday added 2026-11-10 for the 4th post; Monday and
-Wednesday are review-post days). Call `getScheduledPosts` for the next 8 weeks and give each new
-post the earliest open Tue/Thu/Sat/Sun that has no French Roofing post already on it (drafts count).
-Never stack two posts on one day. Times (Pacific):
+Wednesday are review-post days). A day is taken if Metricool already has a French Roofing post on it
+(`getScheduledPosts` for the next 8 weeks; drafts count) **or** any local post's `schedule.json` has a
+platform there with `status: "ready"` (waiting in the dashboard). Give each new post the earliest open
+Tue/Thu/Sat/Sun. Never stack two posts on one day. Times (Pacific):
 
 | Platform | Time |
 |---|---|
@@ -130,20 +138,28 @@ Never stack two posts on one day. Times (Pacific):
 | facebook | 09:37 |
 | instagram | Tue 19:07, Thu 14:09, Sat 13:07, Sun 13:07 |
 
-One `createScheduledPost` per platform per post, each with `"draft": true`, `"autoPublish": true`,
-`media: [image_url from schedule.json]`, the caption body (text after the `# Caption (...)` line),
-`providers: [{"network": <platform>}]`, `publicationDate` with the Pacific timezone, and the
-platform's data block (`instagramData {"type":"POST"}`, `facebookData {"type":"POST"}`,
-`linkedinData {"type":"post"}`, `gmbData {"type":"publication"}`). Confirm each response shows
-`"draft":true`. Record every returned `id`, `scheduled_for`, and `metricool_draft: true` in the
-post's `schedule.json`.
+In each new post's `schedule.json`, set every platform to
+`{"status": "ready", "scheduled_for": "<YYYY-MM-DD>T<HH:MM>:00", "timezone": "America/Los_Angeles"}`
+and leave `metricool_id` empty. `image_url` must be the Vercel Blob URL from promote; if it is null,
+hold the post (the dashboard can't schedule a post with no image).
 
-Never call `updateScheduledPost` on a post Brittany has touched (approved, edited, or moved).
-Re-read with `getScheduledPosts` first; if it differs from what this skill uploaded, leave it alone.
+**Do not call `createScheduledPost`.** Then sync the dashboard for French Roofing only, exactly as
+`../../tools/unbound-hq/sync/README.md` says (export `actions` and `posts` to
+`operations/kewl-runs/dashboard`, `reconcile.mjs --client french-roofing --apply`,
+`kewl-sync.mjs --client french-roofing`, one `ArtifactData batch` per `writes-<n>.json`, `--commit <n>`).
+**Unattended Wednesday run:** stop after `kewl-sync.mjs` and don't send: the run can't approve database writes, so
+`scripts/weekly-kewl.sh` sends the batches right after (`tools/unbound-hq/sync/send-batches.sh`) and appends the result to
+the report. Run interactively, send them yourself as above.
+Dashboard url: https://claude.ai/artifact/RrmtYqjjbyXxfGiKZjxSyp. If a dashboard step fails, the posts
+stay `ready` on disk: say so in the report and stop there. Never fall back to Metricool drafts.
+
+Reconcile writes Brittany's dashboard approvals and caption edits back into the post folders
+(`schedule.json` status `scheduled` with the Metricool id, edited `caption-*.md`, `dashboard-status.json`).
+Treat those files as hers: never revert them.
 
 ### 7. Report and commit
 Write `operations/kewl-runs/<date>-report.md`: photos pulled, sort counts, what was promoted and
-for which dates, every caption change and why, anything held and the exact question for Sean,
+for which dates, how many posts are now waiting in the dashboard and what reconcile wrote back, every caption change and why, anything held and the exact question for Sean,
 WARNs you judged acceptable (so Brittany can disagree), queue depth remaining, and any error.
 Then commit the new post folders and any skill or script fixes, as two separate plain commands
 run from the repo root (the run already starts there): `git add <paths>`, then
@@ -155,7 +171,8 @@ in this repo, so name every path; never `git add -A` or `git commit -a`.
 
 ## Hard rules (all of these have bitten before)
 
-- Drafts only. Nothing in this skill publishes.
+- Nothing in this skill creates, schedules or publishes a Metricool post. Posts wait in the Unbound
+  Dashboard; only Brittany's approval there schedules them.
 - No phone number on any platform, including Google Business posts. No "family-owned". No em
   dashes. No banned words. No hashtags on Instagram; default none elsewhere.
 - Never name Portland. Name a city only when the note says it is OK to name.

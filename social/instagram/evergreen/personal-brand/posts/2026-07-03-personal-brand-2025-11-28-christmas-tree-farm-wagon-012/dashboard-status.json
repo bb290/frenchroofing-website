@@ -1,0 +1,38 @@
+{
+  "docId": "french-roofing~2026-07-03-personal-brand-2025-11-28-christmas-tree-farm-wagon-012",
+  "platforms": {
+    "facebook": {
+      "state": "scheduled",
+      "metricoolId": "425722668",
+      "uuid": "-719673456855988873",
+      "at": "2026-11-27T10:21",
+      "edited": true,
+      "approvedAt": "2026-11-12T13:57:14.261Z"
+    },
+    "gmb": {
+      "state": "scheduled",
+      "metricoolId": "425724694",
+      "uuid": "3556746697601142450",
+      "at": "2026-11-27T11:49",
+      "edited": true,
+      "approvedAt": "2026-11-12T13:58:54.991Z"
+    },
+    "instagram": {
+      "state": "scheduled",
+      "metricoolId": "425722382",
+      "uuid": "6059189946972261001",
+      "at": "2026-11-27T18:24",
+      "edited": true,
+      "approvedAt": "2026-11-12T13:57:00.262Z"
+    },
+    "linkedin": {
+      "state": "scheduled",
+      "metricoolId": "425724636",
+      "uuid": "-613784123873997915",
+      "at": "2026-11-27T08:27",
+      "edited": true,
+      "approvedAt": "2026-11-12T13:58:52.327Z"
+    }
+  },
+  "held": null
+}

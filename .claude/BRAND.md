@@ -36,6 +36,8 @@ spec-version: 2.1
 
 A residential and commercial roofing company in Damascus, Oregon, family-owned since 2014, serving Damascus, Clackamas, Happy Valley, and the surrounding communities within about 20 miles, with the kind of work you'd put on your grandma's house.
 
+> **Not on social (operator, 2026-09-17):** leave "family-owned" out of social captions, including GBP posts; it reads corny there. It stays fine on the website, proposals, and print.
+
 ## 2. Mission and promise
 
 **Mission.** Keep Pacific Northwest families warm, dry, and safe with roofs built the right way, no shortcuts, no fine print.
@@ -81,7 +83,7 @@ A residential and commercial roofing company in Damascus, Oregon, family-owned s
 
 **Aesthetic direction.** Californian surfer vibe meets PNW contractor, laid back, warm, neighborly. Generous whitespace, photo-forward layouts, real crews on real Pacific Northwest homes (not stock photos). Avoid corporate polish, high-pressure-sales energy, gradients-on-gradients, generic contractor templates. Confident without flexing.
 
-**Logo.** Yellow + blue mark. See `assets/logo.png`.
+**Logo.** Yellow + blue mark. See `assets/logo/logo.png` (the only version on file; no light-on-dark or icon-only variant yet).
 
 **Color palette.**
 
@@ -102,6 +104,8 @@ A residential and commercial roofing company in Damascus, Oregon, family-owned s
 | Error | `#b8341c` | Form errors |
 
 **Typography, Inter (Google Fonts).** Weights: 400 body, 500 UI, 600 subheads, 700 headlines.
+
+> **Exception, review posts only (operator, 2026-11-04):** the Kewl review graphics may use Caveat and Permanent Marker (handwritten notes) and Shrikhand (the surf-poster headline). Inter everywhere else. See `KEWL.md`, Review posts.
 
 | Style | Size | Line | Tracking | Weight |
 |---|---|---|---|---|
@@ -148,7 +152,7 @@ The themes every piece of French Roofing content should ladder back to.
 - 10+ years operating in the Pacific Northwest (founded 2014)
 - CCB #203933, licensed, insured, and bonded
 - CertainTeed Certified manufacturer
-- Family-owned and operated
+- Family-owned and operated (not on social; see §1)
 - Financing via Enhancify (0% offers available)
 - Standard workmanship warranty backed by the company
 
@@ -242,7 +246,7 @@ Legacy hashtag set previously documented (`#roofingcontractor #roofing #construc
 
 Original brand docs, voice samples, and references that informed this file live in `clients/French_Roofing/.claude/source-material/`. Add new material there, then re-run `brand-strategist` to refresh.
 
-The legacy brand-content file at `clients/French_Roofing/CLAUDE.md` (root) predates the spec. This `.claude/BRAND.md` is the new source of truth, keep them in sync until the legacy file is retired.
+The legacy brand-content file (the old root `CLAUDE.md`, which predates the spec) was retired 2026-07-06 and archived at `.claude/source-material/CLAUDE-legacy-2026-04.md` for reference only. This `.claude/BRAND.md` is the only brand source of truth; the root `CLAUDE.md` is now a slim project guide, not a brand source.
 
 ---
 

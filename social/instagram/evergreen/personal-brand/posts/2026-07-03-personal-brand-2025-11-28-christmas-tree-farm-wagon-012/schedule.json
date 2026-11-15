@@ -9,40 +9,44 @@
   "notes": "Promoted by scripts/promote-photo.ts; scheduled in Metricool 2026-07-03 (autoPublish on, review in Metricool planner). 2026-11-11: captions corrected (it's Sean and his daughter, not a crew member; family-owned lines removed) and the Metricool drafts updated, at Brittany's request. Then rewritten in first person as Sean (Brittany: when Sean is in the photo, Sean speaks). Then moved to the Personal Brand pillar and rewritten in Sean's personal voice from Brittany's notes (last year's tree farm, stoked for Christmas, re-roofs slow down, family time). Sean OK'd showing his daughter (Brittany, 2026-11-11).",
   "platforms": {
     "instagram": {
-      "status": "draft",
+      "status": "scheduled",
       "scheduled_for": "2026-11-27T18:24:00-08:00",
       "timezone": "America/Los_Angeles",
       "published_id": 345347005,
-      "metricool_id": 424606539,
+      "metricool_id": 425722382,
       "metricool_uuid": "6059189946972261001",
-      "metricool_draft": true
+      "metricool_draft": false,
+      "approved_via": "dashboard"
     },
     "facebook": {
-      "status": "draft",
+      "status": "scheduled",
       "scheduled_for": "2026-11-27T10:21:00-08:00",
       "timezone": "America/Los_Angeles",
       "published_id": 345346988,
-      "metricool_id": 424606597,
+      "metricool_id": 425722668,
       "metricool_uuid": "-719673456855988873",
-      "metricool_draft": true
+      "metricool_draft": false,
+      "approved_via": "dashboard"
     },
     "linkedin": {
-      "status": "draft",
+      "status": "scheduled",
       "scheduled_for": "2026-11-27T08:27:00-08:00",
       "timezone": "America/Los_Angeles",
       "published_id": 345346981,
-      "metricool_id": 424606662,
+      "metricool_id": 425724636,
       "metricool_uuid": "-613784123873997915",
-      "metricool_draft": true
+      "metricool_draft": false,
+      "approved_via": "dashboard"
     },
     "gmb": {
-      "status": "draft",
+      "status": "scheduled",
       "scheduled_for": "2026-11-27T11:49:00-08:00",
       "timezone": "America/Los_Angeles",
       "published_id": 345346996,
-      "metricool_id": 424606720,
+      "metricool_id": 425724694,
       "metricool_uuid": "3556746697601142450",
-      "metricool_draft": true
+      "metricool_draft": false,
+      "approved_via": "dashboard"
     }
   }
 }

@@ -13,9 +13,4 @@ revision: 4
 ---
 
 # Caption (gmb)
-
-Last year at the Christmas tree farm with my daughter. Red sweater, wagon ride, the whole deal.
-
-I'm already stoked for Christmas this year. Re-roofs slow way down this time of year & for once I get to spend more time with my family than with my laptop.
-
-Schedule a FREE roof assessment: https://www.frenchroofing.com/estimate
+Christmas ready!

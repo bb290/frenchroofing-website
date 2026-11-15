@@ -68,6 +68,18 @@ next-env.d.ts
 # weekly Kewl run logs, contact sheets, sort decisions (can show customer homes)
 /operations/kewl-runs/
 
+# customer FAQ project: service-account key + raw customer messages (PII)
+/.secrets/
+/operations/faq-sources/
+
 # reel projects (renders are large media) and raw voiceover takes
 /social/reels/
 /assets/audio/
+
+# brand design system site (deployed separately as its own Vercel project)
+/brand-site/
+/operations/seo/indexing/
+
+# FAQ mining scripts: internal notes and mailbox access setup; repo is public (2026-11-15)
+/scripts/faq/
+__pycache__/

@@ -1,0 +1,30 @@
+{
+  "docId": "french-roofing~review-jessica-g-1",
+  "platforms": {
+    "facebook": {
+      "state": "scheduled",
+      "metricoolId": "425725955",
+      "uuid": "7291996468645940307",
+      "at": "2026-11-30T09:37",
+      "edited": false,
+      "approvedAt": "2026-11-12T13:59:54.692Z"
+    },
+    "instagram": {
+      "state": "scheduled",
+      "metricoolId": "425725920",
+      "uuid": "1983281035360291625",
+      "at": "2026-11-30T18:07",
+      "edited": false,
+      "approvedAt": "2026-11-12T13:59:52.107Z"
+    },
+    "linkedin": {
+      "state": "scheduled",
+      "metricoolId": "425726019",
+      "uuid": "8948338930667834923",
+      "at": "2026-11-30T08:23",
+      "edited": false,
+      "approvedAt": "2026-11-12T13:59:57.276Z"
+    }
+  },
+  "held": null
+}

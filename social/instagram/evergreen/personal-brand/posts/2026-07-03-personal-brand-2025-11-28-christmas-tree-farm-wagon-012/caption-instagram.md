@@ -13,12 +13,4 @@ revision: 4
 ---
 
 # Caption (instagram)
-
-Last year at the Christmas tree farm with my daughter. Red sweater, wagon ride, the whole deal.
-
-I'm already stoked for Christmas this year. Re-roofs slow way down this time of year & for once I get to spend more time with my family than with my laptop.
-
--
-Visit website for Instant Roof Quote
-Link in Bio
--
+Christmas ready!

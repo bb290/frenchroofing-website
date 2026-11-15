@@ -14,7 +14,7 @@ Autonomy is `tight`. Four human gates, in order. Stop at each one and wait:
 1. **Script** approved by Brittany.
 2. **Storyboard** (posed stills) approved.
 3. **Rendered video** approved.
-4. **Metricool drafts**: Brittany approves and publishes in Metricool. This skill never sets `draft: false`.
+4. **Metricool drafts**: they show up in the Unbound Dashboard, where Brittany approves them (approving schedules them; changed 2026-11-11). This skill never sets `draft: false`.
 
 **Two kinds of reel, one look (Brittany, 2026-11-10).** Both use French Roofing's Reel Kit style pack
 (`reel-kit/style/`, approved 2026-11-10):

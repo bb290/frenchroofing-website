@@ -1,0 +1,38 @@
+{
+  "docId": "french-roofing~review-paul-t-1",
+  "platforms": {
+    "facebook": {
+      "state": "scheduled",
+      "metricoolId": "425728873",
+      "uuid": "-1694063369491886878",
+      "at": "2026-12-09T09:37",
+      "edited": false,
+      "approvedAt": "2026-11-12T14:01:50.181Z"
+    },
+    "gmb": {
+      "state": "scheduled",
+      "metricoolId": "425729083",
+      "uuid": "-2073365394715226337",
+      "at": "2026-12-09T07:12",
+      "edited": false,
+      "approvedAt": "2026-11-12T14:01:55.741Z"
+    },
+    "instagram": {
+      "state": "scheduled",
+      "metricoolId": "425728732",
+      "uuid": "2192907888156756059",
+      "at": "2026-12-09T12:17",
+      "edited": false,
+      "approvedAt": "2026-11-12T14:01:47.229Z"
+    },
+    "linkedin": {
+      "state": "scheduled",
+      "metricoolId": "425728981",
+      "uuid": "-5797077653813114709",
+      "at": "2026-12-09T08:23",
+      "edited": false,
+      "approvedAt": "2026-11-12T14:01:52.600Z"
+    }
+  },
+  "held": null
+}
