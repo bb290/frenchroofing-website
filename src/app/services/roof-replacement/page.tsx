@@ -152,7 +152,7 @@ export default function RoofReplacementPage() {
               {[
                 "CertainTeed Certified - installations that meet the highest manufacturer standards",
                 "Licensed, insured & bonded (CCB #203933) - fully compliant in Oregon",
-                "Family-owned and operated - we're accountable because our name is on the truck",
+                "Family-owned and operated since 2014",
                 "0% financing through Enhancify - multiple plans to fit your budget",
                 "Clean job sites and a final magnet sweep - your yard looks better when we leave",
                 "Serving Damascus, Clackamas, Happy Valley, and 15+ nearby communities since 2014",

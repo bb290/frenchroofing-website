@@ -177,7 +177,7 @@ export default async function RoofReplacementCityPage({
               {[
                 "CertainTeed Certified - installations that meet the highest manufacturer standards",
                 `Licensed, insured & bonded (CCB #${COMPANY.ccb}) - fully compliant in Oregon`,
-                "Family-owned and operated - we're accountable because our name is on the truck",
+                "Family-owned and operated since 2014",
                 "0% financing through Enhancify - multiple plans to fit your budget",
                 "Clean job sites and a final magnet sweep - your yard looks better when we leave",
                 `Serving ${area.name} and the surrounding area from our home base in Damascus since 2014`,

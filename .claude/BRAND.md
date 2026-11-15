@@ -111,6 +111,7 @@ A residential and commercial roofing company in Damascus, Oregon, family-owned s
 - Orange used as TEXT on light backgrounds is `#c04520` (5.1:1). `#d85024` stays for fills, icons, focus rings.
 - Text Muted `#9a9895` is not used for readable text on the site (2.6:1 on cream); use `#6b6a67` or darker.
 - No em dashes in site copy (house style).
+- No branded trucks (Brittany, 2026-11-15): never write "our name is on the truck" or imply branded vehicles.
 
 > **Exception, review posts only (operator, 2026-11-04):** the Kewl review graphics may use Caveat and Permanent Marker (handwritten notes) and Shrikhand (the surf-poster headline). Inter everywhere else. See `KEWL.md`, Review posts.
 
