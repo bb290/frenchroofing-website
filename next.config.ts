@@ -33,13 +33,13 @@ const nextConfig: NextConfig = {
       {
         source: "/",
         has: [{ type: "host", value: "blog.frenchroofing.com" }],
-        destination: "https://www.frenchroofing.com/blog",
+        destination: "https://frenchroofing.com/blog",
         permanent: true,
       },
       {
         source: "/:path*",
         has: [{ type: "host", value: "blog.frenchroofing.com" }],
-        destination: "https://www.frenchroofing.com/:path*",
+        destination: "https://frenchroofing.com/:path*",
         permanent: true,
       },
       {
