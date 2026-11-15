@@ -9,7 +9,7 @@ import { COMPANY } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `CertainTeed Roofing Materials & Options | ${COMPANY.name}`,
   description:
-    "Learn about the CertainTeed roofing system French Roofing installs \u2014 from Landmark architectural shingles to premium designer options. Built to handle Oregon weather.",
+    "Learn about the CertainTeed roofing system French Roofing installs, from Landmark architectural shingles to premium designer options. Built to handle Oregon weather.",
   alternates: { canonical: `${COMPANY.url}/materials` },
 };
 
@@ -26,7 +26,7 @@ const shingleOptions = [
     type: "Premium Architectural Shingle",
     badge: "Enhanced",
     description:
-      "Landmark Pro takes everything that makes the standard Landmark great and adds extra thickness, a more dimensional profile, and enhanced warranty coverage. The Max Def colors give your roof more depth and curb appeal. If you want a step up in both looks and longevity without jumping to a designer price point, Landmark Pro is a smart choice \u2014 especially popular with homeowners planning to stay in their home long-term.",
+      "Landmark Pro takes everything that makes the standard Landmark great and adds extra thickness, a more dimensional profile, and enhanced warranty coverage. The Max Def colors give your roof more depth and curb appeal. If you want a step up in both looks and longevity without jumping to a designer price point, Landmark Pro is a smart choice, especially popular with homeowners planning to stay in their home long-term.",
   },
   {
     name: "Grand Manor & Carriage House",
@@ -46,7 +46,7 @@ const materialsFAQs = [
   {
     question: "What\u2019s the difference between 3-tab and architectural shingles?",
     answer:
-      "3-tab shingles are flat, uniform, and thinner \u2014 they were the standard for decades but are becoming less common. Architectural shingles (like CertainTeed Landmark) are thicker, multi-layered, and have a more dimensional look. They also last longer and handle wind better. French Roofing installs architectural shingles as our standard because they\u2019re a better long-term value.",
+      "3-tab shingles are flat, uniform, and thinner. They were the standard for decades but are becoming less common. Architectural shingles (like CertainTeed Landmark) are thicker, multi-layered, and have a more dimensional look. They also last longer and handle wind better. French Roofing installs architectural shingles as our standard because they\u2019re a better long-term value.",
   },
   {
     question: "How long do CertainTeed shingles last in Oregon?",
@@ -95,7 +95,7 @@ export default function MaterialsPage() {
           <h2 className="text-3xl font-bold text-[#092e5e] mb-6 text-center">
             Why CertainTeed?
           </h2>
-          <p className="text-gray-600 leading-relaxed mb-4 max-w-[37rem]">
+          <p className="text-gray-600 leading-relaxed mb-4 max-w-[37rem] mx-auto">
             When Sean French started French Roofing in 2014, one of the first
             decisions was which materials to build the business around. After
             years of working with various brands, the choice was clear:
@@ -103,7 +103,7 @@ export default function MaterialsPage() {
             Pacific Northwest, and a warranty program that actually means
             something.
           </p>
-          <p className="text-gray-600 leading-relaxed max-w-[37rem]">
+          <p className="text-gray-600 leading-relaxed max-w-[37rem] mx-auto">
             We&apos;re not just buying shingles off a shelf. As a CertainTeed
             Certified contractor, we&apos;ve invested in training and met their
             quality standards - which means better installations and
@@ -163,7 +163,7 @@ export default function MaterialsPage() {
                 <h3 className="text-lg font-bold text-[#092e5e] mb-2">
                   {item.title}
                 </h3>
-                <p className="text-sm text-gray-600 leading-relaxed max-w-[37rem]">
+                <p className="text-sm text-gray-600 leading-relaxed max-w-[37rem] mx-auto">
                   {item.desc}
                 </p>
               </div>
@@ -200,7 +200,7 @@ export default function MaterialsPage() {
                 <p className="text-sm font-medium text-[#3e3d3b] mb-3">
                   {shingle.type}
                 </p>
-                <p className="text-gray-600 leading-relaxed max-w-[37rem]">
+                <p className="text-gray-600 leading-relaxed">
                   {shingle.description}
                 </p>
               </div>
@@ -215,21 +215,21 @@ export default function MaterialsPage() {
           <h2 className="text-3xl font-bold text-[#092e5e] mb-6 text-center">
             Why Material Matters in Oregon
           </h2>
-          <p className="text-gray-600 leading-relaxed mb-4 max-w-[37rem]">
+          <p className="text-gray-600 leading-relaxed mb-4 max-w-[37rem] mx-auto">
             Oregon is beautiful, but it&apos;s tough on roofs. Our climate
             throws persistent rain, moss growth, seasonal wind storms, and
             freeze-thaw cycles at your home year after year. Cheap materials
             might look fine on day one, but they break down faster under these
             conditions.
           </p>
-          <p className="text-gray-600 leading-relaxed mb-4 max-w-[37rem]">
+          <p className="text-gray-600 leading-relaxed mb-4 max-w-[37rem] mx-auto">
             CertainTeed shingles are built with StreakFighter algae-resistance
             technology to fight the dark streaks that plague Pacific Northwest
             roofs. Their architectural shingles are rated for winds up to 110
             mph, and the layered construction handles thermal expansion and
             contraction better than thinner alternatives.
           </p>
-          <p className="text-gray-600 leading-relaxed max-w-[37rem]">
+          <p className="text-gray-600 leading-relaxed max-w-[37rem] mx-auto">
             Bottom line: the materials you choose today determine how your roof
             performs for the next 25 to 30+ years. We recommend CertainTeed
             because we&apos;ve seen how they hold up in our climate, job after
@@ -247,13 +247,13 @@ export default function MaterialsPage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-[#092e5e] mb-4">
             What Our Certification Means for You
           </h2>
-          <p className="text-gray-600 leading-relaxed mb-4 max-w-[37rem]">
+          <p className="text-gray-600 leading-relaxed mb-4 max-w-[37rem] mx-auto">
             Not every roofer who installs CertainTeed products is certified.
             Certification means French Roofing has completed manufacturer
             training, met quality benchmarks, and maintains an active
             relationship with CertainTeed.
           </p>
-          <p className="text-gray-600 leading-relaxed max-w-[37rem]">
+          <p className="text-gray-600 leading-relaxed max-w-[37rem] mx-auto">
             For homeowners, this translates to one major benefit: enhanced
             warranty options. When a certified contractor installs your roof, you
             may qualify for longer coverage periods and warranties that include

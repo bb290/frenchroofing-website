@@ -24,7 +24,7 @@ const maintenanceTips = [
   {
     title: "Keep Your Gutters Clean",
     description:
-      "Clogged gutters cause water to back up under your roofline, which can damage your decking and void warranty coverage. Clean them at least twice a year \u2014 once in spring and once after the leaves drop in fall.",
+      "Clogged gutters cause water to back up under your roofline, which can damage your decking and void warranty coverage. Clean them at least twice a year: once in spring and once after the leaves drop in fall.",
   },
   {
     title: "Trim Overhanging Branches",
@@ -47,7 +47,7 @@ const warrantyFAQs = [
   {
     question: "How long is French Roofing\u2019s workmanship warranty?",
     answer:
-      "Every French Roofing installation comes with a workmanship warranty at no extra cost: 5 years on our 30-year shingle systems and 10 years on our 50-year shingle systems. It covers any installation-related issue \u2014 if we made an error, we come back and fix it at no cost to you. Your exact term is written into your project contract.",
+      "Every French Roofing installation comes with a workmanship warranty at no extra cost: 5 years on our 30-year shingle systems and 10 years on our 50-year shingle systems. It covers any installation-related issue. If we made an error, we come back and fix it at no cost to you. Your exact term is written into your project contract.",
   },
   {
     question: "What does the CertainTeed manufacturer warranty cover?",
@@ -253,8 +253,8 @@ export default function WarrantiesPage() {
               </h3>
               <ul className="space-y-3">
                 {[
-                  "Material defects \u2014 shingles that crack, curl, or fail prematurely due to manufacturing issues",
-                  "Installation errors \u2014 leaks or problems caused by faulty workmanship",
+                  "Material defects: shingles that crack, curl, or fail prematurely due to manufacturing issues",
+                  "Installation errors: leaks or problems caused by faulty workmanship",
                   "Premature wear from improper installation techniques",
                   "Enhanced coverage (with CertainTeed Certified installation) that may include labor for material defects",
                 ].map((item, i) => (
@@ -298,9 +298,9 @@ export default function WarrantiesPage() {
               </h3>
               <ul className="space-y-3">
                 {[
-                  "Storm damage or acts of God \u2014 hail, fallen trees, extreme wind events (this is what your homeowner\u2019s insurance is for)",
-                  "Damage from lack of maintenance \u2014 clogged gutters, unchecked moss growth, debris buildup",
-                  "Unauthorized modifications \u2014 if someone other than French Roofing modifies or repairs the roof",
+                  "Storm damage or acts of God: hail, fallen trees, extreme wind events (this is what your homeowner\u2019s insurance is for)",
+                  "Damage from lack of maintenance: clogged gutters, unchecked moss growth, debris buildup",
+                  "Unauthorized modifications: if someone other than French Roofing modifies or repairs the roof",
                   "Normal wear and tear beyond the warranty period",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">

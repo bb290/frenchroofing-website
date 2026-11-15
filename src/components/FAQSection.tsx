@@ -43,7 +43,7 @@ export default function FAQSection({
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                 </svg>
               </summary>
-              <p className="px-6 pb-5 text-base text-gray-600 leading-relaxed max-w-[40rem]">
+              <p className="px-6 pb-5 text-base text-gray-600 leading-relaxed">
                 {faq.answer}
               </p>
             </details>

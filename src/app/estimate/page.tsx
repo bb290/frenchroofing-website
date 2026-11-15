@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { BreadcrumbJsonLd, FAQJsonLd } from "@/components/JsonLd";
+import { BreadcrumbJsonLd } from "@/components/JsonLd";
+import FAQSection from "@/components/FAQSection";
 import RoofEstimator from "@/components/RoofEstimator";
 import CTABanner from "@/components/CTABanner";
 import RelatedGuides from "@/components/RelatedGuides";
@@ -44,7 +45,6 @@ export default function EstimatePage() {
           { name: "Instant Roof Estimate", href: "/estimate" },
         ]}
       />
-      <FAQJsonLd faqs={estimateFAQs} />
 
       {/* Hero */}
       <section className="bg-[#092e5e] py-16 px-4">
@@ -63,30 +63,12 @@ export default function EstimatePage() {
       </section>
 
       {/* Estimator */}
-      <section className="py-12 px-4 bg-gray-50">
+      <section className="py-12 px-4 bg-white">
         <RoofEstimator />
       </section>
 
-      {/* FAQ */}
-      <section className="py-16 px-4 bg-white">
-        <div className="mx-auto max-w-3xl">
-          <h2 className="text-2xl font-bold text-[#092e5e] text-center mb-8">
-            Common Questions About Roof Pricing
-          </h2>
-          <div className="space-y-6">
-            {estimateFAQs.map((faq) => (
-              <div key={faq.question}>
-                <h3 className="text-base font-semibold text-[#092e5e] mb-2">
-                  {faq.question}
-                </h3>
-                <p className="text-sm text-gray-600 leading-relaxed max-w-[34rem]">
-                  {faq.answer}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* FAQ: same accordion as every other page (answers stay in the HTML) */}
+      <FAQSection title="Common Questions About Roof Pricing" faqs={estimateFAQs} />
 
       {/* ── Related guides ── */}
       <RelatedGuides slugs={["roof-replacement-cost-factors", "roof-replacement-guide", "roof-financing-explained"]} />
