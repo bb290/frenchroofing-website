@@ -9,6 +9,8 @@ const recentWork = [
     caption: "Getting CertainTeed ShingleMaster certified",
   },
   {
+    // Same photo as intake educational_2026-09-28_..._106 (HCP job #221, whose note said the install wasn't confirmed).
+    // Brittany reviewed it 2026-11-15 and kept it here as recent work: "It's fine as is". Don't re-flag.
     src: "/images/recent-new-shingles-vents.webp",
     alt: "New asphalt shingle roof with a flue cap, box vents, and pipe boot in Oregon City, OR",
     caption: "New shingles, vents, and flashing in Oregon City",
