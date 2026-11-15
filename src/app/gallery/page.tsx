@@ -15,16 +15,16 @@ export const metadata: Metadata = {
 
 const projects = [
   {
-    title: "Cora St, Damascus",
+    title: "Roof Replacement in Damascus",
     description:
       "Full tear-off and replacement on a home with years of patching and tarp repairs. New architectural shingles, clean flashing, and proper ventilation.",
     before: {
-      src: "/images/cora-st-before.webp",
-      alt: "Worn roof with patched areas and blue tarp on Cora St, Damascus OR - before French Roofing replacement",
+      src: "/images/damascus-replacement-before.webp",
+      alt: "Worn roof with patched areas and a blue tarp in Damascus, OR, before French Roofing replaced it",
     },
     after: {
-      src: "/images/cora-st-after.webp",
-      alt: "Brand new shingle roof with clean flashing and vents on Cora St, Damascus OR - after French Roofing replacement",
+      src: "/images/damascus-replacement-after.webp",
+      alt: "The same roof after French Roofing's replacement: new shingles, clean flashing and vents",
     },
   },
   {

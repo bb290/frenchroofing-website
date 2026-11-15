@@ -6,6 +6,7 @@ import RelatedGuides from "@/components/RelatedGuides";
 import FAQSection from "@/components/FAQSection";
 import RoofEstimator from "@/components/RoofEstimator";
 import RecentWork from "@/components/RecentWork";
+import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import { COMPANY, SERVICES, SERVICE_AREAS } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -218,29 +219,20 @@ export default function Home() {
               Real results from real jobs in your neighborhood.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="space-y-4">
-              <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
-                <Image
-                  src="/images/cora-st-before.webp"
-                  alt="Worn roof with patched areas and blue tarp on Cora St, Damascus OR - before French Roofing replacement"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <p className="text-center text-sm font-medium text-gray-500 uppercase tracking-wider">Before</p>
-            </div>
-            <div className="space-y-4">
-              <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
-                <Image
-                  src="/images/cora-st-after.webp"
-                  alt="Brand new shingle roof with clean flashing and vents on Cora St, Damascus OR - after French Roofing replacement"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <p className="text-center text-sm font-medium text-[#c04520] uppercase tracking-wider">After</p>
-            </div>
+          <div className="max-w-xl mx-auto">
+            <BeforeAfterSlider
+              before={{
+                src: "/images/damascus-replacement-before.webp",
+                alt: "Worn roof with patched areas and a blue tarp in Damascus, OR, before French Roofing replaced it",
+              }}
+              after={{
+                src: "/images/damascus-replacement-after.webp",
+                alt: "The same roof after French Roofing's replacement: new shingles, clean flashing and vents",
+              }}
+            />
+            <p className="mt-3 text-center text-sm text-gray-600">
+              Drag the handle to compare. A full roof replacement in Damascus.
+            </p>
           </div>
           <div className="text-center mt-10">
             <Link
