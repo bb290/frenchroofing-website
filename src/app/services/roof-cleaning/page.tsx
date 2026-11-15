@@ -176,9 +176,9 @@ export default function RoofCleaningPage() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-[#092e5e] mb-3">
+              <h2 className="text-xl font-bold text-[#092e5e] mb-3">
                 {item.title}
-              </h3>
+              </h2>
               <p className="text-sm text-gray-600">{item.desc}</p>
             </div>
           ))}

@@ -94,6 +94,8 @@ const ALL_STEPS: Step[] = ["size", "material", "complexity", "addons", "result"]
 const STEP_LABELS = ["Size", "Material", "Complexity", "Add-Ons", "Estimate"];
 
 export default function RoofEstimator({ compact = false }: { compact?: boolean }) {
+  // Step questions sit one level under the estimator title (h3 on /estimate, h4 inside the home section).
+  const StepHeading = compact ? "h4" : "h3";
   const [step, setStep] = useState<Step>("size");
   const [sizeId, setSizeId] = useState<string | null>(null);
   const [materialId, setMaterialId] = useState<string | null>(null);
@@ -140,9 +142,12 @@ export default function RoofEstimator({ compact = false }: { compact?: boolean }
       <div className="rounded-2xl border border-gray-200 bg-white shadow-lg overflow-hidden">
         {/* Header */}
         <div className="bg-[#092e5e] px-6 py-5 sm:px-8">
-          <h3 className="text-xl sm:text-2xl font-bold text-white">
-            Instant Roof Estimate
-          </h3>
+          {/* h2 on its own page (under the page h1), h3 when embedded under a section h2 */}
+          {compact ? (
+            <h3 className="text-xl sm:text-2xl font-bold text-white">Instant Roof Estimate</h3>
+          ) : (
+            <h2 className="text-xl sm:text-2xl font-bold text-white">Instant Roof Estimate</h2>
+          )}
           <p className="text-base text-white/85 mt-1">
             Get a ballpark price in 60 seconds - no contact info required
           </p>
@@ -168,9 +173,9 @@ export default function RoofEstimator({ compact = false }: { compact?: boolean }
           {/* ── Step 1: Roof Size ── */}
           {step === "size" && (
             <div>
-              <h4 className="text-lg font-semibold text-[#092e5e] mb-2">
+              <StepHeading className="text-lg font-semibold text-[#092e5e] mb-2">
                 How big is your roof?
-              </h4>
+              </StepHeading>
               <p className="text-base text-gray-500 mb-2">
                 Roofs are measured in <strong>squares</strong> (1 square = 10&apos; x 10&apos; = 100 sq ft). Pick the closest match - don&apos;t worry about being exact, that&apos;s what the full assessment is for.
               </p>
@@ -208,9 +213,9 @@ export default function RoofEstimator({ compact = false }: { compact?: boolean }
           {/* ── Step 2: Material ── */}
           {step === "material" && (
             <div>
-              <h4 className="text-lg font-semibold text-[#092e5e] mb-2">
+              <StepHeading className="text-lg font-semibold text-[#092e5e] mb-2">
                 Choose a roofing material
-              </h4>
+              </StepHeading>
               <p className="text-base text-gray-500 mb-6">
                 Each material has trade-offs. We&apos;ll help you pick the right one during your assessment.
               </p>
@@ -289,9 +294,9 @@ export default function RoofEstimator({ compact = false }: { compact?: boolean }
           {/* ── Step 3: Complexity ── */}
           {step === "complexity" && (
             <div>
-              <h4 className="text-lg font-semibold text-[#092e5e] mb-2">
+              <StepHeading className="text-lg font-semibold text-[#092e5e] mb-2">
                 How complex is your roof?
-              </h4>
+              </StepHeading>
               <p className="text-base text-gray-500 mb-6">
                 Steeper roofs and more features (valleys, dormers, skylights) take more time and materials.
               </p>
@@ -330,9 +335,9 @@ export default function RoofEstimator({ compact = false }: { compact?: boolean }
           {/* ── Step 4: Add-Ons ── */}
           {step === "addons" && (
             <div>
-              <h4 className="text-lg font-semibold text-[#092e5e] mb-2">
+              <StepHeading className="text-lg font-semibold text-[#092e5e] mb-2">
                 Want to add anything to your project?
-              </h4>
+              </StepHeading>
               <p className="text-base text-gray-500 mb-6">
                 These are popular upgrades our customers bundle with their roof replacement. Select any that interest you - or skip ahead.
               </p>
@@ -442,9 +447,9 @@ export default function RoofEstimator({ compact = false }: { compact?: boolean }
               <div className="inline-flex items-center rounded-full bg-green-50 px-4 py-1.5 text-base font-medium text-green-700 mb-4">
                 Estimate ready
               </div>
-              <h4 className="text-lg font-semibold text-[#092e5e] mb-1">
+              <StepHeading className="text-lg font-semibold text-[#092e5e] mb-1">
                 Your Estimated Roof Replacement Cost
-              </h4>
+              </StepHeading>
               <p className="text-5xl sm:text-6xl font-bold text-[#092e5e] my-6">
                 ${estimate.low.toLocaleString()}{" "}
                 <span className="text-2xl text-gray-500">–</span>{" "}

@@ -32,7 +32,7 @@ export default function GuidesIndexPage() {
           <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-6">
             Everything We Know About Oregon Roofs
           </h1>
-          <p className="text-lg text-white/85">
+          <p className="text-lg text-white/85 max-w-[40rem] mx-auto">
             Twenty years on Pacific Northwest roofs taught us a few things.
             These guides share them straight, the way we&apos;d explain it over
             the fence. No jargon, no scare tactics, no pressure.
@@ -54,7 +54,7 @@ export default function GuidesIndexPage() {
                 <h2 className="text-3xl font-semibold text-[#092e5e] mb-3">
                   {cluster.name}
                 </h2>
-                <p className="text-[#6b6a67] mb-4">{cluster.description}</p>
+                <p className="text-[#6b6a67] mb-4 max-w-[37rem]">{cluster.description}</p>
                 {ebook && (
                   <p className="mb-8">
                     <a
@@ -78,7 +78,7 @@ export default function GuidesIndexPage() {
                     <p className="text-xl font-semibold text-[#092e5e] mb-1">
                       {pillar.title}
                     </p>
-                    <p className="text-sm text-[#6b6a67]">{pillar.description}</p>
+                    <p className="text-sm text-[#6b6a67] max-w-[34rem]">{pillar.description}</p>
                   </Link>
                 )}
 

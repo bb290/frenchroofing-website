@@ -104,7 +104,7 @@ export default function FinancingPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-[#092e5e] mb-2">0% Interest Options</h3>
+            <h2 className="text-xl font-bold text-[#092e5e] mb-2">0% Interest Options</h2>
             <p className="text-sm text-gray-600">
               Qualified borrowers can enjoy 0% interest plans, making your new
               roof more affordable than you might think.
@@ -116,7 +116,7 @@ export default function FinancingPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-[#092e5e] mb-2">No-Impact Credit Check</h3>
+            <h2 className="text-xl font-bold text-[#092e5e] mb-2">No-Impact Credit Check</h2>
             <p className="text-sm text-gray-600">
               See if you qualify without affecting your credit score. The
               pre-qualification process uses a soft pull only.
@@ -128,7 +128,7 @@ export default function FinancingPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-[#092e5e] mb-2">Multiple Plans</h3>
+            <h2 className="text-xl font-bold text-[#092e5e] mb-2">Multiple Plans</h2>
             <p className="text-sm text-gray-600">
               Choose from a variety of repayment terms and monthly payment
               options. Pick the plan that works best for your household.

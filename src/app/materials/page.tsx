@@ -95,7 +95,7 @@ export default function MaterialsPage() {
           <h2 className="text-3xl font-bold text-[#092e5e] mb-6 text-center">
             Why CertainTeed?
           </h2>
-          <p className="text-gray-600 leading-relaxed mb-4">
+          <p className="text-gray-600 leading-relaxed mb-4 max-w-[37rem]">
             When Sean French started French Roofing in 2014, one of the first
             decisions was which materials to build the business around. After
             years of working with various brands, the choice was clear:
@@ -103,7 +103,7 @@ export default function MaterialsPage() {
             Pacific Northwest, and a warranty program that actually means
             something.
           </p>
-          <p className="text-gray-600 leading-relaxed">
+          <p className="text-gray-600 leading-relaxed max-w-[37rem]">
             We&apos;re not just buying shingles off a shelf. As a CertainTeed
             Certified contractor, we&apos;ve invested in training and met their
             quality standards - which means better installations and
@@ -118,7 +118,7 @@ export default function MaterialsPage() {
           <h2 className="text-3xl font-bold text-[#092e5e] mb-6 text-center">
             It&apos;s Not Just Shingles - It&apos;s a System
           </h2>
-          <p className="text-gray-600 leading-relaxed text-center max-w-3xl mx-auto mb-12">
+          <p className="text-gray-600 leading-relaxed text-center max-w-[38rem] mx-auto mb-12">
             A lot of people think a roof is just shingles, but the truth is your
             roof is a system of components that need to work together. CertainTeed
             designs each layer to complement the others, which is why we install
@@ -163,7 +163,7 @@ export default function MaterialsPage() {
                 <h3 className="text-lg font-bold text-[#092e5e] mb-2">
                   {item.title}
                 </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className="text-sm text-gray-600 leading-relaxed max-w-[37rem]">
                   {item.desc}
                 </p>
               </div>
@@ -200,7 +200,7 @@ export default function MaterialsPage() {
                 <p className="text-sm font-medium text-[#3e3d3b] mb-3">
                   {shingle.type}
                 </p>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed max-w-[37rem]">
                   {shingle.description}
                 </p>
               </div>
@@ -215,21 +215,21 @@ export default function MaterialsPage() {
           <h2 className="text-3xl font-bold text-[#092e5e] mb-6 text-center">
             Why Material Matters in Oregon
           </h2>
-          <p className="text-gray-600 leading-relaxed mb-4">
+          <p className="text-gray-600 leading-relaxed mb-4 max-w-[37rem]">
             Oregon is beautiful, but it&apos;s tough on roofs. Our climate
             throws persistent rain, moss growth, seasonal wind storms, and
             freeze-thaw cycles at your home year after year. Cheap materials
             might look fine on day one, but they break down faster under these
             conditions.
           </p>
-          <p className="text-gray-600 leading-relaxed mb-4">
+          <p className="text-gray-600 leading-relaxed mb-4 max-w-[37rem]">
             CertainTeed shingles are built with StreakFighter algae-resistance
             technology to fight the dark streaks that plague Pacific Northwest
             roofs. Their architectural shingles are rated for winds up to 110
             mph, and the layered construction handles thermal expansion and
             contraction better than thinner alternatives.
           </p>
-          <p className="text-gray-600 leading-relaxed">
+          <p className="text-gray-600 leading-relaxed max-w-[37rem]">
             Bottom line: the materials you choose today determine how your roof
             performs for the next 25 to 30+ years. We recommend CertainTeed
             because we&apos;ve seen how they hold up in our climate, job after
@@ -247,13 +247,13 @@ export default function MaterialsPage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-[#092e5e] mb-4">
             What Our Certification Means for You
           </h2>
-          <p className="text-gray-600 leading-relaxed mb-4">
+          <p className="text-gray-600 leading-relaxed mb-4 max-w-[37rem]">
             Not every roofer who installs CertainTeed products is certified.
             Certification means French Roofing has completed manufacturer
             training, met quality benchmarks, and maintains an active
             relationship with CertainTeed.
           </p>
-          <p className="text-gray-600 leading-relaxed">
+          <p className="text-gray-600 leading-relaxed max-w-[37rem]">
             For homeowners, this translates to one major benefit: enhanced
             warranty options. When a certified contractor installs your roof, you
             may qualify for longer coverage periods and warranties that include

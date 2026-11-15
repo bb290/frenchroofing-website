@@ -108,7 +108,7 @@ export default function WarrantiesPage() {
               <p className="mt-2 text-lg font-semibold text-[#3e3d3b]">
                 Workmanship Warranty
               </p>
-              <p className="mt-1 text-sm text-gray-600">
+              <p className="mt-1 text-sm text-gray-600 max-w-[37rem]">
                 Minimum standard on every roof.
               </p>
             </div>
@@ -117,7 +117,7 @@ export default function WarrantiesPage() {
               <p className="mt-2 text-lg font-semibold text-[#3e3d3b]">
                 Manufacturer Warranty
               </p>
-              <p className="mt-1 text-sm text-gray-600">
+              <p className="mt-1 text-sm text-gray-600 max-w-[37rem]">
                 On CertainTeed Landmark shingles.
               </p>
             </div>
@@ -159,12 +159,12 @@ export default function WarrantiesPage() {
                 <p className="text-3xl font-bold text-[#092e5e] leading-none">
                   30 years
                 </p>
-                <p className="text-sm text-gray-600 mt-1">
+                <p className="text-sm text-gray-600 mt-1 max-w-[37rem]">
                   Standard manufacturer warranty on CertainTeed Landmark
                   shingles, the shingle we install on most homes.
                 </p>
               </div>
-              <p className="text-gray-600 leading-relaxed mb-4">
+              <p className="text-gray-600 leading-relaxed mb-4 max-w-[37rem]">
                 This warranty covers defects in the roofing materials
                 themselves. If a shingle fails prematurely because of a
                 manufacturing defect, CertainTeed stands behind it. Most of our
@@ -172,7 +172,7 @@ export default function WarrantiesPage() {
                 a 30-year manufacturer warranty. Step up to a 50-year shingle
                 system and the manufacturer coverage runs longer.
               </p>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed max-w-[37rem]">
                 Because French Roofing is{" "}
                 <strong className="text-[#092e5e]">CertainTeed Certified</strong>,
                 you can also register for{" "}
@@ -208,12 +208,12 @@ export default function WarrantiesPage() {
                 <p className="text-3xl font-bold text-[#092e5e] leading-none">
                   5&ndash;10 years
                 </p>
-                <p className="text-sm text-gray-600 mt-1">
+                <p className="text-sm text-gray-600 mt-1 max-w-[37rem]">
                   Included on every roof at no extra cost: 5 years on 30-year
                   shingle systems, 10 years on 50-year shingle systems.
                 </p>
               </div>
-              <p className="text-gray-600 leading-relaxed mb-4">
+              <p className="text-gray-600 leading-relaxed mb-4 max-w-[37rem]">
                 This is our promise that the work was done right. If something
                 goes wrong because of how the roof was installed, we come back
                 and fix it at no cost to you.
@@ -345,7 +345,7 @@ export default function WarrantiesPage() {
                 <h3 className="text-lg font-bold text-[#092e5e] mb-2">
                   {tip.title}
                 </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className="text-sm text-gray-600 leading-relaxed max-w-[37rem]">
                   {tip.description}
                 </p>
               </div>
@@ -360,7 +360,7 @@ export default function WarrantiesPage() {
             <h3 className="mt-2 text-2xl sm:text-3xl font-bold text-white">
               Rather Not Climb Up There Yourself?
             </h3>
-            <p className="mx-auto mt-3 max-w-2xl text-white/85 leading-relaxed">
+            <p className="mx-auto mt-3 max-w-[38rem] text-white/85 leading-relaxed">
               Let us handle the upkeep that keeps your warranty intact. Our
               recurring maintenance program has you covered twice a year -
               debris and gutter clearing, moss prevention, and a full
@@ -424,7 +424,7 @@ export default function WarrantiesPage() {
                   <h3 className="text-xl font-semibold text-[#092e5e] mb-1">
                     {step.title}
                   </h3>
-                  <p className="text-gray-600">{step.description}</p>
+                  <p className="text-gray-600 max-w-[37rem]">{step.description}</p>
                 </div>
               </div>
             ))}

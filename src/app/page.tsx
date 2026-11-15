@@ -74,7 +74,7 @@ const outAndAbout = [
   },
   {
     src: "/images/community-tree-farm.webp",
-    alt: "French Roofing crew member and his daughter on a wagon at a Christmas tree farm",
+    alt: "Sean French and his daughter on a wagon at a Christmas tree farm",
     caption: "Christmas tree farm with the family",
   },
 ];

@@ -79,7 +79,7 @@ export default function EstimatePage() {
                 <h3 className="text-base font-semibold text-[#092e5e] mb-2">
                   {faq.question}
                 </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className="text-sm text-gray-600 leading-relaxed max-w-[34rem]">
                   {faq.answer}
                 </p>
               </div>

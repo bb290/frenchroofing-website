@@ -116,7 +116,7 @@ export default function EssentialsPage() {
       {/* ── Intro ── */}
       <section className="py-12 px-4 bg-gray-50">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-gray-600 text-lg leading-relaxed">
+          <p className="text-gray-600 text-lg leading-relaxed max-w-[37rem]">
             Choosing the right roofing contractor is crucial for the success of
             your project. We put this guide together because we believe informed
             homeowners make better decisions. Whether you hire French Roofing or
@@ -141,7 +141,7 @@ export default function EssentialsPage() {
                   <h2 className="text-xl sm:text-2xl font-bold text-[#092e5e] mb-3">
                     &ldquo;{q.question}&rdquo;
                   </h2>
-                  <p className="text-gray-600 leading-relaxed">{q.answer}</p>
+                  <p className="text-gray-600 leading-relaxed max-w-[37rem]">{q.answer}</p>
                 </div>
               </div>
             </div>
@@ -157,7 +157,7 @@ export default function EssentialsPage() {
                 <h2 className="text-xl sm:text-2xl font-bold text-[#092e5e] mb-1">
                   Bonus: &ldquo;{bonusTip.question}&rdquo;
                 </h2>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed max-w-[37rem]">
                   {bonusTip.answer}
                 </p>
               </div>
@@ -172,7 +172,7 @@ export default function EssentialsPage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-[#092e5e] mb-4">
             The Right Contractor Won&apos;t Mind These Questions
           </h2>
-          <p className="text-gray-600 leading-relaxed mb-6">
+          <p className="text-gray-600 leading-relaxed mb-6 max-w-[37rem]">
             In fact, they&apos;ll welcome them. A contractor who gets
             uncomfortable when you ask about licensing, insurance, or warranties
             is telling you something. Clear communication and transparency are
@@ -200,7 +200,7 @@ export default function EssentialsPage() {
             <h2 className="text-2xl sm:text-3xl font-bold text-[#092e5e]">
               All 10 Questions - In Depth
             </h2>
-            <p className="mt-2 text-gray-600">
+            <p className="mt-2 text-gray-600 max-w-[37rem] mx-auto">
               If you made it this far without reading and just scrolled straight
               to the video - no judgment. This AI-generated podcast covers all
               10 questions in a conversational format that&apos;s easy to absorb.

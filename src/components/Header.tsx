@@ -7,7 +7,7 @@ import { COMPANY, SERVICES, SERVICE_AREAS } from "@/lib/constants";
 
 const DROPDOWNS = [
   {
-    label: "What We Do",
+    label: "Services",
     href: "/services",
     items: [
       ...SERVICES.map((s) => ({ label: s.name, href: `/services/${s.slug}` })),
@@ -15,8 +15,8 @@ const DROPDOWNS = [
     ],
   },
   {
-    label: "Where We Work",
-    href: "/#service-areas",
+    label: "Service Areas",
+    href: "/service-areas",
     items: SERVICE_AREAS.all
       .filter((a) => SERVICE_AREAS.priority.includes(a.slug))
       .map((a) => ({
@@ -25,9 +25,10 @@ const DROPDOWNS = [
       })),
   },
   {
-    label: "Need to Know",
-    href: "/essentials",
+    label: "Roofing Guides",
+    href: "/guides",
     items: [
+      { label: "All Roofing Guides", href: "/guides" },
       { label: "10 Essential Questions", href: "/essentials" },
       { label: "Roofing Materials", href: "/materials" },
       { label: "Warranty Details", href: "/warranties" },
@@ -35,7 +36,7 @@ const DROPDOWNS = [
     ],
   },
   {
-    label: "Nice to Know",
+    label: "About",
     href: "/about",
     items: [
       { label: "Our Story", href: "/about" },
@@ -72,11 +73,11 @@ export default function Header() {
               <div key={menu.label} className="relative group">
                 <Link
                   href={menu.href}
-                  className="px-4 py-2 text-xl font-medium text-gray-700 hover:text-[#d85024] transition-colors inline-flex items-center gap-1"
+                  className="px-4 py-2 text-xl font-medium text-gray-700 hover:text-[#c04520] transition-colors inline-flex items-center gap-1"
                 >
                   {menu.label}
                   <svg
-                    className="h-3.5 w-3.5 text-gray-400 group-hover:text-[#d85024] transition-transform group-hover:rotate-180"
+                    className="h-3.5 w-3.5 text-gray-400 group-hover:text-[#c04520] transition-transform group-hover:rotate-180"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth={2.5}
@@ -92,12 +93,12 @@ export default function Header() {
                       <Link
                         key={item.href}
                         href={item.href}
-                        className="block px-4 py-2.5 text-sm text-gray-600 hover:bg-[#ffbd59]/10 hover:text-[#d85024] transition-colors"
+                        className="block px-4 py-2.5 text-sm text-gray-600 hover:bg-[#ffbd59]/10 hover:text-[#c04520] transition-colors"
                       >
                         {item.label}
                       </Link>
                     ))}
-                    {(menu.label === "What We Do" || menu.label === "Where We Work") && (
+                    {(menu.label === "Services" || menu.label === "Service Areas") && (
                       <Link
                         href={menu.href}
                         className="block px-4 py-2.5 text-sm font-medium text-[#c04520] border-t border-gray-100 mt-1 pt-2.5"
@@ -179,13 +180,13 @@ export default function Header() {
                       <Link
                         key={item.href}
                         href={item.href}
-                        className="block px-3 py-2 text-sm text-gray-600 hover:text-[#d85024]"
+                        className="block px-3 py-2 text-sm text-gray-600 hover:text-[#c04520]"
                         onClick={() => setMobileOpen(false)}
                       >
                         {item.label}
                       </Link>
                     ))}
-                    {(menu.label === "What We Do" || menu.label === "Where We Work") && (
+                    {(menu.label === "Services" || menu.label === "Service Areas") && (
                       <Link
                         href={menu.href}
                         className="block px-3 py-2 text-sm font-medium text-[#c04520]"

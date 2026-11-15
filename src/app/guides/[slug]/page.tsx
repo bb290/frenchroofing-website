@@ -10,6 +10,16 @@ import { getEbook } from "@/lib/ebooks";
 import { GUIDES, getCluster, getClusterGuides, getGuide, getPillar } from "@/lib/guides";
 import { ogImage } from "@/lib/og";
 
+/** URL-safe id for a section heading, used by the "In this guide" jump list. */
+function sectionId(heading: string): string {
+  return heading
+    .toLowerCase()
+    .replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 80);
+}
+
 export function generateStaticParams() {
   return GUIDES.map((g) => ({ slug: g.slug }));
 }
@@ -112,6 +122,29 @@ export default async function GuidePage({
               </p>
             ))}
           </div>
+          {guide.sections.length > 2 && (
+            <nav
+              aria-labelledby="in-this-guide"
+              className="mt-10 rounded-xl border border-[#e5e0d6] bg-[#f5f1ea] p-6"
+            >
+              <h2 id="in-this-guide" className="text-lg font-semibold text-[#092e5e]">
+                In this guide
+              </h2>
+              <p className="mt-2 text-base text-[#3e3d3b] max-w-[40rem]">{guide.description}</p>
+              <ol className="mt-4 grid gap-x-8 gap-y-2 sm:grid-cols-2 list-decimal list-inside marker:text-[#6b6a67] marker:font-medium">
+                {guide.sections.map((section) => (
+                  <li key={section.heading} className="text-base">
+                    <a
+                      href={`#${sectionId(section.heading)}`}
+                      className="text-[#092e5e] font-medium hover:text-[#c04520] hover:underline"
+                    >
+                      {section.heading}
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </nav>
+          )}
         </div>
       </section>
 
@@ -135,7 +168,7 @@ export default async function GuidePage({
       <article className="py-12 px-4 bg-[#fdfcfa]">
         <div className="mx-auto max-w-3xl space-y-12">
           {guide.sections.map((section, i) => (
-            <section key={i}>
+            <section key={i} id={sectionId(section.heading)} className="scroll-mt-28">
               <h2 className="text-2xl sm:text-3xl font-semibold text-[#092e5e] mb-4">
                 {section.heading}
               </h2>
