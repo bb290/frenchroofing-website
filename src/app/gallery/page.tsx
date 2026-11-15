@@ -28,19 +28,6 @@ const projects = [
       alt: "The same roof after French Roofing's replacement: new shingles, clean flashing and vents",
     },
   },
-  {
-    title: "Residential Roof Replacement",
-    description:
-      "Aging three-tab shingles swapped for durable architectural shingles. New ridge cap, clean valleys, and a roof built to handle Oregon weather.",
-    before: {
-      src: "/images/house-before.webp",
-      alt: "Aging residential roof with worn shingles - before French Roofing replacement",
-    },
-    after: {
-      src: "/images/house-after.webp",
-      alt: "Freshly installed residential roof with new architectural shingles - after French Roofing replacement",
-    },
-  },
 ];
 
 // More projects (2026-11-15). Only jobs Housecall Pro shows as completed by French Roofing; city named only when on
