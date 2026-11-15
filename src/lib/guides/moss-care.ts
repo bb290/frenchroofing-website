@@ -252,7 +252,7 @@ export const mossCareGuides: Guide[] = [
         heading: "What a proper cleaning includes",
         paragraphs: [
           "A real roof cleaning is more than a guy with a leaf blower. Ours includes debris removal from the roof surface and valleys, gutter and downspout clearing, moss treatment, and a visual inspection while we're up there. If we spot a problem in the making, you get photos and straight talk about it.",
-          "Full details on the service are here: [roof cleaning and maintenance](/services/roof-cleaning). And for the bigger picture on moss itself, see [the Moss Handbook](/guides/moss-on-roof-oregon).",
+          "Full details on the service are here: [roof cleaning](/services/roof-cleaning). And for the bigger picture on moss itself, see [the Moss Handbook](/guides/moss-on-roof-oregon).",
         ],
       },
     ],
@@ -632,7 +632,7 @@ export const mossCareGuides: Guide[] = [
       {
         question: "Do you clean gutters as a standalone service?",
         answer:
-          "We clear gutters and downspouts as part of every roof cleaning and maintenance visit rather than as a separate trip. If your gutters are full, odds are the roof above them needs attention too, and one visit covers both.",
+          "We clear gutters and downspouts as part of every roof cleaning visit rather than as a separate trip. If your gutters are full, odds are the roof above them needs attention too, and one visit covers both.",
       },
     ],
     ogPhoto: "/images/old-discolored-singles-active-leak-failing-flashing-time-for.jpg",

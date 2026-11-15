@@ -24,7 +24,7 @@ export async function generateMetadata({
 
   return {
     title: `Roof Cleaning in ${area.name}, OR | ${COMPANY.name}`,
-    description: `Professional roof cleaning and maintenance in ${area.name}, OR. Remove moss, algae, and debris to extend your roof's life. One-time or recurring service. Licensed (CCB #${COMPANY.ccb}). Schedule your cleaning today.`,
+    description: `Professional roof cleaning in ${area.name}, OR. Remove moss, algae, and debris to extend your roof's life. One-time or recurring service. Licensed (CCB #${COMPANY.ccb}). Schedule your cleaning today.`,
     alternates: {
       canonical: `${COMPANY.url}/services/roof-cleaning/${area.slug}`,
     },
@@ -109,7 +109,7 @@ export default async function RoofCleaningCityPage({
           { name: "Home", href: "/" },
           { name: "Services", href: "/services" },
           {
-            name: "Roof Cleaning & Maintenance",
+            name: "Roof Cleaning",
             href: "/services/roof-cleaning",
           },
           {
@@ -119,7 +119,7 @@ export default async function RoofCleaningCityPage({
         ]}
       />
       <ServiceJsonLd
-        serviceName="Roof Cleaning & Maintenance"
+        serviceName="Roof Cleaning"
         description={`Moss removal, debris cleanout, and recurring roof maintenance for homeowners in ${area.name}, OR by a licensed and bonded team (CCB #${COMPANY.ccb}).`}
         href={`/services/roof-cleaning/${area.slug}`}
         cityName={area.name}
@@ -130,7 +130,7 @@ export default async function RoofCleaningCityPage({
         <div className="absolute inset-0">
           <Image
             src="/images/worker-ridge.webp"
-            alt={`French Roofing worker on a roof ridge performing cleaning and maintenance in ${area.name}, Oregon`}
+            alt={`French Roofing worker on a roof ridge doing roof cleaning in ${area.name}, Oregon`}
             fill
             className="object-cover opacity-25"
             priority
@@ -139,7 +139,7 @@ export default async function RoofCleaningCityPage({
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
           <div className="max-w-2xl">
             <p className="text-[#ffbd59] font-semibold text-sm uppercase tracking-wider mb-3">
-              Roof Cleaning &amp; Maintenance
+              Roof Cleaning
             </p>
             <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-6">
               Roof Cleaning in {area.name}, OR
@@ -211,7 +211,7 @@ export default async function RoofCleaningCityPage({
         <div className="mx-auto max-w-4xl">
           <div className="text-center mb-14">
             <h2 className="text-3xl sm:text-4xl font-bold text-[#092e5e]">
-              Our Cleaning &amp; Maintenance Process
+              Our Roof Cleaning Process
             </h2>
             <p className="mt-4 text-lg text-gray-600">
               Thorough, careful, and respectful of your property.

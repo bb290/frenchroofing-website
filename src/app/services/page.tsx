@@ -24,7 +24,7 @@ const serviceImages: Record<string, { src: string; alt: string }> = {
   },
   "roof-cleaning": {
     src: "/images/worker-ridge.webp",
-    alt: "French Roofing worker on a roof ridge performing cleaning and maintenance",
+    alt: "French Roofing worker on a roof ridge doing roof cleaning",
   },
   "roof-inspections": {
     src: "/images/team-plywood-install.webp",

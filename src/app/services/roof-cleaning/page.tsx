@@ -8,9 +8,9 @@ import { COMPANY } from "@/lib/constants";
 import { OG_SERVICE_PHOTOS, ogImage } from "@/lib/og";
 
 export const metadata: Metadata = {
-  title: `Roof Cleaning & Maintenance | Damascus, Clackamas & Happy Valley | ${COMPANY.name}`,
+  title: `Roof Cleaning | Damascus, Clackamas & Happy Valley | ${COMPANY.name}`,
   description:
-    "Professional roof cleaning and maintenance in Damascus, Clackamas, Happy Valley, and the surrounding area. Remove moss, algae, and debris to extend your roof's life. One-time or recurring service. Licensed (CCB #203933). Serving Clackamas County and beyond.",
+    "Professional roof cleaning in Damascus, Clackamas, Happy Valley, and the surrounding area. Remove moss, algae, and debris to extend your roof's life. One-time or recurring service. Licensed (CCB #203933). Serving Clackamas County and beyond.",
   alternates: { canonical: `${COMPANY.url}/services/roof-cleaning` },
   openGraph: {
     title: "Roof Cleaning in Damascus, Clackamas & Happy Valley",
@@ -85,18 +85,18 @@ export default function RoofCleaningPage() {
           { name: "Home", href: "/" },
           { name: "Services", href: "/services" },
           {
-            name: "Roof Cleaning & Maintenance",
+            name: "Roof Cleaning",
             href: "/services/roof-cleaning",
           },
         ]}
       />
       <HowToJsonLd
         name="How French Roofing Cleans and Maintains Roofs"
-        description="Our 5-step roof cleaning and maintenance process from assessment to maintenance report. Serving Damascus, Clackamas, Happy Valley, and the surrounding area."
+        description="Our 5-step roof cleaning process from assessment to maintenance report. Serving Damascus, Clackamas, Happy Valley, and the surrounding area."
         steps={steps}
       />
       <ServiceJsonLd
-        serviceName="Roof Cleaning & Maintenance"
+        serviceName="Roof Cleaning"
         description="Moss removal, debris cleanout, and recurring roof maintenance by a licensed and bonded team serving Damascus, Clackamas, Happy Valley, and the surrounding area."
         href="/services/roof-cleaning"
       />
@@ -106,7 +106,7 @@ export default function RoofCleaningPage() {
         <div className="absolute inset-0">
           <Image
             src="/images/worker-ridge.webp"
-            alt="French Roofing worker on a roof ridge performing cleaning and maintenance work"
+            alt="French Roofing worker on a roof ridge doing roof cleaning work"
             fill
             className="object-cover opacity-25"
             priority
@@ -115,7 +115,7 @@ export default function RoofCleaningPage() {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
           <div className="max-w-2xl">
             <p className="text-[#ffbd59] font-semibold text-sm uppercase tracking-wider mb-3">
-              Roof Cleaning &amp; Maintenance
+              Roof Cleaning
             </p>
             <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-6">
               Roof Cleaning in Damascus, Clackamas & Happy Valley
@@ -190,7 +190,7 @@ export default function RoofCleaningPage() {
         <div className="mx-auto max-w-4xl">
           <div className="text-center mb-14">
             <h2 className="text-3xl sm:text-4xl font-bold text-[#092e5e]">
-              Our Cleaning &amp; Maintenance Process
+              Our Roof Cleaning Process
             </h2>
             <p className="mt-4 text-lg text-gray-600">
               Thorough, careful, and respectful of your property.
@@ -293,7 +293,7 @@ export default function RoofCleaningPage() {
 
       {/* ── FAQ ── */}
       <FAQSection
-        title="Roof Cleaning & Maintenance FAQs"
+        title="Roof Cleaning FAQs"
         faqs={faqs}
       />
 

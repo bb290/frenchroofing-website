@@ -94,7 +94,7 @@ const faqs = [
   {
     question: "Can I do a one-time cleaning instead of the annual program?",
     answer:
-      "Absolutely. We offer one-time roof cleaning and maintenance too. But the annual program saves you money per visit and keeps your roof on a consistent schedule - which is how you get the longest life out of your shingles.",
+      "Absolutely. We offer one-time roof cleaning too. But the annual program saves you money per visit and keeps your roof on a consistent schedule - which is how you get the longest life out of your shingles.",
   },
   {
     question: "Does regular maintenance really extend my roof's life?",
