@@ -12,6 +12,8 @@ const DROPDOWNS = [
     items: [
       ...SERVICES.map((s) => ({ label: s.name, href: `/services/${s.slug}` })),
       { label: "Maintenance Program", href: "/services/maintenance" },
+      { label: "Our Warranty", href: "/warranties" },
+      { label: "Financing", href: "/financing" },
     ],
   },
   {
@@ -31,8 +33,6 @@ const DROPDOWNS = [
       { label: "All Roofing Guides", href: "/guides" },
       { label: "10 Essential Questions", href: "/essentials" },
       { label: "Roofing Materials", href: "/materials" },
-      { label: "Warranty Details", href: "/warranties" },
-      { label: "Financing", href: "/financing" },
     ],
   },
   {
@@ -68,12 +68,12 @@ export default function Header() {
           </Link>
 
           {/* Desktop nav */}
-          <nav className="hidden lg:flex items-center gap-1">
+          <nav className="hidden xl:flex items-center gap-1">
             {DROPDOWNS.map((menu) => (
               <div key={menu.label} className="relative group">
                 <Link
                   href={menu.href}
-                  className="px-4 py-2 text-xl font-medium text-gray-700 hover:text-[#c04520] transition-colors inline-flex items-center gap-1"
+                  className="px-4 py-2 text-lg font-medium text-gray-700 hover:text-[#c04520] transition-colors inline-flex items-center gap-1 whitespace-nowrap"
                 >
                   {menu.label}
                   <svg
@@ -113,18 +113,18 @@ export default function Header() {
           </nav>
 
           {/* CTAs */}
-          <div className="hidden lg:flex items-center gap-3">
+          <div className="hidden xl:flex items-center gap-3">
             <a
               href={COMPANY.bookingUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-lg border-2 border-[#092e5e] px-5 py-2.5 text-sm font-semibold text-[#092e5e] hover:bg-[#092e5e] hover:text-white transition-colors"
+              className="rounded-lg border-2 border-[#092e5e] px-5 py-2.5 text-sm font-semibold whitespace-nowrap text-[#092e5e] hover:bg-[#092e5e] hover:text-white transition-colors"
             >
               Free Assessment
             </a>
             <Link
               href="/estimate"
-              className="rounded-lg bg-[#ffbd59] px-5 py-2.5 text-sm font-semibold text-[#092e5e] hover:bg-[#f0ad40] transition-colors"
+              className="rounded-lg bg-[#ffbd59] px-5 py-2.5 text-sm font-semibold whitespace-nowrap text-[#092e5e] hover:bg-[#f0ad40] transition-colors"
             >
               Instant Estimate
             </Link>
@@ -133,7 +133,7 @@ export default function Header() {
           {/* Mobile menu button */}
           <button
             type="button"
-            className="lg:hidden p-2 text-gray-700"
+            className="xl:hidden p-2 text-gray-700"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
@@ -150,7 +150,7 @@ export default function Header() {
 
       {/* Mobile nav */}
       {mobileOpen && (
-        <div className="lg:hidden border-t border-gray-100 bg-white">
+        <div className="xl:hidden border-t border-gray-100 bg-white">
           <div className="px-4 py-4 space-y-1">
             {DROPDOWNS.map((menu) => (
               <div key={menu.label}>
@@ -211,7 +211,7 @@ export default function Header() {
               </a>
               <Link
                 href="/estimate"
-                className="block text-center rounded-lg bg-[#d85024] px-5 py-3 text-base font-semibold text-white"
+                className="block text-center rounded-lg bg-[#ffbd59] px-5 py-3 text-base font-semibold text-[#092e5e]"
                 onClick={() => setMobileOpen(false)}
               >
                 Instant Estimate

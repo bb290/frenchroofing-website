@@ -160,7 +160,7 @@ export default function RoofEstimator({ compact = false }: { compact?: boolean }
             const isActive = i <= stepIndex;
             return (
               <div key={s} className={`flex-1 py-2 text-center text-sm font-medium ${isActive ? "bg-[#ffbd59]/20 text-[#092e5e]" : "text-gray-500"}`}>
-                <span className={`inline-flex items-center justify-center h-5 w-5 rounded-full text-[11px] font-bold mr-1 ${isActive ? "bg-[#c04520] text-white" : "bg-gray-200 text-gray-700"}`}>
+                <span className={`inline-flex items-center justify-center h-5 w-5 rounded-full text-[12px] font-bold mr-1 ${isActive ? "bg-[#c04520] text-white" : "bg-gray-200 text-gray-700"}`}>
                   {i + 1}
                 </span>
                 <span className="hidden sm:inline">{STEP_LABELS[i]}</span>
@@ -256,7 +256,7 @@ export default function RoofEstimator({ compact = false }: { compact?: boolean }
                     </div>
                     <div className="mt-3 grid grid-cols-2 gap-3">
                       <div>
-                        <span className="text-[10px] font-semibold uppercase tracking-wider text-green-700">Pros</span>
+                        <span className="text-[12px] font-semibold uppercase tracking-wider text-green-700">Pros</span>
                         <ul className="mt-1 space-y-0.5">
                           {mat.pros.map((pro) => (
                             <li key={pro} className="flex items-start gap-1.5 text-sm text-gray-600">
@@ -267,7 +267,7 @@ export default function RoofEstimator({ compact = false }: { compact?: boolean }
                         </ul>
                       </div>
                       <div>
-                        <span className="text-[10px] font-semibold uppercase tracking-wider text-red-700">Cons</span>
+                        <span className="text-[12px] font-semibold uppercase tracking-wider text-red-700">Cons</span>
                         <ul className="mt-1 space-y-0.5">
                           {mat.cons.map((con) => (
                             <li key={con} className="flex items-start gap-1.5 text-sm text-gray-600">
@@ -383,7 +383,7 @@ export default function RoofEstimator({ compact = false }: { compact?: boolean }
                           <span className="block text-base font-bold text-[#092e5e]">
                             +${addon.flatPrice.toLocaleString()}
                           </span>
-                          <span className={`inline-block mt-1 rounded-full px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider ${
+                          <span className={`inline-block mt-1 rounded-full px-2.5 py-0.5 text-[12px] font-semibold uppercase tracking-wider ${
                             addon.recommended
                               ? "bg-[#ffbd59]/20 text-[#c04520]"
                               : "bg-[#092e5e]/5 text-[#092e5e]"
@@ -394,7 +394,7 @@ export default function RoofEstimator({ compact = false }: { compact?: boolean }
                       </div>
                       <div className="mt-3 ml-7 grid grid-cols-2 gap-3">
                         <div>
-                          <span className="text-[10px] font-semibold uppercase tracking-wider text-green-700">Pros</span>
+                          <span className="text-[12px] font-semibold uppercase tracking-wider text-green-700">Pros</span>
                           <ul className="mt-1 space-y-0.5">
                             {addon.pros.map((pro) => (
                               <li key={pro} className="flex items-start gap-1.5 text-sm text-gray-600">
@@ -405,7 +405,7 @@ export default function RoofEstimator({ compact = false }: { compact?: boolean }
                           </ul>
                         </div>
                         <div>
-                          <span className="text-[10px] font-semibold uppercase tracking-wider text-red-700">Cons</span>
+                          <span className="text-[12px] font-semibold uppercase tracking-wider text-red-700">Cons</span>
                           <ul className="mt-1 space-y-0.5">
                             {addon.cons.map((con) => (
                               <li key={con} className="flex items-start gap-1.5 text-sm text-gray-600">

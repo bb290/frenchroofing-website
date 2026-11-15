@@ -5,6 +5,7 @@ import CTABanner from "@/components/CTABanner";
 import RelatedGuides from "@/components/RelatedGuides";
 import FAQSection from "@/components/FAQSection";
 import RoofEstimator from "@/components/RoofEstimator";
+import RecentWork from "@/components/RecentWork";
 import { COMPANY, SERVICES, SERVICE_AREAS } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -64,8 +65,8 @@ const outAndAbout = [
   },
   {
     src: "/images/community-festival-family.webp",
-    alt: "Sean French and family at the Oak Grove Community Festival",
-    caption: "Family day at the festival",
+    alt: "Friends at the French Roofing booth at the Oak Grove Community Festival",
+    caption: "Friends at the festival",
   },
   {
     src: "/images/community-festival-rain.webp",
@@ -130,11 +131,11 @@ export default function Home() {
           </div>
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
             <Image
-              src="/images/team-plywood-install.webp"
-              alt="French Roofing crew installing plywood on a residential roof in Damascus, Oregon"
+              src="/images/hero-new-roof-crew-finishing.webp"
+              alt="French Roofing crew finishing a new shingle roof under tall Oregon firs"
               fill
               sizes="(min-width: 1024px) 600px, 100vw"
-              className="object-cover scale-[1.1]"
+              className="object-cover"
               priority
             />
           </div>
@@ -252,8 +253,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── Out in the Field (Brittany, 2026-11-15: wanted on the home page too) ── */}
+      <RecentWork background="bg-[#f5f1ea]" />
+
       {/* ── Instant Estimate ── */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-white">
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-10">
             <h2 className="text-3xl sm:text-4xl font-bold text-[#092e5e]">

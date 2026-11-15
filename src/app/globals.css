@@ -5,7 +5,7 @@
   Source of truth: .claude/BRAND.md + assets/tokens.css. Changes from the old file:
   - Tailwind's cool grays are remapped to the brand's warm neutrals, so every text-gray-* / bg-gray-* /
     border-gray-* class on the site picks up the brand without touching each page.
-  - Body text sizes step up to the brand scale (body 17px, small 15px, caption 13px).
+  - Body text sizes: body 18px, small 16px, caption 14px (one step above BRAND.md, for older readers).
   - --color-orange-text is the orange for TEXT on light backgrounds: #d85024 is 4.1:1 on white, under the
     4.5:1 minimum for normal-size text; #c04520 is 5.1:1. Fills and accents keep #d85024.
 */
@@ -44,15 +44,16 @@
   --color-gray-800: #2c2b29;
   --color-gray-900: #1d1c1b;
 
-  /* Brand type scale: caption 13, small 15, body 17, lead 19. */
-  --text-xs: 0.8125rem;
+  /* Type scale, sized for older readers (Brittany, 2026-11-15: "hard to read for older folks"):
+     caption 14, small 16, body 18, lead 20. One step above BRAND.md's 13/15/17/19. */
+  --text-xs: 0.875rem;
   --text-xs--line-height: 1.45;
-  --text-sm: 0.9375rem;
-  --text-sm--line-height: 1.55;
-  --text-base: 1.0625rem;
-  --text-base--line-height: 1.65;
-  --text-lg: 1.1875rem;
-  --text-lg--line-height: 1.6;
+  --text-sm: 1rem;
+  --text-sm--line-height: 1.6;
+  --text-base: 1.125rem;
+  --text-base--line-height: 1.7;
+  --text-lg: 1.25rem;
+  --text-lg--line-height: 1.65;
 }
 
 html {

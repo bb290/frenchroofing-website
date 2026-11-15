@@ -55,7 +55,7 @@ function Chapter({ guide, number }: { guide: Guide; number: number }) {
       </h2>
       <div className="space-y-3 mb-6">
         {guide.intro.map((p, i) => (
-          <p key={i} className="text-[15px] leading-relaxed text-[#3e3d3b]">
+          <p key={i} className="text-[16px] leading-relaxed text-[#3e3d3b]">
             {renderInline(p)}
           </p>
         ))}
@@ -67,7 +67,7 @@ function Chapter({ guide, number }: { guide: Guide; number: number }) {
           </h3>
           <div className="space-y-3">
             {s.paragraphs.map((p, j) => (
-              <p key={j} className="text-[15px] leading-relaxed text-[#3e3d3b]">
+              <p key={j} className="text-[16px] leading-relaxed text-[#3e3d3b]">
                 {renderInline(p)}
               </p>
             ))}
@@ -77,7 +77,7 @@ function Chapter({ guide, number }: { guide: Guide; number: number }) {
               {s.bullets.map((b, j) => (
                 <li key={j} className="flex gap-2">
                   <span className="mt-[7px] h-[6px] w-[6px] flex-shrink-0 rounded-full bg-[#ffbd59]" />
-                  <span className="text-[15px] leading-relaxed text-[#3e3d3b]">
+                  <span className="text-[16px] leading-relaxed text-[#3e3d3b]">
                     {renderInline(b)}
                   </span>
                 </li>
@@ -104,10 +104,10 @@ function Chapter({ guide, number }: { guide: Guide; number: number }) {
         <div className="space-y-3">
           {guide.faqs.map((f, i) => (
             <div key={i}>
-              <p className="text-[15px] font-semibold text-[#092e5e]">
+              <p className="text-[16px] font-semibold text-[#092e5e]">
                 {f.question}
               </p>
-              <p className="text-[14px] leading-relaxed text-[#3e3d3b]">
+              <p className="text-[15px] leading-relaxed text-[#3e3d3b]">
                 {f.answer}
               </p>
             </div>
@@ -183,7 +183,7 @@ export default async function EbookPrintPage({
         <h2 className="text-3xl font-bold text-[#092e5e] mb-2">
           What&apos;s inside
         </h2>
-        <p className="text-[15px] text-[#6b6a67] mb-8">
+        <p className="text-[16px] text-[#6b6a67] mb-8">
           Written by the French Roofing crew in Damascus, Oregon. Family-owned
           since 2014, CertainTeed Certified, and licensed, insured, and bonded
           (CCB #{COMPANY.ccb}).
@@ -194,7 +194,7 @@ export default async function EbookPrintPage({
               <span className="text-[#c04520] font-bold text-lg w-7 text-right flex-shrink-0">
                 {i + 1}
               </span>
-              <span className="text-[17px] font-medium text-[#092e5e]">
+              <span className="text-[18px] font-medium text-[#092e5e]">
                 {g.title}
               </span>
             </li>
@@ -204,7 +204,7 @@ export default async function EbookPrintPage({
               <span className="text-[#c04520] font-bold text-lg w-7 text-right flex-shrink-0">
                 {chapters.length + 1}
               </span>
-              <span className="text-[17px] font-medium text-[#092e5e]">
+              <span className="text-[18px] font-medium text-[#092e5e]">
                 10 Essential Questions to Ask Every Roofing Contractor
               </span>
             </li>
@@ -227,7 +227,7 @@ export default async function EbookPrintPage({
             <h2 className="text-3xl font-bold text-[#092e5e] leading-tight mb-5">
               10 Essential Questions to Ask Every Roofing Contractor
             </h2>
-            <p className="text-[15px] leading-relaxed mb-6">
+            <p className="text-[16px] leading-relaxed mb-6">
               Choosing the right roofing contractor is crucial for the success
               of your project. We put this list together because we believe
               informed homeowners make better decisions. Whether you hire
@@ -240,14 +240,14 @@ export default async function EbookPrintPage({
                 <h3 className="text-lg font-semibold text-[#092e5e] mb-1">
                   {q.number}. &ldquo;{q.question}&rdquo;
                 </h3>
-                <p className="text-[15px] leading-relaxed">{q.answer}</p>
+                <p className="text-[16px] leading-relaxed">{q.answer}</p>
               </div>
             ))}
             <div style={{ breakInside: "avoid-page" }} className="rounded-xl border-2 border-[#ffbd59] bg-[#f5f1ea] p-5 mt-6">
               <h3 className="text-lg font-semibold text-[#092e5e] mb-1">
                 Bonus: &ldquo;{BONUS_TIP.question}&rdquo;
               </h3>
-              <p className="text-[15px] leading-relaxed">{BONUS_TIP.answer}</p>
+              <p className="text-[16px] leading-relaxed">{BONUS_TIP.answer}</p>
             </div>
           </section>
         )}

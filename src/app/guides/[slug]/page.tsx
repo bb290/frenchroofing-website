@@ -174,7 +174,7 @@ export default async function GuidePage({
               </h2>
               <div className="space-y-4">
                 {section.paragraphs.map((p, j) => (
-                  <p key={j} className="text-[17px] text-[#3e3d3b] leading-relaxed max-w-[37rem]">
+                  <p key={j} className="text-[19px] text-[#3e3d3b] leading-relaxed max-w-[37rem]">
                     {renderInline(p)}
                   </p>
                 ))}
@@ -184,7 +184,7 @@ export default async function GuidePage({
                   {section.bullets.map((b, j) => (
                     <li key={j} className="flex gap-3">
                       <span className="mt-[9px] h-2 w-2 flex-shrink-0 rounded-full bg-[#ffbd59]" />
-                      <span className="text-[17px] text-[#3e3d3b] leading-relaxed max-w-[37rem]">
+                      <span className="text-[19px] text-[#3e3d3b] leading-relaxed max-w-[37rem]">
                         {renderInline(b)}
                       </span>
                     </li>

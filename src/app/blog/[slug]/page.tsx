@@ -128,7 +128,7 @@ export default async function BlogPostPage({
               </h2>
               <div className="space-y-4">
                 {section.paragraphs.map((p, j) => (
-                  <p key={j} className="text-[17px] text-[#3e3d3b] leading-relaxed">
+                  <p key={j} className="text-[18px] text-[#3e3d3b] leading-relaxed">
                     {renderInline(p)}
                   </p>
                 ))}
@@ -138,7 +138,7 @@ export default async function BlogPostPage({
                   {section.bullets.map((b, j) => (
                     <li key={j} className="flex gap-3">
                       <span className="mt-[9px] h-2 w-2 flex-shrink-0 rounded-full bg-[#ffbd59]" />
-                      <span className="text-[17px] text-[#3e3d3b] leading-relaxed">
+                      <span className="text-[18px] text-[#3e3d3b] leading-relaxed">
                         {renderInline(b)}
                       </span>
                     </li>
