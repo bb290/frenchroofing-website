@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { REPAIR_STEPS } from "@/lib/process-steps";
+import ProcessTimeline from "@/components/process/ProcessTimeline";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { BreadcrumbJsonLd, ServiceJsonLd } from "@/components/JsonLd";
@@ -38,28 +40,7 @@ export async function generateMetadata({
   };
 }
 
-const steps = [
-  {
-    title: "Inspection & Diagnosis",
-    description:
-      "We climb up, take photos, and figure out exactly what's going on. No guesswork - we show you what we find and explain your options in plain English.",
-  },
-  {
-    title: "Honest Recommendation",
-    description:
-      "Sometimes a repair is all you need. Sometimes a replacement makes more sense long-term. We'll tell you the truth either way. You'll get a clear estimate with no hidden costs.",
-  },
-  {
-    title: "Targeted Repair",
-    description:
-      "Our crew addresses the specific issue - whether it's replacing damaged shingles, sealing cracked flashing, fixing a leak, or repairing storm damage. We use quality materials that match your existing roof.",
-  },
-  {
-    title: "Quality Check & Cleanup",
-    description:
-      "We verify the repair is solid, clean up any debris, and make sure you're happy with the work before we call it done.",
-  },
-];
+const steps = REPAIR_STEPS;
 
 function getRoofRepairFaqs(cityName: string) {
   return [
@@ -211,7 +192,7 @@ export default async function RoofRepairCityPage({
 
       {/* ── Our Process ── */}
       <section className="py-20 px-4 bg-gray-50">
-        <div className="mx-auto max-w-4xl">
+        <div className="mx-auto max-w-5xl">
           <div className="text-center mb-14">
             <h2 className="text-3xl sm:text-4xl font-bold text-[#092e5e]">
               What to Expect
@@ -220,23 +201,7 @@ export default async function RoofRepairCityPage({
               Simple, straightforward, and no surprises along the way.
             </p>
           </div>
-          <div className="space-y-8">
-            {steps.map((step, i) => (
-              <div key={i} className="flex gap-6">
-                <div className="flex-shrink-0 h-10 w-10 rounded-full bg-[#092e5e] flex items-center justify-center text-white font-bold text-sm">
-                  {i + 1}
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-[#092e5e] mb-1">
-                    {step.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed max-w-[37rem]">
-                    {step.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <ProcessTimeline steps={steps} />
         </div>
       </section>
 

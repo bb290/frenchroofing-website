@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { REPLACEMENT_STEPS } from "@/lib/process-steps";
+import ProcessTimeline from "@/components/process/ProcessTimeline";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { BreadcrumbJsonLd, ServiceJsonLd } from "@/components/JsonLd";
@@ -38,33 +40,7 @@ export async function generateMetadata({
   };
 }
 
-const steps = [
-  {
-    title: "Free Roof Assessment",
-    description:
-      "We start with a thorough inspection of your existing roof. We document everything with photos, walk you through our findings, and give you an honest recommendation - no pressure, no upsell.",
-  },
-  {
-    title: "Detailed Estimate & Material Selection",
-    description:
-      "You get a clear, written estimate with no hidden fees. We help you choose the right shingles and materials for Oregon's climate and your budget. Financing through Enhancify is available with 0% options.",
-  },
-  {
-    title: "Tear-Off & Deck Inspection",
-    description:
-      "Our crew strips the old roof down to the deck and inspects the plywood for any rot or damage. If we find anything, you hear about it right away with options - no surprises on the invoice.",
-  },
-  {
-    title: "Installation to Manufacturer Specs",
-    description:
-      "As a CertainTeed Certified contractor, we follow manufacturer specifications to the letter. That means proper underlayment, flashing, ventilation, and shingle installation - the details that make a roof last.",
-  },
-  {
-    title: "Final Walkthrough & Cleanup",
-    description:
-      "We do a final quality check, clean up your property (magnet sweep included), and walk you through the finished work. Your yard will look better than when we showed up.",
-  },
-];
+const steps = REPLACEMENT_STEPS;
 
 function getRoofReplacementFaqs(cityName: string) {
   return [
@@ -167,7 +143,7 @@ export default async function RoofReplacementCityPage({
 
       {/* ── Our Process ── */}
       <section className="py-20 px-4 bg-white">
-        <div className="mx-auto max-w-4xl">
+        <div className="mx-auto max-w-5xl">
           <div className="text-center mb-14">
             <h2 className="text-3xl sm:text-4xl font-bold text-[#092e5e]">
               Our Roof Replacement Process
@@ -177,23 +153,7 @@ export default async function RoofReplacementCityPage({
               first contact to final walkthrough.
             </p>
           </div>
-          <div className="space-y-8">
-            {steps.map((step, i) => (
-              <div key={i} className="flex gap-6">
-                <div className="flex-shrink-0 h-10 w-10 rounded-full bg-[#092e5e] flex items-center justify-center text-white font-bold text-sm">
-                  {i + 1}
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-[#092e5e] mb-1">
-                    {step.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed max-w-[37rem]">
-                    {step.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <ProcessTimeline steps={steps} />
         </div>
       </section>
 

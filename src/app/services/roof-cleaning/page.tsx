@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { CLEANING_STEPS } from "@/lib/process-steps";
+import ProcessTimeline from "@/components/process/ProcessTimeline";
 import Image from "next/image";
 import { BreadcrumbJsonLd, HowToJsonLd, ServiceJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
@@ -21,33 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-const steps = [
-  {
-    title: "Roof Assessment",
-    description:
-      "Before we touch anything, we inspect your roof to understand the type of growth, buildup, and any underlying issues. We note areas that need extra attention and flag anything that might need repair.",
-  },
-  {
-    title: "Debris Removal",
-    description:
-      "We clear leaves, branches, pine needles, and anything else that's been collecting up there. Clogged valleys and gutters are one of the biggest causes of premature roof wear in Oregon.",
-  },
-  {
-    title: "Moss & Algae Treatment",
-    description:
-      "Oregon's damp climate is a moss factory. We treat moss and algae growth with methods that are effective but won't damage your shingles or harm your landscaping.",
-  },
-  {
-    title: "Gutter Cleanout",
-    description:
-      "While we're up there, we make sure your gutters and downspouts are clear and flowing properly. It's all connected - a clean roof with clogged gutters still causes problems.",
-  },
-  {
-    title: "Maintenance Report",
-    description:
-      "You get a summary of what we did, what we found, and any recommendations for future care. No surprise bills - just honest info to help you plan ahead.",
-  },
-];
+const steps = CLEANING_STEPS;
 
 const faqs = [
   {
@@ -187,7 +163,7 @@ export default function RoofCleaningPage() {
 
       {/* ── Our Process ── */}
       <section className="py-20 px-4 bg-gray-50">
-        <div className="mx-auto max-w-4xl">
+        <div className="mx-auto max-w-5xl">
           <div className="text-center mb-14">
             <h2 className="text-3xl sm:text-4xl font-bold text-[#092e5e]">
               Our Roof Cleaning Process
@@ -196,23 +172,7 @@ export default function RoofCleaningPage() {
               Thorough, careful, and respectful of your property.
             </p>
           </div>
-          <div className="space-y-8">
-            {steps.map((step, i) => (
-              <div key={i} className="flex gap-6">
-                <div className="flex-shrink-0 h-10 w-10 rounded-full bg-[#092e5e] flex items-center justify-center text-white font-bold text-sm">
-                  {i + 1}
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-[#092e5e] mb-1">
-                    {step.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed max-w-[37rem]">
-                    {step.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <ProcessTimeline steps={steps} />
         </div>
       </section>
 

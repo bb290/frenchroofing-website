@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { INSPECTION_STEPS } from "@/lib/process-steps";
+import ProcessTimeline from "@/components/process/ProcessTimeline";
 import Image from "next/image";
 import { BreadcrumbJsonLd, HowToJsonLd, ServiceJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
@@ -21,28 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-const steps = [
-  {
-    title: "Schedule Your Inspection",
-    description:
-      "Book online and we'll find a time that works for you - inspections typically take about an hour depending on the size of your roof.",
-  },
-  {
-    title: "Exterior Roof Inspection",
-    description:
-      "We inspect shingles, flashing, vents, ridge caps, valleys, gutters, and drip edge. We check for moss, algae, storm damage, and signs of wear. Everything gets documented with photos.",
-  },
-  {
-    title: "Attic & Interior Check",
-    description:
-      "When accessible, we look at the underside of the roof deck for signs of leaks, moisture, daylight, ventilation issues, and insulation problems. This is where hidden damage shows up.",
-  },
-  {
-    title: "Detailed Report & Recommendations",
-    description:
-      "You get a clear, photo-documented report of our findings - what's in good shape, what needs attention now, and what to keep an eye on. No jargon, no scare tactics, just the facts.",
-  },
-];
+const steps = INSPECTION_STEPS;
 
 const faqs = [
   {
@@ -180,7 +161,7 @@ export default function RoofInspectionsPage() {
 
       {/* ── Our Process ── */}
       <section className="py-20 px-4 bg-gray-50">
-        <div className="mx-auto max-w-4xl">
+        <div className="mx-auto max-w-5xl">
           <div className="text-center mb-14">
             <h2 className="text-3xl sm:text-4xl font-bold text-[#092e5e]">
               What Our Inspection Covers
@@ -189,23 +170,7 @@ export default function RoofInspectionsPage() {
               Thorough, documented, and explained in plain English.
             </p>
           </div>
-          <div className="space-y-8">
-            {steps.map((step, i) => (
-              <div key={i} className="flex gap-6">
-                <div className="flex-shrink-0 h-10 w-10 rounded-full bg-[#092e5e] flex items-center justify-center text-white font-bold text-sm">
-                  {i + 1}
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-[#092e5e] mb-1">
-                    {step.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed max-w-[37rem]">
-                    {step.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <ProcessTimeline steps={steps} />
         </div>
       </section>
 
