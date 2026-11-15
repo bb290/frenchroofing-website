@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import HeroReview from "@/components/reviews/HeroReview";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
 import RelatedGuides from "@/components/RelatedGuides";
@@ -66,6 +67,7 @@ export default function EssentialsPage() {
             earning your trust.
           </p>
         </div>
+        <HeroReview topic="general" seed={"essentials"} layout="below" />
       </section>
 
       {/* ── Video Section ── */}

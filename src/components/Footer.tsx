@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { REVIEW_META } from "@/lib/reviews";
 import { COMPANY, SERVICES, SERVICE_AREAS } from "@/lib/constants";
 import { CLUSTERS, getPillar } from "@/lib/guides";
 
@@ -123,6 +124,10 @@ export default function Footer() {
               className="inline-block rounded-lg bg-[#ffbd59] px-6 py-3 text-sm font-semibold text-[#092e5e] hover:bg-[#f0ad40] transition-colors"
             >
               Schedule Now
+            </a>
+            <a href="/reviews" className="mt-4 flex items-center gap-2 text-base font-semibold text-white hover:text-[#ffbd59] transition-colors">
+              <span className="text-[#ffbd59]" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              {REVIEW_META.rating} from {REVIEW_META.count} Google reviews
             </a>
             <div className="mt-6 flex gap-4">
               <a href={COMPANY.social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-white/70 hover:text-white transition-colors">

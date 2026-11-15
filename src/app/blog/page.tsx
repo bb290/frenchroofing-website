@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import HeroReview from "@/components/reviews/HeroReview";
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
@@ -48,6 +49,7 @@ export default function BlogIndexPage() {
             .
           </p>
         </div>
+        <HeroReview topic="general" seed={"blog"} layout="below" dark={false} />
       </section>
 
       <section className="py-12 px-4 bg-[#fdfcfa]">

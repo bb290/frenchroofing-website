@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import HeroReview from "@/components/reviews/HeroReview";
 import Image from "next/image";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
@@ -86,6 +87,7 @@ export default function GalleryPage() {
             roofing jobs right here in Damascus and the surrounding communities.
           </p>
         </div>
+        <HeroReview topic="replacement" seed={"gallery"} layout="below" />
       </section>
 
       {/* ── Before / After Projects ── */}

@@ -4,7 +4,6 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { LocalBusinessJsonLd } from "@/components/JsonLd";
-import ReviewsWidget from "@/components/ReviewsWidget";
 import { COMPANY } from "@/lib/constants";
 
 // Site font (2026-11-15): Figtree replaced Inter. Close to Inter, warmer, and not one of the faces every
@@ -68,7 +67,6 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
-        <ReviewsWidget />
       </body>
     </html>
   );

@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import HeroReview from "@/components/reviews/HeroReview";
+import ReviewBand from "@/components/reviews/ReviewBand";
 import Image from "next/image";
 import Link from "next/link";
 import CTABanner from "@/components/CTABanner";
@@ -104,7 +106,7 @@ export default function Home() {
     <>
       {/* ── Hero ── (2026-11-15: text on solid navy, photo shown in full beside it instead of at 30% under the text) */}
       <section className="bg-[#092e5e]">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 sm:py-20 lg:py-24 grid grid-cols-1 lg:grid-cols-[1.05fr_1fr] gap-10 lg:gap-14 items-center">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 sm:py-20 lg:pt-24 lg:pb-40 grid grid-cols-1 lg:grid-cols-[1.05fr_1fr] gap-10 lg:gap-14 items-center">
           <div>
             <p className="text-[#ffbd59] font-semibold text-sm uppercase tracking-wider mb-4">
               Since 2014
@@ -134,15 +136,18 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
-            <Image
-              src="/images/hero-new-roof-crew-finishing.webp"
-              alt="French Roofing crew finishing a new shingle roof under tall Oregon firs"
-              fill
-              sizes="(min-width: 1024px) 600px, 100vw"
-              className="object-cover"
-              priority
-            />
+          <div className="relative">
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
+              <Image
+                src="/images/hero-new-roof-crew-finishing.webp"
+                alt="French Roofing crew finishing a new shingle roof under tall Oregon firs"
+                fill
+                sizes="(min-width: 1024px) 600px, 100vw"
+                className="object-cover"
+                priority
+              />
+            </div>
+            <HeroReview seed="home" layout="photo" />
           </div>
         </div>
       </section>
@@ -335,6 +340,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <ReviewBand topic="general" seed={"home"} />
+
 
       {/* ── FAQ (AEO optimized) ── */}
       <FAQSection faqs={homeFAQs} />

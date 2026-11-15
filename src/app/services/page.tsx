@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import HeroReview from "@/components/reviews/HeroReview";
 import Link from "next/link";
 import Image from "next/image";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
@@ -57,6 +58,7 @@ export default function ServicesPage() {
             and serving Damascus, Clackamas, Happy Valley, and the surrounding area.
           </p>
         </div>
+        <HeroReview topic="general" seed={"services"} layout="below" />
       </section>
 
       {/* ── Service Cards ── */}

@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import ReviewBand from "@/components/reviews/ReviewBand";
+import HeroReview from "@/components/reviews/HeroReview";
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
@@ -87,6 +89,7 @@ export default function MaterialsPage() {
             why we chose CertainTeed and what options are available for your home.
           </p>
         </div>
+        <HeroReview topic="replacement" seed={"materials"} layout="below" />
       </section>
 
       {/* ── Why CertainTeed ── */}
@@ -263,6 +266,9 @@ export default function MaterialsPage() {
           </p>
         </div>
       </section>
+
+      <ReviewBand topic="replacement" seed={"materials"} />
+
 
       {/* ── FAQ ── */}
       <FAQSection title="Roofing Materials FAQs" faqs={materialsFAQs} />

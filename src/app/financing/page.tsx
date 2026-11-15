@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import ReviewBand from "@/components/reviews/ReviewBand";
+import HeroReview from "@/components/reviews/HeroReview";
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
@@ -93,6 +95,7 @@ export default function FinancingPage() {
             now and pay over time - with plans that actually make sense.
           </p>
         </div>
+        <HeroReview topic="financing" seed={"financing"} layout="below" />
       </section>
 
       {/* ── Highlights ── */}
@@ -205,6 +208,9 @@ export default function FinancingPage() {
           </a>
         </div>
       </section>
+
+      <ReviewBand topic="financing" seed={"financing"} />
+
 
       {/* ── FAQ ── */}
       <FAQSection title="Financing FAQs" faqs={financingFAQs} />

@@ -106,3 +106,19 @@ a {
 table {
   font-variant-numeric: tabular-nums;
 }
+
+/* Floating Google review cards (2026-11-15): tilt from --tilt and a soft shadow give the floating look; one gentle
+   rise on load, then still (no endless motion: WCAG 2.2.2, and calmer for older readers). */
+.review-float {
+  transform: rotate(var(--tilt, 0deg));
+}
+.review-float--drift {
+  animation: review-rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes review-rise {
+  from { opacity: 0; transform: translateY(14px) rotate(var(--tilt, 0deg)); }
+  to { opacity: 1; transform: translateY(0) rotate(var(--tilt, 0deg)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .review-float--drift { animation: none; }
+}

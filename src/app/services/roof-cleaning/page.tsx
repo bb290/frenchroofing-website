@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import ReviewBand from "@/components/reviews/ReviewBand";
+import HeroReview from "@/components/reviews/HeroReview";
 import { CLEANING_STEPS } from "@/lib/process-steps";
 import ProcessTimeline from "@/components/process/ProcessTimeline";
 import Image from "next/image";
@@ -88,7 +90,7 @@ export default function RoofCleaningPage() {
             priority
           />
         </div>
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-32 lg:grid lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-center lg:gap-12">
           <div className="max-w-2xl">
             <p className="text-[#ffbd59] font-semibold text-sm uppercase tracking-wider mb-3">
               Roof Cleaning
@@ -113,6 +115,7 @@ export default function RoofCleaningPage() {
               </a>
             </div>
           </div>
+          <HeroReview topic="cleaning" seed={"roof-cleaning"} layout="aside" />
         </div>
       </section>
 
@@ -250,6 +253,9 @@ export default function RoofCleaningPage() {
           </a>
         </div>
       </section>
+
+      <ReviewBand topic="cleaning" seed={"roof-cleaning"} />
+
 
       {/* ── FAQ ── */}
       <FAQSection

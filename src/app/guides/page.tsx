@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import HeroReview from "@/components/reviews/HeroReview";
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
@@ -38,6 +39,7 @@ export default function GuidesIndexPage() {
             the fence. No jargon, no scare tactics, no pressure.
           </p>
         </div>
+        <HeroReview topic="general" seed={"guides"} layout="below" />
       </section>
 
       {/* ── Clusters ── */}

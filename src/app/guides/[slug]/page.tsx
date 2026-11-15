@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import HeroReview from "@/components/reviews/HeroReview";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -146,6 +147,7 @@ export default async function GuidePage({
             </nav>
           )}
         </div>
+        <HeroReview topic="general" seed={guide.slug} layout="below" dark={false} />
       </section>
 
       {guide.heroImage && (

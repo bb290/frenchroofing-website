@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import HeroReview from "@/components/reviews/HeroReview";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
 import FAQSection from "@/components/FAQSection";
@@ -85,6 +86,7 @@ export default function DiscountsPage() {
             special pricing for the folks who make our community stronger.
           </p>
         </div>
+        <HeroReview topic="general" seed={"discounts"} layout="below" />
       </section>
 
       {/* ── Discount Cards ── */}

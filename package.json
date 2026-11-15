@@ -16,7 +16,8 @@
     "kewl:sheets": "npx tsx scripts/kewl-sheets.ts",
     "kewl:sort": "npx tsx scripts/kewl-sort.ts",
     "kewl:lint": "npx tsx scripts/kewl-lint.ts",
-    "deploy": "bash scripts/deploy.sh"
+    "deploy": "bash scripts/deploy.sh",
+    "reviews:sync": "npx tsx scripts/reviews-sync.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.126.0",

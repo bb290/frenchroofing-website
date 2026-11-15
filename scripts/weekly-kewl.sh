@@ -96,6 +96,12 @@ DENIED=(
   echo "=== $(date) weekly-kewl $MODE end, exit $STATUS ==="
 } >> "$LOG" 2>&1
 
+# Pull French Roofing's Google reviews into src/data/google-reviews.json (2026-11-15). Saving doesn't publish: the
+# site changes only when Brittany says go. New reviews become a dashboard to-do, sent by the daily indexing job.
+if [ "$MODE" = "run" ]; then
+  { echo; echo "## Google reviews (wrapper)"; npm run --silent reviews:sync 2>&1 | sed 's/^/    /'; } >> "$RUNS/$TODAY-report.md" 2>&1 || true
+fi
+
 # Send the prepared dashboard batches. The main run can't: ArtifactData writes ask for approval and nobody is there.
 # send-batches.sh runs a locked-down Claude (Read + ArtifactData only, bypassPermissions) and records each commit.
 SENT="no"

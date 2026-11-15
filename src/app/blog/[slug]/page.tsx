@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import HeroReview from "@/components/reviews/HeroReview";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -101,6 +102,7 @@ export default async function BlogPostPage({
             ))}
           </div>
         </div>
+        <HeroReview topic="general" seed={post.slug} layout="below" dark={false} />
       </section>
 
       {post.heroImage && (

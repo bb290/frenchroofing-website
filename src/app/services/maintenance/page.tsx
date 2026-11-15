@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import ReviewBand from "@/components/reviews/ReviewBand";
+import HeroReview from "@/components/reviews/HeroReview";
 import { BreadcrumbJsonLd, ServiceJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
 import RelatedGuides from "@/components/RelatedGuides";
@@ -156,6 +158,7 @@ export default function MaintenancePage() {
             </a>
           </div>
         </div>
+        <HeroReview topic="cleaning" seed={"maintenance"} layout="below" />
       </section>
 
       {/* ── Why Maintenance Matters ── */}
@@ -298,6 +301,9 @@ export default function MaintenancePage() {
           </p>
         </div>
       </section>
+
+      <ReviewBand topic="cleaning" seed={"maintenance"} />
+
 
       {/* ── FAQ ── */}
       <FAQSection title="Maintenance Program FAQs" faqs={faqs} />

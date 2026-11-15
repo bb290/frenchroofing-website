@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import ReviewBand from "@/components/reviews/ReviewBand";
+import HeroReview from "@/components/reviews/HeroReview";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import FAQSection from "@/components/FAQSection";
 import RoofEstimator from "@/components/RoofEstimator";
@@ -60,12 +62,16 @@ export default function EstimatePage() {
             price - no contact info required, no strings attached.
           </p>
         </div>
+        <HeroReview topic="financing" seed={"estimate"} layout="below" />
       </section>
 
       {/* Estimator */}
       <section className="py-12 px-4 bg-white">
         <RoofEstimator />
       </section>
+
+      <ReviewBand topic="financing" seed={"estimate"} />
+
 
       {/* FAQ: same accordion as every other page (answers stay in the HTML) */}
       <FAQSection title="Common Questions About Roof Pricing" faqs={estimateFAQs} />

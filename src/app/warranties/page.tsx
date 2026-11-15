@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import ReviewBand from "@/components/reviews/ReviewBand";
+import HeroReview from "@/components/reviews/HeroReview";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import CTABanner from "@/components/CTABanner";
 import RelatedGuides from "@/components/RelatedGuides";
@@ -91,6 +93,7 @@ export default function WarrantiesPage() {
             Here&apos;s how we got you covered.
           </p>
         </div>
+        <HeroReview topic="repair" seed={"warranties"} layout="below" />
       </section>
 
       {/* ── Standard Coverage at a Glance ── */}
@@ -379,6 +382,9 @@ export default function WarrantiesPage() {
           </div>
         </div>
       </section>
+
+      <ReviewBand topic="repair" seed={"warranties"} />
+
 
       {/* ── FAQ ── */}
       <FAQSection title="Warranty FAQs" faqs={warrantyFAQs} />

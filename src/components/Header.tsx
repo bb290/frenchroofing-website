@@ -40,6 +40,7 @@ const DROPDOWNS = [
     href: "/about",
     items: [
       { label: "Our Story", href: "/about" },
+      { label: "Google Reviews", href: "/reviews" },
       { label: "Gallery", href: "/gallery" },
       { label: "Community Discounts", href: "/discounts" },
       { label: "Contact", href: "/estimate" },

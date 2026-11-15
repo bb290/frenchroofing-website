@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import ReviewBand from "@/components/reviews/ReviewBand";
+import HeroReview from "@/components/reviews/HeroReview";
 import Image from "next/image";
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
@@ -37,7 +39,7 @@ export default function AboutPage() {
             priority
           />
         </div>
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:grid lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-center lg:gap-12">
           <div className="max-w-2xl">
             <p className="text-[#ffbd59] font-semibold text-sm uppercase tracking-wider mb-3">
               Family-Owned &middot; Damascus, OR &middot; Since 2014
@@ -53,6 +55,7 @@ export default function AboutPage() {
               customer&apos;s home like our own.
             </p>
           </div>
+          <HeroReview topic="general" seed={"about"} layout="aside" />
         </div>
       </section>
 
@@ -364,6 +367,9 @@ export default function AboutPage() {
       </section>
 
       <RecentWork />
+
+      <ReviewBand topic="general" seed={"about"} />
+
 
       {/* ── FAQ ── */}
       <FAQSection
