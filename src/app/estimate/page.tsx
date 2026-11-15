@@ -55,7 +55,7 @@ export default function EstimatePage() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
             Get a Roof Estimate in 60 Seconds
           </h1>
-          <p className="mt-4 text-lg text-gray-300 max-w-xl mx-auto">
+          <p className="mt-4 text-lg text-white/85 max-w-xl mx-auto">
             Compare materials, understand the trade-offs, and see a ballpark
             price - no contact info required, no strings attached.
           </p>

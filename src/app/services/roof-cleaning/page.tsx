@@ -120,7 +120,7 @@ export default function RoofCleaningPage() {
             <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-6">
               Roof Cleaning in Damascus, Clackamas & Happy Valley
             </h1>
-            <p className="text-lg text-gray-300 max-w-xl">
+            <p className="text-lg text-white/85 max-w-xl">
               Moss, algae, and debris don&apos;t just look bad - they shorten
               your roof&apos;s life. A little maintenance goes a long way in
               Oregon&apos;s wet climate. We keep your roof clean, clear, and
@@ -131,7 +131,7 @@ export default function RoofCleaningPage() {
                 href={COMPANY.bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-lg bg-[#d85024] px-8 py-4 text-lg font-semibold text-white hover:bg-[#c04520] transition-colors"
+                className="inline-flex items-center justify-center rounded-lg bg-[#ffbd59] px-8 py-4 text-lg font-semibold text-[#092e5e] hover:bg-[#f0ad40] transition-colors"
               >
                 Schedule a Cleaning
               </a>
@@ -163,7 +163,7 @@ export default function RoofCleaningPage() {
             >
               <div className="h-14 w-14 mx-auto rounded-full bg-[#ffbd59]/20 flex items-center justify-center mb-4">
                 <svg
-                  className="h-7 w-7 text-[#d85024]"
+                  className="h-7 w-7 text-[#c04520]"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth={2}
@@ -206,7 +206,7 @@ export default function RoofCleaningPage() {
                   <h3 className="text-lg font-semibold text-[#092e5e] mb-1">
                     {step.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-600 leading-relaxed max-w-[37rem]">
                     {step.description}
                   </p>
                 </div>
@@ -240,7 +240,7 @@ export default function RoofCleaningPage() {
               ].map((item, i) => (
                 <li key={i} className="flex gap-3">
                   <svg
-                    className="h-6 w-6 flex-shrink-0 text-[#d85024] mt-0.5"
+                    className="h-6 w-6 flex-shrink-0 text-[#c04520] mt-0.5"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth={2}
@@ -271,7 +271,7 @@ export default function RoofCleaningPage() {
       {/* ── Maintenance Program Callout ── */}
       <section className="py-16 px-4 bg-[#ffbd59]/10 border-y border-[#ffbd59]/30">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-sm font-semibold text-[#d85024] uppercase tracking-wider mb-2">
+          <p className="text-sm font-semibold text-[#c04520] uppercase tracking-wider mb-2">
             Recurring Program
           </p>
           <h2 className="text-2xl sm:text-3xl font-bold text-[#092e5e] mb-4">
@@ -284,7 +284,7 @@ export default function RoofCleaningPage() {
           </p>
           <a
             href="/services/maintenance"
-            className="inline-flex items-center justify-center rounded-lg bg-[#092e5e] px-8 py-4 text-lg font-semibold text-white hover:bg-[#d85024] transition-colors"
+            className="inline-flex items-center justify-center rounded-lg bg-[#092e5e] px-8 py-4 text-lg font-semibold text-white hover:bg-[#c04520] transition-colors"
           >
             View Maintenance Program &rarr;
           </a>

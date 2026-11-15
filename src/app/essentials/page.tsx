@@ -60,7 +60,7 @@ export default function EssentialsPage() {
               to Ask Every Roofing Contractor
             </span>
           </h1>
-          <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-white/85 max-w-2xl mx-auto">
             Sean French walks you through the questions that separate the pros
             from the pretenders - and the answers you should expect from anyone
             earning your trust.
@@ -72,7 +72,7 @@ export default function EssentialsPage() {
       <section className="py-16 px-4 bg-white">
         <div className="mx-auto max-w-5xl">
           <div className="text-center mb-10">
-            <p className="text-sm font-semibold text-[#d85024] uppercase tracking-wider mb-2">
+            <p className="text-sm font-semibold text-[#c04520] uppercase tracking-wider mb-2">
               Watch Sean Explain
             </p>
             <h2 className="text-2xl sm:text-3xl font-bold text-[#092e5e]">
@@ -134,7 +134,7 @@ export default function EssentialsPage() {
               className="bg-white rounded-xl border border-gray-200 p-6 sm:p-8"
             >
               <div className="flex items-start gap-5">
-                <div className="flex-shrink-0 h-12 w-12 rounded-full bg-[#d85024] text-white flex items-center justify-center text-xl font-bold">
+                <div className="flex-shrink-0 h-12 w-12 rounded-full bg-[#c04520] text-white flex items-center justify-center text-xl font-bold">
                   {q.number}
                 </div>
                 <div>
@@ -183,7 +183,7 @@ export default function EssentialsPage() {
             href={COMPANY.bookingUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-lg bg-[#d85024] px-8 py-4 text-lg font-semibold text-white hover:bg-[#c04520] transition-colors"
+            className="inline-flex items-center justify-center rounded-lg bg-[#ffbd59] px-8 py-4 text-lg font-semibold text-[#092e5e] hover:bg-[#f0ad40] transition-colors"
           >
             Schedule a Free Roof Assessment
           </a>
@@ -194,7 +194,7 @@ export default function EssentialsPage() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="mx-auto max-w-4xl">
           <div className="text-center mb-8">
-            <p className="text-sm font-semibold text-[#d85024] uppercase tracking-wider mb-2">
+            <p className="text-sm font-semibold text-[#c04520] uppercase tracking-wider mb-2">
               Full Podcast
             </p>
             <h2 className="text-2xl sm:text-3xl font-bold text-[#092e5e]">

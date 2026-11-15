@@ -32,7 +32,7 @@ export default function BlogIndexPage() {
 
       <section className="bg-[#fdfcfa] pt-16 pb-12 px-4">
         <div className="mx-auto max-w-3xl">
-          <p className="text-[#d85024] font-semibold text-sm uppercase tracking-wider mb-3">
+          <p className="text-[#c04520] font-semibold text-sm uppercase tracking-wider mb-3">
             The French Roofing Blog
           </p>
           <h1 className="text-4xl sm:text-5xl font-bold text-[#092e5e] leading-tight mb-6">
@@ -42,7 +42,7 @@ export default function BlogIndexPage() {
             New articles every week on repairs, replacements, moss, storms, and
             everything else an Oregon roof throws at you. For the deep dives,
             head to our{" "}
-            <Link href="/guides" className="font-medium text-[#d85024] hover:underline">
+            <Link href="/guides" className="font-medium text-[#c04520] hover:underline">
               roof care guides
             </Link>
             .
@@ -59,7 +59,7 @@ export default function BlogIndexPage() {
                   href={`/blog/${post.slug}`}
                   className="block rounded-xl border border-[#e5e0d6] bg-[#f5f1ea] px-6 py-5 hover:border-[#ffbd59] transition-colors"
                 >
-                  <p className="text-sm text-[#9a9895] mb-1">
+                  <p className="text-sm text-[#6b6a67] mb-1">
                     {formatDate(post.datePublished)}
                   </p>
                   <p className="text-lg font-semibold text-[#092e5e] mb-1">

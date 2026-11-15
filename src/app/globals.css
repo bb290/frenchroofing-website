@@ -1,10 +1,25 @@
 @import "tailwindcss";
 
+/*
+  French Roofing design foundations (2026-11-15 readability pass).
+  Source of truth: .claude/BRAND.md + assets/tokens.css. Changes from the old file:
+  - Tailwind's cool grays are remapped to the brand's warm neutrals, so every text-gray-* / bg-gray-* /
+    border-gray-* class on the site picks up the brand without touching each page.
+  - Body text sizes step up to the brand scale (body 17px, small 15px, caption 13px).
+  - --color-orange-text is the orange for TEXT on light backgrounds: #d85024 is 4.1:1 on white, under the
+    4.5:1 minimum for normal-size text; #c04520 is 5.1:1. Fills and accents keep #d85024.
+*/
+
 :root {
   --color-yellow: #ffbd59;
+  --color-yellow-hover: #f0ad40;
   --color-orange: #d85024;
+  --color-orange-text: #c04520;
   --color-blue: #092e5e;
   --color-grey: #3e3d3b;
+  --color-bg: #fdfcfa;
+  --color-surface: #f5f1ea;
+  --color-border: #e5e0d6;
 }
 
 @theme inline {
@@ -12,9 +27,81 @@
   --color-brand-orange: var(--color-orange);
   --color-brand-blue: var(--color-blue);
   --color-brand-grey: var(--color-grey);
+
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}
+
+@theme {
+  /* Warm neutrals from BRAND.md in place of Tailwind's blue-tinted grays. */
+  --color-gray-50: #f8f5ef;
+  --color-gray-100: #f2ede4;
+  --color-gray-200: #e5e0d6;
+  --color-gray-300: #c9c2b3;
+  --color-gray-400: #8a8782;
+  --color-gray-500: #6b6a67;
+  --color-gray-600: #504e4a;
+  --color-gray-700: #3e3d3b;
+  --color-gray-800: #2c2b29;
+  --color-gray-900: #1d1c1b;
+
+  /* Brand type scale: caption 13, small 15, body 17, lead 19. */
+  --text-xs: 0.8125rem;
+  --text-xs--line-height: 1.45;
+  --text-sm: 0.9375rem;
+  --text-sm--line-height: 1.55;
+  --text-base: 1.0625rem;
+  --text-base--line-height: 1.65;
+  --text-lg: 1.1875rem;
+  --text-lg--line-height: 1.6;
+}
+
+html {
+  background: var(--color-bg);
 }
 
 body {
-  font-family: var(--font-inter), sans-serif;
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
   color: var(--color-grey);
+  background: var(--color-bg);
+  font-size: var(--text-base);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading), var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  text-wrap: balance;
+  letter-spacing: -0.015em;
+}
+
+p,
+li,
+dd,
+blockquote {
+  text-wrap: pretty;
+}
+
+/* Browser surfaces in brand colors. */
+::selection {
+  background: color-mix(in srgb, var(--color-yellow) 55%, transparent);
+  color: var(--color-blue);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-orange);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+a {
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1.5px;
+}
+
+table {
+  font-variant-numeric: tabular-nums;
 }

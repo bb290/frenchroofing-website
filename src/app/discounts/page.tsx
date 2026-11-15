@@ -79,7 +79,7 @@ export default function DiscountsPage() {
             Community{" "}
             <span className="text-[#ffbd59]">Discounts</span>
           </h1>
-          <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-white/85 max-w-2xl mx-auto">
             Some people spend their lives taking care of others. We think their
             roofs should be taken care of too. French Roofing is proud to offer
             special pricing for the folks who make our community stronger.
@@ -102,7 +102,7 @@ export default function DiscountsPage() {
                     <h2 className="text-2xl font-bold text-[#ffbd59]">
                       {d.name}
                     </h2>
-                    <p className="text-sm text-gray-300">{d.who}</p>
+                    <p className="text-sm text-white/85">{d.who}</p>
                   </div>
                 </div>
                 <p className="mt-3 text-lg text-white italic">
@@ -122,7 +122,7 @@ export default function DiscountsPage() {
                         className="flex items-start gap-2 text-sm text-gray-600"
                       >
                         <svg
-                          className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#d85024]"
+                          className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#c04520]"
                           fill="none"
                           viewBox="0 0 24 24"
                           strokeWidth={2.5}
@@ -144,7 +144,7 @@ export default function DiscountsPage() {
                     href={COMPANY.bookingUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center rounded-lg bg-[#d85024] px-6 py-3 text-sm font-semibold text-white hover:bg-[#c04520] transition-colors"
+                    className="inline-flex items-center justify-center rounded-lg bg-[#ffbd59] px-6 py-3 text-sm font-semibold text-[#092e5e] hover:bg-[#f0ad40] transition-colors"
                   >
                     Claim Your Discount
                   </a>
@@ -163,7 +163,7 @@ export default function DiscountsPage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             <div className="p-6">
-              <div className="h-12 w-12 mx-auto rounded-full bg-[#d85024] text-white flex items-center justify-center text-xl font-bold mb-3">
+              <div className="h-12 w-12 mx-auto rounded-full bg-[#c04520] text-white flex items-center justify-center text-xl font-bold mb-3">
                 1
               </div>
               <h3 className="font-semibold text-[#092e5e] mb-1">
@@ -174,7 +174,7 @@ export default function DiscountsPage() {
               </p>
             </div>
             <div className="p-6">
-              <div className="h-12 w-12 mx-auto rounded-full bg-[#d85024] text-white flex items-center justify-center text-xl font-bold mb-3">
+              <div className="h-12 w-12 mx-auto rounded-full bg-[#c04520] text-white flex items-center justify-center text-xl font-bold mb-3">
                 2
               </div>
               <h3 className="font-semibold text-[#092e5e] mb-1">
@@ -186,7 +186,7 @@ export default function DiscountsPage() {
               </p>
             </div>
             <div className="p-6">
-              <div className="h-12 w-12 mx-auto rounded-full bg-[#d85024] text-white flex items-center justify-center text-xl font-bold mb-3">
+              <div className="h-12 w-12 mx-auto rounded-full bg-[#c04520] text-white flex items-center justify-center text-xl font-bold mb-3">
                 3
               </div>
               <h3 className="font-semibold text-[#092e5e] mb-1">

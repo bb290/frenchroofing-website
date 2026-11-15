@@ -91,7 +91,7 @@ export default function AboutPage() {
               a Toolbelt, and a{" "}
               <span className="text-[#ffbd59]">Dream</span>
             </h1>
-            <p className="mt-6 text-lg text-gray-300 max-w-xl">
+            <p className="mt-6 text-lg text-white/85 max-w-xl">
               The story behind French Roofing - and why we treat every
               customer&apos;s home like our own.
             </p>
@@ -111,7 +111,7 @@ export default function AboutPage() {
             />
           </div>
           <div>
-            <p className="text-sm font-semibold text-[#d85024] uppercase tracking-wider mb-2">
+            <p className="text-sm font-semibold text-[#c04520] uppercase tracking-wider mb-2">
               How It Started
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#092e5e] mb-6">
@@ -150,7 +150,7 @@ export default function AboutPage() {
       <section className="py-20 px-4 bg-gray-50">
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-14">
-            <p className="text-sm font-semibold text-[#d85024] uppercase tracking-wider mb-2">
+            <p className="text-sm font-semibold text-[#c04520] uppercase tracking-wider mb-2">
               What We Stand For
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#092e5e] mb-4">
@@ -167,7 +167,7 @@ export default function AboutPage() {
             <div className="p-8 rounded-xl bg-white border border-gray-200">
               <div className="h-14 w-14 rounded-full bg-[#ffbd59]/20 flex items-center justify-center mb-5">
                 <svg
-                  className="h-7 w-7 text-[#d85024]"
+                  className="h-7 w-7 text-[#c04520]"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth={2}
@@ -196,7 +196,7 @@ export default function AboutPage() {
             <div className="p-8 rounded-xl bg-white border border-gray-200">
               <div className="h-14 w-14 rounded-full bg-[#ffbd59]/20 flex items-center justify-center mb-5">
                 <svg
-                  className="h-7 w-7 text-[#d85024]"
+                  className="h-7 w-7 text-[#c04520]"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth={2}
@@ -224,7 +224,7 @@ export default function AboutPage() {
             <div className="p-8 rounded-xl bg-white border border-gray-200">
               <div className="h-14 w-14 rounded-full bg-[#ffbd59]/20 flex items-center justify-center mb-5">
                 <svg
-                  className="h-7 w-7 text-[#d85024]"
+                  className="h-7 w-7 text-[#c04520]"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth={2}
@@ -259,7 +259,7 @@ export default function AboutPage() {
       <section className="py-20 px-4 bg-white">
         <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
-            <p className="text-sm font-semibold text-[#d85024] uppercase tracking-wider mb-2">
+            <p className="text-sm font-semibold text-[#c04520] uppercase tracking-wider mb-2">
               A Local Team Focused on Homeowners
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#092e5e] mb-6">
@@ -305,7 +305,7 @@ export default function AboutPage() {
             />
           </div>
           <div>
-            <p className="text-sm font-semibold text-[#d85024] uppercase tracking-wider mb-2">
+            <p className="text-sm font-semibold text-[#c04520] uppercase tracking-wider mb-2">
               Quiet Credibility
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#092e5e] mb-6">
@@ -409,7 +409,7 @@ export default function AboutPage() {
       {/* ── Recent work photos + Google posts (Local Marketing Manager widget) ── */}
       <section className="py-20 px-4 bg-white">
         <div className="mx-auto max-w-7xl">
-          <p className="text-sm font-semibold text-[#d85024] uppercase tracking-wider mb-2 text-center">
+          <p className="text-sm font-semibold text-[#c04520] uppercase tracking-wider mb-2 text-center">
             Out in the Field
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold text-[#092e5e] mb-4 text-center">

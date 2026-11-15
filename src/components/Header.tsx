@@ -100,7 +100,7 @@ export default function Header() {
                     {(menu.label === "What We Do" || menu.label === "Where We Work") && (
                       <Link
                         href={menu.href}
-                        className="block px-4 py-2.5 text-sm font-medium text-[#d85024] border-t border-gray-100 mt-1 pt-2.5"
+                        className="block px-4 py-2.5 text-sm font-medium text-[#c04520] border-t border-gray-100 mt-1 pt-2.5"
                       >
                         View all &rarr;
                       </Link>
@@ -123,7 +123,7 @@ export default function Header() {
             </a>
             <Link
               href="/estimate"
-              className="rounded-lg bg-[#d85024] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#c04520] transition-colors"
+              className="rounded-lg bg-[#ffbd59] px-5 py-2.5 text-sm font-semibold text-[#092e5e] hover:bg-[#f0ad40] transition-colors"
             >
               Instant Estimate
             </Link>
@@ -188,7 +188,7 @@ export default function Header() {
                     {(menu.label === "What We Do" || menu.label === "Where We Work") && (
                       <Link
                         href={menu.href}
-                        className="block px-3 py-2 text-sm font-medium text-[#d85024]"
+                        className="block px-3 py-2 text-sm font-medium text-[#c04520]"
                         onClick={() => setMobileOpen(false)}
                       >
                         View all &rarr;

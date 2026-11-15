@@ -10,7 +10,7 @@ export default function NotFound() {
   return (
     <section className="bg-white py-24 px-4">
       <div className="mx-auto max-w-2xl text-center">
-        <p className="text-[#d85024] font-semibold text-sm uppercase tracking-wider mb-3">
+        <p className="text-[#c04520] font-semibold text-sm uppercase tracking-wider mb-3">
           404 - Page Not Found
         </p>
         <h1 className="text-4xl sm:text-5xl font-bold text-[#092e5e] leading-tight mb-6">
@@ -37,7 +37,7 @@ export default function NotFound() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
             href="/estimate"
-            className="rounded-lg bg-[#d85024] px-8 py-4 text-lg font-semibold text-white hover:bg-[#c04520] transition-colors"
+            className="rounded-lg bg-[#ffbd59] px-8 py-4 text-lg font-semibold text-[#092e5e] hover:bg-[#f0ad40] transition-colors"
           >
             Get an Instant Estimate
           </Link>
@@ -51,7 +51,7 @@ export default function NotFound() {
 
         <p className="mt-10 text-sm text-gray-500">
           Or just give us a call:{" "}
-          <a href={COMPANY.phoneTel} className="font-medium text-[#d85024] hover:underline">
+          <a href={COMPANY.phoneTel} className="font-medium text-[#c04520] hover:underline">
             {COMPANY.phone}
           </a>
         </p>

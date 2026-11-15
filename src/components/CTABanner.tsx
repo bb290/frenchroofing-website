@@ -25,7 +25,7 @@ export default function CTABanner({
         </h2>
         <p
           className={`text-lg mb-8 ${
-            dark ? "text-gray-300" : "text-[#3e3d3b]"
+            dark ? "text-white/85" : "text-[#3e3d3b]"
           }`}
         >
           {description}
@@ -35,7 +35,7 @@ export default function CTABanner({
             href={COMPANY.bookingUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-lg bg-[#d85024] px-8 py-4 text-lg font-semibold text-white hover:bg-[#c04520] transition-colors"
+            className="rounded-lg bg-[#ffbd59] px-8 py-4 text-lg font-semibold text-[#092e5e] hover:bg-[#f0ad40] transition-colors"
           >
             Schedule Now
           </a>

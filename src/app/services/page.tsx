@@ -51,7 +51,7 @@ export default function ServicesPage() {
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
             Roofing Services You Can Count On
           </h1>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+          <p className="text-lg text-white/85 max-w-2xl mx-auto">
             From a full tear-off to a quick repair, we handle every roofing need
             with quality materials and honest communication. Based in Damascus, OR
             and serving Damascus, Clackamas, Happy Valley, and the surrounding area.
@@ -84,7 +84,7 @@ export default function ServicesPage() {
                       {service.name}
                     </h2>
                     <p className="text-gray-600 mb-4">{service.description}</p>
-                    <span className="inline-flex text-sm font-semibold text-[#d85024]">
+                    <span className="inline-flex text-sm font-semibold text-[#c04520]">
                       Learn more &rarr;
                     </span>
                   </div>

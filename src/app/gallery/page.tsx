@@ -81,7 +81,7 @@ export default function GalleryPage() {
           <h1 className="text-4xl sm:text-5xl font-bold text-white">
             Our <span className="text-[#ffbd59]">Work</span> Speaks for Itself
           </h1>
-          <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-white/85 max-w-2xl mx-auto">
             Real projects, real results. Browse before-and-after photos from
             roofing jobs right here in Damascus and the surrounding communities.
           </p>
@@ -126,7 +126,7 @@ export default function GalleryPage() {
                         className="object-cover"
                       />
                     </div>
-                    <p className="text-center text-sm font-medium text-[#d85024] uppercase tracking-wider">
+                    <p className="text-center text-sm font-medium text-[#c04520] uppercase tracking-wider">
                       After
                     </p>
                   </div>

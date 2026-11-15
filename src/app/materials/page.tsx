@@ -82,7 +82,7 @@ export default function MaterialsPage() {
             Built with the Best -{" "}
             <span className="text-[#ffbd59]">CertainTeed Roofing Systems</span>
           </h1>
-          <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-white/85 max-w-2xl mx-auto">
             Your roof is only as good as the materials that go into it. Here&apos;s
             why we chose CertainTeed and what options are available for your home.
           </p>
@@ -124,7 +124,7 @@ export default function MaterialsPage() {
             designs each layer to complement the others, which is why we install
             the full system rather than mixing and matching brands. Curious how
             all the pieces fit? Our{" "}
-            <Link href="/guides/roofing-101" className="font-medium text-[#d85024] hover:underline">
+            <Link href="/guides/roofing-101" className="font-medium text-[#c04520] hover:underline">
               Roofing 101 guide
             </Link>{" "}
             walks through the whole system in plain English.
@@ -193,7 +193,7 @@ export default function MaterialsPage() {
                   <h3 className="text-2xl font-bold text-[#092e5e]">
                     {shingle.name}
                   </h3>
-                  <span className="text-sm font-medium text-[#d85024] bg-[#d85024]/10 px-3 py-1 rounded-full">
+                  <span className="text-sm font-medium text-[#c04520] bg-[#d85024]/10 px-3 py-1 rounded-full">
                     {shingle.badge}
                   </span>
                 </div>
@@ -241,7 +241,7 @@ export default function MaterialsPage() {
       {/* ── Certification Advantage ── */}
       <section className="py-16 px-4 bg-white">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-sm font-semibold text-[#d85024] uppercase tracking-wider mb-2">
+          <p className="text-sm font-semibold text-[#c04520] uppercase tracking-wider mb-2">
             CertainTeed Certified
           </p>
           <h2 className="text-2xl sm:text-3xl font-bold text-[#092e5e] mb-4">

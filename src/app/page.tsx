@@ -79,32 +79,29 @@ const outAndAbout = [
   },
 ];
 
+// One drawn icon per service (Heroicons outline paths; the droplet is custom).
+const SERVICE_ICONS: Record<string, string> = {
+  "roof-replacement": "m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25",
+  "roof-repair": "M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z",
+  "roof-cleaning": "M12 3.75c3 3.9 6 7.2 6 10.5a6 6 0 1 1-12 0c0-3.3 3-6.6 6-10.5Z",
+  "roof-inspections": "m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z",
+};
+
 export default function Home() {
   return (
     <>
-      {/* ── Hero ── */}
-      <section className="relative bg-[#092e5e] overflow-hidden">
-        <div className="absolute inset-0">
-          <Image
-            src="/images/team-plywood-install.webp"
-            alt="French Roofing crew installing plywood on a residential roof in Damascus, Oregon"
-            fill
-            className="object-cover opacity-30"
-            priority
-          />
-        </div>
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-32 lg:py-40">
-          <div className="max-w-2xl">
-            <p className="text-[#ffbd59] font-semibold text-sm uppercase tracking-wider mb-3">
+      {/* ── Hero ── (2026-11-15: text on solid navy, photo shown in full beside it instead of at 30% under the text) */}
+      <section className="bg-[#092e5e]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 sm:py-20 lg:py-24 grid grid-cols-1 lg:grid-cols-[1.05fr_1fr] gap-10 lg:gap-14 items-center">
+          <div>
+            <p className="text-[#ffbd59] font-semibold text-sm uppercase tracking-wider mb-4">
               Damascus, OR &middot; Family-Owned &middot; Since 2014
             </p>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
-              Your Local Roofing
-              <br />
-              <span className="text-[#ffbd59]">Experts.</span>{" "}
-              <span className="text-[#d85024]">{COMPANY.tagline}</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-[1.05]">
+              Your Local Roofing Experts.{" "}
+              <span className="text-[#ffbd59]">{COMPANY.tagline}</span>
             </h1>
-            <p className="mt-6 text-lg text-gray-300 max-w-xl">
+            <p className="mt-6 text-lg sm:text-xl text-white/90 max-w-xl leading-relaxed">
               Roof replacement, repair, cleaning &amp; inspections from a team
               that treats every home like family. Licensed, CertainTeed
               Certified, and financing available.
@@ -114,22 +111,32 @@ export default function Home() {
                 href={COMPANY.bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-lg bg-[#d85024] px-8 py-4 text-lg font-semibold text-white hover:bg-[#c04520] transition-colors"
+                className="inline-flex items-center justify-center rounded-lg bg-[#ffbd59] px-8 py-4 text-lg font-bold text-[#092e5e] hover:bg-[#f0ad40] transition-colors"
               >
                 Schedule FREE Assessment
               </a>
               <Link
                 href="/estimate"
-                className="inline-flex items-center justify-center rounded-lg border-2 border-white/30 px-8 py-4 text-lg font-semibold text-white hover:bg-white/10 transition-colors"
+                className="inline-flex items-center justify-center rounded-lg border-2 border-white/60 px-8 py-4 text-lg font-semibold text-white hover:bg-white/10 hover:border-white transition-colors"
               >
                 Instant Estimate
               </Link>
             </div>
-            <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-gray-400">
-              <span>CCB #{COMPANY.ccb}</span>
-              <span>CertainTeed Certified</span>
-              <span>0% Financing Available</span>
-            </div>
+            <ul className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium text-white/85">
+              <li>CCB #{COMPANY.ccb}</li>
+              <li>CertainTeed Certified</li>
+              <li>0% Financing Available</li>
+            </ul>
+          </div>
+          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
+            <Image
+              src="/images/team-plywood-install.webp"
+              alt="French Roofing crew installing plywood on a residential roof in Damascus, Oregon"
+              fill
+              sizes="(min-width: 1024px) 600px, 100vw"
+              className="object-cover scale-[1.1]"
+              priority
+            />
           </div>
         </div>
       </section>
@@ -137,25 +144,25 @@ export default function Home() {
       {/* ── Trust bar ── */}
       <section className="bg-white border-b border-gray-100 py-6">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap items-center justify-center gap-8 text-center text-sm font-medium text-[#3e3d3b]">
+          <div className="grid grid-cols-2 sm:flex sm:flex-wrap sm:items-center sm:justify-center gap-x-6 gap-y-3 sm:gap-8 text-sm font-medium text-[#3e3d3b]">
             <div className="flex items-center gap-2">
-              <svg className="h-5 w-5 text-[#d85024]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <svg className="h-5 w-5 text-[#c04520]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
               Licensed &amp; Bonded
             </div>
             <div className="flex items-center gap-2">
-              <svg className="h-5 w-5 text-[#d85024]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <svg className="h-5 w-5 text-[#c04520]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
               10+ Years Experience
             </div>
             <div className="flex items-center gap-2">
-              <svg className="h-5 w-5 text-[#d85024]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <svg className="h-5 w-5 text-[#c04520]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
               CertainTeed Certified
             </div>
             <div className="flex items-center gap-2">
-              <svg className="h-5 w-5 text-[#d85024]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <svg className="h-5 w-5 text-[#c04520]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
               0% Financing
             </div>
             <div className="flex items-center gap-2">
-              <svg className="h-5 w-5 text-[#d85024]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <svg className="h-5 w-5 text-[#c04520]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
               Family-Owned
             </div>
           </div>
@@ -163,7 +170,7 @@ export default function Home() {
       </section>
 
       {/* ── Services ── */}
-      <section className="py-20 px-4 relative overflow-hidden" style={{ background: "radial-gradient(ellipse at 20% 50%, #ffbd59 0%, transparent 50%), radial-gradient(ellipse at 80% 20%, #d85024 0%, transparent 40%), radial-gradient(ellipse at 50% 80%, #ffffff 0%, transparent 50%), radial-gradient(ellipse at 90% 90%, #ffbd59 0%, transparent 40%), radial-gradient(ellipse at 10% 10%, #d85024 0%, transparent 35%), #ffffff" }}>
+      <section className="py-20 px-4 bg-[#f5f1ea]">
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-14">
             <h2 className="text-3xl sm:text-4xl font-bold text-[#092e5e]">
@@ -179,18 +186,18 @@ export default function Home() {
               <Link
                 key={service.slug}
                 href={`/services/${service.slug}`}
-                className="group rounded-xl border border-white/40 bg-white/70 backdrop-blur-sm p-6 hover:border-[#d85024] hover:bg-white/90 hover:shadow-lg transition-all"
+                className="group flex flex-col rounded-xl border border-[#e5e0d6] bg-white p-6 hover:border-[#d85024] transition-colors"
               >
-                <div className="h-12 w-12 rounded-lg bg-[#092e5e]/5 flex items-center justify-center mb-4">
-                  <svg className="h-6 w-6 text-[#d85024]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 0h.008v.008h-.008V7.5z" /></svg>
+                <div className="flex items-center gap-3">
+                  <svg className="h-7 w-7 flex-shrink-0 text-[#092e5e]" fill="none" viewBox="0 0 24 24" strokeWidth={1.75} stroke="currentColor" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d={SERVICE_ICONS[service.slug] ?? SERVICE_ICONS["roof-replacement"]} /></svg>
+                  <h3 className="text-lg font-semibold text-[#092e5e] transition-colors">
+                    {service.name}
+                  </h3>
                 </div>
-                <h3 className="text-lg font-semibold text-[#092e5e] group-hover:text-[#d85024] transition-colors">
-                  {service.name}
-                </h3>
-                <p className="mt-2 text-sm text-gray-600">
+                <p className="mt-2 text-base text-gray-600">
                   {service.description}
                 </p>
-                <span className="mt-4 inline-flex text-sm font-medium text-[#d85024]">
+                <span className="mt-auto pt-4 inline-flex text-sm font-semibold text-[#c04520] group-hover:underline">
                   Learn more &rarr;
                 </span>
               </Link>
@@ -231,13 +238,13 @@ export default function Home() {
                   className="object-cover"
                 />
               </div>
-              <p className="text-center text-sm font-medium text-[#d85024] uppercase tracking-wider">After</p>
+              <p className="text-center text-sm font-medium text-[#c04520] uppercase tracking-wider">After</p>
             </div>
           </div>
           <div className="text-center mt-10">
             <Link
               href="/gallery"
-              className="inline-flex items-center text-[#d85024] font-semibold hover:underline"
+              className="inline-flex items-center text-[#c04520] font-semibold hover:underline"
             >
               View more projects &rarr;
             </Link>
@@ -275,7 +282,7 @@ export default function Home() {
               <Link
                 key={area.slug}
                 href={`/services/roof-replacement/${area.slug}`}
-                className="rounded-full bg-[#092e5e] px-5 py-2 text-sm font-medium text-white hover:bg-[#d85024] transition-colors"
+                className="rounded-full bg-[#092e5e] px-5 py-2 text-sm font-medium text-white hover:bg-[#c04520] transition-colors"
               >
                 {area.name}, {area.state}
               </Link>
@@ -299,7 +306,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center p-8 rounded-xl bg-gray-50">
               <div className="h-14 w-14 mx-auto rounded-full bg-[#ffbd59]/20 flex items-center justify-center mb-4">
-                <svg className="h-7 w-7 text-[#d85024]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" /></svg>
+                <svg className="h-7 w-7 text-[#c04520]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" /></svg>
               </div>
               <h3 className="text-xl font-bold text-[#092e5e] mb-3">
                 Integrity
@@ -312,7 +319,7 @@ export default function Home() {
             </div>
             <div className="text-center p-8 rounded-xl bg-gray-50">
               <div className="h-14 w-14 mx-auto rounded-full bg-[#ffbd59]/20 flex items-center justify-center mb-4">
-                <svg className="h-7 w-7 text-[#d85024]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M11.42 15.17l-5.384 3.18.916-5.986L2.42 8.14l6.005-.762L11.42 2l2.995 5.378 6.005.762-4.532 4.224.916 5.986z" /></svg>
+                <svg className="h-7 w-7 text-[#c04520]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M11.42 15.17l-5.384 3.18.916-5.986L2.42 8.14l6.005-.762L11.42 2l2.995 5.378 6.005.762-4.532 4.224.916 5.986z" /></svg>
               </div>
               <h3 className="text-xl font-bold text-[#092e5e] mb-3">
                 Workmanship
@@ -324,7 +331,7 @@ export default function Home() {
             </div>
             <div className="text-center p-8 rounded-xl bg-gray-50">
               <div className="h-14 w-14 mx-auto rounded-full bg-[#ffbd59]/20 flex items-center justify-center mb-4">
-                <svg className="h-7 w-7 text-[#d85024]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" /></svg>
+                <svg className="h-7 w-7 text-[#c04520]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" /></svg>
               </div>
               <h3 className="text-xl font-bold text-[#092e5e] mb-3">
                 Community
@@ -353,7 +360,7 @@ export default function Home() {
             />
           </div>
           <div>
-            <p className="text-sm font-semibold text-[#d85024] uppercase tracking-wider mb-2">
+            <p className="text-sm font-semibold text-[#c04520] uppercase tracking-wider mb-2">
               Our Story
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#092e5e] mb-6">
@@ -380,7 +387,7 @@ export default function Home() {
             </blockquote>
             <Link
               href="/about"
-              className="inline-flex items-center text-[#d85024] font-semibold hover:underline"
+              className="inline-flex items-center text-[#c04520] font-semibold hover:underline"
             >
               Read our full story &rarr;
             </Link>
@@ -392,7 +399,7 @@ export default function Home() {
       <section className="py-20 px-4 bg-gray-50">
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-12">
-            <p className="text-sm font-semibold text-[#d85024] uppercase tracking-wider mb-2">
+            <p className="text-sm font-semibold text-[#c04520] uppercase tracking-wider mb-2">
               Out &amp; About
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#092e5e]">
@@ -425,7 +432,7 @@ export default function Home() {
           <div className="text-center mt-10">
             <Link
               href="/about"
-              className="inline-flex items-center text-[#d85024] font-semibold hover:underline"
+              className="inline-flex items-center text-[#c04520] font-semibold hover:underline"
             >
               Meet the team &rarr;
             </Link>

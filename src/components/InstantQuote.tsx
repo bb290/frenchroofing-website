@@ -200,7 +200,7 @@ export default function InstantQuote({ compact = false }: { compact?: boolean })
           <h3 className="text-xl sm:text-2xl font-bold text-white">
             Instant Roof Estimate
           </h3>
-          <p className="text-sm text-gray-300 mt-1">
+          <p className="text-base text-white/85 mt-1">
             Get a ballpark price in 60 seconds - no contact info required
           </p>
         </div>
@@ -211,8 +211,8 @@ export default function InstantQuote({ compact = false }: { compact?: boolean })
             const stepIndex = flow.indexOf(step);
             const isActive = i <= stepIndex;
             return (
-              <div key={s} className={`flex-1 py-2 text-center text-xs font-medium ${isActive ? "bg-[#ffbd59]/20 text-[#092e5e]" : "text-gray-400"}`}>
-                <span className={`inline-flex items-center justify-center h-5 w-5 rounded-full text-[10px] font-bold mr-1 ${isActive ? "bg-[#d85024] text-white" : "bg-gray-200 text-gray-500"}`}>
+              <div key={s} className={`flex-1 py-2 text-center text-sm font-medium ${isActive ? "bg-[#ffbd59]/20 text-[#092e5e]" : "text-gray-500"}`}>
+                <span className={`inline-flex items-center justify-center h-5 w-5 rounded-full text-[11px] font-bold mr-1 ${isActive ? "bg-[#c04520] text-white" : "bg-gray-200 text-gray-700"}`}>
                   {i + 1}
                 </span>
                 <span className="hidden sm:inline">{flowLabels[i]}</span>
@@ -228,7 +228,7 @@ export default function InstantQuote({ compact = false }: { compact?: boolean })
               <h4 className="text-lg font-semibold text-[#092e5e] mb-2">
                 What&apos;s your address?
               </h4>
-              <p className="text-sm text-gray-500 mb-6">
+              <p className="text-base text-gray-500 mb-6">
                 We&apos;ll measure your roof from aerial imagery in a few seconds. We don&apos;t save your address.
               </p>
               <form
@@ -250,20 +250,20 @@ export default function InstantQuote({ compact = false }: { compact?: boolean })
                 <button
                   type="submit"
                   disabled={measuring || address.trim().length < 6}
-                  className="rounded-lg bg-[#d85024] px-6 py-3 text-base font-semibold text-white hover:bg-[#c04520] transition-colors disabled:opacity-50"
+                  className="rounded-lg bg-[#ffbd59] px-6 py-3 text-base font-semibold text-[#092e5e] hover:bg-[#f0ad40] transition-colors disabled:opacity-50"
                 >
                   {measuring ? "Measuring..." : "Measure My Roof"}
                 </button>
               </form>
               {measureError && (
-                <p role="alert" className="mt-4 rounded-lg bg-[#ffbd59]/10 border border-[#ffbd59]/30 p-3 text-sm text-[#3e3d3b]">
+                <p role="alert" className="mt-4 rounded-lg bg-[#ffbd59]/10 border border-[#ffbd59]/30 p-3 text-base text-[#3e3d3b]">
                   {measureError}
                 </p>
               )}
               <button
                 type="button"
                 onClick={() => setStep("size")}
-                className="mt-4 text-sm text-gray-500 hover:text-[#d85024]"
+                className="mt-4 text-base text-gray-500 hover:text-[#d85024]"
               >
                 Rather not? Pick your roof size instead &rarr;
               </button>
@@ -276,7 +276,7 @@ export default function InstantQuote({ compact = false }: { compact?: boolean })
               <h4 className="text-lg font-semibold text-[#092e5e] mb-2">
                 Here&apos;s your roof
               </h4>
-              <p className="text-sm text-gray-500 mb-4">{measurement.address}</p>
+              <p className="text-base text-gray-500 mb-4">{measurement.address}</p>
               {measurement.provider !== "demo" && (
                 // eslint-disable-next-line @next/next/no-img-element
                 <img
@@ -288,22 +288,22 @@ export default function InstantQuote({ compact = false }: { compact?: boolean })
               <div className="grid grid-cols-3 gap-3 mb-6 text-center">
                 <div className="rounded-xl bg-gray-50 p-3">
                   <span className="block text-2xl font-bold text-[#092e5e]">{measurement.squares}</span>
-                  <span className="block text-xs text-gray-500">squares</span>
+                  <span className="block text-sm text-gray-500">squares</span>
                 </div>
                 <div className="rounded-xl bg-gray-50 p-3">
                   <span className="block text-2xl font-bold text-[#092e5e]">
                     {measurement.roofAreaSqft.toLocaleString()}
                   </span>
-                  <span className="block text-xs text-gray-500">sq ft of roof</span>
+                  <span className="block text-sm text-gray-500">sq ft of roof</span>
                 </div>
                 <div className="rounded-xl bg-gray-50 p-3">
                   <span className="block text-2xl font-bold text-[#092e5e]">
                     {measurement.pitch !== null ? `${measurement.pitch}/12` : "?"}
                   </span>
-                  <span className="block text-xs text-gray-500">main pitch</span>
+                  <span className="block text-sm text-gray-500">main pitch</span>
                 </div>
               </div>
-              <h5 className="text-sm font-semibold text-[#092e5e] mb-2">
+              <h5 className="text-base font-semibold text-[#092e5e] mb-2">
                 Does this slope look right?
               </h5>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-6">
@@ -316,20 +316,20 @@ export default function InstantQuote({ compact = false }: { compact?: boolean })
                       slopeId === sl.id ? "border-[#d85024] bg-[#d85024]/5" : "border-gray-200"
                     }`}
                   >
-                    <span className="block text-sm font-semibold text-[#092e5e]">{sl.label}</span>
-                    <span className="block text-xs text-gray-500">{sl.hint}</span>
+                    <span className="block text-base font-semibold text-[#092e5e]">{sl.label}</span>
+                    <span className="block text-sm text-gray-500">{sl.hint}</span>
                   </button>
                 ))}
               </div>
               {slopeId === "flat" ? (
-                <div className="rounded-xl bg-[#ffbd59]/10 border border-[#ffbd59]/30 p-4 text-sm text-[#3e3d3b]">
+                <div className="rounded-xl bg-[#ffbd59]/10 border border-[#ffbd59]/30 p-4 text-base text-[#3e3d3b]">
                   <strong className="text-[#092e5e]">Flat roofs need a different system than shingles,</strong>{" "}
                   so we price those in person. The assessment is free.
                   <a
                     href={COMPANY.bookingUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-3 flex items-center justify-center rounded-lg bg-[#d85024] px-6 py-3 font-semibold text-white hover:bg-[#c04520] transition-colors"
+                    className="mt-3 flex items-center justify-center rounded-lg bg-[#ffbd59] px-6 py-3 font-semibold text-[#092e5e] hover:bg-[#f0ad40] transition-colors"
                   >
                     Schedule Free Assessment
                   </a>
@@ -342,20 +342,20 @@ export default function InstantQuote({ compact = false }: { compact?: boolean })
                       setMeasurement(null);
                       setStep("size");
                     }}
-                    className="text-sm text-gray-500 hover:text-[#d85024]"
+                    className="text-base text-gray-500 hover:text-[#d85024]"
                   >
                     Wrong house? Pick a size instead
                   </button>
                   <button
                     type="button"
                     onClick={() => setStep("material")}
-                    className="rounded-lg bg-[#d85024] px-6 py-2.5 text-sm font-semibold text-white hover:bg-[#c04520] transition-colors"
+                    className="rounded-lg bg-[#ffbd59] px-6 py-2.5 text-base font-semibold text-[#092e5e] hover:bg-[#f0ad40] transition-colors"
                   >
                     Looks Right
                   </button>
                 </div>
               )}
-              <p className="mt-4 text-xs text-gray-400">
+              <p className="mt-4 text-sm text-gray-500">
                 Measured from aerial imagery{measurement.imageryDate ? ` taken ${measurement.imageryDate}` : ""}. Covers the main house; garages and sheds get measured at your free assessment.
               </p>
             </div>
@@ -367,10 +367,10 @@ export default function InstantQuote({ compact = false }: { compact?: boolean })
               <h4 className="text-lg font-semibold text-[#092e5e] mb-2">
                 How big is your roof?
               </h4>
-              <p className="text-sm text-gray-500 mb-2">
+              <p className="text-base text-gray-500 mb-2">
                 Roofs are measured in <strong>squares</strong> (1 square = 10&apos; x 10&apos; = 100 sq ft). Pick the closest match - don&apos;t worry about being exact, that&apos;s what the full assessment is for.
               </p>
-              <p className="text-xs text-gray-400 mb-6">
+              <p className="text-sm text-gray-500 mb-6">
                 Not sure how many squares your roof is? Most homes fall in the 15–25 range. We&apos;ll measure it precisely during your free assessment.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -390,10 +390,10 @@ export default function InstantQuote({ compact = false }: { compact?: boolean })
                     <span className="block text-base font-semibold text-[#092e5e]">
                       {size.label}
                     </span>
-                    <span className="block text-sm font-medium text-[#d85024] mt-0.5">
+                    <span className="block text-base font-medium text-[#c04520] mt-0.5">
                       {size.range}
                     </span>
-                    <span className="block text-xs text-gray-500 mt-1">
+                    <span className="block text-sm text-gray-500 mt-1">
                       {size.hint}
                     </span>
                   </button>
@@ -408,7 +408,7 @@ export default function InstantQuote({ compact = false }: { compact?: boolean })
               <h4 className="text-lg font-semibold text-[#092e5e] mb-2">
                 Choose a roofing material
               </h4>
-              <p className="text-sm text-gray-500 mb-6">
+              <p className="text-base text-gray-500 mb-6">
                 Each material has trade-offs. We&apos;ll help you pick the right one during your assessment.
               </p>
               <div className="space-y-3">
@@ -429,19 +429,19 @@ export default function InstantQuote({ compact = false }: { compact?: boolean })
                         <span className="block text-base font-semibold text-[#092e5e]">
                           {mat.name}
                         </span>
-                        <span className="block text-xs text-gray-500 mt-0.5">
+                        <span className="block text-sm text-gray-500 mt-0.5">
                           Warranty: {mat.warranty}
                         </span>
-                        <p className="text-sm text-gray-600 mt-2">
+                        <p className="text-base text-gray-600 mt-2">
                           {mat.description}
                         </p>
                       </div>
-                      <span className={`flex-shrink-0 rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wider ${
+                      <span className={`flex-shrink-0 rounded-full px-3 py-1 text-sm font-bold uppercase tracking-wider ${
                         mat.tag === "Good"
                           ? "bg-[#092e5e]/10 text-[#092e5e]"
                           : mat.tag === "Better"
-                          ? "bg-[#ffbd59]/20 text-[#d85024]"
-                          : "bg-[#d85024]/10 text-[#d85024]"
+                          ? "bg-[#ffbd59]/20 text-[#c04520]"
+                          : "bg-[#d85024]/10 text-[#c04520]"
                       }`}>
                         {mat.tag}
                       </span>
@@ -451,7 +451,7 @@ export default function InstantQuote({ compact = false }: { compact?: boolean })
                         <span className="text-[10px] font-semibold uppercase tracking-wider text-green-700">Pros</span>
                         <ul className="mt-1 space-y-0.5">
                           {mat.pros.map((pro) => (
-                            <li key={pro} className="flex items-start gap-1.5 text-xs text-gray-600">
+                            <li key={pro} className="flex items-start gap-1.5 text-sm text-gray-600">
                               <svg className="h-3 w-3 mt-0.5 flex-shrink-0 text-green-500" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
                               {pro}
                             </li>
@@ -462,7 +462,7 @@ export default function InstantQuote({ compact = false }: { compact?: boolean })
                         <span className="text-[10px] font-semibold uppercase tracking-wider text-red-700">Cons</span>
                         <ul className="mt-1 space-y-0.5">
                           {mat.cons.map((con) => (
-                            <li key={con} className="flex items-start gap-1.5 text-xs text-gray-600">
+                            <li key={con} className="flex items-start gap-1.5 text-sm text-gray-600">
                               <svg className="h-3 w-3 mt-0.5 flex-shrink-0 text-red-400" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
                               {con}
                             </li>
@@ -476,7 +476,7 @@ export default function InstantQuote({ compact = false }: { compact?: boolean })
               <button
                 type="button"
                 onClick={() => setStep(measurement ? "roof" : "size")}
-                className="mt-4 text-sm text-gray-500 hover:text-[#d85024]"
+                className="mt-4 text-base text-gray-500 hover:text-[#d85024]"
               >
                 &larr; Back
               </button>
@@ -489,7 +489,7 @@ export default function InstantQuote({ compact = false }: { compact?: boolean })
               <h4 className="text-lg font-semibold text-[#092e5e] mb-2">
                 How complex is your roof?
               </h4>
-              <p className="text-sm text-gray-500 mb-6">
+              <p className="text-base text-gray-500 mb-6">
                 Steeper roofs and more features (valleys, dormers, skylights) take more time and materials.
               </p>
               <div className="space-y-3">
@@ -508,7 +508,7 @@ export default function InstantQuote({ compact = false }: { compact?: boolean })
                     <span className="block text-base font-semibold text-[#092e5e]">
                       {c.label}
                     </span>
-                    <span className="block text-sm text-gray-500 mt-1">
+                    <span className="block text-base text-gray-500 mt-1">
                       {c.description}
                     </span>
                   </button>
@@ -517,7 +517,7 @@ export default function InstantQuote({ compact = false }: { compact?: boolean })
               <button
                 type="button"
                 onClick={() => setStep("material")}
-                className="mt-4 text-sm text-gray-500 hover:text-[#d85024]"
+                className="mt-4 text-base text-gray-500 hover:text-[#d85024]"
               >
                 &larr; Back
               </button>
@@ -530,7 +530,7 @@ export default function InstantQuote({ compact = false }: { compact?: boolean })
               <h4 className="text-lg font-semibold text-[#092e5e] mb-2">
                 Want to add anything to your project?
               </h4>
-              <p className="text-sm text-gray-500 mb-6">
+              <p className="text-base text-gray-500 mb-6">
                 These are popular upgrades our customers bundle with their roof replacement. Select any that interest you - or skip ahead.
               </p>
               <div className="space-y-4">
@@ -567,7 +567,7 @@ export default function InstantQuote({ compact = false }: { compact?: boolean })
                               {addon.name}
                             </span>
                           </div>
-                          <p className="text-sm text-gray-600 mt-2 ml-7">
+                          <p className="text-base text-gray-600 mt-2 ml-7">
                             {addon.description}
                           </p>
                         </div>
@@ -577,7 +577,7 @@ export default function InstantQuote({ compact = false }: { compact?: boolean })
                           </span>
                           <span className={`inline-block mt-1 rounded-full px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider ${
                             addon.recommended
-                              ? "bg-[#ffbd59]/20 text-[#d85024]"
+                              ? "bg-[#ffbd59]/20 text-[#c04520]"
                               : "bg-[#092e5e]/5 text-[#092e5e]"
                           }`}>
                             {addon.tag}
@@ -589,7 +589,7 @@ export default function InstantQuote({ compact = false }: { compact?: boolean })
                           <span className="text-[10px] font-semibold uppercase tracking-wider text-green-700">Pros</span>
                           <ul className="mt-1 space-y-0.5">
                             {addon.pros.map((pro) => (
-                              <li key={pro} className="flex items-start gap-1.5 text-xs text-gray-600">
+                              <li key={pro} className="flex items-start gap-1.5 text-sm text-gray-600">
                                 <svg className="h-3 w-3 mt-0.5 flex-shrink-0 text-green-500" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
                                 {pro}
                               </li>
@@ -600,7 +600,7 @@ export default function InstantQuote({ compact = false }: { compact?: boolean })
                           <span className="text-[10px] font-semibold uppercase tracking-wider text-red-700">Cons</span>
                           <ul className="mt-1 space-y-0.5">
                             {addon.cons.map((con) => (
-                              <li key={con} className="flex items-start gap-1.5 text-xs text-gray-600">
+                              <li key={con} className="flex items-start gap-1.5 text-sm text-gray-600">
                                 <svg className="h-3 w-3 mt-0.5 flex-shrink-0 text-red-400" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
                                 {con}
                               </li>
@@ -616,14 +616,14 @@ export default function InstantQuote({ compact = false }: { compact?: boolean })
                 <button
                   type="button"
                   onClick={() => setStep(measurement ? "material" : "complexity")}
-                  className="text-sm text-gray-500 hover:text-[#d85024]"
+                  className="text-base text-gray-500 hover:text-[#d85024]"
                 >
                   &larr; Back
                 </button>
                 <button
                   type="button"
                   onClick={() => setStep("result")}
-                  className="rounded-lg bg-[#d85024] px-6 py-2.5 text-sm font-semibold text-white hover:bg-[#c04520] transition-colors"
+                  className="rounded-lg bg-[#ffbd59] px-6 py-2.5 text-base font-semibold text-[#092e5e] hover:bg-[#f0ad40] transition-colors"
                 >
                   {selectedAddons.size > 0
                     ? `See Estimate with ${selectedAddons.size} Add-On${selectedAddons.size > 1 ? "s" : ""}`
@@ -636,7 +636,7 @@ export default function InstantQuote({ compact = false }: { compact?: boolean })
           {/* ── Step 5: Result ── */}
           {step === "result" && estimate && selectedMaterial && (selectedSize || measurement) && selectedComplexity && (
             <div className="text-center">
-              <div className="inline-flex items-center rounded-full bg-green-50 px-4 py-1.5 text-sm font-medium text-green-700 mb-4">
+              <div className="inline-flex items-center rounded-full bg-green-50 px-4 py-1.5 text-base font-medium text-green-700 mb-4">
                 Estimate ready
               </div>
               <h4 className="text-lg font-semibold text-[#092e5e] mb-1">
@@ -644,38 +644,38 @@ export default function InstantQuote({ compact = false }: { compact?: boolean })
               </h4>
               <p className="text-5xl sm:text-6xl font-bold text-[#092e5e] my-6">
                 ${estimate.low.toLocaleString()}{" "}
-                <span className="text-2xl text-gray-400">–</span>{" "}
+                <span className="text-2xl text-gray-500">–</span>{" "}
                 ${estimate.high.toLocaleString()}
               </p>
 
               {/* Summary */}
               <div className="rounded-xl bg-gray-50 p-5 text-left mb-6">
-                <h5 className="text-sm font-semibold text-[#092e5e] mb-3">
+                <h5 className="text-base font-semibold text-[#092e5e] mb-3">
                   Your selections:
                 </h5>
-                <div className="grid grid-cols-3 gap-4 text-sm">
+                <div className="grid grid-cols-3 gap-4 text-base">
                   <div>
-                    <span className="block text-xs text-gray-500">Roof Size</span>
+                    <span className="block text-sm text-gray-500">Roof Size</span>
                     <span className="font-medium text-[#3e3d3b]">
                       {measurement ? `${measurement.squares} squares` : selectedSize!.label}
                     </span>
-                    <span className="block text-xs text-gray-400">
+                    <span className="block text-sm text-gray-500">
                       {measurement
                         ? `measured, plus ${Math.round(measurement.waste * 100)}% waste`
                         : selectedSize!.range}
                     </span>
                   </div>
                   <div>
-                    <span className="block text-xs text-gray-500">Material</span>
+                    <span className="block text-sm text-gray-500">Material</span>
                     <span className="font-medium text-[#3e3d3b]">
                       {selectedMaterial.name}
                     </span>
-                    <span className="block text-xs text-gray-400">
+                    <span className="block text-sm text-gray-500">
                       {selectedMaterial.warranty} warranty
                     </span>
                   </div>
                   <div>
-                    <span className="block text-xs text-gray-500">Complexity</span>
+                    <span className="block text-sm text-gray-500">Complexity</span>
                     <span className="font-medium text-[#3e3d3b]">
                       {selectedComplexity.label}
                     </span>
@@ -683,12 +683,12 @@ export default function InstantQuote({ compact = false }: { compact?: boolean })
                 </div>
                 {selectedAddons.size > 0 && (
                   <div className="mt-4 pt-3 border-t border-gray-200">
-                    <span className="block text-xs text-gray-500 mb-1">Add-Ons</span>
+                    <span className="block text-sm text-gray-500 mb-1">Add-Ons</span>
                     <div className="space-y-1">
                       {ADDONS.filter((a) => selectedAddons.has(a.id)).map((a) => (
-                        <div key={a.id} className="flex items-center justify-between text-sm">
+                        <div key={a.id} className="flex items-center justify-between text-base">
                           <span className="font-medium text-[#3e3d3b]">{a.name}</span>
-                          <span className="text-xs text-gray-500">+${a.flatPrice.toLocaleString()}</span>
+                          <span className="text-sm text-gray-500">+${a.flatPrice.toLocaleString()}</span>
                         </div>
                       ))}
                     </div>
@@ -696,7 +696,7 @@ export default function InstantQuote({ compact = false }: { compact?: boolean })
                 )}
               </div>
 
-              <div className="rounded-xl bg-[#ffbd59]/10 border border-[#ffbd59]/30 p-4 text-sm text-[#3e3d3b] mb-6">
+              <div className="rounded-xl bg-[#ffbd59]/10 border border-[#ffbd59]/30 p-4 text-base text-[#3e3d3b] mb-6">
                 <strong className="text-[#092e5e]">This is a ballpark estimate.</strong>{" "}
                 Your actual price depends on tear-off layers, decking condition,
                 flashing, vents, and other factors we can only assess on-site.
@@ -705,7 +705,7 @@ export default function InstantQuote({ compact = false }: { compact?: boolean })
               </div>
 
               {/* Financing callout */}
-              <div className="rounded-xl bg-[#092e5e]/5 p-4 text-sm text-[#3e3d3b] mb-8">
+              <div className="rounded-xl bg-[#092e5e]/5 p-4 text-base text-[#3e3d3b] mb-8">
                 <strong className="text-[#092e5e]">0% financing available</strong>{" "}
                 through Enhancify. That&apos;s as low as{" "}
                 <strong>
@@ -724,7 +724,7 @@ export default function InstantQuote({ compact = false }: { compact?: boolean })
                     href={COMPANY.bookingUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center rounded-lg bg-[#d85024] px-6 py-4 text-base font-semibold text-white hover:bg-[#c04520] transition-colors"
+                    className="flex items-center justify-center rounded-lg bg-[#ffbd59] px-6 py-4 text-base font-semibold text-[#092e5e] hover:bg-[#f0ad40] transition-colors"
                   >
                     Schedule Free Assessment
                   </a>
@@ -757,7 +757,7 @@ export default function InstantQuote({ compact = false }: { compact?: boolean })
               <button
                 type="button"
                 onClick={reset}
-                className="mt-6 text-sm text-gray-500 hover:text-[#d85024]"
+                className="mt-6 text-base text-gray-500 hover:text-[#d85024]"
               >
                 Start over with different options
               </button>

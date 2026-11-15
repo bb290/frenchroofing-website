@@ -83,3 +83,6 @@ next-env.d.ts
 # FAQ mining scripts: internal notes and mailbox access setup; repo is public (2026-11-15)
 /scripts/faq/
 __pycache__/
+
+# Impeccable design tool binary (19 MB; its launcher re-downloads it)
+/.claude/skills/impeccable/scripts/bin/

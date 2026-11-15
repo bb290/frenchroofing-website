@@ -87,7 +87,7 @@ export default function WarrantiesPage() {
           <h1 className="text-4xl sm:text-5xl font-bold text-white">
             <span className="text-[#ffbd59]">Warranty Details</span>
           </h1>
-          <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-white/85 max-w-2xl mx-auto">
             Here&apos;s how we got you covered.
           </p>
         </div>
@@ -96,7 +96,7 @@ export default function WarrantiesPage() {
       {/* ── Standard Coverage at a Glance ── */}
       <section className="bg-white py-12 px-4 border-b border-gray-100">
         <div className="mx-auto max-w-4xl">
-          <p className="text-center text-sm font-semibold uppercase tracking-wide text-[#d85024]">
+          <p className="text-center text-sm font-semibold uppercase tracking-wide text-[#c04520]">
             Standard Coverage
           </p>
           <p className="mt-2 text-center text-gray-600">
@@ -136,7 +136,7 @@ export default function WarrantiesPage() {
             <div className="bg-gray-50 rounded-xl border border-gray-200 p-6 sm:p-8">
               <div className="h-14 w-14 rounded-full bg-[#ffbd59]/20 flex items-center justify-center mb-4">
                 <svg
-                  className="h-7 w-7 text-[#d85024]"
+                  className="h-7 w-7 text-[#c04520]"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth={2}
@@ -152,7 +152,7 @@ export default function WarrantiesPage() {
               <h3 className="text-xl font-bold text-[#092e5e] mb-3">
                 Manufacturer Warranty
               </h3>
-              <p className="text-sm font-medium text-[#d85024] mb-3">
+              <p className="text-sm font-medium text-[#c04520] mb-3">
                 From CertainTeed
               </p>
               <div className="mb-4 rounded-lg bg-[#ffbd59]/15 px-4 py-3">
@@ -185,7 +185,7 @@ export default function WarrantiesPage() {
             <div className="bg-gray-50 rounded-xl border border-gray-200 p-6 sm:p-8">
               <div className="h-14 w-14 rounded-full bg-[#ffbd59]/20 flex items-center justify-center mb-4">
                 <svg
-                  className="h-7 w-7 text-[#d85024]"
+                  className="h-7 w-7 text-[#c04520]"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth={2}
@@ -201,7 +201,7 @@ export default function WarrantiesPage() {
               <h3 className="text-xl font-bold text-[#092e5e] mb-3">
                 Workmanship Warranty
               </h3>
-              <p className="text-sm font-medium text-[#d85024] mb-3">
+              <p className="text-sm font-medium text-[#c04520] mb-3">
                 From French Roofing
               </p>
               <div className="mb-4 rounded-lg bg-[#ffbd59]/15 px-4 py-3">
@@ -282,7 +282,7 @@ export default function WarrantiesPage() {
             <div className="bg-white rounded-xl border border-gray-200 p-6 sm:p-8">
               <h3 className="text-xl font-bold text-[#092e5e] mb-4 flex items-center gap-2">
                 <svg
-                  className="h-6 w-6 text-[#d85024] flex-shrink-0"
+                  className="h-6 w-6 text-[#c04520] flex-shrink-0"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth={2}
@@ -305,7 +305,7 @@ export default function WarrantiesPage() {
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <svg
-                      className="h-5 w-5 text-[#d85024] flex-shrink-0 mt-0.5"
+                      className="h-5 w-5 text-[#c04520] flex-shrink-0 mt-0.5"
                       fill="none"
                       viewBox="0 0 24 24"
                       strokeWidth={2}
@@ -360,7 +360,7 @@ export default function WarrantiesPage() {
             <h3 className="mt-2 text-2xl sm:text-3xl font-bold text-white">
               Rather Not Climb Up There Yourself?
             </h3>
-            <p className="mx-auto mt-3 max-w-2xl text-gray-300 leading-relaxed">
+            <p className="mx-auto mt-3 max-w-2xl text-white/85 leading-relaxed">
               Let us handle the upkeep that keeps your warranty intact. Our
               recurring maintenance program has you covered twice a year -
               debris and gutter clearing, moss prevention, and a full
@@ -371,7 +371,7 @@ export default function WarrantiesPage() {
             <div className="mt-7 flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
                 href="/services/maintenance"
-                className="rounded-lg bg-[#d85024] px-8 py-4 text-lg font-semibold text-white hover:bg-[#c04520] transition-colors"
+                className="rounded-lg bg-[#ffbd59] px-8 py-4 text-lg font-semibold text-[#092e5e] hover:bg-[#f0ad40] transition-colors"
               >
                 See the Maintenance Program
               </a>

@@ -88,7 +88,7 @@ export default function FinancingPage() {
           <h1 className="text-4xl sm:text-5xl font-bold text-white">
             A New Roof <span className="text-[#ffbd59]">That Fits Your Budget</span>
           </h1>
-          <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-white/85 max-w-2xl mx-auto">
             We&apos;ve partnered with Enhancify so you can get the roof you need
             now and pay over time - with plans that actually make sense.
           </p>
@@ -100,7 +100,7 @@ export default function FinancingPage() {
         <div className="mx-auto max-w-5xl grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
           <div className="p-6 rounded-xl bg-gray-50">
             <div className="h-14 w-14 mx-auto rounded-full bg-[#ffbd59]/20 flex items-center justify-center mb-4">
-              <svg className="h-7 w-7 text-[#d85024]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+              <svg className="h-7 w-7 text-[#c04520]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
@@ -112,7 +112,7 @@ export default function FinancingPage() {
           </div>
           <div className="p-6 rounded-xl bg-gray-50">
             <div className="h-14 w-14 mx-auto rounded-full bg-[#ffbd59]/20 flex items-center justify-center mb-4">
-              <svg className="h-7 w-7 text-[#d85024]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+              <svg className="h-7 w-7 text-[#c04520]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
@@ -124,7 +124,7 @@ export default function FinancingPage() {
           </div>
           <div className="p-6 rounded-xl bg-gray-50">
             <div className="h-14 w-14 mx-auto rounded-full bg-[#ffbd59]/20 flex items-center justify-center mb-4">
-              <svg className="h-7 w-7 text-[#d85024]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+              <svg className="h-7 w-7 text-[#c04520]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" />
               </svg>
             </div>
@@ -146,7 +146,7 @@ export default function FinancingPage() {
           <div className="space-y-10">
             {steps.map((step) => (
               <div key={step.number} className="flex gap-6 items-start">
-                <div className="flex-shrink-0 h-12 w-12 rounded-full bg-[#d85024] text-white flex items-center justify-center text-xl font-bold">
+                <div className="flex-shrink-0 h-12 w-12 rounded-full bg-[#c04520] text-white flex items-center justify-center text-xl font-bold">
                   {step.number}
                 </div>
                 <div>
@@ -163,7 +163,7 @@ export default function FinancingPage() {
               href={COMPANY.bookingUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-lg bg-[#d85024] px-8 py-4 text-lg font-semibold text-white hover:bg-[#c04520] transition-colors"
+              className="inline-flex items-center justify-center rounded-lg bg-[#ffbd59] px-8 py-4 text-lg font-semibold text-[#092e5e] hover:bg-[#f0ad40] transition-colors"
             >
               Get Your Free Estimate First
             </a>
@@ -178,7 +178,7 @@ export default function FinancingPage() {
       {/* ── Enhancify partnership note ── */}
       <section className="py-16 px-4 bg-white">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-sm font-semibold text-[#d85024] uppercase tracking-wider mb-2">
+          <p className="text-sm font-semibold text-[#c04520] uppercase tracking-wider mb-2">
             Our Financing Partner
           </p>
           <h2 className="text-2xl sm:text-3xl font-bold text-[#092e5e] mb-4">
@@ -190,7 +190,7 @@ export default function FinancingPage() {
             Enhancify because they make the process simple and transparent - just
             like we do with roofing. Want the deeper dive before applying? We
             wrote up{" "}
-            <Link href="/guides/roof-financing-explained" className="font-medium text-[#d85024] hover:underline">
+            <Link href="/guides/roof-financing-explained" className="font-medium text-[#c04520] hover:underline">
               how 0% offers actually work
             </Link>
             , fine print included.

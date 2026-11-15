@@ -141,7 +141,7 @@ export default async function RoofReplacementCityPage({
             <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-6">
               Roof Replacement in {area.name}, OR
             </h1>
-            <p className="text-lg text-gray-300 max-w-xl">
+            <p className="text-lg text-white/85 max-w-xl">
               When repairs won&apos;t cut it anymore, homeowners in {area.name}{" "}
               trust our team for a full tear-off and replacement built to handle
               Oregon&apos;s rain, wind, and everything in between. Premium
@@ -153,12 +153,12 @@ export default async function RoofReplacementCityPage({
                 href={COMPANY.bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-lg bg-[#d85024] px-8 py-4 text-lg font-semibold text-white hover:bg-[#c04520] transition-colors"
+                className="inline-flex items-center justify-center rounded-lg bg-[#ffbd59] px-8 py-4 text-lg font-semibold text-[#092e5e] hover:bg-[#f0ad40] transition-colors"
               >
                 Get a Free Estimate
               </a>
             </div>
-            <p className="mt-4 text-sm text-gray-400">
+            <p className="mt-4 text-sm text-white/70">
               0% financing available through Enhancify
             </p>
           </div>
@@ -187,7 +187,7 @@ export default async function RoofReplacementCityPage({
                   <h3 className="text-lg font-semibold text-[#092e5e] mb-1">
                     {step.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-600 leading-relaxed max-w-[37rem]">
                     {step.description}
                   </p>
                 </div>
@@ -221,7 +221,7 @@ export default async function RoofReplacementCityPage({
               ].map((item, i) => (
                 <li key={i} className="flex gap-3">
                   <svg
-                    className="h-6 w-6 flex-shrink-0 text-[#d85024] mt-0.5"
+                    className="h-6 w-6 flex-shrink-0 text-[#c04520] mt-0.5"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth={2}

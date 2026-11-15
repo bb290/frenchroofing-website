@@ -65,7 +65,7 @@ const packages = [
     perVisit: 1000,
     perYear: 1800,
     color: "border-[#d85024]",
-    tagColor: "bg-[#d85024]/10 text-[#d85024]",
+    tagColor: "bg-[#d85024]/10 text-[#c04520]",
     popular: true,
   },
   {
@@ -139,7 +139,7 @@ export default function MaintenancePage() {
             Roof Maintenance{" "}
             <span className="text-[#ffbd59]">Program</span>
           </h1>
-          <p className="mt-6 text-lg text-gray-300 max-w-2xl mx-auto">
+          <p className="mt-6 text-lg text-white/85 max-w-2xl mx-auto">
             Your roof is your home&apos;s biggest shield from the elements. A
             well-kept roof doesn&apos;t just look better - it lasts
             significantly longer. Our recurring program keeps you ahead of moss,
@@ -150,7 +150,7 @@ export default function MaintenancePage() {
               href={COMPANY.bookingUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-lg bg-[#d85024] px-8 py-4 text-lg font-semibold text-white hover:bg-[#c04520] transition-colors"
+              className="inline-flex items-center justify-center rounded-lg bg-[#ffbd59] px-8 py-4 text-lg font-semibold text-[#092e5e] hover:bg-[#f0ad40] transition-colors"
             >
               Get Started
             </a>
@@ -167,7 +167,7 @@ export default function MaintenancePage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
             <div className="p-6 rounded-xl bg-gray-50">
               <div className="h-12 w-12 mx-auto rounded-full bg-[#ffbd59]/20 flex items-center justify-center mb-3">
-                <svg className="h-6 w-6 text-[#d85024]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                <svg className="h-6 w-6 text-[#c04520]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
@@ -178,7 +178,7 @@ export default function MaintenancePage() {
             </div>
             <div className="p-6 rounded-xl bg-gray-50">
               <div className="h-12 w-12 mx-auto rounded-full bg-[#ffbd59]/20 flex items-center justify-center mb-3">
-                <svg className="h-6 w-6 text-[#d85024]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                <svg className="h-6 w-6 text-[#c04520]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
                 </svg>
               </div>
@@ -189,7 +189,7 @@ export default function MaintenancePage() {
             </div>
             <div className="p-6 rounded-xl bg-gray-50">
               <div className="h-12 w-12 mx-auto rounded-full bg-[#ffbd59]/20 flex items-center justify-center mb-3">
-                <svg className="h-6 w-6 text-[#d85024]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                <svg className="h-6 w-6 text-[#c04520]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                 </svg>
               </div>
@@ -216,7 +216,7 @@ export default function MaintenancePage() {
           <div className="space-y-6">
             {scopeItems.map((item, i) => (
               <div key={i} className="flex gap-5 p-5 rounded-xl bg-white border border-gray-200">
-                <div className="flex-shrink-0 h-10 w-10 rounded-full bg-[#d85024] text-white flex items-center justify-center font-bold text-sm">
+                <div className="flex-shrink-0 h-10 w-10 rounded-full bg-[#c04520] text-white flex items-center justify-center font-bold text-sm">
                   {i + 1}
                 </div>
                 <div>
@@ -257,7 +257,7 @@ export default function MaintenancePage() {
                     {pkg.name}
                   </h3>
                   <span
-                    className={`rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-wider ${pkg.tagColor}`}
+                    className={`rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wider ${pkg.tagColor}`}
                   >
                     {pkg.tag}
                   </span>
@@ -282,8 +282,8 @@ export default function MaintenancePage() {
                     rel="noopener noreferrer"
                     className={`block text-center rounded-lg px-5 py-3 text-sm font-semibold transition-colors ${
                       pkg.popular
-                        ? "bg-[#d85024] text-white hover:bg-[#c04520]"
-                        : "bg-[#092e5e] text-white hover:bg-[#d85024]"
+                        ? "bg-[#ffbd59] text-[#092e5e] hover:bg-[#f0ad40]"
+                        : "bg-[#092e5e] text-white hover:bg-[#c04520]"
                     }`}
                   >
                     Get Started

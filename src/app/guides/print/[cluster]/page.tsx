@@ -47,7 +47,7 @@ function renderInline(text: string) {
 function Chapter({ guide, number }: { guide: Guide; number: number }) {
   return (
     <section style={{ breakBefore: "page" }}>
-      <p className="text-xs font-semibold uppercase tracking-widest text-[#d85024] mb-2 pt-2">
+      <p className="text-xs font-semibold uppercase tracking-widest text-[#c04520] mb-2 pt-2">
         Chapter {number}
       </p>
       <h2 className="text-3xl font-bold text-[#092e5e] leading-tight mb-5">
@@ -133,7 +133,7 @@ export default async function EbookPrintPage({
   const chapters = pillar ? [pillar, ...supporting] : supporting;
 
   return (
-    <div className="ebook bg-white text-[#3e3d3b]" style={{ fontFamily: "var(--font-inter), Inter, sans-serif" }}>
+    <div className="ebook bg-white text-[#3e3d3b]" style={{ fontFamily: "var(--font-body), sans-serif" }}>
       {/* Hide site chrome in the rendered PDF */}
       <style>{`
         header, footer, [data-reviews-widget] { display: none !important; }
@@ -160,7 +160,7 @@ export default async function EbookPrintPage({
             An Oregon Roofing Guide
           </p>
           <h1 className="text-6xl font-bold leading-tight mb-6">{ebook.title}</h1>
-          <p className="text-xl text-gray-300 max-w-xl leading-relaxed">
+          <p className="text-xl text-white/85 max-w-xl leading-relaxed">
             {ebook.subtitle}
           </p>
         </div>
@@ -172,7 +172,7 @@ export default async function EbookPrintPage({
             style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: 8 }}
           />
         </div>
-        <p className="text-sm text-gray-400 pt-6">
+        <p className="text-sm text-gray-500 pt-6">
           {COMPANY.name} &middot; Damascus, OR &middot; {COMPANY.phone} &middot;
           CCB #{COMPANY.ccb} &middot; frenchroofing.com
         </p>
@@ -191,7 +191,7 @@ export default async function EbookPrintPage({
         <ol className="space-y-3">
           {chapters.map((g, i) => (
             <li key={g.slug} className="flex gap-4 items-baseline">
-              <span className="text-[#d85024] font-bold text-lg w-7 text-right flex-shrink-0">
+              <span className="text-[#c04520] font-bold text-lg w-7 text-right flex-shrink-0">
                 {i + 1}
               </span>
               <span className="text-[17px] font-medium text-[#092e5e]">
@@ -201,7 +201,7 @@ export default async function EbookPrintPage({
           ))}
           {ebook.includeEssentials && (
             <li className="flex gap-4 items-baseline">
-              <span className="text-[#d85024] font-bold text-lg w-7 text-right flex-shrink-0">
+              <span className="text-[#c04520] font-bold text-lg w-7 text-right flex-shrink-0">
                 {chapters.length + 1}
               </span>
               <span className="text-[17px] font-medium text-[#092e5e]">
@@ -221,7 +221,7 @@ export default async function EbookPrintPage({
         {/* ── Essentials chapter (Replacement Guide only) ── */}
         {ebook.includeEssentials && (
           <section style={{ breakBefore: "page" }}>
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#d85024] mb-2 pt-2">
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#c04520] mb-2 pt-2">
               Chapter {chapters.length + 1}
             </p>
             <h2 className="text-3xl font-bold text-[#092e5e] leading-tight mb-5">
@@ -260,7 +260,7 @@ export default async function EbookPrintPage({
           <h2 className="text-3xl font-bold mb-4">
             Questions About Your Roof?
           </h2>
-          <p className="text-lg text-gray-300 mb-6 max-w-lg mx-auto">
+          <p className="text-lg text-white/85 mb-6 max-w-lg mx-auto">
             Schedule a FREE roof assessment with French Roofing. We&apos;ll
             evaluate, diagnose, and give you honest options, with photos and a
             written estimate.
@@ -268,8 +268,8 @@ export default async function EbookPrintPage({
           <p className="text-2xl font-bold text-[#ffbd59] mb-2">
             frenchroofing.com
           </p>
-          <p className="text-lg text-gray-300">{COMPANY.phone}</p>
-          <p className="mt-6 text-sm text-gray-400">
+          <p className="text-lg text-white/85">{COMPANY.phone}</p>
+          <p className="mt-6 text-sm text-gray-500">
             {COMPANY.name} &middot; Damascus, OR {COMPANY.address.zip} &middot;
             Licensed, insured &amp; bonded &middot; CCB #{COMPANY.ccb} &middot;
             CertainTeed Certified &middot; Family-owned since{" "}

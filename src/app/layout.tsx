@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Figtree } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -7,10 +7,13 @@ import { LocalBusinessJsonLd } from "@/components/JsonLd";
 import ReviewsWidget from "@/components/ReviewsWidget";
 import { COMPANY } from "@/lib/constants";
 
-const inter = Inter({
-  variable: "--font-inter",
+// Site font (2026-11-15): Figtree replaced Inter. Close to Inter, warmer, and not one of the faces every
+// AI-built site lands on. --font-heading is separate so headings can get their own face later.
+const figtree = Figtree({
+  variable: "--font-body",
   subsets: ["latin"],
   display: "swap",
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -57,8 +60,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} h-full`}>
-      <body className="min-h-full flex flex-col font-[var(--font-inter)]">
+    <html lang="en" className={`${figtree.variable} h-full`} style={{ ["--font-heading" as string]: "var(--font-body)" }}>
+      <body className="min-h-full flex flex-col">
         <LocalBusinessJsonLd />
         <Header />
         <main className="flex-1">{children}</main>

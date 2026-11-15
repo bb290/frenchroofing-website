@@ -136,7 +136,7 @@ export default async function RoofInspectionsCityPage({
             <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-6">
               Roof Inspections in {area.name}, OR
             </h1>
-            <p className="text-lg text-gray-300 max-w-xl">
+            <p className="text-lg text-white/85 max-w-xl">
               Not sure what shape your roof is in? We&apos;ll tell you -
               honestly. Whether you&apos;re buying a home in {area.name}, dealing
               with storm damage, or just want peace of mind, our inspections give
@@ -147,7 +147,7 @@ export default async function RoofInspectionsCityPage({
                 href={COMPANY.bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-lg bg-[#d85024] px-8 py-4 text-lg font-semibold text-white hover:bg-[#c04520] transition-colors"
+                className="inline-flex items-center justify-center rounded-lg bg-[#ffbd59] px-8 py-4 text-lg font-semibold text-[#092e5e] hover:bg-[#f0ad40] transition-colors"
               >
                 Schedule an Inspection
               </a>
@@ -219,7 +219,7 @@ export default async function RoofInspectionsCityPage({
                   <h3 className="text-lg font-semibold text-[#092e5e] mb-1">
                     {step.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-600 leading-relaxed max-w-[37rem]">
                     {step.description}
                   </p>
                 </div>
@@ -261,7 +261,7 @@ export default async function RoofInspectionsCityPage({
               ].map((item, i) => (
                 <li key={i} className="flex gap-3">
                   <svg
-                    className="h-6 w-6 flex-shrink-0 text-[#d85024] mt-0.5"
+                    className="h-6 w-6 flex-shrink-0 text-[#c04520] mt-0.5"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth={2}

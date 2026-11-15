@@ -34,7 +34,7 @@ export default function FAQSection({
                   {faq.question}
                 </span>
                 <svg
-                  className={`h-5 w-5 flex-shrink-0 text-[#d85024] transition-transform ${
+                  className={`h-5 w-5 flex-shrink-0 text-[#c04520] transition-transform ${
                     openIndex === i ? "rotate-180" : ""
                   }`}
                   fill="none"

@@ -32,7 +32,7 @@ export default function GuidesIndexPage() {
           <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-6">
             Everything We Know About Oregon Roofs
           </h1>
-          <p className="text-lg text-gray-300">
+          <p className="text-lg text-white/85">
             Twenty years on Pacific Northwest roofs taught us a few things.
             These guides share them straight, the way we&apos;d explain it over
             the fence. No jargon, no scare tactics, no pressure.
@@ -60,7 +60,7 @@ export default function GuidesIndexPage() {
                     <a
                       href={`/downloads/${ebook.file}`}
                       download
-                      className="inline-flex items-center gap-2 text-sm font-semibold text-[#d85024] hover:underline"
+                      className="inline-flex items-center gap-2 text-sm font-semibold text-[#c04520] hover:underline"
                     >
                       Download the whole series as a free PDF &darr;
                     </a>
@@ -72,7 +72,7 @@ export default function GuidesIndexPage() {
                     href={`/guides/${pillar.slug}`}
                     className="block rounded-xl border-2 border-[#ffbd59] bg-[#f5f1ea] p-6 mb-6 hover:bg-[#ffbd59]/20 transition-colors"
                   >
-                    <p className="text-xs font-medium uppercase tracking-wider text-[#d85024] mb-2">
+                    <p className="text-xs font-medium uppercase tracking-wider text-[#c04520] mb-2">
                       Start here
                     </p>
                     <p className="text-xl font-semibold text-[#092e5e] mb-1">

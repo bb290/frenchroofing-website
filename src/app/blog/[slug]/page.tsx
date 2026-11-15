@@ -48,7 +48,7 @@ function renderInline(text: string) {
       <Link
         key={i}
         href={match[2]}
-        className="font-medium text-[#d85024] hover:underline"
+        className="font-medium text-[#c04520] hover:underline"
       >
         {match[1]}
       </Link>
@@ -86,7 +86,7 @@ export default async function BlogPostPage({
       {/* ── Header ── */}
       <section className="bg-[#fdfcfa] pt-16 pb-12 px-4">
         <div className="mx-auto max-w-3xl">
-          <p className="text-[#d85024] font-semibold text-sm uppercase tracking-wider mb-3">
+          <p className="text-[#c04520] font-semibold text-sm uppercase tracking-wider mb-3">
             The French Roofing Blog
           </p>
           <h1 className="text-4xl sm:text-5xl font-bold text-[#092e5e] leading-tight mb-6">
@@ -172,7 +172,7 @@ export default async function BlogPostPage({
                 This topic gets the deep-dive treatment in{" "}
                 <Link
                   href={`/guides/${relatedGuide.slug}`}
-                  className="font-medium text-[#d85024] hover:underline"
+                  className="font-medium text-[#c04520] hover:underline"
                 >
                   {relatedGuide.shortTitle}
                 </Link>
