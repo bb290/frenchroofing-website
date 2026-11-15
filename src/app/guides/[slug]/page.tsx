@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { GuideCard } from "@/components/RelatedGuides";
 import HeroReview from "@/components/reviews/HeroReview";
 import Image from "next/image";
 import Link from "next/link";
@@ -240,19 +241,14 @@ export default async function GuidePage({
       {/* ── Cluster links ── */}
       {siblings.length > 0 && (
         <section className="py-16 px-4 bg-[#fdfcfa]">
-          <div className="mx-auto max-w-3xl">
+          <div className="mx-auto max-w-6xl">
             <h2 className="text-2xl font-semibold text-[#092e5e] mb-6">
               More from this series
             </h2>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {siblings.map((g) => (
                 <li key={g.slug}>
-                  <Link
-                    href={`/guides/${g.slug}`}
-                    className="block h-full rounded-xl border border-[#e5e0d6] bg-[#f5f1ea] px-5 py-4 text-[#092e5e] font-medium hover:border-[#ffbd59] transition-colors"
-                  >
-                    {g.isPillar ? `Start here: ${g.shortTitle}` : g.shortTitle}
-                  </Link>
+                  <GuideCard guide={g} label={g.isPillar ? "Start here" : "In this series"} />
                 </li>
               ))}
             </ul>
