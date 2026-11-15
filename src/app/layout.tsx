@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Figtree } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -8,12 +8,14 @@ import ReviewsWidget from "@/components/ReviewsWidget";
 import { COMPANY } from "@/lib/constants";
 
 // Site font (2026-11-15): Figtree replaced Inter. Close to Inter, warmer, and not one of the faces every
-// AI-built site lands on. --font-heading is separate so headings can get their own face later.
-const figtree = Figtree({
+// AI-built site lands on. Stored in src/fonts (OFL license next to it) instead of next/font/google: fetching it from
+// Google during the build failed intermittently on Vercel ("next/font/google queries have exactly one entry").
+// --font-heading is separate so headings can get their own face later.
+const figtree = localFont({
+  src: "../fonts/figtree-latin-wght-normal.woff2",
   variable: "--font-body",
-  subsets: ["latin"],
   display: "swap",
-  weight: ["400", "500", "600", "700", "800"],
+  weight: "300 900",
 });
 
 export const metadata: Metadata = {
