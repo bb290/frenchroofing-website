@@ -254,7 +254,7 @@ export default function Home() {
       </section>
 
       {/* ── Out in the Field (Brittany, 2026-11-15: wanted on the home page too) ── */}
-      <RecentWork background="bg-[#f5f1ea]" />
+      <RecentWork background="bg-[#f5f1ea]" showPosts={false} />
 
       {/* ── Instant Estimate ── */}
       <section className="py-20 px-4 bg-white">

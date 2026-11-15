@@ -46,7 +46,14 @@ const recentWork = [
 ];
 
 /** "Out in the Field": recent job photos plus the Google posts widget. Used on the home page and About. */
-export default function RecentWork({ background = "bg-white" }: { background?: string }) {
+export default function RecentWork({
+  background = "bg-white",
+  showPosts = true,
+}: {
+  background?: string;
+  /** The Google posts feed (Local Marketing Manager). Off on the home page (Brittany, 2026-11-15: looked weird there). */
+  showPosts?: boolean;
+}) {
   // Recent work photos + Google posts (Local Marketing Manager widget)
   return (
   <section className={`py-20 px-4 ${background}`}>
@@ -81,11 +88,13 @@ export default function RecentWork({ background = "bg-white" }: { background?: s
             </figure>
           ))}
         </div>
-        <iframe
+        {showPosts && (
+          <iframe
           src="https://www.localmarketingmanager.com/api/local-posts/french-roofing-local-posts-widget?objectFit=cover"
           style={{ width: "100%", minHeight: "480px", border: "none" }}
           title="Local Posts Widget"
         />
+          )}
       </div>
     </div>
   </section>
