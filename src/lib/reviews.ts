@@ -71,6 +71,9 @@ export function pickReviews({ topic = "general", seed, count = 1, skip = 0, excl
 export function excerpt(text: string, max = 170): string {
   if (text.length <= max) return text;
   const cut = text.slice(0, max);
+  // Prefer ending on a full sentence when one ends in the last 40% of the space.
+  const sentenceEnd = Math.max(cut.lastIndexOf(". "), cut.lastIndexOf("! "), cut.lastIndexOf("? "));
+  if (sentenceEnd >= max * 0.6) return cut.slice(0, sentenceEnd + 1) + " …";
   return cut.slice(0, cut.lastIndexOf(" ")).replace(/[\s,.;:!-]+$/, "") + "…";
 }
 
