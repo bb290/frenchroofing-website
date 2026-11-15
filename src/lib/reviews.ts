@@ -80,5 +80,5 @@ export function formatMonthYear(iso: string | null): string {
   return new Date(Date.UTC(y, m - 1, 15)).toLocaleDateString("en-US", { month: "long", year: "numeric", timeZone: "UTC" });
 }
 
-/** The home page hero review, chosen by Brittany (2026-11-15): Casey N., "Sean is the man." */
-export const HOME_HERO_REVIEW_ID = "5131c69feb47";
+/** The home page hero review, chosen by Brittany (2026-11-15): Eric K., January 2026 (a reroof). */
+export const HOME_HERO_REVIEW_ID = "95fa31a6cd36";

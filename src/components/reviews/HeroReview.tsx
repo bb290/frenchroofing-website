@@ -39,7 +39,7 @@ export default function HeroReview({
     // Wide and low (Brittany, 2026-11-15): only the card's top edge overlaps the bottom of the photo.
     return (
       <div className="relative z-10 -mt-5 px-3 sm:px-6 lg:absolute lg:-left-10 lg:top-[calc(100%-3rem)] lg:mt-0 lg:w-[38rem] lg:px-0">
-        <ReviewCard review={review} tilt={-1} max={125} />
+        <ReviewCard review={review} tilt={-1} max={150} />
       </div>
     );
   }
