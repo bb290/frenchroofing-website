@@ -11,13 +11,15 @@ export default function ReviewBand({
   seed,
   skip = 1,
   heading = "What neighbors say",
+  exclude = [],
 }: {
   topic?: ReviewTopic;
   seed: string;
   skip?: number;
   heading?: string;
+  exclude?: string[];
 }) {
-  const reviews = pickReviews({ topic, seed, count: 3, skip });
+  const reviews = pickReviews({ topic, seed, count: 3, skip, exclude });
   if (!reviews.length) return null;
   const tilts = [-1.5, 1, -0.75];
   const offsets = ["lg:translate-y-4", "lg:-translate-y-3", "lg:translate-y-6"];

@@ -54,8 +54,8 @@ function hash(s: string): number {
 }
 
 /** 5-star reviews with text, good length for a card; topic matches first; rotated by `seed` so pages differ. */
-export function pickReviews({ topic = "general", seed, count = 1, skip = 0 }: { topic?: ReviewTopic; seed: string; count?: number; skip?: number }): Review[] {
-  const pool = REVIEWS.filter((r) => r.stars === 5 && r.text.length >= 60);
+export function pickReviews({ topic = "general", seed, count = 1, skip = 0, exclude = [] }: { topic?: ReviewTopic; seed: string; count?: number; skip?: number; exclude?: string[] }): Review[] {
+  const pool = REVIEWS.filter((r) => r.stars === 5 && r.text.length >= 60 && !exclude.includes(r.id));
   const re = TOPIC_PATTERNS[topic];
   const matched = re ? pool.filter((r) => re.test(r.text)) : [];
   const rest = pool.filter((r) => !matched.includes(r));
@@ -79,3 +79,6 @@ export function formatMonthYear(iso: string | null): string {
   const [y, m] = iso.split("-").map(Number);
   return new Date(Date.UTC(y, m - 1, 15)).toLocaleDateString("en-US", { month: "long", year: "numeric", timeZone: "UTC" });
 }
+
+/** The home page hero review, chosen by Brittany (2026-11-15): Casey N., "Sean is the man." */
+export const HOME_HERO_REVIEW_ID = "5131c69feb47";

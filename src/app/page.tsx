@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { HOME_HERO_REVIEW_ID } from "@/lib/reviews";
 import HeroReview from "@/components/reviews/HeroReview";
 import ReviewBand from "@/components/reviews/ReviewBand";
 import Image from "next/image";
@@ -147,7 +148,7 @@ export default function Home() {
                 priority
               />
             </div>
-            <HeroReview seed="home" layout="photo" />
+            <HeroReview seed="home" layout="photo" reviewId={HOME_HERO_REVIEW_ID} />
           </div>
         </div>
       </section>
@@ -341,7 +342,7 @@ export default function Home() {
         </div>
       </section>
 
-      <ReviewBand topic="general" seed={"home"} />
+      <ReviewBand topic="replacement" seed={"home"} skip={0} exclude={[HOME_HERO_REVIEW_ID]} />
 
 
       {/* ── FAQ (AEO optimized) ── */}

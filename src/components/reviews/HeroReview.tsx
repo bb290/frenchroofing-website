@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { pickReviews, REVIEW_META, type ReviewTopic } from "@/lib/reviews";
+import { pickReviews, REVIEW_META, REVIEWS, type ReviewTopic } from "@/lib/reviews";
 import ReviewCard, { Stars } from "./ReviewCard";
 
 /*
@@ -13,13 +13,16 @@ export default function HeroReview({
   seed,
   layout = "below",
   dark = true,
+  reviewId,
 }: {
   topic?: ReviewTopic;
   seed: string;
   layout?: "aside" | "below" | "photo";
   dark?: boolean;
+  /** Show this review instead of an automatic pick (falls back to a pick if it ever disappears from Google). */
+  reviewId?: string;
 }) {
-  const [review] = pickReviews({ topic, seed });
+  const review = (reviewId && REVIEWS.find((r) => r.id === reviewId)) || pickReviews({ topic, seed })[0];
   if (!review) return null;
 
   const summary = (
