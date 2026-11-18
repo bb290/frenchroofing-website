@@ -3,8 +3,11 @@
 
     npm run projects -- --plan [--max 4]      pick new candidates, pull their photos, write facts + a contact sheet
     npm run projects -- --build <job#>        turn operations/hcp-data/projects/<job#>/draft.json into a DRAFT page
-    npm run projects -- --todo                dashboard to-do listing every draft with its preview link
-    npm run projects -- --publish <slug|all>  draft -> published (only when Brittany approves; never in the unattended run)
+    npm run projects -- --board               dashboard records (db pages/*) for every page that changed since the last send
+    npm run projects -- --board-sent          mark the last --board file as sent (after the 4:10am send commits it)
+    npm run projects -- --approvals <dir>     read Brittany's dashboard decisions (an export of db pageok/*): publish the
+                                              drafts she approved, file her change requests in feedback.json
+    npm run projects -- --publish <slug|all>  draft -> published by hand (only with Brittany's OK)
 
   Candidates are close-outs (operations/hcp-data/closeouts/<job#>.json, written by fr-close-out) that are complete and
   paid, in Oregon (Brittany, 2026-11-18: Oregon only), not a $0 follow-up visit, with at least 3 photos in Housecall
@@ -15,9 +18,13 @@
   faces, readable plates, home fronts that identify the house, paperwork, and anything it can't identify.
 
   Pages are written as status "draft": hidden on frenchroofing.com, visible on the preview branch the wrapper pushes
-  (projects-preview). Brittany approves on the dashboard; then Claude runs --publish and deploys.
+  (projects-preview). Drafts land on the dashboard's SEO/AEO tab (db pages/*). Brittany approves there (db pageok/*,
+  tied to the draft's rev so an approval never covers a later edit); the 4:10am daily job publishes what she approved and
+  deploys (scripts/publish-approved-projects.sh; Brittany, 2026-11-18: "Once preview is approved, go ahead & push to live
+  site"). A "needs changes" note goes to operations/hcp-data/projects/feedback.json for the next Wednesday run.
 */
 import { execFileSync } from "node:child_process";
+import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import sharp from "sharp";
@@ -28,7 +35,10 @@ const WORK = join(ROOT, "operations/hcp-data/projects");
 const LEDGER = join(WORK, "handled.json");
 const DATA = join(ROOT, "src/data/projects");
 const IMAGES = join(ROOT, "public/images/projects");
-const TODO_OUT = join(ROOT, "../../tools/unbound-hq/sync/out/project-todos-french-roofing.json");
+const BOARD_OUT = join(ROOT, "../../tools/unbound-hq/sync/out/project-pages-french-roofing.json");
+const BOARD_SENT = join(WORK, "board-sent.json");
+const FEEDBACK = join(WORK, "feedback.json");
+const LIVE_URL = "https://frenchroofing.com";
 export const PREVIEW_URL = "https://french-roofing-git-projects-preview-bb290s-projects.vercel.app";
 const SERVICES = ["roof-replacement", "roof-repair", "roof-cleaning", "maintenance", "roof-inspections"] as const;
 const args = process.argv.slice(2);
@@ -174,6 +184,10 @@ async function build(job: string) {
   writeJson(join(DATA, `${slug}.json`), project);
   led[job] = { ...led[job], at: today(), slug, status: "draft" };
   writeJson(LEDGER, led);
+  if (existsSync(FEEDBACK)) {
+    const fb = readJson(FEEDBACK);
+    if (fb[slug]) { delete fb[slug]; writeJson(FEEDBACK, fb); console.log(`  cleared Brittany's change request for ${slug} (rebuilt)`); }
+  }
   console.log(`projects build #${job}: draft src/data/projects/${slug}.json, ${photos.length} photos. Preview: ${PREVIEW_URL}/past-projects/${slug}`);
 }
 
@@ -182,27 +196,89 @@ function drafts() {
   return readdirSync(DATA).filter((f) => f.endsWith(".json")).map((f) => readJson(join(DATA, f))).filter((p) => p.status === "draft");
 }
 
-function todo() {
-  const list = drafts();
-  if (!list.length) return console.log("projects: no drafts waiting; no to-do");
-  const ids = list.map((p) => p.slug).sort().join(",");
-  let h = 0;
-  for (const c of ids) h = (Math.imul(31, h) + c.charCodeAt(0)) | 0;
-  const data = {
-    client: "french-roofing", kind: "decide",
-    title: `${list.length} past-project page${list.length > 1 ? "s" : ""} to approve for frenchroofing.com`,
-    detail: list.map((p) => p.title).join("; ") + ". Drafts are hidden on the live site until you approve.",
-    steps: [
-      `Open each draft on the preview site: ${list.map((p) => `${PREVIEW_URL}/past-projects/${p.slug}`).join("  ")}`,
-      "Check the photos (no house numbers, faces or anything that identifies the home) and that every sentence is true for that job.",
-      'Tell Claude "publish the French Roofing project pages" (or name the ones to publish, and what to change on the rest). Claude flips them to published and deploys.',
-    ],
-    link: { label: "Preview: past projects", url: `${PREVIEW_URL}/past-projects` },
-    at: today(), source: "weekly Kewl run (projects)", status: "open",
-  };
-  mkdirSync(join(TODO_OUT, ".."), { recursive: true });
-  writeJson(TODO_OUT, [{ op: "set", collection: "todos", doc_id: `fr-project-drafts-${(h >>> 0).toString(16).slice(0, 8)}`, data }]);
-  console.log(`projects: dashboard to-do prepared for ${list.length} draft(s) (sent by the 4:10am daily job)`);
+function projects() {
+  if (!existsSync(DATA)) return [];
+  return readdirSync(DATA).filter((f) => f.endsWith(".json")).map((f) => readJson(join(DATA, f)));
+}
+
+// A draft's fingerprint: an approval counts only for the exact copy and photos Brittany saw.
+export const rev = (p: any) => {
+  const { status, ...rest } = p;
+  const h = createHash("sha1").update(JSON.stringify(rest));
+  for (const ph of p.photos || []) {
+    const f = join(ROOT, "public", ph.src);
+    if (existsSync(f)) h.update(readFileSync(f));
+  }
+  return h.digest("hex").slice(0, 12);
+};
+
+async function board() {
+  const sent = existsSync(BOARD_SENT) ? readJson(BOARD_SENT) : {};
+  const fb = existsSync(FEEDBACK) ? readJson(FEEDBACK) : {};
+  const writes = [];
+  const next: Record<string, string> = {};
+  for (const p of projects()) {
+    const r = rev(p);
+    const key = `${p.status}:${r}:${fb[p.slug]?.at || ""}`;
+    next[p.slug] = key;
+    if (sent[p.slug] === key) continue;
+    const first = join(ROOT, "public", p.photos[0].src);
+    const thumb = existsSync(first)
+      ? "data:image/webp;base64," + (await sharp(first).resize({ width: 360, height: 240, fit: "cover" }).webp({ quality: 60 }).toBuffer()).toString("base64")
+      : "";
+    writes.push({
+      op: "set", collection: "pages", doc_id: `french-roofing~${p.slug}`,
+      data: {
+        client: "french-roofing", kind: "past-project", slug: p.slug, title: p.title, city: p.city, service: p.service,
+        summary: p.summary, photos: p.photos.length, status: p.status, rev: r, thumb,
+        preview: `${PREVIEW_URL}/past-projects/${p.slug}`, live: `${LIVE_URL}/past-projects/${p.slug}`,
+        addedAt: p.addedAt, changes: fb[p.slug] ? { note: fb[p.slug].note, at: fb[p.slug].at } : null, at: new Date().toISOString(),
+      },
+    });
+  }
+  mkdirSync(join(BOARD_OUT, ".."), { recursive: true });
+  if (!writes.length) {
+    rmSync(BOARD_OUT, { force: true });
+    return console.log("projects: dashboard pages up to date; nothing to send");
+  }
+  writeJson(BOARD_OUT, writes);
+  writeJson(join(WORK, "board-pending.json"), next);
+  console.log(`projects: ${writes.length} dashboard page record(s) prepared (${writes.filter((w) => w.data.status === "draft").length} draft) -> ${BOARD_OUT}`);
+}
+
+function boardSent() {
+  const pend = join(WORK, "board-pending.json");
+  if (!existsSync(pend)) return console.log("projects: nothing pending");
+  writeJson(BOARD_SENT, readJson(pend));
+  rmSync(pend);
+  rmSync(BOARD_OUT, { force: true });
+  console.log("projects: dashboard page records marked sent");
+}
+
+// Brittany's decisions from the dashboard (an `ArtifactData list` export of db pageok/*). Prints one line per
+// published slug as "PUBLISHED <slug>" so the deploy script knows what to commit.
+function approvals(dir: string) {
+  const d = existsSync(join(dir, "pageok")) ? join(dir, "pageok") : dir;
+  if (!existsSync(d)) return console.log("projects: no decisions exported");
+  const byslug = Object.fromEntries(projects().map((p) => [p.slug, p]));
+  const fb = existsSync(FEEDBACK) ? readJson(FEEDBACK) : {};
+  for (const f of readdirSync(d).filter((x) => x.endsWith(".json"))) {
+    const a = readJson(join(d, f));
+    if (a.client !== "french-roofing" || !a.slug) continue;
+    const p = byslug[a.slug];
+    if (!p) { console.log(`  skip ${a.slug}: no such page`); continue; }
+    if (p.status !== "draft") continue;
+    const r = rev(p);
+    if (a.rev !== r) { console.log(`  skip ${a.slug}: decision was for an older version of the draft`); continue; }
+    if (a.decision === "approve") {
+      publish(a.slug);
+      console.log(`PUBLISHED ${a.slug}`);
+    } else if (a.decision === "changes" && fb[a.slug]?.at !== a.at) {
+      fb[a.slug] = { note: String(a.note || "").slice(0, 2000), at: a.at, rev: r };
+      console.log(`  change request filed for ${a.slug}`);
+    }
+  }
+  writeJson(FEEDBACK, fb);
 }
 
 function publish(which: string) {
@@ -221,9 +297,11 @@ function publish(which: string) {
 async function main() {
   if (args.includes("--plan")) return plan();
   if (arg("--build")) return build(arg("--build")!);
-  if (args.includes("--todo")) return todo();
+  if (args.includes("--board")) return board();
+  if (args.includes("--board-sent")) return boardSent();
+  if (arg("--approvals")) return approvals(arg("--approvals")!);
   if (arg("--publish")) return publish(arg("--publish")!);
-  console.log("usage: --plan [--max 4] | --build <job#> | --todo | --publish <slug|all>");
+  console.log("usage: --plan [--max 4] | --build <job#> | --board | --board-sent | --approvals <dir> | --publish <slug|all>");
 }
 main().catch((e) => {
   console.error("projects failed:", e.message);

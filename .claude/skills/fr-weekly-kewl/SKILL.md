@@ -173,9 +173,13 @@ For each job:
    - `faqs` (optional): only questions this job actually answers.
    - Never a customer name, street, house number or job number (the build refuses them).
 4. `npm run projects -- --build <job#>` writes the DRAFT page (`src/data/projects/<slug>.json`, images in
-   `public/images/projects/<slug>/`). Drafts are hidden on frenchroofing.com; the wrapper pushes a preview and puts an
-   approval to-do on the dashboard. **Never run `--publish` and never set `"status": "published"`**: only Brittany
-   approves a page.
+   `public/images/projects/<slug>/`). Drafts are hidden on frenchroofing.com; the wrapper pushes a preview and the
+   drafts land on the dashboard's SEO/AEO tab. Brittany approves each there and the 4:10am daily job publishes and
+   deploys it (Brittany, 2026-11-18). **Never run `--publish` and never set `"status": "published"`** in this run.
+**Change requests first:** before `--plan`, read `operations/hcp-data/projects/feedback.json` (Brittany's "Needs
+changes" notes from the dashboard, keyed by page slug). For each, find the job in `handled.json` (the entry whose
+`slug` matches), revise `operations/hcp-data/projects/<job#>/draft.json` as she asked, and run `--build <job#>` again;
+the rebuild clears the note and the page goes back on the board for a fresh approval. Note each revision in the report.
 **Hold instead of drafting** when what the job was can't be told from the record and photos (e.g. a repair with
 open questions for Sean): don't write `draft.json`, put the exact question in the report. Fewer, true pages beat more.
 

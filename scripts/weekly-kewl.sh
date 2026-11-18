@@ -144,8 +144,8 @@ if [ "$MODE" = "run" ]; then
 fi
 
 # Draft project pages (2026-11-18): push main to the projects-preview branch so Vercel builds a preview where drafts
-# show, and prepare the dashboard to-do (sent by the 4:10am daily job). Production hides drafts, so this never
-# publishes anything. Only committed drafts reach the preview.
+# show, and prepare the dashboard records for the SEO/AEO tab (sent by the 4:10am daily job, which also publishes and
+# deploys the drafts Brittany approves there). Production hides drafts, so this step never publishes anything.
 if [ "$MODE" = "run" ]; then
   {
     echo; echo "## Project pages (wrapper)"
@@ -153,7 +153,7 @@ if [ "$MODE" = "run" ]; then
       if git push -q -f origin main:projects-preview; then
         echo "    Preview pushed: https://french-roofing-git-projects-preview-bb290s-projects.vercel.app/past-projects (builds in about a minute)"
       else echo "    Preview NOT pushed (git push failed)."; fi
-      npm run --silent projects -- --todo 2>&1 | sed 's/^/    /'
+      npm run --silent projects -- --board 2>&1 | sed 's/^/    /'
     else echo "    No draft project pages waiting."; fi
   } >> "$RUNS/$TODAY-report.md" 2>&1 || true
 fi
