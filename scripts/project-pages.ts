@@ -150,6 +150,11 @@ async function build(job: string) {
   if (/[—–]/.test(all)) problems.push("em/en dash");
   if (BANNED.test(all)) problems.push(`banned word or phrase: ${all.match(BANNED)![0]}`);
   if (STREET.test(all) || all.includes(String(close.address?.street || "§§"))) problems.push("looks like a street address");
+  // Brittany, 2026-11-18: workmanship warranties are for replacements only (5 years; 10 on Presidential), never on
+  // maintenance or repairs; and the before/after slider is for full replacements and major cleanings only.
+  if (service !== "roof-replacement" && /warrant|\d+[- ]year (roof )?cert/i.test(all)) problems.push("warranty or multi-year certification on a non-replacement job");
+  if (/10[- ]year/i.test(all) && !/presidential/i.test(all)) problems.push("10-year warranty is for Presidential roofs only");
+  if (!["roof-replacement", "roof-cleaning"].includes(service) && (draft.photos || []).some((p: any) => p.stage)) problems.push("before/after stages only on replacements and cleanings (drop stage)");
   if (/#\s?\d{2,}/.test(all) || all.includes(job)) problems.push("job number in the copy");
   for (const n of names) if (new RegExp(`\\b${n}\\b`, "i").test(all)) problems.push(`customer name "${n}" in the copy`);
   for (const p of draft.photos || []) {

@@ -75,7 +75,8 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
   const when = formatCompleted(p.completed);
   const before = p.photos.find((ph) => ph.stage === "before");
   const after = p.photos.find((ph) => ph.stage === "after");
-  const pair = before && after ? { before, after } : null;
+  // Slider only for full replacements and major cleanings (Brittany, 2026-11-18): small jobs look alike before and after.
+  const pair = before && after && (p.service === "roof-replacement" || p.service === "roof-cleaning") ? { before, after } : null;
   const grid = pair ? p.photos.filter((ph) => ph !== before && ph !== after) : p.photos;
   const cityHref = cityServiceHref(p);
   const related = relatedProjects(p);

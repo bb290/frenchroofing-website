@@ -169,7 +169,12 @@ For each job:
    - `photos`: 3+, the best first. Leave `stage` off unless you have a genuine pair: one `before` and one `after` of
      the same spot from about the same angle (the page turns that pair into a drag slider, which claims it's the same
      spot). Two photos of different parts of the roof are never a pair (2026-11-18).
+     Only on full replacements and major cleanings: never on repairs or maintenance, where before and after look
+     too alike (Brittany, 2026-11-18; the page and --build both enforce it).
      Alt text says what's in the photo and the city.
+   - Warranties: French Roofing gives a 5-year workmanship warranty on replacements only (10 years on Presidential
+     roofs). Never mention a warranty or a multi-year "certification" on a repair or maintenance page, even when the
+     invoice lists one (Brittany, 2026-11-18; --build refuses it).
    - `faqs` (optional): only questions this job actually answers.
    - Never a customer name, street, house number or job number (the build refuses them).
 4. `npm run projects -- --build <job#>` writes the DRAFT page (`src/data/projects/<slug>.json`, images in
