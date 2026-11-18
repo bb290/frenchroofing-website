@@ -303,6 +303,13 @@ Keep it short, with counts that match what actually happened:
   street only.
 - **HCP estimate links.** `original_estimate_uuids` on a job are estimate *option* ids. The
   script already handles this; don't "fix" it by fetching `/estimates/<uuid>` (404).
+- **Photo links expire after one hour.** The `photos[].url` values in `<N>.json` are signed
+  S3 links. If the JSON was pulled more than an hour before step 4, re-run
+  `npm run closeout -- --job <N>` first (2026-11-17: all 15 uploads failed "Request has expired"
+  on a JSON pulled the night before).
+- **"Visit #2" jobs can't be archived.** Follow-up visits ($0, line item "Visit #2") have no
+  pipeline card, so step 8 returns `Kanban Card not found`. Expected: note `HCP not archived`
+  in the tracker row and move on (2026-11-17, #1164 and #1160).
 - **Re-runs.** The folder lookup and tracker check exist so a second run doesn't make
   duplicates. If either already exists, ask whether to reuse it or stop.
 - **The template.** The three placeholders and the two 5-year phrases must stay exactly as
