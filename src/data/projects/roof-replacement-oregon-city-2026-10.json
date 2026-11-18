@@ -1,0 +1,43 @@
+{
+  "slug": "roof-replacement-oregon-city-2026-10",
+  "status": "draft",
+  "service": "roof-replacement",
+  "title": "Roof Replacement in Oregon City, OR",
+  "city": "Oregon City",
+  "state": "OR",
+  "completed": "2026-10",
+  "material": "CertainTeed Landmark",
+  "roofType": "Architectural asphalt shingle",
+  "summary": "In October 2026, French Roofing completed a roof replacement on a home in Oregon City, OR. The new roof is CertainTeed Landmark architectural shingles in a dark gray, finished with new ridge cap and new flashings around the plumbing vent pipes.",
+  "scope": [
+    "Installed new CertainTeed Landmark architectural shingles",
+    "Capped the ridges and hips with new ridge cap shingles",
+    "New flashings around the plumbing vent pipes"
+  ],
+  "photos": [
+    {
+      "src": "/images/projects/roof-replacement-oregon-city-2026-10/01.webp",
+      "alt": "Finished dark gray CertainTeed Landmark shingle roof with new pipe flashings on a home in Oregon City, OR",
+      "caption": "The finished roof, with new flashings on the vent pipes.",
+      "stage": "after"
+    },
+    {
+      "src": "/images/projects/roof-replacement-oregon-city-2026-10/02.webp",
+      "alt": "Two roof planes of new dark gray architectural shingles meeting at a ridge in Oregon City, OR",
+      "caption": "New shingles and ridge cap.",
+      "stage": "after"
+    },
+    {
+      "src": "/images/projects/roof-replacement-oregon-city-2026-10/03.webp",
+      "alt": "Close view of new ridge cap shingles running along a hip on the new roof",
+      "caption": "Ridge cap along the hip.",
+      "stage": "after"
+    },
+    {
+      "src": "/images/projects/roof-replacement-oregon-city-2026-10/04.webp",
+      "alt": "New shingles and ridge cap on a lower roof section above the backyard",
+      "stage": "after"
+    }
+  ],
+  "addedAt": "2026-11-18"
+}

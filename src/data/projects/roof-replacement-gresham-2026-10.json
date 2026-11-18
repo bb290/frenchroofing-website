@@ -1,0 +1,34 @@
+{
+  "slug": "roof-replacement-gresham-2026-10",
+  "status": "published",
+  "service": "roof-replacement",
+  "title": "Presidential Shingle Replacement in Gresham, OR",
+  "city": "Gresham",
+  "state": "OR",
+  "completed": "2026-10",
+  "material": "CertainTeed Presidential shingles",
+  "summary": "In October 2026, French Roofing did a full tear-off on a home in Gresham, OR and installed new CertainTeed Presidential shingles, with a W-shaped metal valley where the two roof planes meet. Metal valleys carry water off faster and are easier to keep clear of debris.",
+  "scope": [
+    "Full tear-off of the old roof",
+    "New CertainTeed Presidential shingles",
+    "W-shaped metal valley where the two roof planes meet"
+  ],
+  "photos": [
+    {
+      "src": "/images/gallery/gresham-presidential-2.webp",
+      "alt": "New CertainTeed Presidential shingles going on upper slopes of a home in Gresham, OR",
+      "stage": "during"
+    },
+    {
+      "src": "/images/gallery/gresham-presidential-1.webp",
+      "alt": "Tear-off underway with new shingle bundles staged at the ridge",
+      "stage": "during"
+    },
+    {
+      "src": "/images/gallery/gresham-presidential-3.webp",
+      "alt": "Brown W-valley metal between new shingles and underlayment",
+      "stage": "during"
+    }
+  ],
+  "addedAt": "2026-11-15"
+}

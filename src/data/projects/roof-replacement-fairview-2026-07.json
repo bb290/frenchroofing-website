@@ -1,0 +1,34 @@
+{
+  "slug": "roof-replacement-fairview-2026-07",
+  "status": "published",
+  "service": "roof-replacement",
+  "title": "Low-Slope Roof Replacement in Fairview, OR",
+  "city": "Fairview",
+  "state": "OR",
+  "completed": "2026-07",
+  "roofType": "Low-slope",
+  "summary": "In July 2026, French Roofing put a new low-slope roof on a home in Fairview, OR, finished where the roof meets the wall and around every pipe that comes through it.",
+  "scope": [
+    "New low-slope roof",
+    "Finished where the roof meets the wall",
+    "Finished around every pipe that comes through the roof, with metal flashing bases"
+  ],
+  "photos": [
+    {
+      "src": "/images/gallery/fairview-low-slope-1.webp",
+      "alt": "New low-slope roof in Fairview, OR, with the chimney and trees beyond",
+      "stage": "after"
+    },
+    {
+      "src": "/images/gallery/fairview-low-slope-2.webp",
+      "alt": "Where the new low-slope roof meets the bottom of a white wood-sided wall",
+      "stage": "after"
+    },
+    {
+      "src": "/images/gallery/fairview-low-slope-3.webp",
+      "alt": "A pipe through the new low-slope roof with a metal flashing base",
+      "stage": "after"
+    }
+  ],
+  "addedAt": "2026-11-15"
+}

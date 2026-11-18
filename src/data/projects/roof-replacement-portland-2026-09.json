@@ -1,0 +1,53 @@
+{
+  "slug": "roof-replacement-portland-2026-09",
+  "status": "draft",
+  "service": "roof-replacement",
+  "title": "Roof Replacement in Portland, OR",
+  "city": "Portland",
+  "state": "OR",
+  "completed": "2026-09",
+  "material": "CertainTeed Landmark",
+  "roofType": "Architectural asphalt shingle",
+  "summary": "In September 2026, French Roofing replaced a worn, mossy shingle roof on a home in Portland, OR. The crew tore off the old shingles, laid new synthetic underlayment over the deck, and installed new CertainTeed Landmark architectural shingles.",
+  "scope": [
+    "Tore off the old shingles down to the roof deck",
+    "Installed APOC Weather-Armor Cross Over synthetic underlayment",
+    "Installed new CertainTeed Landmark architectural shingles"
+  ],
+  "body": [
+    "Before the work started, moss and leaf debris had settled into the old shingles across the roof. The photos below follow the job from the worn roof, through the tear-off and the new underlayment, to the finished shingles."
+  ],
+  "photos": [
+    {
+      "src": "/images/projects/roof-replacement-portland-2026-09/01.webp",
+      "alt": "Finished roof with new gray CertainTeed Landmark architectural shingles on a home in Portland, OR",
+      "caption": "The finished roof: new CertainTeed Landmark shingles."
+    },
+    {
+      "src": "/images/projects/roof-replacement-portland-2026-09/02.webp",
+      "alt": "Old brown shingles covered in moss and fallen leaves before the roof replacement in Portland, OR",
+      "caption": "Before: moss and debris settled into the old shingles."
+    },
+    {
+      "src": "/images/projects/roof-replacement-portland-2026-09/03.webp",
+      "alt": "Tear-off in progress, with old shingles being stripped from one side of the roof",
+      "caption": "Tear-off in progress."
+    },
+    {
+      "src": "/images/projects/roof-replacement-portland-2026-09/04.webp",
+      "alt": "New APOC Weather-Armor Cross Over synthetic underlayment covering the roof deck before shingles go on",
+      "caption": "New synthetic underlayment, ready for shingles."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Did French Roofing remove the old roof on this Portland job?",
+      "answer": "Yes. The old shingles came off down to the roof deck before anything new went on, so the new underlayment and shingles sit on a clean deck instead of on top of an old layer."
+    },
+    {
+      "question": "What shingles were installed?",
+      "answer": "CertainTeed Landmark architectural shingles, over APOC Weather-Armor Cross Over synthetic underlayment."
+    }
+  ],
+  "addedAt": "2026-11-18"
+}

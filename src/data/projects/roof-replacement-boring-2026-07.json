@@ -1,0 +1,36 @@
+{
+  "slug": "roof-replacement-boring-2026-07",
+  "status": "published",
+  "service": "roof-replacement",
+  "title": "Standing Seam Metal Roof in Boring, OR",
+  "city": "Boring",
+  "state": "OR",
+  "completed": "2026-07",
+  "material": "26-gauge standing seam metal panels",
+  "roofType": "Standing seam metal",
+  "summary": "In July 2026, French Roofing installed a complete tan standing seam metal roof on a home in Boring, OR. The finished roof has clean hip and valley lines and a brick chimney at the ridge.",
+  "scope": [
+    "Complete standing seam metal roof in tan",
+    "Clean hip lines",
+    "Clean valley lines",
+    "Finished around the brick chimney at the ridge"
+  ],
+  "photos": [
+    {
+      "src": "/images/gallery/boring-metal-1.webp",
+      "alt": "Finished tan standing seam metal roof in Boring, OR, with clean hip and valley lines",
+      "stage": "after"
+    },
+    {
+      "src": "/images/gallery/boring-metal-2.webp",
+      "alt": "Close-up of the valley on a new standing seam metal roof",
+      "stage": "after"
+    },
+    {
+      "src": "/images/gallery/boring-metal-3.webp",
+      "alt": "Hip seam where two slopes meet on a new standing seam metal roof",
+      "stage": "after"
+    }
+  ],
+  "addedAt": "2026-11-15"
+}

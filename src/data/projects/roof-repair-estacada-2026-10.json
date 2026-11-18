@@ -1,0 +1,33 @@
+{
+  "slug": "roof-repair-estacada-2026-10",
+  "status": "published",
+  "service": "roof-repair",
+  "title": "Shingle Repair in Estacada, OR",
+  "city": "Estacada",
+  "state": "OR",
+  "completed": "2026-10",
+  "summary": "In October 2026, French Roofing repaired a few lifted shingles near the vents on a home in Estacada, OR. The damaged shingles came out and new underlayment went down before the new shingles, so the repair covers every layer, not just the top one.",
+  "scope": [
+    "Removed the damaged shingles near the vents",
+    "New synthetic underlayment",
+    "New shingles over the repaired area"
+  ],
+  "photos": [
+    {
+      "src": "/images/gallery/estacada-repair-2.webp",
+      "alt": "Shingle repair in Estacada, OR: damaged shingles cut out and new synthetic underlayment laid",
+      "stage": "during"
+    },
+    {
+      "src": "/images/gallery/estacada-repair-1.webp",
+      "alt": "Lifted shingles near the vents, seen from the ground before the repair",
+      "stage": "before"
+    },
+    {
+      "src": "/images/gallery/estacada-repair-3.webp",
+      "alt": "Close-up of the repair in progress with shingles removed down to the underlayment",
+      "stage": "during"
+    }
+  ],
+  "addedAt": "2026-11-15"
+}

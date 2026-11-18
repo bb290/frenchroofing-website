@@ -21,6 +21,23 @@ const nextConfig: NextConfig = {
         destination: "/services/roof-replacement/:city",
         permanent: true,
       },
+      // /gallery became /past-projects (2026-11-18): one paginated list plus a page per job.
+      {
+        source: "/gallery",
+        destination: "/past-projects",
+        permanent: true,
+      },
+      // Page 1 of each project list has no /page/1 suffix.
+      {
+        source: "/past-projects/page/1",
+        destination: "/past-projects",
+        permanent: true,
+      },
+      {
+        source: "/past-projects/service/:service/page/1",
+        destination: "/past-projects/service/:service",
+        permanent: true,
+      },
       {
         source: "/contact",
         destination: "/estimate",

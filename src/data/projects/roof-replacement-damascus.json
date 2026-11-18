@@ -1,0 +1,31 @@
+{
+  "slug": "roof-replacement-damascus",
+  "status": "published",
+  "service": "roof-replacement",
+  "title": "Roof Replacement in Damascus, OR",
+  "city": "Damascus",
+  "state": "OR",
+  "roofType": "Architectural asphalt shingle",
+  "summary": "French Roofing did a full tear-off and roof replacement on a home in Damascus, OR that had years of patching and tarp repairs on it. The new roof has architectural shingles, clean flashing, and proper ventilation.",
+  "scope": [
+    "Full tear-off of the old, patched roof",
+    "New architectural shingles",
+    "Clean new flashing",
+    "Proper roof ventilation"
+  ],
+  "photos": [
+    {
+      "src": "/images/damascus-replacement-before.webp",
+      "alt": "Worn roof with patched areas and a blue tarp in Damascus, OR, before French Roofing replaced it",
+      "caption": "Before: years of patching and a tarp",
+      "stage": "before"
+    },
+    {
+      "src": "/images/damascus-replacement-after.webp",
+      "alt": "The same roof after French Roofing's replacement: new shingles, clean flashing and vents",
+      "caption": "After: new shingles, flashing and vents",
+      "stage": "after"
+    }
+  ],
+  "addedAt": "2026-11-15"
+}

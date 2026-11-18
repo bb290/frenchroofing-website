@@ -1,0 +1,33 @@
+{
+  "slug": "roof-repair-gresham-2026-09",
+  "status": "published",
+  "service": "roof-repair",
+  "title": "Roof Repair and Addition Tie-In in Gresham, OR",
+  "city": "Gresham",
+  "state": "OR",
+  "completed": "2026-09",
+  "summary": "In September 2026, French Roofing repaired a lifted ridge cap on a home in Gresham, OR and added new wall flashing where the roof meets a home addition. A temporary dry-in kept the house dry between work days.",
+  "scope": [
+    "Repaired a section of lifted ridge cap",
+    "New wall flashing where the roof meets the home addition",
+    "Temporary dry-in so the house stayed dry between work days"
+  ],
+  "photos": [
+    {
+      "src": "/images/gallery/gresham-repair-3.webp",
+      "alt": "New black wall flashing where a shingle roof meets the plywood wall of an addition in Gresham, OR",
+      "stage": "during"
+    },
+    {
+      "src": "/images/gallery/gresham-repair-1.webp",
+      "alt": "Aged shingles with a section of ridge cap lifted, before the repair",
+      "stage": "before"
+    },
+    {
+      "src": "/images/gallery/gresham-repair-2.webp",
+      "alt": "Temporary dry-in: underlayment held down over a roof opening between work days",
+      "stage": "during"
+    }
+  ],
+  "addedAt": "2026-11-15"
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "roof-replacement-gresham-2026-09",
+  "status": "draft",
+  "service": "roof-replacement",
+  "title": "Roof Replacement in Gresham, OR",
+  "city": "Gresham",
+  "state": "OR",
+  "completed": "2026-09",
+  "material": "CertainTeed Landmark",
+  "summary": "In September 2026, French Roofing replaced the roof on a home in Gresham, OR. The crew stripped the roof down to the wood deck, replaced a section of decking with new plywood, and installed a new CertainTeed Landmark shingle roof system.",
+  "scope": [
+    "Tore off the old roof down to the wood deck",
+    "Replaced a section of roof decking with new plywood",
+    "Installed a new CertainTeed Landmark shingle roof system"
+  ],
+  "body": [
+    "Taking a roof down to the deck lets the crew see the wood underneath before the new roof goes on. On this home, one section of the deck was replaced with a new sheet of plywood before underlayment and shingles were installed."
+  ],
+  "photos": [
+    {
+      "src": "/images/projects/roof-replacement-gresham-2026-09/01.webp",
+      "alt": "New plywood sheet replacing a section of old roof decking during a roof replacement in Gresham, OR",
+      "caption": "A section of decking replaced with new plywood.",
+      "stage": "during"
+    },
+    {
+      "src": "/images/projects/roof-replacement-gresham-2026-09/02.webp",
+      "alt": "Roof stripped down to the wood deck after the tear-off in Gresham, OR",
+      "caption": "Down to the deck after the tear-off.",
+      "stage": "during"
+    },
+    {
+      "src": "/images/projects/roof-replacement-gresham-2026-09/03.webp",
+      "alt": "Bare roof deck along the edge of the roof, ready for new underlayment",
+      "stage": "during"
+    }
+  ],
+  "addedAt": "2026-11-18"
+}

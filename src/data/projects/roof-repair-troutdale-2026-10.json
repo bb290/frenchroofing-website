@@ -1,0 +1,29 @@
+{
+  "slug": "roof-repair-troutdale-2026-10",
+  "status": "published",
+  "service": "roof-repair",
+  "title": "Flat Roof Repair in Troutdale, OR",
+  "city": "Troutdale",
+  "state": "OR",
+  "completed": "2026-10",
+  "material": "Modified bitumen patch",
+  "roofType": "Flat roof",
+  "summary": "In October 2026, French Roofing repaired a flat roof corner on a home in Troutdale, OR with a new modified bitumen patch and resealed the parapet wall joint.",
+  "scope": [
+    "New modified bitumen patch at the flat roof corner",
+    "Resealed the parapet wall joint"
+  ],
+  "photos": [
+    {
+      "src": "/images/gallery/troutdale-flat-1.webp",
+      "alt": "Flat roof corner in Troutdale, OR, with a new modified bitumen patch",
+      "stage": "after"
+    },
+    {
+      "src": "/images/gallery/troutdale-flat-2.webp",
+      "alt": "Close-up of the new patch sealed into the corner",
+      "stage": "after"
+    }
+  ],
+  "addedAt": "2026-11-15"
+}

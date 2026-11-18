@@ -237,7 +237,7 @@ export default function Home() {
           </div>
           <div className="text-center mt-10">
             <Link
-              href="/gallery"
+              href="/past-projects"
               className="inline-flex items-center text-[#c04520] font-semibold hover:underline"
             >
               View more projects &rarr;
