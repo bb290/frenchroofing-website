@@ -1,6 +1,6 @@
 ---
 name: fr-weekly-kewl
-description: The weekly French Roofing Kewl run. Pulls new job photos from Housecall Pro and Sean's Google Drive intake, sorts them, promotes up to 4 into finished posts, reviews every caption, and sends them to the Unbound Dashboard as ready for Brittany to approve (approving there schedules them in Metricool). Runs unattended every Wednesday (launchd → scripts/weekly-kewl.sh) and on demand via "/fr-weekly-kewl", "run the weekly Kewl", or "do the Wednesday social run".
+description: The weekly French Roofing Kewl run. Pulls new job photos from Housecall Pro and Sean's Google Drive intake, sorts them, promotes up to 4 into finished posts, turns new Google reviews into review posts, drafts /past-projects pages from closed-out jobs, reviews every caption, and sends them to the Unbound Dashboard as ready for Brittany to approve (approving there schedules them in Metricool). Runs unattended every Wednesday (launchd → scripts/weekly-kewl.sh) and on demand via "/fr-weekly-kewl", "run the weekly Kewl", or "do the Wednesday social run".
 ---
 
 # FR Weekly Kewl — Housecall Pro photos → posts ready in the Unbound Dashboard
@@ -121,6 +121,64 @@ npm run kewl:lint -- social/instagram/evergreen/<pillar>/posts/<new post dirs>
   invented story the post depends on). Set every platform `status` to `held` in `schedule.json`,
   append `HELD <date>: <reason and what Sean needs to answer>` to its `notes`, and do not upload it.
 
+### 5b. New Google reviews → review posts (added 2026-11-18)
+The wrapper pulls Google reviews into `src/data/google-reviews.json` before this run starts (and deploys
+/reviews after it; nothing for you to do there). Turn each new review into its four review posts:
+```
+npm run review:posts -- --plan
+```
+It makes `social/reviews/posts/<slug>/posts.json` for every written 4-5 star review not handled yet, with dates
+(Mon/Wed review days, about 13 weeks apart), looks (rotating A note / B card / C poster / D kraft) and a photo
+already chosen. Lower-star and stars-only reviews are skipped and recorded; never make posts from them. For each new
+folder, fill in every post:
+- `image.quote`: words taken **word for word** from the review (fix nothing, not even a typo; you may start or stop
+  mid-sentence). B card can take the whole review. Keep A and D short (one sentence works best).
+  C poster also needs `image.headline`: a short phrase from the review, word for word, 3 to 6 words.
+- The four captions, matching the existing review posts exactly in format (read one, e.g.
+  `social/reviews/posts/leslie-g/posts.json`): Instagram ends with the "Visit website for Instant Roof Quote / Link in Bio"
+  block, Facebook with "Get an Instant Roof Quote at frenchroofing.com", LinkedIn quotes the review then adds the
+  licensed/insured/CertainTeed line and "Schedule a free roof assessment at frenchroofing.com", GBP opens with the
+  service "in the Damascus area", quotes the review with the reviewer's shown name, thanks them by first name and ends
+  with the FREE roof assessment / Instant Roof Quote line. Thank the reviewer by first name. Never add facts the
+  review doesn't give (no job type, city or timeline unless the review says it).
+```
+npm run review:posts -- --render <slug>
+npm run review:posts -- --check <slug>
+```
+`--render` fails if a quote is too long for its look: pick a shorter quote and render again. `--check` must say clean
+(quotes word for word, no dashes, no phone, no banned words). Open the 4 PNGs and look at them before moving on. If a
+review can't be done cleanly, leave the folder, write why in the report, and carry on.
+
+### 5c. Closed-out jobs → past-project page drafts (added 2026-11-18)
+```
+npm run projects -- --plan
+```
+Picks up to 4 closed-out Oregon jobs with 3+ Housecall Pro photos (not $0 follow-up visits) and writes, per job,
+`operations/hcp-data/projects/<job#>/` with `facts.json`, `sheet.jpg` (numbered contact sheet) and `raw/NN.jpg`.
+For each job:
+1. Read `facts.json` and `sheet.jpg`, then open every photo you might use at full size. Same rules as the sort:
+   describe only what is visible plus the job record; no causes, history, prices or timelines that aren't there.
+2. Leave out: supplier tickets and paperwork (they carry Sean's home address), house numbers, faces, people without
+   fall protection or shirts on a roof, readable plates, home fronts that identify the house, and anything you can't
+   identify.
+3. Write `operations/hcp-data/projects/<job#>/draft.json`:
+   `{service, title, material?, roofType?, summary, scope[], body?[], faqs?[], photos:[{file, alt, caption?, stage?}]}`.
+   - `title`: "<Service> in <City>, OR" (always the city, Portland included; Brittany, 2026-11-18). Never "Portland metro".
+   - `summary`: 30 to 80 words, answer-first: what was done, where (city), when (month + year), the result.
+   - `scope`: 2+ plain bullets of what was done, each traceable to the record or a photo.
+   - `photos`: 3+, the best first. Leave `stage` off unless you have a genuine pair: one `before` and one `after` of
+     the same spot from about the same angle (the page turns that pair into a drag slider, which claims it's the same
+     spot). Two photos of different parts of the roof are never a pair (2026-11-18).
+     Alt text says what's in the photo and the city.
+   - `faqs` (optional): only questions this job actually answers.
+   - Never a customer name, street, house number or job number (the build refuses them).
+4. `npm run projects -- --build <job#>` writes the DRAFT page (`src/data/projects/<slug>.json`, images in
+   `public/images/projects/<slug>/`). Drafts are hidden on frenchroofing.com; the wrapper pushes a preview and puts an
+   approval to-do on the dashboard. **Never run `--publish` and never set `"status": "published"`**: only Brittany
+   approves a page.
+**Hold instead of drafting** when what the job was can't be told from the record and photos (e.g. a repair with
+open questions for Sean): don't write `draft.json`, put the exact question in the report. Fewer, true pages beat more.
+
 ### 6. Mark ready and send to the Unbound Dashboard
 Brand **French Roofing, blogId 6211784, timezone America/Los_Angeles**. Verify with
 `getBrandSettings`; if the timezone or channels differ, stop and report.
@@ -161,13 +219,17 @@ Treat those files as hers: never revert them.
 Write `operations/kewl-runs/<date>-report.md`: photos pulled, sort counts, what was promoted and
 for which dates, how many posts are now waiting in the dashboard and what reconcile wrote back, every caption change and why, anything held and the exact question for Sean,
 WARNs you judged acceptable (so Brittany can disagree), queue depth remaining, and any error.
-Then commit the new post folders and any skill or script fixes, as two separate plain commands
+Also: new reviews and the review posts made (dates, quotes used) or skipped and why; project pages drafted (title,
+photos used, photos left out and why) and jobs held with the exact question.
+Then commit the new post folders, any new `social/reviews/posts/<slug>/` folders plus `social/reviews/handled.json`,
+any new `src/data/projects/<slug>.json` and `public/images/projects/<slug>/` (drafts), and any skill or script fixes, as two separate plain commands
 run from the repo root (the run already starts there): `git add <paths>`, then
 `git commit -m "<message>" -- <paths>`. Never `git -C`, never `cd ... &&`, never chain commands:
 the unattended run only allows commands that start with `git add` / `git commit`, so anything
 else is blocked (2026-11-11 run lost its commit that way). Other people's uncommitted work sits
 in this repo, so name every path; never `git add -A` or `git commit -a`.
-**Never push and never run `npm run deploy`**; pushing triggers a site deploy.
+**Never push and never run `npm run deploy`**; pushing triggers a site deploy. (The wrapper deploys the review file
+and pushes the drafts preview after you finish; that's its job, not yours. Never commit `src/data/google-reviews.json`.)
 
 ## Hard rules (all of these have bitten before)
 
@@ -180,6 +242,6 @@ in this repo, so name every path; never `git add -A` or `git commit -a`.
 - No customer names, house numbers, or identifiable home fronts.
 - Never invent: anecdotes, timing, prices, statistics, lifespans, business claims.
 - Never touch other clients' Metricool brands (Sagareus is on the same account, blogId 6504323).
-- Never write to Housecall Pro. The API key is read-only; keep it that way.
+- Never write to Housecall Pro. Nothing in this run can (the close-out's Archived move is a separate, reviewed skill).
 - If any step errors in a way this skill does not cover, stop, write the report, and leave the
   remaining work for a human. Do not improvise around a failure.

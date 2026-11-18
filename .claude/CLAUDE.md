@@ -79,6 +79,8 @@ While at `autonomy: tight`:
 - All social copy gates to a human review before posting.
 - All public-facing pages and city pages get reviewed before deploy.
 - **Exception (operator, 2026-07-03): `fr-blog` guide batches auto-deploy** when they pass `operations/seo/QUALITY-GATE.md` clean AND `npm run build` succeeds. Gate-FAIL or A5 doubt-flagged guides hold for review. This carve-out covers `/guides/*` content only; every other page type stays human-reviewed. `fr-carousel` output stays `ready-to-publish` until the Metricool publishing step (its own authorization) exists.
+- **Exception (Brittany, 2026-11-18): the Google review file auto-deploys.** The Wednesday wrapper commits `src/data/google-reviews.json` (Google's text word for word) and pushes it, only when nothing else unpushed would change the live site. /reviews updates without review.
+- **/past-projects pages are always approved first (Brittany, 2026-11-18).** The Wednesday run writes them as drafts (hidden on the live site, shown on the `projects-preview` branch preview); Brittany approves on the dashboard, then Claude runs `npm run projects -- --publish` and deploys. Every page names its city ("<Service> in <City>, OR"; Portland included). Oregon jobs only.
 - Any SOP edit preserves original operational logic, never paraphrase or summarize away SOP steps.
 
 ### Tooling

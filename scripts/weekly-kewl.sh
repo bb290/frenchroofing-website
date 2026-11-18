@@ -65,6 +65,10 @@ ALLOWED=(
   "Bash(npm run kewl:sort:*)" "Bash(npm run -s kewl:sort:*)"
   "Bash(npm run kewl:lint:*)" "Bash(npm run -s kewl:lint:*)"
   "Bash(npm run promote:*)" "Bash(npm run -s promote:*)"
+  "Bash(npm run review:posts:*)" "Bash(npm run -s review:posts:*)"
+  # Project pages: plan + build drafts only. --publish is deliberately not allowed (Brittany approves first).
+  "Bash(npm run projects -- --plan:*)" "Bash(npm run -s projects -- --plan:*)"
+  "Bash(npm run projects -- --build:*)" "Bash(npm run -s projects -- --build:*)"
   "Bash(git status:*)" "Bash(git add:*)" "Bash(git commit:*)" "Bash(git log:*)" "Bash(git diff:*)"
   "Bash(ls:*)" "Bash(date:*)"
   "Bash(node ../../tools/unbound-hq/sync/reconcile.mjs:*)" "Bash(node ../../tools/unbound-hq/sync/kewl-sync.mjs:*)"
@@ -82,8 +86,16 @@ DENIED=(
   "mcp__claude_ai_Metricool_Social_Media_Management__updateScheduledPost"
   "mcp__claude_ai_Metricool_Social_Media_Management__createScheduledPostForReview"
   "mcp__claude_ai_Metricool_Social_Media_Management__sendScheduledPostForReview"
+  "Bash(npm run projects -- --publish:*)" "Bash(npm run -s projects -- --publish:*)"
   "Bash(git push:*)" "Bash(npm run deploy:*)" "Bash(rm:*)" "Bash(curl:*)" "WebFetch" "WebSearch"
 )
+
+# Pull French Roofing's Google reviews first (moved before the run 2026-11-18) so the run can turn new ones into review
+# posts (skill step 6b). The output goes into the report after the run; the site update is deployed further down.
+REVIEWS_OUT="$RUNS/$TODAY-reviews-sync.txt"
+if [ "$MODE" = "run" ]; then
+  npm run --silent reviews:sync > "$REVIEWS_OUT" 2>&1 || echo "reviews-sync exited non-zero" >> "$REVIEWS_OUT"
+fi
 
 {
   echo "=== $(date) weekly-kewl $MODE start ==="
@@ -96,10 +108,54 @@ DENIED=(
   echo "=== $(date) weekly-kewl $MODE end, exit $STATUS ==="
 } >> "$LOG" 2>&1
 
-# Pull French Roofing's Google reviews into src/data/google-reviews.json (2026-11-15). Saving doesn't publish: the
-# site changes only when Brittany says go. New reviews become a dashboard to-do, sent by the daily indexing job.
+# Publish new Google reviews on frenchroofing.com/reviews (Brittany, 2026-11-18: auto-deploy, review text is Google's
+# word for word). Commits ONLY src/data/google-reviews.json and pushes main, and only when every unpushed commit is
+# content that doesn't change the site's code (social/, operations/, .claude/, the review file). Anything else
+# waiting to go out means a human deploys: the review file stays committed and the report says why.
+publish_reviews() {
+  local F="src/data/google-reviews.json"
+  if git diff --quiet -- "$F"; then echo "No change to the review file; nothing to deploy."; return 0; fi
+  if ! node -e 'const d=require("./'"$F"'"); if(!Array.isArray(d.reviews)||!d.reviews.length||!d.count) process.exit(1)'; then
+    echo "NOT deployed: $F failed the sanity check (empty or malformed). Left uncommitted."; return 1
+  fi
+  git commit -q -m "Google reviews: weekly sync $TODAY ($(node -p 'require("./'"$F"'").count') reviews)" -- "$F" || { echo "NOT deployed: commit failed."; return 1; }
+  [ "$(git branch --show-current)" = "main" ] || { echo "NOT deployed: repo isn't on main. Review file committed."; return 1; }
+  git fetch -q origin main || { echo "NOT deployed: git fetch failed. Review file committed."; return 1; }
+  if [ -n "$(git log --oneline main..origin/main)" ]; then echo "NOT deployed: origin/main has commits this Mac doesn't. Review file committed; pull, then deploy."; return 1; fi
+  local other
+  other="$(git diff --name-only origin/main..main | grep -vE '^(social/|operations/|\.claude/|src/data/google-reviews\.json$|src/data/projects/[^/]+\.json$|public/images/projects/)' || true)"
+  # Project pages may go out only as drafts (production hides them); one newly marked published needs Brittany's OK.
+  local f
+  for f in $(git diff --name-only origin/main..main -- src/data/projects); do
+    if git show "main:$f" 2>/dev/null | grep -q '"status": "published"' && ! git show "origin/main:$f" 2>/dev/null | grep -q '"status": "published"'; then
+      other="$other $f(published)"
+    fi
+  done
+  if [ -n "$other" ]; then
+    echo "NOT deployed: other unpushed changes would go live with it ($(echo "$other" | head -5 | tr '\n' ' ')). Review file committed; deploy by hand once those are OK."; return 1
+  fi
+  git push -q origin main && echo "Deployed: /reviews now shows $(node -p 'require("./'"$F"'").count') reviews (Vercel builds in about a minute)." || { echo "NOT deployed: git push failed. Review file committed."; return 1; }
+}
 if [ "$MODE" = "run" ]; then
-  { echo; echo "## Google reviews (wrapper)"; npm run --silent reviews:sync 2>&1 | sed 's/^/    /'; } >> "$RUNS/$TODAY-report.md" 2>&1 || true
+  {
+    echo; echo "## Google reviews (wrapper)"; sed 's/^/    /' "$REVIEWS_OUT" 2>/dev/null
+    echo; echo "### Review page"; publish_reviews 2>&1 | sed 's/^/    /'
+  } >> "$RUNS/$TODAY-report.md" 2>&1 || true
+fi
+
+# Draft project pages (2026-11-18): push main to the projects-preview branch so Vercel builds a preview where drafts
+# show, and prepare the dashboard to-do (sent by the 4:10am daily job). Production hides drafts, so this never
+# publishes anything. Only committed drafts reach the preview.
+if [ "$MODE" = "run" ]; then
+  {
+    echo; echo "## Project pages (wrapper)"
+    if grep -lq '"status": "draft"' src/data/projects/*.json 2>/dev/null; then
+      if git push -q -f origin main:projects-preview; then
+        echo "    Preview pushed: https://french-roofing-git-projects-preview-bb290s-projects.vercel.app/past-projects (builds in about a minute)"
+      else echo "    Preview NOT pushed (git push failed)."; fi
+      npm run --silent projects -- --todo 2>&1 | sed 's/^/    /'
+    else echo "    No draft project pages waiting."; fi
+  } >> "$RUNS/$TODAY-report.md" 2>&1 || true
 fi
 
 # Send the prepared dashboard batches. The main run can't: ArtifactData writes ask for approval and nobody is there.

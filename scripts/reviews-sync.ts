@@ -9,7 +9,8 @@
 
   The site reads the JSON at build time, so the review text is in the page HTML for search engines. Saving new
   reviews here does NOT publish them: the site only changes when this file is committed and deployed (human review
-  before publish). When there are new reviews it also writes a dashboard to-do for Brittany
+  before publish); since 2026-11-18 the Wednesday wrapper (scripts/weekly-kewl.sh) commits and deploys it on its own.
+  New reviews without a reply (or under 5 stars) become a dashboard to-do to reply on Google
   (../../tools/unbound-hq/sync/out/review-todos-french-roofing.json, sent by the daily indexing job).
 
   Names are shortened to first name + last initial, as on the review posts. Review and reply text is kept exactly
@@ -115,22 +116,24 @@ async function main() {
   mkdirSync(dirname(OUT), { recursive: true });
   writeFileSync(OUT, JSON.stringify(data, null, 2) + "\n");
 
-  // Dashboard to-do for Brittany when there's something new (first run seeds the file, no to-do).
-  if (fresh.length && before.reviews.length) {
-    const tid = "fr-new-reviews-" + createHash("sha1").update(fresh.map((r) => r.id).join()).digest("hex").slice(0, 8);
-    const low = fresh.filter((r) => (r.stars ?? 5) < 5);
+  // Dashboard to-do (changed 2026-11-18): the Wednesday run now posts the review on frenchroofing.com/reviews by itself
+  // and turns written 4-5 star reviews into review posts, so the only thing left for Brittany is a reply on Google.
+  // A to-do is made only when a new review has no reply yet or is under 5 stars (first run seeds the file, no to-do).
+  const needsReply = fresh.filter((r) => !r.reply || (r.stars ?? 5) < 5);
+  if (needsReply.length && before.reviews.length) {
+    const tid = "fr-new-reviews-" + createHash("sha1").update(needsReply.map((r) => r.id).join()).digest("hex").slice(0, 8);
+    const low = needsReply.filter((r) => (r.stars ?? 5) < 5);
     const todo = {
       client: "french-roofing",
-      kind: "decide",
-      title: `${fresh.length} new Google review${fresh.length > 1 ? "s" : ""} ready for frenchroofing.com`,
+      kind: "todo",
+      title: `Reply on Google to ${needsReply.length} new French Roofing review${needsReply.length > 1 ? "s" : ""}`,
       detail:
-        fresh.map((r) => `${r.stars} stars, ${r.name} (${r.date})`).join("; ") +
-        (low.length ? `. Includes ${low.length} under 5 stars: reply on Google first.` : ".") +
-        " The weekly sync saved them in the site's review file; the website only changes after you say go.",
+        needsReply.map((r) => `${r.stars} stars, ${r.name} (${r.date})${r.reply ? "" : ", no reply yet"}`).join("; ") +
+        (low.length ? `. ${low.length} under 5 stars: these never become social posts, but they do show on /reviews with your reply.` : ".") +
+        " The review is already on frenchroofing.com/reviews (Wednesday run); your reply shows there after the next run.",
       steps: [
-        "Open the review(s) on Google and reply if you haven't (every review on the site shows your reply).",
-        'Tell Claude "publish the new French Roofing reviews". Claude commits the review file and deploys.',
-        "Kewl makes a post for every review: drop the review into the next Kewl run as usual.",
+        "Open French Roofing on Google (link below) and find the review.",
+        "Reply in French Roofing's voice: thank them by first name and mention the work if they did.",
       ],
       link: { label: "French Roofing on Google", url: data.googleUrl },
       at: new Date().toISOString().slice(0, 10),
