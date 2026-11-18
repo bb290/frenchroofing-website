@@ -1,0 +1,48 @@
+{
+  "slug": "roof-replacement-troutdale-2025-06",
+  "status": "draft",
+  "service": "roof-replacement",
+  "title": "Roof Replacement in Troutdale, OR",
+  "city": "Troutdale",
+  "state": "OR",
+  "completed": "2025-06",
+  "material": "CertainTeed Landmark",
+  "roofType": "Architectural asphalt shingle",
+  "summary": "In June 2025, French Roofing replaced the shingle roof on a home in Troutdale, OR. The crew tore the old gray shingles off down to the deck, laid new synthetic underlayment, and installed brown CertainTeed Landmark architectural shingles with new ridge cap, roof vents and pipe flashings.",
+  "scope": [
+    "Tore off the old shingles down to the roof deck",
+    "Installed APOC Weather-Armor Cross Over synthetic underlayment",
+    "Installed new CertainTeed Landmark architectural shingles",
+    "Capped the ridges and hips with new ridge cap shingles",
+    "New roof vents and new flashing boots around the plumbing vent pipes"
+  ],
+  "photos": [
+    {
+      "src": "/images/projects/roof-replacement-troutdale-2025-06/01.webp",
+      "alt": "Finished brown CertainTeed Landmark shingle roof with new ridge cap and roof vents on a home in Troutdale, OR",
+      "caption": "The finished roof, with new ridge cap and vents."
+    },
+    {
+      "src": "/images/projects/roof-replacement-troutdale-2025-06/02.webp",
+      "alt": "New flashing boot around a plumbing vent pipe and a new roof vent on brown architectural shingles in Troutdale, OR",
+      "caption": "A new pipe flashing and roof vent on the new shingles."
+    },
+    {
+      "src": "/images/projects/roof-replacement-troutdale-2025-06/03.webp",
+      "alt": "Tear-off in progress in Troutdale, OR, with bare roof deck on one side and new synthetic underlayment on the other",
+      "caption": "Old roof off, new underlayment going down."
+    },
+    {
+      "src": "/images/projects/roof-replacement-troutdale-2025-06/04.webp",
+      "alt": "The old gray, weathered shingle roof and hip ridge before the replacement in Troutdale, OR",
+      "caption": "Before: the old gray shingles."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What shingles went on this Troutdale roof?",
+      "answer": "CertainTeed Landmark architectural shingles in a brown blend, over APOC Weather-Armor Cross Over synthetic underlayment, with new ridge cap on the ridges and hips."
+    }
+  ],
+  "addedAt": "2026-11-18"
+}

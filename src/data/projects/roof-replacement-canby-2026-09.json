@@ -1,0 +1,59 @@
+{
+  "slug": "roof-replacement-canby-2026-09",
+  "status": "draft",
+  "service": "roof-replacement",
+  "title": "Roof Replacement in Canby, OR",
+  "city": "Canby",
+  "state": "OR",
+  "completed": "2026-09",
+  "material": "CertainTeed Landmark",
+  "roofType": "Architectural asphalt shingle",
+  "summary": "In September 2026, French Roofing replaced a shingle roof in Canby, OR. The crew tore off the old gray shingles and installed new CertainTeed Landmark architectural shingles, finished with ridge cap along the ridge. The result is a clean, even gray roof from the eaves up to the ridge.",
+  "scope": [
+    "Tore off the old shingles",
+    "Installed new CertainTeed Landmark architectural shingles",
+    "Capped the ridge with new ridge cap shingles"
+  ],
+  "body": [
+    "The before and after below were taken from the same spot on the roof. In the first, tear-off is just starting along the bottom edge of the old shingles. In the second, the same roof plane is finished in new Landmark shingles."
+  ],
+  "photos": [
+    {
+      "src": "/images/projects/roof-replacement-canby-2026-09/01.webp",
+      "alt": "Finished roof of new gray CertainTeed Landmark architectural shingles with vent pipes in Canby, OR",
+      "caption": "The finished roof: new CertainTeed Landmark shingles."
+    },
+    {
+      "src": "/images/projects/roof-replacement-canby-2026-09/02.webp",
+      "alt": "Old gray shingles with a tear-off shovel starting to strip the bottom edge of the roof in Canby, OR",
+      "caption": "Before: tear-off starting on the old shingles.",
+      "stage": "before"
+    },
+    {
+      "src": "/images/projects/roof-replacement-canby-2026-09/03.webp",
+      "alt": "Same roof plane finished in new gray CertainTeed Landmark shingles with box vents in Canby, OR",
+      "caption": "After: the same spot with new shingles.",
+      "stage": "after"
+    },
+    {
+      "src": "/images/projects/roof-replacement-canby-2026-09/04.webp",
+      "alt": "New ridge cap shingles, box vents and metal vent stacks on the finished roof in Canby, OR",
+      "caption": "New ridge cap along the ridge."
+    },
+    {
+      "src": "/images/projects/roof-replacement-canby-2026-09/05.webp",
+      "alt": "New gray architectural shingles covering a roof plane next to a tree in Canby, OR"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Were the old shingles removed on this Canby job?",
+      "answer": "Yes. The crew tore off the old shingles before the new roof went on, so the new shingles aren't laid over an old layer."
+    },
+    {
+      "question": "What shingles were installed?",
+      "answer": "CertainTeed Landmark architectural shingles in gray, with ridge cap shingles along the ridge."
+    }
+  ],
+  "addedAt": "2026-11-18"
+}

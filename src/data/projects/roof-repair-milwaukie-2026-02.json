@@ -1,0 +1,40 @@
+{
+  "slug": "roof-repair-milwaukie-2026-02",
+  "status": "draft",
+  "service": "roof-repair",
+  "title": "Roof Repair in Milwaukie, OR",
+  "city": "Milwaukie",
+  "state": "OR",
+  "completed": "2026-02",
+  "roofType": "Architectural asphalt shingle",
+  "summary": "In February 2026, French Roofing repaired a roof on a home in Milwaukie, OR. A low-slope section next to the shingled roof had a stained white surface with standing water and leaves on it. After the repair, that section is covered in new gray architectural shingles that run out to the roof edge.",
+  "scope": [
+    "Covered the stained low-slope section with new gray architectural shingles",
+    "Ran the new shingles out to the metal edge along the back of the roof"
+  ],
+  "body": [
+    "Before the repair, the low-slope section at the back of the house had a white surface with dark stains, leaves, and water sitting in one corner. The photos below show that section before, and the same area afterward with new shingles on it."
+  ],
+  "photos": [
+    {
+      "src": "/images/projects/roof-repair-milwaukie-2026-02/01.webp",
+      "alt": "New gray architectural shingles covering the low-slope section at the back of a home in Milwaukie, OR",
+      "caption": "After: the low-slope section with new shingles."
+    },
+    {
+      "src": "/images/projects/roof-repair-milwaukie-2026-02/02.webp",
+      "alt": "Stained white low-slope roof section beside a gray shingle roof before the repair in Milwaukie, OR",
+      "caption": "Before: the stained low-slope section next to the shingled roof."
+    },
+    {
+      "src": "/images/projects/roof-repair-milwaukie-2026-02/03.webp",
+      "alt": "Close view of the white low-slope roof surface with dark stains, leaves and standing water in Milwaukie, OR",
+      "caption": "Before: stains, leaves and standing water on the old surface."
+    },
+    {
+      "src": "/images/projects/roof-repair-milwaukie-2026-02/04.webp",
+      "alt": "Two gray shingle roof planes meeting above a backyard deck, with a metal pipe flashing, in Milwaukie, OR"
+    }
+  ],
+  "addedAt": "2026-11-18"
+}

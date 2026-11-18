@@ -1,0 +1,58 @@
+{
+  "slug": "roof-replacement-portland-2024-10",
+  "status": "draft",
+  "service": "roof-replacement",
+  "title": "Roof Replacement in Portland, OR",
+  "city": "Portland",
+  "state": "OR",
+  "completed": "2024-10",
+  "material": "CertainTeed Landmark",
+  "roofType": "Architectural asphalt shingle",
+  "summary": "In October 2024, French Roofing replaced the worn shingle roof on a home in Portland, OR. The crew tore the old shingles off down to the deck and installed new CertainTeed Landmark shingles over synthetic underlayment, with new valley metal, flashings, roof vents and hip and ridge cap.",
+  "scope": [
+    "Tore off the old shingles down to the roof deck and re-nailed loose decking",
+    "Installed synthetic underlayment, drip edge, gutter apron and starter strip",
+    "Installed new CertainTeed Landmark shingles with metal valleys",
+    "New step flashing, counter flashing at the masonry and new pipe flashings",
+    "New ridge vents and roof vents, finished with hip and ridge cap shingles"
+  ],
+  "body": [
+    "Before the work, the old shingles had gone faded and streaky across the roof. The first two photos below are taken from about the same spot by the chimney, before and after."
+  ],
+  "photos": [
+    {
+      "src": "/images/projects/roof-replacement-portland-2024-10/01.webp",
+      "alt": "Finished dark gray CertainTeed Landmark shingle roof with new hip cap, roof vents and a brick chimney in Portland, OR",
+      "caption": "After: new shingles, hip cap and roof vents.",
+      "stage": "after"
+    },
+    {
+      "src": "/images/projects/roof-replacement-portland-2024-10/02.webp",
+      "alt": "The old faded shingle roof by the same brick chimney and vent pipe before the replacement in Portland, OR",
+      "caption": "Before: the old shingles by the chimney.",
+      "stage": "before"
+    },
+    {
+      "src": "/images/projects/roof-replacement-portland-2024-10/03.webp",
+      "alt": "New gray architectural shingles with a metal valley, skylight and ridge cap on a home in Portland, OR",
+      "caption": "Metal valley and ridge cap on the new roof."
+    },
+    {
+      "src": "/images/projects/roof-replacement-portland-2024-10/04.webp",
+      "alt": "New shingles, hip cap, a metal valley and new roof vents seen from the top of the roof in Portland, OR",
+      "caption": "New roof vents and hip cap."
+    },
+    {
+      "src": "/images/projects/roof-replacement-portland-2024-10/05.webp",
+      "alt": "Close view of the worn, streaky old shingles before the roof replacement in Portland, OR",
+      "caption": "Before: up close, the old shingles were worn."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What shingles went on this Portland roof?",
+      "answer": "CertainTeed Landmark shingles, over synthetic underlayment, with metal valleys, new flashings, new roof vents and hip and ridge cap."
+    }
+  ],
+  "addedAt": "2026-11-18"
+}

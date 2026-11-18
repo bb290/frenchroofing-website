@@ -1,0 +1,43 @@
+{
+  "slug": "roof-replacement-gladstone-2024-09",
+  "status": "draft",
+  "service": "roof-replacement",
+  "title": "Roof Replacement in Gladstone, OR",
+  "city": "Gladstone",
+  "state": "OR",
+  "completed": "2024-09",
+  "material": "CertainTeed Landmark",
+  "roofType": "Architectural asphalt shingle",
+  "summary": "In September 2024, French Roofing replaced the roofs on two outbuildings at a home in Gladstone, OR. The crew tore off the old roofing down to the wood deck, laid synthetic underlayment, and installed new CertainTeed Landmark shingles. The main house roof was in good condition, so it got a cleaning and treatment instead.",
+  "scope": [
+    "Tore off the old roofing on two outbuildings down to the wood deck",
+    "Installed synthetic underlayment, painted drip edge and a self-sealing starter course",
+    "Installed new CertainTeed Landmark shingles with standard ridge cap",
+    "Cleaned and treated the main house roof",
+    "Hauled away the debris and ran a magnet over the yard"
+  ],
+  "photos": [
+    {
+      "src": "/images/projects/roof-replacement-gladstone-2024-09/01.webp",
+      "alt": "Small red outbuilding with a new gray CertainTeed Landmark shingle roof in a backyard in Gladstone, OR",
+      "caption": "One of the outbuildings with its new roof."
+    },
+    {
+      "src": "/images/projects/roof-replacement-gladstone-2024-09/02.webp",
+      "alt": "New gray architectural shingles and ridge cap on an outbuilding roof in Gladstone, OR",
+      "caption": "New shingles and ridge cap."
+    },
+    {
+      "src": "/images/projects/roof-replacement-gladstone-2024-09/03.webp",
+      "alt": "Red outbuilding with a worn old roof partly covered by a blue tarp before the work in Gladstone, OR",
+      "caption": "Before: the old outbuilding roof under a tarp."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Why didn't the house get a new roof too?",
+      "answer": "The main house roof was in good condition, so it was cleaned and treated while the two outbuildings got new roofs."
+    }
+  ],
+  "addedAt": "2026-11-18"
+}

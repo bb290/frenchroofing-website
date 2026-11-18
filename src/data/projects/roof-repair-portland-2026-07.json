@@ -1,0 +1,41 @@
+{
+  "slug": "roof-repair-portland-2026-07",
+  "status": "draft",
+  "service": "roof-repair",
+  "title": "Roof Repair in Portland, OR",
+  "city": "Portland",
+  "state": "OR",
+  "completed": "2026-07",
+  "roofType": "Asphalt shingle",
+  "summary": "In July 2026, French Roofing repaired a shingle roof on a home in Portland, OR. On a lower roof beside a wall and downspout, the cracked and torn shingles came out and new shingles were patched in, tied into the rows around them. The new shingles are lighter than the weathered roof around them, so the repair is easy to spot in the photos.",
+  "scope": [
+    "Pulled the cracked and torn shingles beside the wall and downspout",
+    "Patched in new shingles, tied into the existing rows"
+  ],
+  "photos": [
+    {
+      "src": "/images/projects/roof-repair-portland-2026-07/01.webp",
+      "alt": "Lighter new shingles patched into a weathered shingle roof beside a wall and downspout in Portland, OR",
+      "caption": "After: new shingles patched in beside the downspout.",
+      "stage": "after"
+    },
+    {
+      "src": "/images/projects/roof-repair-portland-2026-07/02.webp",
+      "alt": "Cracked and torn shingles pulled up with a pry bar beside a downspout on a shingle roof in Portland, OR",
+      "caption": "Before: the cracked and torn shingles being pulled.",
+      "stage": "before"
+    },
+    {
+      "src": "/images/projects/roof-repair-portland-2026-07/03.webp",
+      "alt": "Gray shingle roof running out to its edge above a lower roof and garden bed in Portland, OR",
+      "caption": "Another stretch of the roof, out to the edge."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Was the whole roof replaced on this Portland job?",
+      "answer": "No. This was a repair: the damaged shingles beside the wall and downspout came out and new shingles were patched into the existing roof."
+    }
+  ],
+  "addedAt": "2026-11-18"
+}

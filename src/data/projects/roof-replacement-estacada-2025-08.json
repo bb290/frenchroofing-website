@@ -1,0 +1,53 @@
+{
+  "slug": "roof-replacement-estacada-2025-08",
+  "status": "draft",
+  "service": "roof-replacement",
+  "title": "Roof Replacement in Estacada, OR",
+  "city": "Estacada",
+  "state": "OR",
+  "completed": "2025-08",
+  "material": "CertainTeed Landmark",
+  "roofType": "Architectural asphalt shingle",
+  "summary": "In August 2025, French Roofing replaced the shingle roof on a home in Estacada, OR. The crew tore the old brown shingles off down to the deck, laid new underlayment, and installed gray CertainTeed Landmark architectural shingles with new ridge cap, roof vents and pipe flashings.",
+  "scope": [
+    "Tore off the old shingles down to the roof deck",
+    "Installed new underlayment, drip edge and starter shingles",
+    "Installed new CertainTeed Landmark architectural shingles",
+    "Capped the ridges and hips with new ridge cap shingles",
+    "New roof vents and new flashing boots around the plumbing vent pipes"
+  ],
+  "photos": [
+    {
+      "src": "/images/projects/roof-replacement-estacada-2025-08/01.webp",
+      "alt": "Finished gray CertainTeed Landmark shingle roof with new roof vents and a skylight on a home in Estacada, OR",
+      "caption": "The finished roof: new gray Landmark shingles."
+    },
+    {
+      "src": "/images/projects/roof-replacement-estacada-2025-08/02.webp",
+      "alt": "A full roof plane of new gray architectural shingles in Estacada, OR",
+      "caption": "Clean, even rows on the new roof."
+    },
+    {
+      "src": "/images/projects/roof-replacement-estacada-2025-08/03.webp",
+      "alt": "New gray shingles and pipe flashings on two planes of the finished roof in Estacada, OR",
+      "caption": "New pipe flashings on the finished roof."
+    },
+    {
+      "src": "/images/projects/roof-replacement-estacada-2025-08/04.webp",
+      "alt": "The old brown shingle roof with roof vents and metal flues before the replacement in Estacada, OR",
+      "caption": "Before: the old brown shingles."
+    },
+    {
+      "src": "/images/projects/roof-replacement-estacada-2025-08/05.webp",
+      "alt": "Close view of the worn brown shingles on the old roof in Estacada, OR",
+      "caption": "Before: up close, the old shingles were worn."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What shingles went on this Estacada roof?",
+      "answer": "CertainTeed Landmark architectural shingles in gray, replacing the old brown shingles, with new ridge cap on the ridges and hips."
+    }
+  ],
+  "addedAt": "2026-11-18"
+}

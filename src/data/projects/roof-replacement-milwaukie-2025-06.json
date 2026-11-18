@@ -1,0 +1,52 @@
+{
+  "slug": "roof-replacement-milwaukie-2025-06",
+  "status": "draft",
+  "service": "roof-replacement",
+  "title": "Roof Replacement in Milwaukie, OR",
+  "city": "Milwaukie",
+  "state": "OR",
+  "completed": "2025-06",
+  "material": "CertainTeed Landmark",
+  "roofType": "Architectural asphalt shingle",
+  "summary": "In June 2025, French Roofing replaced a worn shingle roof on a home in Milwaukie, OR. The crew tore off the old shingles down to the deck, added self-adhesive underlayment along the eaves and valleys, new metal valley flashing, and installed dark CertainTeed Landmark architectural shingles with new ridge cap.",
+  "scope": [
+    "Tore off the old shingles down to the roof deck",
+    "Self-adhesive underlayment along the eaves and valleys, with synthetic underlayment over the rest of the deck",
+    "New metal valley flashing where roof sections meet",
+    "Installed new CertainTeed Landmark architectural shingles and ridge cap",
+    "New flashing boots around the plumbing vent pipes",
+    "Added the CertainTeed 4 Star warranty upgrade"
+  ],
+  "body": [
+    "Before the work started, the old shingles were worn and faded, leaves and needles had piled up in a valley, and the metal flashing around a vent pipe had rusted. The photos below go from the finished roof back to what the crew found."
+  ],
+  "photos": [
+    {
+      "src": "/images/projects/roof-replacement-milwaukie-2025-06/01.webp",
+      "alt": "Finished roof with new dark CertainTeed Landmark shingles and roof vents above green siding in Milwaukie, OR",
+      "caption": "The finished roof: new CertainTeed Landmark shingles."
+    },
+    {
+      "src": "/images/projects/roof-replacement-milwaukie-2025-06/02.webp",
+      "alt": "Old worn shingles with leaves and pine needles piled in a roof valley before the replacement in Milwaukie, OR",
+      "caption": "Before: debris piled up in a valley on the old roof."
+    },
+    {
+      "src": "/images/projects/roof-replacement-milwaukie-2025-06/03.webp",
+      "alt": "Rusted metal flashing around a plumbing vent pipe on the old shingle roof in Milwaukie, OR",
+      "caption": "Before: rusted flashing around a vent pipe."
+    },
+    {
+      "src": "/images/projects/roof-replacement-milwaukie-2025-06/04.webp",
+      "alt": "Faded, weathered shingles and ridge cap on the old roof before the tear-off in Milwaukie, OR",
+      "caption": "Before: faded, weathered shingles."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What went under the new shingles on this Milwaukie roof?",
+      "answer": "Self-adhesive underlayment along the eaves and valleys, synthetic underlayment over the rest of the deck, and new metal flashing in the valleys."
+    }
+  ],
+  "addedAt": "2026-11-18"
+}

@@ -1,0 +1,43 @@
+{
+  "slug": "roof-replacement-portland-2025-05",
+  "status": "draft",
+  "service": "roof-replacement",
+  "title": "Roof Replacement in Portland, OR",
+  "city": "Portland",
+  "state": "OR",
+  "completed": "2025-05",
+  "material": "White TPO membrane",
+  "roofType": "Low-slope (flat) TPO membrane",
+  "summary": "In May 2025, French Roofing replaced the flat roof on a building in Portland, OR. The crew tore off the old roofing, screwed down half-inch dense deck board for fire protection, and covered the roof in a new white TPO membrane, with new TPO boots on the vent pipes and TPO breather vents.",
+  "scope": [
+    "Tore off all layers of the old roofing",
+    "Installed 1/2 inch dense deck board for fire protection, fastened with 2.5 inch screws and plates",
+    "Installed a new white TPO membrane over the dense deck",
+    "New TPO boots (witch hats) on the vent pipes and new TPO breather vents",
+    "Cleaned out the gutters, hauled away the debris and ran a magnet over the grounds for nails"
+  ],
+  "photos": [
+    {
+      "src": "/images/projects/roof-replacement-portland-2025-05/01.webp",
+      "alt": "New white TPO membrane laid across a flat roof around rooftop HVAC units in Portland, OR, with a roll of TPO in front",
+      "caption": "New white TPO membrane going down across the roof."
+    },
+    {
+      "src": "/images/projects/roof-replacement-portland-2025-05/02.webp",
+      "alt": "Dense deck board screwed down with round plates beside finished white TPO membrane on a flat roof in Portland, OR",
+      "caption": "Dense deck board fastened with screws and plates, ready for the membrane."
+    },
+    {
+      "src": "/images/projects/roof-replacement-portland-2025-05/03.webp",
+      "alt": "Old flat roof with seams, cracks and patches around rooftop HVAC units before the replacement in Portland, OR",
+      "caption": "Before: the old flat roof."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What went under the new TPO on this Portland flat roof?",
+      "answer": "Half-inch dense deck board, screwed down with 2.5 inch screws and plates, for fire protection. The white TPO membrane went on over it."
+    }
+  ],
+  "addedAt": "2026-11-18"
+}

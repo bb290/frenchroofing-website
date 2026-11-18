@@ -1,0 +1,60 @@
+{
+  "slug": "maintenance-portland-2024-10",
+  "status": "draft",
+  "service": "maintenance",
+  "title": "Roof Maintenance in Portland, OR",
+  "city": "Portland",
+  "state": "OR",
+  "completed": "2024-10",
+  "roofType": "Asphalt shingle with a low-slope section",
+  "summary": "In October 2024, French Roofing did a maintenance visit on a shingle roof in Portland, OR. The crew cleaned and treated the roof, cleared the moss, re-caulked and re-sealed the chimney and flashings, and cleaned out all the gutters, then issued a 5-year roof certification.",
+  "scope": [
+    "Cleaned the roof and cleared the moss",
+    "Treated the roof for moss",
+    "Re-caulked and re-sealed the chimney and flashings",
+    "Cleaned out all the gutters",
+    "Issued a 5-year roof certification"
+  ],
+  "body": [
+    "Before the visit, moss had settled into the hip lines and the gutters were full of leaves and debris. The photos show the moss treatment going down, the fresh sealant on the chimney, and the gutters cleaned out."
+  ],
+  "photos": [
+    {
+      "src": "/images/projects/maintenance-portland-2024-10/01.webp",
+      "alt": "Gray shingle roof with clean hip lines and metal valleys after a maintenance visit in Portland, OR",
+      "caption": "Hip lines clear of moss."
+    },
+    {
+      "src": "/images/projects/maintenance-portland-2024-10/02.webp",
+      "alt": "Moss treatment spread along a gray shingle roof during a maintenance visit in Portland, OR",
+      "caption": "Moss treatment going down across the roof."
+    },
+    {
+      "src": "/images/projects/maintenance-portland-2024-10/03.webp",
+      "alt": "Fresh black sealant around the top of a brick chimney after re-sealing in Portland, OR",
+      "caption": "The chimney top, freshly re-sealed."
+    },
+    {
+      "src": "/images/projects/maintenance-portland-2024-10/04.webp",
+      "alt": "Cleaned-out gutter running between a shingle roof and a low-slope roof in Portland, OR",
+      "caption": "Gutter cleaned out."
+    },
+    {
+      "src": "/images/projects/maintenance-portland-2024-10/05.webp",
+      "alt": "Gutter full of leaves and debris under overhanging branches before cleaning in Portland, OR",
+      "caption": "Before: debris built up in the gutter."
+    },
+    {
+      "src": "/images/projects/maintenance-portland-2024-10/06.webp",
+      "alt": "Moss growing along the hip line of a gray shingle roof before maintenance in Portland, OR",
+      "caption": "Before: moss along the hip."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What did this Portland maintenance visit include?",
+      "answer": "Cleaning and treating the roof, clearing the moss, re-caulking and re-sealing the chimney and flashings, and cleaning out all the gutters. A 5-year roof certification was issued after the visit."
+    }
+  ],
+  "addedAt": "2026-11-18"
+}

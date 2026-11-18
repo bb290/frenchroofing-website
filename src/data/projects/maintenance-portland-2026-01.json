@@ -1,0 +1,52 @@
+{
+  "slug": "maintenance-portland-2026-01",
+  "status": "draft",
+  "service": "maintenance",
+  "title": "Roof Maintenance in Portland, OR",
+  "city": "Portland",
+  "state": "OR",
+  "completed": "2026-01",
+  "roofType": "Low-slope membrane roof",
+  "summary": "In January 2026, French Roofing did general maintenance on a low-slope membrane roof on a home in Portland, OR. The crew cleared leaves and debris off the roof and rinsed the membrane down with a hose, leaving the surface around the chimney, vents and skylights clear.",
+  "scope": [
+    "Cleared leaves and debris off the low-slope roof",
+    "Rinsed the roof membrane down with a hose"
+  ],
+  "body": [
+    "Before the visit, water was sitting in a few low spots on the roof, with leaves and a film of dirt collected in it. The later photos show the same roof rinsed and clear, still drying in the sun."
+  ],
+  "photos": [
+    {
+      "src": "/images/projects/maintenance-portland-2026-01/01.webp",
+      "alt": "Clean gray membrane roof with a vent pipe and a roof vent, looking out over green lawns and trees in Portland, OR",
+      "caption": "The membrane after its maintenance visit."
+    },
+    {
+      "src": "/images/projects/maintenance-portland-2026-01/02.webp",
+      "alt": "Wet low-slope membrane roof near a stone chimney, with water and leaves sitting on it, before maintenance in Portland, OR",
+      "caption": "Before: water and leaves sitting near the chimney.",
+      "stage": "before"
+    },
+    {
+      "src": "/images/projects/maintenance-portland-2026-01/03.webp",
+      "alt": "The same low-slope roof area by the stone chimney after rinsing, clear of leaves and drying in the sun in Portland, OR",
+      "caption": "After: rinsed and clear by the chimney.",
+      "stage": "after"
+    },
+    {
+      "src": "/images/projects/maintenance-portland-2026-01/04.webp",
+      "alt": "Low spot on a gray membrane roof holding water, leaves and a film of dirt near a skylight in Portland, OR",
+      "caption": "Before: leaves and dirt collected in a low spot."
+    },
+    {
+      "src": "/images/projects/maintenance-portland-2026-01/05.webp",
+      "alt": "Freshly rinsed membrane roof with a garden hose and a skylight in Portland, OR",
+      "caption": "The rinsed membrane, with the hose still up on the roof."
+    },
+    {
+      "src": "/images/projects/maintenance-portland-2026-01/06.webp",
+      "alt": "Long run of gray membrane roof along the roof edge after maintenance in Portland, OR"
+    }
+  ],
+  "addedAt": "2026-11-18"
+}

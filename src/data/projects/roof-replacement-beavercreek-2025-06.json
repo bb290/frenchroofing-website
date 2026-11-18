@@ -1,0 +1,48 @@
+{
+  "slug": "roof-replacement-beavercreek-2025-06",
+  "status": "draft",
+  "service": "roof-replacement",
+  "title": "Roof Replacement in Beavercreek, OR",
+  "city": "Beavercreek",
+  "state": "OR",
+  "completed": "2025-06",
+  "material": "CertainTeed Landmark",
+  "roofType": "Architectural asphalt shingle",
+  "summary": "In June 2025, French Roofing replaced the shingle roof on a home in Beavercreek, OR. The crew tore the old roof off down to the deck, swapped in new plywood where the deck needed it, laid Safeguard 30 hybrid underlayment, and installed new CertainTeed Landmark architectural shingles with new ridge cap and pipe flashings.",
+  "scope": [
+    "Tore off the old shingles down to the roof deck",
+    "Replaced sections of roof deck with new plywood",
+    "Installed Safeguard 30 hybrid underlayment over the deck",
+    "Installed new drip edge, starter shingles and CertainTeed Landmark architectural shingles",
+    "New ridge cap and new flashing boots around the plumbing vent pipes"
+  ],
+  "photos": [
+    {
+      "src": "/images/projects/roof-replacement-beavercreek-2025-06/01.webp",
+      "alt": "New dark CertainTeed Landmark shingles going on over Safeguard 30 underlayment on a roof in Beavercreek, OR",
+      "caption": "New shingles going on over the new underlayment."
+    },
+    {
+      "src": "/images/projects/roof-replacement-beavercreek-2025-06/02.webp",
+      "alt": "The old gray shingle roof with a brick chimney and roof vents before the replacement in Beavercreek, OR",
+      "caption": "Before: the old shingle roof."
+    },
+    {
+      "src": "/images/projects/roof-replacement-beavercreek-2025-06/03.webp",
+      "alt": "Another view of the old shingle roof, chimney and gable in Beavercreek, OR, before the tear-off",
+      "caption": "Before: another side of the old roof."
+    },
+    {
+      "src": "/images/projects/roof-replacement-beavercreek-2025-06/04.webp",
+      "alt": "Brick chimney on the old shingle roof in Beavercreek, OR, before the new roof went on",
+      "caption": "Before: the chimney on the old roof."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What shingles were installed on this Beavercreek roof?",
+      "answer": "CertainTeed Landmark architectural shingles, over Safeguard 30 hybrid underlayment, finished with new ridge cap."
+    }
+  ],
+  "addedAt": "2026-11-18"
+}

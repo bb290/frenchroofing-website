@@ -1,0 +1,53 @@
+{
+  "slug": "roof-replacement-portland-2026-08",
+  "status": "draft",
+  "service": "roof-replacement",
+  "title": "Roof Replacement in Portland, OR",
+  "city": "Portland",
+  "state": "OR",
+  "completed": "2026-08",
+  "roofType": "Architectural asphalt shingle",
+  "summary": "In August 2026, French Roofing replaced the roof on a home in Portland, OR. The old reddish brown three-tab shingles were replaced with new brown architectural asphalt shingles, and the plumbing vent pipes got new flashings. The finished roof has an even, layered look across every plane.",
+  "scope": [
+    "Replaced the old three-tab shingles with new architectural asphalt shingles",
+    "New flashings around the plumbing vent pipes",
+    "Shingled around the chimney and the roof vents"
+  ],
+  "body": [
+    "Before the work, the roof was covered in reddish brown three-tab shingles, and one of the vent pipes sat in a metal flashing with rust stains running down it. The new roof is a brown architectural shingle with a more textured, layered look."
+  ],
+  "photos": [
+    {
+      "src": "/images/projects/roof-replacement-portland-2026-08/01.webp",
+      "alt": "Finished roof of new brown architectural shingles with a chimney and vent pipes on a home in Portland, OR",
+      "caption": "The finished roof."
+    },
+    {
+      "src": "/images/projects/roof-replacement-portland-2026-08/02.webp",
+      "alt": "New brown architectural shingles running up to a stone chimney on a home in Portland, OR",
+      "caption": "New shingles around the chimney."
+    },
+    {
+      "src": "/images/projects/roof-replacement-portland-2026-08/03.webp",
+      "alt": "New architectural shingles with box vents and new flashings on the vent pipes in Portland, OR",
+      "caption": "New flashings on the vent pipes."
+    },
+    {
+      "src": "/images/projects/roof-replacement-portland-2026-08/04.webp",
+      "alt": "Old reddish brown three-tab shingle roof with vents before the roof replacement in Portland, OR",
+      "caption": "Before: the old three-tab shingles."
+    },
+    {
+      "src": "/images/projects/roof-replacement-portland-2026-08/05.webp",
+      "alt": "Old vent pipe in a rust-stained metal flashing on three-tab shingles before the replacement in Portland, OR",
+      "caption": "Before: an old vent pipe flashing with rust stains."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What kind of shingles went on this Portland roof?",
+      "answer": "Brown architectural asphalt shingles, replacing the old three-tab shingles that were on the roof before."
+    }
+  ],
+  "addedAt": "2026-11-18"
+}

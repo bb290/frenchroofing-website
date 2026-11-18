@@ -1,0 +1,53 @@
+{
+  "slug": "roof-replacement-gresham-2024-02",
+  "status": "draft",
+  "service": "roof-replacement",
+  "title": "Roof Replacement in Gresham, OR",
+  "city": "Gresham",
+  "state": "OR",
+  "completed": "2024-02",
+  "material": "CertainTeed Landmark",
+  "roofType": "Architectural asphalt shingle",
+  "summary": "In February 2024, French Roofing replaced the roof on a home in Gresham, OR. The crew tore off every layer of old roofing down to the wood deck, laid synthetic underlayment, and installed new CertainTeed Landmark architectural shingles with new valley metal, new wall flashings, new pipe flashings and new roof vents.",
+  "scope": [
+    "Tore off all layers of the old roof down to the wood deck",
+    "Installed synthetic underlayment, painted drip edge and gable flashing, and a self-sealing starter course",
+    "Installed CertainTeed Landmark architectural shingles, nailed in a 4 nail pattern, with standard ridge cap",
+    "New front wall and sidewall flashing, 24 inch valley metal, and new double seal flashings on the vent pipes",
+    "Replaced the attic vents with new plastic roof vents",
+    "Cleaned out the gutters, hauled away the debris and ran a magnet over the yard for nails"
+  ],
+  "photos": [
+    {
+      "src": "/images/projects/roof-replacement-gresham-2024-02/01.webp",
+      "alt": "Finished gray CertainTeed Landmark shingle roof with new roof vents and a new pipe flashing on a home in Gresham, OR",
+      "caption": "The finished roof, with new vents along the ridge and a new pipe flashing."
+    },
+    {
+      "src": "/images/projects/roof-replacement-gresham-2024-02/02.webp",
+      "alt": "New gray architectural shingles meeting at a new metal valley beside the house wall in Gresham, OR",
+      "caption": "New valley metal where two roof planes meet."
+    },
+    {
+      "src": "/images/projects/roof-replacement-gresham-2024-02/03.webp",
+      "alt": "New gray shingles on a lower roof section with two new roof vents below the upper wall in Gresham, OR",
+      "caption": "A lower roof section finished with new shingles and vents."
+    },
+    {
+      "src": "/images/projects/roof-replacement-gresham-2024-02/04.webp",
+      "alt": "New synthetic underlayment rolled out over the roof deck in a valley, with rolls of underlayment ready, in Gresham, OR",
+      "caption": "Underlayment going down over the deck after the tear-off."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Did the old roof come off on this Gresham job?",
+      "answer": "Yes. Every layer of the old roof came off down to the wood deck before the new underlayment and shingles went on."
+    },
+    {
+      "question": "What shingles were installed?",
+      "answer": "CertainTeed Landmark architectural shingles, over synthetic underlayment, with standard ridge cap."
+    }
+  ],
+  "addedAt": "2026-11-18"
+}

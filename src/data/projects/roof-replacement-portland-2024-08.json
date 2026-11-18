@@ -1,0 +1,52 @@
+{
+  "slug": "roof-replacement-portland-2024-08",
+  "status": "draft",
+  "service": "roof-replacement",
+  "title": "Roof Replacement in Portland, OR",
+  "city": "Portland",
+  "state": "OR",
+  "completed": "2024-08",
+  "roofType": "Architectural asphalt shingle",
+  "summary": "In August 2024, French Roofing replaced the roof on a home in Portland, OR. The crew tore off the old, worn shingles down to the wood deck, replaced plywood where the deck needed it, covered it in new synthetic underlayment, and installed new light gray architectural shingles.",
+  "scope": [
+    "Tore off all layers of the old roof down to the wood deck",
+    "Replaced plywood decking where it was needed",
+    "Covered the deck in Safeguard 30 hybrid underlayment",
+    "Installed new architectural shingles with standard ridge cap",
+    "Put in 24 inch valley metal, new double-seal vent pipe flashings and new plastic attic vents"
+  ],
+  "photos": [
+    {
+      "src": "/images/projects/roof-replacement-portland-2024-08/01.webp",
+      "alt": "New light gray architectural shingles covering one side of the roof next to underlayment still waiting for shingles in Portland, OR",
+      "caption": "New shingles going on, row by row."
+    },
+    {
+      "src": "/images/projects/roof-replacement-portland-2024-08/02.webp",
+      "alt": "New light gray shingles installed along the eave, with bundles of shingles staged on the ridge, in Portland, OR",
+      "caption": "One side shingled, bundles ready for the rest."
+    },
+    {
+      "src": "/images/projects/roof-replacement-portland-2024-08/03.webp",
+      "alt": "Safeguard 30 hybrid underlayment covering the roof deck beside new shingles during the roof replacement in Portland, OR",
+      "caption": "New underlayment over the deck before the shingles."
+    },
+    {
+      "src": "/images/projects/roof-replacement-portland-2024-08/04.webp",
+      "alt": "Whole roof covered in new Safeguard 30 hybrid underlayment with shingle bundles staged on top in Portland, OR",
+      "caption": "The whole deck covered in new underlayment."
+    },
+    {
+      "src": "/images/projects/roof-replacement-portland-2024-08/05.webp",
+      "alt": "Old weathered shingles with worn and blotchy granules before the roof replacement in Portland, OR",
+      "caption": "Before: the old, worn shingles."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Did the deck need any repair on this Portland roof?",
+      "answer": "Yes, some. Once the old shingles were off, the crew replaced plywood where the deck needed it before the new underlayment went down."
+    }
+  ],
+  "addedAt": "2026-11-18"
+}

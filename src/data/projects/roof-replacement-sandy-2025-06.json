@@ -1,0 +1,50 @@
+{
+  "slug": "roof-replacement-sandy-2025-06",
+  "status": "draft",
+  "service": "roof-replacement",
+  "title": "Roof Replacement in Sandy, OR",
+  "city": "Sandy",
+  "state": "OR",
+  "completed": "2025-06",
+  "material": "CertainTeed Landmark",
+  "roofType": "Architectural asphalt shingle",
+  "summary": "In June 2025, French Roofing replaced the roof on a home in Sandy, OR. The crew tore the old shingles off down to the decking, put down new plywood decking where the old deck came off, laid new underlayment and installed new CertainTeed Landmark shingles.",
+  "scope": [
+    "Tore off the old shingles down to the decking",
+    "Put down new plywood decking over the rafters where the old deck came off",
+    "Installed Safeguard 30 underlayment over the deck",
+    "New drip edge, gutter apron and starter strip along the roof edges",
+    "Installed CertainTeed Landmark shingles with hip and ridge cap",
+    "New step flashing at the walls, attic vents and pipe flashings",
+    "Cleaned up the job site and ran a magnet sweep for nails"
+  ],
+  "photos": [
+    {
+      "src": "/images/projects/roof-replacement-sandy-2025-06/01.webp",
+      "alt": "Old roof decking stripped off down to the rafters, with new plywood decking going on along both sides of the ridge in Sandy, OR",
+      "caption": "New plywood decking going on where the old deck came off."
+    },
+    {
+      "src": "/images/projects/roof-replacement-sandy-2025-06/02.webp",
+      "alt": "Tear-off in progress on a home in Sandy, OR, with old tan shingles being stripped from one side of the roof",
+      "caption": "Tear-off in progress."
+    },
+    {
+      "src": "/images/projects/roof-replacement-sandy-2025-06/03.webp",
+      "alt": "Old tan shingles and underlayment partly stripped from a roof in Sandy, OR during tear-off",
+      "caption": "Old shingles coming off."
+    },
+    {
+      "src": "/images/projects/roof-replacement-sandy-2025-06/04.webp",
+      "alt": "The old tan shingle roof on a wood-sided home in Sandy, OR before the roof replacement",
+      "caption": "Before: the old shingle roof."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Did the old decking get replaced on this Sandy job?",
+      "answer": "Yes, where it needed it. Once the old roof came off, the crew put down new plywood decking over the rafters before the underlayment and shingles went on."
+    }
+  ],
+  "addedAt": "2026-11-18"
+}

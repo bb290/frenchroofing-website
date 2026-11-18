@@ -1,0 +1,47 @@
+{
+  "slug": "roof-replacement-portland-2024-07",
+  "status": "draft",
+  "service": "roof-replacement",
+  "title": "Roof Replacement in Portland, OR",
+  "city": "Portland",
+  "state": "OR",
+  "completed": "2024-07",
+  "material": "CertainTeed Landmark",
+  "roofType": "Architectural asphalt shingle",
+  "summary": "In July 2024, French Roofing replaced the roof on a home in Portland, OR. The crew tore off the single layer of old shingles from the steep 8/12 pitch roof, laid Safeguard 30 hybrid underlayment, and installed new CertainTeed Landmark architectural shingles with new plastic roof vents and ridge cap.",
+  "scope": [
+    "Tore off the one layer of old shingles on an 8/12 pitch roof, down to the wood deck",
+    "Laid Safeguard 30 hybrid underlayment over the deck",
+    "Installed new CertainTeed Landmark architectural shingles with standard ridge cap",
+    "Replaced the attic vents with new plastic vents and put new double-seal flashings on the vent pipes"
+  ],
+  "photos": [
+    {
+      "src": "/images/projects/roof-replacement-portland-2024-07/01.webp",
+      "alt": "Finished gray CertainTeed Landmark shingle roof with new ridge cap, a row of black roof vents and a skylight in Portland, OR",
+      "caption": "The finished roof, with new vents along the ridge."
+    },
+    {
+      "src": "/images/projects/roof-replacement-portland-2024-07/02.webp",
+      "alt": "New gray architectural shingles and ridge cap with three new black roof vents on a lower roof in Portland, OR",
+      "caption": "New shingles, ridge cap and vents on the lower roof."
+    },
+    {
+      "src": "/images/projects/roof-replacement-portland-2024-07/03.webp",
+      "alt": "Safeguard 30 hybrid underlayment covering the roof with CertainTeed Landmark shingle bundles staged at the peak in Portland, OR",
+      "caption": "Underlayment down and Landmark bundles ready to go."
+    },
+    {
+      "src": "/images/projects/roof-replacement-portland-2024-07/04.webp",
+      "alt": "Lower roof covered in new Safeguard 30 hybrid underlayment before the shingles went on in Portland, OR",
+      "caption": "The lower roof in underlayment, before the shingles."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How many layers of old roofing came off?",
+      "answer": "One. The crew tore off the single layer of old shingles down to the wood deck before the new underlayment and shingles went on."
+    }
+  ],
+  "addedAt": "2026-11-18"
+}

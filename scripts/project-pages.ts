@@ -132,7 +132,10 @@ async function build(job: string) {
   const dir = join(WORK, job);
   const facts = readJson(join(dir, "facts.json"));
   const draft = readJson(join(dir, "draft.json"));
-  const close = readJson(join(CLOSEOUTS, `${job}.json`));
+  // Housecall Pro jobs have a close-out record; Drive backfill jobs (drive-<id>) keep names + street in private.json.
+  const closePath = join(CLOSEOUTS, `${job}.json`);
+  const close = existsSync(closePath) ? readJson(closePath)
+    : ((pv) => ({ customer: { fullName: pv.names.join(" ") }, address: { street: pv.street } }))(readJson(join(dir, "private.json")));
   const problems: string[] = [];
   const service = draft.service || facts.suggestedService;
   if (!SERVICES.includes(service)) problems.push(`unknown service "${service}"`);
@@ -143,7 +146,7 @@ async function build(job: string) {
   if (!Array.isArray(draft.scope) || draft.scope.length < 2) problems.push("scope needs 2+ bullets");
   if (!Array.isArray(draft.photos) || draft.photos.length < 3) problems.push("pick 3+ photos");
   const all = JSON.stringify(draft);
-  const names = [close.customer?.firstName, ...(String(close.customer?.fullName || "").split(/\s+/))].filter((n) => n && n.length > 2);
+  const names = [close.customer?.firstName, ...(String(close.customer?.fullName || "").split(/\s+/))].filter((n) => n && n.length > 2 && !/^(and|the|llc|inc|trust|family|estate|mr|mrs|ms)$/i.test(n));
   if (/[—–]/.test(all)) problems.push("em/en dash");
   if (BANNED.test(all)) problems.push(`banned word or phrase: ${all.match(BANNED)![0]}`);
   if (STREET.test(all) || all.includes(String(close.address?.street || "§§"))) problems.push("looks like a street address");

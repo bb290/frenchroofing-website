@@ -1,0 +1,60 @@
+{
+  "slug": "roof-replacement-portland-2024-09",
+  "status": "draft",
+  "service": "roof-replacement",
+  "title": "Roof Replacement in Portland, OR",
+  "city": "Portland",
+  "state": "OR",
+  "completed": "2024-09",
+  "material": "CertainTeed Landmark",
+  "roofType": "Architectural asphalt shingle",
+  "summary": "In September 2024, French Roofing replaced the roof on a home in Portland, OR. The crew tore off every layer of old shingles down to the wood deck, laid synthetic underlayment, and installed new CertainTeed Landmark architectural shingles with new plastic roof vents, new vent pipe flashings and ridge cap.",
+  "scope": [
+    "Tore off all layers of the old roof down to the wood deck",
+    "Installed synthetic underlayment, painted drip edge and gable flashing, and self-sealing starter along the eaves",
+    "Installed new CertainTeed Landmark architectural shingles, capped with standard ridge cap",
+    "Put in 24 inch valley metal and new front wall and sidewall flashing",
+    "Replaced the attic vents with new plastic vents and put new double-seal flashings on the vent pipes"
+  ],
+  "body": [
+    "The old shingles had moss and grit packed into the gaps between tabs, plus one mismatched shingle near the top. The photos below go from the old roof, through the changeover, to the finished shingles."
+  ],
+  "photos": [
+    {
+      "src": "/images/projects/roof-replacement-portland-2024-09/01.webp",
+      "alt": "Finished gray CertainTeed Landmark shingle roof with new black plastic roof vents and pipe flashings on a home in Portland, OR",
+      "caption": "The finished roof, with new vents and pipe flashings."
+    },
+    {
+      "src": "/images/projects/roof-replacement-portland-2024-09/02.webp",
+      "alt": "New ridge cap running along the peak of the new gray shingle roof, with the lower roof below, in Portland, OR",
+      "caption": "New ridge cap along the peak."
+    },
+    {
+      "src": "/images/projects/roof-replacement-portland-2024-09/03.webp",
+      "alt": "Roof replacement in progress in Portland, OR: one side covered in new underlayment, the other side still in old shingles with new materials staged on top",
+      "caption": "Midway: new underlayment on one side, old shingles still on the other."
+    },
+    {
+      "src": "/images/projects/roof-replacement-portland-2024-09/04.webp",
+      "alt": "Old gray three-tab shingles with moss and grit in the gaps before the roof replacement in Portland, OR",
+      "caption": "Before: the old shingles."
+    },
+    {
+      "src": "/images/projects/roof-replacement-portland-2024-09/05.webp",
+      "alt": "Close view of an old vent pipe flashing with rust streaks on the old shingles before the replacement in Portland, OR",
+      "caption": "Before: an old vent pipe flashing, since replaced with a new double-seal one."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Did the old roof come off, or did the new shingles go over it?",
+      "answer": "It came off. The crew tore off every layer down to the wood deck before the new underlayment and shingles went on."
+    },
+    {
+      "question": "What shingles went on this Portland roof?",
+      "answer": "CertainTeed Landmark architectural shingles, over synthetic underlayment, finished with standard ridge cap."
+    }
+  ],
+  "addedAt": "2026-11-18"
+}

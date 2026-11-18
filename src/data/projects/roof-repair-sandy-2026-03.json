@@ -1,0 +1,55 @@
+{
+  "slug": "roof-repair-sandy-2026-03",
+  "status": "draft",
+  "service": "roof-repair",
+  "title": "Roof Repair in Sandy, OR",
+  "city": "Sandy",
+  "state": "OR",
+  "completed": "2026-03",
+  "material": "CertainTeed Landmark",
+  "roofType": "Architectural asphalt shingle",
+  "summary": "In March 2026, French Roofing repaired a shingle roof in Sandy, OR, where two roof slopes meet in a valley. The crew pulled the shingles back along the valley, put down new underlayment, and laid new CertainTeed Landmark shingles back in across it. The finished valley sits in neat, even rows tied into the existing shingles on both sides.",
+  "scope": [
+    "Pulled the shingles back along the valley, down to the underlayment",
+    "Rolled new underlayment down the valley",
+    "Laid new CertainTeed Landmark shingles back in and tied them into the existing roof"
+  ],
+  "photos": [
+    {
+      "src": "/images/projects/roof-repair-sandy-2026-03/01.webp",
+      "alt": "Finished roof valley with new gray shingles tied into the existing roof below a vent in Sandy, OR",
+      "caption": "The finished valley, tied into the existing shingles."
+    },
+    {
+      "src": "/images/projects/roof-repair-sandy-2026-03/02.webp",
+      "alt": "Repaired shingle valley running up to the ridge on a home surrounded by trees in Sandy, OR",
+      "caption": "Another view of the finished valley."
+    },
+    {
+      "src": "/images/projects/roof-repair-sandy-2026-03/03.webp",
+      "alt": "New dark underlayment down a roof valley with CertainTeed Landmark shingle bundles on the roof in Sandy, OR",
+      "caption": "New underlayment down the valley, with the new shingles ready to go."
+    },
+    {
+      "src": "/images/projects/roof-repair-sandy-2026-03/04.webp",
+      "alt": "Shingles pulled back along a roof valley with underlayment showing during a repair in Sandy, OR",
+      "caption": "Shingles pulled back to open up the valley."
+    },
+    {
+      "src": "/images/projects/roof-repair-sandy-2026-03/05.webp",
+      "alt": "Close view of a roof valley opened up with old shingles lifted and a pry bar on the roof in Sandy, OR",
+      "caption": "The valley opened up during the repair."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Was the whole roof replaced on this Sandy job?",
+      "answer": "No. The work stayed on the valley. The shingles there came up, new underlayment went down, and new shingles were laid back in and tied into the rest of the roof."
+    },
+    {
+      "question": "What shingles were used?",
+      "answer": "CertainTeed Landmark shingles."
+    }
+  ],
+  "addedAt": "2026-11-18"
+}
